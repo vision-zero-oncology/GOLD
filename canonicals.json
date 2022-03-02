@@ -1,0 +1,16 @@
+[
+  {
+    "id": "gold",
+    "type": "ImplementationGuide",
+    "url": "https://www.vision-zero-oncology.de/fhir/ImplementationGuide/gold",
+    "version": "0.1.0",
+    "name": "GOLD"
+  },
+  {
+    "id": "MyPatient",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/MyPatient",
+    "version": "0.1.0",
+    "name": "MyPatient"
+  }
+]
