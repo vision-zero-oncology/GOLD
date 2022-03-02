@@ -1,0 +1,13 @@
+exclude_code_systems:
+    - http://hl7.org/fhir/sid/icd-10-cm
+    - http://fhir.de/CodeSystem/bfarm/icd-10-gm
+    - http://fhir.de/CodeSystem/bfarm/alpha-id
+    - http://www.whocc.no/atc
+    - http://fhir.de/CodeSystem/ask
+    - http://fhir.de/CodeSystem/ifa/pzn
+    - http://standardterms.edqm.eu
+    - http://fhir.de/CodeSystem/gender-amtlich-de
+    - http://fhir.de/CodeSystem/identifier-type-de-basis
+    - https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DARREICHUNGSFORM
+    - https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_BMP_DOSIEREINHEIT
+
