@@ -3,7 +3,7 @@
 
 err = 0, warn = 0, info = 0
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.111
-Generated Wed Mar 02 09:32:58 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Wed Mar 02 09:35:30 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 1
