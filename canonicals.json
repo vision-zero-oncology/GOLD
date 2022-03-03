@@ -7,10 +7,10 @@
     "name": "GOLD"
   },
   {
-    "id": "MyPatient",
+    "id": "ECOG",
     "type": "StructureDefinition",
-    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/MyPatient",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG",
     "version": "0.1.0",
-    "name": "MyPatient"
+    "name": "ECOG"
   }
 ]

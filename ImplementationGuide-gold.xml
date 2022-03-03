@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="GOLD"/>
   <status value="draft"/>
-  <date value="2022-03-02T09:35:19+00:00"/>
+  <date value="2022-03-03T09:27:10+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -195,10 +195,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/MyPatient"/>
+        <reference value="StructureDefinition/ECOG"/>
       </reference>
-      <name value="MyPatient"/>
-      <description value="An example profile of the Patient resource."/>
+      <name value="ECOG"/>
+      <description value="Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a patient&#39;s functional status."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -206,11 +206,21 @@
         <valueString value="Patient"/>
       </extension>
       <reference>
-        <reference value="Patient/PatientExample"/>
+        <reference value="Patient/Beispielpatient"/>
       </reference>
-      <name value="PatientExample"/>
-      <description value="An example of a patient with a license to krill."/>
-      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/MyPatient"/>
+      <name value="Beispielpatient"/>
+      <description value="Ein Beispiel für den Patient Max Mustermann."/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/ECOGExample"/>
+      </reference>
+      <name value="ECOGExample"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

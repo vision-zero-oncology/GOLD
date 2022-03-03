@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "GOLD",
   "status": "draft",
-  "date": "2022-03-02T09:35:19+00:00",
+  "date": "2022-03-03T09:27:10+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -312,10 +312,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/MyPatient"
+          "reference": "StructureDefinition/ECOG"
         },
-        "name": "MyPatient",
-        "description": "An example profile of the Patient resource.",
+        "name": "ECOG",
+        "description": "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a patient's functional status.",
         "exampleBoolean": false
       },
       {
@@ -326,11 +326,24 @@
           }
         ],
         "reference": {
-          "reference": "Patient/PatientExample"
+          "reference": "Patient/Beispielpatient"
         },
-        "name": "PatientExample",
-        "description": "An example of a patient with a license to krill.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/MyPatient"
+        "name": "Beispielpatient",
+        "description": "Ein Beispiel für den Patient Max Mustermann.",
+        "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ECOGExample"
+        },
+        "name": "ECOGExample",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG"
       }
     ],
     "page": {
