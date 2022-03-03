@@ -8,6 +8,10 @@
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG",
         "title": "ECOG"
+      },
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/KarnofskyIndex",
+        "title": "KarnofskyIndex"
       }
     ]
   },

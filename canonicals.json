@@ -12,5 +12,12 @@
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG",
     "version": "0.1.0",
     "name": "ECOG"
+  },
+  {
+    "id": "KarnofskyIndex",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/KarnofskyIndex",
+    "version": "0.1.0",
+    "name": "KarnofskyIndex"
   }
 ]

@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "GOLD",
   "status": "draft",
-  "date": "2022-03-03T09:27:10+00:00",
+  "date": "2022-03-03T15:49:29+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -322,6 +322,19 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/KarnofskyIndex"
+        },
+        "name": "KarnofskyIndex",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -344,6 +357,19 @@
         },
         "name": "ECOGExample",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/KarnofskyIndexExample"
+        },
+        "name": "KarnofskyIndexExample",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/KarnofskyIndex"
       }
     ],
     "page": {

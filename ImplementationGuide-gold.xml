@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="GOLD"/>
   <status value="draft"/>
-  <date value="2022-03-03T09:27:10+00:00"/>
+  <date value="2022-03-03T15:49:29+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -203,6 +203,16 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/KarnofskyIndex"/>
+      </reference>
+      <name value="KarnofskyIndex"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -221,6 +231,16 @@
       </reference>
       <name value="ECOGExample"/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/KarnofskyIndexExample"/>
+      </reference>
+      <name value="KarnofskyIndexExample"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/KarnofskyIndex"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>
