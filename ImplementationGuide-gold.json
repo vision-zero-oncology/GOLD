@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "GOLD",
   "status": "draft",
-  "date": "2022-03-03T15:49:29+00:00",
+  "date": "2022-03-03T16:02:07+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -315,7 +315,7 @@
           "reference": "StructureDefinition/ECOG"
         },
         "name": "ECOG",
-        "description": "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a patient's functional status.",
+        "description": "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status.",
         "exampleBoolean": false
       },
       {
@@ -329,6 +329,7 @@
           "reference": "StructureDefinition/KarnofskyIndex"
         },
         "name": "KarnofskyIndex",
+        "description": "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks.",
         "exampleBoolean": false
       },
       {

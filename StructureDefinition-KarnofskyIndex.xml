@@ -28,7 +28,7 @@
   <version value="0.1.0"/>
   <name value="KarnofskyIndex"/>
   <status value="active"/>
-  <date value="2022-03-03T15:49:29+00:00"/>
+  <date value="2022-03-03T16:02:07+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -37,6 +37,7 @@
       <value value="https://www.bihealth.org/"/>
     </telecom>
   </contact>
+  <description value="Profile for the Karnofsky Performance Status to measure a cancer patient&#39;s ability to perform ordinary tasks."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

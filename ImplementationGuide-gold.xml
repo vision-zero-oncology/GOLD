@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="GOLD"/>
   <status value="draft"/>
-  <date value="2022-03-03T15:49:29+00:00"/>
+  <date value="2022-03-03T16:02:07+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -198,7 +198,7 @@
         <reference value="StructureDefinition/ECOG"/>
       </reference>
       <name value="ECOG"/>
-      <description value="Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a patient&#39;s functional status."/>
+      <description value="Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient&#39;s functional status."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -209,6 +209,7 @@
         <reference value="StructureDefinition/KarnofskyIndex"/>
       </reference>
       <name value="KarnofskyIndex"/>
+      <description value="Profile for the Karnofsky Performance Status to measure a cancer patient&#39;s ability to perform ordinary tasks."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
