@@ -2,7 +2,7 @@
 
 Profile: ECOG
 Parent: Observation
-Description: "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a patient's functional status."
+Description: "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status."
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -28,6 +28,7 @@ Usage: #example
 
 Profile: KarnofskyIndex
 Parent: Observation
+Description: "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks."
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
