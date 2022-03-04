@@ -44,7 +44,8 @@ Usage: #example
 Description: "Example ECOG status observation."
 * status = #final
 * category[survey] = ObsCat#survey
-* code = LNC#89247-1 "ECOG Performance Status score"
+* code.coding[loinc] = LNC#89247-1 "ECOG Performance Status score"
+* code.coding[snomed] = SCT#423740007 "Eastern Cooperative Oncology Group performance status (observable entity)"
 * subject = Reference(Beispielpatient)
 * effectiveDateTime = "2021-01-17"
 * valueCodeableConcept.coding[valueLoinc] = LNC#LA9623-5 "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"
