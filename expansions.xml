@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="b1958f43-8a82-4be4-8c29-7778100d0f9f"/>
+  <id value="5f07399c-6d9d-4d79-addf-1bf0796c27ac"/>
   <meta>
-    <lastUpdated value="2022-03-04T09:46:47.967+00:00"/>
+    <lastUpdated value="2022-03-04T10:02:11.547+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -89,7 +89,7 @@
         <name value="VS_ECOG_Performance_Status_SNOMED"/>
         <title value="ECOG Performance Status SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-04T09:46:47+00:00"/>
+        <date value="2022-03-04T10:02:11+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -104,8 +104,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:747ce071-2f93-43e5-a37e-9ae6f9dff657"/>
-          <timestamp value="2022-03-04T09:47:00+00:00"/>
+          <identifier value="urn:uuid:af102f73-bcd9-4b4a-b1eb-d0faa44ad190"/>
+          <timestamp value="2022-03-04T10:02:25+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
