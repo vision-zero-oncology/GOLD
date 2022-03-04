@@ -3,18 +3,18 @@
   "id": "Beispielpatient",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Peter Mustermann (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-12-25</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Sebastian Bach (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1685-03-31</p></div>"
   },
   "active": true,
   "name": [
     {
       "use": "official",
-      "family": "Mustermann",
+      "family": "Bach",
       "given": [
-        "Peter"
+        "Sebastian"
       ]
     }
   ],
   "gender": "male",
-  "birthDate": "1974-12-25"
+  "birthDate": "1685-03-31"
 }

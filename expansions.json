@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "07c3c8c5-4e6e-4e47-9e53-0ed7054cb9bc",
+  "id" : "b1958f43-8a82-4be4-8c29-7778100d0f9f",
   "meta" : {
-    "lastUpdated" : "2022-03-04T09:19:03.460+00:00"
+    "lastUpdated" : "2022-03-04T09:46:47.967+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -12,14 +12,14 @@
       "id" : "vs-ecog-performance-status-snomed",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 7 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-424122007\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=424122007\">424122007</a></td><td>Eastern Cooperative Oncology Group performance status finding (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422512005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422512005\">422512005</a></td><td>Eastern Cooperative Oncology Group performance status - grade 1 (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422894000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422894000\">422894000</a></td><td>Eastern Cooperative Oncology Group performance status - grade 2 (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-423053003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=423053003\">423053003</a></td><td>Eastern Cooperative Oncology Group performance status - grade 3 (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-423237006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=423237006\">423237006</a></td><td>Eastern Cooperative Oncology Group performance status - grade 4 (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-423409001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=423409001\">423409001</a></td><td>Eastern Cooperative Oncology Group performance status - grade 5 (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-425389002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=425389002\">425389002</a></td><td>Eastern Cooperative Oncology Group performance status - grade 0 (finding)</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 6 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422512005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422512005\">422512005</a></td><td>Eastern Cooperative Oncology Group performance status - grade 1 (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-422894000\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=422894000\">422894000</a></td><td>Eastern Cooperative Oncology Group performance status - grade 2 (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-423053003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=423053003\">423053003</a></td><td>Eastern Cooperative Oncology Group performance status - grade 3 (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-423237006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=423237006\">423237006</a></td><td>Eastern Cooperative Oncology Group performance status - grade 4 (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-423409001\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=423409001\">423409001</a></td><td>Eastern Cooperative Oncology Group performance status - grade 5 (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-425389002\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=425389002\">425389002</a></td><td>Eastern Cooperative Oncology Group performance status - grade 0 (finding)</td><td/></tr></table></div>"
       },
       "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed",
       "version" : "0.1.0",
       "name" : "VS_ECOG_Performance_Status_SNOMED",
       "title" : "ECOG Performance Status SNOMED",
       "status" : "active",
-      "date" : "2022-03-04T09:19:03+00:00",
+      "date" : "2022-03-04T09:46:47+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -35,9 +35,9 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:53cd613a-7160-4a66-9924-15b174932873",
-        "timestamp" : "2022-03-04T09:19:17+00:00",
-        "total" : 7,
+        "identifier" : "urn:uuid:747ce071-2f93-43e5-a37e-9ae6f9dff657",
+        "timestamp" : "2022-03-04T09:47:00+00:00",
+        "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
           "valueBoolean" : false
@@ -51,11 +51,6 @@
           "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
         }],
         "contains" : [{
-          "system" : "http://snomed.info/sct",
-          "code" : "424122007",
-          "display" : "Eastern Cooperative Oncology Group performance status finding (finding)"
-        },
-        {
           "system" : "http://snomed.info/sct",
           "code" : "422512005",
           "display" : "Eastern Cooperative Oncology Group performance status - grade 1 (finding)"

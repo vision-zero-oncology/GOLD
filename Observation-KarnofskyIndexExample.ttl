@@ -18,7 +18,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 89243-0}\">Karnofsky Performance Status score</span></p><p><b>subject</b>: <a href=\"Patient-Beispielpatient.html\">Generated Summary: active: true; Peter Mustermann (OFFICIAL); gender: male; birthDate: 1974-12-25</a></p><p><b>effective</b>: 2021-01-17</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA29177-5}\">Normal activity with effort; some signs or symptoms of disease</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 89243-0}\">Karnofsky Performance Status score</span></p><p><b>subject</b>: <a href=\"Patient-Beispielpatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2021-01-17</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA29177-5}\">Normal activity with effort; some signs or symptoms of disease</span></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [

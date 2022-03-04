@@ -3,14 +3,14 @@
 <Patient xmlns="http://hl7.org/fhir">
   <id value="Beispielpatient"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Peter Mustermann (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1974-12-25</p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Sebastian Bach (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1685-03-31</p></div>
   </text>
   <active value="true"/>
   <name>
     <use value="official"/>
-    <family value="Mustermann"/>
-    <given value="Peter"/>
+    <family value="Bach"/>
+    <given value="Sebastian"/>
   </name>
   <gender value="male"/>
-  <birthDate value="1974-12-25"/>
+  <birthDate value="1685-03-31"/>
 </Patient>

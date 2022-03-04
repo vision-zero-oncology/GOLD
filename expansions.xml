@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="07c3c8c5-4e6e-4e47-9e53-0ed7054cb9bc"/>
+  <id value="b1958f43-8a82-4be4-8c29-7778100d0f9f"/>
   <meta>
-    <lastUpdated value="2022-03-04T09:19:03.460+00:00"/>
+    <lastUpdated value="2022-03-04T09:46:47.967+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -14,7 +14,7 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 7 concepts</p>
+            <p>This value set contains 6 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
@@ -32,14 +32,6 @@
                 <td>
                   <b>Definition</b>
                 </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-424122007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=424122007">424122007</a>
-                </td>
-                <td>Eastern Cooperative Oncology Group performance status finding (finding)</td>
-                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
@@ -97,7 +89,7 @@
         <name value="VS_ECOG_Performance_Status_SNOMED"/>
         <title value="ECOG Performance Status SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-04T09:19:03+00:00"/>
+        <date value="2022-03-04T09:46:47+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -112,9 +104,9 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:53cd613a-7160-4a66-9924-15b174932873"/>
-          <timestamp value="2022-03-04T09:19:17+00:00"/>
-          <total value="7"/>
+          <identifier value="urn:uuid:747ce071-2f93-43e5-a37e-9ae6f9dff657"/>
+          <timestamp value="2022-03-04T09:47:00+00:00"/>
+          <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -127,11 +119,6 @@
             <name value="version"/>
             <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
           </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="424122007"/>
-            <display value="Eastern Cooperative Oncology Group performance status finding (finding)"/>
-          </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="422512005"/>

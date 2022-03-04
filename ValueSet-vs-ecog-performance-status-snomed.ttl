@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "vs-ecog-performance-status-snomed"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  424122007 (Eastern Cooperative Oncology Group performance status finding (finding))</li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  424122007 (Eastern Cooperative Oncology Group performance status finding (finding))</li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "VS_ECOG_Performance_Status_SNOMED"];
   fhir:ValueSet.title [ fhir:value "ECOG Performance Status SNOMED"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-03-04T09:19:03+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-03-04T09:46:47+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
        fhir:ValueSet.compose.include.filter [
          fhir:index 0;
          fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
-         fhir:ValueSet.compose.include.filter.op [ fhir:value "is-a" ];
+         fhir:ValueSet.compose.include.filter.op [ fhir:value "descendent-of" ];
          fhir:ValueSet.compose.include.filter.value [ fhir:value "424122007" ]
        ]
      ]

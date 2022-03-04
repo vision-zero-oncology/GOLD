@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="GOLD"/>
   <status value="draft"/>
-  <date value="2022-03-04T09:19:03+00:00"/>
+  <date value="2022-03-04T09:46:47+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -231,7 +231,7 @@
         <reference value="Patient/Beispielpatient"/>
       </reference>
       <name value="Beispielpatient"/>
-      <description value="Ein Beispiel für den Patient Max Mustermann."/>
+      <description value="Ein Beispiel für einen Patienten."/>
       <exampleBoolean value="true"/>
     </resource>
     <resource>
