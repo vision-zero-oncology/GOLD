@@ -61,7 +61,18 @@ Description: "Profile for the Karnofsky Performance Status to measure a cancer p
 * category ^slicing.rules = #open
 * category contains survey 1..1
 * category[survey] = ObsCat#survey
-* code = LNC#89243-0
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    loinc 1..* and
+    snomed 0..*
+* code.coding[loinc] = LNC#89243-0
+* code.coding[loinc].system 1..
+* code.coding[loinc].code 1..
+* code.coding[snomed] = SCT#761869008
+* code.coding[snomed].system 1..
+* code.coding[snomed].code 1..
 * subject 1..1
 * subject only Reference(Patient)
 * value[x] only CodeableConcept
@@ -72,7 +83,8 @@ InstanceOf: KarnofskyIndex
 Usage: #example
 Description: "Example Karnofsky performance status observation."
 * status = #final
-* code = LNC#89243-0 "Karnofsky Performance Status score"
+* code.coding[loinc] = LNC#89243-0 "Karnofsky Performance Status score"
+* code.coding[snomed] = SCT#761869008 "Karnofsky Performance Status score (observable entity)"
 * subject = Reference(Beispielpatient)
 * effectiveDateTime = "2021-01-17"
 * valueCodeableConcept = LNC#LA29177-5 "Normal activity with effort; some signs or symptoms of disease"
