@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "GOLD"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-03T16:02:07+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-04T09:19:03+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -320,6 +320,20 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-ecog-performance-status-snomed" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ECOG Performance Status SNOMED" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the ECOG Performance Status values from SNOMED CT." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 3;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -330,7 +344,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Ein Beispiel für den Patient Max Mustermann." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -341,12 +355,13 @@
          fhir:Reference.reference [ fhir:value "Observation/ECOGExample" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ECOGExample" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example ECOG status observation." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG";
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG>
        ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -357,6 +372,7 @@
          fhir:Reference.reference [ fhir:value "Observation/KarnofskyIndexExample" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "KarnofskyIndexExample" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Karnofsky performance status observation." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/KarnofskyIndex";
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/KarnofskyIndex>

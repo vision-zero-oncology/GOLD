@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "GOLD",
   "status": "draft",
-  "date": "2022-03-03T16:02:07+00:00",
+  "date": "2022-03-04T09:19:03+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -336,6 +336,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-ecog-performance-status-snomed"
+        },
+        "name": "ECOG Performance Status SNOMED",
+        "description": "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -357,6 +371,7 @@
           "reference": "Observation/ECOGExample"
         },
         "name": "ECOGExample",
+        "description": "Example ECOG status observation.",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG"
       },
       {
@@ -370,6 +385,7 @@
           "reference": "Observation/KarnofskyIndexExample"
         },
         "name": "KarnofskyIndexExample",
+        "description": "Example Karnofsky performance status observation.",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/KarnofskyIndex"
       }
     ],

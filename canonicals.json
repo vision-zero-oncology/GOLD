@@ -19,5 +19,12 @@
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/KarnofskyIndex",
     "version": "0.1.0",
     "name": "KarnofskyIndex"
+  },
+  {
+    "id": "vs-ecog-performance-status-snomed",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed",
+    "version": "0.1.0",
+    "name": "VS_ECOG_Performance_Status_SNOMED"
   }
 ]

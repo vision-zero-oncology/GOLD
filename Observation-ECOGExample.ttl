@@ -2,6 +2,7 @@
 @prefix loinc: <http://loinc.org/rdf#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -18,7 +19,7 @@
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 89247-1}\">ECOG Performance Status score</span></p><p><b>subject</b>: <a href=\"Patient-Beispielpatient.html\">Generated Summary: active: true; Peter Mustermann (OFFICIAL); gender: male; birthDate: 1974-12-25</a></p><p><b>effective</b>: 2021-01-17</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA9623-5}\">Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 89247-1}\">ECOG Performance Status score</span></p><p><b>subject</b>: <a href=\"Patient-Beispielpatient.html\">Generated Summary: active: true; Peter Mustermann (OFFICIAL); gender: male; birthDate: 1974-12-25</a></p><p><b>effective</b>: 2021-01-17</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA9623-5}, {http://snomed.info/sct 422512005}\">Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</span></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -48,7 +49,14 @@
        fhir:index 0;
        a loinc:LA9623-5;
        fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "LA9623-5" ]
+       fhir:Coding.code [ fhir:value "LA9623-5" ];
+       fhir:Coding.display [ fhir:value "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work" ]
+     ], [
+       fhir:index 1;
+       a sct:422512005;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "422512005" ];
+       fhir:Coding.display [ fhir:value "Eastern Cooperative Oncology Group performance status - grade 1 (finding)|" ]
      ]
   ] .
 

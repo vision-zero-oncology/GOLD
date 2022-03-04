@@ -1,23 +1,24 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 0, warn = 2, info = 0
+err = 0, warn = 1, info = 0
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.111
-Generated Thu Mar 03 16:02:21 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
- Build Errors : 0 / 2 / 0
+Generated Fri Mar 04 09:19:22 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+ Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-ECOGExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-ECOGExample : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/Observation-KarnofskyIndexExample : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-Beispielpatient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ECOG : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-KarnofskyIndex : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-ecog-performance-status-snomed : 0 / 0 / 1
 </table>
 == n/a ==
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/ECOGExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
-WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/KarnofskyIndexExample.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/ImplementationGuide-gold.json ==
 == fsh-generated/resources/Observation-ECOGExample.json ==
+WARNING: Observation/ECOGExample: Observation.value.ofType(CodeableConcept).coding[1]: The display "Eastern Cooperative Oncology Group performance status - grade 1 (finding)|" is not a valid display for the code {http://snomed.info/sct}422512005 - should be one of ['Eastern Cooperative Oncology Group performance status - grade 1 (finding)', 'ECOG performance status - grade 1', 'Eastern Cooperative Oncology Group performance status - grade 1'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#422512005'
 == fsh-generated/resources/Observation-KarnofskyIndexExample.json ==
 == fsh-generated/resources/Patient-Beispielpatient.json ==
 == fsh-generated/resources/StructureDefinition-ECOG.json ==
 == fsh-generated/resources/StructureDefinition-KarnofskyIndex.json ==
+== fsh-generated/resources/ValueSet-vs-ecog-performance-status-snomed.json ==
