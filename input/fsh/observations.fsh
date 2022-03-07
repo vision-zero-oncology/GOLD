@@ -41,9 +41,10 @@ Description: "Profile for the Eastern Cooperative Oncology Group (ECOG) Performa
 * valueCodeableConcept.coding[valueSnomed].system 1..
 * valueCodeableConcept.coding[valueSnomed].code 1..
 
-Instance: ECOGExample
+Instance: example-ecog-performance-status
 InstanceOf: sd-ecog-performance-status
 Usage: #example
+Title: "Example ECOG Performance Status"
 Description: "Example ECOG status observation."
 * status = #final
 * category[survey] = ObsCat#survey
@@ -84,9 +85,10 @@ Description: "Profile for the Karnofsky Performance Status to measure a cancer p
 * value[x] only CodeableConcept
 * valueCodeableConcept from http://loinc.org/vs/LL4986-7
 
-Instance: KarnofskyPerformanceStatusExample
+Instance: example-karnofsky-performance-status
 InstanceOf: sd-karnofsky-performance-status
 Usage: #example
+Title: "Example Karnofsky Performance Status"
 Description: "Example Karnofsky performance status observation."
 * status = #final
 * code.coding[loinc] = LNC#89243-0 "Karnofsky Performance Status score"
@@ -100,6 +102,7 @@ Description: "Example Karnofsky performance status observation."
 Profile: SD_Histology_Topography
 Parent: Observation
 Id: sd-histology-topography
+Title: "Profile Histology Topography"
 Description: "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3."
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
 * category ^slicing.discriminator.type = #pattern
@@ -155,9 +158,10 @@ Description: "Profile for the classification of a tumor's morphology(histology) 
 * bodySite.coding[topographySnomed].system 1..
 * bodySite.coding[topographySnomed].code 1..
 
-Instance: HistologyTopographyExample
+Instance: example-histology-topography
 InstanceOf: sd-histology-topography
 Usage: #example
+Title: "Example Histology and Topography"
 Description: "Example tumor histology and topography observation."
 * status = #final
 * code.coding[loinc] = LNC#59847-4 "Histology and Behavior ICD-O-3 Cancer"
