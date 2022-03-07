@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "HistologyTopographyExample",
+  "id": "example-histology-topography",
   "meta": {
     "profile": [
       "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"

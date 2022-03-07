@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="GOLD"/>
   <status value="draft"/>
-  <date value="2022-03-07T15:59:03+00:00"/>
+  <date value="2022-03-07T16:28:10+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -208,7 +208,7 @@
       <reference>
         <reference value="StructureDefinition/sd-histology-topography"/>
       </reference>
-      <name value="SD_Histology_Topography"/>
+      <name value="Profile Histology Topography"/>
       <description value="Profile for the classification of a tumor&#39;s morphology(histology) and topography using ICD-O-3."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -280,17 +280,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Observation"/>
-      </extension>
-      <reference>
-        <reference value="Observation/ECOGExample"/>
-      </reference>
-      <name value="ECOGExample"/>
-      <description value="Example ECOG status observation."/>
-      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Patient"/>
       </extension>
       <reference>
@@ -305,9 +294,20 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/HistologyTopographyExample"/>
+        <reference value="Observation/example-ecog-performance-status"/>
       </reference>
-      <name value="HistologyTopographyExample"/>
+      <name value="Example ECOG Performance Status"/>
+      <description value="Example ECOG status observation."/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-histology-topography"/>
+      </reference>
+      <name value="Example Histology and Topography"/>
       <description value="Example tumor histology and topography observation."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"/>
     </resource>
@@ -316,9 +316,9 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/KarnofskyPerformanceStatusExample"/>
+        <reference value="Observation/example-karnofsky-performance-status"/>
       </reference>
-      <name value="KarnofskyPerformanceStatusExample"/>
+      <name value="Example Karnofsky Performance Status"/>
       <description value="Example Karnofsky performance status observation."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"/>
     </resource>

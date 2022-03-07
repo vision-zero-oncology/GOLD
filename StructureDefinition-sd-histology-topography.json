@@ -18,8 +18,9 @@
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography",
   "version": "0.1.0",
   "name": "SD_Histology_Topography",
+  "title": "Profile Histology Topography",
   "status": "active",
-  "date": "2022-03-07T15:59:03+00:00",
+  "date": "2022-03-07T16:28:10+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {

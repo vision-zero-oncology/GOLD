@@ -3,12 +3,12 @@
 
 err = 6, warn = 3, info = 2
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.111
-Generated Mon Mar 07 15:59:29 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Mon Mar 07 16:28:35 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-ECOGExample : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-HistologyTopographyExample : 3 / 0 / 3
- /github/workspace/fsh-generated/resources/Observation-KarnofskyPerformanceStatusExample : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-ecog-performance-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-histology-topography : 3 / 0 / 3
+ /github/workspace/fsh-generated/resources/Observation-example-karnofsky-performance-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-ecog-performance-status : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-histology-topography : 1 / 0 / 1
@@ -21,14 +21,14 @@ Generated Mon Mar 07 15:59:29 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
 </table>
 == n/a ==
 == fsh-generated/resources/ImplementationGuide-gold.json ==
-== fsh-generated/resources/Observation-ECOGExample.json ==
-== fsh-generated/resources/Observation-HistologyTopographyExample.json ==
-INFORMATION: Observation/HistologyTopographyExample: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
-ERROR: Observation/HistologyTopographyExample: Observation.value.ofType(CodeableConcept).coding[1]: Unable to find code 1162767002 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code "1162767002" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1162767002) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#1162767002'
-ERROR: Observation/HistologyTopographyExample: Observation.value.ofType(CodeableConcept).coding[0]: The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3)
-INFORMATION: Observation/HistologyTopographyExample: Observation.bodySite.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
-ERROR: Observation/HistologyTopographyExample: Observation.bodySite.coding[0]: The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3)
-== fsh-generated/resources/Observation-KarnofskyPerformanceStatusExample.json ==
+== fsh-generated/resources/Observation-example-ecog-performance-status.json ==
+== fsh-generated/resources/Observation-example-histology-topography.json ==
+INFORMATION: Observation/example-histology-topography: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
+ERROR: Observation/example-histology-topography: Observation.value.ofType(CodeableConcept).coding[1]: Unable to find code 1162767002 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code "1162767002" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1162767002) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#1162767002'
+ERROR: Observation/example-histology-topography: Observation.value.ofType(CodeableConcept).coding[0]: The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3)
+INFORMATION: Observation/example-histology-topography: Observation.bodySite.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
+ERROR: Observation/example-histology-topography: Observation.bodySite.coding[0]: The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3)
+== fsh-generated/resources/Observation-example-karnofsky-performance-status.json ==
 == fsh-generated/resources/Patient-ExamplePatient.json ==
 WARNING: Patient/ExamplePatient: Patient.birthDate: The value '1685-03-31' is outside the range of reasonable years - check for data entry error
 == fsh-generated/resources/StructureDefinition-sd-ecog-performance-status.json ==

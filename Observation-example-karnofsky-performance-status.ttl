@@ -7,9 +7,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/KarnofskyPerformanceStatusExample> a fhir:Observation;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-karnofsky-performance-status> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "KarnofskyPerformanceStatusExample"];
+  fhir:Resource.id [ fhir:value "example-karnofsky-performance-status"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status";
@@ -62,7 +62,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/KarnofskyPerformanceStatusExample.ttl> a owl:Ontology;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-karnofsky-performance-status.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

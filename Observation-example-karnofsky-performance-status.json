@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "KarnofskyPerformanceStatusExample",
+  "id": "example-karnofsky-performance-status",
   "meta": {
     "profile": [
       "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"

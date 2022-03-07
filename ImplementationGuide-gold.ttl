@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "GOLD"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-07T15:59:03+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-07T16:28:10+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -312,7 +312,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-histology-topography>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/sd-histology-topography" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SD_Histology_Topography" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Histology Topography" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -404,23 +404,6 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "Observation" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/ECOGExample>;
-         fhir:Reference.reference [ fhir:value "Observation/ECOGExample" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ECOGExample" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example ECOG status observation." ];
-       fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status";
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status>
-       ]
-     ], [
-       fhir:index 9;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Patient" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -431,6 +414,23 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-ecog-performance-status>;
+         fhir:Reference.reference [ fhir:value "Observation/example-ecog-performance-status" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example ECOG Performance Status" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example ECOG status observation." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status>
+       ]
+     ], [
        fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
@@ -438,10 +438,10 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/HistologyTopographyExample>;
-         fhir:Reference.reference [ fhir:value "Observation/HistologyTopographyExample" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-histology-topography>;
+         fhir:Reference.reference [ fhir:value "Observation/example-histology-topography" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "HistologyTopographyExample" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Histology and Topography" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example tumor histology and topography observation." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography";
@@ -455,10 +455,10 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/KarnofskyPerformanceStatusExample>;
-         fhir:Reference.reference [ fhir:value "Observation/KarnofskyPerformanceStatusExample" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-karnofsky-performance-status>;
+         fhir:Reference.reference [ fhir:value "Observation/example-karnofsky-performance-status" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "KarnofskyPerformanceStatusExample" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Karnofsky Performance Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Karnofsky performance status observation." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status";

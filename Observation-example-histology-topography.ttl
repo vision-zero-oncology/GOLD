@@ -7,9 +7,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/HistologyTopographyExample> a fhir:Observation;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-histology-topography> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "HistologyTopographyExample"];
+  fhir:Resource.id [ fhir:value "example-histology-topography"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography";
@@ -87,7 +87,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/HistologyTopographyExample.ttl> a owl:Ontology;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-histology-topography.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

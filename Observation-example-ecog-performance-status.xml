@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="ECOGExample"/>
+  <id value="example-ecog-performance-status"/>
   <meta>
     <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"/>
   </meta>

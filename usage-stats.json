@@ -11,7 +11,7 @@
       },
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography",
-        "title": "SD_Histology_Topography"
+        "title": "Profile Histology Topography"
       },
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status",

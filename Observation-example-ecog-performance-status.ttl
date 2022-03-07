@@ -7,9 +7,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/ECOGExample> a fhir:Observation;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-ecog-performance-status> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ECOGExample"];
+  fhir:Resource.id [ fhir:value "example-ecog-performance-status"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status";
@@ -68,7 +68,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/ECOGExample.ttl> a owl:Ontology;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-ecog-performance-status.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------
