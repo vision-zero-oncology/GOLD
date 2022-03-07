@@ -1,6 +1,7 @@
 exclude_code_systems:
     - http://hl7.org/fhir/sid/icd-10-cm
     - http://fhir.de/CodeSystem/bfarm/icd-10-gm
+    - http://terminology.hl7.org/CodeSystem/icd-o-3
     - http://fhir.de/CodeSystem/bfarm/alpha-id
     - http://www.whocc.no/atc
     - http://fhir.de/CodeSystem/ask

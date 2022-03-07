@@ -1,6 +1,6 @@
-Instance: Beispielpatient
+Instance: ExamplePatient
 InstanceOf: Patient
-Description: "Ein Beispiel für einen Patienten."
+Description: "Example of a patient."
 * active = true
 * gender = #male
 * birthDate = "1685-03-31"
