@@ -12,14 +12,14 @@
   fhir:Resource.id [ fhir:value "ECOGExample"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG";
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status";
        fhir:index 0;
-       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG>
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status>
      ]
   ];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 89247-1}, {http://snomed.info/sct 423740007}\">ECOG Performance Status score</span></p><p><b>subject</b>: <a href=\"Patient-Beispielpatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2021-01-17</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA9623-5}, {http://snomed.info/sct 422512005}\">Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</span></p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 89247-1}, {http://snomed.info/sct 423740007}\">ECOG Performance Status score</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA9623-5}, {http://snomed.info/sct 422512005}\">Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</span></p></div>"
   ];
   fhir:Observation.status [ fhir:value "final"];
   fhir:Observation.category [
@@ -46,10 +46,10 @@
      ]
   ];
   fhir:Observation.subject [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/Beispielpatient>;
-     fhir:Reference.reference [ fhir:value "Patient/Beispielpatient" ]
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
   ];
-  fhir:Observation.effectiveDateTime [ fhir:value "2021-01-17"^^xsd:date];
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-03-07"^^xsd:date];
   fhir:Observation.valueCodeableConcept [
      fhir:CodeableConcept.coding [
        fhir:index 0;
@@ -62,7 +62,7 @@
        a sct:422512005;
        fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
        fhir:Coding.code [ fhir:value "422512005" ];
-       fhir:Coding.display [ fhir:value "Eastern Cooperative Oncology Group performance status - grade 1 (finding)|" ]
+       fhir:Coding.display [ fhir:value "Eastern Cooperative Oncology Group performance status - grade 1 (finding)" ]
      ]
   ] .
 

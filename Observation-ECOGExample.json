@@ -3,12 +3,12 @@
   "id": "ECOGExample",
   "meta": {
     "profile": [
-      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG"
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
     ]
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 89247-1}, {http://snomed.info/sct 423740007}\">ECOG Performance Status score</span></p><p><b>subject</b>: <a href=\"Patient-Beispielpatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2021-01-17</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA9623-5}, {http://snomed.info/sct 422512005}\">Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}\">Survey</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 89247-1}, {http://snomed.info/sct 423740007}\">ECOG Performance Status score</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title=\"Codes: {http://loinc.org LA9623-5}, {http://snomed.info/sct 422512005}\">Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</span></p></div>"
   },
   "status": "final",
   "category": [
@@ -36,9 +36,9 @@
     ]
   },
   "subject": {
-    "reference": "Patient/Beispielpatient"
+    "reference": "Patient/ExamplePatient"
   },
-  "effectiveDateTime": "2021-01-17",
+  "effectiveDateTime": "2022-03-07",
   "valueCodeableConcept": {
     "coding": [
       {
@@ -49,7 +49,7 @@
       {
         "system": "http://snomed.info/sct",
         "code": "422512005",
-        "display": "Eastern Cooperative Oncology Group performance status - grade 1 (finding)|"
+        "display": "Eastern Cooperative Oncology Group performance status - grade 1 (finding)"
       }
     ]
   }

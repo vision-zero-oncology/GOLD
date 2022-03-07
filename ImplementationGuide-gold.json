@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "GOLD",
   "status": "draft",
-  "date": "2022-03-04T10:02:11+00:00",
+  "date": "2022-03-07T15:59:03+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -312,9 +312,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/ECOG"
+          "reference": "StructureDefinition/sd-ecog-performance-status"
         },
-        "name": "ECOG",
+        "name": "Profile ECOG Performance Status",
         "description": "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status.",
         "exampleBoolean": false
       },
@@ -326,9 +326,23 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/KarnofskyIndex"
+          "reference": "StructureDefinition/sd-histology-topography"
         },
-        "name": "KarnofskyIndex",
+        "name": "SD_Histology_Topography",
+        "description": "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/sd-karnofsky-performance-status"
+        },
+        "name": "Profile Karnofsky Performance Status",
         "description": "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks.",
         "exampleBoolean": false
       },
@@ -342,7 +356,7 @@
         "reference": {
           "reference": "ValueSet/vs-ecog-performance-status-snomed"
         },
-        "name": "ECOG Performance Status SNOMED",
+        "name": "ValueSet ECOG Performance Status SNOMED",
         "description": "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
         "exampleBoolean": false
       },
@@ -350,15 +364,57 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "Patient"
+            "valueString": "ValueSet"
           }
         ],
         "reference": {
-          "reference": "Patient/Beispielpatient"
+          "reference": "ValueSet/vs-morphology-icd-o-3"
         },
-        "name": "Beispielpatient",
-        "description": "Ein Beispiel für einen Patienten.",
-        "exampleBoolean": true
+        "name": "ValueSet Morphology ICD-O-3",
+        "description": "The ValueSet contains the morphology (histology) codes from ICD-O-3.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-morphology-snomed"
+        },
+        "name": "ValueSet Morphology SNOMED",
+        "description": "The ValueSet contains the morphology (histology) codes from SNOMED.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-topography-icd-o-3"
+        },
+        "name": "ValueSet Topography ICD-O-3",
+        "description": "The ValueSet contains the topography codes from ICD-O-3.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-topography-snomed"
+        },
+        "name": "ValueSet Topography SNOMED",
+        "description": "The ValueSet contains the topography codes from SNOMED.",
+        "exampleBoolean": false
       },
       {
         "extension": [
@@ -372,7 +428,21 @@
         },
         "name": "ECOGExample",
         "description": "Example ECOG status observation.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG"
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Patient"
+          }
+        ],
+        "reference": {
+          "reference": "Patient/ExamplePatient"
+        },
+        "name": "ExamplePatient",
+        "description": "Example of a patient.",
+        "exampleBoolean": true
       },
       {
         "extension": [
@@ -382,11 +452,25 @@
           }
         ],
         "reference": {
-          "reference": "Observation/KarnofskyIndexExample"
+          "reference": "Observation/HistologyTopographyExample"
         },
-        "name": "KarnofskyIndexExample",
+        "name": "HistologyTopographyExample",
+        "description": "Example tumor histology and topography observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/KarnofskyPerformanceStatusExample"
+        },
+        "name": "KarnofskyPerformanceStatusExample",
         "description": "Example Karnofsky performance status observation.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/KarnofskyIndex"
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
       }
     ],
     "page": {

@@ -7,18 +7,25 @@
     "name": "GOLD"
   },
   {
-    "id": "ECOG",
+    "id": "sd-ecog-performance-status",
     "type": "StructureDefinition",
-    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status",
     "version": "0.1.0",
-    "name": "ECOG"
+    "name": "SD_ECOG_Performance_Status"
   },
   {
-    "id": "KarnofskyIndex",
+    "id": "sd-histology-topography",
     "type": "StructureDefinition",
-    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/KarnofskyIndex",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography",
     "version": "0.1.0",
-    "name": "KarnofskyIndex"
+    "name": "SD_Histology_Topography"
+  },
+  {
+    "id": "sd-karnofsky-performance-status",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status",
+    "version": "0.1.0",
+    "name": "SD_Karnofsky_Performance_Status"
   },
   {
     "id": "vs-ecog-performance-status-snomed",
@@ -26,5 +33,33 @@
     "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed",
     "version": "0.1.0",
     "name": "VS_ECOG_Performance_Status_SNOMED"
+  },
+  {
+    "id": "vs-morphology-icd-o-3",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3",
+    "version": "0.1.0",
+    "name": "VS_Morphology_ICD_O_3"
+  },
+  {
+    "id": "vs-morphology-snomed",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed",
+    "version": "0.1.0",
+    "name": "VS_Morphology_SNOMED"
+  },
+  {
+    "id": "vs-topography-icd-o-3",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3",
+    "version": "0.1.0",
+    "name": "VS_Topography_ICD_O_3"
+  },
+  {
+    "id": "vs-topography-snomed",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed",
+    "version": "0.1.0",
+    "name": "VS_Topography_SNOMED"
   }
 ]

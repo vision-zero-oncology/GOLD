@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 0, warn = 2, info = 0 -->
+<!-- broken links = 0, errors = 6, warn = 3, info = 2 -->
 <head>
   <title>GOLD : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for GOLD</h1>
- <p>Generated Fri Mar 04 10:02:30 UTC 2022, FHIR version 4.0.1 for gold#0.1.0 (canonical = <a href="https://www.vision-zero-oncology.de/fhir">https://www.vision-zero-oncology.de/fhir</a> (<a href="https://www.vision-zero-oncology.de/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
+ <p>Generated Mon Mar 07 15:59:29 UTC 2022, FHIR version 4.0.1 for gold#0.1.0 (canonical = <a href="https://www.vision-zero-oncology.de/fhir">https://www.vision-zero-oncology.de/fhir</a> (<a href="https://www.vision-zero-oncology.de/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.83, which is out of date. The current version is v1.1.111 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = gold, Canonical = https://www.vision-zero-oncology.de/fhir</td></tr>
@@ -50,7 +50,7 @@
  <br/><br/>The copyrightYear parameter ('2022+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.vision-zero-oncology.de/fhir (Problem #1 with package-list.json at https://www.vision-zero-oncology.de/fhir: https://www.vision-zero-oncology.de/fhir/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 0, errors = 0, warn = 2, info = 0</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 6, warn = 3, info = 2</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -59,11 +59,26 @@
    <tr style="background-color: #EFFFEF">
      <td><a href="#internal"><b>Build Errors</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Observation-ECOGExample"><b>/github/workspace/fsh-generated/resources/Observation-ECOGExample</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-HistologyTopographyExample"><b>/github/workspace/fsh-generated/resources/Observation-HistologyTopographyExample</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>2</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Patient-Beispielpatient"><b>/github/workspace/fsh-generated/resources/Patient-Beispielpatient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Patient-ExamplePatient"><b>/github/workspace/fsh-generated/resources/Patient-ExamplePatient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-sd-ecog-performance-status"><b>/github/workspace/fsh-generated/resources/StructureDefinition-sd-ecog-performance-status</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-sd-histology-topography"><b>/github/workspace/fsh-generated/resources/StructureDefinition-sd-histology-topography</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-sd-karnofsky-performance-status"><b>/github/workspace/fsh-generated/resources/StructureDefinition-sd-karnofsky-performance-status</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-vs-morphology-icd-o-3"><b>/github/workspace/fsh-generated/resources/ValueSet-vs-morphology-icd-o-3</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-vs-topography-icd-o-3"><b>/github/workspace/fsh-generated/resources/ValueSet-vs-topography-icd-o-3</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
    </tr>
 </table>
 <hr/>
@@ -73,21 +88,33 @@
  <table class="grid">
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Observation-ECOGExample"> </a>
-<h2><a href="Observation-ECOGExample.html">fsh-generated/resources/Observation-ECOGExample.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-ECOG.html">ECOG</a></li></ul>
+<a name="_github_workspace_fsh-generated_resources_Observation-HistologyTopographyExample"> </a>
+<h2><a href="Observation-HistologyTopographyExample.html">fsh-generated/resources/Observation-HistologyTopographyExample.json</a> <span id="svi1" class="toggle" onclick="toggle('vi1')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi1')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi1"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-sd-histology-topography.html">SD_Histology_Topography</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[1] (l40/c8)</b></td><td><b>warning</b></td><td><b>The display &quot;Eastern Cooperative Oncology Group performance status - grade 1 (finding)|&quot; is not a valid display for the code {http://snomed.info/sct}422512005 - should be one of ['Eastern Cooperative Oncology Group performance status - grade 1 (finding)', 'ECOG performance status - grade 1', 'Eastern Cooperative Oncology Group performance status - grade 1'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#422512005'</b> (<a href="qa-tx.html#l10">see Tx log</a>)</td>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l40/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.value.ofType(CodeableConcept).coding[1] (l45/c8)</b></td><td><b>error</b></td><td><b>Unable to find code 1162767002 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code &quot;1162767002&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1162767002) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#1162767002'</b> (<a href="qa-tx.html#l22">see Tx log</a>)</td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l40/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.bodySite.coding[0] (l54/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.bodySite.coding[0] (l54/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3)</b></td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_Patient-Beispielpatient"> </a>
-<h2><a href="Patient-Beispielpatient.html">fsh-generated/resources/Patient-Beispielpatient.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_Patient-ExamplePatient"> </a>
+<h2><a href="Patient-ExamplePatient.html">fsh-generated/resources/Patient-ExamplePatient.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Patient: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/patient.html">Patient</a></li></ul>
 </div>
  <table class="grid">
@@ -98,16 +125,117 @@
      <td><b>Patient.birthDate (l6/c29)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_DateTime_Reasonable"><b>The value '1685-03-31' is outside the range of reasonable years - check for data entry error</b></td>
    </tr>
 </table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-sd-ecog-performance-status"> </a>
+<h2><a href="StructureDefinition-sd-ecog-performance-status.html">fsh-generated/resources/StructureDefinition-sd-ecog-performance-status.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: sd-ecog-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-sd-histology-topography"> </a>
+<h2><a href="StructureDefinition-sd-histology-topography.html">fsh-generated/resources/StructureDefinition-sd-histology-topography.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: sd-histology-topography/https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-sd-karnofsky-performance-status"> </a>
+<h2><a href="StructureDefinition-sd-karnofsky-performance-status.html">fsh-generated/resources/StructureDefinition-sd-karnofsky-performance-status.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: sd-karnofsky-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-vs-morphology-icd-o-3"> </a>
+<h2><a href="ValueSet-vs-morphology-icd-o-3.html">fsh-generated/resources/ValueSet-vs-morphology-icd-o-3.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'vs-morphology-icd-o-3')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3</b> (<a href="qa-tx.html#l30">see Tx log</a>)</td>
+   </tr>
+</table>
+<hr/>
+<a name="_github_workspace_fsh-generated_resources_ValueSet-vs-topography-icd-o-3"> </a>
+<h2><a href="ValueSet-vs-topography-icd-o-3.html">fsh-generated/resources/ValueSet-vs-topography-icd-o-3.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>ValueSet: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/valueset.html">ValueSet</a></li></ul>
+</div>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ValueSet.where(id = 'vs-topography-icd-o-3')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3</b> (<a href="qa-tx.html#l30">see Tx log</a>)</td>
+   </tr>
+</table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
 <hr/>
+<a name="RESOURCE_ID_MISMATCH"> </a>
+<h2>RESOURCE_ID_MISMATCH</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-sd-ecog-performance-status.html">fsh-generated/resources/StructureDefinition-sd-ecog-performance-status.json</a></td><td><b>Resource id/url mismatch: sd-ecog-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-sd-histology-topography.html">fsh-generated/resources/StructureDefinition-sd-histology-topography.json</a></td><td><b>Resource id/url mismatch: sd-histology-topography/https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="StructureDefinition-sd-karnofsky-performance-status.html">fsh-generated/resources/StructureDefinition-sd-karnofsky-performance-status.json</a></td><td><b>Resource id/url mismatch: sd-karnofsky-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status</b></td>
+   </tr>
+</table>
+<hr/>
 <a name="Terminology_PassThrough_TX_Message"> </a>
 <h2>Terminology_PassThrough_TX_Message</h2>
  <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="Observation-ECOGExample.html">fsh-generated/resources/Observation-ECOGExample.json</a></td><td><b>The display &quot;Eastern Cooperative Oncology Group performance status - grade 1 (finding)|&quot; is not a valid display for the code {http://snomed.info/sct}422512005 - should be one of ['Eastern Cooperative Oncology Group performance status - grade 1 (finding)', 'ECOG performance status - grade 1', 'Eastern Cooperative Oncology Group performance status - grade 1'] (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#422512005'</b></td>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-HistologyTopographyExample.html">fsh-generated/resources/Observation-HistologyTopographyExample.json</a></td><td><b>Unable to find code 1162767002 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code &quot;1162767002&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1162767002) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#1162767002'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_NoValid_12"> </a>
+<h2>Terminology_TX_NoValid_12</h2>
+ <table class="grid">
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-HistologyTopographyExample.html">fsh-generated/resources/Observation-HistologyTopographyExample.json</a></td><td><b>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3)</b></td>
+   </tr>
+   <tr style="background-color: #ffeeee">
+     <td><a href="Observation-HistologyTopographyExample.html">fsh-generated/resources/Observation-HistologyTopographyExample.json</a></td><td><b>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="Terminology_TX_System_NotKnown"> </a>
+<h2>Terminology_TX_System_NotKnown</h2>
+ <table class="grid">
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HistologyTopographyExample.html">fsh-generated/resources/Observation-HistologyTopographyExample.json</a></td><td><b>Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #fffff2">
+     <td><a href="Observation-HistologyTopographyExample.html">fsh-generated/resources/Observation-HistologyTopographyExample.json</a></td><td><b>Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -115,7 +243,7 @@
 <h2>Type_Specific_Checks_DT_DateTime_Reasonable</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="Patient-Beispielpatient.html">fsh-generated/resources/Patient-Beispielpatient.json</a></td><td><b>The value '1685-03-31' is outside the range of reasonable years - check for data entry error</b></td>
+     <td><a href="Patient-ExamplePatient.html">fsh-generated/resources/Patient-ExamplePatient.json</a></td><td><b>The value '1685-03-31' is outside the range of reasonable years - check for data entry error</b></td>
    </tr>
 </table>
 </body>

@@ -1,0 +1,75 @@
+{
+  "resourceType": "Observation",
+  "id": "HistologyTopographyExample",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}\">Laboratory</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 59847-4}, {http://snomed.info/sct 1145214003}, {http://snomed.info/sct 371480007}\">Histology and Behavior ICD-O-3 Cancer</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/icd-o-3 8070/33}, {http://snomed.info/sct 1162767002}\">schlecht differenziertes Plattenepithelkarzinom</span></p><p><b>bodySite</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/icd-o-3 C34.1}, {http://snomed.info/sct 45653009}\">Lungenoberlappen</span></p></div>"
+  },
+  "status": "final",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
+          "code": "laboratory"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "59847-4",
+        "display": "Histology and Behavior ICD-O-3 Cancer"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1145214003",
+        "display": "Histologic feature of proliferative mass (observable entity)"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "371480007",
+        "display": "Anatomic location of neoplasm (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+        "code": "8070/33",
+        "display": "schlecht differenziertes Plattenepithelkarzinom"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1162767002",
+        "display": "Squamous cell carcinoma (morphologic abnormality)"
+      }
+    ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+        "code": "C34.1",
+        "display": "Lungenoberlappen"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "45653009",
+        "display": "Structure of upper lobe of lung (body structure)"
+      }
+    ]
+  }
+}

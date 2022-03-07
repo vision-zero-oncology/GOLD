@@ -8,9 +8,9 @@
   <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed"/>
   <version value="0.1.0"/>
   <name value="VS_ECOG_Performance_Status_SNOMED"/>
-  <title value="ECOG Performance Status SNOMED"/>
+  <title value="ValueSet ECOG Performance Status SNOMED"/>
   <status value="active"/>
-  <date value="2022-03-04T10:02:11+00:00"/>
+  <date value="2022-03-07T15:59:03+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>

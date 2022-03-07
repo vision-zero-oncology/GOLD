@@ -151,7 +151,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-ECOG.html" title="StructureDefinition/ECOG">ECOG</a>
+                  <a href="StructureDefinition-sd-ecog-performance-status.html"
+                     title="StructureDefinition/sd-ecog-performance-status">Profile ECOG Performance Status</a>
                </td>
                <td>
 <p>Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient’s functional status.</p>
@@ -159,8 +160,17 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="StructureDefinition-KarnofskyIndex.html"
-                     title="StructureDefinition/KarnofskyIndex">KarnofskyIndex</a>
+                  <a href="StructureDefinition-sd-histology-topography.html"
+                     title="StructureDefinition/sd-histology-topography">SD_Histology_Topography</a>
+               </td>
+               <td>
+<p>Profile for the classification of a tumor’s morphology(histology) and topography using ICD-O-3.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="StructureDefinition-sd-karnofsky-performance-status.html"
+                     title="StructureDefinition/sd-karnofsky-performance-status">Profile Karnofsky Performance Status</a>
                </td>
                <td>
 <p>Profile for the Karnofsky Performance Status to measure a cancer patient’s ability to perform ordinary tasks.</p>
@@ -181,10 +191,46 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             <tr>
                <td style="column-width:30%">
                   <a href="ValueSet-vs-ecog-performance-status-snomed.html"
-                     title="ValueSet/vs-ecog-performance-status-snomed">ECOG Performance Status SNOMED</a>
+                     title="ValueSet/vs-ecog-performance-status-snomed">ValueSet ECOG Performance Status SNOMED</a>
                </td>
                <td>
 <p>The ValueSet contains the ECOG Performance Status values from SNOMED CT.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-morphology-icd-o-3.html"
+                     title="ValueSet/vs-morphology-icd-o-3">ValueSet Morphology ICD-O-3</a>
+               </td>
+               <td>
+<p>The ValueSet contains the morphology (histology) codes from ICD-O-3.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-morphology-snomed.html"
+                     title="ValueSet/vs-morphology-snomed">ValueSet Morphology SNOMED</a>
+               </td>
+               <td>
+<p>The ValueSet contains the morphology (histology) codes from SNOMED.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-topography-icd-o-3.html"
+                     title="ValueSet/vs-topography-icd-o-3">ValueSet Topography ICD-O-3</a>
+               </td>
+               <td>
+<p>The ValueSet contains the topography codes from ICD-O-3.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="ValueSet-vs-topography-snomed.html"
+                     title="ValueSet/vs-topography-snomed">ValueSet Topography SNOMED</a>
+               </td>
+               <td>
+<p>The ValueSet contains the topography codes from SNOMED.</p>
 </td>
             </tr>
          </tbody>
@@ -201,14 +247,6 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
          <tbody>
             <tr>
                <td style="column-width:30%">
-                  <a href="Patient-Beispielpatient.html" title="Patient/Beispielpatient">Beispielpatient</a>
-               </td>
-               <td>
-<p>Ein Beispiel für einen Patienten.</p>
-</td>
-            </tr>
-            <tr>
-               <td style="column-width:30%">
                   <a href="Observation-ECOGExample.html" title="Observation/ECOGExample">ECOGExample</a>
                </td>
                <td>
@@ -217,8 +255,25 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
             </tr>
             <tr>
                <td style="column-width:30%">
-                  <a href="Observation-KarnofskyIndexExample.html"
-                     title="Observation/KarnofskyIndexExample">KarnofskyIndexExample</a>
+                  <a href="Patient-ExamplePatient.html" title="Patient/ExamplePatient">ExamplePatient</a>
+               </td>
+               <td>
+<p>Example of a patient.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-HistologyTopographyExample.html"
+                     title="Observation/HistologyTopographyExample">HistologyTopographyExample</a>
+               </td>
+               <td>
+<p>Example tumor histology and topography observation.</p>
+</td>
+            </tr>
+            <tr>
+               <td style="column-width:30%">
+                  <a href="Observation-KarnofskyPerformanceStatusExample.html"
+                     title="Observation/KarnofskyPerformanceStatusExample">KarnofskyPerformanceStatusExample</a>
                </td>
                <td>
 <p>Example Karnofsky performance status observation.</p>
@@ -251,7 +306,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">Berlin Institute of Health at Charité (BIH)</a>.  Package gold#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 4, 2022 10:02+0000">2022-03-04</span>
+          IG &#169; 2022+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">Berlin Institute of Health at Charité (BIH)</a>.  Package gold#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Mar 7, 2022 15:59+0000">2022-03-07</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)"></span>
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

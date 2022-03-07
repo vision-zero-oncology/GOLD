@@ -3,10 +3,10 @@
 <Observation xmlns="http://hl7.org/fhir">
   <id value="ECOGExample"/>
   <meta>
-    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/ECOG"/>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"/>
   </meta>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 89247-1}, {http://snomed.info/sct 423740007}">ECOG Performance Status score</span></p><p><b>subject</b>: <a href="Patient-Beispielpatient.html">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2021-01-17</p><p><b>value</b>: <span title="Codes: {http://loinc.org LA9623-5}, {http://snomed.info/sct 422512005}">Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</span></p></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category survey}">Survey</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 89247-1}, {http://snomed.info/sct 423740007}">ECOG Performance Status score</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title="Codes: {http://loinc.org LA9623-5}, {http://snomed.info/sct 422512005}">Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work</span></p></div>
   </text>
   <status value="final"/>
   <category>
@@ -28,9 +28,9 @@
     </coding>
   </code>
   <subject>
-    <reference value="Patient/Beispielpatient"/>
+    <reference value="Patient/ExamplePatient"/>
   </subject>
-  <effectiveDateTime value="2021-01-17"/>
+  <effectiveDateTime value="2022-03-07"/>
   <valueCodeableConcept>
     <coding>
       <system value="http://loinc.org"/>
@@ -40,7 +40,7 @@
     <coding>
       <system value="http://snomed.info/sct"/>
       <code value="422512005"/>
-      <display value="Eastern Cooperative Oncology Group performance status - grade 1 (finding)|"/>
+      <display value="Eastern Cooperative Oncology Group performance status - grade 1 (finding)"/>
     </coding>
   </valueCodeableConcept>
 </Observation>

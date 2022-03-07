@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="HistologyTopographyExample"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category laboratory}">Laboratory</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 59847-4}, {http://snomed.info/sct 1145214003}, {http://snomed.info/sct 371480007}">Histology and Behavior ICD-O-3 Cancer</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/icd-o-3 8070/33}, {http://snomed.info/sct 1162767002}">schlecht differenziertes Plattenepithelkarzinom</span></p><p><b>bodySite</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/icd-o-3 C34.1}, {http://snomed.info/sct 45653009}">Lungenoberlappen</span></p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="59847-4"/>
+      <display value="Histology and Behavior ICD-O-3 Cancer"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1145214003"/>
+      <display value="Histologic feature of proliferative mass (observable entity)"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="371480007"/>
+      <display value="Anatomic location of neoplasm (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <effectiveDateTime value="2022-03-07"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+      <code value="8070/33"/>
+      <display value="schlecht differenziertes Plattenepithelkarzinom"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1162767002"/>
+      <display value="Squamous cell carcinoma (morphologic abnormality)"/>
+    </coding>
+  </valueCodeableConcept>
+  <bodySite>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>
+      <code value="C34.1"/>
+      <display value="Lungenoberlappen"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="45653009"/>
+      <display value="Structure of upper lobe of lung (body structure)"/>
+    </coding>
+  </bodySite>
+</Observation>
