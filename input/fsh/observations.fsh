@@ -173,3 +173,53 @@ Description: "Example tumor histology and topography observation."
 * valueCodeableConcept.coding[morphologySnomed] = SCT#1162767002 "Squamous cell carcinoma (morphologic abnormality)"
 * bodySite.coding[topographyICD-O-3] = ICDO3#C34.1 "Lungenoberlappen"
 * bodySite.coding[topographySnomed] = SCT#45653009 "Structure of upper lobe of lung (body structure)"
+
+// Histologic Tumor Grade
+
+Profile: SD_Histologic_Grade
+Parent: Observation
+Id: sd-histologic-grade
+Title: "Profile Histologic Tumor Grade"
+Description: "Profile for the description of a tumor's grade using the general four-tier grading scheme."
+* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade"
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains laboratory 1..*
+* category[laboratory] = ObsCat#laboratory
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    loinc 1..* and
+    snomed 0..*
+* code.coding[loinc] = LNC#33732-9
+* code.coding[loinc].system 1..
+* code.coding[loinc].code 1..
+* code.coding[snomed] = SCT#371469007
+* code.coding[snomed].system 1..
+* code.coding[snomed].code 1..
+* subject 1..1
+* subject only Reference(Patient)
+* value[x] only CodeableConcept
+* valueCodeableConcept.coding ^slicing.discriminator.type = #pattern
+* valueCodeableConcept.coding ^slicing.discriminator.path = "$this"
+* valueCodeableConcept.coding ^slicing.rules = #open
+* valueCodeableConcept.coding contains
+    histologicGradeSnomed 1..1 MS
+* valueCodeableConcept.coding[histologicGradeSnomed] from VS_Histologic_Grade_SNOMED (required)
+* valueCodeableConcept.coding[histologicGradeSnomed] ^patternCoding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding[histologicGradeSnomed].system 1..
+* valueCodeableConcept.coding[histologicGradeSnomed].code 1..
+
+Instance: example-histologic-grade
+InstanceOf: sd-histologic-grade
+Usage: #example
+Title: "Example Histologic Tumor Grade"
+Description: "Example tumor grade using the general four-tier grading scheme."
+* status = #final
+* code.coding[loinc] = LNC#33732-9 "Histology grade [Identifier] in Cancer specimen"
+* code.coding[snomed] = SCT#371469007 "Histologic grade of neoplasm (observable entity)"
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2022-03-07"
+* valueCodeableConcept.coding[histologicGradeSnomed] = SCT#54102005 "G1 grade (finding)"
