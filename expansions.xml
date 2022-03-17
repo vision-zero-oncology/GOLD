@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="397cad05-ac32-4167-bf00-71da88ecbc48"/>
+  <id value="0d5e8ff3-e558-42a0-a950-db46cc85d26f"/>
   <meta>
-    <lastUpdated value="2022-03-07T16:28:10.768+00:00"/>
+    <lastUpdated value="2022-03-17T14:27:38.786+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -89,7 +89,7 @@
         <name value="VS_ECOG_Performance_Status_SNOMED"/>
         <title value="ValueSet ECOG Performance Status SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-07T16:28:10+00:00"/>
+        <date value="2022-03-17T14:27:38+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -104,8 +104,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:1134d468-8ce3-4e74-b0cb-d4d3d9b6cd64"/>
-          <timestamp value="2022-03-07T16:28:26+00:00"/>
+          <identifier value="urn:uuid:995cccca-4548-44d9-857f-37f301fac0e3"/>
+          <timestamp value="2022-03-17T14:27:59+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -148,6 +148,136 @@
             <system value="http://snomed.info/sct"/>
             <code value="425389002"/>
             <display value="Eastern Cooperative Oncology Group performance status - grade 0 (finding)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histologic-grade-snomed"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-histologic-grade-snomed"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 5 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
+                <code>http://snomed.info/sct</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-12619005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12619005">12619005</a>
+                </td>
+                <td>GX grade (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-54102005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=54102005">54102005</a>
+                </td>
+                <td>G1 grade (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-1663004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1663004">1663004</a>
+                </td>
+                <td>G2 grade (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-61026006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61026006">61026006</a>
+                </td>
+                <td>G3 grade (finding)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-258245003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=258245003">258245003</a>
+                </td>
+                <td>G4 grade (finding)</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histologic-grade-snomed"/>
+        <version value="0.1.0"/>
+        <name value="VS_Histologic_Grade_SNOMED"/>
+        <title value="ValueSet Histologic Grade SNOMED"/>
+        <status value="active"/>
+        <date value="2022-03-17T14:27:38+00:00"/>
+        <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+        <contact>
+          <name value="Berlin Institute of Health at Charité (BIH)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/"/>
+          </telecom>
+        </contact>
+        <description value="The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified."/>
+        <expansion>
+          <identifier value="urn:uuid:5f41ae4e-462d-4686-87fb-afdd4a4b0577"/>
+          <timestamp value="2022-03-17T14:27:59+00:00"/>
+          <total value="5"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="12619005"/>
+            <display value="GX grade (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="54102005"/>
+            <display value="G1 grade (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="1663004"/>
+            <display value="G2 grade (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="61026006"/>
+            <display value="G3 grade (finding)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="258245003"/>
+            <display value="G4 grade (finding)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -8188,7 +8318,7 @@
         <name value="VS_Morphology_SNOMED"/>
         <title value="ValueSet Morphology SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-07T16:28:10+00:00"/>
+        <date value="2022-03-17T14:27:38+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -8206,8 +8336,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:788bae8f-6a27-48f0-bc0b-ff9542ec0463"/>
-          <timestamp value="2022-03-07T16:28:27+00:00"/>
+          <identifier value="urn:uuid:c3ae6434-8677-4057-a23a-8cc0eff21c53"/>
+          <timestamp value="2022-03-17T14:28:00+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -21260,7 +21390,7 @@
         <name value="VS_Topography_SNOMED"/>
         <title value="ValueSet Topography SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-07T16:28:10+00:00"/>
+        <date value="2022-03-17T14:27:38+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -21278,8 +21408,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:5d01ecd1-af62-4fb6-9077-dd151120d5aa"/>
-          <timestamp value="2022-03-07T16:28:28+00:00"/>
+          <identifier value="urn:uuid:3c6141d3-1011-477b-b7bc-a5d2d65b7d98"/>
+          <timestamp value="2022-03-17T14:28:02+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>

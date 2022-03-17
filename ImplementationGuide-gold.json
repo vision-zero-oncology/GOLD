@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "GOLD",
   "status": "draft",
-  "date": "2022-03-07T16:28:10+00:00",
+  "date": "2022-03-17T14:27:38+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -326,6 +326,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/sd-histologic-grade"
+        },
+        "name": "Profile Histologic Tumor Grade",
+        "description": "Profile for the description of a tumor's grade using the general four-tier grading scheme.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/sd-histology-topography"
         },
         "name": "Profile Histology Topography",
@@ -358,6 +372,20 @@
         },
         "name": "ValueSet ECOG Performance Status SNOMED",
         "description": "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-histologic-grade-snomed"
+        },
+        "name": "ValueSet Histologic Grade SNOMED",
+        "description": "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified.",
         "exampleBoolean": false
       },
       {
@@ -443,6 +471,20 @@
         "name": "Example ECOG Performance Status",
         "description": "Example ECOG status observation.",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-histologic-grade"
+        },
+        "name": "Example Histologic Tumor Grade",
+        "description": "Example tumor grade using the general four-tier grading scheme.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade"
       },
       {
         "extension": [

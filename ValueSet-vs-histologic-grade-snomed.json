@@ -1,0 +1,56 @@
+{
+  "resourceType": "ValueSet",
+  "id": "vs-histologic-grade-snomed",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12619005\">12619005</a></td><td>GX grade (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=54102005\">54102005</a></td><td>G1 grade (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1663004\">1663004</a></td><td>G2 grade (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61026006\">61026006</a></td><td>G3 grade (finding)</td></tr><tr><td><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=258245003\">258245003</a></td><td>G4 grade (finding)</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histologic-grade-snomed",
+  "version": "0.1.0",
+  "name": "VS_Histologic_Grade_SNOMED",
+  "title": "ValueSet Histologic Grade SNOMED",
+  "status": "active",
+  "date": "2022-03-17T14:27:38+00:00",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "name": "Berlin Institute of Health at Charité (BIH)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/"
+        }
+      ]
+    }
+  ],
+  "description": "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "12619005",
+            "display": "GX grade (finding)"
+          },
+          {
+            "code": "54102005",
+            "display": "G1 grade (finding)"
+          },
+          {
+            "code": "1663004",
+            "display": "G2 grade (finding)"
+          },
+          {
+            "code": "61026006",
+            "display": "G3 grade (finding)"
+          },
+          {
+            "code": "258245003",
+            "display": "G4 grade (finding)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -10,6 +10,10 @@
         "title": "Profile ECOG Performance Status"
       },
       {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade",
+        "title": "Profile Histologic Tumor Grade"
+      },
+      {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography",
         "title": "Profile Histology Topography"
       },

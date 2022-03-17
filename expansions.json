@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "397cad05-ac32-4167-bf00-71da88ecbc48",
+  "id" : "0d5e8ff3-e558-42a0-a950-db46cc85d26f",
   "meta" : {
-    "lastUpdated" : "2022-03-07T16:28:10.768+00:00"
+    "lastUpdated" : "2022-03-17T14:27:38.786+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "VS_ECOG_Performance_Status_SNOMED",
       "title" : "ValueSet ECOG Performance Status SNOMED",
       "status" : "active",
-      "date" : "2022-03-07T16:28:10+00:00",
+      "date" : "2022-03-17T14:27:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -35,8 +35,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:1134d468-8ce3-4e74-b0cb-d4d3d9b6cd64",
-        "timestamp" : "2022-03-07T16:28:26+00:00",
+        "identifier" : "urn:uuid:995cccca-4548-44d9-857f-37f301fac0e3",
+        "timestamp" : "2022-03-17T14:27:59+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -84,6 +84,74 @@
     }
   },
   {
+    "fullUrl" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histologic-grade-snomed",
+    "resource" : {
+      "resourceType" : "ValueSet",
+      "id" : "vs-histologic-grade-snomed",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 5 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on SNOMED CT International edition 31-Jul 2021</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html\"><code>http://snomed.info/sct</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-12619005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12619005\">12619005</a></td><td>GX grade (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-54102005\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=54102005\">54102005</a></td><td>G1 grade (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-1663004\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1663004\">1663004</a></td><td>G2 grade (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-61026006\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=61026006\">61026006</a></td><td>G3 grade (finding)</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---snomed.info-sct-258245003\"> </a><a href=\"http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=258245003\">258245003</a></td><td>G4 grade (finding)</td><td/></tr></table></div>"
+      },
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histologic-grade-snomed",
+      "version" : "0.1.0",
+      "name" : "VS_Histologic_Grade_SNOMED",
+      "title" : "ValueSet Histologic Grade SNOMED",
+      "status" : "active",
+      "date" : "2022-03-17T14:27:38+00:00",
+      "publisher" : "Berlin Institute of Health at Charité (BIH)",
+      "contact" : [{
+        "name" : "Berlin Institute of Health at Charité (BIH)",
+        "telecom" : [{
+          "system" : "url",
+          "value" : "https://www.bihealth.org/"
+        }]
+      }],
+      "description" : "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified.",
+      "expansion" : {
+        "identifier" : "urn:uuid:5f41ae4e-462d-4686-87fb-afdd4a4b0577",
+        "timestamp" : "2022-03-17T14:27:59+00:00",
+        "total" : 5,
+        "parameter" : [{
+          "name" : "excludeNested",
+          "valueBoolean" : false
+        },
+        {
+          "name" : "limitedExpansion",
+          "valueBoolean" : true
+        },
+        {
+          "name" : "version",
+          "valueUri" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"
+        }],
+        "contains" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "12619005",
+          "display" : "GX grade (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "54102005",
+          "display" : "G1 grade (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "1663004",
+          "display" : "G2 grade (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "61026006",
+          "display" : "G3 grade (finding)"
+        },
+        {
+          "system" : "http://snomed.info/sct",
+          "code" : "258245003",
+          "display" : "G4 grade (finding)"
+        }]
+      }
+    }
+  },
+  {
     "fullUrl" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed",
     "resource" : {
       "resourceType" : "ValueSet",
@@ -97,7 +165,7 @@
       "name" : "VS_Morphology_SNOMED",
       "title" : "ValueSet Morphology SNOMED",
       "status" : "active",
-      "date" : "2022-03-07T16:28:10+00:00",
+      "date" : "2022-03-17T14:27:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -117,8 +185,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:788bae8f-6a27-48f0-bc0b-ff9542ec0463",
-        "timestamp" : "2022-03-07T16:28:27+00:00",
+        "identifier" : "urn:uuid:c3ae6434-8677-4057-a23a-8cc0eff21c53",
+        "timestamp" : "2022-03-17T14:28:00+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5149,7 +5217,7 @@
       "name" : "VS_Topography_SNOMED",
       "title" : "ValueSet Topography SNOMED",
       "status" : "active",
-      "date" : "2022-03-07T16:28:10+00:00",
+      "date" : "2022-03-17T14:27:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5169,8 +5237,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:5d01ecd1-af62-4fb6-9077-dd151120d5aa",
-        "timestamp" : "2022-03-07T16:28:28+00:00",
+        "identifier" : "urn:uuid:3c6141d3-1011-477b-b7bc-a5d2d65b7d98",
+        "timestamp" : "2022-03-17T14:28:02+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",

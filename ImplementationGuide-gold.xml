@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="GOLD"/>
   <status value="draft"/>
-  <date value="2022-03-07T16:28:10+00:00"/>
+  <date value="2022-03-17T14:27:38+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -206,6 +206,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sd-histologic-grade"/>
+      </reference>
+      <name value="Profile Histologic Tumor Grade"/>
+      <description value="Profile for the description of a tumor&#39;s grade using the general four-tier grading scheme."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/sd-histology-topography"/>
       </reference>
       <name value="Profile Histology Topography"/>
@@ -232,6 +243,17 @@
       </reference>
       <name value="ValueSet ECOG Performance Status SNOMED"/>
       <description value="The ValueSet contains the ECOG Performance Status values from SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-histologic-grade-snomed"/>
+      </reference>
+      <name value="ValueSet Histologic Grade SNOMED"/>
+      <description value="The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -299,6 +321,17 @@
       <name value="Example ECOG Performance Status"/>
       <description value="Example ECOG status observation."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-histologic-grade"/>
+      </reference>
+      <name value="Example Histologic Tumor Grade"/>
+      <description value="Example tumor grade using the general four-tier grading scheme."/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
