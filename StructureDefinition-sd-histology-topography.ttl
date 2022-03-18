@@ -28,7 +28,7 @@
   fhir:StructureDefinition.name [ fhir:value "SD_Histology_Topography"];
   fhir:StructureDefinition.title [ fhir:value "Profile Histology Topography"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-17T16:24:03+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-18T08:55:58+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
