@@ -2,8 +2,8 @@
 Profile: SD_Vital_Signs_Base
 Parent: Observation
 Id: sd-vital-signs-base
-Title: "Vital Signs Base Profile"
-Description: "Vital signs base definition profile. May not be used directly. Only for reprofiling purposes."
+Title: "Profile Vital Signs Base"
+Description: "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes."
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
 * obeys vs-2
 * status MS
@@ -49,7 +49,7 @@ Profile: SD_Body_Height
 Parent: SD_Vital_Signs_Base
 Id: sd-body-height
 Title: "Profile Body Height"
-Description: "Body Height of a patient"
+Description: "Profile for body Height of a patient"
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
 * code ^short = "Body Height"
 * code ^definition = "Body Height"
