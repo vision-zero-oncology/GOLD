@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="GOLD"/>
   <status value="draft"/>
-  <date value="2022-03-18T11:44:19+00:00"/>
+  <date value="2022-03-18T11:45:27+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -340,7 +340,7 @@
       <reference>
         <reference value="Patient/ExamplePatient"/>
       </reference>
-      <name value="ExamplePatient"/>
+      <name value="Example Patient"/>
       <description value="Example of a patient."/>
       <exampleBoolean value="true"/>
     </resource>

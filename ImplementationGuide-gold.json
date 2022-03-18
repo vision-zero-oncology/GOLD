@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "GOLD",
   "status": "draft",
-  "date": "2022-03-18T11:44:19+00:00",
+  "date": "2022-03-18T11:45:27+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -496,7 +496,7 @@
         "reference": {
           "reference": "Patient/ExamplePatient"
         },
-        "name": "ExamplePatient",
+        "name": "Example Patient",
         "description": "Example of a patient.",
         "exampleBoolean": true
       },

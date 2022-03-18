@@ -28,7 +28,7 @@
   fhir:StructureDefinition.name [ fhir:value "SD_Histologic_Grade"];
   fhir:StructureDefinition.title [ fhir:value "Profile Histologic Tumor Grade"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-18T11:44:19+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-18T11:45:27+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
