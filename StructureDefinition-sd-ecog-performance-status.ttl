@@ -28,7 +28,7 @@
   fhir:StructureDefinition.name [ fhir:value "SD_ECOG_Performance_Status"];
   fhir:StructureDefinition.title [ fhir:value "Profile ECOG Performance Status"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-18T11:37:05+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-18T11:44:19+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "GOLD"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-18T11:37:05+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-18T11:44:19+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -411,7 +411,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-histologic-grade-snomed" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet Histologic Grade SNOMED" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified from SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9;
@@ -439,7 +439,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-morphology-snomed" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet Morphology SNOMED" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the morphology (histology) codes from SNOMED." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the morphology (histology) codes from SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 11;
@@ -467,7 +467,7 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-topography-snomed" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet Topography SNOMED" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the topography codes from SNOMED." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the topography codes from SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;

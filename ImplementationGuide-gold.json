@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "GOLD",
   "status": "draft",
-  "date": "2022-03-18T11:37:05+00:00",
+  "date": "2022-03-18T11:44:19+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -427,7 +427,7 @@
           "reference": "ValueSet/vs-histologic-grade-snomed"
         },
         "name": "ValueSet Histologic Grade SNOMED",
-        "description": "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified.",
+        "description": "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified from SNOMED CT.",
         "exampleBoolean": false
       },
       {
@@ -455,7 +455,7 @@
           "reference": "ValueSet/vs-morphology-snomed"
         },
         "name": "ValueSet Morphology SNOMED",
-        "description": "The ValueSet contains the morphology (histology) codes from SNOMED.",
+        "description": "The ValueSet contains the morphology (histology) codes from SNOMED CT.",
         "exampleBoolean": false
       },
       {
@@ -483,7 +483,7 @@
           "reference": "ValueSet/vs-topography-snomed"
         },
         "name": "ValueSet Topography SNOMED",
-        "description": "The ValueSet contains the topography codes from SNOMED.",
+        "description": "The ValueSet contains the topography codes from SNOMED CT.",
         "exampleBoolean": false
       },
       {
