@@ -14,6 +14,13 @@
     "name": "SD_Body_Height"
   },
   {
+    "id": "sd-body-weight",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight",
+    "version": "0.1.0",
+    "name": "SD_Body_Weight"
+  },
+  {
     "id": "sd-ecog-performance-status",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status",

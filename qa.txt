@@ -1,12 +1,13 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 9, warn = 5, info = 2
+err = 10, warn = 6, info = 2
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.113
-Generated Fri Mar 18 11:20:41 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
- Build Errors : 0 / 2 / 0
+Generated Fri Mar 18 11:29:37 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+ Build Errors : 0 / 3 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-body-height : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-body-weight : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-ecog-performance-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-histologic-grade : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-histology-topography : 3 / 0 / 3
@@ -14,6 +15,7 @@ Generated Fri Mar 18 11:20:41 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/Observation-example-vital-signs-base : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-body-height : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-sd-body-weight : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-ecog-performance-status : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-histologic-grade : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-histology-topography : 1 / 0 / 1
@@ -28,9 +30,11 @@ Generated Fri Mar 18 11:20:41 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
 </table>
 == n/a ==
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-body-height.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-body-weight.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-vital-signs-base.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/ImplementationGuide-gold.json ==
 == fsh-generated/resources/Observation-example-body-height.json ==
+== fsh-generated/resources/Observation-example-body-weight.json ==
 == fsh-generated/resources/Observation-example-ecog-performance-status.json ==
 == fsh-generated/resources/Observation-example-histologic-grade.json ==
 == fsh-generated/resources/Observation-example-histology-topography.json ==
@@ -45,6 +49,8 @@ ERROR: Observation/example-histology-topography: Observation.bodySite.coding[0]:
 WARNING: Patient/ExamplePatient: Patient.birthDate: The value '1685-03-31' is outside the range of reasonable years - check for data entry error
 == fsh-generated/resources/StructureDefinition-sd-body-height.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: sd-body-height/https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height
+== fsh-generated/resources/StructureDefinition-sd-body-weight.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: sd-body-weight/https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight
 == fsh-generated/resources/StructureDefinition-sd-ecog-performance-status.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: sd-ecog-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status
 == fsh-generated/resources/StructureDefinition-sd-histologic-grade.json ==

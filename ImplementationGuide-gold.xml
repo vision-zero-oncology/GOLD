@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="GOLD"/>
   <status value="draft"/>
-  <date value="2022-03-18T11:20:11+00:00"/>
+  <date value="2022-03-18T11:29:02+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -206,6 +206,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sd-body-weight"/>
+      </reference>
+      <name value="Profile Body Weight"/>
+      <description value="Profile for body weight of a patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/sd-ecog-performance-status"/>
       </reference>
       <name value="Profile ECOG Performance Status"/>
@@ -342,6 +353,16 @@
       </reference>
       <name value="example-body-height"/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-body-weight"/>
+      </reference>
+      <name value="example-body-weight"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

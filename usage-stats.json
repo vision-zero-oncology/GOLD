@@ -10,6 +10,10 @@
         "title": "Profile Body Height"
       },
       {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight",
+        "title": "Profile Body Weight"
+      },
+      {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status",
         "title": "Profile ECOG Performance Status"
       },

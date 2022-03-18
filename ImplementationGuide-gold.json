@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "GOLD",
   "status": "draft",
-  "date": "2022-03-18T11:20:11+00:00",
+  "date": "2022-03-18T11:29:02+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -326,6 +326,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/sd-body-weight"
+        },
+        "name": "Profile Body Weight",
+        "description": "Profile for body weight of a patient",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/sd-ecog-performance-status"
         },
         "name": "Profile ECOG Performance Status",
@@ -498,6 +512,19 @@
         },
         "name": "example-body-height",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-body-weight"
+        },
+        "name": "example-body-weight",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"
       },
       {
         "extension": [
