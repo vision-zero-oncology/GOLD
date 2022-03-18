@@ -24,7 +24,7 @@ Description: "The ValueSet contains the topography codes from ICD-O-3."
 ValueSet: VS_Morphology_SNOMED
 Id: vs-morphology-snomed
 Title: "ValueSet Morphology SNOMED"
-Description: "The ValueSet contains the morphology (histology) codes from SNOMED."
+Description: "The ValueSet contains the morphology (histology) codes from SNOMED CT."
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
 * include codes from system SCT where concept descendent-of #400177003
 
@@ -32,7 +32,7 @@ Description: "The ValueSet contains the morphology (histology) codes from SNOMED
 ValueSet: VS_Topography_SNOMED
 Id: vs-topography-snomed
 Title: "ValueSet Topography SNOMED"
-Description: "The ValueSet contains the topography codes from SNOMED."
+Description: "The ValueSet contains the topography codes from SNOMED CT."
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
 * include codes from system SCT where concept descendent-of #123037004
 
@@ -40,7 +40,7 @@ Description: "The ValueSet contains the topography codes from SNOMED."
 ValueSet: VS_Histologic_Grade_SNOMED
 Id: vs-histologic-grade-snomed
 Title: "ValueSet Histologic Grade SNOMED"
-Description: "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified."
+Description: "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified from SNOMED CT."
 * SCT#12619005 "GX grade (finding)"
 * SCT#54102005 "G1 grade (finding)"
 * SCT#1663004 "G2 grade (finding)"
