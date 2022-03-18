@@ -1,5 +1,7 @@
 Instance: ExamplePatient
 InstanceOf: Patient
+Usage: #example
+Title: "Example Patient"
 Description: "Example of a patient."
 * active = true
 * gender = #male
