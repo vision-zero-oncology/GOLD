@@ -35,6 +35,8 @@ Description: "Profile for the base definition of all vital signs. May not be use
 Instance: example-vital-signs-base
 InstanceOf: sd-vital-signs-base
 Usage: #example
+Title: "Example Vital Signs Base Observation"
+Description: "Example of a vital signs base observation."
 * status = #final
 * category = ObsCat#vital-signs
 * code.coding[0] = LNC#8302-2 "Body height"
@@ -80,6 +82,8 @@ Description: "Profile for body Height of a patient"
 Instance: example-body-height
 InstanceOf: sd-body-height
 Usage: #example
+Title: "Example Body Height"
+Description: "Example body height of a patient."
 * status = #final
 * category = ObsCat#vital-signs
 * code.coding[0] = LNC#8302-2 "Body height"
@@ -125,6 +129,8 @@ Description: "Profile for body weight of a patient"
 Instance: example-body-weight
 InstanceOf: sd-body-weight
 Usage: #example
+Title: "Example Body Weight"
+Description: "Example body weight of a patient."
 * status = #final
 * category = ObsCat#vital-signs
 * code.coding[0] = LNC#29463-7 "Body weight"
