@@ -90,7 +90,49 @@ Usage: #example
 * valueQuantity = 167 'cm' "centimeter"
 
 // Body Weight
+Profile: SD_Body_Weight
+Parent: SD_Vital_Signs_Base
+Id: sd-body-weight
+Title: "Profile Body Weight"
+Description: "Profile for body weight of a patient"
+* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"
+* code ^short = "Body Weight"
+* code ^definition = "Body Weight"
+* code ^comment = "Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    loinc 1..* and
+    snomed 0..*
+* code.coding[loinc] = LNC#29463-7
+* code.coding[loinc].system 1..
+* code.coding[loinc].code 1..
+* code.coding[snomed] = SCT#27113001
+* code.coding[snomed].system 1..
+* code.coding[snomed].code 1..
+* value[x] only Quantity
+* value[x] MS
+* valueQuantity 0..1
+* valueQuantity.value 1.. MS
+* valueQuantity.unit 1.. MS
+* valueQuantity.system 1.. MS
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code 1.. MS
+* valueQuantity.code from http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.0 (required)
+* dataAbsentReason MS
 
+Instance: example-body-weight
+InstanceOf: sd-body-weight
+Usage: #example
+* status = #final
+* category = ObsCat#vital-signs
+* code.coding[0] = LNC#29463-7 "Body weight"
+* code.coding[+] = SCT#27113001 "Body weight (observable entity)"
+* code.text = "Body weight"
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2022-02-18"
+* valueQuantity = 84 'kg' "kilogram"
 
 // ECOG
 Profile: SD_ECOG_Performance_Status
