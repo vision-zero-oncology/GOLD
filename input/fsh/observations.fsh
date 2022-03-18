@@ -32,6 +32,18 @@ Description: "Vital signs base definition profile. May not be used directly. Onl
 * hasMember ^short = "Used when reporting vital signs panel components"
 * hasMember ^definition = "Used when reporting vital signs panel components."
 
+Instance: example-vital-signs-base
+InstanceOf: sd-vital-signs-base
+Usage: #example
+* status = #final
+* category = ObsCat#vital-signs
+* code.coding[0] = LNC#8302-2 "Body height"
+* code.coding[+] = SCT#1153637007 "Body height (observable entity)"
+* code.text = "Body height"
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2022-02-18"
+* valueQuantity = 167 'cm' "centimeter"
+
 //Body Height
 Profile: SD_Body_Height
 Parent: SD_Vital_Signs_Base
@@ -48,10 +60,10 @@ Description: "Body Height of a patient"
 * code.coding contains
     loinc 1..* and
     snomed 0..*
-* code.coding[loinc] = $loinc#8302-2
+* code.coding[loinc] = LNC#8302-2
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
-* code.coding[snomed] = $sct#1153637007
+* code.coding[snomed] = SCT#1153637007
 * code.coding[snomed].system 1..
 * code.coding[snomed].code 1..
 * value[x] only Quantity
@@ -66,16 +78,19 @@ Description: "Body Height of a patient"
 * dataAbsentReason MS
 
 Instance: example-body-height
-InstanceOf: SD_Body_Height
+InstanceOf: sd-body-height
 Usage: #example
 * status = #final
-* category = $observation-category#vital-signs
-* code.coding[0] = $loinc#8302-2 "Body height"
-* code.coding[+] = $sct#1153637007 "Body height (observable entity)"
+* category = ObsCat#vital-signs
+* code.coding[0] = LNC#8302-2 "Body height"
+* code.coding[+] = SCT#1153637007 "Body height (observable entity)"
 * code.text = "Body height"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-02-18"
 * valueQuantity = 167 'cm' "centimeter"
+
+// Body Weight
+
 
 // ECOG
 Profile: SD_ECOG_Performance_Status
