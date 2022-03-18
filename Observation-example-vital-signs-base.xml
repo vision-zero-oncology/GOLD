@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-vital-signs-base"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}">Vital Signs</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 8302-2}, {http://snomed.info/sct 1153637007}">Body height</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2022-02-18</p><p><b>value</b>: 167 centimeter</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="8302-2"/>
+      <display value="Body height"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1153637007"/>
+      <display value="Body height (observable entity)"/>
+    </coding>
+    <text value="Body height"/>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <effectiveDateTime value="2022-02-18"/>
+  <valueQuantity>
+    <value value="167"/>
+    <unit value="centimeter"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="cm"/>
+  </valueQuantity>
+</Observation>

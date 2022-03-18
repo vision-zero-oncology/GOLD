@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="GOLD"/>
   <status value="draft"/>
-  <date value="2022-03-18T09:03:10+00:00"/>
+  <date value="2022-03-18T11:13:47+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -195,6 +195,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sd-body-height"/>
+      </reference>
+      <name value="Profile Body Height"/>
+      <description value="Body Height of a patient"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/sd-ecog-performance-status"/>
       </reference>
       <name value="Profile ECOG Performance Status"/>
@@ -232,6 +243,17 @@
       </reference>
       <name value="Profile Karnofsky Performance Status"/>
       <description value="Profile for the Karnofsky Performance Status to measure a cancer patient&#39;s ability to perform ordinary tasks."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/sd-vital-signs-base"/>
+      </reference>
+      <name value="Vital Signs Base Profile"/>
+      <description value="Vital signs base definition profile. May not be used directly. Only for reprofiling purposes."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -316,6 +338,16 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/example-body-height"/>
+      </reference>
+      <name value="example-body-height"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/example-ecog-performance-status"/>
       </reference>
       <name value="Example ECOG Performance Status"/>
@@ -354,6 +386,16 @@
       <name value="Example Karnofsky Performance Status"/>
       <description value="Example Karnofsky performance status observation."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-vital-signs-base"/>
+      </reference>
+      <name value="example-vital-signs-base"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"/>
     </resource>
     <page>
       <nameUrl value="toc.html"/>

@@ -1,20 +1,24 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 7, warn = 3, info = 2
+err = 9, warn = 5, info = 2
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.113
-Generated Fri Mar 18 09:03:40 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
- Build Errors : 0 / 0 / 0
+Generated Fri Mar 18 11:14:19 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+ Build Errors : 0 / 2 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-body-height : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-ecog-performance-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-histologic-grade : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-histology-topography : 3 / 0 / 3
  /github/workspace/fsh-generated/resources/Observation-example-karnofsky-performance-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-vital-signs-base : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-sd-body-height : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-ecog-performance-status : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-histologic-grade : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-histology-topography : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-sd-karnofsky-performance-status : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-sd-vital-signs-base : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-ecog-performance-status-snomed : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-histologic-grade-snomed : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-morphology-icd-o-3 : 0 / 1 / 1
@@ -23,7 +27,10 @@ Generated Fri Mar 18 09:03:40 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/ValueSet-vs-topography-snomed : 0 / 0 / 1
 </table>
 == n/a ==
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-body-height.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
+WARNING: Unable to find ImplementationGuide.definition.resource.description for the resource Observation/example-vital-signs-base.  Descriptions are strongly encouraged if they cannot be inferred from the resource to allow proper population of the artifact list.
 == fsh-generated/resources/ImplementationGuide-gold.json ==
+== fsh-generated/resources/Observation-example-body-height.json ==
 == fsh-generated/resources/Observation-example-ecog-performance-status.json ==
 == fsh-generated/resources/Observation-example-histologic-grade.json ==
 == fsh-generated/resources/Observation-example-histology-topography.json ==
@@ -33,8 +40,11 @@ ERROR: Observation/example-histology-topography: Observation.value.ofType(Codeab
 INFORMATION: Observation/example-histology-topography: Observation.bodySite.coding[0]: Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated
 ERROR: Observation/example-histology-topography: Observation.bodySite.coding[0]: The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3)
 == fsh-generated/resources/Observation-example-karnofsky-performance-status.json ==
+== fsh-generated/resources/Observation-example-vital-signs-base.json ==
 == fsh-generated/resources/Patient-ExamplePatient.json ==
 WARNING: Patient/ExamplePatient: Patient.birthDate: The value '1685-03-31' is outside the range of reasonable years - check for data entry error
+== fsh-generated/resources/StructureDefinition-sd-body-height.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: sd-body-height/https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height
 == fsh-generated/resources/StructureDefinition-sd-ecog-performance-status.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: sd-ecog-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status
 == fsh-generated/resources/StructureDefinition-sd-histologic-grade.json ==
@@ -43,6 +53,8 @@ ERROR: StructureDefinition.url: Resource id/url mismatch: sd-histologic-grade/ht
 ERROR: StructureDefinition.url: Resource id/url mismatch: sd-histology-topography/https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography
 == fsh-generated/resources/StructureDefinition-sd-karnofsky-performance-status.json ==
 ERROR: StructureDefinition.url: Resource id/url mismatch: sd-karnofsky-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status
+== fsh-generated/resources/StructureDefinition-sd-vital-signs-base.json ==
+ERROR: StructureDefinition.url: Resource id/url mismatch: sd-vital-signs-base/https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base
 == fsh-generated/resources/ValueSet-vs-ecog-performance-status-snomed.json ==
 == fsh-generated/resources/ValueSet-vs-histologic-grade-snomed.json ==
 == fsh-generated/resources/ValueSet-vs-morphology-icd-o-3.json ==

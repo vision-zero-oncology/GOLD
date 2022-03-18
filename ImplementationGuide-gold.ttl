@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "GOLD"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-18T09:03:10+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-18T11:13:47+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -295,6 +295,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-body-height>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-body-height" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Body Height" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body Height of a patient" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 1;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-ecog-performance-status>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/sd-ecog-performance-status" ]
        ];
@@ -302,7 +316,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 1;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -316,7 +330,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the description of a tumor's grade using the general four-tier grading scheme." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -330,7 +344,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -344,7 +358,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 5;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-vital-signs-base>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-vital-signs-base" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vital Signs Base Profile" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vital signs base definition profile. May not be used directly. Only for reprofiling purposes." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -358,7 +386,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the ECOG Performance Status values from SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 7;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -372,7 +400,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -386,7 +414,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the morphology (histology) codes from ICD-O-3." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 9;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -400,7 +428,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the morphology (histology) codes from SNOMED." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -414,7 +442,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the topography codes from ICD-O-3." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -428,7 +456,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the topography codes from SNOMED." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -442,7 +470,23 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 13;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-body-height>;
+         fhir:Reference.reference [ fhir:value "Observation/example-body-height" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-body-height" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height>
+       ]
+     ], [
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -459,7 +503,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status>
        ]
      ], [
-       fhir:index 12;
+       fhir:index 15;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -476,7 +520,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade>
        ]
      ], [
-       fhir:index 13;
+       fhir:index 16;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -493,7 +537,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography>
        ]
      ], [
-       fhir:index 14;
+       fhir:index 17;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -508,6 +552,22 @@
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status";
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status>
+       ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-vital-signs-base>;
+         fhir:Reference.reference [ fhir:value "Observation/example-vital-signs-base" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-vital-signs-base" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base>
        ]
      ];
      fhir:ImplementationGuide.definition.page [

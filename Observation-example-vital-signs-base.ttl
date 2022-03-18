@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/Observation/example-vital-signs-base> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-vital-signs-base"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base";
+       fhir:index 0;
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>category</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/observation-category vital-signs}\">Vital Signs</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 8302-2}, {http://snomed.info/sct 1153637007}\">Body height</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1685-03-31</a></p><p><b>effective</b>: 2022-02-18</p><p><b>value</b>: 167 centimeter</p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
+       fhir:Coding.code [ fhir:value "vital-signs" ]
+     ]
+  ];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:8302-2;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "8302-2" ];
+       fhir:Coding.display [ fhir:value "Body height" ]
+     ], [
+       fhir:index 1;
+       a sct:1153637007;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "1153637007" ];
+       fhir:Coding.display [ fhir:value "Body height (observable entity)" ]
+     ];
+     fhir:CodeableConcept.text [ fhir:value "Body height" ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-02-18"^^xsd:date];
+  fhir:Observation.valueQuantity [
+     fhir:Quantity.value [ fhir:value "167"^^xsd:decimal ];
+     fhir:Quantity.unit [ fhir:value "centimeter" ];
+     fhir:Quantity.system [ fhir:value "http://unitsofmeasure.org" ];
+     fhir:Quantity.code [ fhir:value "cm" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/Observation/example-vital-signs-base.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
