@@ -1,5 +1,83 @@
-// ECOG
+// Vitals Signs Base Profile
+Profile: SD_Vital_Signs_Base
+Parent: Observation
+Id: sd-vital-signs-base
+Title: "Vital Signs Base Profile"
+Description: "Vital signs base definition profile. May not be used directly. Only for reprofiling purposes."
+* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
+* obeys vs-2
+* status MS
+* category MS
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains vs-cat 1..1
+* category[vs-cat] = ObsCat#vital-signs
+* code MS
+* subject 1.. MS
+* subject only Reference(Patient)
+* effective[x] 1.. MS
+* effective[x] only dateTime or Period
+* effective[x] obeys vs-1
+* effective[x] ^slicing.discriminator.type = #type
+* effective[x] ^slicing.discriminator.path = "$this"
+* effective[x] ^slicing.rules = #open
+* effective[x] ^short = "Often just a dateTime for vital signs"
+* effective[x] ^definition = "Often just a dateTime for vital signs."
+* value[x] ^short = "Vital Signs value are recorded using the Quantity data type. For supporting observations such as Cuff size could use other datatypes such as CodeableConcept."
+* value[x] ^definition = "Vital Signs value are recorded using the Quantity data type. For supporting observations such as Cuff size could use other datatypes such as CodeableConcept."
+* value[x] ^requirements = "9. SHALL contain exactly one [1..1] value with @xsi:type=\"PQ\" (CONF:7305)."
+* value[x] ^condition = "vs-2"
+* dataAbsentReason ^condition = "vs-2"
+* hasMember ^short = "Used when reporting vital signs panel components"
+* hasMember ^definition = "Used when reporting vital signs panel components."
 
+//Body Height
+Profile: SD_Body_Height
+Parent: SD_Vital_Signs_Base
+Id: sd-body-height
+Title: "Profile Body Height"
+Description: "Body Height of a patient"
+* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
+* code ^short = "Body Height"
+* code ^definition = "Body Height"
+* code ^comment = "Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."
+* code.coding ^slicing.discriminator.type = #pattern
+* code.coding ^slicing.discriminator.path = "$this"
+* code.coding ^slicing.rules = #open
+* code.coding contains
+    loinc 1..* and
+    snomed 0..*
+* code.coding[loinc] = $loinc#8302-2
+* code.coding[loinc].system 1..
+* code.coding[loinc].code 1..
+* code.coding[snomed] = $sct#1153637007
+* code.coding[snomed].system 1..
+* code.coding[snomed].code 1..
+* value[x] only Quantity
+* value[x] MS
+* valueQuantity 0..1
+* valueQuantity.value 1.. MS
+* valueQuantity.unit 1.. MS
+* valueQuantity.system 1.. MS
+* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.code 1.. MS
+* valueQuantity.code from http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.0 (required)
+* dataAbsentReason MS
+
+Instance: example-body-height
+InstanceOf: SD_Body_Height
+Usage: #example
+* status = #final
+* category = $observation-category#vital-signs
+* code.coding[0] = $loinc#8302-2 "Body height"
+* code.coding[+] = $sct#1153637007 "Body height (observable entity)"
+* code.text = "Body height"
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2022-02-18"
+* valueQuantity = 167 'cm' "centimeter"
+
+// ECOG
 Profile: SD_ECOG_Performance_Status
 Parent: Observation
 Id: sd-ecog-performance-status
