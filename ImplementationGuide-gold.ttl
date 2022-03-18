@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "GOLD"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-18T11:29:02+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-18T11:37:05+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -494,7 +494,8 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-body-height>;
          fhir:Reference.reference [ fhir:value "Observation/example-body-height" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-body-height" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Body Height" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example body height of a patient." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height";
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height>
@@ -510,7 +511,8 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-body-weight>;
          fhir:Reference.reference [ fhir:value "Observation/example-body-weight" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-body-weight" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Body Weight" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example body weight of a patient." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight";
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight>
@@ -594,7 +596,8 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-vital-signs-base>;
          fhir:Reference.reference [ fhir:value "Observation/example-vital-signs-base" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "example-vital-signs-base" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Vital Signs Base Observation" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a vital signs base observation." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base";
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base>

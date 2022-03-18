@@ -9,7 +9,7 @@
   <version value="0.1.0"/>
   <name value="GOLD"/>
   <status value="draft"/>
-  <date value="2022-03-18T11:29:02+00:00"/>
+  <date value="2022-03-18T11:37:05+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -351,7 +351,8 @@
       <reference>
         <reference value="Observation/example-body-height"/>
       </reference>
-      <name value="example-body-height"/>
+      <name value="Example Body Height"/>
+      <description value="Example body height of a patient."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"/>
     </resource>
     <resource>
@@ -361,7 +362,8 @@
       <reference>
         <reference value="Observation/example-body-weight"/>
       </reference>
-      <name value="example-body-weight"/>
+      <name value="Example Body Weight"/>
+      <description value="Example body weight of a patient."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"/>
     </resource>
     <resource>
@@ -415,7 +417,8 @@
       <reference>
         <reference value="Observation/example-vital-signs-base"/>
       </reference>
-      <name value="example-vital-signs-base"/>
+      <name value="Example Vital Signs Base Observation"/>
+      <description value="Example of a vital signs base observation."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"/>
     </resource>
     <page>
