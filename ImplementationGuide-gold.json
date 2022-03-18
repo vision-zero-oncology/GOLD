@@ -9,7 +9,7 @@
   "version": "0.1.0",
   "name": "GOLD",
   "status": "draft",
-  "date": "2022-03-18T11:13:47+00:00",
+  "date": "2022-03-18T11:20:11+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -315,7 +315,7 @@
           "reference": "StructureDefinition/sd-body-height"
         },
         "name": "Profile Body Height",
-        "description": "Body Height of a patient",
+        "description": "Profile for body Height of a patient",
         "exampleBoolean": false
       },
       {
@@ -384,8 +384,8 @@
         "reference": {
           "reference": "StructureDefinition/sd-vital-signs-base"
         },
-        "name": "Vital Signs Base Profile",
-        "description": "Vital signs base definition profile. May not be used directly. Only for reprofiling purposes.",
+        "name": "Profile Vital Signs Base",
+        "description": "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes.",
         "exampleBoolean": false
       },
       {

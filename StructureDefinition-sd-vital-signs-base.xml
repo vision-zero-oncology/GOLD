@@ -29,9 +29,9 @@
   <url value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"/>
   <version value="0.1.0"/>
   <name value="SD_Vital_Signs_Base"/>
-  <title value="Vital Signs Base Profile"/>
+  <title value="Profile Vital Signs Base"/>
   <status value="active"/>
-  <date value="2022-03-18T11:13:47+00:00"/>
+  <date value="2022-03-18T11:20:11+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -40,7 +40,7 @@
       <value value="https://www.bihealth.org/"/>
     </telecom>
   </contact>
-  <description value="Vital signs base definition profile. May not be used directly. Only for reprofiling purposes."/>
+  <description value="Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes."/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

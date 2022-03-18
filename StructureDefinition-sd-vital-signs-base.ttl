@@ -24,9 +24,9 @@
   fhir:StructureDefinition.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
   fhir:StructureDefinition.name [ fhir:value "SD_Vital_Signs_Base"];
-  fhir:StructureDefinition.title [ fhir:value "Vital Signs Base Profile"];
+  fhir:StructureDefinition.title [ fhir:value "Profile Vital Signs Base"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-18T11:13:47+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-18T11:20:11+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -37,7 +37,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
      ]
   ];
-  fhir:StructureDefinition.description [ fhir:value "Vital signs base definition profile. May not be used directly. Only for reprofiling purposes."];
+  fhir:StructureDefinition.description [ fhir:value "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes."];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

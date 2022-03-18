@@ -16,7 +16,7 @@
   fhir:ImplementationGuide.version [ fhir:value "0.1.0"];
   fhir:ImplementationGuide.name [ fhir:value "GOLD"];
   fhir:ImplementationGuide.status [ fhir:value "draft"];
-  fhir:ImplementationGuide.date [ fhir:value "2022-03-18T11:13:47+00:00"^^xsd:dateTime];
+  fhir:ImplementationGuide.date [ fhir:value "2022-03-18T11:20:11+00:00"^^xsd:dateTime];
   fhir:ImplementationGuide.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ImplementationGuide.contact [
      fhir:index 0;
@@ -299,7 +299,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/sd-body-height" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Body Height" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Body Height of a patient" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for body Height of a patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 1;
@@ -368,8 +368,8 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-vital-signs-base>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/sd-vital-signs-base" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Vital Signs Base Profile" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Vital signs base definition profile. May not be used directly. Only for reprofiling purposes." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Vital Signs Base" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 6;

@@ -27,7 +27,7 @@
       },
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base",
-        "title": "Vital Signs Base Profile"
+        "title": "Profile Vital Signs Base"
       }
     ]
   },
