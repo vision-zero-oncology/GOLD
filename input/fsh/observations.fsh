@@ -51,7 +51,7 @@ Profile: SD_Body_Height
 Parent: SD_Vital_Signs_Base
 Id: sd-body-height
 Title: "Profile Body Height"
-Description: "Profile for body Height of a patient"
+Description: "Profile for body height of a patient"
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
 * code ^short = "Body Height"
 * code ^definition = "Body Height"
