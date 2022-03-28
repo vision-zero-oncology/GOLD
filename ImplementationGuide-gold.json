@@ -3,13 +3,14 @@
   "id": "gold",
   "text": {
     "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>GOLD</h2><p>The official URL for this implementation guide is: </p><pre>https://www.vision-zero-oncology.de/fhir/ImplementationGuide/gold</pre></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h2>GOLD</h2><p>The official URL for this implementation guide is: </p><pre>https://www.vision-zero-oncology.de/fhir/ImplementationGuide/gold</pre><div><p>Implementation Guide German Oncological Data Standard (GOLD)</p>\n</div></div>"
   },
   "url": "https://www.vision-zero-oncology.de/fhir/ImplementationGuide/gold",
   "version": "0.1.0",
   "name": "GOLD",
+  "title": "German Oncological Data Standard (GOLD)",
   "status": "draft",
-  "date": "2022-03-18T11:45:27+00:00",
+  "date": "2022-03-28",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -22,10 +23,30 @@
       ]
     }
   ],
+  "description": "Implementation Guide German Oncological Data Standard (GOLD)",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DEU"
+        }
+      ]
+    }
+  ],
+  "copyright": "CC-BY-SA-4.0",
   "packageId": "gold",
-  "license": "CC0-1.0",
+  "license": "CC-BY-SA-4.0",
   "fhirVersion": [
     "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "id": "de_basisprofil_r4",
+      "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+      "packageId": "de.basisprofil.r4",
+      "version": "1.3.1"
+    }
   ],
   "definition": {
     "extension": [
@@ -37,7 +58,7 @@
           },
           {
             "url": "value",
-            "valueString": "2022+"
+            "valueString": "2021+"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -50,7 +71,7 @@
           },
           {
             "url": "value",
-            "valueString": "ci-build"
+            "valueString": "CI Build"
           }
         ],
         "url": "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
@@ -315,7 +336,7 @@
           "reference": "StructureDefinition/sd-body-height"
         },
         "name": "Profile Body Height",
-        "description": "Profile for body Height of a patient",
+        "description": "Profile for body height of a patient",
         "exampleBoolean": false
       },
       {
@@ -607,6 +628,26 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "usecase.html",
+          "title": "Use Case",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
           "generation": "markdown"
         }
       ]

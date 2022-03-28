@@ -61,7 +61,7 @@
   <name value="SD_Histology_Topography"/>
   <title value="Profile Histology Topography"/>
   <status value="active"/>
-  <date value="2022-03-18T11:45:27+00:00"/>
+  <date value="2022-03-28T14:16:24+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -71,6 +71,13 @@
     </telecom>
   </contact>
   <description value="Profile for the classification of a tumor&#39;s morphology(histology) and topography using ICD-O-3."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

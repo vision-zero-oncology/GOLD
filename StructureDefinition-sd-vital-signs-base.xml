@@ -31,7 +31,7 @@
   <name value="SD_Vital_Signs_Base"/>
   <title value="Profile Vital Signs Base"/>
   <status value="active"/>
-  <date value="2022-03-18T11:45:27+00:00"/>
+  <date value="2022-03-28T14:16:24+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -41,6 +41,13 @@
     </telecom>
   </contact>
   <description value="Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
   <fhirVersion value="4.0.1"/>
   <mapping>
     <identity value="workflow"/>

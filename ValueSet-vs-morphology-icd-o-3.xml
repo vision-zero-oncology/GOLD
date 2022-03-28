@@ -10,7 +10,7 @@
   <name value="VS_Morphology_ICD_O_3"/>
   <title value="ValueSet Morphology ICD-O-3"/>
   <status value="active"/>
-  <date value="2022-03-18T11:45:27+00:00"/>
+  <date value="2022-03-28T14:16:24+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -20,6 +20,13 @@
     </telecom>
   </contact>
   <description value="The ValueSet contains the morphology (histology) codes from ICD-O-3."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
   <compose>
     <include>
       <system value="http://terminology.hl7.org/CodeSystem/icd-o-3"/>

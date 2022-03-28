@@ -10,7 +10,7 @@
   "name": "VS_Topography_ICD_O_3",
   "title": "ValueSet Topography ICD-O-3",
   "status": "active",
-  "date": "2022-03-18T11:45:27+00:00",
+  "date": "2022-03-28T14:16:24+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -24,6 +24,17 @@
     }
   ],
   "description": "The ValueSet contains the topography codes from ICD-O-3.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DEU"
+        }
+      ]
+    }
+  ],
+  "copyright": "CC-BY-SA-4.0",
   "compose": {
     "include": [
       {

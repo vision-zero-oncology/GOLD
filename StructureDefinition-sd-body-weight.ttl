@@ -28,7 +28,7 @@
   fhir:StructureDefinition.name [ fhir:value "SD_Body_Weight"];
   fhir:StructureDefinition.title [ fhir:value "Profile Body Weight"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-18T11:45:27+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-28T14:16:24+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -40,6 +40,15 @@
      ]
   ];
   fhir:StructureDefinition.description [ fhir:value "Profile for body weight of a patient"];
+  fhir:StructureDefinition.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DEU" ]
+     ]
+  ];
+  fhir:StructureDefinition.copyright [ fhir:value "CC-BY-SA-4.0"];
   fhir:StructureDefinition.fhirVersion [ fhir:value "4.0.1"];
   fhir:StructureDefinition.mapping [
      fhir:index 0;

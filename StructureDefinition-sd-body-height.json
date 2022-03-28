@@ -20,7 +20,7 @@
   "name": "SD_Body_Height",
   "title": "Profile Body Height",
   "status": "active",
-  "date": "2022-03-18T11:45:27+00:00",
+  "date": "2022-03-28T14:16:24+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -33,7 +33,18 @@
       ]
     }
   ],
-  "description": "Profile for body Height of a patient",
+  "description": "Profile for body height of a patient",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DEU"
+        }
+      ]
+    }
+  ],
+  "copyright": "CC-BY-SA-4.0",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

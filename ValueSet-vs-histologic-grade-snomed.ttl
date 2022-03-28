@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "VS_Histologic_Grade_SNOMED"];
   fhir:ValueSet.title [ fhir:value "ValueSet Histologic Grade SNOMED"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-03-18T11:45:27+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-03-28T14:16:24+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -29,6 +29,15 @@
      ]
   ];
   fhir:ValueSet.description [ fhir:value "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified from SNOMED CT."];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DEU" ]
+     ]
+  ];
+  fhir:ValueSet.copyright [ fhir:value "CC-BY-SA-4.0"];
   fhir:ValueSet.compose [
      fhir:ValueSet.compose.include [
        fhir:index 0;

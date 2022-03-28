@@ -1,11 +1,11 @@
 #segment-footer > .container {
-  background-color: #ad1f2f;
+  background-color: #299FED;
 }
 .navbar-inverse {
-  background-color: #ad1f2f;
+  background-color: #299FED;
 }
 .navbar-inverse .navbar-nav > li > a:hover {
-  background-color: #790713;
+  background-color: #c01e75;
 }
 #family-nav {
   line-height: 50px;
