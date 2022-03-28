@@ -1,0 +1,12 @@
+{
+  "name": "gold.fhir.ig.template",
+  "version": "0.1.0",
+  "type": "fhir.template",
+  "license": "CC0-1.0",
+  "author": "BIH",
+  "description": "GOLD FHIR IG Template",
+  "base": "fhir.base.template",
+  "dependencies": {
+    "fhir.base.template": "current"
+  }
+}
