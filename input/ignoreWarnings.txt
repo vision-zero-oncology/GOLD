@@ -1,1 +1,8 @@
 == Suppressed Messages ==
+
+# allow terminology unavailable
+
+Unable to find code 1162767002 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code "1162767002" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1162767002) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#1162767002'
+The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3, and a code is required from this value set. (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3 ([Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated]))
+The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3, and a code is required from this value set. (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3 ([Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated]))
+Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated

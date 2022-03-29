@@ -1,7 +1,7 @@
 // Vitals Signs Base Profile
 Profile: SD_Vital_Signs_Base
 Parent: Observation
-Id: sd-vital-signs-base
+Id: vital-signs-base
 Title: "Profile Vital Signs Base"
 Description: "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes."
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
@@ -33,7 +33,7 @@ Description: "Profile for the base definition of all vital signs. May not be use
 * hasMember ^definition = "Used when reporting vital signs panel components."
 
 Instance: example-vital-signs-base
-InstanceOf: sd-vital-signs-base
+InstanceOf: vital-signs-base
 Usage: #example
 Title: "Example Vital Signs Base Observation"
 Description: "Example of a vital signs base observation."
@@ -49,7 +49,7 @@ Description: "Example of a vital signs base observation."
 //Body Height
 Profile: SD_Body_Height
 Parent: SD_Vital_Signs_Base
-Id: sd-body-height
+Id: body-height
 Title: "Profile Body Height"
 Description: "Profile for body height of a patient"
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
@@ -80,7 +80,7 @@ Description: "Profile for body height of a patient"
 * dataAbsentReason MS
 
 Instance: example-body-height
-InstanceOf: sd-body-height
+InstanceOf: body-height
 Usage: #example
 Title: "Example Body Height"
 Description: "Example body height of a patient."
@@ -96,7 +96,7 @@ Description: "Example body height of a patient."
 // Body Weight
 Profile: SD_Body_Weight
 Parent: SD_Vital_Signs_Base
-Id: sd-body-weight
+Id: body-weight
 Title: "Profile Body Weight"
 Description: "Profile for body weight of a patient"
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"
@@ -127,7 +127,7 @@ Description: "Profile for body weight of a patient"
 * dataAbsentReason MS
 
 Instance: example-body-weight
-InstanceOf: sd-body-weight
+InstanceOf: body-weight
 Usage: #example
 Title: "Example Body Weight"
 Description: "Example body weight of a patient."
@@ -143,7 +143,7 @@ Description: "Example body weight of a patient."
 // ECOG
 Profile: SD_ECOG_Performance_Status
 Parent: Observation
-Id: sd-ecog-performance-status
+Id: ecog-performance-status
 Title: "Profile ECOG Performance Status"
 Description: "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status."
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
@@ -183,7 +183,7 @@ Description: "Profile for the Eastern Cooperative Oncology Group (ECOG) Performa
 * valueCodeableConcept.coding[valueSnomed].code 1..
 
 Instance: example-ecog-performance-status
-InstanceOf: sd-ecog-performance-status
+InstanceOf: ecog-performance-status
 Usage: #example
 Title: "Example ECOG Performance Status"
 Description: "Example ECOG status observation."
@@ -200,7 +200,7 @@ Description: "Example ECOG status observation."
 
 Profile: SD_Karnofsky_Performance_Status
 Parent: Observation
-Id: sd-karnofsky-performance-status
+Id: karnofsky-performance-status
 Title: "Profile Karnofsky Performance Status"
 Description: "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks."
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
@@ -227,7 +227,7 @@ Description: "Profile for the Karnofsky Performance Status to measure a cancer p
 * valueCodeableConcept from http://loinc.org/vs/LL4986-7
 
 Instance: example-karnofsky-performance-status
-InstanceOf: sd-karnofsky-performance-status
+InstanceOf: karnofsky-performance-status
 Usage: #example
 Title: "Example Karnofsky Performance Status"
 Description: "Example Karnofsky performance status observation."
@@ -242,7 +242,7 @@ Description: "Example Karnofsky performance status observation."
 
 Profile: SD_Histology_Topography
 Parent: Observation
-Id: sd-histology-topography
+Id: histology-topography
 Title: "Profile Histology Topography"
 Description: "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3."
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
@@ -300,7 +300,7 @@ Description: "Profile for the classification of a tumor's morphology(histology) 
 * bodySite.coding[topographySnomed].code 1..
 
 Instance: example-histology-topography
-InstanceOf: sd-histology-topography
+InstanceOf: histology-topography
 Usage: #example
 Title: "Example Histology and Topography"
 Description: "Example tumor histology and topography observation."
@@ -319,7 +319,7 @@ Description: "Example tumor histology and topography observation."
 
 Profile: SD_Histologic_Grade
 Parent: Observation
-Id: sd-histologic-grade
+Id: histologic-grade
 Title: "Profile Histologic Tumor Grade"
 Description: "Profile for the description of a tumor's grade using the general four-tier grading scheme."
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade"
@@ -354,7 +354,7 @@ Description: "Profile for the description of a tumor's grade using the general f
 * valueCodeableConcept.coding[histologicGradeSnomed].code 1..
 
 Instance: example-histologic-grade
-InstanceOf: sd-histologic-grade
+InstanceOf: histologic-grade
 Usage: #example
 Title: "Example Histologic Tumor Grade"
 Description: "Example tumor grade using the general four-tier grading scheme."
