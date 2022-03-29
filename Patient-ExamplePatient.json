@@ -3,7 +3,7 @@
   "id": "ExamplePatient",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Sebastian Bach (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1685-03-31</p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Sebastian Bach (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1985-03-31</p></div>"
   },
   "active": true,
   "name": [
@@ -16,5 +16,5 @@
     }
   ],
   "gender": "male",
-  "birthDate": "1685-03-31"
+  "birthDate": "1985-03-31"
 }

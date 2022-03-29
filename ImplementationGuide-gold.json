@@ -333,7 +333,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/sd-body-height"
+          "reference": "StructureDefinition/body-height"
         },
         "name": "Profile Body Height",
         "description": "Profile for body height of a patient",
@@ -347,7 +347,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/sd-body-weight"
+          "reference": "StructureDefinition/body-weight"
         },
         "name": "Profile Body Weight",
         "description": "Profile for body weight of a patient",
@@ -361,7 +361,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/sd-ecog-performance-status"
+          "reference": "StructureDefinition/ecog-performance-status"
         },
         "name": "Profile ECOG Performance Status",
         "description": "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status.",
@@ -375,7 +375,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/sd-histologic-grade"
+          "reference": "StructureDefinition/histologic-grade"
         },
         "name": "Profile Histologic Tumor Grade",
         "description": "Profile for the description of a tumor's grade using the general four-tier grading scheme.",
@@ -389,7 +389,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/sd-histology-topography"
+          "reference": "StructureDefinition/histology-topography"
         },
         "name": "Profile Histology Topography",
         "description": "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3.",
@@ -403,7 +403,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/sd-karnofsky-performance-status"
+          "reference": "StructureDefinition/karnofsky-performance-status"
         },
         "name": "Profile Karnofsky Performance Status",
         "description": "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks.",
@@ -417,7 +417,7 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/sd-vital-signs-base"
+          "reference": "StructureDefinition/vital-signs-base"
         },
         "name": "Profile Vital Signs Base",
         "description": "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes.",

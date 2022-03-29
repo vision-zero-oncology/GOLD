@@ -316,8 +316,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-body-height>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-body-height" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/body-height" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Body Height" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for body height of a patient" ];
@@ -330,8 +330,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-body-weight>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-body-weight" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/body-weight" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Body Weight" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for body weight of a patient" ];
@@ -344,8 +344,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-ecog-performance-status>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-ecog-performance-status" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/ecog-performance-status" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile ECOG Performance Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status." ];
@@ -358,8 +358,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-histologic-grade>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-histologic-grade" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/histologic-grade" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Histologic Tumor Grade" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the description of a tumor's grade using the general four-tier grading scheme." ];
@@ -372,8 +372,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-histology-topography>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-histology-topography" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/histology-topography" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Histology Topography" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3." ];
@@ -386,8 +386,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-karnofsky-performance-status>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-karnofsky-performance-status" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/karnofsky-performance-status" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Karnofsky Performance Status" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks." ];
@@ -400,8 +400,8 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-vital-signs-base>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-vital-signs-base" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/vital-signs-base" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Vital Signs Base" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes." ];

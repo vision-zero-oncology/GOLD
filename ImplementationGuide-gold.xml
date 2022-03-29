@@ -210,7 +210,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sd-body-height"/>
+        <reference value="StructureDefinition/body-height"/>
       </reference>
       <name value="Profile Body Height"/>
       <description value="Profile for body height of a patient"/>
@@ -221,7 +221,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sd-body-weight"/>
+        <reference value="StructureDefinition/body-weight"/>
       </reference>
       <name value="Profile Body Weight"/>
       <description value="Profile for body weight of a patient"/>
@@ -232,7 +232,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sd-ecog-performance-status"/>
+        <reference value="StructureDefinition/ecog-performance-status"/>
       </reference>
       <name value="Profile ECOG Performance Status"/>
       <description value="Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient&#39;s functional status."/>
@@ -243,7 +243,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sd-histologic-grade"/>
+        <reference value="StructureDefinition/histologic-grade"/>
       </reference>
       <name value="Profile Histologic Tumor Grade"/>
       <description value="Profile for the description of a tumor&#39;s grade using the general four-tier grading scheme."/>
@@ -254,7 +254,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sd-histology-topography"/>
+        <reference value="StructureDefinition/histology-topography"/>
       </reference>
       <name value="Profile Histology Topography"/>
       <description value="Profile for the classification of a tumor&#39;s morphology(histology) and topography using ICD-O-3."/>
@@ -265,7 +265,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sd-karnofsky-performance-status"/>
+        <reference value="StructureDefinition/karnofsky-performance-status"/>
       </reference>
       <name value="Profile Karnofsky Performance Status"/>
       <description value="Profile for the Karnofsky Performance Status to measure a cancer patient&#39;s ability to perform ordinary tasks."/>
@@ -276,7 +276,7 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sd-vital-signs-base"/>
+        <reference value="StructureDefinition/vital-signs-base"/>
       </reference>
       <name value="Profile Vital Signs Base"/>
       <description value="Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes."/>

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 0, errors = 10, warn = 3, info = 2 -->
+<!-- broken links = 0, errors = 3, warn = 2, info = 0 -->
 <head>
   <title>GOLD : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,13 +36,13 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for GOLD</h1>
- <p>Generated Mon Mar 28 14:17:13 UTC 2022, FHIR version 4.0.1 for gold#0.1.0 (canonical = <a href="https://www.vision-zero-oncology.de/fhir">https://www.vision-zero-oncology.de/fhir</a> (<a href="https://www.vision-zero-oncology.de/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Tue Mar 29 09:14:35 UTC 2022, FHIR version 4.0.1 for gold#0.1.0 (canonical = <a href="https://www.vision-zero-oncology.de/fhir">https://www.vision-zero-oncology.de/fhir</a> (<a href="https://www.vision-zero-oncology.de/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.83, which is out of date. The current version is v1.1.113 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = gold, Canonical = https://www.vision-zero-oncology.de/fhir</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
  <tr><td>Version Check:</td><td>0.1.0: <span stlye="color: marron; font-weight: bold">no package-list.json - the guide is not ready for publishing</span></td></tr>
- <tr><td>Supressed Messages:</td><td>No Suppressed Issues
+ <tr><td>Supressed Messages:</td><td><a href="#suppressed">4 Suppressed Issues</a>
 </td></tr>
  <tr><td>Dependency Checks:</td><td><div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of the package">Version</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR Release</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Canonical URL">Canonical</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Web Reference Base">Web Base</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Comments about this entry">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> gold</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0.1.0</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">https://www.vision-zero-oncology.de/fhir</td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
 <tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(/github/workspace/outputdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> de.basisprofil.r4</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1.3.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">4.0.1</td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td></tr>
@@ -51,7 +51,7 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.vision-zero-oncology.de/fhir (Problem #1 with package-list.json at https://www.vision-zero-oncology.de/fhir: https://www.vision-zero-oncology.de/fhir/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 0, errors = 10, warn = 3, info = 2</td></tr>
+ <tr><td>Summary:</td><td> broken links = 0, errors = 3, warn = 2, info = 0</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -76,7 +76,7 @@
      <td><a href="#_github_workspace_fsh-generated_resources_Observation-example-histologic-grade"><b>/github/workspace/fsh-generated/resources/Observation-example-histologic-grade</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_Observation-example-histology-topography"><b>/github/workspace/fsh-generated/resources/Observation-example-histology-topography</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>2</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Observation-example-histology-topography"><b>/github/workspace/fsh-generated/resources/Observation-example-histology-topography</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_Observation-example-karnofsky-performance-status"><b>/github/workspace/fsh-generated/resources/Observation-example-karnofsky-performance-status</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -85,28 +85,28 @@
      <td><a href="#_github_workspace_fsh-generated_resources_Observation-example-vital-signs-base"><b>/github/workspace/fsh-generated/resources/Observation-example-vital-signs-base</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
-     <td><a href="#_github_workspace_fsh-generated_resources_Patient-ExamplePatient"><b>/github/workspace/fsh-generated/resources/Patient-ExamplePatient</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_Patient-ExamplePatient"><b>/github/workspace/fsh-generated/resources/Patient-ExamplePatient</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-sd-body-height"><b>/github/workspace/fsh-generated/resources/StructureDefinition-sd-body-height</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-body-height"><b>/github/workspace/fsh-generated/resources/StructureDefinition-body-height</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-sd-body-weight"><b>/github/workspace/fsh-generated/resources/StructureDefinition-sd-body-weight</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-body-weight"><b>/github/workspace/fsh-generated/resources/StructureDefinition-body-weight</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-sd-ecog-performance-status"><b>/github/workspace/fsh-generated/resources/StructureDefinition-sd-ecog-performance-status</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-ecog-performance-status"><b>/github/workspace/fsh-generated/resources/StructureDefinition-ecog-performance-status</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-sd-histologic-grade"><b>/github/workspace/fsh-generated/resources/StructureDefinition-sd-histologic-grade</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-histologic-grade"><b>/github/workspace/fsh-generated/resources/StructureDefinition-histologic-grade</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-sd-histology-topography"><b>/github/workspace/fsh-generated/resources/StructureDefinition-sd-histology-topography</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-histology-topography"><b>/github/workspace/fsh-generated/resources/StructureDefinition-histology-topography</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-sd-karnofsky-performance-status"><b>/github/workspace/fsh-generated/resources/StructureDefinition-sd-karnofsky-performance-status</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-karnofsky-performance-status"><b>/github/workspace/fsh-generated/resources/StructureDefinition-karnofsky-performance-status</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-sd-vital-signs-base"><b>/github/workspace/fsh-generated/resources/StructureDefinition-sd-vital-signs-base</b></a></td><td><b>1</b></td><td><b>0</b></td><td><b>0</b></td>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#_github_workspace_fsh-generated_resources_StructureDefinition-vital-signs-base"><b>/github/workspace/fsh-generated/resources/StructureDefinition-vital-signs-base</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #EFFFEF">
      <td><a href="#_github_workspace_fsh-generated_resources_ValueSet-vs-ecog-performance-status-snomed"><b>/github/workspace/fsh-generated/resources/ValueSet-vs-ecog-performance-status-snomed</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -145,7 +145,7 @@
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-example-body-height"> </a>
 <h2><a href="Observation-example-body-height.html">fsh-generated/resources/Observation-example-body-height.json</a> <span id="svi2" class="toggle" onclick="toggle('vi2')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi2')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-sd-body-height.html">Profile Body Height</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi2"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-body-height.html">Profile Body Height</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -155,7 +155,7 @@
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-example-body-weight"> </a>
 <h2><a href="Observation-example-body-weight.html">fsh-generated/resources/Observation-example-body-weight.json</a> <span id="svi3" class="toggle" onclick="toggle('vi3')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi3')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-sd-body-weight.html">Profile Body Weight</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi3"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-body-weight.html">Profile Body Weight</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -165,7 +165,7 @@
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-example-ecog-performance-status"> </a>
 <h2><a href="Observation-example-ecog-performance-status.html">fsh-generated/resources/Observation-example-ecog-performance-status.json</a> <span id="svi4" class="toggle" onclick="toggle('vi4')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi4')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-sd-ecog-performance-status.html">Profile ECOG Performance Status</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi4"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-ecog-performance-status.html">Profile ECOG Performance Status</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -175,7 +175,7 @@
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-example-histologic-grade"> </a>
 <h2><a href="Observation-example-histologic-grade.html">fsh-generated/resources/Observation-example-histologic-grade.json</a> <span id="svi5" class="toggle" onclick="toggle('vi5')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi5')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-sd-histologic-grade.html">Profile Histologic Tumor Grade</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi5"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-histologic-grade.html">Profile Histologic Tumor Grade</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -185,23 +185,17 @@
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-example-histology-topography"> </a>
 <h2><a href="Observation-example-histology-topography.html">fsh-generated/resources/Observation-example-histology-topography.json</a> <span id="svi6" class="toggle" onclick="toggle('vi6')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi6')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-sd-histology-topography.html">Profile Histology Topography</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi6"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-histology-topography.html">Profile Histology Topography</a></li></ul>
 </div>
  <table class="grid">
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l40/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation.value.ofType(CodeableConcept).coding[1] (l45/c8)</b></td><td><b>error</b></td><td><b>Unable to find code 1162767002 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code &quot;1162767002&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1162767002) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#1162767002'</b> (<a href="qa-tx.html#l43">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l40/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3)</b></td>
-   </tr>
-   <tr style="background-color: #ffffe6">
-     <td><b>Observation.bodySite.coding[0] (l54/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation.bodySite.coding[0] (l54/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3)</b></td>
@@ -210,7 +204,7 @@
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-example-karnofsky-performance-status"> </a>
 <h2><a href="Observation-example-karnofsky-performance-status.html">fsh-generated/resources/Observation-example-karnofsky-performance-status.json</a> <span id="svi7" class="toggle" onclick="toggle('vi7')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi7')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-sd-karnofsky-performance-status.html">Profile Karnofsky Performance Status</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi7"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-karnofsky-performance-status.html">Profile Karnofsky Performance Status</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -220,7 +214,7 @@
 <hr/>
 <a name="_github_workspace_fsh-generated_resources_Observation-example-vital-signs-base"> </a>
 <h2><a href="Observation-example-vital-signs-base.html">fsh-generated/resources/Observation-example-vital-signs-base.json</a> <span id="svi8" class="toggle" onclick="toggle('vi8')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi8')">(1)</span></h2>
- <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-sd-vital-signs-base.html">Profile Vital Signs Base</a></li></ul>
+ <div style="border: 1px grey solid; display: none" id="vi8"><ul style="font-size: 7px"><li>Observation: Validated against <i>this.</i><a href="StructureDefinition-vital-signs-base.html">Profile Vital Signs Base</a></li></ul>
 </div>
  <table class="grid">
    <tr>
@@ -234,101 +228,77 @@
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffebcc">
-     <td><b>Patient.birthDate (l6/c29)</b></td><td><b>warning</b></td><td title="Type_Specific_Checks_DT_DateTime_Reasonable"><b>The value '1685-03-31' is outside the range of reasonable years - check for data entry error</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-sd-body-height"> </a>
-<h2><a href="StructureDefinition-sd-body-height.html">fsh-generated/resources/StructureDefinition-sd-body-height.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-body-height"> </a>
+<h2><a href="StructureDefinition-body-height.html">fsh-generated/resources/StructureDefinition-body-height.json</a> <span id="svi10" class="toggle" onclick="toggle('vi10')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi10')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi10"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: sd-body-height/https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-sd-body-weight"> </a>
-<h2><a href="StructureDefinition-sd-body-weight.html">fsh-generated/resources/StructureDefinition-sd-body-weight.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-body-weight"> </a>
+<h2><a href="StructureDefinition-body-weight.html">fsh-generated/resources/StructureDefinition-body-weight.json</a> <span id="svi11" class="toggle" onclick="toggle('vi11')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi11')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi11"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: sd-body-weight/https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-sd-ecog-performance-status"> </a>
-<h2><a href="StructureDefinition-sd-ecog-performance-status.html">fsh-generated/resources/StructureDefinition-sd-ecog-performance-status.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-ecog-performance-status"> </a>
+<h2><a href="StructureDefinition-ecog-performance-status.html">fsh-generated/resources/StructureDefinition-ecog-performance-status.json</a> <span id="svi12" class="toggle" onclick="toggle('vi12')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi12')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi12"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: sd-ecog-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-sd-histologic-grade"> </a>
-<h2><a href="StructureDefinition-sd-histologic-grade.html">fsh-generated/resources/StructureDefinition-sd-histologic-grade.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-histologic-grade"> </a>
+<h2><a href="StructureDefinition-histologic-grade.html">fsh-generated/resources/StructureDefinition-histologic-grade.json</a> <span id="svi13" class="toggle" onclick="toggle('vi13')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi13')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi13"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: sd-histologic-grade/https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-sd-histology-topography"> </a>
-<h2><a href="StructureDefinition-sd-histology-topography.html">fsh-generated/resources/StructureDefinition-sd-histology-topography.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-histology-topography"> </a>
+<h2><a href="StructureDefinition-histology-topography.html">fsh-generated/resources/StructureDefinition-histology-topography.json</a> <span id="svi14" class="toggle" onclick="toggle('vi14')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi14')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi14"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: sd-histology-topography/https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-sd-karnofsky-performance-status"> </a>
-<h2><a href="StructureDefinition-sd-karnofsky-performance-status.html">fsh-generated/resources/StructureDefinition-sd-karnofsky-performance-status.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-karnofsky-performance-status"> </a>
+<h2><a href="StructureDefinition-karnofsky-performance-status.html">fsh-generated/resources/StructureDefinition-karnofsky-performance-status.json</a> <span id="svi15" class="toggle" onclick="toggle('vi15')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi15')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi15"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: sd-karnofsky-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
-<a name="_github_workspace_fsh-generated_resources_StructureDefinition-sd-vital-signs-base"> </a>
-<h2><a href="StructureDefinition-sd-vital-signs-base.html">fsh-generated/resources/StructureDefinition-sd-vital-signs-base.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
+<a name="_github_workspace_fsh-generated_resources_StructureDefinition-vital-signs-base"> </a>
+<h2><a href="StructureDefinition-vital-signs-base.html">fsh-generated/resources/StructureDefinition-vital-signs-base.json</a> <span id="svi16" class="toggle" onclick="toggle('vi16')">Show Validation Information</span> <span class="vcount" onclick="toggle('vi16')">(1)</span></h2>
  <div style="border: 1px grey solid; display: none" id="vi16"><ul style="font-size: 7px"><li>StructureDefinition: Validated against <a href="http://hl7.org/fhir">fhir</a>.<a href="http://hl7.org/fhir/R4/structuredefinition.html">StructureDefinition</a></li></ul>
 </div>
  <table class="grid">
    <tr>
-     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: sd-vital-signs-base/https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base</b></td>
+     <td>&check;</td>
    </tr>
 </table>
 <hr/>
@@ -399,34 +369,14 @@
 </table>
 <a name="suppressed"> </a>
 <p><b>Suppressed Messages (Warnings, hints, broken links)</b></p>
+<p><b>allow terminology unavailable</b></p><ul>
+ <li>Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated</li>
+ <li>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3, and a code is required from this value set. (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3 ([Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated]))</li>
+ <li>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3, and a code is required from this value set. (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3 ([Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated]))</li>
+ <li>Unable to find code 1162767002 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code &quot;1162767002&quot; is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1162767002) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#1162767002'</li>
+</ul>
 <p>No suppressed messsages</p><a name="sorted"> </a>
 <p><b>Errors sorted by type</b></p>
-<hr/>
-<a name="RESOURCE_ID_MISMATCH"> </a>
-<h2>RESOURCE_ID_MISMATCH</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-sd-body-height.html">fsh-generated/resources/StructureDefinition-sd-body-height.json</a></td><td><b>Resource id/url mismatch: sd-body-height/https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-sd-body-weight.html">fsh-generated/resources/StructureDefinition-sd-body-weight.json</a></td><td><b>Resource id/url mismatch: sd-body-weight/https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-sd-ecog-performance-status.html">fsh-generated/resources/StructureDefinition-sd-ecog-performance-status.json</a></td><td><b>Resource id/url mismatch: sd-ecog-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-sd-histologic-grade.html">fsh-generated/resources/StructureDefinition-sd-histologic-grade.json</a></td><td><b>Resource id/url mismatch: sd-histologic-grade/https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-sd-histology-topography.html">fsh-generated/resources/StructureDefinition-sd-histology-topography.json</a></td><td><b>Resource id/url mismatch: sd-histology-topography/https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-sd-karnofsky-performance-status.html">fsh-generated/resources/StructureDefinition-sd-karnofsky-performance-status.json</a></td><td><b>Resource id/url mismatch: sd-karnofsky-performance-status/https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="StructureDefinition-sd-vital-signs-base.html">fsh-generated/resources/StructureDefinition-sd-vital-signs-base.json</a></td><td><b>Resource id/url mismatch: sd-vital-signs-base/https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base</b></td>
-   </tr>
-</table>
 <hr/>
 <a name="Terminology_PassThrough_TX_Message"> </a>
 <h2>Terminology_PassThrough_TX_Message</h2>
@@ -444,25 +394,6 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Observation-example-histology-topography.html">fsh-generated/resources/Observation-example-histology-topography.json</a></td><td><b>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3)</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Terminology_TX_System_NotKnown"> </a>
-<h2>Terminology_TX_System_NotKnown</h2>
- <table class="grid">
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-example-histology-topography.html">fsh-generated/resources/Observation-example-histology-topography.json</a></td><td><b>Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated</b></td>
-   </tr>
-   <tr style="background-color: #fffff2">
-     <td><a href="Observation-example-histology-topography.html">fsh-generated/resources/Observation-example-histology-topography.json</a></td><td><b>Code System URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' is unknown so the code cannot be validated</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Type_Specific_Checks_DT_DateTime_Reasonable"> </a>
-<h2>Type_Specific_Checks_DT_DateTime_Reasonable</h2>
- <table class="grid">
-   <tr style="background-color: #fff4ee">
-     <td><a href="Patient-ExamplePatient.html">fsh-generated/resources/Patient-ExamplePatient.json</a></td><td><b>The value '1685-03-31' is outside the range of reasonable years - check for data entry error</b></td>
    </tr>
 </table>
 </body>

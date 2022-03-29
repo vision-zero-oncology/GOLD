@@ -10,7 +10,7 @@
   fhir:Resource.id [ fhir:value "ExamplePatient"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Sebastian Bach (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1685-03-31</p></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>active</b>: true</p><p><b>name</b>: Sebastian Bach (OFFICIAL)</p><p><b>gender</b>: male</p><p><b>birthDate</b>: 1985-03-31</p></div>"
   ];
   fhir:Patient.active [ fhir:value "true"^^xsd:boolean];
   fhir:Patient.name [
@@ -23,7 +23,7 @@
      ]
   ];
   fhir:Patient.gender [ fhir:value "male"];
-  fhir:Patient.birthDate [ fhir:value "1685-03-31"^^xsd:date] .
+  fhir:Patient.birthDate [ fhir:value "1985-03-31"^^xsd:date] .
 
 # - ontology header ------------------------------------------------------------
 

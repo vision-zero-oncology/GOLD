@@ -7,49 +7,49 @@
     "name": "GOLD"
   },
   {
-    "id": "sd-body-height",
+    "id": "body-height",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height",
     "version": "0.1.0",
     "name": "SD_Body_Height"
   },
   {
-    "id": "sd-body-weight",
+    "id": "body-weight",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight",
     "version": "0.1.0",
     "name": "SD_Body_Weight"
   },
   {
-    "id": "sd-ecog-performance-status",
+    "id": "ecog-performance-status",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status",
     "version": "0.1.0",
     "name": "SD_ECOG_Performance_Status"
   },
   {
-    "id": "sd-histologic-grade",
+    "id": "histologic-grade",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade",
     "version": "0.1.0",
     "name": "SD_Histologic_Grade"
   },
   {
-    "id": "sd-histology-topography",
+    "id": "histology-topography",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography",
     "version": "0.1.0",
     "name": "SD_Histology_Topography"
   },
   {
-    "id": "sd-karnofsky-performance-status",
+    "id": "karnofsky-performance-status",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status",
     "version": "0.1.0",
     "name": "SD_Karnofsky_Performance_Status"
   },
   {
-    "id": "sd-vital-signs-base",
+    "id": "vital-signs-base",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base",
     "version": "0.1.0",
