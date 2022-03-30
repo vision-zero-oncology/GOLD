@@ -19,7 +19,7 @@ Publication
 -----------
 This Implementation Guide is published in the following locations:
 
-* Current Build: https://github.com/vision-zero-oncology/GOLD/
+* Current Build: https://vision-zero-oncology.github.io/GOLD/
 
 Issues
 ------
