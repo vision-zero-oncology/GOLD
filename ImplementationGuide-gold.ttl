@@ -370,11 +370,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/histologic-grade" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/histology-topography" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Histologic Tumor Grade" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the description of a tumor's grade using the general four-tier grading scheme." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Histology Topography" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 4;
@@ -384,11 +384,11 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/histology-topography" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/histopathological-grading-who" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Histology Topography" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Histopathological Tumor Grading WHO" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the description of a tumor's grade using the general four-tier grading scheme following the recommendations of the WHO classification of tumors and UICC." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 5;
@@ -440,11 +440,11 @@
          fhir:Extension.valueString [ fhir:value "ValueSet" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histologic-grade-snomed>;
-         fhir:Reference.reference [ fhir:value "ValueSet/vs-histologic-grade-snomed" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histopathological-grade-snomed>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-histopathological-grade-snomed" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet Histologic Grade SNOMED" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified from SNOMED CT." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumours from SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9;
@@ -581,8 +581,8 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Histologic Tumor Grade" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example tumor grade using the general four-tier grading scheme." ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade";
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade>
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who>
        ]
      ], [
        fhir:index 18;
@@ -647,21 +647,26 @@
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
          fhir:index 1;
+         fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "logicalmodel.html" ];
+         fhir:ImplementationGuide.definition.page.title [ fhir:value "Logical Model" ];
+         fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
+       ], [
+         fhir:index 2;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "usecase.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Use Case" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 2;
+         fhir:index 3;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "profiles.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Profiles" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 3;
+         fhir:index 4;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "extensions.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Extensions" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]
        ], [
-         fhir:index 4;
+         fhir:index 5;
          fhir:ImplementationGuide.definition.page.nameUrl [ fhir:value "terminology.html" ];
          fhir:ImplementationGuide.definition.page.title [ fhir:value "Terminology" ];
          fhir:ImplementationGuide.definition.page.generation [ fhir:value "markdown" ]

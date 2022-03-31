@@ -3,7 +3,7 @@
   "id": "example-histologic-grade",
   "meta": {
     "profile": [
-      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade"
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"
     ]
   },
   "text": {

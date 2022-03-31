@@ -46,7 +46,7 @@
   <name value="SD_ECOG_Performance_Status"/>
   <title value="Profile ECOG Performance Status"/>
   <status value="active"/>
-  <date value="2022-03-30T09:37:53+00:00"/>
+  <date value="2022-03-31T12:02:56+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -2432,7 +2432,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed"/>
+        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -4062,7 +4062,7 @@
       </patternCoding>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed"/>
+        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed"/>
       </binding>
     </element>
     <element id="Observation.valueCodeableConcept.coding:valueSnomed.system">

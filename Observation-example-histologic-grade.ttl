@@ -12,9 +12,9 @@
   fhir:Resource.id [ fhir:value "example-histologic-grade"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade";
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who";
        fhir:index 0;
-       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade>
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who>
      ]
   ];
   fhir:DomainResource.text [

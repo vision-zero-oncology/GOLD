@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d4c00f4d-fcc0-4c54-b99c-ebab92b3ff8b"/>
+  <id value="0e6bb172-70b4-42b5-b82a-db4a6f1f7bd4"/>
   <meta>
-    <lastUpdated value="2022-03-30T09:37:53.613+00:00"/>
+    <lastUpdated value="2022-03-31T12:02:56.362+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed"/>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed"/>
     <resource>
       <ValueSet>
         <id value="vs-ecog-performance-status-snomed"/>
@@ -84,12 +84,12 @@
             </table>
           </div>
         </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed"/>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed"/>
         <version value="0.1.0"/>
         <name value="VS_ECOG_Performance_Status_SNOMED"/>
         <title value="ValueSet ECOG Performance Status SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-30T09:37:53+00:00"/>
+        <date value="2022-03-31T12:02:56+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -110,8 +110,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:6f7dc0ab-28a2-46e8-b283-2fee856e5372"/>
-          <timestamp value="2022-03-30T09:38:21+00:00"/>
+          <identifier value="urn:uuid:df3cb0bd-c428-47d5-8223-686793d612f4"/>
+          <timestamp value="2022-03-31T12:03:14+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -160,10 +160,10 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histologic-grade-snomed"/>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed"/>
     <resource>
       <ValueSet>
-        <id value="vs-histologic-grade-snomed"/>
+        <id value="vs-histopathological-grade-snomed"/>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
@@ -229,12 +229,12 @@
             </table>
           </div>
         </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histologic-grade-snomed"/>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed"/>
         <version value="0.1.0"/>
-        <name value="VS_Histologic_Grade_SNOMED"/>
+        <name value="VS_Histopathological_Grade_SNOMED"/>
         <title value="ValueSet Histologic Grade SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-30T09:37:53+00:00"/>
+        <date value="2022-03-31T12:02:56+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -243,17 +243,17 @@
             <value value="https://www.bihealth.org/"/>
           </telecom>
         </contact>
-        <description value="The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified from SNOMED CT."/>
+        <description value="The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumours from SNOMED CT."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
             <code value="DEU"/>
           </coding>
         </jurisdiction>
-        <copyright value="CC-BY-SA-4.0"/>
+        <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
         <expansion>
-          <identifier value="urn:uuid:adc1db95-096e-4cb3-8fdf-7110031d79da"/>
-          <timestamp value="2022-03-30T09:38:21+00:00"/>
+          <identifier value="urn:uuid:fb1ef23d-3a5e-454b-a64b-34d23ac48fa6"/>
+          <timestamp value="2022-03-31T12:03:15+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -297,7 +297,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed"/>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed"/>
     <resource>
       <ValueSet>
         <id value="vs-morphology-snomed"/>
@@ -8326,12 +8326,12 @@
             </table>
           </div>
         </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed"/>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed"/>
         <version value="0.1.0"/>
         <name value="VS_Morphology_SNOMED"/>
         <title value="ValueSet Morphology SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-30T09:37:53+00:00"/>
+        <date value="2022-03-31T12:02:56+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -8355,8 +8355,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:e362309e-5c97-4e45-9667-8ca99d27d175"/>
-          <timestamp value="2022-03-30T09:38:22+00:00"/>
+          <identifier value="urn:uuid:164b1998-c883-4f00-b622-cb162f6f3c06"/>
+          <timestamp value="2022-03-31T12:03:15+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13375,7 +13375,7 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed"/>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed"/>
     <resource>
       <ValueSet>
         <id value="vs-topography-snomed"/>
@@ -21404,12 +21404,12 @@
             </table>
           </div>
         </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed"/>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed"/>
         <version value="0.1.0"/>
         <name value="VS_Topography_SNOMED"/>
         <title value="ValueSet Topography SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-30T09:37:53+00:00"/>
+        <date value="2022-03-31T12:02:56+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -21433,8 +21433,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:122ce6be-d53b-4dae-a0dd-6ade720a3a09"/>
-          <timestamp value="2022-03-30T09:38:23+00:00"/>
+          <identifier value="urn:uuid:115215fd-73b0-415b-bf30-4096457b6b76"/>
+          <timestamp value="2022-03-31T12:03:16+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>

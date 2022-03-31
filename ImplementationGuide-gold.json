@@ -388,10 +388,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/histologic-grade"
+          "reference": "StructureDefinition/histology-topography"
         },
-        "name": "Profile Histologic Tumor Grade",
-        "description": "Profile for the description of a tumor's grade using the general four-tier grading scheme.",
+        "name": "Profile Histology Topography",
+        "description": "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3.",
         "exampleBoolean": false
       },
       {
@@ -402,10 +402,10 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/histology-topography"
+          "reference": "StructureDefinition/histopathological-grading-who"
         },
-        "name": "Profile Histology Topography",
-        "description": "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3.",
+        "name": "Profile Histopathological Tumor Grading WHO",
+        "description": "Profile for the description of a tumor's grade using the general four-tier grading scheme following the recommendations of the WHO classification of tumors and UICC.",
         "exampleBoolean": false
       },
       {
@@ -458,10 +458,10 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-histologic-grade-snomed"
+          "reference": "ValueSet/vs-histopathological-grade-snomed"
         },
         "name": "ValueSet Histologic Grade SNOMED",
-        "description": "The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified from SNOMED CT.",
+        "description": "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumours from SNOMED CT.",
         "exampleBoolean": false
       },
       {
@@ -588,7 +588,7 @@
         },
         "name": "Example Histologic Tumor Grade",
         "description": "Example tumor grade using the general four-tier grading scheme.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade"
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"
       },
       {
         "extension": [
@@ -641,6 +641,11 @@
         {
           "nameUrl": "index.html",
           "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "logicalmodel.html",
+          "title": "Logical Model",
           "generation": "markdown"
         },
         {

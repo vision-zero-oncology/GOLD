@@ -28,18 +28,18 @@
     "name": "SD_ECOG_Performance_Status"
   },
   {
-    "id": "histologic-grade",
-    "type": "StructureDefinition",
-    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade",
-    "version": "0.1.0",
-    "name": "SD_Histologic_Grade"
-  },
-  {
     "id": "histology-topography",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography",
     "version": "0.1.0",
     "name": "SD_Histology_Topography"
+  },
+  {
+    "id": "histopathological-grading-who",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who",
+    "version": "0.1.0",
+    "name": "SD_Histopathological_Grading_WHO"
   },
   {
     "id": "karnofsky-performance-status",
@@ -58,42 +58,42 @@
   {
     "id": "vs-ecog-performance-status-snomed",
     "type": "ValueSet",
-    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed",
     "version": "0.1.0",
     "name": "VS_ECOG_Performance_Status_SNOMED"
   },
   {
-    "id": "vs-histologic-grade-snomed",
+    "id": "vs-histopathological-grade-snomed",
     "type": "ValueSet",
-    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histologic-grade-snomed",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed",
     "version": "0.1.0",
-    "name": "VS_Histologic_Grade_SNOMED"
+    "name": "VS_Histopathological_Grade_SNOMED"
   },
   {
     "id": "vs-morphology-icd-o-3",
     "type": "ValueSet",
-    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3",
     "version": "0.1.0",
     "name": "VS_Morphology_ICD_O_3"
   },
   {
     "id": "vs-morphology-snomed",
     "type": "ValueSet",
-    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed",
     "version": "0.1.0",
     "name": "VS_Morphology_SNOMED"
   },
   {
     "id": "vs-topography-icd-o-3",
     "type": "ValueSet",
-    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3",
     "version": "0.1.0",
     "name": "VS_Topography_ICD_O_3"
   },
   {
     "id": "vs-topography-snomed",
     "type": "ValueSet",
-    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed",
     "version": "0.1.0",
     "name": "VS_Topography_SNOMED"
   }

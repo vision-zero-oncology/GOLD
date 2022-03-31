@@ -5,12 +5,12 @@
     "status": "generated",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  424122007 (Eastern Cooperative Oncology Group performance status finding (finding))</li></ul></div>"
   },
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed",
   "version": "0.1.0",
   "name": "VS_ECOG_Performance_Status_SNOMED",
   "title": "ValueSet ECOG Performance Status SNOMED",
   "status": "active",
-  "date": "2022-03-30T09:37:53+00:00",
+  "date": "2022-03-31T12:02:56+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {

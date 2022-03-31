@@ -20,7 +20,7 @@
   "name": "SD_ECOG_Performance_Status",
   "title": "Profile ECOG Performance Status",
   "status": "active",
-  "date": "2022-03-30T09:37:53+00:00",
+  "date": "2022-03-31T12:02:56+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -2916,7 +2916,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed"
         },
         "mapping": [
           {
@@ -4912,7 +4912,7 @@
         },
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed"
         }
       },
       {

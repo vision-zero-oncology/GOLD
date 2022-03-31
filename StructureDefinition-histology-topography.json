@@ -20,7 +20,7 @@
   "name": "SD_Histology_Topography",
   "title": "Profile Histology Topography",
   "status": "active",
-  "date": "2022-03-30T09:37:53+00:00",
+  "date": "2022-03-31T12:02:56+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -2914,7 +2914,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3"
         },
         "mapping": [
           {
@@ -3295,7 +3295,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed"
         },
         "mapping": [
           {
@@ -4100,7 +4100,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3"
         },
         "mapping": [
           {
@@ -4481,7 +4481,7 @@
         "isSummary": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed"
         },
         "mapping": [
           {
@@ -6253,7 +6253,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3"
         }
       },
       {
@@ -6277,7 +6277,7 @@
         },
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed"
         }
       },
       {
@@ -6316,7 +6316,7 @@
         "mustSupport": true,
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3"
         }
       },
       {
@@ -6340,7 +6340,7 @@
         },
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed"
         }
       },
       {

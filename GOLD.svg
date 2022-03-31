@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="819px" preserveAspectRatio="none" style="width:1063px;height:819px;background:#FFFFFF;" version="1.1" viewBox="0 0 1063 819" width="1063px" zoomAndPan="magnify"><defs><filter height="300%" id="fhqmi8wvxnwmx" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[9dd4eaa2771a2ff8dbee15cc1e732cab]
+class Patient--><rect codeLine="2" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="125.7305" id="Patient" style="stroke:#A80036;stroke-width:1.5;" width="227" x="433.5" y="7"/><ellipse cx="523.25" cy="23" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M525.7231,29.1431 Q525.1421,29.4419 524.5029,29.5913 Q523.8638,29.7407 523.1582,29.7407 Q520.6514,29.7407 519.3315,28.0889 Q518.0117,26.437 518.0117,23.3159 Q518.0117,20.1865 519.3315,18.5347 Q520.6514,16.8828 523.1582,16.8828 Q523.8638,16.8828 524.5112,17.0322 Q525.1587,17.1816 525.7231,17.4805 L525.7231,20.2031 Q525.0923,19.6221 524.4988,19.3523 Q523.9053,19.0825 523.2744,19.0825 Q521.9297,19.0825 521.2449,20.1492 Q520.5601,21.2158 520.5601,23.3159 Q520.5601,25.4077 521.2449,26.4744 Q521.9297,27.541 523.2744,27.541 Q523.9053,27.541 524.4988,27.2712 Q525.0923,27.0015 525.7231,26.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="39" x="543.75" y="27.5352">Patient</text><line style="stroke:#A80036;stroke-width:1.5;" x1="434.5" x2="659.5" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="104" x="439.5" y="53.6348">Name: HumanName</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="163" x="439.5" y="66.5898">GeschlechtAdministrativ: code</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="439.5" y="79.5449">Geburtsdatum: date</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="95" x="439.5" y="92.5">Adresse: Address</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="151" x="439.5" y="105.4551">Ethnizität: CodeableConcept</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="215" x="439.5" y="118.4102">GeschlechtBiologisch: CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.5;" x1="434.5" x2="659.5" y1="124.7305" y2="124.7305"/><!--MD5=[01e663d8f9ca83c938e6ef4d7dcd96a1]
+class Vitalstatus--><rect codeLine="11" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="86.8652" id="Vitalstatus" style="stroke:#A80036;stroke-width:1.5;" width="189" x="19.5" y="220"/><ellipse cx="80.25" cy="236" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M82.7231,242.1431 Q82.1421,242.4419 81.5029,242.5913 Q80.8638,242.7407 80.1582,242.7407 Q77.6514,242.7407 76.3315,241.0889 Q75.0117,239.437 75.0117,236.3159 Q75.0117,233.1865 76.3315,231.5347 Q77.6514,229.8828 80.1582,229.8828 Q80.8638,229.8828 81.5112,230.0322 Q82.1587,230.1816 82.7231,230.4805 L82.7231,233.2031 Q82.0923,232.6221 81.4988,232.3523 Q80.9053,232.0825 80.2744,232.0825 Q78.9297,232.0825 78.2449,233.1492 Q77.5601,234.2158 77.5601,236.3159 Q77.5601,238.4077 78.2449,239.4744 Q78.9297,240.541 80.2744,240.541 Q80.9053,240.541 81.4988,240.2712 Q82.0923,240.0015 82.7231,239.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="59" x="100.75" y="240.5352">Vitalstatus</text><line style="stroke:#A80036;stroke-width:1.5;" x1="20.5" x2="207.5" y1="252" y2="252"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="25.5" y="266.6348">Verstorben: boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="25.5" y="279.5898">Todeszeitpunkt: dateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="177" x="25.5" y="292.5449">Todesursache: CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.5;" x1="20.5" x2="207.5" y1="298.8652" y2="298.8652"/><!--MD5=[450dfd0826dd03772001acab9490f358]
+class Diagnose--><rect codeLine="19" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="138.6855" id="Diagnose" style="stroke:#A80036;stroke-width:1.5;" width="216" x="244" y="194"/><ellipse cx="321.25" cy="210" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M323.7231,216.1431 Q323.1421,216.4419 322.5029,216.5913 Q321.8638,216.7407 321.1582,216.7407 Q318.6514,216.7407 317.3315,215.0889 Q316.0117,213.437 316.0117,210.3159 Q316.0117,207.1865 317.3315,205.5347 Q318.6514,203.8828 321.1582,203.8828 Q321.8638,203.8828 322.5112,204.0322 Q323.1587,204.1816 323.7231,204.4805 L323.7231,207.2031 Q323.0923,206.6221 322.4988,206.3523 Q321.9053,206.0825 321.2744,206.0825 Q319.9297,206.0825 319.2449,207.1492 Q318.5601,208.2158 318.5601,210.3159 Q318.5601,212.4077 319.2449,213.4744 Q319.9297,214.541 321.2744,214.541 Q321.9053,214.541 322.4988,214.2712 Q323.0923,214.0015 323.7231,213.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="53" x="341.75" y="214.5352">Diagnose</text><line style="stroke:#A80036;stroke-width:1.5;" x1="245" x2="459" y1="226" y2="226"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="65" x="250" y="240.6348">ID: Identifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="187" x="250" y="253.5898">KlinischerStatus: CodeableConcept</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="204" x="250" y="266.5449">Diagnosesicherheit: CodeableConcept</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="177" x="250" y="279.5">Diagnosecode: CodeableConcept</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="186" x="250" y="292.4551">KlinischRelevanterZeitraum: Period</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="177" x="250" y="305.4102">Dokumentationsdatum: dateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="173" x="250" y="318.3652">Manifestation: CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.5;" x1="245" x2="459" y1="324.6855" y2="324.6855"/><!--MD5=[1bf4b45528ec36675780c817bfa04d69]
+class Körpermaße--><rect codeLine="31" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="48" id="Körpermaße" style="stroke:#A80036;stroke-width:1.5;" width="104" x="495" y="239.5"/><ellipse cx="510" cy="255.5" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M509.8633,250.8481 L508.7095,255.9199 L511.0254,255.9199 Z M508.3691,248.6069 L511.3657,248.6069 L514.7109,261 L512.2622,261 L511.4985,257.937 L508.2197,257.937 L507.4727,261 L505.0239,261 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="72" x="524" y="260.0352">Körpermaße</text><line style="stroke:#A80036;stroke-width:1.5;" x1="496" x2="598" y1="271.5" y2="271.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="496" x2="598" y1="279.5" y2="279.5"/><!--MD5=[0b1f4f2301101f37c63a7c8ed0ac373e]
+class Körpergröße--><rect codeLine="37" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="73.9102" id="Körpergröße" style="stroke:#A80036;stroke-width:1.5;" width="144" x="296" y="423"/><ellipse cx="328.55" cy="439" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M331.0231,445.1431 Q330.4421,445.4419 329.8029,445.5913 Q329.1638,445.7407 328.4582,445.7407 Q325.9514,445.7407 324.6315,444.0889 Q323.3117,442.437 323.3117,439.3159 Q323.3117,436.1865 324.6315,434.5347 Q325.9514,432.8828 328.4582,432.8828 Q329.1638,432.8828 329.8112,433.0322 Q330.4587,433.1816 331.0231,433.4805 L331.0231,436.2031 Q330.3923,435.6221 329.7988,435.3523 Q329.2053,435.0825 328.5744,435.0825 Q327.2297,435.0825 326.5449,436.1492 Q325.8601,437.2158 325.8601,439.3159 Q325.8601,441.4077 326.5449,442.4744 Q327.2297,443.541 328.5744,443.541 Q329.2053,443.541 329.7988,443.2712 Q330.3923,443.0015 331.0231,442.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="73" x="346.45" y="443.5352">Körpergröße</text><line style="stroke:#A80036;stroke-width:1.5;" x1="297" x2="439" y1="455" y2="455"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="302" y="469.6348">Messzeitpunkt: dateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="302" y="482.5898">Messwert: Quantity</text><line style="stroke:#A80036;stroke-width:1.5;" x1="297" x2="439" y1="488.9102" y2="488.9102"/><!--MD5=[51d5f656a11cfe87112ab5039c5ee39b]
+class Körpergewicht--><rect codeLine="44" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="73.9102" id="Körpergewicht" style="stroke:#A80036;stroke-width:1.5;" width="144" x="475" y="423"/><ellipse cx="503.05" cy="439" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M505.5231,445.1431 Q504.9421,445.4419 504.3029,445.5913 Q503.6638,445.7407 502.9582,445.7407 Q500.4514,445.7407 499.1315,444.0889 Q497.8117,442.437 497.8117,439.3159 Q497.8117,436.1865 499.1315,434.5347 Q500.4514,432.8828 502.9582,432.8828 Q503.6638,432.8828 504.3112,433.0322 Q504.9587,433.1816 505.5231,433.4805 L505.5231,436.2031 Q504.8923,435.6221 504.2988,435.3523 Q503.7053,435.0825 503.0744,435.0825 Q501.7297,435.0825 501.0449,436.1492 Q500.3601,437.2158 500.3601,439.3159 Q500.3601,441.4077 501.0449,442.4744 Q501.7297,443.541 503.0744,443.541 Q503.7053,443.541 504.2988,443.2712 Q504.8923,443.0015 505.5231,442.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="83" x="519.95" y="443.5352">Körpergewicht</text><line style="stroke:#A80036;stroke-width:1.5;" x1="476" x2="618" y1="455" y2="455"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="481" y="469.6348">Messzeitpunkt: dateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="481" y="482.5898">Messwert: Quantity</text><line style="stroke:#A80036;stroke-width:1.5;" x1="476" x2="618" y1="488.9102" y2="488.9102"/><!--MD5=[f2efd3b285b01053d1c0db079a7ec032]
+class Laborbefund--><rect codeLine="51" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="60.9551" id="Laborbefund" style="stroke:#A80036;stroke-width:1.5;" width="106" x="645" y="233"/><ellipse cx="660" cy="249" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M662.4731,255.1431 Q661.8921,255.4419 661.2529,255.5913 Q660.6138,255.7407 659.9082,255.7407 Q657.4014,255.7407 656.0815,254.0889 Q654.7617,252.437 654.7617,249.3159 Q654.7617,246.1865 656.0815,244.5347 Q657.4014,242.8828 659.9082,242.8828 Q660.6138,242.8828 661.2612,243.0322 Q661.9087,243.1816 662.4731,243.4805 L662.4731,246.2031 Q661.8423,245.6221 661.2488,245.3523 Q660.6553,245.0825 660.0244,245.0825 Q658.6797,245.0825 657.9949,246.1492 Q657.3101,247.2158 657.3101,249.3159 Q657.3101,251.4077 657.9949,252.4744 Q658.6797,253.541 660.0244,253.541 Q660.6553,253.541 661.2488,253.2712 Q661.8423,253.0015 662.4731,252.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="74" x="674" y="253.5352">Laborbefund</text><line style="stroke:#A80036;stroke-width:1.5;" x1="646" x2="750" y1="265" y2="265"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="65" x="651" y="279.6348">ID: Identifier</text><line style="stroke:#A80036;stroke-width:1.5;" x1="646" x2="750" y1="285.9551" y2="285.9551"/><!--MD5=[ebd15861f3c033e5d7a77675d8f72c41]
+class Laborparameter--><rect codeLine="57" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="99.8203" id="Laborparameter" style="stroke:#A80036;stroke-width:1.5;" width="151" x="654.5" y="410"/><ellipse cx="680.75" cy="426" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M683.2231,432.1431 Q682.6421,432.4419 682.0029,432.5913 Q681.3638,432.7407 680.6582,432.7407 Q678.1514,432.7407 676.8315,431.0889 Q675.5117,429.437 675.5117,426.3159 Q675.5117,423.1865 676.8315,421.5347 Q678.1514,419.8828 680.6582,419.8828 Q681.3638,419.8828 682.0112,420.0322 Q682.6587,420.1816 683.2231,420.4805 L683.2231,423.2031 Q682.5923,422.6221 681.9988,422.3523 Q681.4053,422.0825 680.7744,422.0825 Q679.4297,422.0825 678.7449,423.1492 Q678.0601,424.2158 678.0601,426.3159 Q678.0601,428.4077 678.7449,429.4744 Q679.4297,430.541 680.7744,430.541 Q681.4053,430.541 681.9988,430.2712 Q682.5923,430.0015 683.2231,429.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="94" x="697.25" y="430.5352">Laborparameter</text><line style="stroke:#A80036;stroke-width:1.5;" x1="655.5" x2="804.5" y1="442" y2="442"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="129" x="660.5" y="456.6348">Code: CodeableConcept</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="660.5" y="469.5898">Laborwert: Quantity</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="660.5" y="482.5449">Messzeitpunkt: dateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="139" x="660.5" y="495.5">Referenzbereich: Quantity</text><line style="stroke:#A80036;stroke-width:1.5;" x1="655.5" x2="804.5" y1="501.8203" y2="501.8203"/><!--MD5=[07843a28108f8f9fb73050ea95a4c52b]
+class Probe--><rect codeLine="64" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="86.8652" id="Probe" style="stroke:#A80036;stroke-width:1.5;" width="194" x="633" y="571"/><ellipse cx="708.75" cy="587" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M711.2231,593.1431 Q710.6421,593.4419 710.0029,593.5913 Q709.3638,593.7407 708.6582,593.7407 Q706.1514,593.7407 704.8315,592.0889 Q703.5117,590.437 703.5117,587.3159 Q703.5117,584.1865 704.8315,582.5347 Q706.1514,580.8828 708.6582,580.8828 Q709.3638,580.8828 710.0112,581.0322 Q710.6587,581.1816 711.2231,581.4805 L711.2231,584.2031 Q710.5923,583.6221 709.9988,583.3523 Q709.4053,583.0825 708.7744,583.0825 Q707.4297,583.0825 706.7449,584.1492 Q706.0601,585.2158 706.0601,587.3159 Q706.0601,589.4077 706.7449,590.4744 Q707.4297,591.541 708.7744,591.541 Q709.4053,591.541 709.9988,591.2712 Q710.5923,591.0015 711.2231,590.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="34" x="729.25" y="591.5352">Probe</text><line style="stroke:#A80036;stroke-width:1.5;" x1="634" x2="826" y1="603" y2="603"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="65" x="639" y="617.6348">ID: Identifier</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="154" x="639" y="630.5898">Probenart: CodeableConcept</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="182" x="639" y="643.5449">Entnahmestelle: CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.5;" x1="634" x2="826" y1="649.8652" y2="649.8652"/><!--MD5=[8d1280e58717f51acd6181606489346b]
+class Assessment--><rect codeLine="73" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="48" id="Assessment" style="stroke:#A80036;stroke-width:1.5;" width="100" x="161" y="436"/><ellipse cx="176" cy="452" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M175.8633,447.3481 L174.7095,452.4199 L177.0254,452.4199 Z M174.3691,445.1069 L177.3657,445.1069 L180.7109,457.5 L178.2622,457.5 L177.4985,454.437 L174.2197,454.437 L173.4727,457.5 L171.0239,457.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="68" x="190" y="456.5352">Assessment</text><line style="stroke:#A80036;stroke-width:1.5;" x1="162" x2="260" y1="468" y2="468"/><line style="stroke:#A80036;stroke-width:1.5;" x1="162" x2="260" y1="476" y2="476"/><!--MD5=[f27bcd0bfaa041fdac22cb69ddc6ac63]
+class Staging--><rect codeLine="77" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="48" id="Staging" style="stroke:#A80036;stroke-width:1.5;" width="73" x="71.5" y="590.5"/><ellipse cx="86.5" cy="606.5" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M86.3633,601.8481 L85.2095,606.9199 L87.5254,606.9199 Z M84.8691,599.6069 L87.8657,599.6069 L91.2109,612 L88.7622,612 L87.9985,608.937 L84.7197,608.937 L83.9727,612 L81.5239,612 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="41" x="100.5" y="611.0352">Staging</text><line style="stroke:#A80036;stroke-width:1.5;" x1="72.5" x2="143.5" y1="622.5" y2="622.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="72.5" x2="143.5" y1="630.5" y2="630.5"/><!--MD5=[922f99bd240fc9b7dcaee70950235b23]
+class Grading--><rect codeLine="81" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="48" id="Grading" style="stroke:#A80036;stroke-width:1.5;" width="78" x="209" y="590.5"/><ellipse cx="224" cy="606.5" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M223.8633,601.8481 L222.7095,606.9199 L225.0254,606.9199 Z M222.3691,599.6069 L225.3657,599.6069 L228.7109,612 L226.2622,612 L225.4985,608.937 L222.2197,608.937 L221.4727,612 L219.0239,612 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="46" x="238" y="611.0352">Grading</text><line style="stroke:#A80036;stroke-width:1.5;" x1="210" x2="286" y1="622.5" y2="622.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="210" x2="286" y1="630.5" y2="630.5"/><!--MD5=[bb18fe156cacd98fdf663dd96613203a]
+class TNM--><rect codeLine="85" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="86.8652" id="TNM" style="stroke:#A80036;stroke-width:1.5;" width="122" x="7" y="719"/><ellipse cx="50.35" cy="735" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M52.8231,741.1431 Q52.2421,741.4419 51.6029,741.5913 Q50.9638,741.7407 50.2582,741.7407 Q47.7514,741.7407 46.4315,740.0889 Q45.1117,738.437 45.1117,735.3159 Q45.1117,732.1865 46.4315,730.5347 Q47.7514,728.8828 50.2582,728.8828 Q50.9638,728.8828 51.6112,729.0322 Q52.2587,729.1816 52.8231,729.4805 L52.8231,732.2031 Q52.1923,731.6221 51.5988,731.3523 Q51.0053,731.0825 50.3744,731.0825 Q49.0297,731.0825 48.3449,732.1492 Q47.6601,733.2158 47.6601,735.3159 Q47.6601,737.4077 48.3449,738.4744 Q49.0297,739.541 50.3744,739.541 Q51.0053,739.541 51.5988,739.2712 Q52.1923,739.0015 52.8231,738.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="27" x="70.65" y="739.5352">TNM</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="128" y1="751" y2="751"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="108" x="13" y="765.6348">T: CodeableConcept</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="13" y="778.5898">N: CodeableConcept</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="110" x="13" y="791.5449">M: CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="128" y1="797.8652" y2="797.8652"/><!--MD5=[81a5abd404470e1328f70bcb46211fff]
+class HistopathologischesGrading--><rect codeLine="91" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="60.9551" id="HistopathologischesGrading" style="stroke:#A80036;stroke-width:1.5;" width="192" x="164" y="732"/><ellipse cx="179" cy="748" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M181.4731,754.1431 Q180.8921,754.4419 180.2529,754.5913 Q179.6138,754.7407 178.9082,754.7407 Q176.4014,754.7407 175.0815,753.0889 Q173.7617,751.437 173.7617,748.3159 Q173.7617,745.1865 175.0815,743.5347 Q176.4014,741.8828 178.9082,741.8828 Q179.6138,741.8828 180.2612,742.0322 Q180.9087,742.1816 181.4731,742.4805 L181.4731,745.2031 Q180.8423,744.6221 180.2488,744.3523 Q179.6553,744.0825 179.0244,744.0825 Q177.6797,744.0825 176.9949,745.1492 Q176.3101,746.2158 176.3101,748.3159 Q176.3101,750.4077 176.9949,751.4744 Q177.6797,752.541 179.0244,752.541 Q179.6553,752.541 180.2488,752.2712 Q180.8423,752.0015 181.4731,751.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="160" x="193" y="752.5352">HistopathologischesGrading</text><line style="stroke:#A80036;stroke-width:1.5;" x1="165" x2="355" y1="764" y2="764"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="133" x="170" y="778.6348">Grade: CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.5;" x1="165" x2="355" y1="784.9551" y2="784.9551"/><!--MD5=[dbccef13054c92a74ecb76298de2f96e]
+class Therapie--><rect codeLine="101" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="48" id="Therapie" style="stroke:#A80036;stroke-width:1.5;" width="84" x="845" y="239.5"/><ellipse cx="860" cy="255.5" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M859.8633,250.8481 L858.7095,255.9199 L861.0254,255.9199 Z M858.3691,248.6069 L861.3657,248.6069 L864.7109,261 L862.2622,261 L861.4985,257.937 L858.2197,257.937 L857.4727,261 L855.0239,261 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="52" x="874" y="260.0352">Therapie</text><line style="stroke:#A80036;stroke-width:1.5;" x1="846" x2="928" y1="271.5" y2="271.5"/><line style="stroke:#A80036;stroke-width:1.5;" x1="846" x2="928" y1="279.5" y2="279.5"/><!--MD5=[9feba865d30dc5777caa8664f24d4c03]
+class MedikamentöseTherapie--><rect codeLine="105" fill="#FEFECE" filter="url(#fhqmi8wvxnwmx)" height="99.8203" id="MedikamentöseTherapie" style="stroke:#A80036;stroke-width:1.5;" width="208" x="841" y="410"/><ellipse cx="870.85" cy="426" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M873.3231,432.1431 Q872.7421,432.4419 872.1029,432.5913 Q871.4638,432.7407 870.7582,432.7407 Q868.2514,432.7407 866.9315,431.0889 Q865.6117,429.437 865.6117,426.3159 Q865.6117,423.1865 866.9315,421.5347 Q868.2514,419.8828 870.7582,419.8828 Q871.4638,419.8828 872.1112,420.0322 Q872.7587,420.1816 873.3231,420.4805 L873.3231,423.2031 Q872.6923,422.6221 872.0988,422.3523 Q871.5053,422.0825 870.8744,422.0825 Q869.5297,422.0825 868.8449,423.1492 Q868.1601,424.2158 868.1601,426.3159 Q868.1601,428.4077 868.8449,429.4744 Q869.5297,430.541 870.8744,430.541 Q871.5053,430.541 872.0988,430.2712 Q872.6923,430.0015 873.3231,429.4204 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="143" x="888.15" y="430.5352">MedikamentöseTherapie</text><line style="stroke:#A80036;stroke-width:1.5;" x1="842" x2="1048" y1="442" y2="442"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="149" x="847" y="456.6348">Wirkstoff: CodeableConcept</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="138" x="847" y="469.5898">TherapieBeginn: dateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="847" y="482.5449">TherapieEnde: dateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="196" x="847" y="495.5">TherapieIntention: CodeableConcept</text><line style="stroke:#A80036;stroke-width:1.5;" x1="842" x2="1048" y1="501.8203" y2="501.8203"/><!--MD5=[8fb1c0c84618ed7acce3506c48994ccb]
+link Patient to Vitalstatus--><path codeLine="17" d="M433.44,108.78 C371.03,130.96 292.93,161.05 226,194 C210.46,201.65 194.27,210.8 179.2,219.87 " fill="none" id="Patient-Vitalstatus" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[5e8de0fd2898e8b9735cefbfbde8062a]
+link Patient to Diagnose--><path codeLine="29" d="M483.69,133.17 C464.01,152.51 442.19,173.93 422.08,193.68 " fill="none" id="Patient-Diagnose" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4462498c278eefd9d18e3c700a96ca20]
+link Patient to Körpermaße--><path codeLine="35" d="M547,133.17 C547,169.43 547,213.05 547,239.23 " fill="none" id="Patient-Körpermaße" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6a4d47683616debf50efd47977a50ef2]
+link Körpermaße to Körpergröße--><path codeLine="42" d="M525.76,287.58 C495.02,320.98 437.81,383.14 401.39,422.72 " fill="none" id="Körpermaße-Körpergröße" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[aa06ec6f3cfd0344cc3651c6073a3f02]
+link Körpermaße to Körpergewicht--><path codeLine="49" d="M547,287.58 C547,320.98 547,383.14 547,422.72 " fill="none" id="Körpermaße-Körpergewicht" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b5f7d9f6a0073b0d5fc221ea2397261c]
+link Patient to Laborbefund--><path codeLine="55" d="M596.03,133.17 C622.38,166.59 653.65,206.26 674.56,232.77 " fill="none" id="Patient-Laborbefund" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[d3bbef92fade7981909f345006d4c514]
+reverse link Laborbefund to Laborparameter--><path codeLine="70" d="M705.02,307.15 C710,337.45 716.71,378.2 721.92,409.86 " fill="none" id="Laborbefund-backto-Laborparameter" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="702.86,294.04,699.8889,300.6106,704.8114,305.8803,707.7825,299.3097,702.86,294.04" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="44" x="718" y="376.5684">enthält</text><!--MD5=[11ebcbbda5b5785f5dc054d70ad60c18]
+link Laborparameter to Probe--><path codeLine="71" d="M730,510.09 C730,529.68 730,552.03 730,570.92 " fill="none" id="Laborparameter-Probe" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3486b027606c4ac2fda5ef51b938b2ab]
+link Assessment to Staging--><path codeLine="95" d="M195.36,484.16 C176,512.82 143.22,561.36 123.79,590.12 " fill="none" id="Assessment-Staging" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[4976f5298a751387a996d014dd70c00c]
+link Assessment to Grading--><path codeLine="96" d="M216.62,484.16 C223.57,512.82 235.35,561.36 242.33,590.12 " fill="none" id="Assessment-Grading" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a47966f195094964cec11946237acd0b]
+link Staging to TNM--><path codeLine="97" d="M101.66,638.63 C95.78,660.1 86.88,692.59 79.71,718.77 " fill="none" id="Staging-TNM" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6bc0b90fcc215b09bd318fd86cfac511]
+link Grading to HistopathologischesGrading--><path codeLine="98" d="M249.9,638.63 C251.98,663.88 255.3,704.37 257.57,731.91 " fill="none" id="Grading-HistopathologischesGrading" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[81890c8ffcb7a6a7ef961e834f08582c]
+link Diagnose to Assessment--><path codeLine="99" d="M243.68,323.65 C231,335.04 219.81,348.14 212,363 C200.13,385.57 202.09,415.45 205.59,435.85 " fill="none" id="Diagnose-Assessment" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="128" x="213" y="376.5684">nachgewiesen durch</text><!--MD5=[4bf6de6432455665f106b48790896eae]
+link Therapie to MedikamentöseTherapie--><path codeLine="112" d="M893.88,287.58 C902.82,317.56 918.67,370.71 930.36,409.91 " fill="none" id="Therapie-MedikamentöseTherapie" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[6bd2b8131062a89eaa5cb98d2b9d6986]
+link Patient to Therapie--><path codeLine="113" d="M659.32,133.1 C694.21,152.5 732.75,174.05 768,194 C794.45,208.97 824.07,226.02 847.14,239.37 " fill="none" id="Patient-Therapie" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[504c4e27eee3acd7a740f39647ce7ef4]
+@startuml "GOLD" 
+
+class Patient {
+    Name: HumanName
+    GeschlechtAdministrativ: code
+    Geburtsdatum: date 
+    Adresse: Address
+    Ethnizität: CodeableConcept
+    GeschlechtBiologisch: CodeableConcept
+}
+
+class Vitalstatus {
+    Verstorben: boolean
+    Todeszeitpunkt: dateTime
+    Todesursache: CodeableConcept
+}
+
+Patient - - Vitalstatus
+
+class Diagnose {
+    ID: Identifier
+    KlinischerStatus: CodeableConcept
+    Diagnosesicherheit: CodeableConcept
+    Diagnosecode: CodeableConcept
+    KlinischRelevanterZeitraum: Period
+    Dokumentationsdatum: dateTime
+    Manifestation: CodeableConcept
+}
+
+Patient - - Diagnose
+
+abstract Körpermaße {
+
+}
+
+Patient - - Körpermaße
+
+class Körpergröße {
+    Messzeitpunkt: dateTime
+    Messwert: Quantity
+}
+
+Körpermaße - - Körpergröße
+
+class Körpergewicht {
+    Messzeitpunkt: dateTime
+    Messwert: Quantity
+}
+
+Körpermaße - - Körpergewicht
+
+class Laborbefund {
+    ID: Identifier
+}
+
+Patient - - Laborbefund
+
+class Laborparameter {
+    Code: CodeableConcept
+    Laborwert: Quantity
+    Messzeitpunkt: dateTime
+    Referenzbereich: Quantity
+}
+
+class Probe {
+    ID: Identifier
+    Probenart: CodeableConcept
+    Entnahmestelle: CodeableConcept
+}
+
+Laborbefund *- - Laborparameter : enthält
+Laborparameter - - Probe
+
+abstract Assessment {
+
+}
+
+abstract Staging {
+
+}
+
+abstract Grading {
+
+}
+
+class TNM {
+    T: CodeableConcept
+    N: CodeableConcept
+    M: CodeableConcept
+}
+
+class HistopathologischesGrading {
+    Grade: CodeableConcept
+}
+
+Assessment - - Staging
+Assessment - - Grading
+Staging - - TNM
+Grading - - HistopathologischesGrading
+Diagnose - - Assessment : nachgewiesen durch
+
+abstract Therapie {
+
+}
+
+class MedikamentöseTherapie {
+    Wirkstoff: CodeableConcept
+    TherapieBeginn: dateTime
+    TherapieEnde: dateTime
+    TherapieIntention: CodeableConcept
+}
+
+Therapie - - MedikamentöseTherapie
+Patient - - Therapie
+
+@enduml
+
+PlantUML version 1.2022.0(Tue Jan 11 17:16:42 CET 2022)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: DE
+--></g></svg>

@@ -28,7 +28,7 @@
   fhir:StructureDefinition.name [ fhir:value "SD_Histology_Topography"];
   fhir:StructureDefinition.title [ fhir:value "Profile Histology Topography"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-03-30T09:37:53+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-03-31T12:02:56+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
@@ -3054,8 +3054,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3";
-           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3>
+           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3";
+           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -3440,8 +3440,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed";
-           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed>
+           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed";
+           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -4259,8 +4259,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3";
-           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3>
+           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3";
+           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -4645,8 +4645,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed";
-           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed>
+           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed";
+           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed>
          ]
        ];
        fhir:ElementDefinition.mapping [
@@ -6494,8 +6494,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3";
-           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3>
+           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3";
+           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3>
          ]
        ]
      ], [
@@ -6521,8 +6521,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed";
-           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed>
+           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed";
+           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed>
          ]
        ]
      ], [
@@ -6562,8 +6562,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3";
-           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3>
+           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3";
+           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3>
          ]
        ]
      ], [
@@ -6589,8 +6589,8 @@
        fhir:ElementDefinition.binding [
          fhir:ElementDefinition.binding.strength [ fhir:value "required" ];
          fhir:ElementDefinition.binding.valueSet [
-           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed";
-           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed>
+           fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed";
+           fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed>
          ]
        ]
      ], [

@@ -251,10 +251,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/histologic-grade"/>
+        <reference value="StructureDefinition/histology-topography"/>
       </reference>
-      <name value="Profile Histologic Tumor Grade"/>
-      <description value="Profile for the description of a tumor&#39;s grade using the general four-tier grading scheme."/>
+      <name value="Profile Histology Topography"/>
+      <description value="Profile for the classification of a tumor&#39;s morphology(histology) and topography using ICD-O-3."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -262,10 +262,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/histology-topography"/>
+        <reference value="StructureDefinition/histopathological-grading-who"/>
       </reference>
-      <name value="Profile Histology Topography"/>
-      <description value="Profile for the classification of a tumor&#39;s morphology(histology) and topography using ICD-O-3."/>
+      <name value="Profile Histopathological Tumor Grading WHO"/>
+      <description value="Profile for the description of a tumor&#39;s grade using the general four-tier grading scheme following the recommendations of the WHO classification of tumors and UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -306,10 +306,10 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-histologic-grade-snomed"/>
+        <reference value="ValueSet/vs-histopathological-grade-snomed"/>
       </reference>
       <name value="ValueSet Histologic Grade SNOMED"/>
-      <description value="The ValueSet contains codes for the grading system that is generally used for a tumor type if no other system is specified from SNOMED CT."/>
+      <description value="The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumours from SNOMED CT."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -409,7 +409,7 @@
       </reference>
       <name value="Example Histologic Tumor Grade"/>
       <description value="Example tumor grade using the general four-tier grading scheme."/>
-      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -451,6 +451,11 @@
       <page>
         <nameUrl value="index.html"/>
         <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <nameUrl value="logicalmodel.html"/>
+        <title value="Logical Model"/>
         <generation value="markdown"/>
       </page>
       <page>

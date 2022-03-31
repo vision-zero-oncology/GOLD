@@ -5,12 +5,12 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  400177003 (Neoplasm and/or hamartoma (morphologic abnormality))</li></ul></div>
   </text>
-  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed"/>
+  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed"/>
   <version value="0.1.0"/>
   <name value="VS_Morphology_SNOMED"/>
   <title value="ValueSet Morphology SNOMED"/>
   <status value="active"/>
-  <date value="2022-03-30T09:37:53+00:00"/>
+  <date value="2022-03-31T12:02:56+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>

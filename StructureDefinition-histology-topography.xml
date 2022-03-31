@@ -61,7 +61,7 @@
   <name value="SD_Histology_Topography"/>
   <title value="Profile Histology Topography"/>
   <status value="active"/>
-  <date value="2022-03-30T09:37:53+00:00"/>
+  <date value="2022-03-31T12:02:56+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -2445,7 +2445,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3"/>
+        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -2760,7 +2760,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed"/>
+        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -3418,7 +3418,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3"/>
+        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -3733,7 +3733,7 @@
       <isSummary value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed"/>
+        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed"/>
       </binding>
       <mapping>
         <identity value="v2"/>
@@ -5180,7 +5180,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3"/>
+        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3"/>
       </binding>
     </element>
     <element id="Observation.valueCodeableConcept.coding:morphologyICD-O-3.system">
@@ -5201,7 +5201,7 @@
       </patternCoding>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed"/>
+        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed"/>
       </binding>
     </element>
     <element id="Observation.valueCodeableConcept.coding:morphologySnomed.system">
@@ -5234,7 +5234,7 @@
       <mustSupport value="true"/>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3"/>
+        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3"/>
       </binding>
     </element>
     <element id="Observation.bodySite.coding:topographyICD-O-3.system">
@@ -5255,7 +5255,7 @@
       </patternCoding>
       <binding>
         <strength value="required"/>
-        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed"/>
+        <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed"/>
       </binding>
     </element>
     <element id="Observation.bodySite.coding:topographySnomed.system">

@@ -5,12 +5,12 @@
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://terminology.hl7.org/3.1.0/CodeSystem-icd-o-3.html"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a> where concept  matches (by regex)  ^C\S*$</li></ul></div>
   </text>
-  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3"/>
+  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3"/>
   <version value="0.1.0"/>
   <name value="VS_Topography_ICD_O_3"/>
   <title value="ValueSet Topography ICD-O-3"/>
   <status value="active"/>
-  <date value="2022-03-30T09:37:53+00:00"/>
+  <date value="2022-03-31T12:02:56+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
