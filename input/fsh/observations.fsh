@@ -317,12 +317,12 @@ Description: "Example tumor histology and topography observation."
 
 // Histologic Tumor Grade
 
-Profile: SD_Histologic_Grade
+Profile: SD_Histopathological_Grading_WHO
 Parent: Observation
-Id: histologic-grade
-Title: "Profile Histologic Tumor Grade"
-Description: "Profile for the description of a tumor's grade using the general four-tier grading scheme."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histologic-grade"
+Id: histopathological-grading-who
+Title: "Profile Histopathological Tumor Grading WHO"
+Description: "Profile for the description of a tumor's grade using the general four-tier grading scheme following the recommendations of the WHO classification of tumors and UICC."
+* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -348,13 +348,13 @@ Description: "Profile for the description of a tumor's grade using the general f
 * valueCodeableConcept.coding ^slicing.rules = #open
 * valueCodeableConcept.coding contains
     histologicGradeSnomed 1..1 MS
-* valueCodeableConcept.coding[histologicGradeSnomed] from VS_Histologic_Grade_SNOMED (required)
+* valueCodeableConcept.coding[histologicGradeSnomed] from VS_Histopathological_Grade_SNOMED (required)
 * valueCodeableConcept.coding[histologicGradeSnomed] ^patternCoding.system = "http://snomed.info/sct"
 * valueCodeableConcept.coding[histologicGradeSnomed].system 1..
 * valueCodeableConcept.coding[histologicGradeSnomed].code 1..
 
 Instance: example-histologic-grade
-InstanceOf: histologic-grade
+InstanceOf: histopathological-grading-who
 Usage: #example
 Title: "Example Histologic Tumor Grade"
 Description: "Example tumor grade using the general four-tier grading scheme."
