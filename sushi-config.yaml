@@ -32,6 +32,8 @@ dependencies:
 pages:
   index.md:
     title: Home
+  logicalmodel.md:
+    title: Logical Model
   usecase.md:
     title: Use Case
   profiles.md:

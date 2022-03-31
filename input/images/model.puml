@@ -1,0 +1,127 @@
+@startuml "GOLD" 
+skinparam groupInheritance 2
+
+class Patient {
+    Name: HumanName
+    GeschlechtAdministrativ: code
+    Geburtsdatum: date 
+    Adresse: Address
+    Ethnizität: CodeableConcept
+    GeschlechtBiologisch: CodeableConcept
+}
+
+class Vitalstatus {
+    Verstorben: boolean
+    Todeszeitpunkt: dateTime
+    Todesursache: CodeableConcept
+}
+
+Patient <-- Vitalstatus
+
+abstract Körpermaße {
+
+}
+
+Patient <-- Körpermaße
+
+class Körpergröße {
+    Messzeitpunkt: dateTime
+    Messwert: Quantity
+}
+
+Körpermaße *-- Körpergröße
+
+class Körpergewicht {
+    Messzeitpunkt: dateTime
+    Messwert: Quantity
+}
+
+Körpermaße *-- Körpergewicht
+
+class Diagnose {
+    ID: Identifier
+    KlinischerStatus: CodeableConcept
+    Diagnosesicherheit: CodeableConcept
+    Diagnosecode: CodeableConcept
+    KlinischRelevanterZeitraum: Period
+    Dokumentationsdatum: dateTime
+    Manifestation: CodeableConcept
+}
+
+Patient <-- Diagnose
+
+class Laborbefund {
+    ID: Identifier
+}
+
+Patient <-- Laborbefund
+
+class Laborparameter {
+    Code: CodeableConcept
+    Laborwert: Quantity
+    Messzeitpunkt: dateTime
+    Referenzbereich: Quantity
+}
+
+class Probe {
+    ID: Identifier
+    Probenart: CodeableConcept
+    Entnahmestelle: CodeableConcept
+}
+
+Laborbefund *-- Laborparameter : enthält
+Laborparameter --> Probe
+
+abstract Assessment {
+
+}
+
+abstract Staging {
+
+}
+
+abstract Grading {
+
+}
+
+class TNM {
+    T: CodeableConcept
+    N: CodeableConcept
+    M: CodeableConcept
+}
+
+class HistopathologischesGrading {
+    Grade: CodeableConcept
+}
+
+Assessment *-- Staging
+Assessment *-- Grading
+Staging *-- TNM
+Grading *-- HistopathologischesGrading
+Diagnose --> Assessment : nachgewiesen durch
+HistopathologischesGrading --> Probe
+
+abstract Therapie {
+
+}
+
+class Prozedur {
+    Code: CodeableConcept
+    Durchführungsdatum: dateTime
+    Dokumentationsdatum: dateTime
+    Körperstelle: CodeableConcept
+}
+
+Therapie *-- Prozedur
+
+class MedikamentöseTherapie {
+    Wirkstoff: CodeableConcept
+    TherapieBeginn: dateTime
+    TherapieEnde: dateTime
+    TherapieIntention: CodeableConcept
+}
+
+Therapie *-- MedikamentöseTherapie
+Patient <-- Therapie
+
+@enduml
