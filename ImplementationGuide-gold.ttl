@@ -412,6 +412,20 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/uicc-tnm" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile UICC TNM" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the tumor classification using TNM stage group (I, II, III, or IV) or TNM staging elements (T, N, and M)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/vital-signs-base" ]
        ];
@@ -419,7 +433,49 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 8;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/uicc-tnm-prefix-cpu" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Extension UICC TNM Prefix CPU" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Extension allows to add c, p and u prefixes to TNM stages." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/uicc-tnm-suffix-itc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Extension UICC TNM Suffix ITC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:extension" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/uicc-tnm-suffix-itc-sn" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Extension UICC TNM Suffix ITC SN" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -433,7 +489,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the ECOG Performance Status values from SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 8;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -444,10 +500,10 @@
          fhir:Reference.reference [ fhir:value "ValueSet/vs-histopathological-grade-snomed" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet Histologic Grade SNOMED" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumours from SNOMED CT." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 9;
+       fhir:index 13;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -461,7 +517,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the morphology (histology) codes from ICD-O-3." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 14;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -475,7 +531,231 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the morphology (histology) codes from SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 15;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-classification-type-loinc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-classification-type-loinc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS TNM Classification Type LOINC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 16;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-l-lymphatic-invasion-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-l-lymphatic-invasion-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM L-Descriptor Lymphatic Invasion UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 17;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-m-category-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-m-category-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM M Category UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the TNM M category codes from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 18;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-m-staging-type-loinc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-m-staging-type-loinc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS TNM M Staging Type LOINC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 19;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-n-category-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-n-category-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM N Category UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the TNM N category codes from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 20;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-n-staging-type-loinc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-n-staging-type-loinc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS TNM N Staging Type LOINC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 21;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-pn-perineural-invasion-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-pn-perineural-invasion-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM Pn-Descriptor Perineural Invasion UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 22;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-prefix-cpu-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-prefix-cpu-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM Prefix CPU UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the c, p and u prefixes for TNM stages from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 23;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-s-serum-tumor-markers-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-s-serum-tumor-markers-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM S Serum Tumour Markers UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 24;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-stage-group-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-stage-group-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM Stage Group UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains codes for the UICC TNM stage groups ranging from I to IV to group cancer patients with similar prognosis." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 25;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-suffix-itc-sn-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-suffix-itc-sn-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM Suffix ITC SN UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 26;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-suffix-itc-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-suffix-itc-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM Suffix ITC UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category in TNM from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 27;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-t-category-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-t-category-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM T Category UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the TNM T category codes from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 28;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-t-multiplicity-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-t-multiplicity-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM T Multiplicity UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 29;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-t-staging-type-loinc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-t-staging-type-loinc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS TNM T Staging Type LOINC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT)." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 30;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ValueSet" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-v-venous-invasion-uicc>;
+         fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-v-venous-invasion-uicc" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM V-Descriptor Venous Invasion UICC" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from UICC." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 31;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -489,7 +769,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the topography codes from ICD-O-3." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 12;
+       fhir:index 32;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -503,7 +783,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "The ValueSet contains the topography codes from SNOMED CT." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 13;
+       fhir:index 33;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -517,7 +797,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example of a patient." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "true"^^xsd:boolean ]
      ], [
-       fhir:index 14;
+       fhir:index 34;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -534,7 +814,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height>
        ]
      ], [
-       fhir:index 15;
+       fhir:index 35;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -551,7 +831,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight>
        ]
      ], [
-       fhir:index 16;
+       fhir:index 36;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -568,7 +848,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status>
        ]
      ], [
-       fhir:index 17;
+       fhir:index 37;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -585,7 +865,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who>
        ]
      ], [
-       fhir:index 18;
+       fhir:index 38;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -602,7 +882,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography>
        ]
      ], [
-       fhir:index 19;
+       fhir:index 39;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -619,7 +899,24 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status>
        ]
      ], [
-       fhir:index 20;
+       fhir:index 40;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-tisn0m0>;
+         fhir:Reference.reference [ fhir:value "Observation/example-tnm-tisn0m0" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example TNM Tis N0 M0" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example TNM Tis N0 M0." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
+       ]
+     ], [
+       fhir:index 41;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-tnm-classification-type-loinc"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://details.loinc.org/LOINC/21908-9.html">21908-9</a></td><td>Stage group.clinical Cancer</td></tr><tr><td><a href="http://details.loinc.org/LOINC/21902-2.html">21902-2</a></td><td>Stage group.pathology Cancer</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"/>
+  <version value="0.1.0"/>
+  <name value="VS_TNM_Classification_Type_LOINC"/>
+  <title value="VS TNM Classification Type LOINC"/>
+  <status value="active"/>
+  <date value="2022-04-20T16:54:19+00:00"/>
+  <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+  <contact>
+    <name value="Berlin Institute of Health at Charité (BIH)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="21908-9"/>
+        <display value="Stage group.clinical Cancer"/>
+      </concept>
+      <concept>
+        <code value="21902-2"/>
+        <display value="Stage group.pathology Cancer"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

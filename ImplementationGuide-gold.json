@@ -430,10 +430,66 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/uicc-tnm"
+        },
+        "name": "Profile UICC TNM",
+        "description": "Profile for the tumor classification using TNM stage group (I, II, III, or IV) or TNM staging elements (T, N, and M).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/vital-signs-base"
         },
         "name": "Profile Vital Signs Base",
         "description": "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm-prefix-cpu"
+        },
+        "name": "Extension UICC TNM Prefix CPU",
+        "description": "The Extension allows to add c, p and u prefixes to TNM stages.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm-suffix-itc"
+        },
+        "name": "Extension UICC TNM Suffix ITC",
+        "description": "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm-suffix-itc-sn"
+        },
+        "name": "Extension UICC TNM Suffix ITC SN",
+        "description": "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM.",
         "exampleBoolean": false
       },
       {
@@ -461,7 +517,7 @@
           "reference": "ValueSet/vs-histopathological-grade-snomed"
         },
         "name": "ValueSet Histologic Grade SNOMED",
-        "description": "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumours from SNOMED CT.",
+        "description": "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT.",
         "exampleBoolean": false
       },
       {
@@ -490,6 +546,230 @@
         },
         "name": "ValueSet Morphology SNOMED",
         "description": "The ValueSet contains the morphology (histology) codes from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-classification-type-loinc"
+        },
+        "name": "VS TNM Classification Type LOINC",
+        "description": "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-l-lymphatic-invasion-uicc"
+        },
+        "name": "ValueSet TNM L-Descriptor Lymphatic Invasion UICC",
+        "description": "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-m-category-uicc"
+        },
+        "name": "ValueSet TNM M Category UICC",
+        "description": "This ValueSet contains the TNM M category codes from UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-m-staging-type-loinc"
+        },
+        "name": "VS TNM M Staging Type LOINC",
+        "description": "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-n-category-uicc"
+        },
+        "name": "ValueSet TNM N Category UICC",
+        "description": "This ValueSet contains the TNM N category codes from UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-n-staging-type-loinc"
+        },
+        "name": "VS TNM N Staging Type LOINC",
+        "description": "This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-pn-perineural-invasion-uicc"
+        },
+        "name": "ValueSet TNM Pn-Descriptor Perineural Invasion UICC",
+        "description": "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-prefix-cpu-uicc"
+        },
+        "name": "ValueSet TNM Prefix CPU UICC",
+        "description": "This ValueSet contains the c, p and u prefixes for TNM stages from UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-s-serum-tumor-markers-uicc"
+        },
+        "name": "ValueSet TNM S Serum Tumour Markers UICC",
+        "description": "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-stage-group-uicc"
+        },
+        "name": "ValueSet TNM Stage Group UICC",
+        "description": "The ValueSet contains codes for the UICC TNM stage groups ranging from I to IV to group cancer patients with similar prognosis.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-suffix-itc-sn-uicc"
+        },
+        "name": "ValueSet TNM Suffix ITC SN UICC",
+        "description": "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-suffix-itc-uicc"
+        },
+        "name": "ValueSet TNM Suffix ITC UICC",
+        "description": "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category in TNM from UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-t-category-uicc"
+        },
+        "name": "ValueSet TNM T Category UICC",
+        "description": "This ValueSet contains the TNM T category codes from UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-t-multiplicity-uicc"
+        },
+        "name": "ValueSet TNM T Multiplicity UICC",
+        "description": "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-t-staging-type-loinc"
+        },
+        "name": "VS TNM T Staging Type LOINC",
+        "description": "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT).",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-tnm-v-venous-invasion-uicc"
+        },
+        "name": "ValueSet TNM V-Descriptor Venous Invasion UICC",
+        "description": "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from UICC.",
         "exampleBoolean": false
       },
       {
@@ -617,6 +897,20 @@
         "name": "Example Karnofsky Performance Status",
         "description": "Example Karnofsky performance status observation.",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-tnm-tisn0m0"
+        },
+        "name": "Example TNM Tis N0 M0",
+        "description": "Example TNM Tis N0 M0.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
       },
       {
         "extension": [

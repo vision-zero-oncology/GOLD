@@ -3,10 +3,10 @@
   "name": "GOLD",
   "package-id": "gold",
   "ig-ver": "0.1.0",
-  "date": "Thu, 31 Mar, 2022 12:02:56 +0000",
-  "errs": 9,
-  "warnings": 2,
-  "hints": 0,
+  "date": "Wed, 20 Apr, 2022 16:54:19 +0000",
+  "errs": 24,
+  "warnings": 33,
+  "hints": 10,
   "version": "4.0.1",
   "tool": "4.6.0 (3)"
 }

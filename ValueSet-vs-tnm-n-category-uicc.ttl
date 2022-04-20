@@ -1,0 +1,115 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-n-category-uicc> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vs-tnm-n-category-uicc"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>NX</td><td>Nx</td></tr><tr><td>N0</td><td>N0</td></tr><tr><td>N1</td><td>N1</td></tr><tr><td>N1mi</td><td>N1(mi)</td></tr><tr><td>N1a</td><td>N1a</td></tr><tr><td>N1b</td><td>N1b</td></tr><tr><td>N1c</td><td>N1c</td></tr><tr><td>N2</td><td>N2</td></tr><tr><td>N2a</td><td>N2a</td></tr><tr><td>N2b</td><td>N2b</td></tr><tr><td>N2c</td><td>N2c</td></tr><tr><td>N3</td><td>N3</td></tr><tr><td>N3a</td><td>N3a</td></tr><tr><td>N3b</td><td>N3b</td></tr><tr><td>N3c</td><td>N3c</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "VS_TNM_N_Category_UICC"];
+  fhir:ValueSet.title [ fhir:value "ValueSet TNM N Category UICC"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-04-20T16:54:19+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Berlin Institute of Health at Charité (BIH)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "This ValueSet contains the TNM N category codes from UICC."];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DEU" ]
+     ]
+  ];
+  fhir:ValueSet.copyright [ fhir:value "CC-BY-SA-4.0"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "NX" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nx" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N0" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N1" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N1mi" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N1(mi)" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N1a" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N1a" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N1b" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N1b" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N1c" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N1c" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N2" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N2a" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N2a" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N2b" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N2b" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N2c" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N2c" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N3" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N3a" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N3a" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N3b" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N3b" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "N3c" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "N3c" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-n-category-uicc.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

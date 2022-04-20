@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "VS_Histopathological_Grade_SNOMED"];
   fhir:ValueSet.title [ fhir:value "ValueSet Histologic Grade SNOMED"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-03-31T12:02:56+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-04-20T16:54:19+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -28,7 +28,7 @@
        fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
      ]
   ];
-  fhir:ValueSet.description [ fhir:value "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumours from SNOMED CT."];
+  fhir:ValueSet.description [ fhir:value "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT."];
   fhir:ValueSet.jurisdiction [
      fhir:index 0;
      fhir:CodeableConcept.coding [

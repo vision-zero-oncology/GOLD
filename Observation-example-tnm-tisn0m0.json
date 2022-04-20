@@ -1,0 +1,103 @@
+{
+  "resourceType": "Observation",
+  "id": "example-tnm-tisn0m0",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 258235000}, {http://loinc.org 21908-9}\">International Union Against Cancer (tumor staging)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1985-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 0}\">Stage 0</span></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 21905-5}\">Primary tumor.clinical [Class] Cancer</span></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 Tis}\">Tis</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 21906-3}\">Regional lymph nodes.clinical [Class] Cancer</span></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 N0}\">N0</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 21907-1}\">Distant metastases.clinical [Class] Cancer</span></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 M0}\">M0</span></p></blockquote></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "258235000",
+        "display": "International Union Against Cancer (tumor staging)"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "21908-9",
+        "display": "Stage group.clinical Cancer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "code": "0",
+        "display": "Stage 0"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "21905-5",
+            "display": "Primary tumor.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "code": "Tis",
+            "display": "Tis"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "21906-3",
+            "display": "Regional lymph nodes.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "code": "N0",
+            "display": "N0"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "21907-1",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "code": "M0",
+            "display": "M0"
+          }
+        ]
+      }
+    }
+  ]
+}

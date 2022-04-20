@@ -1,17 +1,18 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 9, warn = 2, info = 0
-IG Publisher Version: 1.1.83 Out of date - current version is 1.1.114
-Generated Thu Mar 31 12:03:28 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+err = 24, warn = 33, info = 10
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.115
+Generated Wed Apr 20 16:55:13 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-body-height : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-body-weight : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-ecog-performance-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-histologic-grade : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-example-histology-topography : 3 / 0 / 3
+ /github/workspace/fsh-generated/resources/Observation-example-histology-topography : 2 / 0 / 3
  /github/workspace/fsh-generated/resources/Observation-example-karnofsky-performance-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/Observation-example-tnm-tisn0m0 : 0 / 4 / 5
  /github/workspace/fsh-generated/resources/Observation-example-vital-signs-base : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-body-height : 0 / 0 / 1
@@ -20,11 +21,31 @@ Generated Thu Mar 31 12:03:28 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/StructureDefinition-histology-topography : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-histopathological-grading-who : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-karnofsky-performance-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm : 0 / 0 / 7
+ /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-prefix-cpu : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc-sn : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vital-signs-base : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-ecog-performance-status-snomed : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-histopathological-grade-snomed : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-morphology-icd-o-3 : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-morphology-snomed : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-classification-type-loinc : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-l-lymphatic-invasion-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-m-category-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-m-staging-type-loinc : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-n-category-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-n-staging-type-loinc : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-pn-perineural-invasion-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-prefix-cpu-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-s-serum-tumor-markers-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-stage-group-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-suffix-itc-sn-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-suffix-itc-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-t-category-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-t-multiplicity-uicc : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-t-staging-type-loinc : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-v-venous-invasion-uicc : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-topography-icd-o-3 : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-topography-snomed : 1 / 0 / 1
 </table>
@@ -35,10 +56,18 @@ Generated Thu Mar 31 12:03:28 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
 == fsh-generated/resources/Observation-example-ecog-performance-status.json ==
 == fsh-generated/resources/Observation-example-histologic-grade.json ==
 == fsh-generated/resources/Observation-example-histology-topography.json ==
-ERROR: Observation/example-histology-topography: Observation.value.ofType(CodeableConcept).coding[1]: Unable to find code 1162767002 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20210731); The code "1162767002" is not valid in the system http://snomed.info/sct; The code provided (http://snomed.info/sct#1162767002) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4) for 'http://snomed.info/sct#1162767002'
 ERROR: Observation/example-histology-topography: Observation.value.ofType(CodeableConcept).coding[0]: The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3)
 ERROR: Observation/example-histology-topography: Observation.bodySite.coding[0]: The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3)
 == fsh-generated/resources/Observation-example-karnofsky-performance-status.json ==
+== fsh-generated/resources/Observation-example-tnm-tisn0m0.json ==
+WARNING: Observation/example-tnm-tisn0m0: Observation.value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-tisn0m0: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-tisn0m0: Observation.component[0].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-tisn0m0: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-tisn0m0: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-tisn0m0: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-tisn0m0: Observation.component[2].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-tisn0m0: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-example-vital-signs-base.json ==
 == fsh-generated/resources/Patient-ExamplePatient.json ==
 == fsh-generated/resources/StructureDefinition-body-height.json ==
@@ -47,6 +76,19 @@ ERROR: Observation/example-histology-topography: Observation.bodySite.coding[0]:
 == fsh-generated/resources/StructureDefinition-histology-topography.json ==
 == fsh-generated/resources/StructureDefinition-histopathological-grading-who.json ==
 == fsh-generated/resources/StructureDefinition-karnofsky-performance-status.json ==
+== fsh-generated/resources/StructureDefinition-uicc-tnm.json ==
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.snapshot.element[61].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.snapshot.element[70].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.snapshot.element[79].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+== fsh-generated/resources/StructureDefinition-uicc-tnm-prefix-cpu.json ==
+WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc.json ==
+WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc-sn.json ==
+WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-vital-signs-base.json ==
 == fsh-generated/resources/ValueSet-vs-ecog-performance-status-snomed.json ==
 ERROR: ValueSet.url: Resource id/url mismatch: vs-ecog-performance-status-snomed/https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed
@@ -57,6 +99,62 @@ ERROR: ValueSet.url: Resource id/url mismatch: vs-morphology-icd-o-3/https://www
 WARNING: ValueSet.where(id = 'vs-morphology-icd-o-3'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3
 == fsh-generated/resources/ValueSet-vs-morphology-snomed.json ==
 ERROR: ValueSet.url: Resource id/url mismatch: vs-morphology-snomed/https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed
+== fsh-generated/resources/ValueSet-vs-tnm-classification-type-loinc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-classification-type-loinc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc
+== fsh-generated/resources/ValueSet-vs-tnm-l-lymphatic-invasion-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-l-lymphatic-invasion-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-l-lymphatic-invasion-uicc
+WARNING: ValueSet/vs-tnm-l-lymphatic-invasion-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-l-lymphatic-invasion-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-m-category-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-m-category-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc
+WARNING: ValueSet/vs-tnm-m-category-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-m-category-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-m-staging-type-loinc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-m-staging-type-loinc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc
+== fsh-generated/resources/ValueSet-vs-tnm-n-category-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-n-category-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc
+WARNING: ValueSet/vs-tnm-n-category-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-n-category-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-n-staging-type-loinc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-n-staging-type-loinc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc
+== fsh-generated/resources/ValueSet-vs-tnm-pn-perineural-invasion-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-pn-perineural-invasion-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-pn-perineural-invasion-uicc
+WARNING: ValueSet/vs-tnm-pn-perineural-invasion-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-pn-perineural-invasion-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-prefix-cpu-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-prefix-cpu-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc
+WARNING: ValueSet/vs-tnm-prefix-cpu-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-prefix-cpu-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-s-serum-tumor-markers-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-s-serum-tumor-markers-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-s-serum-tumor-markers-uicc
+WARNING: ValueSet/vs-tnm-s-serum-tumor-markers-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-s-serum-tumor-markers-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-stage-group-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-stage-group-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc
+WARNING: ValueSet/vs-tnm-stage-group-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-stage-group-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-suffix-itc-sn-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-suffix-itc-sn-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-sn-uicc
+WARNING: ValueSet/vs-tnm-suffix-itc-sn-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-suffix-itc-sn-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-suffix-itc-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-suffix-itc-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc
+WARNING: ValueSet/vs-tnm-suffix-itc-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-suffix-itc-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-t-category-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-t-category-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc
+WARNING: ValueSet/vs-tnm-t-category-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-t-category-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-t-multiplicity-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-t-multiplicity-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-multiplicity-uicc
+WARNING: ValueSet/vs-tnm-t-multiplicity-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-t-multiplicity-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
+== fsh-generated/resources/ValueSet-vs-tnm-t-staging-type-loinc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-t-staging-type-loinc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc
+== fsh-generated/resources/ValueSet-vs-tnm-v-venous-invasion-uicc.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-v-venous-invasion-uicc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc
+WARNING: ValueSet/vs-tnm-v-venous-invasion-uicc: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-tnm-v-venous-invasion-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
 == fsh-generated/resources/ValueSet-vs-topography-icd-o-3.json ==
 ERROR: ValueSet.url: Resource id/url mismatch: vs-topography-icd-o-3/https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3
 WARNING: ValueSet.where(id = 'vs-topography-icd-o-3'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3

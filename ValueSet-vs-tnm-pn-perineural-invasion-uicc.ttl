@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-pn-perineural-invasion-uicc> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vs-tnm-pn-perineural-invasion-uicc"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>Pn0</td><td>Pn0</td></tr><tr><td>Pn1</td><td>Pn1</td></tr><tr><td>PnX</td><td>PnX</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-pn-perineural-invasion-uicc"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "VS_TNM_Pn_Perineural_Invasion_UICC"];
+  fhir:ValueSet.title [ fhir:value "ValueSet TNM Pn-Descriptor Perineural Invasion UICC"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-04-20T16:54:19+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Berlin Institute of Health at Charité (BIH)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from UICC."];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DEU" ]
+     ]
+  ];
+  fhir:ValueSet.copyright [ fhir:value "CC-BY-SA-4.0"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Pn0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pn0" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Pn1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Pn1" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "PnX" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "PnX" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-pn-perineural-invasion-uicc.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

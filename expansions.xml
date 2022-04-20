@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="0e6bb172-70b4-42b5-b82a-db4a6f1f7bd4"/>
+  <id value="1e25d093-2e11-458a-82bf-4a81a5e5f8d3"/>
   <meta>
-    <lastUpdated value="2022-03-31T12:02:56.362+00:00"/>
+    <lastUpdated value="2022-04-20T16:54:19.450+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -15,7 +15,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -89,7 +89,7 @@
         <name value="VS_ECOG_Performance_Status_SNOMED"/>
         <title value="ValueSet ECOG Performance Status SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-31T12:02:56+00:00"/>
+        <date value="2022-04-20T16:54:19+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -110,8 +110,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:df3cb0bd-c428-47d5-8223-686793d612f4"/>
-          <timestamp value="2022-03-31T12:03:14+00:00"/>
+          <identifier value="urn:uuid:6a4d7dfd-bb1f-4868-9992-35bc1830ef06"/>
+          <timestamp value="2022-04-20T16:54:45+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -123,7 +123,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -168,7 +168,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -234,7 +234,7 @@
         <name value="VS_Histopathological_Grade_SNOMED"/>
         <title value="ValueSet Histologic Grade SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-31T12:02:56+00:00"/>
+        <date value="2022-04-20T16:54:19+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -243,7 +243,7 @@
             <value value="https://www.bihealth.org/"/>
           </telecom>
         </contact>
-        <description value="The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumours from SNOMED CT."/>
+        <description value="The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT."/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -252,8 +252,8 @@
         </jurisdiction>
         <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
         <expansion>
-          <identifier value="urn:uuid:fb1ef23d-3a5e-454b-a64b-34d23ac48fa6"/>
-          <timestamp value="2022-03-31T12:03:15+00:00"/>
+          <identifier value="urn:uuid:b8a195b2-fff1-428d-9604-54855aaf3aac"/>
+          <timestamp value="2022-04-20T16:54:46+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -265,7 +265,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -305,7 +305,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -453,26 +453,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-1929004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1929004">1929004</a>
-                </td>
-                <td>Malignant lymphoma, non-Hodgkin&#39;s</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-2026006"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2026006">2026006</a>
                 </td>
                 <td>Serous adenofibroma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-2092003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2092003">2092003</a>
-                </td>
-                <td>Malignant melanoma</td>
                 <td/>
               </tr>
               <tr>
@@ -509,10 +493,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-2424003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2424003">2424003</a>
+                  <a name="http---snomed.info-sct-2557004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2557004">2557004</a>
                 </td>
-                <td>Sarcoma</td>
+                <td>Chronic leukemia (morphologic abnormality)</td>
                 <td/>
               </tr>
               <tr>
@@ -545,14 +529,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=3102004">3102004</a>
                 </td>
                 <td>Oligodendroglioma, anaplastic</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-3172003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=3172003">3172003</a>
-                </td>
-                <td>Peripheral T-cell lymphoma</td>
                 <td/>
               </tr>
               <tr>
@@ -1061,14 +1037,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-10639003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10639003">10639003</a>
-                </td>
-                <td>Plasmacytoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-10705005"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=10705005">10705005</a>
                 </td>
@@ -1165,6 +1133,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-12219003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12219003">12219003</a>
+                </td>
+                <td>Aleukemic lymphoid leukemia</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-12302002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12302002">12302002</a>
                 </td>
@@ -1217,6 +1193,14 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12690005">12690005</a>
                 </td>
                 <td>Fibroblastic osteosarcoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-12834001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=12834001">12834001</a>
+                </td>
+                <td>Subacute monocytic leukemia</td>
                 <td/>
               </tr>
               <tr>
@@ -1301,26 +1285,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-14537002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=14537002">14537002</a>
-                </td>
-                <td>Hodgkin&#39;s disease</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-14799000"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=14799000">14799000</a>
                 </td>
                 <td>Neoplasm, metastatic</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-14990007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=14990007">14990007</a>
-                </td>
-                <td>Chondrosarcoma</td>
                 <td/>
               </tr>
               <tr>
@@ -1369,14 +1337,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=16090008">16090008</a>
                 </td>
                 <td>Myxoid leiomyosarcoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-16107003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=16107003">16107003</a>
-                </td>
-                <td>Adult rhabdomyoma</td>
                 <td/>
               </tr>
               <tr>
@@ -1449,14 +1409,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17372009">17372009</a>
                 </td>
                 <td>Granuloma pyogenicum</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-17788007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=17788007">17788007</a>
-                </td>
-                <td>Acute granulocytic leukemia</td>
                 <td/>
               </tr>
               <tr>
@@ -1725,14 +1677,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-21119008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21119008">21119008</a>
-                </td>
-                <td>Pigmented nevus</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-21181001"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21181001">21181001</a>
                 </td>
@@ -1765,14 +1709,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-21708004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21708004">21708004</a>
-                </td>
-                <td>Osteosarcoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-21912003"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21912003">21912003</a>
                 </td>
@@ -1785,14 +1721,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21930005">21930005</a>
                 </td>
                 <td>Trabecular adenoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-21964009"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=21964009">21964009</a>
-                </td>
-                <td>Malignant lymphoma</td>
                 <td/>
               </tr>
               <tr>
@@ -1873,6 +1801,14 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22694002">22694002</a>
                 </td>
                 <td>Adenocarcinoma with apocrine metaplasia</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-22695001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=22695001">22695001</a>
+                </td>
+                <td>Aleukemic monocytic leukemia</td>
                 <td/>
               </tr>
               <tr>
@@ -2009,14 +1945,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=25081006">25081006</a>
                 </td>
                 <td>Nephroblastoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-25169009"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=25169009">25169009</a>
-                </td>
-                <td>Neuroma</td>
                 <td/>
               </tr>
               <tr>
@@ -2261,14 +2189,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-28054005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28054005">28054005</a>
-                </td>
-                <td>Cutaneous lymphoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-28173006"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28173006">28173006</a>
                 </td>
@@ -2329,14 +2249,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28733007">28733007</a>
                 </td>
                 <td>Compound odontoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-28899001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=28899001">28899001</a>
-                </td>
-                <td>Squamous cell carcinoma</td>
                 <td/>
               </tr>
               <tr>
@@ -2557,14 +2469,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-32048006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32048006">32048006</a>
-                </td>
-                <td>Adenoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-32071008"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32071008">32071008</a>
                 </td>
@@ -2585,14 +2489,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32272007">32272007</a>
                 </td>
                 <td>Sweat gland adenocarcinoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-32280000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=32280000">32280000</a>
-                </td>
-                <td>Lymphoid leukemia</td>
                 <td/>
               </tr>
               <tr>
@@ -2689,6 +2585,14 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=33377007">33377007</a>
                 </td>
                 <td>Cavernous hemangioma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-33560006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=33560006">33560006</a>
+                </td>
+                <td>Subacute lymphoid leukemia</td>
                 <td/>
               </tr>
               <tr>
@@ -2821,18 +2725,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-35917007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=35917007">35917007</a>
+                  <a name="http---snomed.info-sct-35750002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=35750002">35750002</a>
                 </td>
-                <td>Adenocarcinoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-36060005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=36060005">36060005</a>
-                </td>
-                <td>Hemangiopericytoma</td>
+                <td>Aleukemic myeloid leukemia</td>
                 <td/>
               </tr>
               <tr>
@@ -2873,14 +2769,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=36721002">36721002</a>
                 </td>
                 <td>Papillary mucinous cystadenoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-36741007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=36741007">36741007</a>
-                </td>
-                <td>Seminoma</td>
                 <td/>
               </tr>
               <tr>
@@ -2929,14 +2817,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=37304002">37304002</a>
                 </td>
                 <td>Basosquamous carcinoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-37810007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=37810007">37810007</a>
-                </td>
-                <td>Myeloid leukemia</td>
                 <td/>
               </tr>
               <tr>
@@ -3277,14 +3157,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-43296007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43296007">43296007</a>
-                </td>
-                <td>Round cell liposarcoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-43369006"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=43369006">43369006</a>
                 </td>
@@ -3345,14 +3217,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=44529004">44529004</a>
                 </td>
                 <td>Giant cell glioblastoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-44598004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=44598004">44598004</a>
-                </td>
-                <td>Leiomyoma</td>
                 <td/>
               </tr>
               <tr>
@@ -3424,15 +3288,7 @@
                   <a name="http---snomed.info-sct-46580000"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=46580000">46580000</a>
                 </td>
-                <td>Inverted transitional cell papilloma uncertain whether benign or malignant (morphologic abnormality)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-46585005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=46585005">46585005</a>
-                </td>
-                <td>Granulosa cell tumor</td>
+                <td>Inverted transitional cell papilloma uncertain whether benign or malignant</td>
                 <td/>
               </tr>
               <tr>
@@ -3441,14 +3297,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=46710009">46710009</a>
                 </td>
                 <td>Esthesioneurocytoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-46732000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=46732000">46732000</a>
-                </td>
-                <td>Malignant lymphoma, histiocytic, diffuse</td>
                 <td/>
               </tr>
               <tr>
@@ -3581,22 +3429,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-49430005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49430005">49430005</a>
-                </td>
-                <td>Fibroliposarcoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-49937004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=49937004">49937004</a>
-                </td>
-                <td>Kaposi&#39;s sarcoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-50007008"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=50007008">50007008</a>
                 </td>
@@ -3669,14 +3501,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-51549004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51549004">51549004</a>
-                </td>
-                <td>Leiomyosarcoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-51608009"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=51608009">51608009</a>
                 </td>
@@ -3741,18 +3565,18 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-52040006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52040006">52040006</a>
-                </td>
-                <td>Infantile fibrosarcoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-52097008"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52097008">52097008</a>
                 </td>
                 <td>Angioimmunoblastic lymphadenopathy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-52168008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=52168008">52168008</a>
+                </td>
+                <td>Monocytic leukemia (morphologic abnormality)</td>
                 <td/>
               </tr>
               <tr>
@@ -3865,14 +3689,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=53801007">53801007</a>
                 </td>
                 <td>Ganglioneuroma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-53880006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=53880006">53880006</a>
-                </td>
-                <td>Hemangiopericytoma, benign</td>
                 <td/>
               </tr>
               <tr>
@@ -4029,14 +3845,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-55921005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=55921005">55921005</a>
-                </td>
-                <td>Multiple myeloma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-55937004"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=55937004">55937004</a>
                 </td>
@@ -4173,6 +3981,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-58220003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=58220003">58220003</a>
+                </td>
+                <td>Keratoacanthoma of uncertain behavior (morphologic abnormality)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-58243007"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=58243007">58243007</a>
                 </td>
@@ -4229,14 +4045,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-59529006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59529006">59529006</a>
-                </td>
-                <td>Squamous cell carcinoma in situ</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-59583009"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=59583009">59583009</a>
                 </td>
@@ -4257,14 +4065,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60346004">60346004</a>
                 </td>
                 <td>Islet cell carcinoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-60392001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=60392001">60392001</a>
-                </td>
-                <td>Angiofibroma</td>
                 <td/>
               </tr>
               <tr>
@@ -4389,14 +4189,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-63364005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=63364005">63364005</a>
-                </td>
-                <td>Chronic myeloid leukemia</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-63373002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=63373002">63373002</a>
                 </td>
@@ -4425,14 +4217,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=63629005">63629005</a>
                 </td>
                 <td>Lipoblastomatosis</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-63634009"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=63634009">63634009</a>
-                </td>
-                <td>Glioblastoma</td>
                 <td/>
               </tr>
               <tr>
@@ -4637,6 +4421,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-67824002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=67824002">67824002</a>
+                </td>
+                <td>Lymphosarcoma (morphologic abnormality)</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-67830002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=67830002">67830002</a>
                 </td>
@@ -4653,14 +4445,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-68453008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68453008">68453008</a>
-                </td>
-                <td>Carcinoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-68614005"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68614005">68614005</a>
                 </td>
@@ -4672,7 +4456,7 @@
                   <a name="http---snomed.info-sct-68738004"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68738004">68738004</a>
                 </td>
-                <td>Endometrial stromal tumor</td>
+                <td>Endometrial stromal tumor of uncertain behavior (morphologic abnormality)</td>
                 <td/>
               </tr>
               <tr>
@@ -4697,14 +4481,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68944005">68944005</a>
                 </td>
                 <td>Endotheliomatous meningioma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-68956006"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=68956006">68956006</a>
-                </td>
-                <td>Carcinoma in situ</td>
                 <td/>
               </tr>
               <tr>
@@ -4776,7 +4552,7 @@
                   <a name="http---snomed.info-sct-70555003"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=70555003">70555003</a>
                 </td>
-                <td>Endometrial stromal sarcoma</td>
+                <td>Endometrial stromal sarcoma, high grade</td>
                 <td/>
               </tr>
               <tr>
@@ -4869,14 +4645,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-71440001"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71440001">71440001</a>
-                </td>
-                <td>Sex cord-stromal tumor</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-71447003"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71447003">71447003</a>
                 </td>
@@ -4889,14 +4657,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=71666005">71666005</a>
                 </td>
                 <td>Osteoid osteoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-72079004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=72079004">72079004</a>
-                </td>
-                <td>Dermatofibroma</td>
                 <td/>
               </tr>
               <tr>
@@ -5053,6 +4813,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-74326002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74326002">74326002</a>
+                </td>
+                <td>Subacute myeloid leukemia</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-74364000"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=74364000">74364000</a>
                 </td>
@@ -5201,6 +4969,14 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=76345009">76345009</a>
                 </td>
                 <td>Islet cell adenoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-76481008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=76481008">76481008</a>
+                </td>
+                <td>Lymphoepithelioid lymphoma</td>
                 <td/>
               </tr>
               <tr>
@@ -5637,22 +5413,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-84631004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84631004">84631004</a>
-                </td>
-                <td>Lymphoproliferative disease</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-84664004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84664004">84664004</a>
-                </td>
-                <td>Hemangiopericytoma, malignant</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-84919003"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=84919003">84919003</a>
                 </td>
@@ -5733,26 +5493,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-86295000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=86295000">86295000</a>
-                </td>
-                <td>Immunoproliferative disease</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-86562005"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=86562005">86562005</a>
                 </td>
                 <td>Cystic mesothelioma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-86616005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=86616005">86616005</a>
-                </td>
-                <td>Intraductal carcinoma, noninfiltrating</td>
                 <td/>
               </tr>
               <tr>
@@ -5769,14 +5513,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=86970009">86970009</a>
                 </td>
                 <td>Lymphangiomatosis</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-87163000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=87163000">87163000</a>
-                </td>
-                <td>Leukemia</td>
                 <td/>
               </tr>
               <tr>
@@ -5893,6 +5629,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-89089007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89089007">89089007</a>
+                </td>
+                <td>Sertoli cell adenoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-89096009"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89096009">89096009</a>
                 </td>
@@ -5949,14 +5693,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-89880005"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89880005">89880005</a>
-                </td>
-                <td>Ganglioglioma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-89906000"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=89906000">89906000</a>
                 </td>
@@ -6001,6 +5737,14 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=90955001">90955001</a>
                 </td>
                 <td>Cellular leiomyoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-92816008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=92816008">92816008</a>
+                </td>
+                <td>Chronic monocytic leukemia (morphologic abnormality)</td>
                 <td/>
               </tr>
               <tr>
@@ -6097,6 +5841,14 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=108369006">108369006</a>
                 </td>
                 <td>Tumor</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-110450007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=110450007">110450007</a>
+                </td>
+                <td>Langerhans&#39; cell histiocytosis</td>
                 <td/>
               </tr>
               <tr>
@@ -6433,14 +6185,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=115243008">115243008</a>
                 </td>
                 <td>Granular cell tumor AND/OR alveolar soft part sarcoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-115244002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=115244002">115244002</a>
-                </td>
-                <td>Malignant lymphoma - category (morphologic abnormality)</td>
                 <td/>
               </tr>
               <tr>
@@ -7277,26 +7021,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-128707003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128707003">128707003</a>
-                </td>
-                <td>Thymoma, spindle cell</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-128708008"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128708008">128708008</a>
                 </td>
                 <td>Thymoma, spindle cell, malignant</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-128709000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128709000">128709000</a>
-                </td>
-                <td>Thymoma, mixed type</td>
                 <td/>
               </tr>
               <tr>
@@ -7309,14 +7037,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-128711009"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128711009">128711009</a>
-                </td>
-                <td>Thymoma, predominantly cortical</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-128712002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128712002">128712002</a>
                 </td>
@@ -7325,26 +7045,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-128713007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128713007">128713007</a>
-                </td>
-                <td>Thymoma, cortical</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-128714001"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128714001">128714001</a>
                 </td>
                 <td>Thymoma, cortical, malignant</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-128715000"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128715000">128715000</a>
-                </td>
-                <td>Thymoma, epithelial</td>
                 <td/>
               </tr>
               <tr>
@@ -7513,14 +7217,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128736003">128736003</a>
                 </td>
                 <td>Localized fibrous tumor</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-128737007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128737007">128737007</a>
-                </td>
-                <td>Solitary fibrous tumor, malignant</td>
                 <td/>
               </tr>
               <tr>
@@ -8085,18 +7781,10 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-128809007"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128809007">128809007</a>
-                </td>
-                <td>Langerhans cell histiocytosis</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-128810002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128810002">128810002</a>
                 </td>
-                <td>Langerhans cell histiocytosis, mono-ostotic</td>
+                <td>Langerhans cell granulomatosis, unifocal</td>
                 <td/>
               </tr>
               <tr>
@@ -8104,7 +7792,7 @@
                   <a name="http---snomed.info-sct-128811003"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128811003">128811003</a>
                 </td>
-                <td>Langerhans cell histiocytosis, poly-ostotic</td>
+                <td>Langerhans cell histiocytosis, multifocal</td>
                 <td/>
               </tr>
               <tr>
@@ -8323,6 +8011,318 @@
                 <td>Papillary ependymoma</td>
                 <td/>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128840000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128840000">128840000</a>
+                </td>
+                <td>Papillary meningioma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128841001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128841001">128841001</a>
+                </td>
+                <td>Proliferative polycythemia</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128843003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128843003">128843003</a>
+                </td>
+                <td>Myelofibrosis with myeloid metaplasia</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128844009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128844009">128844009</a>
+                </td>
+                <td>Idiopathic thrombocythemia</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128845005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128845005">128845005</a>
+                </td>
+                <td>Refractory anemia without sideroblasts</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128846006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128846006">128846006</a>
+                </td>
+                <td>Refractory anemia with ringed sideroblasts</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128847002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128847002">128847002</a>
+                </td>
+                <td>Refractory anemia with excess blasts</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128848007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128848007">128848007</a>
+                </td>
+                <td>RAEB-T</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128849004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128849004">128849004</a>
+                </td>
+                <td>Serous tumor of low malignant potential</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128850004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128850004">128850004</a>
+                </td>
+                <td>Papillary cystadenoma, borderline malignancy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128851000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128851000">128851000</a>
+                </td>
+                <td>Papillary serous tumor of low malignant potential</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128852007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128852007">128852007</a>
+                </td>
+                <td>Pseudomucinous cystadenoma, borderline malignancy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128853002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128853002">128853002</a>
+                </td>
+                <td>Papillary pseudomucinous cystadenoma, borderline malignancy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128854008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128854008">128854008</a>
+                </td>
+                <td>Piloid astrocytoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128855009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128855009">128855009</a>
+                </td>
+                <td>Alpha cell tumor</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128858006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128858006">128858006</a>
+                </td>
+                <td>Neurolipocytoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128859003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128859003">128859003</a>
+                </td>
+                <td>Villous papilloma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128860008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128860008">128860008</a>
+                </td>
+                <td>Reninoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128876004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128876004">128876004</a>
+                </td>
+                <td>Tumorlet, benign</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128877008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128877008">128877008</a>
+                </td>
+                <td>Papillary urothelial carcinoma, non-invasive</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128878003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128878003">128878003</a>
+                </td>
+                <td>Islet cell tumor</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128879006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128879006">128879006</a>
+                </td>
+                <td>Ductal carcinoma in situ, cribriform type</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128880009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128880009">128880009</a>
+                </td>
+                <td>Intraductal carcinoma, solid type</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128882001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128882001">128882001</a>
+                </td>
+                <td>Cellular fibroma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128883006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128883006">128883006</a>
+                </td>
+                <td>Fibroblastic liposarcoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128884000"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128884000">128884000</a>
+                </td>
+                <td>Myoepithelial carcinoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128885004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128885004">128885004</a>
+                </td>
+                <td>Serous cystadenofibroma of borderline malignancy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128886003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128886003">128886003</a>
+                </td>
+                <td>Serous cystadenocarcinofibroma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128887007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128887007">128887007</a>
+                </td>
+                <td>Mucinous cystadenofibroma of borderline malignancy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128888002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128888002">128888002</a>
+                </td>
+                <td>Mucinous cystadenocarcinofibroma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128889005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128889005">128889005</a>
+                </td>
+                <td>Tubular carcinoid</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128890001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128890001">128890001</a>
+                </td>
+                <td>Clear cell cystadenofibroma of borderline malignancy</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128891002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128891002">128891002</a>
+                </td>
+                <td>Clear cell cystadenocarcinofibroma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128892009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128892009">128892009</a>
+                </td>
+                <td>Atypical follicular adenoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128893004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128893004">128893004</a>
+                </td>
+                <td>Fetal adenocarcinoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128894005"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128894005">128894005</a>
+                </td>
+                <td>Hidradenocarcinoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128895006"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128895006">128895006</a>
+                </td>
+                <td>Malignant eccrine spiradenoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128896007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128896007">128896007</a>
+                </td>
+                <td>Syringomatous carcinoma</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-128897003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128897003">128897003</a>
+                </td>
+                <td>Aggressive digital papillary adenoma</td>
+                <td/>
+              </tr>
             </table>
           </div>
         </text>
@@ -8331,7 +8331,7 @@
         <name value="VS_Morphology_SNOMED"/>
         <title value="ValueSet Morphology SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-31T12:02:56+00:00"/>
+        <date value="2022-04-20T16:54:19+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -8355,8 +8355,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:164b1998-c883-4f00-b622-cb162f6f3c06"/>
-          <timestamp value="2022-03-31T12:03:15+00:00"/>
+          <identifier value="urn:uuid:086826d7-c88b-497c-8a15-d179856680c8"/>
+          <timestamp value="2022-04-20T16:54:46+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -8368,7 +8368,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -8452,18 +8452,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="1929004"/>
-            <display value="Malignant lymphoma, non-Hodgkin&#39;s"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="2026006"/>
             <display value="Serous adenofibroma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="2092003"/>
-            <display value="Malignant melanoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -8487,8 +8477,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="2424003"/>
-            <display value="Sarcoma"/>
+            <code value="2557004"/>
+            <display value="Chronic leukemia (morphologic abnormality)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -8509,11 +8499,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="3102004"/>
             <display value="Oligodendroglioma, anaplastic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="3172003"/>
-            <display value="Peripheral T-cell lymphoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -8832,11 +8817,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="10639003"/>
-            <display value="Plasmacytoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="10705005"/>
             <display value="Mucinous adenofibroma"/>
           </contains>
@@ -8897,6 +8877,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="12219003"/>
+            <display value="Aleukemic lymphoid leukemia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="12302002"/>
             <display value="Small cell osteosarcoma"/>
           </contains>
@@ -8929,6 +8914,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="12690005"/>
             <display value="Fibroblastic osteosarcoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="12834001"/>
+            <display value="Subacute monocytic leukemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -8982,18 +8972,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="14537002"/>
-            <display value="Hodgkin&#39;s disease"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="14799000"/>
             <display value="Neoplasm, metastatic"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="14990007"/>
-            <display value="Chondrosarcoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9024,11 +9004,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="16090008"/>
             <display value="Myxoid leiomyosarcoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="16107003"/>
-            <display value="Adult rhabdomyoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9074,11 +9049,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="17372009"/>
             <display value="Granuloma pyogenicum"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="17788007"/>
-            <display value="Acute granulocytic leukemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9247,11 +9217,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="21119008"/>
-            <display value="Pigmented nevus"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="21181001"/>
             <display value="Thymoma, benign"/>
           </contains>
@@ -9272,11 +9237,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="21708004"/>
-            <display value="Osteosarcoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="21912003"/>
             <display value="Malignant teratoma, intermediate"/>
           </contains>
@@ -9284,11 +9244,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="21930005"/>
             <display value="Trabecular adenoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="21964009"/>
-            <display value="Malignant lymphoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9339,6 +9294,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="22694002"/>
             <display value="Adenocarcinoma with apocrine metaplasia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="22695001"/>
+            <display value="Aleukemic monocytic leukemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9424,11 +9384,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="25081006"/>
             <display value="Nephroblastoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="25169009"/>
-            <display value="Neuroma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9582,11 +9537,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="28054005"/>
-            <display value="Cutaneous lymphoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="28173006"/>
             <display value="Follicular adenocarcinoma, well differentiated"/>
           </contains>
@@ -9624,11 +9574,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="28733007"/>
             <display value="Compound odontoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="28899001"/>
-            <display value="Squamous cell carcinoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9767,11 +9712,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="32048006"/>
-            <display value="Adenoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="32071008"/>
             <display value="Strumal carcinoid"/>
           </contains>
@@ -9784,11 +9724,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="32272007"/>
             <display value="Sweat gland adenocarcinoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="32280000"/>
-            <display value="Lymphoid leukemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9849,6 +9784,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="33377007"/>
             <display value="Cavernous hemangioma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="33560006"/>
+            <display value="Subacute lymphoid leukemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9932,13 +9872,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="35917007"/>
-            <display value="Adenocarcinoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="36060005"/>
-            <display value="Hemangiopericytoma"/>
+            <code value="35750002"/>
+            <display value="Aleukemic myeloid leukemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9964,11 +9899,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="36721002"/>
             <display value="Papillary mucinous cystadenoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="36741007"/>
-            <display value="Seminoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -9999,11 +9929,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="37304002"/>
             <display value="Basosquamous carcinoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="37810007"/>
-            <display value="Myeloid leukemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -10217,11 +10142,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="43296007"/>
-            <display value="Round cell liposarcoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="43369006"/>
             <display value="Basal cell carcinoma, fibroepithelial"/>
           </contains>
@@ -10259,11 +10179,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="44529004"/>
             <display value="Giant cell glioblastoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="44598004"/>
-            <display value="Leiomyoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -10308,22 +10223,12 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="46580000"/>
-            <display value="Inverted transitional cell papilloma uncertain whether benign or malignant (morphologic abnormality)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="46585005"/>
-            <display value="Granulosa cell tumor"/>
+            <display value="Inverted transitional cell papilloma uncertain whether benign or malignant"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="46710009"/>
             <display value="Esthesioneurocytoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="46732000"/>
-            <display value="Malignant lymphoma, histiocytic, diffuse"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -10407,16 +10312,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="49430005"/>
-            <display value="Fibroliposarcoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="49937004"/>
-            <display value="Kaposi&#39;s sarcoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="50007008"/>
             <display value="Chordoma"/>
           </contains>
@@ -10462,11 +10357,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="51549004"/>
-            <display value="Leiomyosarcoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="51608009"/>
             <display value="Serous cystadenoma"/>
           </contains>
@@ -10507,13 +10397,13 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="52040006"/>
-            <display value="Infantile fibrosarcoma"/>
+            <code value="52097008"/>
+            <display value="Angioimmunoblastic lymphadenopathy"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="52097008"/>
-            <display value="Angioimmunoblastic lymphadenopathy"/>
+            <code value="52168008"/>
+            <display value="Monocytic leukemia (morphologic abnormality)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -10584,11 +10474,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="53801007"/>
             <display value="Ganglioneuroma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="53880006"/>
-            <display value="Hemangiopericytoma, benign"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -10687,11 +10572,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="55921005"/>
-            <display value="Multiple myeloma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="55937004"/>
             <display value="Neuroendocrine carcinoma"/>
           </contains>
@@ -10777,6 +10657,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="58220003"/>
+            <display value="Keratoacanthoma of uncertain behavior (morphologic abnormality)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="58243007"/>
             <display value="Fibromyxolipoma"/>
           </contains>
@@ -10812,11 +10697,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="59529006"/>
-            <display value="Squamous cell carcinoma in situ"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="59583009"/>
             <display value="Embryonal sarcoma"/>
           </contains>
@@ -10829,11 +10709,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="60346004"/>
             <display value="Islet cell carcinoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="60392001"/>
-            <display value="Angiofibroma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -10912,11 +10787,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="63364005"/>
-            <display value="Chronic myeloid leukemia"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="63373002"/>
             <display value="Lymphangiosarcoma"/>
           </contains>
@@ -10934,11 +10804,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="63629005"/>
             <display value="Lipoblastomatosis"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="63634009"/>
-            <display value="Glioblastoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -11067,6 +10932,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="67824002"/>
+            <display value="Lymphosarcoma (morphologic abnormality)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="67830002"/>
             <display value="Teratocarcinoma"/>
           </contains>
@@ -11077,18 +10947,13 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="68453008"/>
-            <display value="Carcinoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="68614005"/>
             <display value="Esthesioneuroepithelioma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="68738004"/>
-            <display value="Endometrial stromal tumor"/>
+            <display value="Endometrial stromal tumor of uncertain behavior (morphologic abnormality)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -11104,11 +10969,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="68944005"/>
             <display value="Endotheliomatous meningioma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="68956006"/>
-            <display value="Carcinoma in situ"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -11153,7 +11013,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="70555003"/>
-            <display value="Endometrial stromal sarcoma"/>
+            <display value="Endometrial stromal sarcoma, high grade"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -11212,11 +11072,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="71440001"/>
-            <display value="Sex cord-stromal tumor"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="71447003"/>
             <display value="Paget&#39;s disease, extramammary (except Paget&#39;s disease of bone)"/>
           </contains>
@@ -11224,11 +11079,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="71666005"/>
             <display value="Osteoid osteoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="72079004"/>
-            <display value="Dermatofibroma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -11327,6 +11177,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="74326002"/>
+            <display value="Subacute myeloid leukemia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="74364000"/>
             <display value="Small cell carcinoma"/>
           </contains>
@@ -11419,6 +11274,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="76345009"/>
             <display value="Islet cell adenoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="76481008"/>
+            <display value="Lymphoepithelioid lymphoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -11692,16 +11552,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="84631004"/>
-            <display value="Lymphoproliferative disease"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="84664004"/>
-            <display value="Hemangiopericytoma, malignant"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="84919003"/>
             <display value="Epithelioid mesothelioma, benign"/>
           </contains>
@@ -11752,18 +11602,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="86295000"/>
-            <display value="Immunoproliferative disease"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="86562005"/>
             <display value="Cystic mesothelioma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="86616005"/>
-            <display value="Intraductal carcinoma, noninfiltrating"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -11774,11 +11614,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="86970009"/>
             <display value="Lymphangiomatosis"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="87163000"/>
-            <display value="Leukemia"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -11852,6 +11687,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="89089007"/>
+            <display value="Sertoli cell adenoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="89096009"/>
             <display value="Pineocytoma"/>
           </contains>
@@ -11887,11 +11727,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="89880005"/>
-            <display value="Ganglioglioma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="89906000"/>
             <display value="Verrucous carcinoma"/>
           </contains>
@@ -11919,6 +11754,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="90955001"/>
             <display value="Cellular leiomyoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="92816008"/>
+            <display value="Chronic monocytic leukemia (morphologic abnormality)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -11979,6 +11819,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="108369006"/>
             <display value="Tumor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="110450007"/>
+            <display value="Langerhans&#39; cell histiocytosis"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -12189,11 +12034,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="115243008"/>
             <display value="Granular cell tumor AND/OR alveolar soft part sarcoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="115244002"/>
-            <display value="Malignant lymphoma - category (morphologic abnormality)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -12717,18 +12557,8 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="128707003"/>
-            <display value="Thymoma, spindle cell"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="128708008"/>
             <display value="Thymoma, spindle cell, malignant"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="128709000"/>
-            <display value="Thymoma, mixed type"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -12737,28 +12567,13 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="128711009"/>
-            <display value="Thymoma, predominantly cortical"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="128712002"/>
             <display value="Thymoma, predominantly cortical, malignant"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="128713007"/>
-            <display value="Thymoma, cortical"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="128714001"/>
             <display value="Thymoma, cortical, malignant"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="128715000"/>
-            <display value="Thymoma, epithelial"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -12864,11 +12679,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="128736003"/>
             <display value="Localized fibrous tumor"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="128737007"/>
-            <display value="Solitary fibrous tumor, malignant"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -13222,18 +13032,13 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="128809007"/>
-            <display value="Langerhans cell histiocytosis"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="128810002"/>
-            <display value="Langerhans cell histiocytosis, mono-ostotic"/>
+            <display value="Langerhans cell granulomatosis, unifocal"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="128811003"/>
-            <display value="Langerhans cell histiocytosis, poly-ostotic"/>
+            <display value="Langerhans cell histiocytosis, multifocal"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -13370,6 +13175,632 @@
             <code value="128839002"/>
             <display value="Papillary ependymoma"/>
           </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128840000"/>
+            <display value="Papillary meningioma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128841001"/>
+            <display value="Proliferative polycythemia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128843003"/>
+            <display value="Myelofibrosis with myeloid metaplasia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128844009"/>
+            <display value="Idiopathic thrombocythemia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128845005"/>
+            <display value="Refractory anemia without sideroblasts"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128846006"/>
+            <display value="Refractory anemia with ringed sideroblasts"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128847002"/>
+            <display value="Refractory anemia with excess blasts"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128848007"/>
+            <display value="RAEB-T"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128849004"/>
+            <display value="Serous tumor of low malignant potential"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128850004"/>
+            <display value="Papillary cystadenoma, borderline malignancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128851000"/>
+            <display value="Papillary serous tumor of low malignant potential"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128852007"/>
+            <display value="Pseudomucinous cystadenoma, borderline malignancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128853002"/>
+            <display value="Papillary pseudomucinous cystadenoma, borderline malignancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128854008"/>
+            <display value="Piloid astrocytoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128855009"/>
+            <display value="Alpha cell tumor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128858006"/>
+            <display value="Neurolipocytoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128859003"/>
+            <display value="Villous papilloma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128860008"/>
+            <display value="Reninoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128876004"/>
+            <display value="Tumorlet, benign"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128877008"/>
+            <display value="Papillary urothelial carcinoma, non-invasive"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128878003"/>
+            <display value="Islet cell tumor"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128879006"/>
+            <display value="Ductal carcinoma in situ, cribriform type"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128880009"/>
+            <display value="Intraductal carcinoma, solid type"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128882001"/>
+            <display value="Cellular fibroma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128883006"/>
+            <display value="Fibroblastic liposarcoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128884000"/>
+            <display value="Myoepithelial carcinoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128885004"/>
+            <display value="Serous cystadenofibroma of borderline malignancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128886003"/>
+            <display value="Serous cystadenocarcinofibroma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128887007"/>
+            <display value="Mucinous cystadenofibroma of borderline malignancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128888002"/>
+            <display value="Mucinous cystadenocarcinofibroma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128889005"/>
+            <display value="Tubular carcinoid"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128890001"/>
+            <display value="Clear cell cystadenofibroma of borderline malignancy"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128891002"/>
+            <display value="Clear cell cystadenocarcinofibroma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128892009"/>
+            <display value="Atypical follicular adenoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128893004"/>
+            <display value="Fetal adenocarcinoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128894005"/>
+            <display value="Hidradenocarcinoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128895006"/>
+            <display value="Malignant eccrine spiradenoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128896007"/>
+            <display value="Syringomatous carcinoma"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="128897003"/>
+            <display value="Aggressive digital papillary adenoma"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-tnm-classification-type-loinc"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.72</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21908-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/21908-9.html">21908-9</a>
+                </td>
+                <td>Stage group.clinical Cancer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21902-2"> </a>
+                  <a href="http://details.loinc.org/LOINC/21902-2.html">21902-2</a>
+                </td>
+                <td>Stage group.pathology Cancer</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"/>
+        <version value="0.1.0"/>
+        <name value="VS_TNM_Classification_Type_LOINC"/>
+        <title value="VS TNM Classification Type LOINC"/>
+        <status value="active"/>
+        <date value="2022-04-20T16:54:19+00:00"/>
+        <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+        <contact>
+          <name value="Berlin Institute of Health at Charité (BIH)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/"/>
+          </telecom>
+        </contact>
+        <description value="This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM)."/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <copyright value="CC-BY-SA-4.0"/>
+        <expansion>
+          <identifier value="urn:uuid:241456bd-113a-4f33-a0c9-435bc43e9937"/>
+          <timestamp value="2022-04-20T16:54:47+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.72"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21908-9"/>
+            <display value="Stage group.clinical Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21902-2"/>
+            <display value="Stage group.pathology Cancer"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-tnm-m-staging-type-loinc"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.72</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21907-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/21907-1.html">21907-1</a>
+                </td>
+                <td>Distant metastases.clinical [Class] Cancer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21901-4"> </a>
+                  <a href="http://details.loinc.org/LOINC/21901-4.html">21901-4</a>
+                </td>
+                <td>Distant metastases.pathology [Class] Cancer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21913-9"> </a>
+                  <a href="http://details.loinc.org/LOINC/21913-9.html">21913-9</a>
+                </td>
+                <td>Distant metastases.other [Class] Cancer</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc"/>
+        <version value="0.1.0"/>
+        <name value="VS_TNM_M_Staging_Type_LOINC"/>
+        <title value="VS TNM M Staging Type LOINC"/>
+        <status value="active"/>
+        <date value="2022-04-20T16:54:19+00:00"/>
+        <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+        <contact>
+          <name value="Berlin Institute of Health at Charité (BIH)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/"/>
+          </telecom>
+        </contact>
+        <description value="This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM)."/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <copyright value="CC-BY-SA-4.0"/>
+        <expansion>
+          <identifier value="urn:uuid:29570b19-cea9-46b2-b395-dcd4f071f8e9"/>
+          <timestamp value="2022-04-20T16:54:48+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.72"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21907-1"/>
+            <display value="Distant metastases.clinical [Class] Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21901-4"/>
+            <display value="Distant metastases.pathology [Class] Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21913-9"/>
+            <display value="Distant metastases.other [Class] Cancer"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-tnm-n-staging-type-loinc"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.72</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21906-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/21906-3.html">21906-3</a>
+                </td>
+                <td>Regional lymph nodes.clinical [Class] Cancer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21900-6"> </a>
+                  <a href="http://details.loinc.org/LOINC/21900-6.html">21900-6</a>
+                </td>
+                <td>Regional lymph nodes.pathology [Class] Cancer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21912-1"> </a>
+                  <a href="http://details.loinc.org/LOINC/21912-1.html">21912-1</a>
+                </td>
+                <td>Regional lymph nodes.other [Class] Cancer</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc"/>
+        <version value="0.1.0"/>
+        <name value="VS_TNM_N_Staging_Type_LOINC"/>
+        <title value="VS TNM N Staging Type LOINC"/>
+        <status value="active"/>
+        <date value="2022-04-20T16:54:19+00:00"/>
+        <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+        <contact>
+          <name value="Berlin Institute of Health at Charité (BIH)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/"/>
+          </telecom>
+        </contact>
+        <description value="This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN)."/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <copyright value="CC-BY-SA-4.0"/>
+        <expansion>
+          <identifier value="urn:uuid:adedc0a3-155a-4c24-8cfe-b1e72ff8b766"/>
+          <timestamp value="2022-04-20T16:54:49+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.72"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21906-3"/>
+            <display value="Regional lymph nodes.clinical [Class] Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21900-6"/>
+            <display value="Regional lymph nodes.pathology [Class] Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21912-1"/>
+            <display value="Regional lymph nodes.other [Class] Cancer"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-tnm-t-staging-type-loinc"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.72</p>
+            <p>All codes in this table are from the system 
+              <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">
+                <code>http://loinc.org</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21905-5"> </a>
+                  <a href="http://details.loinc.org/LOINC/21905-5.html">21905-5</a>
+                </td>
+                <td>Primary tumor.clinical [Class] Cancer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21899-0"> </a>
+                  <a href="http://details.loinc.org/LOINC/21899-0.html">21899-0</a>
+                </td>
+                <td>Primary tumor.pathology Cancer</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21911-3"> </a>
+                  <a href="http://details.loinc.org/LOINC/21911-3.html">21911-3</a>
+                </td>
+                <td>Primary tumor.other [Class] Cancer</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc"/>
+        <version value="0.1.0"/>
+        <name value="VS_TNM_T_Staging_Type_LOINC"/>
+        <title value="VS TNM T Staging Type LOINC"/>
+        <status value="active"/>
+        <date value="2022-04-20T16:54:19+00:00"/>
+        <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+        <contact>
+          <name value="Berlin Institute of Health at Charité (BIH)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/"/>
+          </telecom>
+        </contact>
+        <description value="This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT)."/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <copyright value="CC-BY-SA-4.0"/>
+        <expansion>
+          <identifier value="urn:uuid:1b7223ac-e4ac-40b2-a900-243c97de4e21"/>
+          <timestamp value="2022-04-20T16:54:53+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.72"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21905-5"/>
+            <display value="Primary tumor.clinical [Class] Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21899-0"/>
+            <display value="Primary tumor.pathology Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21911-3"/>
+            <display value="Primary tumor.other [Class] Cancer"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -13383,7 +13814,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jul 2021</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -15107,14 +15538,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-1929004"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1929004">1929004</a>
-                </td>
-                <td>Malignant lymphoma, non-Hodgkin&#39;s</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-1992003"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=1992003">1992003</a>
                 </td>
@@ -15255,14 +15678,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2083001">2083001</a>
                 </td>
                 <td>Nucleus ambiguus</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-2092003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2092003">2092003</a>
-                </td>
-                <td>Malignant melanoma</td>
                 <td/>
               </tr>
               <tr>
@@ -15579,14 +15994,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-2424003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2424003">2424003</a>
-                </td>
-                <td>Sarcoma</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-2433001"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2433001">2433001</a>
                 </td>
@@ -15703,6 +16110,14 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2550002">2550002</a>
                 </td>
                 <td>Phalanx of thumb</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-2557004"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=2557004">2557004</a>
+                </td>
+                <td>Chronic leukemia (morphologic abnormality)</td>
                 <td/>
               </tr>
               <tr>
@@ -16391,14 +16806,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=3169005">3169005</a>
                 </td>
                 <td>Spinal nerve</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-3172003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=3172003">3172003</a>
-                </td>
-                <td>Peripheral T-cell lymphoma</td>
                 <td/>
               </tr>
               <tr>
@@ -17435,14 +17842,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-4268002"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4268002">4268002</a>
-                </td>
-                <td>Lateral spinorubral tract</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-4276000"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4276000">4276000</a>
                 </td>
@@ -17751,14 +18150,6 @@
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4578000">4578000</a>
                 </td>
                 <td>Skin of posterior surface of thigh</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-4583008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=4583008">4583008</a>
-                </td>
-                <td>Splenius muscle of trunk</td>
                 <td/>
               </tr>
               <tr>
@@ -20451,14 +20842,6 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-7275008"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7275008">7275008</a>
-                </td>
-                <td>Lymphatics of appendix and large intestine</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-7295002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7295002">7295002</a>
                 </td>
@@ -21401,6 +21784,54 @@
                 <td>Articular surface, metacarpal, of phalanx of hand</td>
                 <td/>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-8266009"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8266009">8266009</a>
+                </td>
+                <td>Small intestine serosa</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-8276007"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8276007">8276007</a>
+                </td>
+                <td>Balloon cell nevus</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-8289001"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8289001">8289001</a>
+                </td>
+                <td>Below knee region</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-8292002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8292002">8292002</a>
+                </td>
+                <td>Interlobular arteries of liver</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-8309002"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8309002">8309002</a>
+                </td>
+                <td>Moderate transitional cell atypia</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-8314003"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8314003">8314003</a>
+                </td>
+                <td>Mastoid fontanel of skull</td>
+                <td/>
+              </tr>
             </table>
           </div>
         </text>
@@ -21409,7 +21840,7 @@
         <name value="VS_Topography_SNOMED"/>
         <title value="ValueSet Topography SNOMED"/>
         <status value="active"/>
-        <date value="2022-03-31T12:02:56+00:00"/>
+        <date value="2022-04-20T16:54:19+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -21433,8 +21864,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:115215fd-73b0-415b-bf30-4096457b6b76"/>
-          <timestamp value="2022-03-31T12:03:16+00:00"/>
+          <identifier value="urn:uuid:79cfb52c-10de-4060-b73e-c67b8d380e6c"/>
+          <timestamp value="2022-04-20T16:54:54+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -21446,7 +21877,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20210731"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -22515,11 +22946,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="1929004"/>
-            <display value="Malignant lymphoma, non-Hodgkin&#39;s"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="1992003"/>
             <display value="Porus acusticus internus"/>
           </contains>
@@ -22607,11 +23033,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="2083001"/>
             <display value="Nucleus ambiguus"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="2092003"/>
-            <display value="Malignant melanoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -22810,11 +23231,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="2424003"/>
-            <display value="Sarcoma"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="2433001"/>
             <display value="Digital tendon and tendon sheath of foot"/>
           </contains>
@@ -22887,6 +23303,11 @@
             <system value="http://snomed.info/sct"/>
             <code value="2550002"/>
             <display value="Phalanx of thumb"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="2557004"/>
+            <display value="Chronic leukemia (morphologic abnormality)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -23317,11 +23738,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="3169005"/>
             <display value="Spinal nerve"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="3172003"/>
-            <display value="Peripheral T-cell lymphoma"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -23970,11 +24386,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="4268002"/>
-            <display value="Lateral spinorubral tract"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="4276000"/>
             <display value="Inferior articular process of seventh cervical vertebra"/>
           </contains>
@@ -24167,11 +24578,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="4578000"/>
             <display value="Skin of posterior surface of thigh"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="4583008"/>
-            <display value="Splenius muscle of trunk"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -25855,11 +26261,6 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="7275008"/>
-            <display value="Lymphatics of appendix and large intestine"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
             <code value="7295002"/>
             <display value="Muscle of perineum"/>
           </contains>
@@ -26447,6 +26848,36 @@
             <system value="http://snomed.info/sct"/>
             <code value="8265008"/>
             <display value="Articular surface, metacarpal, of phalanx of hand"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="8266009"/>
+            <display value="Small intestine serosa"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="8276007"/>
+            <display value="Balloon cell nevus"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="8289001"/>
+            <display value="Below knee region"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="8292002"/>
+            <display value="Interlobular arteries of liver"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="8309002"/>
+            <display value="Moderate transitional cell atypia"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="8314003"/>
+            <display value="Mastoid fontanel of skull"/>
           </contains>
         </expansion>
       </ValueSet>

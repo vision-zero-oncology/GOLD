@@ -1,0 +1,223 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-t-category-uicc> a fhir:ValueSet;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "vs-tnm-t-category-uicc"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>TX</td><td>TX</td></tr><tr><td>T0</td><td>T0</td></tr><tr><td>Ta</td><td>Ta</td></tr><tr><td>Tis</td><td>Tis</td></tr><tr><td>Tis(LAMN)</td><td>Tis(LAMN)</td></tr><tr><td>Tis(DCIS)</td><td>Tis(DCIS)</td></tr><tr><td>Tis(LCIS)</td><td>Tis(LCIS)</td></tr><tr><td>Tis(Paget)</td><td>Tis(Paget)</td></tr><tr><td>Tis(pu)</td><td>Tis(pu)</td></tr><tr><td>Tis(pd)</td><td>Tis(pd)</td></tr><tr><td>T1</td><td>T1</td></tr><tr><td>T1mi</td><td>T1mi</td></tr><tr><td>T1a</td><td>T1a</td></tr><tr><td>T1a1</td><td>T1a1</td></tr><tr><td>T1a2</td><td>T1a2</td></tr><tr><td>T1b</td><td>T1b</td></tr><tr><td>T1b1</td><td>T1b1</td></tr><tr><td>T1b2</td><td>T1b2</td></tr><tr><td>T1c</td><td>T1c</td></tr><tr><td>T1c1</td><td>T1c1</td></tr><tr><td>T1c2</td><td>T1c2</td></tr><tr><td>T1c3</td><td>T1c3</td></tr><tr><td>T1d</td><td>T1d</td></tr><tr><td>T2</td><td>T2</td></tr><tr><td>T2a</td><td>T2a</td></tr><tr><td>T2a1</td><td>T2a1</td></tr><tr><td>T2a2</td><td>T2a2</td></tr><tr><td>T2b</td><td>T2b</td></tr><tr><td>T2c</td><td>T2c</td></tr><tr><td>T2d</td><td>T2d</td></tr><tr><td>T3</td><td>T3</td></tr><tr><td>T3a</td><td>T3a</td></tr><tr><td>T3b</td><td>T3b</td></tr><tr><td>T3c</td><td>T3c</td></tr><tr><td>T3d</td><td>T3d</td></tr><tr><td>T3e</td><td>T3e</td></tr><tr><td>T4</td><td>T4</td></tr><tr><td>T4a</td><td>T4a</td></tr><tr><td>T4b</td><td>T4b</td></tr><tr><td>T4c</td><td>T4c</td></tr><tr><td>T4d</td><td>T4d</td></tr><tr><td>T4e</td><td>T4e</td></tr></table></li></ul></div>"
+  ];
+  fhir:ValueSet.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc"];
+  fhir:ValueSet.version [ fhir:value "0.1.0"];
+  fhir:ValueSet.name [ fhir:value "VS_TNM_T_Category_UICC"];
+  fhir:ValueSet.title [ fhir:value "ValueSet TNM T Category UICC"];
+  fhir:ValueSet.status [ fhir:value "active"];
+  fhir:ValueSet.date [ fhir:value "2022-04-20T16:54:19+00:00"^^xsd:dateTime];
+  fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
+  fhir:ValueSet.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Berlin Institute of Health at Charité (BIH)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
+     ]
+  ];
+  fhir:ValueSet.description [ fhir:value "This ValueSet contains the TNM T category codes from UICC."];
+  fhir:ValueSet.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DEU" ]
+     ]
+  ];
+  fhir:ValueSet.copyright [ fhir:value "CC-BY-SA-4.0"];
+  fhir:ValueSet.compose [
+     fhir:ValueSet.compose.include [
+       fhir:index 0;
+       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
+       fhir:ValueSet.compose.include.concept [
+         fhir:index 0;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "TX" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "TX" ]
+       ], [
+         fhir:index 1;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T0" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T0" ]
+       ], [
+         fhir:index 2;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Ta" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Ta" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Tis" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tis" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Tis(LAMN)" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tis(LAMN)" ]
+       ], [
+         fhir:index 5;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Tis(DCIS)" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tis(DCIS)" ]
+       ], [
+         fhir:index 6;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Tis(LCIS)" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tis(LCIS)" ]
+       ], [
+         fhir:index 7;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Tis(Paget)" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tis(Paget)" ]
+       ], [
+         fhir:index 8;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Tis(pu)" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tis(pu)" ]
+       ], [
+         fhir:index 9;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "Tis(pd)" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Tis(pd)" ]
+       ], [
+         fhir:index 10;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1" ]
+       ], [
+         fhir:index 11;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1mi" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1mi" ]
+       ], [
+         fhir:index 12;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1a" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1a" ]
+       ], [
+         fhir:index 13;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1a1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1a1" ]
+       ], [
+         fhir:index 14;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1a2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1a2" ]
+       ], [
+         fhir:index 15;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1b" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1b" ]
+       ], [
+         fhir:index 16;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1b1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1b1" ]
+       ], [
+         fhir:index 17;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1b2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1b2" ]
+       ], [
+         fhir:index 18;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1c" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1c" ]
+       ], [
+         fhir:index 19;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1c1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1c1" ]
+       ], [
+         fhir:index 20;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1c2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1c2" ]
+       ], [
+         fhir:index 21;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1c3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1c3" ]
+       ], [
+         fhir:index 22;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T1d" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T1d" ]
+       ], [
+         fhir:index 23;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T2" ]
+       ], [
+         fhir:index 24;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T2a" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T2a" ]
+       ], [
+         fhir:index 25;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T2a1" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T2a1" ]
+       ], [
+         fhir:index 26;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T2a2" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T2a2" ]
+       ], [
+         fhir:index 27;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T2b" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T2b" ]
+       ], [
+         fhir:index 28;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T2c" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T2c" ]
+       ], [
+         fhir:index 29;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T2d" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T2d" ]
+       ], [
+         fhir:index 30;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T3" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T3" ]
+       ], [
+         fhir:index 31;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T3a" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T3a" ]
+       ], [
+         fhir:index 32;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T3b" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T3b" ]
+       ], [
+         fhir:index 33;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T3c" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T3c" ]
+       ], [
+         fhir:index 34;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T3d" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T3d" ]
+       ], [
+         fhir:index 35;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T3e" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T3e" ]
+       ], [
+         fhir:index 36;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T4" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T4" ]
+       ], [
+         fhir:index 37;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T4a" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T4a" ]
+       ], [
+         fhir:index 38;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T4b" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T4b" ]
+       ], [
+         fhir:index 39;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T4c" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T4c" ]
+       ], [
+         fhir:index 40;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T4d" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T4d" ]
+       ], [
+         fhir:index 41;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "T4e" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "T4e" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-t-category-uicc.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

@@ -3,7 +3,29 @@
   "version": "0.1.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "DEU",
-  "extensions": [],
+  "extensions": [
+    {
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+      "title": "Extension UICC TNM Prefix CPU",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc",
+      "title": "Extension UICC TNM Suffix ITC",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn",
+      "title": "Extension UICC TNM Suffix ITC SN",
+      "types": [
+        "CodeableConcept"
+      ]
+    }
+  ],
   "profiles": {
     "Observation": [
       {
@@ -29,6 +51,10 @@
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status",
         "title": "Profile Karnofsky Performance Status"
+      },
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm",
+        "title": "Profile UICC TNM"
       },
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base",
@@ -75,6 +101,12 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu": [
+      "Observation.component"
+    ],
+    "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc": [
+      "Observation.component"
     ]
   }
 }

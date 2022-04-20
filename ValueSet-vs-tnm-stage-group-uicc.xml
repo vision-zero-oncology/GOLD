@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-tnm-stage-group-uicc"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>okk</td><td>Stage X</td></tr><tr><td>0</td><td>Stage 0</td></tr><tr><td>0a</td><td>Stage 0a</td></tr><tr><td>0is</td><td>Stage 0is</td></tr><tr><td>I</td><td>Stage I</td></tr><tr><td>IA1</td><td>Stage IA1</td></tr><tr><td>IA2</td><td>Stage IA2</td></tr><tr><td>IA3</td><td>Stage IA3</td></tr><tr><td>IB</td><td>Stage IB</td></tr><tr><td>IB1</td><td>Stage IB1</td></tr><tr><td>IB2</td><td>Stage IB2</td></tr><tr><td>IC</td><td>Stage IC</td></tr><tr><td>IS</td><td>Stage IS</td></tr><tr><td>II</td><td>Stage II</td></tr><tr><td>IIA</td><td>Stage IIA</td></tr><tr><td>IIA1</td><td>Stage IIA1</td></tr><tr><td>IIA2</td><td>Stage IIA2</td></tr><tr><td>IIB</td><td>Stage IIB</td></tr><tr><td>IIC</td><td>Stage IIC</td></tr><tr><td>III</td><td>Stage III</td></tr><tr><td>IIIA</td><td>Stage IIIA</td></tr><tr><td>IIIA1</td><td>Stage IIIA1</td></tr><tr><td>IIIA2</td><td>Stage IIIA2</td></tr><tr><td>IIIB</td><td>Stage IIIB</td></tr><tr><td>IIIC</td><td>Stage IIIC</td></tr><tr><td>IIIC1</td><td>Stage IIIC1</td></tr><tr><td>IIIC2</td><td>Stage IIIC2</td></tr><tr><td>IV</td><td>Stage IV</td></tr><tr><td>IVA</td><td>Stage IVA</td></tr><tr><td>IVB</td><td>Stage IVB</td></tr><tr><td>IVC</td><td>Stage IVC</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc"/>
+  <version value="0.1.0"/>
+  <name value="VS_TNM_Stage_Group_UICC"/>
+  <title value="ValueSet TNM Stage Group UICC"/>
+  <status value="active"/>
+  <date value="2022-04-20T16:54:19+00:00"/>
+  <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+  <contact>
+    <name value="Berlin Institute of Health at Charité (BIH)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="The ValueSet contains codes for the UICC TNM stage groups ranging from I to IV to group cancer patients with similar prognosis."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.15.16"/>
+      <concept>
+        <code value="okk"/>
+        <display value="Stage X"/>
+      </concept>
+      <concept>
+        <code value="0"/>
+        <display value="Stage 0"/>
+      </concept>
+      <concept>
+        <code value="0a"/>
+        <display value="Stage 0a"/>
+      </concept>
+      <concept>
+        <code value="0is"/>
+        <display value="Stage 0is"/>
+      </concept>
+      <concept>
+        <code value="I"/>
+        <display value="Stage I"/>
+      </concept>
+      <concept>
+        <code value="IA1"/>
+        <display value="Stage IA1"/>
+      </concept>
+      <concept>
+        <code value="IA2"/>
+        <display value="Stage IA2"/>
+      </concept>
+      <concept>
+        <code value="IA3"/>
+        <display value="Stage IA3"/>
+      </concept>
+      <concept>
+        <code value="IB"/>
+        <display value="Stage IB"/>
+      </concept>
+      <concept>
+        <code value="IB1"/>
+        <display value="Stage IB1"/>
+      </concept>
+      <concept>
+        <code value="IB2"/>
+        <display value="Stage IB2"/>
+      </concept>
+      <concept>
+        <code value="IC"/>
+        <display value="Stage IC"/>
+      </concept>
+      <concept>
+        <code value="IS"/>
+        <display value="Stage IS"/>
+      </concept>
+      <concept>
+        <code value="II"/>
+        <display value="Stage II"/>
+      </concept>
+      <concept>
+        <code value="IIA"/>
+        <display value="Stage IIA"/>
+      </concept>
+      <concept>
+        <code value="IIA1"/>
+        <display value="Stage IIA1"/>
+      </concept>
+      <concept>
+        <code value="IIA2"/>
+        <display value="Stage IIA2"/>
+      </concept>
+      <concept>
+        <code value="IIB"/>
+        <display value="Stage IIB"/>
+      </concept>
+      <concept>
+        <code value="IIC"/>
+        <display value="Stage IIC"/>
+      </concept>
+      <concept>
+        <code value="III"/>
+        <display value="Stage III"/>
+      </concept>
+      <concept>
+        <code value="IIIA"/>
+        <display value="Stage IIIA"/>
+      </concept>
+      <concept>
+        <code value="IIIA1"/>
+        <display value="Stage IIIA1"/>
+      </concept>
+      <concept>
+        <code value="IIIA2"/>
+        <display value="Stage IIIA2"/>
+      </concept>
+      <concept>
+        <code value="IIIB"/>
+        <display value="Stage IIIB"/>
+      </concept>
+      <concept>
+        <code value="IIIC"/>
+        <display value="Stage IIIC"/>
+      </concept>
+      <concept>
+        <code value="IIIC1"/>
+        <display value="Stage IIIC1"/>
+      </concept>
+      <concept>
+        <code value="IIIC2"/>
+        <display value="Stage IIIC2"/>
+      </concept>
+      <concept>
+        <code value="IV"/>
+        <display value="Stage IV"/>
+      </concept>
+      <concept>
+        <code value="IVA"/>
+        <display value="Stage IVA"/>
+      </concept>
+      <concept>
+        <code value="IVB"/>
+        <display value="Stage IVB"/>
+      </concept>
+      <concept>
+        <code value="IVC"/>
+        <display value="Stage IVC"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>
