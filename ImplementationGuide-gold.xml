@@ -385,7 +385,7 @@
       <reference>
         <reference value="ValueSet/vs-tnm-classification-type-loinc"/>
       </reference>
-      <name value="VS TNM Classification Type LOINC"/>
+      <name value="ValueSet TNM Classification Type LOINC"/>
       <description value="This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM)."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -418,7 +418,7 @@
       <reference>
         <reference value="ValueSet/vs-tnm-m-staging-type-loinc"/>
       </reference>
-      <name value="VS TNM M Staging Type LOINC"/>
+      <name value="ValueSet TNM M Staging Type LOINC"/>
       <description value="This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM)."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -440,7 +440,7 @@
       <reference>
         <reference value="ValueSet/vs-tnm-n-staging-type-loinc"/>
       </reference>
-      <name value="VS TNM N Staging Type LOINC"/>
+      <name value="ValueSet TNM N Staging Type LOINC"/>
       <description value="This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN)."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -539,7 +539,7 @@
       <reference>
         <reference value="ValueSet/vs-tnm-t-staging-type-loinc"/>
       </reference>
-      <name value="VS TNM T Staging Type LOINC"/>
+      <name value="ValueSet TNM T Staging Type LOINC"/>
       <description value="This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT)."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -658,10 +658,21 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/example-tnm-tisn0m0"/>
+        <reference value="Observation/example-tnm-TisN0M0"/>
       </reference>
       <name value="Example TNM Tis N0 M0"/>
       <description value="Example TNM Tis N0 M0."/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-tnm-uT2a2pN0i-sncM1"/>
+      </reference>
+      <name value="Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1"/>
+      <description value="Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"/>
     </resource>
     <resource>

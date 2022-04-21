@@ -8,9 +8,9 @@
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc",
   "version": "0.1.0",
   "name": "VS_TNM_N_Staging_Type_LOINC",
-  "title": "VS TNM N Staging Type LOINC",
+  "title": "ValueSet TNM N Staging Type LOINC",
   "status": "active",
-  "date": "2022-04-20T16:54:19+00:00",
+  "date": "2022-04-21T07:12:34+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {

@@ -1,6 +1,6 @@
 {
   "resourceType": "Observation",
-  "id": "example-tnm-tisn0m0",
+  "id": "example-tnm-TisN0M0",
   "meta": {
     "profile": [
       "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"

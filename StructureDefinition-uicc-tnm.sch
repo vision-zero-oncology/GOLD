@@ -325,6 +325,8 @@
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both (inherited)</sch:assert>
@@ -480,6 +482,7 @@
       <sch:assert test="count(f:extension[@url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu']) &lt;= 1">extension with URL = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu']) &lt;= 1">extension with URL = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc']) &lt;= 1">extension with URL = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn']) &lt;= 1">extension with URL = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu']) &lt;= 1">extension with URL = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc']) &lt;= 1">extension with URL = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>

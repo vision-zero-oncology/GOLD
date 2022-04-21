@@ -7,9 +7,9 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-tisn0m0> a fhir:Observation;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-TisN0M0> a fhir:Observation;
   fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example-tnm-tisn0m0"];
+  fhir:Resource.id [ fhir:value "example-tnm-TisN0M0"];
   fhir:Resource.meta [
      fhir:Meta.profile [
        fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm";
@@ -111,7 +111,7 @@
 
 # - ontology header ------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-tisn0m0.ttl> a owl:Ontology;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-TisN0M0.ttl> a owl:Ontology;
   owl:imports fhir:fhir.ttl .
 
 # -------------------------------------------------------------------------------------

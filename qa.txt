@@ -1,9 +1,9 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 24, warn = 33, info = 10
+err = 24, warn = 39, info = 19
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.115
-Generated Wed Apr 20 16:55:13 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Thu Apr 21 07:13:49 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-body-height : 0 / 0 / 1
@@ -12,7 +12,8 @@ Generated Wed Apr 20 16:55:13 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/Observation-example-histologic-grade : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-histology-topography : 2 / 0 / 3
  /github/workspace/fsh-generated/resources/Observation-example-karnofsky-performance-status : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/Observation-example-tnm-tisn0m0 : 0 / 4 / 5
+ /github/workspace/fsh-generated/resources/Observation-example-tnm-TisN0M0 : 0 / 4 / 5
+ /github/workspace/fsh-generated/resources/Observation-example-tnm-uT2a2pN0i-sncM1 : 0 / 9 / 10
  /github/workspace/fsh-generated/resources/Observation-example-vital-signs-base : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-body-height : 0 / 0 / 1
@@ -22,9 +23,9 @@ Generated Wed Apr 20 16:55:13 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/StructureDefinition-histopathological-grading-who : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-karnofsky-performance-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm : 0 / 0 / 7
- /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-prefix-cpu : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc-sn : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-prefix-cpu : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc-sn : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-vital-signs-base : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-ecog-performance-status-snomed : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-histopathological-grade-snomed : 1 / 0 / 1
@@ -59,15 +60,34 @@ Generated Wed Apr 20 16:55:13 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
 ERROR: Observation/example-histology-topography: Observation.value.ofType(CodeableConcept).coding[0]: The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3)
 ERROR: Observation/example-histology-topography: Observation.bodySite.coding[0]: The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3)
 == fsh-generated/resources/Observation-example-karnofsky-performance-status.json ==
-== fsh-generated/resources/Observation-example-tnm-tisn0m0.json ==
-WARNING: Observation/example-tnm-tisn0m0: Observation.value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
-INFORMATION: Observation/example-tnm-tisn0m0: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-WARNING: Observation/example-tnm-tisn0m0: Observation.component[0].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
-INFORMATION: Observation/example-tnm-tisn0m0: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-WARNING: Observation/example-tnm-tisn0m0: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
-INFORMATION: Observation/example-tnm-tisn0m0: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-WARNING: Observation/example-tnm-tisn0m0: Observation.component[2].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
-INFORMATION: Observation/example-tnm-tisn0m0: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-example-tnm-TisN0M0.json ==
+WARNING: Observation/example-tnm-TisN0M0: Observation.value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-TisN0M0: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-TisN0M0: Observation.component[0].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-TisN0M0: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-TisN0M0: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-TisN0M0: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-TisN0M0: Observation.component[2].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-TisN0M0: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+== fsh-generated/resources/Observation-example-tnm-uT2a2pN0i-sncM1.json ==
+WARNING: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[0].extension[0].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[0].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[0].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[1].extension[0].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[1].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[1].extension[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[1].extension[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[1].extension[2].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-sn-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[1].extension[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[1].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[2].extension[0].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[2].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+WARNING: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[2].value.ofType(CodeableConcept): [Unable to determine whether the provided codes are in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc because the value set or a code system it depends on is not known to the validator, Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated]
+INFORMATION: Observation/example-tnm-uT2a2pN0i-sncM1: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-example-vital-signs-base.json ==
 == fsh-generated/resources/Patient-ExamplePatient.json ==
 == fsh-generated/resources/StructureDefinition-body-height.json ==
@@ -84,11 +104,8 @@ INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.elem
 INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-uicc-tnm-prefix-cpu.json ==
-WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc.json ==
-WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc-sn.json ==
-WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-vital-signs-base.json ==
 == fsh-generated/resources/ValueSet-vs-ecog-performance-status-snomed.json ==
 ERROR: ValueSet.url: Resource id/url mismatch: vs-ecog-performance-status-snomed/https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed

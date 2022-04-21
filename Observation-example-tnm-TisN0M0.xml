@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="example-tnm-tisn0m0"/>
+  <id value="example-tnm-TisN0M0"/>
   <meta>
     <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"/>
   </meta>

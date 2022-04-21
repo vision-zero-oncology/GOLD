@@ -15,9 +15,9 @@
   fhir:ValueSet.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "VS_TNM_N_Staging_Type_LOINC"];
-  fhir:ValueSet.title [ fhir:value "VS TNM N Staging Type LOINC"];
+  fhir:ValueSet.title [ fhir:value "ValueSet TNM N Staging Type LOINC"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-04-20T16:54:19+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-04-21T07:12:34+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ValueSet.contact [
      fhir:index 0;

@@ -541,7 +541,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-classification-type-loinc>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-classification-type-loinc" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS TNM Classification Type LOINC" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM Classification Type LOINC" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -583,7 +583,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-m-staging-type-loinc>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-m-staging-type-loinc" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS TNM M Staging Type LOINC" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM M Staging Type LOINC" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -611,7 +611,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-n-staging-type-loinc>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-n-staging-type-loinc" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS TNM N Staging Type LOINC" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM N Staging Type LOINC" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -737,7 +737,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-t-staging-type-loinc>;
          fhir:Reference.reference [ fhir:value "ValueSet/vs-tnm-t-staging-type-loinc" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "VS TNM T Staging Type LOINC" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ValueSet TNM T Staging Type LOINC" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
@@ -906,8 +906,8 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-tisn0m0>;
-         fhir:Reference.reference [ fhir:value "Observation/example-tnm-tisn0m0" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-TisN0M0>;
+         fhir:Reference.reference [ fhir:value "Observation/example-tnm-TisN0M0" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example TNM Tis N0 M0" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example TNM Tis N0 M0." ];
@@ -917,6 +917,23 @@
        ]
      ], [
        fhir:index 41;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-uT2a2pN0i-sncM1>;
+         fhir:Reference.reference [ fhir:value "Observation/example-tnm-uT2a2pN0i-sncM1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
+       ]
+     ], [
+       fhir:index 42;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

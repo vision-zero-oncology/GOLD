@@ -107,6 +107,9 @@
     ],
     "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc": [
       "Observation.component"
+    ],
+    "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn": [
+      "Observation.component"
     ]
   }
 }
