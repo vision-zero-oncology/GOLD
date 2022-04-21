@@ -57,7 +57,7 @@ Description: "The ValueSet contains codes for the tumor grading system following
 //TNM
 ValueSet: VS_TNM_Classification_Type_LOINC
 Id: vs-tnm-classification-type-loinc
-Title: "VS TNM Classification Type LOINC"
+Title: "ValueSet TNM Classification Type LOINC"
 Description: "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM)."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"
 * LNC#21908-9 "Stage group.clinical Cancer"
@@ -114,7 +114,7 @@ Description: "This ValueSet contains the c, p and u prefixes for TNM stages from
 // TNM T category LOINC
 ValueSet: VS_TNM_T_Staging_Type_LOINC
 Id: vs-tnm-t-staging-type-loinc
-Title: "VS TNM T Staging Type LOINC"
+Title: "ValueSet TNM T Staging Type LOINC"
 Description: "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT)."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc"
 * LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
@@ -190,7 +190,7 @@ Description: "This ValueSet contains the TNM primary tumor multiplicity codes us
 // TNM N category LOINC
 ValueSet: VS_TNM_N_Staging_Type_LOINC
 Id: vs-tnm-n-staging-type-loinc
-Title: "VS TNM N Staging Type LOINC"
+Title: "ValueSet TNM N Staging Type LOINC"
 Description: "This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN)."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc"
 * LNC#21906-3 "Regional lymph nodes.clinical [Class] Cancer"
@@ -222,7 +222,7 @@ Description: "This ValueSet contains the TNM N category codes from UICC."
 // TNM M category LOINC
 ValueSet: VS_TNM_M_Staging_Type_LOINC
 Id: vs-tnm-m-staging-type-loinc
-Title: "VS TNM M Staging Type LOINC"
+Title: "ValueSet TNM M Staging Type LOINC"
 Description: "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM)."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc"
 * LNC#21907-1 "Distant metastases.clinical [Class] Cancer"

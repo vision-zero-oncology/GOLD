@@ -30,8 +30,8 @@ Description: "Profile for the tumor classification using TNM stage group (I, II,
     V-descriptor 0..1 and
     Pn-descriptor 0..1 and
     S-symbol 0..1 and
-    numberOfNodesExamined 0..1 and
-    numberOfNodesAffected 0..1
+    numberOfNodesAffected 0..1 and
+    numberOfNodesExamined 0..1 
 * component[y-symbol] ^short = "y Symbol"
 * component[y-symbol] ^definition = "In those cases in which classification is performed during or following multimodality therapy, the cTNM or pTNM category is identified by a y prefix."
 * component[y-symbol].code = SCT#277649004 "y - During therapy/following treatment (tumor staging)" //LOINC??
@@ -64,11 +64,14 @@ Description: "Profile for the tumor classification using TNM stage group (I, II,
 * component[N-code] ^definition = "The N-category describes the absence or presence and extent of regional lymph node metastasis."
 * component[N-code].extension contains 
     SD_UICC_TNM_Prefix_CPU named cpuPrefix 0..1 and 
-    SD_UICC_TNM_Suffix_ITC named itcSuffix 0..1
+    SD_UICC_TNM_Suffix_ITC named itcSuffix 0..1 and
+    SD_UICC_TNM_Suffix_ITC_SN named snSuffix 0..1
 * component[N-code].extension[SD_UICC_TNM_Prefix_CPU] ^short = "Clinical or pathological classification"
 * component[N-code].extension[SD_UICC_TNM_Prefix_CPU] ^definition = "How the TNM-values are determined: clinically, by ultrasound or pathologically."
 * component[N-code].extension[SD_UICC_TNM_Suffix_ITC] ^short = "Isolated Tumor Cells"
 * component[N-code].extension[SD_UICC_TNM_Suffix_ITC] ^definition = "Isolated tumor cells (ITC) are single tumor cells or small clusters of cells not more than 0.2 mm in greatest extent that can be detected by routine H and E stains or immunohistochemistry."
+* component[N-code].extension[SD_UICC_TNM_Suffix_ITC_SN] ^short = "Sentinel Lymph Node"
+* component[N-code].extension[SD_UICC_TNM_Suffix_ITC_SN] ^definition = "The sentinel lymph node is the first lymph node to receive lymphatic drainage from a primary tumor. If it contains metastatic tumor this indicates that other lymph nodes may contain tumor."
 * component[N-code].code from VS_TNM_N_Staging_Type_LOINC (required)
 * component[N-code].value[x] only CodeableConcept
 * component[N-code].value[x] from VS_TNM_N_Category_UICC (required)
@@ -100,16 +103,16 @@ Description: "Profile for the tumor classification using TNM stage group (I, II,
 * component[S-symbol].code = SCT#399424006 "Serum tumor marker category (observable entity)" //LNC
 * component[S-symbol].value[x] only CodeableConcept
 * component[S-symbol].value[x] from VS_TNM_S_Serum_Tumor_Markers_UICC (required)
-* component[numberOfNodesExamined] ^short = "Number of regional lymph nodes examined"
-* component[numberOfNodesExamined].code = LNC#21894-1 "Regional lymph nodes examined [#] Specimen" //SCT 444025001
-* component[numberOfNodesExamined].value[x] only Quantity
-* component[numberOfNodesExamined].valueQuantity.system = "http://unitsofmeasure.org"
-* component[numberOfNodesExamined].valueQuantity.code = #1
 * component[numberOfNodesAffected] ^short = "Number of regional lymph nodes positive"
 * component[numberOfNodesAffected].code = LNC#21893-3 "Regional lymph nodes positive [#] Specimen" //SCT 443527007
 * component[numberOfNodesAffected].value[x] only Quantity
 * component[numberOfNodesAffected].valueQuantity.system = "http://unitsofmeasure.org"
 * component[numberOfNodesAffected].valueQuantity.code = #1
+* component[numberOfNodesExamined] ^short = "Number of regional lymph nodes examined"
+* component[numberOfNodesExamined].code = LNC#21894-1 "Regional lymph nodes examined [#] Specimen" //SCT 444025001
+* component[numberOfNodesExamined].value[x] only Quantity
+* component[numberOfNodesExamined].valueQuantity.system = "http://unitsofmeasure.org"
+* component[numberOfNodesExamined].valueQuantity.code = #1
 
 // cpu prefix Extension
 Extension: SD_UICC_TNM_Prefix_CPU
@@ -138,7 +141,7 @@ Description: "The Extension allows to add isolated tumor cells (ITC) sentinel ly
 * value[x] only CodeableConcept
 * value[x] from VS_TNM_Suffix_ITC_SN_UICC (required)
 
-Instance: example-tnm-tisn0m0
+Instance: example-tnm-TisN0M0
 InstanceOf: uicc-tnm
 Usage: #example
 Title: "Example TNM Tis N0 M0"
@@ -155,3 +158,30 @@ Description: "Example TNM Tis N0 M0."
 * component[N-code].valueCodeableConcept = UICC-TNM#N0 "N0"
 * component[M-code].code = LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
 * component[M-code].valueCodeableConcept = UICC-TNM#M0 "M0"
+
+Instance: example-tnm-uT2a2pN0i-sncM1
+InstanceOf: uicc-tnm
+Usage: #example
+Title: "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1"
+Description: "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1."
+* status = #final
+* code.coding[snomed] = SCT#258235000 "International Union Against Cancer (tumor staging)"
+* code.coding[loinc] = LNC#21902-2 "Stage group.pathology Cancer"
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2022-03-07"
+* valueCodeableConcept = UICC-TNM#IVC "Stage IVC"
+* component[T-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = UICC-TNM#u "u"
+* component[T-code].code = LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
+* component[T-code].valueCodeableConcept = UICC-TNM#T2a2 "T2a2"
+* component[N-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = UICC-TNM#p "p"
+* component[N-code].code = LNC#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
+* component[N-code].valueCodeableConcept = UICC-TNM#N0 "N0"
+* component[N-code].extension[SD_UICC_TNM_Suffix_ITC].valueCodeableConcept = UICC-TNM#i- "(i-)"
+* component[N-code].extension[SD_UICC_TNM_Suffix_ITC_SN].valueCodeableConcept = UICC-TNM#sn "(sn)"
+* component[M-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = UICC-TNM#c "c"
+* component[M-code].code = LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
+* component[M-code].valueCodeableConcept = UICC-TNM#M1 "M1"
+* component[numberOfNodesAffected].code = LNC#21893-3 "Regional lymph nodes positive [#] Specimen"
+* component[numberOfNodesAffected].valueQuantity = 0 UCUM#1
+* component[numberOfNodesExamined].code = LNC#21894-1 "Regional lymph nodes examined [#] Specimen"
+* component[numberOfNodesExamined].valueQuantity = 23 UCUM#1
