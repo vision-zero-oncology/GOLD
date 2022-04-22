@@ -57,6 +57,10 @@
         "title": "Profile UICC TNM"
       },
       {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification",
+        "title": "Profile UICC TNM Residual Tumor (R) Classification"
+      },
+      {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base",
         "title": "Profile Vital Signs Base"
       }

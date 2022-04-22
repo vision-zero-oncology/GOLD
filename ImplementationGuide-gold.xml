@@ -295,6 +295,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/uicc-tnm-r-classification"/>
+      </reference>
+      <name value="Profile UICC TNM Residual Tumor (R) Classification"/>
+      <description value="Profile for the residual tumor (R) classification as part of TNM."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/vital-signs-base"/>
       </reference>
       <name value="Profile Vital Signs Base"/>
@@ -397,7 +408,7 @@
         <reference value="ValueSet/vs-tnm-l-lymphatic-invasion-uicc"/>
       </reference>
       <name value="ValueSet TNM L-Descriptor Lymphatic Invasion UICC"/>
-      <description value="This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from UICC."/>
+      <description value="This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -408,7 +419,7 @@
         <reference value="ValueSet/vs-tnm-m-category-uicc"/>
       </reference>
       <name value="ValueSet TNM M Category UICC"/>
-      <description value="This ValueSet contains the TNM M category codes from UICC."/>
+      <description value="This ValueSet contains the TNM M category codes from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -430,7 +441,7 @@
         <reference value="ValueSet/vs-tnm-n-category-uicc"/>
       </reference>
       <name value="ValueSet TNM N Category UICC"/>
-      <description value="This ValueSet contains the TNM N category codes from UICC."/>
+      <description value="This ValueSet contains the TNM N category codes from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -452,7 +463,7 @@
         <reference value="ValueSet/vs-tnm-pn-perineural-invasion-uicc"/>
       </reference>
       <name value="ValueSet TNM Pn-Descriptor Perineural Invasion UICC"/>
-      <description value="This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from UICC."/>
+      <description value="This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -463,7 +474,18 @@
         <reference value="ValueSet/vs-tnm-prefix-cpu-uicc"/>
       </reference>
       <name value="ValueSet TNM Prefix CPU UICC"/>
-      <description value="This ValueSet contains the c, p and u prefixes for TNM stages from UICC."/>
+      <description value="This ValueSet contains the c, p and u prefixes for TNM stages from TNM 8th edition UICC."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-tnm-r-classification-uicc"/>
+      </reference>
+      <name value="ValueSet TNM Residual Tumor (R) Classification UICC"/>
+      <description value="This ValueSet contains the TNM residual tumor (R) classification codes from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -474,7 +496,7 @@
         <reference value="ValueSet/vs-tnm-s-serum-tumor-markers-uicc"/>
       </reference>
       <name value="ValueSet TNM S Serum Tumour Markers UICC"/>
-      <description value="This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from UICC."/>
+      <description value="This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -485,7 +507,7 @@
         <reference value="ValueSet/vs-tnm-stage-group-uicc"/>
       </reference>
       <name value="ValueSet TNM Stage Group UICC"/>
-      <description value="The ValueSet contains codes for the UICC TNM stage groups ranging from I to IV to group cancer patients with similar prognosis."/>
+      <description value="The ValueSet contains codes for the TNM stage groups ranging from I to IV to group cancer patients with similar prognosis from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -496,7 +518,7 @@
         <reference value="ValueSet/vs-tnm-suffix-itc-sn-uicc"/>
       </reference>
       <name value="ValueSet TNM Suffix ITC SN UICC"/>
-      <description value="This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from UICC."/>
+      <description value="This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -507,7 +529,7 @@
         <reference value="ValueSet/vs-tnm-suffix-itc-uicc"/>
       </reference>
       <name value="ValueSet TNM Suffix ITC UICC"/>
-      <description value="This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category in TNM from UICC."/>
+      <description value="This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -518,7 +540,7 @@
         <reference value="ValueSet/vs-tnm-t-category-uicc"/>
       </reference>
       <name value="ValueSet TNM T Category UICC"/>
-      <description value="This ValueSet contains the TNM T category codes from UICC."/>
+      <description value="This ValueSet contains the TNM T category codes from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -529,7 +551,7 @@
         <reference value="ValueSet/vs-tnm-t-multiplicity-uicc"/>
       </reference>
       <name value="ValueSet TNM T Multiplicity UICC"/>
-      <description value="This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from UICC."/>
+      <description value="This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -551,7 +573,7 @@
         <reference value="ValueSet/vs-tnm-v-venous-invasion-uicc"/>
       </reference>
       <name value="ValueSet TNM V-Descriptor Venous Invasion UICC"/>
-      <description value="This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from UICC."/>
+      <description value="This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -658,6 +680,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/example-tnm-R0"/>
+      </reference>
+      <name value="Example TNM R0"/>
+      <description value="Example TNM R0."/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/example-tnm-TisN0M0"/>
       </reference>
       <name value="Example TNM Tis N0 M0"/>
@@ -669,10 +702,32 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
-        <reference value="Observation/example-tnm-uT2a2pN0i-sncM1"/>
+        <reference value="Observation/example-tnm-cT3pN0mol-sncM1"/>
+      </reference>
+      <name value="Example TNM cT3 pN0 (mol-)(sn) cM1"/>
+      <description value="Example TNM cT3 pN0 (mol-)(sn) cM1."/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-tnm-uT2a2pN0023i-sncM1"/>
       </reference>
       <name value="Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1"/>
       <description value="Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1."/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0"/>
+      </reference>
+      <name value="Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0"/>
+      <description value="Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"/>
     </resource>
     <resource>

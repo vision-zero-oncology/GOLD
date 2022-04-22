@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Observation xmlns="http://hl7.org/fhir">
-  <id value="example-tnm-uT2a2pN0i-sncM1"/>
+  <id value="example-tnm-cT3pN0mol-sncM1"/>
   <meta>
     <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"/>
   </meta>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 258235000}, {http://loinc.org 21902-2}">International Union Against Cancer (tumor staging)</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1985-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 IVC}">Stage IVC</span></p><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 u}">u</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 21905-5}">Primary tumor.clinical [Class] Cancer</span></p><p><b>value</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 T2a2}">T2a2</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 p}">p</span></p><p><b>Extension UICC TNM Suffix ITC</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 i-}">(i-)</span></p><p><b>Extension UICC TNM Suffix ITC SN</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 sn}">(sn)</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 21900-6}">Regional lymph nodes.pathology [Class] Cancer</span></p><p><b>value</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 N0}">N0</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 c}">c</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 21907-1}">Distant metastases.clinical [Class] Cancer</span></p><p><b>value</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 M1}">M1</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 21893-3}">Regional lymph nodes positive [#] Specimen</span></p><p><b>value</b>: 0 1</p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title="Codes: {http://loinc.org 21894-1}">Regional lymph nodes examined [#] Specimen</span></p><p><b>value</b>: 23 1</p></blockquote></div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://snomed.info/sct 258235000}, {http://loinc.org 21902-2}">International Union Against Cancer (tumor staging)</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1985-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 IVC}">Stage IVC</span></p><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 c}">c</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 21905-5}">Primary tumor.clinical [Class] Cancer</span></p><p><b>value</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 T3}">T3</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 p}">p</span></p><p><b>Extension UICC TNM Suffix ITC</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 mol-}">(mol-)</span></p><p><b>Extension UICC TNM Suffix ITC SN</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 sn}">(sn)</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 21900-6}">Regional lymph nodes.pathology [Class] Cancer</span></p><p><b>value</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 N0}">N0</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 c}">c</span></p><p><b>code</b>: <span title="Codes: {http://loinc.org 21907-1}">Distant metastases.clinical [Class] Cancer</span></p><p><b>value</b>: <span title="Codes: {urn:oid:2.16.840.1.113883.15.16 M1}">M1</span></p></blockquote></div>
   </text>
   <status value="final"/>
   <code>
@@ -37,8 +37,8 @@
       <valueCodeableConcept>
         <coding>
           <system value="urn:oid:2.16.840.1.113883.15.16"/>
-          <code value="u"/>
-          <display value="u"/>
+          <code value="c"/>
+          <display value="c"/>
         </coding>
       </valueCodeableConcept>
     </extension>
@@ -52,8 +52,8 @@
     <valueCodeableConcept>
       <coding>
         <system value="urn:oid:2.16.840.1.113883.15.16"/>
-        <code value="T2a2"/>
-        <display value="T2a2"/>
+        <code value="T3"/>
+        <display value="T3"/>
       </coding>
     </valueCodeableConcept>
   </component>
@@ -71,8 +71,8 @@
       <valueCodeableConcept>
         <coding>
           <system value="urn:oid:2.16.840.1.113883.15.16"/>
-          <code value="i-"/>
-          <display value="(i-)"/>
+          <code value="mol-"/>
+          <display value="(mol-)"/>
         </coding>
       </valueCodeableConcept>
     </extension>
@@ -124,33 +124,5 @@
         <display value="M1"/>
       </coding>
     </valueCodeableConcept>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <code value="21893-3"/>
-        <display value="Regional lymph nodes positive [#] Specimen"/>
-      </coding>
-    </code>
-    <valueQuantity>
-      <value value="0"/>
-      <system value="http://unitsofmeasure.org"/>
-      <code value="1"/>
-    </valueQuantity>
-  </component>
-  <component>
-    <code>
-      <coding>
-        <system value="http://loinc.org"/>
-        <code value="21894-1"/>
-        <display value="Regional lymph nodes examined [#] Specimen"/>
-      </coding>
-    </code>
-    <valueQuantity>
-      <value value="23"/>
-      <system value="http://unitsofmeasure.org"/>
-      <code value="1"/>
-    </valueQuantity>
   </component>
 </Observation>

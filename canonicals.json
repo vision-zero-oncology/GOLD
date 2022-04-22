@@ -63,6 +63,13 @@
     "name": "SD_UICC_TNM_Prefix_CPU"
   },
   {
+    "id": "uicc-tnm-r-classification",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification",
+    "version": "0.1.0",
+    "name": "SD_UICC_TNM_R_Classification"
+  },
+  {
     "id": "uicc-tnm-suffix-itc",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc",
@@ -166,6 +173,13 @@
     "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc",
     "version": "0.1.0",
     "name": "VS_TNM_Prefix_CPU_UICC"
+  },
+  {
+    "id": "vs-tnm-r-classification-uicc",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-r-classification-uicc",
+    "version": "0.1.0",
+    "name": "VS_TNM_R_Classification_UICC"
   },
   {
     "id": "vs-tnm-s-serum-tumor-markers-uicc",
