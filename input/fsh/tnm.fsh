@@ -253,7 +253,7 @@ Description: "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0."
 * component[T-code].valueCodeableConcept = UICC-TNM#T1b "T1b"
 * component[N-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = UICC-TNM#p "p"
 * component[N-code].code = LNC#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
-* component[N-code].valueCodeableConcept = UICC-TNM#N0 "N1"
+* component[N-code].valueCodeableConcept = UICC-TNM#N1 "N1"
 * component[N-code].extension[SD_UICC_TNM_Suffix_ITC_SN].valueCodeableConcept = UICC-TNM#sn "(sn)"
 * component[M-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = UICC-TNM#c "c"
 * component[M-code].code = LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
@@ -280,3 +280,42 @@ Description: "Example TNM R0."
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-03-07"
 * valueCodeableConcept = UICC-TNM#R0 "R0"
+
+Instance: example-tnm-rpT3mpN0icM0R1is
+InstanceOf: uicc-tnm
+Usage: #example
+Title: "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)"
+Description: "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)."
+* status = #final
+* code.coding[snomed] = SCT#258235000 "International Union Against Cancer (tumor staging)"
+* code.coding[loinc] = LNC#21902-2 "Stage group.pathology Cancer"
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2022-03-07"
+* valueCodeableConcept = UICC-TNM#IIB "Stage IIB"
+* hasMember[R-classification] = Reference(example-tnm-R1)
+* component[r-symbol].code = SCT#277647002 "r - Tumor recurrence (tumor staging)"
+* component[r-symbol].valueCodeableConcept = UICC-TNM#r "r"
+* component[T-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = UICC-TNM#p "p"
+* component[T-code].code = LNC#21899-0 "Primary tumor.pathology Cancer"
+* component[T-code].valueCodeableConcept = UICC-TNM#T3 "T3"
+* component[m-symbol].code = SCT#277650004 "m - Multiple tumors (tumor staging)"
+* component[m-symbol].valueCodeableConcept = UICC-TNM#m "(m)"
+* component[N-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = UICC-TNM#p "p"
+* component[N-code].code = LNC#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
+* component[N-code].valueCodeableConcept = UICC-TNM#N0 "N0"
+* component[N-code].extension[SD_UICC_TNM_Suffix_ITC].valueCodeableConcept = UICC-TNM#i+ "(i+)"
+* component[M-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = UICC-TNM#c "c"
+* component[M-code].code = LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
+* component[M-code].valueCodeableConcept = UICC-TNM#M0 "M0"
+
+Instance: example-tnm-R1
+InstanceOf: uicc-tnm-r-classification
+Usage: #example
+Title: "Example TNM R1"
+Description: "Example TNM R1."
+* status = #final
+* code.coding[snomed] = SCT#17964000 "Residual tumor stage (observable entity)"
+* code.coding[loinc] = LNC#84892-9 "Residual tumor classification [Type] in Cancer specimen"
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2022-03-07"
+* valueCodeableConcept = UICC-TNM#R1 "R1" //needs updated to R1(is)

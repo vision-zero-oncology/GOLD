@@ -315,4 +315,6 @@ Description: "This ValueSet contains the TNM residual tumor (R) classification c
 * UICC-TNM#RX "RX"
 * UICC-TNM#R0 "R0"
 * UICC-TNM#R1 "R1"
+// * R1(is) R1(is)
+// * R1(cy) R1(cy)
 * UICC-TNM#R2 "R2"
