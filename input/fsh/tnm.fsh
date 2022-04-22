@@ -3,7 +3,7 @@ Profile: SD_UICC_TNM
 Parent: Observation
 Id: uicc-tnm
 Title: "Profile UICC TNM"
-Description: "Profile for the tumor classification using TNM stage group (I, II, III, or IV) or TNM staging elements (T, N, and M)."
+Description: "Profile for the tumor classification using TNM stage groups (I, II, III, or IV) and TNM staging elements (T, N, and M)."
 * ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
@@ -20,6 +20,8 @@ Description: "Profile for the tumor classification using TNM stage group (I, II,
 * hasMember ^slicing.rules = #open
 * hasMember contains R-classification 0..1
 * hasMember[R-classification] only Reference(SD_UICC_TNM_R_Classification)
+* hasMember[R-classification] ^short = "Residual Tumor (R) Classification"
+* hasMember[R-classification] ^definition = "The absence or presence of residual tumour after treatment is described by the symbol R."
 * component ^slicing.discriminator.type = #pattern
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
