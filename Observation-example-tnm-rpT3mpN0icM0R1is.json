@@ -1,0 +1,202 @@
+{
+  "resourceType": "Observation",
+  "id": "example-tnm-rpT3mpN0icM0R1is",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    ]
+  },
+  "text": {
+    "status": "extensions",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 258235000}, {http://loinc.org 21902-2}\">International Union Against Cancer (tumor staging)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1985-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 IIB}\">Stage IIB</span></p><p><b>hasMember</b>: <a href=\"Observation-example-tnm-R1.html\">Generated Summary: <span title=\"Codes: {http://loinc.org 84892-9}, {http://snomed.info/sct 17964000}\">Residual tumor classification [Type] in Cancer specimen</span>; effective: 2022-03-07; <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 R1}\">R1</span></a></p><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 277647002}\">r - Tumor recurrence (tumor staging)</span></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 r}\">r</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 p}\">p</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 21899-0}\">Primary tumor.pathology Cancer</span></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 T3}\">T3</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: <span title=\"Codes: {http://snomed.info/sct 277650004}\">m - Multiple tumors (tumor staging)</span></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 m}\">(m)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 p}\">p</span></p><p><b>Extension UICC TNM Suffix ITC</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 i+}\">(i+)</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 21900-6}\">Regional lymph nodes.pathology [Class] Cancer</span></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 N0}\">N0</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 c}\">c</span></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 21907-1}\">Distant metastases.clinical [Class] Cancer</span></p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 M0}\">M0</span></p></blockquote></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "258235000",
+        "display": "International Union Against Cancer (tumor staging)"
+      },
+      {
+        "system": "http://loinc.org",
+        "code": "21902-2",
+        "display": "Stage group.pathology Cancer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "code": "IIB",
+        "display": "Stage IIB"
+      }
+    ]
+  },
+  "hasMember": [
+    {
+      "reference": "Observation/example-tnm-R1"
+    }
+  ],
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "277647002",
+            "display": "r - Tumor recurrence (tumor staging)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "code": "r",
+            "display": "r"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "code": "p",
+                "display": "p"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "21899-0",
+            "display": "Primary tumor.pathology Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "code": "T3",
+            "display": "T3"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "system": "http://snomed.info/sct",
+            "code": "277650004",
+            "display": "m - Multiple tumors (tumor staging)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "code": "m",
+            "display": "(m)"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "code": "p",
+                "display": "p"
+              }
+            ]
+          }
+        },
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "code": "i+",
+                "display": "(i+)"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "21900-6",
+            "display": "Regional lymph nodes.pathology [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "code": "N0",
+            "display": "N0"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "code": "c",
+                "display": "c"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "system": "http://loinc.org",
+            "code": "21907-1",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "code": "M0",
+            "display": "M0"
+          }
+        ]
+      }
+    }
+  ]
+}

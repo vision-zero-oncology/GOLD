@@ -948,6 +948,20 @@
           }
         ],
         "reference": {
+          "reference": "Observation/example-tnm-R1"
+        },
+        "name": "Example TNM R1",
+        "description": "Example TNM R1.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
           "reference": "Observation/example-tnm-TisN0M0"
         },
         "name": "Example TNM Tis N0 M0",
@@ -966,6 +980,20 @@
         },
         "name": "Example TNM cT3 pN0 (mol-)(sn) cM1",
         "description": "Example TNM cT3 pN0 (mol-)(sn) cM1.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/example-tnm-rpT3mpN0icM0R1is"
+        },
+        "name": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)",
+        "description": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is).",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
       },
       {

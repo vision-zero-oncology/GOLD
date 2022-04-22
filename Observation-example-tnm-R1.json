@@ -1,0 +1,41 @@
+{
+  "resourceType": "Observation",
+  "id": "example-tnm-R1",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 84892-9}, {http://snomed.info/sct 17964000}\">Residual tumor classification [Type] in Cancer specimen</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1985-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 R1}\">R1</span></p></div>"
+  },
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "84892-9",
+        "display": "Residual tumor classification [Type] in Cancer specimen"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "17964000",
+        "display": "Residual tumor stage (observable entity)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "code": "R1",
+        "display": "R1"
+      }
+    ]
+  }
+}

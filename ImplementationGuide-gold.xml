@@ -691,6 +691,17 @@
         <valueString value="Observation"/>
       </extension>
       <reference>
+        <reference value="Observation/example-tnm-R1"/>
+      </reference>
+      <name value="Example TNM R1"/>
+      <description value="Example TNM R1."/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
         <reference value="Observation/example-tnm-TisN0M0"/>
       </reference>
       <name value="Example TNM Tis N0 M0"/>
@@ -706,6 +717,17 @@
       </reference>
       <name value="Example TNM cT3 pN0 (mol-)(sn) cM1"/>
       <description value="Example TNM cT3 pN0 (mol-)(sn) cM1."/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/example-tnm-rpT3mpN0icM0R1is"/>
+      </reference>
+      <name value="Example TNM r pT3(m) pN0 (i+) cM0 R1(is)"/>
+      <description value="Example TNM r pT3(m) pN0 (i+) cM0 R1(is)."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"/>
     </resource>
     <resource>

@@ -951,6 +951,23 @@
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-R1>;
+         fhir:Reference.reference [ fhir:value "Observation/example-tnm-R1" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example TNM R1" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example TNM R1." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification>
+       ]
+     ], [
+       fhir:index 44;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-TisN0M0>;
          fhir:Reference.reference [ fhir:value "Observation/example-tnm-TisN0M0" ]
        ];
@@ -961,7 +978,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
        ]
      ], [
-       fhir:index 44;
+       fhir:index 45;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -978,7 +995,24 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
        ]
      ], [
-       fhir:index 45;
+       fhir:index 46;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "Observation" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-rpT3mpN0icM0R1is>;
+         fhir:Reference.reference [ fhir:value "Observation/example-tnm-rpT3mpN0icM0R1is" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)." ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
+       ]
+     ], [
+       fhir:index 47;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -995,7 +1029,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
        ]
      ], [
-       fhir:index 46;
+       fhir:index 48;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1012,7 +1046,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
        ]
      ], [
-       fhir:index 47;
+       fhir:index 49;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

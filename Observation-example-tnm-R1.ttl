@@ -1,0 +1,60 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <http://loinc.org/rdf#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-R1> a fhir:Observation;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "example-tnm-R1"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification";
+       fhir:index 0;
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://loinc.org 84892-9}, {http://snomed.info/sct 17964000}\">Residual tumor classification [Type] in Cancer specimen</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1985-03-31</a></p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: <span title=\"Codes: {urn:oid:2.16.840.1.113883.15.16 R1}\">R1</span></p></div>"
+  ];
+  fhir:Observation.status [ fhir:value "final"];
+  fhir:Observation.code [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a loinc:84892-9;
+       fhir:Coding.system [ fhir:value "http://loinc.org" ];
+       fhir:Coding.code [ fhir:value "84892-9" ];
+       fhir:Coding.display [ fhir:value "Residual tumor classification [Type] in Cancer specimen" ]
+     ], [
+       fhir:index 1;
+       a sct:17964000;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "17964000" ];
+       fhir:Coding.display [ fhir:value "Residual tumor stage (observable entity)" ]
+     ]
+  ];
+  fhir:Observation.subject [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Observation.effectiveDateTime [ fhir:value "2022-03-07"^^xsd:date];
+  fhir:Observation.valueCodeableConcept [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
+       fhir:Coding.code [ fhir:value "R1" ];
+       fhir:Coding.display [ fhir:value "R1" ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-R1.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+
