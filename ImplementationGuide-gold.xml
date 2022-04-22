@@ -287,7 +287,7 @@
         <reference value="StructureDefinition/uicc-tnm"/>
       </reference>
       <name value="Profile UICC TNM"/>
-      <description value="Profile for the tumor classification using TNM stage group (I, II, III, or IV) or TNM staging elements (T, N, and M)."/>
+      <description value="Profile for the tumor classification using TNM stage groups (I, II, III, or IV) and TNM staging elements (T, N, and M)."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

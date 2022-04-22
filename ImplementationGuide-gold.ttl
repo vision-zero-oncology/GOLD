@@ -416,7 +416,7 @@
          fhir:Reference.reference [ fhir:value "StructureDefinition/uicc-tnm" ]
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile UICC TNM" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the tumor classification using TNM stage group (I, II, III, or IV) or TNM staging elements (T, N, and M)." ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the tumor classification using TNM stage groups (I, II, III, or IV) and TNM staging elements (T, N, and M)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 7;

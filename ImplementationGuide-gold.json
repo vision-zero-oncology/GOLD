@@ -433,7 +433,7 @@
           "reference": "StructureDefinition/uicc-tnm"
         },
         "name": "Profile UICC TNM",
-        "description": "Profile for the tumor classification using TNM stage group (I, II, III, or IV) or TNM staging elements (T, N, and M).",
+        "description": "Profile for the tumor classification using TNM stage groups (I, II, III, or IV) and TNM staging elements (T, N, and M).",
         "exampleBoolean": false
       },
       {
