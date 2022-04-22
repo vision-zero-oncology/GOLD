@@ -67,7 +67,7 @@ Description: "This ValueSet contains codes to specifiy the type of TNM classific
 ValueSet: VS_TNM_Stage_Group_UICC
 Id: vs-tnm-stage-group-uicc
 Title: "ValueSet TNM Stage Group UICC"
-Description: "The ValueSet contains codes for the UICC TNM stage groups ranging from I to IV to group cancer patients with similar prognosis."
+Description: "The ValueSet contains codes for the TNM stage groups ranging from I to IV to group cancer patients with similar prognosis from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc"
 * UICC-TNM#okk	"Stage X"
 * UICC-TNM#0	"Stage 0"
@@ -105,7 +105,7 @@ Description: "The ValueSet contains codes for the UICC TNM stage groups ranging 
 ValueSet: VS_TNM_Prefix_CPU_UICC
 Id: vs-tnm-prefix-cpu-uicc
 Title: "ValueSet TNM Prefix CPU UICC"
-Description: "This ValueSet contains the c, p and u prefixes for TNM stages from UICC."
+Description: "This ValueSet contains the c, p and u prefixes for TNM stages from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc"
 * UICC-TNM#c "c"
 * UICC-TNM#p "p"
@@ -125,7 +125,7 @@ Description: "This ValueSet contains codes to specifiy the TNM primary tumor (T)
 ValueSet: VS_TNM_T_Category_UICC
 Id: vs-tnm-t-category-uicc
 Title: "ValueSet TNM T Category UICC"
-Description: "This ValueSet contains the TNM T category codes from UICC."
+Description: "This ValueSet contains the TNM T category codes from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc"
 * UICC-TNM#TX	"TX"
 * UICC-TNM#T0	"T0"
@@ -174,7 +174,7 @@ Description: "This ValueSet contains the TNM T category codes from UICC."
 ValueSet: VS_TNM_T_Multiplicity_UICC
 Id: vs-tnm-t-multiplicity-uicc
 Title: "ValueSet TNM T Multiplicity UICC"
-Description: "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from UICC."
+Description: "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-multiplicity-uicc"
 * UICC-TNM#m "(m)"
 * UICC-TNM#2 "(2)"
@@ -201,7 +201,7 @@ Description: "This ValueSet contains codes to specifiy the TNM regional lymph no
 ValueSet: VS_TNM_N_Category_UICC
 Id: vs-tnm-n-category-uicc
 Title: "ValueSet TNM N Category UICC"
-Description: "This ValueSet contains the TNM N category codes from UICC."
+Description: "This ValueSet contains the TNM N category codes from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc"
 * UICC-TNM#NX	"Nx"
 * UICC-TNM#N0	"N0"
@@ -233,7 +233,7 @@ Description: "This ValueSet contains codes to specifiy the TNM distant metastase
 ValueSet: VS_TNM_M_Category_UICC
 Id: vs-tnm-m-category-uicc
 Title: "ValueSet TNM M Category UICC"
-Description: "This ValueSet contains the TNM M category codes from UICC."
+Description: "This ValueSet contains the TNM M category codes from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc"
 * UICC-TNM#M0 "M0"
 * UICC-TNM#M1 "M1"
@@ -248,7 +248,7 @@ Description: "This ValueSet contains the TNM M category codes from UICC."
 ValueSet: VS_TNM_L_Lymphatic_Invasion_UICC
 Id: vs-tnm-l-lymphatic-invasion-uicc
 Title: "ValueSet TNM L-Descriptor Lymphatic Invasion UICC"
-Description: "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from UICC."
+Description: "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-l-lymphatic-invasion-uicc"
 * UICC-TNM#L0 "L0"
 * UICC-TNM#L1 "L1"
@@ -258,7 +258,7 @@ Description: "This ValueSet contains the TNM degree of lymphatic invasion codes 
 ValueSet: VS_TNM_V_Venous_Invasion_UICC
 Id: vs-tnm-v-venous-invasion-uicc
 Title: "ValueSet TNM V-Descriptor Venous Invasion UICC"
-Description: "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from UICC."
+Description: "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc"
 * UICC-TNM#V0 "V0"
 * UICC-TNM#V1 "V1"
@@ -269,7 +269,7 @@ Description: "This ValueSet contains the TNM degree of venous invasion codes use
 ValueSet: VS_TNM_Pn_Perineural_Invasion_UICC
 Id: vs-tnm-pn-perineural-invasion-uicc
 Title: "ValueSet TNM Pn-Descriptor Perineural Invasion UICC"
-Description: "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from UICC."
+Description: "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-pn-perineural-invasion-uicc"
 * UICC-TNM#Pn0 "Pn0"
 * UICC-TNM#Pn1 "Pn1"
@@ -279,7 +279,7 @@ Description: "This ValueSet contains the TNM degree of perineural (lymphatic ner
 ValueSet: VS_TNM_S_Serum_Tumor_Markers_UICC
 Id: vs-tnm-s-serum-tumor-markers-uicc
 Title: "ValueSet TNM S Serum Tumour Markers UICC"
-Description: "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from UICC."
+Description: "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-s-serum-tumor-markers-uicc"
 * UICC-TNM#S0 "S0"
 * UICC-TNM#S1 "S1"
@@ -291,7 +291,7 @@ Description: "This ValueSet contains the TNM serum levels of tumor markers coded
 ValueSet: VS_TNM_Suffix_ITC_UICC
 Id: vs-tnm-suffix-itc-uicc
 Title: "ValueSet TNM Suffix ITC UICC"
-Description: "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category in TNM from UICC."
+Description: "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc"
 * UICC-TNM#i+ "(i+)"
 * UICC-TNM#i- "(i-)"
@@ -302,6 +302,17 @@ Description: "This ValueSet contains the isolated tumor cells (ITC) suffixes for
 ValueSet: VS_TNM_Suffix_ITC_SN_UICC
 Id: vs-tnm-suffix-itc-sn-uicc
 Title: "ValueSet TNM Suffix ITC SN UICC"
-Description: "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from UICC."
+Description: "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from TNM 8th edition UICC."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-sn-uicc"
 * UICC-TNM#sn "(sn)"
+
+// TNM Residual Tumor R Classification
+ValueSet: VS_TNM_R_Classification_UICC
+Id: vs-tnm-r-classification-uicc
+Title: "ValueSet TNM Residual Tumor (R) Classification UICC"
+Description: "This ValueSet contains the TNM residual tumor (R) classification codes from TNM 8th edition UICC."
+* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-r-classification-uicc"
+* UICC-TNM#RX "RX"
+* UICC-TNM#R0 "R0"
+* UICC-TNM#R1 "R1"
+* UICC-TNM#R2 "R2"
