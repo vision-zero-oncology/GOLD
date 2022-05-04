@@ -85,10 +85,26 @@ abstract Grading {
 }
 
 class TNM {
+    y: CodeableConcept
+    r: CodeableConcept
+    a: CodeableConcept
     T: CodeableConcept
+    m: CodeableConcept
     N: CodeableConcept
     M: CodeableConcept
+    L: CodeableConcept
+    V: CodeableConcept
+    Pn: CodeableConcept
+    S: CodeableConcept
+    numberOfNodesAffected: Quantity
+    numberOfNodesExamined: Quantity
 }
+
+class ResidualTumorClassification {
+    R: CodeableConcept
+}
+
+TNM *-- ResidualTumorClassification : ist Teil von
 
 class HistopathologischesGrading {
     Grade: CodeableConcept
