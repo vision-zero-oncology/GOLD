@@ -28,7 +28,7 @@
   fhir:StructureDefinition.name [ fhir:value "SD_UICC_TNM"];
   fhir:StructureDefinition.title [ fhir:value "Profile UICC TNM"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-23T11:41:38+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-23T13:12:45+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
