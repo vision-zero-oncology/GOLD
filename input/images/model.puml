@@ -170,4 +170,63 @@ class MedikamentöseTherapie <<MedicationStatement>> {
 Therapie *-- MedikamentöseTherapie
 Patient <-- Therapie : subject
 
+class ClinicalStudy <<ResearchStudy>> {
+    identifier : Identifier
+    title : string
+    protocol : Reference
+    partOf : Reference
+    status : code 
+    primaryPurposeType : CodeableConcept
+    phase : CodeableConcept
+    category : CodeableConcept
+    focus : CodeableConcept
+    condition : CodeableConcept
+    contact : ContactDetail
+    relatedArtifact : RelatedArtifact
+    keyword : CodeableConcept
+    location : CodeableConcept
+    description : text
+    enrollment : Reference 
+    period : Period
+    sponsor : Reference
+    principalInvestigator : Reference
+    site : Reference
+    reasonStopped : CodeableConcept
+    note : Annotation
+    armName : string
+    armType : CodeableConcept
+    armDescription : string
+    objectiveName : string
+    objectiveType : CodeableConcept
+}
+
+abstract PrincipalInvestigator 
+class Practitioner <<Practitioner>> {
+
+}
+
+class PractionerRole <<PractionerRole>> {
+
+}
+
+Practitioner --* PrincipalInvestigator
+PractionerRole --* PrincipalInvestigator
+
+class Organization <<Organization>> {
+
+}
+
+class Group <<Group>> {
+
+}
+
+class PlanDefinition <<PlanDefinition>> {
+
+}
+
+ClinicalStudy::sponsor --> Organization
+ClinicalStudy::enrollment --> Group
+ClinicalStudy::protocol --> PlanDefinition
+ClinicalStudy::partOf --> ClinicalStudy
+
 @enduml
