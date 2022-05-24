@@ -26,7 +26,7 @@
   fhir:StructureDefinition.name [ fhir:value "SD_Vital_Signs_Base"];
   fhir:StructureDefinition.title [ fhir:value "Profile Vital Signs Base"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-05-23T13:12:45+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-05-24T10:44:26+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
