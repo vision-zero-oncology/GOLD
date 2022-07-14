@@ -29,30 +29,6 @@
   "profiles": {
     "Observation": [
       {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height",
-        "title": "Profile Body Height"
-      },
-      {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight",
-        "title": "Profile Body Weight"
-      },
-      {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status",
-        "title": "Profile ECOG Performance Status"
-      },
-      {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography",
-        "title": "Profile Histology Topography"
-      },
-      {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who",
-        "title": "Profile Histopathological Tumor Grading WHO"
-      },
-      {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status",
-        "title": "Profile Karnofsky Performance Status"
-      },
-      {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm",
         "title": "Profile UICC TNM"
       },
@@ -63,6 +39,12 @@
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base",
         "title": "Profile Vital Signs Base"
+      }
+    ],
+    "ResearchStudy": [
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study",
+        "title": "SD Clinical Study"
       }
     ]
   },

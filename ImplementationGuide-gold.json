@@ -374,6 +374,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/sd-clinical-study"
+        },
+        "name": "SD Clinical Study",
+        "description": "This profile describes a clinical study in which a patient takes part.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/ecog-performance-status"
         },
         "name": "Profile ECOG Performance Status",
@@ -560,6 +574,34 @@
         },
         "name": "ValueSet Morphology SNOMED",
         "description": "The ValueSet contains the morphology (histology) codes from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-studiendesign-ncit"
+        },
+        "name": "ValueSet Studiendesign NCIt",
+        "description": "Studiendesign aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-studienkategorien-ncit"
+        },
+        "name": "ValueSet Studienkategorien NCIt",
+        "description": "Studienkategorien aus NCI Thesaurus (NCIt)",
         "exampleBoolean": false
       },
       {
@@ -826,6 +868,48 @@
         },
         "name": "ValueSet Topography SNOMED",
         "description": "The ValueSet contains the topography codes from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-typeofblinding-ncit"
+        },
+        "name": "ValueSet Type of Blinding NCIt",
+        "description": "Type of Blinding aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-typeofrandomization-ncit"
+        },
+        "name": "ValueSet Type of Randomization NCIt",
+        "description": "Type of Randomization aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/vs-type-of-study-arm-ncit"
+        },
+        "name": "ValueSet Type of Study Arm NCIt",
+        "description": "Type of Study Arm aus NCI Thesaurus (NCIt)",
         "exampleBoolean": false
       },
       {

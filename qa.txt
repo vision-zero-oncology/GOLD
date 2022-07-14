@@ -1,9 +1,9 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 25, warn = 72, info = 52
-IG Publisher Version: 1.1.83 Out of date - current version is 1.1.120
-Generated Tue May 24 10:45:28 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+err = 30, warn = 82, info = 52
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.125
+Generated Thu Jul 14 07:14:06 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 0 / 0 / 0
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Observation-example-body-height : 0 / 0 / 1
@@ -27,6 +27,7 @@ Generated Tue May 24 10:45:28 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/StructureDefinition-histology-topography : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-histopathological-grading-who : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-karnofsky-performance-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-sd-clinical-study : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm : 0 / 0 / 7
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-prefix-cpu : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-r-classification : 0 / 0 / 1
@@ -37,6 +38,8 @@ Generated Tue May 24 10:45:28 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/ValueSet-vs-histopathological-grade-snomed : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-morphology-icd-o-3 : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-morphology-snomed : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-studiendesign-ncit : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-studienkategorien-ncit : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-classification-type-loinc : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-l-lymphatic-invasion-uicc : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-m-category-uicc : 1 / 2 / 1
@@ -56,6 +59,9 @@ Generated Tue May 24 10:45:28 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/ValueSet-vs-tnm-v-venous-invasion-uicc : 1 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-topography-icd-o-3 : 1 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-topography-snomed : 1 / 0 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-type-of-study-arm-ncit : 1 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-typeofblinding-ncit : 1 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-vs-typeofrandomization-ncit : 1 / 2 / 1
 </table>
 == n/a ==
 == fsh-generated/resources/ImplementationGuide-gold.json ==
@@ -172,6 +178,8 @@ INFORMATION: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.compo
 == fsh-generated/resources/StructureDefinition-histology-topography.json ==
 == fsh-generated/resources/StructureDefinition-histopathological-grading-who.json ==
 == fsh-generated/resources/StructureDefinition-karnofsky-performance-status.json ==
+== fsh-generated/resources/StructureDefinition-sd-clinical-study.json ==
+WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-uicc-tnm.json ==
 INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.snapshot.element[62].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.snapshot.element[71].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
@@ -193,6 +201,14 @@ ERROR: ValueSet.url: Resource id/url mismatch: vs-morphology-icd-o-3/https://www
 WARNING: ValueSet.where(id = 'vs-morphology-icd-o-3'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3
 == fsh-generated/resources/ValueSet-vs-morphology-snomed.json ==
 ERROR: ValueSet.url: Resource id/url mismatch: vs-morphology-snomed/https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed
+== fsh-generated/resources/ValueSet-vs-studiendesign-ncit.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-studiendesign-ncit/https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit
+WARNING: ValueSet/vs-studiendesign-ncit: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-studiendesign-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+== fsh-generated/resources/ValueSet-vs-studienkategorien-ncit.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-studienkategorien-ncit/https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit
+WARNING: ValueSet/vs-studienkategorien-ncit: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-studienkategorien-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 == fsh-generated/resources/ValueSet-vs-tnm-classification-type-loinc.json ==
 ERROR: ValueSet.url: Resource id/url mismatch: vs-tnm-classification-type-loinc/https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc
 == fsh-generated/resources/ValueSet-vs-tnm-l-lymphatic-invasion-uicc.json ==
@@ -258,3 +274,14 @@ ERROR: ValueSet.url: Resource id/url mismatch: vs-topography-icd-o-3/https://www
 WARNING: ValueSet.where(id = 'vs-topography-icd-o-3'): Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3
 == fsh-generated/resources/ValueSet-vs-topography-snomed.json ==
 ERROR: ValueSet.url: Resource id/url mismatch: vs-topography-snomed/https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed
+== fsh-generated/resources/ValueSet-vs-type-of-study-arm-ncit.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-type-of-study-arm-ncit/https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit
+WARNING: ValueSet.where(id = 'vs-type-of-study-arm-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+== fsh-generated/resources/ValueSet-vs-typeofblinding-ncit.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-typeofblinding-ncit/https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit
+WARNING: ValueSet/vs-typeofblinding-ncit: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-typeofblinding-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+== fsh-generated/resources/ValueSet-vs-typeofrandomization-ncit.json ==
+ERROR: ValueSet.url: Resource id/url mismatch: vs-typeofrandomization-ncit/https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit
+WARNING: ValueSet/vs-typeofrandomization-ncit: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'vs-typeofrandomization-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl

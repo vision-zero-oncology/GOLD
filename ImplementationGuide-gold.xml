@@ -240,6 +240,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sd-clinical-study"/>
+      </reference>
+      <name value="SD Clinical Study"/>
+      <description value="This profile describes a clinical study in which a patient takes part."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/ecog-performance-status"/>
       </reference>
       <name value="Profile ECOG Performance Status"/>
@@ -387,6 +398,28 @@
       </reference>
       <name value="ValueSet Morphology SNOMED"/>
       <description value="The ValueSet contains the morphology (histology) codes from SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-studiendesign-ncit"/>
+      </reference>
+      <name value="ValueSet Studiendesign NCIt"/>
+      <description value="Studiendesign aus NCI Thesaurus (NCIt)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-studienkategorien-ncit"/>
+      </reference>
+      <name value="ValueSet Studienkategorien NCIt"/>
+      <description value="Studienkategorien aus NCI Thesaurus (NCIt)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -596,6 +629,39 @@
       </reference>
       <name value="ValueSet Topography SNOMED"/>
       <description value="The ValueSet contains the topography codes from SNOMED CT."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-typeofblinding-ncit"/>
+      </reference>
+      <name value="ValueSet Type of Blinding NCIt"/>
+      <description value="Type of Blinding aus NCI Thesaurus (NCIt)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-typeofrandomization-ncit"/>
+      </reference>
+      <name value="ValueSet Type of Randomization NCIt"/>
+      <description value="Type of Randomization aus NCI Thesaurus (NCIt)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/vs-type-of-study-arm-ncit"/>
+      </reference>
+      <name value="ValueSet Type of Study Arm NCIt"/>
+      <description value="Type of Study Arm aus NCI Thesaurus (NCIt)"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

@@ -49,6 +49,13 @@
     "name": "SD_Karnofsky_Performance_Status"
   },
   {
+    "id": "sd-clinical-study",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study",
+    "version": "0.1.0",
+    "name": "SD_Clinical_Study"
+  },
+  {
     "id": "uicc-tnm",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm",
@@ -117,6 +124,20 @@
     "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed",
     "version": "0.1.0",
     "name": "VS_Morphology_SNOMED"
+  },
+  {
+    "id": "vs-studiendesign-ncit",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit",
+    "version": "0.1.0",
+    "name": "VS_Studiendesign_NCIT"
+  },
+  {
+    "id": "vs-studienkategorien-ncit",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit",
+    "version": "0.1.0",
+    "name": "VS_Studienkategorien_NCIT"
   },
   {
     "id": "vs-tnm-classification-type-loinc",
@@ -250,5 +271,26 @@
     "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed",
     "version": "0.1.0",
     "name": "VS_Topography_SNOMED"
+  },
+  {
+    "id": "vs-typeofblinding-ncit",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit",
+    "version": "0.1.0",
+    "name": "VS_TypeOfBlinding_NCIT"
+  },
+  {
+    "id": "vs-typeofrandomization-ncit",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit",
+    "version": "0.1.0",
+    "name": "VS_TypeOfRandomization_NCIT"
+  },
+  {
+    "id": "vs-type-of-study-arm-ncit",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit",
+    "version": "0.1.0",
+    "name": "VS_TypeOfStudyArm_NCIT"
   }
 ]

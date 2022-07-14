@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vs-type-of-study-arm-ncit"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code> where concept  descends from  C15538</li></ul></div>
+  </text>
+  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit"/>
+  <version value="0.1.0"/>
+  <name value="VS_TypeOfStudyArm_NCIT"/>
+  <title value="ValueSet Type of Study Arm NCIt"/>
+  <status value="active"/>
+  <date value="2022-07-14T07:12:54+00:00"/>
+  <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+  <contact>
+    <name value="Berlin Institute of Health at Charité (BIH)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="Type of Study Arm aus NCI Thesaurus (NCIt)"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="NCI THESAURUS is a registered trademark of the National Cancer Institute."/>
+  <compose>
+    <include>
+      <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+      <filter>
+        <property value="concept"/>
+        <op value="descendent-of"/>
+        <value value="C15538"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>
