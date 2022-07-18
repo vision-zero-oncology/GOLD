@@ -50,7 +50,7 @@ Description: "Profile for the tumor classification using TNM stage groups (I, II
 * component[r-symbol].value[x] only CodeableConcept
 * component[r-symbol].value[x] = UICC-TNM#r "r"
 * component[a-symbol] ^short = "a Symbol"
-* component[a-symbol] ^definition = "Recurrent tumors, when classified after a disease free interval, are identified by the prefix r."
+* component[a-symbol] ^definition = "The prefix a indicates that classification is first determined at autopsy."
 * component[a-symbol].code = SCT#277646006 "a - At autopsy (tumor staging)" //LOINC??
 * component[a-symbol].value[x] only CodeableConcept
 * component[a-symbol].value[x] = UICC-TNM#a "a"
@@ -64,7 +64,7 @@ Description: "Profile for the tumor classification using TNM stage groups (I, II
 * component[T-code].value[x] from VS_TNM_T_Category_UICC (required)
 * component[m-symbol] ^short = "m Symbol"
 * component[m-symbol] ^definition = "The suffix m, in parentheses, is used to indicate the presence of multiple primary tumors at a single site."
-* component[m-symbol].code = SCT#277650004 "m - Multiple tumors (tumor staging)" //LOINC??
+* component[m-symbol].code = SCT#277650004 "m - Multiple tumors (tumor staging)" //LOINC?? https://loinc.org/42030-7/
 * component[m-symbol].value[x] only CodeableConcept
 * component[m-symbol].value[x] from VS_TNM_T_Multiplicity_UICC (required)
 * component[N-code] ^short = "N - Regional Lymph Nodes"
