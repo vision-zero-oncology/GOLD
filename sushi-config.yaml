@@ -28,6 +28,7 @@ contact:
 
 dependencies:
   de.basisprofil.r4: 1.3.1
+  de.gematik.isik-basismodul: 2.0.0
 
 pages:
   index.md:

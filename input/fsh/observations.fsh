@@ -38,8 +38,8 @@ Usage: #example
 Title: "Example Vital Signs Base Observation"
 Description: "Example of a vital signs base observation."
 * status = #final
-* category = ObsCat#vital-signs
-* code.coding[0] = LNC#8302-2 "Body height"
+* category[vs-cat] = ObsCat#vital-signs
+* code.coding[+] = LNC#8302-2 "Body height"
 * code.coding[+] = SCT#1153637007 "Body height (observable entity)"
 * code.text = "Body height"
 * subject = Reference(ExamplePatient)
@@ -85,9 +85,9 @@ Usage: #example
 Title: "Example Body Height"
 Description: "Example body height of a patient."
 * status = #final
-* category = ObsCat#vital-signs
-* code.coding[0] = LNC#8302-2 "Body height"
-* code.coding[+] = SCT#1153637007 "Body height (observable entity)"
+* category[vs-cat] = ObsCat#vital-signs
+* code.coding[loinc] = LNC#8302-2 "Body height"
+* code.coding[snomed] = SCT#1153637007 "Body height (observable entity)"
 * code.text = "Body height"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-02-18"
@@ -132,9 +132,9 @@ Usage: #example
 Title: "Example Body Weight"
 Description: "Example body weight of a patient."
 * status = #final
-* category = ObsCat#vital-signs
-* code.coding[0] = LNC#29463-7 "Body weight"
-* code.coding[+] = SCT#27113001 "Body weight (observable entity)"
+* category[vs-cat] = ObsCat#vital-signs
+* code.coding[loinc] = LNC#29463-7 "Body weight"
+* code.coding[snomed] = SCT#27113001 "Body weight (observable entity)"
 * code.text = "Body weight"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-02-18"

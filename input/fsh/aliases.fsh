@@ -60,4 +60,7 @@ Alias: Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisatio
 Alias: UICCCS = http://fhir.de/onkologie/CodeSystem/UICCCS
 
 //ISIK
-Alias: IsikDiagnose = https://gematik.de/fhir/ISiK/StructureDefinition/ISiKDiagnose
+Alias: IsikDiagnose = https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKDiagnose
+
+// MII
+Alias: $mii-basis-diagnose = https://www.medizininformatik-initiative.de/fhir/core/modul-diagnose/StructureDefinition/Diagnose
