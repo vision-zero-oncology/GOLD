@@ -364,3 +364,43 @@ Description: "Example tumor grade using the general four-tier grading scheme."
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-03-07"
 * valueCodeableConcept.coding[histologicGradeSnomed] = SCT#54102005 "G1 grade (finding)"
+
+// Introducing radlex codes
+Alias: $RID = http://radlex.org/RID/
+
+// RECIST assessment response
+Profile: RecistAssessmentResponse
+Parent: Observation
+Id: recist-assessment-response
+Title: "Profile RECIST timepoint assessment response"
+Description: "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/
+Please note there is no assessment timepoint response for the baseline assessment."
+* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
+* partOf only Reference(ImagingStudy)
+* code = $RID11510
+* subject 1..1
+* subject only Reference(Patient)
+* value[x] only CodeableConcept
+* valueCodeableConcept from RecistAssessmentTimepointResponseVS (required)
+
+
+ValueSet: RecistAssessmentTimepointResponseVS
+Id: recist-asstimepoint-response-vs
+Title: "recist-timepoint-response-vs"
+Description: "Defines the valid values for the recist assessment response observation resource"
+* $RID11514 "stable disease"
+* $RID11513 "partial response"
+* $RID11511 "complete imaging response"
+* $RID11515 "progressive disease"
+
+Instance: ExampleRecistAssessmentResponse
+InstanceOf: recist-assessment-response
+Usage: #example
+Title: "Example RECIST assessment timepoint response"
+Description: "Example RECIST assessment timepoint response observation."
+* status = #final
+* code.coding[radlex] = RID11510 "Therapeutic response"
+(observable entity)"
+* subject = Reference(ExamplePatient)
+* effectiveDateTime = "2022-07-19"
+* valueCodeableConcept = RID11514 "stable disease"
