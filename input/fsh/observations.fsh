@@ -399,7 +399,7 @@ Usage: #example
 Title: "Example RECIST assessment timepoint response"
 Description: "Example RECIST assessment timepoint response observation."
 * status = #final
-* code.coding[radlex] = RID11510 "Therapeutic response"
+* code = RID11510 "Therapeutic response"
 (observable entity)"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-07-19"
