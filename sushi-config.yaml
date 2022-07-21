@@ -1,6 +1,3 @@
-# Example/Documentation for the IG YML file
-# https://fshschool.org/docs/sushi/configuration/#exhaustive-example
-
 # Package name
 # https://confluence.hl7.org/display/FHIR/NPM+Package+Specification#NPMPackageSpecification-Packagename
 id: gold

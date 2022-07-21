@@ -1,10 +1,9 @@
 // External Code Systems
-Alias:   $LNC = http://loinc.org
-Alias:   $SCT = http://snomed.info/sct
-Alias:   $UCUM = http://unitsofmeasure.org
-Alias:   $NCIT = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+Alias: $LNC = http://loinc.org
+Alias: $SCT = http://snomed.info/sct
+Alias: $UCUM = http://unitsofmeasure.org
+Alias: $NCIT = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 // Alias:   $ICD10GM = http://fhir.de/CodeSystem/bfarm/icd-10-gm
-Alias:   $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 // Alias:   $RXN = http://www.nlm.nih.gov/research/umls/rxnorm
 // Alias:   $CPT = http://www.ama-assn.org/go/cpt
 // Alias:   $AJCC = http://cancerstaging.org
@@ -21,6 +20,7 @@ Alias:   $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 // Alias:   $ClinStatus = http://terminology.hl7.org/CodeSystem/condition-clinical
 // Alias:   $VerStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias:   $ObsCat = http://terminology.hl7.org/CodeSystem/observation-category
+Alias:   $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 // Alias:   $ObsInt = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
 // Alias:   $DiagnosticService = http://terminology.hl7.org/CodeSystem/v2-0074
 // Alias:   $TimingAbbreviation = http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation
@@ -63,6 +63,10 @@ Alias: $UICC-TNM = urn:oid:2.16.840.1.113883.15.16
 // Alias: $DiagnoseSicherheit = http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit
 // Alias: $Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisation
 // Alias: $UICCCS = http://fhir.de/onkologie/CodeSystem/UICCCS
+
+// HL7 DE
+Alias: $ICDO3T = http://fhir.de/onkologie/ValueSet/icd-o-3-topologie
+Alias: $ICDO3M = http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie
 
 //ISIK
 Alias: $IsikDiagnose = https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKDiagnose
