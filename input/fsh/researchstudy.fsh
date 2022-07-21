@@ -31,22 +31,20 @@ Description: "This profile describes a clinical study in which a patient takes p
 
 // Studienkategorien 
 ValueSet: VS_Studienkategorien_NCIT
-Id: vs-studienkategorien-ncit
+Id: studienkategorien-ncit
 Title: "ValueSet Studienkategorien NCIt"
 Description: "Studienkategorien aus NCI Thesaurus (NCIt)"
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
-* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit"
 * $NCIT#C98388 "Interventional Study"
 * $NCIT#C16084 "Observational Study"
 //* $NCIT#C142615 "Non-Interventional Study"
 
 // Studiendesign
 ValueSet: VS_Studiendesign_NCIT
-Id: vs-studiendesign-ncit
+Id: studiendesign-ncit
 Title: "ValueSet Studiendesign NCIt"
 Description: "Studiendesign aus NCI Thesaurus (NCIt)"
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
-* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit"
 * $NCIT#C165842 "Umbrella Protocol"
 * $NCIT#C165823 "Basket Protocol"
 * $NCIT#C139174 "Device Feasibility Study" // MPG
@@ -66,11 +64,10 @@ Description: "Studiendesign aus NCI Thesaurus (NCIt)"
 
 // Blinding 
 ValueSet: VS_TypeOfBlinding_NCIT
-Id: vs-typeofblinding-ncit
+Id: type-of-blinding-ncit
 Title: "ValueSet Type of Blinding NCIt"
 Description: "Type of Blinding aus NCI Thesaurus (NCIt)"
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
-* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit"
 * $NCIT#C49659 "Open Label Study" // unverblindet
 * $NCIT#C28233 "Single Blind Study" // einfach-verblindet
 * $NCIT#C15228 "Double Blind Study" // doppelt verblindet
@@ -79,20 +76,18 @@ Description: "Type of Blinding aus NCI Thesaurus (NCIt)"
 
 // Randomization 
 ValueSet: VS_TypeOfRandomization_NCIT
-Id: vs-typeofrandomization-ncit
+Id: type-of-randomization-ncit
 Title: "ValueSet Type of Randomization NCIt"
 Description: "Type of Randomization aus NCI Thesaurus (NCIt)"
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
-* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit"
 * $NCIT#C15417 "Randomized Clinical Trial"
 * include codes from system $NCIT where concept descendent-of #C25196 "Randomization"
 * $NCIT#C93043 "Nonrandomized Clinical Trial"
 
 // Study Arm Type
 ValueSet: VS_TypeOfStudyArm_NCIT
-Id: vs-type-of-study-arm-ncit
+Id: type-of-study-arm-ncit
 Title: "ValueSet Type of Study Arm NCIt"
 Description: "Type of Study Arm aus NCI Thesaurus (NCIt)"
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
-* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit"
 * include codes from system $NCIT where concept descendent-of #C15538 "Protocol Treatment Arm"
