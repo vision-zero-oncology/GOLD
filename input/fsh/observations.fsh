@@ -12,7 +12,7 @@ Description: "Profile for the base definition of all vital signs. May not be use
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains vs-cat 1..1
-* category[vs-cat] = ObsCat#vital-signs
+* category[vs-cat] = $ObsCat#vital-signs
 * code MS
 * subject 1.. MS
 * subject only Reference(Patient)
@@ -38,9 +38,9 @@ Usage: #example
 Title: "Example Vital Signs Base Observation"
 Description: "Example of a vital signs base observation."
 * status = #final
-* category[vs-cat] = ObsCat#vital-signs
-* code.coding[+] = LNC#8302-2 "Body height"
-* code.coding[+] = SCT#1153637007 "Body height (observable entity)"
+* category[vs-cat] = $ObsCat#vital-signs
+* code.coding[+] = $LNC#8302-2 "Body height"
+* code.coding[+] = $SCT#1153637007 "Body height (observable entity)"
 * code.text = "Body height"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-02-18"
@@ -62,10 +62,10 @@ Description: "Profile for body height of a patient"
 * code.coding contains
     loinc 1..* and
     snomed 0..*
-* code.coding[loinc] = LNC#8302-2
+* code.coding[loinc] = $LNC#8302-2
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
-* code.coding[snomed] = SCT#1153637007
+* code.coding[snomed] = $SCT#1153637007
 * code.coding[snomed].system 1..
 * code.coding[snomed].code 1..
 * value[x] only Quantity
@@ -74,9 +74,9 @@ Description: "Profile for body height of a patient"
 * valueQuantity.value 1.. MS
 * valueQuantity.unit 1.. MS
 * valueQuantity.system 1.. MS
-* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.system = $UCUM
 * valueQuantity.code 1.. MS
-* valueQuantity.code from http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.0 (required)
+* valueQuantity.code from $BodyLengthUCUM (required)
 * dataAbsentReason MS
 
 Instance: example-body-height
@@ -85,9 +85,9 @@ Usage: #example
 Title: "Example Body Height"
 Description: "Example body height of a patient."
 * status = #final
-* category[vs-cat] = ObsCat#vital-signs
-* code.coding[loinc] = LNC#8302-2 "Body height"
-* code.coding[snomed] = SCT#1153637007 "Body height (observable entity)"
+* category[vs-cat] = $ObsCat#vital-signs
+* code.coding[loinc] = $LNC#8302-2 "Body height"
+* code.coding[snomed] = $SCT#1153637007 "Body height (observable entity)"
 * code.text = "Body height"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-02-18"
@@ -109,10 +109,10 @@ Description: "Profile for body weight of a patient"
 * code.coding contains
     loinc 1..* and
     snomed 0..*
-* code.coding[loinc] = LNC#29463-7
+* code.coding[loinc] = $LNC#29463-7
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
-* code.coding[snomed] = SCT#27113001
+* code.coding[snomed] = $SCT#27113001
 * code.coding[snomed].system 1..
 * code.coding[snomed].code 1..
 * value[x] only Quantity
@@ -121,9 +121,9 @@ Description: "Profile for body weight of a patient"
 * valueQuantity.value 1.. MS
 * valueQuantity.unit 1.. MS
 * valueQuantity.system 1.. MS
-* valueQuantity.system = "http://unitsofmeasure.org"
+* valueQuantity.system = $UCUM
 * valueQuantity.code 1.. MS
-* valueQuantity.code from http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.0 (required)
+* valueQuantity.code from $BodyWeightUCUM (required)
 * dataAbsentReason MS
 
 Instance: example-body-weight
@@ -132,9 +132,9 @@ Usage: #example
 Title: "Example Body Weight"
 Description: "Example body weight of a patient."
 * status = #final
-* category[vs-cat] = ObsCat#vital-signs
-* code.coding[loinc] = LNC#29463-7 "Body weight"
-* code.coding[snomed] = SCT#27113001 "Body weight (observable entity)"
+* category[vs-cat] = $ObsCat#vital-signs
+* code.coding[loinc] = $LNC#29463-7 "Body weight"
+* code.coding[snomed] = $SCT#27113001 "Body weight (observable entity)"
 * code.text = "Body weight"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-02-18"
@@ -151,17 +151,17 @@ Description: "Profile for the Eastern Cooperative Oncology Group (ECOG) Performa
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains survey 1..*
-* category[survey] = ObsCat#survey
+* category[survey] = $ObsCat#survey
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     loinc 1..* and
     snomed 0..*
-* code.coding[loinc] = LNC#89247-1
+* code.coding[loinc] = $LNC#89247-1
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
-* code.coding[snomed] = SCT#423740007
+* code.coding[snomed] = $SCT#423740007
 * code.coding[snomed].system 1..
 * code.coding[snomed].code 1..
 * subject 1..1
@@ -174,11 +174,11 @@ Description: "Profile for the Eastern Cooperative Oncology Group (ECOG) Performa
     valueLoinc 1..1 and
     valueSnomed 0..1
 * valueCodeableConcept.coding[valueLoinc] from http://loinc.org/vs/LL529-9 (required)
-* valueCodeableConcept.coding[valueLoinc] ^patternCoding.system = "http://loinc.org"
+* valueCodeableConcept.coding[valueLoinc] ^patternCoding.system = $LNC
 * valueCodeableConcept.coding[valueLoinc].system 1..
 * valueCodeableConcept.coding[valueLoinc].code 1..
 * valueCodeableConcept.coding[valueSnomed] from VS_ECOG_Performance_Status_SNOMED (required)
-* valueCodeableConcept.coding[valueSnomed] ^patternCoding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding[valueSnomed] ^patternCoding.system = $SCT
 * valueCodeableConcept.coding[valueSnomed].system 1..
 * valueCodeableConcept.coding[valueSnomed].code 1..
 
@@ -188,13 +188,13 @@ Usage: #example
 Title: "Example ECOG Performance Status"
 Description: "Example ECOG status observation."
 * status = #final
-* category[survey] = ObsCat#survey
-* code.coding[loinc] = LNC#89247-1 "ECOG Performance Status score"
-* code.coding[snomed] = SCT#423740007 "Eastern Cooperative Oncology Group performance status (observable entity)"
+* category[survey] = $ObsCat#survey
+* code.coding[loinc] = $LNC#89247-1 "ECOG Performance Status score"
+* code.coding[snomed] = $SCT#423740007 "Eastern Cooperative Oncology Group performance status (observable entity)"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-03-07"
-* valueCodeableConcept.coding[valueLoinc] = LNC#LA9623-5 "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"
-* valueCodeableConcept.coding[valueSnomed] = SCT#422512005 "Eastern Cooperative Oncology Group performance status - grade 1 (finding)"
+* valueCodeableConcept.coding[valueLoinc] = $LNC#LA9623-5 "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"
+* valueCodeableConcept.coding[valueSnomed] = $SCT#422512005 "Eastern Cooperative Oncology Group performance status - grade 1 (finding)"
 
 // KarnofskyIndex
 
@@ -208,17 +208,17 @@ Description: "Profile for the Karnofsky Performance Status to measure a cancer p
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains survey 1..*
-* category[survey] = ObsCat#survey
+* category[survey] = $ObsCat#survey
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     loinc 1..* and
     snomed 0..*
-* code.coding[loinc] = LNC#89243-0
+* code.coding[loinc] = $LNC#89243-0
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
-* code.coding[snomed] = SCT#761869008
+* code.coding[snomed] = $SCT#761869008
 * code.coding[snomed].system 1..
 * code.coding[snomed].code 1..
 * subject 1..1
@@ -232,11 +232,11 @@ Usage: #example
 Title: "Example Karnofsky Performance Status"
 Description: "Example Karnofsky performance status observation."
 * status = #final
-* code.coding[loinc] = LNC#89243-0 "Karnofsky Performance Status score"
-* code.coding[snomed] = SCT#761869008 "Karnofsky Performance Status score (observable entity)"
+* code.coding[loinc] = $LNC#89243-0 "Karnofsky Performance Status score"
+* code.coding[snomed] = $SCT#761869008 "Karnofsky Performance Status score (observable entity)"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-03-07"
-* valueCodeableConcept = LNC#LA29177-5 "Normal activity with effort; some signs or symptoms of disease"
+* valueCodeableConcept = $LNC#LA29177-5 "Normal activity with effort; some signs or symptoms of disease"
 
 // Morphology(Histology) / Topography
 
@@ -250,7 +250,7 @@ Description: "Profile for the classification of a tumor's morphology(histology) 
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains laboratory 1..*
-* category[laboratory] = ObsCat#laboratory
+* category[laboratory] = $ObsCat#laboratory
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -258,13 +258,13 @@ Description: "Profile for the classification of a tumor's morphology(histology) 
     loinc 1..* and
     snomed_hist 0..* and
     snomed_topo 0..*
-* code.coding[loinc] = LNC#59847-4
+* code.coding[loinc] = $LNC#59847-4
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
-* code.coding[snomed_hist] = SCT#1145214003
+* code.coding[snomed_hist] = $SCT#1145214003
 * code.coding[snomed_hist].system 1..
 * code.coding[snomed_hist].code 1..
-* code.coding[snomed_topo] = SCT#371480007
+* code.coding[snomed_topo] = $SCT#371480007
 * code.coding[snomed_topo].system 1..
 * code.coding[snomed_topo].code 1..
 * subject 1..1
@@ -277,11 +277,11 @@ Description: "Profile for the classification of a tumor's morphology(histology) 
     morphologyICD-O-3 1..1 MS and
     morphologySnomed 0..1
 * valueCodeableConcept.coding[morphologyICD-O-3] from VS_Morphology_ICD_O_3 (required)
-* valueCodeableConcept.coding[morphologyICD-O-3] ^patternCoding.system = "http://terminology.hl7.org/CodeSystem/icd-o-3"
+* valueCodeableConcept.coding[morphologyICD-O-3] ^patternCoding.system = $ICDO3
 * valueCodeableConcept.coding[morphologyICD-O-3].system 1..
 * valueCodeableConcept.coding[morphologyICD-O-3].code 1..
 * valueCodeableConcept.coding[morphologySnomed] from VS_Morphology_SNOMED (required)
-* valueCodeableConcept.coding[morphologySnomed] ^patternCoding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding[morphologySnomed] ^patternCoding.system = $SCT
 * valueCodeableConcept.coding[morphologySnomed].system 1..
 * valueCodeableConcept.coding[morphologySnomed].code 1..
 * bodySite.coding ^slicing.discriminator.type = #pattern
@@ -291,11 +291,11 @@ Description: "Profile for the classification of a tumor's morphology(histology) 
     topographyICD-O-3 1..1 MS and
     topographySnomed 0..1
 * bodySite.coding[topographyICD-O-3] from VS_Topography_ICD_O_3 (required)
-* bodySite.coding[topographyICD-O-3] ^patternCoding.system = "http://terminology.hl7.org/CodeSystem/icd-o-3"
+* bodySite.coding[topographyICD-O-3] ^patternCoding.system = $ICDO3
 * bodySite.coding[topographyICD-O-3].system 1..
 * bodySite.coding[topographyICD-O-3].code 1..
 * bodySite.coding[topographySnomed] from VS_Topography_SNOMED (required)
-* bodySite.coding[topographySnomed] ^patternCoding.system = "http://snomed.info/sct"
+* bodySite.coding[topographySnomed] ^patternCoding.system = $SCT
 * bodySite.coding[topographySnomed].system 1..
 * bodySite.coding[topographySnomed].code 1..
 
@@ -305,15 +305,15 @@ Usage: #example
 Title: "Example Histology and Topography"
 Description: "Example tumor histology and topography observation."
 * status = #final
-* code.coding[loinc] = LNC#59847-4 "Histology and Behavior ICD-O-3 Cancer"
-* code.coding[snomed_hist] = SCT#1145214003 "Histologic feature of proliferative mass (observable entity)"
-* code.coding[snomed_topo] = SCT#371480007 "Anatomic location of neoplasm (observable entity)"
+* code.coding[loinc] = $LNC#59847-4 "Histology and Behavior ICD-O-3 Cancer"
+* code.coding[snomed_hist] = $SCT#1145214003 "Histologic feature of proliferative mass (observable entity)"
+* code.coding[snomed_topo] = $SCT#371480007 "Anatomic location of neoplasm (observable entity)"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-03-07"
-* valueCodeableConcept.coding[morphologyICD-O-3] = ICDO3#8070/33 "schlecht differenziertes Plattenepithelkarzinom"
-* valueCodeableConcept.coding[morphologySnomed] = SCT#1162767002 "Squamous cell carcinoma (morphologic abnormality)"
-* bodySite.coding[topographyICD-O-3] = ICDO3#C34.1 "Lungenoberlappen"
-* bodySite.coding[topographySnomed] = SCT#45653009 "Structure of upper lobe of lung (body structure)"
+* valueCodeableConcept.coding[morphologyICD-O-3] = $ICDO3#8070/33 "schlecht differenziertes Plattenepithelkarzinom"
+* valueCodeableConcept.coding[morphologySnomed] = $SCT#1162767002 "Squamous cell carcinoma (morphologic abnormality)"
+* bodySite.coding[topographyICD-O-3] = $ICDO3#C34.1 "Lungenoberlappen"
+* bodySite.coding[topographySnomed] = $SCT#45653009 "Structure of upper lobe of lung (body structure)"
 
 // Histologic Tumor Grade
 
@@ -327,17 +327,17 @@ Description: "Profile for the description of a tumor's grade using the general f
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains laboratory 1..*
-* category[laboratory] = ObsCat#laboratory
+* category[laboratory] = $ObsCat#laboratory
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
 * code.coding contains
     loinc 1..* and
     snomed 0..*
-* code.coding[loinc] = LNC#33732-9
+* code.coding[loinc] = $LNC#33732-9
 * code.coding[loinc].system 1..
 * code.coding[loinc].code 1..
-* code.coding[snomed] = SCT#371469007
+* code.coding[snomed] = $SCT#371469007
 * code.coding[snomed].system 1..
 * code.coding[snomed].code 1..
 * subject 1..1
@@ -349,7 +349,7 @@ Description: "Profile for the description of a tumor's grade using the general f
 * valueCodeableConcept.coding contains
     histologicGradeSnomed 1..1 MS
 * valueCodeableConcept.coding[histologicGradeSnomed] from VS_Histopathological_Grade_SNOMED (required)
-* valueCodeableConcept.coding[histologicGradeSnomed] ^patternCoding.system = "http://snomed.info/sct"
+* valueCodeableConcept.coding[histologicGradeSnomed] ^patternCoding.system = $SCT
 * valueCodeableConcept.coding[histologicGradeSnomed].system 1..
 * valueCodeableConcept.coding[histologicGradeSnomed].code 1..
 
@@ -359,8 +359,8 @@ Usage: #example
 Title: "Example Histologic Tumor Grade"
 Description: "Example tumor grade using the general four-tier grading scheme."
 * status = #final
-* code.coding[loinc] = LNC#33732-9 "Histology grade [Identifier] in Cancer specimen"
-* code.coding[snomed] = SCT#371469007 "Histologic grade of neoplasm (observable entity)"
+* code.coding[loinc] = $LNC#33732-9 "Histology grade [Identifier] in Cancer specimen"
+* code.coding[snomed] = $SCT#371469007 "Histologic grade of neoplasm (observable entity)"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-03-07"
-* valueCodeableConcept.coding[histologicGradeSnomed] = SCT#54102005 "G1 grade (finding)"
+* valueCodeableConcept.coding[histologicGradeSnomed] = $SCT#54102005 "G1 grade (finding)"
