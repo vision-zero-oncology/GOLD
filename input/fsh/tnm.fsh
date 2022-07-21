@@ -4,7 +4,6 @@ Parent: Observation
 Id: uicc-tnm
 Title: "Profile UICC TNM"
 Description: "Profile for the tumor classification using TNM stage groups (I, II, III, or IV) and TNM staging elements (T, N, and M)."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -126,7 +125,6 @@ Extension: SD_UICC_TNM_Prefix_CPU
 Id: uicc-tnm-prefix-cpu
 Title: "Extension UICC TNM Prefix CPU"
 Description: "The Extension allows to add c, p and u prefixes to TNM stages."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu"
 * value[x] only CodeableConcept
 * value[x] from VS_TNM_Prefix_CPU_UICC (required)
 
@@ -135,7 +133,6 @@ Extension: SD_UICC_TNM_Suffix_ITC
 Id: uicc-tnm-suffix-itc
 Title: "Extension UICC TNM Suffix ITC"
 Description: "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc"
 * value[x] only CodeableConcept
 * value[x] from VS_TNM_Suffix_ITC_UICC (required)
 
@@ -144,7 +141,6 @@ Extension: SD_UICC_TNM_Suffix_ITC_SN
 Id: uicc-tnm-suffix-itc-sn
 Title: "Extension UICC TNM Suffix ITC SN"
 Description: "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn"
 * value[x] only CodeableConcept
 * value[x] from VS_TNM_Suffix_ITC_SN_UICC (required)
 
@@ -154,7 +150,6 @@ Parent: Observation
 Id: uicc-tnm-r-classification
 Title: "Profile UICC TNM Residual Tumor (R) Classification"
 Description: "Profile for the residual tumor (R) classification as part of TNM."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open

@@ -4,7 +4,6 @@ Parent: Observation
 Id: vital-signs-base
 Title: "Profile Vital Signs Base"
 Description: "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
 * obeys vs-2
 * status MS
 * category MS
@@ -52,7 +51,6 @@ Parent: SD_Vital_Signs_Base
 Id: body-height
 Title: "Profile Body Height"
 Description: "Profile for body height of a patient"
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
 * code ^short = "Body Height"
 * code ^definition = "Body Height"
 * code ^comment = "Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."
@@ -99,7 +97,6 @@ Parent: SD_Vital_Signs_Base
 Id: body-weight
 Title: "Profile Body Weight"
 Description: "Profile for body weight of a patient"
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"
 * code ^short = "Body Weight"
 * code ^definition = "Body Weight"
 * code ^comment = "Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."
@@ -146,7 +143,6 @@ Parent: Observation
 Id: ecog-performance-status
 Title: "Profile ECOG Performance Status"
 Description: "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -203,7 +199,6 @@ Parent: Observation
 Id: karnofsky-performance-status
 Title: "Profile Karnofsky Performance Status"
 Description: "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -245,7 +240,6 @@ Parent: Observation
 Id: histology-topography
 Title: "Profile Histology Topography"
 Description: "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -322,7 +316,6 @@ Parent: Observation
 Id: histopathological-grading-who
 Title: "Profile Histopathological Tumor Grading WHO"
 Description: "Profile for the description of a tumor's grade using the general four-tier grading scheme following the recommendations of the WHO classification of tumors and UICC."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -366,8 +359,6 @@ Description: "Example tumor grade using the general four-tier grading scheme."
 
 * valueCodeableConcept.coding[histologicGradeSnomed] = $SCT#54102005 "G1 grade (finding)"
 
-// Introducing radlex codes
-Alias: $RID = http://radlex.org/RID/
 
 // RECIST assessment response
 Profile: RecistAssessmentResponse
@@ -376,23 +367,12 @@ Id: recist-assessment-response
 Title: "Profile RECIST timepoint assessment response"
 Description: "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/
 Please note there is no assessment timepoint response for the baseline assessment."
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
 * partOf only Reference(ImagingStudy)
-* code = $RID11510
+* code = $RID#11510
 * subject 1..1
 * subject only Reference(Patient)
 * value[x] only CodeableConcept
 * valueCodeableConcept from RecistAssessmentTimepointResponseVS (required)
-
-
-ValueSet: RecistAssessmentTimepointResponseVS
-Id: recist-asstimepoint-response-vs
-Title: "recist-timepoint-response-vs"
-Description: "Defines the valid values for the recist assessment response observation resource"
-* $RID11514 "stable disease"
-* $RID11513 "partial response"
-* $RID11511 "complete imaging response"
-* $RID11515 "progressive disease"
 
 Instance: ExampleRecistAssessmentResponse
 InstanceOf: recist-assessment-response
@@ -400,9 +380,8 @@ Usage: #example
 Title: "Example RECIST assessment timepoint response"
 Description: "Example RECIST assessment timepoint response observation."
 * status = #final
-* code = RID11510 "Therapeutic response"
-(observable entity)"
+* code = $RID#11510 "Therapeutic response (observable entity)"
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-07-19"
-* valueCodeableConcept = RID11514 "stable disease"
+* valueCodeableConcept = $RID#11514 "stable disease"
 
