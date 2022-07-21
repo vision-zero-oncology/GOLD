@@ -69,8 +69,9 @@ class Diagnose <<Condition>> {
     recordedDate : dateTime
 }
 
+Diagnose --> ImagingStudy : evidence.detail
 Patient <-- Diagnose : subject
-Diagnose <-- Diagnose : "relatedTo"
+Diagnose <-- Diagnose : "ocurredFollowing"
 
 class RecistObservation <<Observation>> {
     code : CodeableConcept
@@ -78,13 +79,20 @@ class RecistObservation <<Observation>> {
     effectiveDateTime : dateTime
 }
 
-
+RecistObservation --> Patient : subject
 
 class Laborbefund <<DiagnosticReport>> {
     ID : Identifier
 }
 
 Patient <-- Laborbefund : subject
+
+class ImagingStudy <<ImagingStudy>> {
+
+}
+
+RecistObservation --> ImagingStudy : partOf
+RecistObservation --> Therapie : partOf
 
 class Laborparameter <<Observation>> {
     Code : CodeableConcept
