@@ -26,7 +26,7 @@ jobs:
       - name: Checkout packages repository
         uses: actions/checkout@v2
         with:
-          repository: julsas/mii-package-temp
+          repository: vision-zero-oncology/fhir-packages-gold
           path: packages
           lfs: true
 
