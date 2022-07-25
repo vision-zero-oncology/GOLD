@@ -328,3 +328,24 @@ Description: "Defines the valid values for the recist assessment response observ
 * $RID#11513 "partial response"
 * $RID#11511 "complete imaging response"
 * $RID#11515 "progressive disease"
+
+// ICD-O-3 Diagnosesicherung
+CodeSystem: DiagnosesicherungICDO3
+Id: diagnosesicherung-icd-o-3
+Title: "Diagnosesicherung ICD-O-3"
+Description: "CodeSystem für die Diagnosesicherungscodes der ICD-O-3"
+* ^valueSet = "https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icd-o-3"
+* #0 "Nur Totenschein"
+* #1 "Klinisch"
+* #2 "Klinische Diagnostik"
+* #4 "Spezifische Tumor-Marker"
+* #5 "Zytologie"
+* #6 "Histologische Untersuchung einer Metastase"
+* #7 "Histologische Untersuchung eines Primärtumors"
+* #9 "Unbekannt"
+
+// ValueSet: Diagnosesicherung-ICD-O-3
+// Id: diagnosesicherung-icd-o-3
+// Title: "Diagnosesicherung ICD-O-3"
+// Description: "ValueSet für die Diagnosesicherungscodes der ICD-O-3"
+// * 

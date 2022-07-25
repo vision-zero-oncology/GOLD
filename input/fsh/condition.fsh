@@ -10,6 +10,7 @@ Description: "Profile for a tumor disorder"
     * ^patternCoding.system = $SCT
     * system 1.. MS
     * code 1.. MS
+    * extension contains diagnosesicherung-icd-o named diagnosesicherung 0..1 MS
   * text MS
 * bodySite MS
   * coding ^slicing.discriminator.type = #pattern
@@ -21,7 +22,7 @@ Description: "Profile for a tumor disorder"
     * system 1..1 MS
     * code 1..1 MS
     * display MS
-  * coding[icdo3-t] from $ICDO3M (required)
+  * coding[icdo3-t] from $ICDO3T (required)
     * system 1..1 MS
     * code 1..1 MS
     * version 1..1 MS
@@ -47,5 +48,11 @@ Description: "Profile for a tumor disorder"
   * type = $SCT#258244004 "Tumor histopathological grade status values (tumor staging)"
 * evidence MS
   * detail MS
+
+Extension: DiagnosesicherungICDO
+Id: diagnosesicherung-icd-o
+Title: "Diagnosesicherung ICD O"
+Description: "Extension für die Erfassung der Diagnosesicherung der ICD-O-3"
+* valueCodeableConcept from $DiagnosesicherungVS (required)
 
  // TODO: Example 
