@@ -1,0 +1,67 @@
+{
+  "resourceType": "ValueSet",
+  "id": "type-of-blinding-ncit",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C49659</td><td>Open Label Study</td></tr><tr><td>C28233</td><td>Single Blind Study</td></tr><tr><td>C15228</td><td>Double Blind Study</td></tr><tr><td>C66959</td><td>Triple Blind Study</td></tr><tr><td>C156592</td><td>Open Label for Treatment And Double Blind to Dose</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit",
+  "version": "0.1.0",
+  "name": "VS_TypeOfBlinding_NCIT",
+  "title": "ValueSet Type of Blinding NCIt",
+  "status": "active",
+  "date": "2022-07-25T13:12:11+00:00",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "name": "Berlin Institute of Health at Charité (BIH)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Type of Blinding aus NCI Thesaurus (NCIt)",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DEU"
+        }
+      ]
+    }
+  ],
+  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C49659",
+            "display": "Open Label Study"
+          },
+          {
+            "code": "C28233",
+            "display": "Single Blind Study"
+          },
+          {
+            "code": "C15228",
+            "display": "Double Blind Study"
+          },
+          {
+            "code": "C66959",
+            "display": "Triple Blind Study"
+          },
+          {
+            "code": "C156592",
+            "display": "Open Label for Treatment And Double Blind to Dose"
+          }
+        ]
+      }
+    ]
+  }
+}

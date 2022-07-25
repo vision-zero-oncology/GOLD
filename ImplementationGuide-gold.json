@@ -46,6 +46,12 @@
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "packageId": "de.basisprofil.r4",
       "version": "1.3.1"
+    },
+    {
+      "id": "de_gematik_isik_basismodul",
+      "uri": "http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul",
+      "packageId": "de.gematik.isik-basismodul",
+      "version": "2.0.0"
     }
   ],
   "definition": {
@@ -346,6 +352,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/recist-assessment-response"
+        },
+        "name": "Profile RECIST timepoint assessment response",
+        "description": "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/\nPlease note there is no assessment timepoint response for the baseline assessment.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/body-height"
         },
         "name": "Profile Body Height",
@@ -482,6 +502,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/tumor-disorder"
+        },
+        "name": "Tumor Disorder",
+        "description": "Profile for a tumor disorder",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "StructureDefinition:extension"
           }
         ],
@@ -518,6 +552,20 @@
         },
         "name": "Extension UICC TNM Suffix ITC SN",
         "description": "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
+          "reference": "ValueSet/recist-asstimepoint-response-vs"
+        },
+        "name": "recist-timepoint-response-vs",
+        "description": "Defines the valid values for the recist assessment response observation resource",
         "exampleBoolean": false
       },
       {
@@ -584,7 +632,7 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-studiendesign-ncit"
+          "reference": "ValueSet/studiendesign-ncit"
         },
         "name": "ValueSet Studiendesign NCIt",
         "description": "Studiendesign aus NCI Thesaurus (NCIt)",
@@ -598,7 +646,7 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-studienkategorien-ncit"
+          "reference": "ValueSet/studienkategorien-ncit"
         },
         "name": "ValueSet Studienkategorien NCIt",
         "description": "Studienkategorien aus NCI Thesaurus (NCIt)",
@@ -878,7 +926,7 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-typeofblinding-ncit"
+          "reference": "ValueSet/type-of-blinding-ncit"
         },
         "name": "ValueSet Type of Blinding NCIt",
         "description": "Type of Blinding aus NCI Thesaurus (NCIt)",
@@ -892,7 +940,7 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-typeofrandomization-ncit"
+          "reference": "ValueSet/type-of-randomization-ncit"
         },
         "name": "ValueSet Type of Randomization NCIt",
         "description": "Type of Randomization aus NCI Thesaurus (NCIt)",
@@ -906,7 +954,7 @@
           }
         ],
         "reference": {
-          "reference": "ValueSet/vs-type-of-study-arm-ncit"
+          "reference": "ValueSet/type-of-study-arm-ncit"
         },
         "name": "ValueSet Type of Study Arm NCIt",
         "description": "Type of Study Arm aus NCI Thesaurus (NCIt)",
@@ -925,6 +973,20 @@
         "name": "Example Patient",
         "description": "Example of a patient.",
         "exampleBoolean": true
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Observation"
+          }
+        ],
+        "reference": {
+          "reference": "Observation/ExampleRecistAssessmentResponse"
+        },
+        "name": "Example RECIST assessment timepoint response",
+        "description": "Example RECIST assessment timepoint response observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
       },
       {
         "extension": [

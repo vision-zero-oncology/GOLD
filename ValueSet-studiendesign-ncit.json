@@ -1,0 +1,107 @@
+{
+  "resourceType": "ValueSet",
+  "id": "studiendesign-ncit",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C165842</td><td>Umbrella Protocol</td></tr><tr><td>C165823</td><td>Basket Protocol</td></tr><tr><td>C139174</td><td>Device Feasibility Study</td></tr><tr><td>C49656</td><td>Treatment Study</td></tr><tr><td>C15197</td><td>Case-Control Study</td></tr><tr><td>C15362</td><td>Case Study</td></tr><tr><td>C127779</td><td>Observational Case-Crossover Study</td></tr><tr><td>C127780</td><td>Ecologic or Community Based Study</td></tr><tr><td>C15407</td><td>Family Study</td></tr><tr><td>C15208</td><td>Cohort Study</td></tr><tr><td>C139456</td><td>Trend Analysis</td></tr><tr><td>C53311</td><td>Panel Study</td></tr><tr><td>C15273</td><td>Longitudinal Study</td></tr><tr><td>C53310</td><td>Cross-Sectional Study</td></tr><tr><td>C15311</td><td>Quality Control</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit",
+  "version": "0.1.0",
+  "name": "VS_Studiendesign_NCIT",
+  "title": "ValueSet Studiendesign NCIt",
+  "status": "active",
+  "date": "2022-07-25T13:12:11+00:00",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "name": "Berlin Institute of Health at Charité (BIH)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Studiendesign aus NCI Thesaurus (NCIt)",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DEU"
+        }
+      ]
+    }
+  ],
+  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C165842",
+            "display": "Umbrella Protocol"
+          },
+          {
+            "code": "C165823",
+            "display": "Basket Protocol"
+          },
+          {
+            "code": "C139174",
+            "display": "Device Feasibility Study"
+          },
+          {
+            "code": "C49656",
+            "display": "Treatment Study"
+          },
+          {
+            "code": "C15197",
+            "display": "Case-Control Study"
+          },
+          {
+            "code": "C15362",
+            "display": "Case Study"
+          },
+          {
+            "code": "C127779",
+            "display": "Observational Case-Crossover Study"
+          },
+          {
+            "code": "C127780",
+            "display": "Ecologic or Community Based Study"
+          },
+          {
+            "code": "C15407",
+            "display": "Family Study"
+          },
+          {
+            "code": "C15208",
+            "display": "Cohort Study"
+          },
+          {
+            "code": "C139456",
+            "display": "Trend Analysis"
+          },
+          {
+            "code": "C53311",
+            "display": "Panel Study"
+          },
+          {
+            "code": "C15273",
+            "display": "Longitudinal Study"
+          },
+          {
+            "code": "C53310",
+            "display": "Cross-Sectional Study"
+          },
+          {
+            "code": "C15311",
+            "display": "Quality Control"
+          }
+        ]
+      }
+    ]
+  }
+}

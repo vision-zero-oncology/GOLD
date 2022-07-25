@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="ExampleRecistAssessmentResponse"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title="Codes: {http://radlex.org/RID 11510}">Therapeutic response (observable entity)</span></p><p><b>subject</b>: <a href="Patient-ExamplePatient.html">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1985-03-31</a></p><p><b>effective</b>: 2022-07-19</p><p><b>value</b>: <span title="Codes: {http://radlex.org/RID 11514}">stable disease</span></p></div>
+  </text>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://radlex.org/RID"/>
+      <code value="11510"/>
+      <display value="Therapeutic response (observable entity)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <effectiveDateTime value="2022-07-19"/>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://radlex.org/RID"/>
+      <code value="11514"/>
+      <display value="stable disease"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>

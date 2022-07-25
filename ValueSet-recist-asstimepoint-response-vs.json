@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "id": "recist-asstimepoint-response-vs",
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://radlex.org/RID</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>11514</td><td>stable disease</td></tr><tr><td>11513</td><td>partial response</td></tr><tr><td>11511</td><td>complete imaging response</td></tr><tr><td>11515</td><td>progressive disease</td></tr></table></li></ul></div>"
+  },
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response-vs",
+  "version": "0.1.0",
+  "name": "RecistAssessmentTimepointResponseVS",
+  "title": "recist-timepoint-response-vs",
+  "status": "active",
+  "date": "2022-07-25T13:12:11+00:00",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "name": "Berlin Institute of Health at Charité (BIH)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Defines the valid values for the recist assessment response observation resource",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "system": "urn:iso:std:iso:3166",
+          "code": "DEU"
+        }
+      ]
+    }
+  ],
+  "copyright": "CC-BY-SA-4.0",
+  "compose": {
+    "include": [
+      {
+        "system": "http://radlex.org/RID",
+        "concept": [
+          {
+            "code": "11514",
+            "display": "stable disease"
+          },
+          {
+            "code": "11513",
+            "display": "partial response"
+          },
+          {
+            "code": "11511",
+            "display": "complete imaging response"
+          },
+          {
+            "code": "11515",
+            "display": "progressive disease"
+          }
+        ]
+      }
+    ]
+  }
+}
