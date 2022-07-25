@@ -30,15 +30,15 @@ jobs:
       - name: Checkout packages repository
         uses: actions/checkout@v2
         with:
-          repository: julsas/mii-package-temp
-          path: mii-package-temp
+          repository: vision-zero-oncology/fhir-packages-gold
+          path: fhir-packages-gold
           lfs: true
 
       - name: Create symbolic link to package directory
         uses: docker://hl7fhir/ig-publisher-base:latest
         with:
           # Get the latest publisher - don't run the batch script but run the line directly
-          args: ln -s ./mii-package-temp/packages packages
+          args: ln -s ./fhir-packages-gold/packages packages
 
 
       - name: Update the image to the latest publisher
