@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="diagnosesicherung-icd-o-3"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This code system https://www.vision-zero-oncology.de/fhir/CodeSystem/diagnosesicherung-icd-o-3 defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0<a name="diagnosesicherung-icd-o-3-0"> </a></td><td>Nur Totenschein</td></tr><tr><td style="white-space:nowrap">1<a name="diagnosesicherung-icd-o-3-1"> </a></td><td>Klinisch</td></tr><tr><td style="white-space:nowrap">2<a name="diagnosesicherung-icd-o-3-2"> </a></td><td>Klinische Diagnostik</td></tr><tr><td style="white-space:nowrap">4<a name="diagnosesicherung-icd-o-3-4"> </a></td><td>Spezifische Tumor-Marker</td></tr><tr><td style="white-space:nowrap">5<a name="diagnosesicherung-icd-o-3-5"> </a></td><td>Zytologie</td></tr><tr><td style="white-space:nowrap">6<a name="diagnosesicherung-icd-o-3-6"> </a></td><td>Histologische Untersuchung einer Metastase</td></tr><tr><td style="white-space:nowrap">7<a name="diagnosesicherung-icd-o-3-7"> </a></td><td>Histologische Untersuchung eines Primärtumors</td></tr><tr><td style="white-space:nowrap">9<a name="diagnosesicherung-icd-o-3-9"> </a></td><td>Unbekannt</td></tr></table></div>
+  </text>
+  <url value="https://www.vision-zero-oncology.de/fhir/CodeSystem/diagnosesicherung-icd-o-3"/>
+  <version value="0.1.0"/>
+  <name value="DiagnosesicherungICDO3"/>
+  <title value="Diagnosesicherung ICD-O-3"/>
+  <status value="active"/>
+  <date value="2022-07-25T14:21:42+00:00"/>
+  <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+  <contact>
+    <name value="Berlin Institute of Health at Charité (BIH)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="CodeSystem für die Diagnosesicherungscodes der ICD-O-3"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <valueSet value="https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icd-o-3"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="0"/>
+    <display value="Nur Totenschein"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="Klinisch"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="Klinische Diagnostik"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="Spezifische Tumor-Marker"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="Zytologie"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="Histologische Untersuchung einer Metastase"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="Histologische Untersuchung eines Primärtumors"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="Unbekannt"/>
+  </concept>
+</CodeSystem>

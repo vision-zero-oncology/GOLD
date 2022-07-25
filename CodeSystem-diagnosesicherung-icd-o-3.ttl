@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/CodeSystem/diagnosesicherung-icd-o-3> a fhir:CodeSystem;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "diagnosesicherung-icd-o-3"];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This code system https://www.vision-zero-oncology.de/fhir/CodeSystem/diagnosesicherung-icd-o-3 defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"diagnosesicherung-icd-o-3-0\"> </a></td><td>Nur Totenschein</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"diagnosesicherung-icd-o-3-1\"> </a></td><td>Klinisch</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"diagnosesicherung-icd-o-3-2\"> </a></td><td>Klinische Diagnostik</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"diagnosesicherung-icd-o-3-4\"> </a></td><td>Spezifische Tumor-Marker</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"diagnosesicherung-icd-o-3-5\"> </a></td><td>Zytologie</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"diagnosesicherung-icd-o-3-6\"> </a></td><td>Histologische Untersuchung einer Metastase</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"diagnosesicherung-icd-o-3-7\"> </a></td><td>Histologische Untersuchung eines Primärtumors</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"diagnosesicherung-icd-o-3-9\"> </a></td><td>Unbekannt</td></tr></table></div>"
+  ];
+  fhir:CodeSystem.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/CodeSystem/diagnosesicherung-icd-o-3"];
+  fhir:CodeSystem.version [ fhir:value "0.1.0"];
+  fhir:CodeSystem.name [ fhir:value "DiagnosesicherungICDO3"];
+  fhir:CodeSystem.title [ fhir:value "Diagnosesicherung ICD-O-3"];
+  fhir:CodeSystem.status [ fhir:value "active"];
+  fhir:CodeSystem.date [ fhir:value "2022-07-25T14:21:42+00:00"^^xsd:dateTime];
+  fhir:CodeSystem.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
+  fhir:CodeSystem.contact [
+     fhir:index 0;
+     fhir:ContactDetail.name [ fhir:value "Berlin Institute of Health at Charité (BIH)" ];
+     fhir:ContactDetail.telecom [
+       fhir:index 0;
+       fhir:ContactPoint.system [ fhir:value "url" ];
+       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
+     ]
+  ];
+  fhir:CodeSystem.description [ fhir:value "CodeSystem für die Diagnosesicherungscodes der ICD-O-3"];
+  fhir:CodeSystem.jurisdiction [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DEU" ]
+     ]
+  ];
+  fhir:CodeSystem.copyright [ fhir:value "CC-BY-SA-4.0"];
+  fhir:CodeSystem.valueSet [
+     fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icd-o-3";
+     fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icd-o-3>
+  ];
+  fhir:CodeSystem.content [ fhir:value "complete"];
+  fhir:CodeSystem.count [ fhir:value "8"^^xsd:nonNegativeInteger];
+  fhir:CodeSystem.concept [
+     fhir:index 0;
+     fhir:CodeSystem.concept.code [ fhir:value "0" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Nur Totenschein" ]
+  ], [
+     fhir:index 1;
+     fhir:CodeSystem.concept.code [ fhir:value "1" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Klinisch" ]
+  ], [
+     fhir:index 2;
+     fhir:CodeSystem.concept.code [ fhir:value "2" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Klinische Diagnostik" ]
+  ], [
+     fhir:index 3;
+     fhir:CodeSystem.concept.code [ fhir:value "4" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Spezifische Tumor-Marker" ]
+  ], [
+     fhir:index 4;
+     fhir:CodeSystem.concept.code [ fhir:value "5" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Zytologie" ]
+  ], [
+     fhir:index 5;
+     fhir:CodeSystem.concept.code [ fhir:value "6" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Histologische Untersuchung einer Metastase" ]
+  ], [
+     fhir:index 6;
+     fhir:CodeSystem.concept.code [ fhir:value "7" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Histologische Untersuchung eines Primärtumors" ]
+  ], [
+     fhir:index 7;
+     fhir:CodeSystem.concept.code [ fhir:value "9" ];
+     fhir:CodeSystem.concept.display [ fhir:value "Unbekannt" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/CodeSystem/diagnosesicherung-icd-o-3.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

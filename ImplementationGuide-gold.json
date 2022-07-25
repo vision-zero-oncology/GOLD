@@ -520,6 +520,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/diagnosesicherung-icd-o"
+        },
+        "name": "Diagnosesicherung ICD O",
+        "description": "Extension für die Erfassung der Diagnosesicherung der ICD-O-3",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/uicc-tnm-prefix-cpu"
         },
         "name": "Extension UICC TNM Prefix CPU",
@@ -958,6 +972,20 @@
         },
         "name": "ValueSet Type of Study Arm NCIt",
         "description": "Type of Study Arm aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "CodeSystem"
+          }
+        ],
+        "reference": {
+          "reference": "CodeSystem/diagnosesicherung-icd-o-3"
+        },
+        "name": "Diagnosesicherung ICD-O-3",
+        "description": "CodeSystem für die Diagnosesicherungscodes der ICD-O-3",
         "exampleBoolean": false
       },
       {

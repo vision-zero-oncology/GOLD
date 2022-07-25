@@ -5,6 +5,14 @@
   "jurisdiction": "DEU",
   "extensions": [
     {
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o",
+      "title": "Diagnosesicherung ICD O",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept"
+      ]
+    },
+    {
       "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
       "title": "Extension UICC TNM Prefix CPU",
       "types": [
@@ -115,6 +123,9 @@
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
+    ],
+    "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o": [
+      "Condition.code.coding"
     ],
     "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu": [
       "Observation.component"

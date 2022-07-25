@@ -355,6 +355,17 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/diagnosesicherung-icd-o"/>
+      </reference>
+      <name value="Diagnosesicherung ICD O"/>
+      <description value="Extension für die Erfassung der Diagnosesicherung der ICD-O-3"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/uicc-tnm-prefix-cpu"/>
       </reference>
       <name value="Extension UICC TNM Prefix CPU"/>
@@ -700,6 +711,17 @@
       </reference>
       <name value="ValueSet Type of Study Arm NCIt"/>
       <description value="Type of Study Arm aus NCI Thesaurus (NCIt)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/diagnosesicherung-icd-o-3"/>
+      </reference>
+      <name value="Diagnosesicherung ICD-O-3"/>
+      <description value="CodeSystem für die Diagnosesicherungscodes der ICD-O-3"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

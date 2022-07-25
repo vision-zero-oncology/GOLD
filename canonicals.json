@@ -1,5 +1,12 @@
 [
   {
+    "id": "diagnosesicherung-icd-o-3",
+    "type": "CodeSystem",
+    "url": "https://www.vision-zero-oncology.de/fhir/CodeSystem/diagnosesicherung-icd-o-3",
+    "version": "0.1.0",
+    "name": "DiagnosesicherungICDO3"
+  },
+  {
     "id": "gold",
     "type": "ImplementationGuide",
     "url": "https://www.vision-zero-oncology.de/fhir/ImplementationGuide/gold",
@@ -19,6 +26,13 @@
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight",
     "version": "0.1.0",
     "name": "SD_Body_Weight"
+  },
+  {
+    "id": "diagnosesicherung-icd-o",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o",
+    "version": "0.1.0",
+    "name": "DiagnosesicherungICDO"
   },
   {
     "id": "ecog-performance-status",

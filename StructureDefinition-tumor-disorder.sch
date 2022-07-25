@@ -128,6 +128,7 @@
       <sch:assert test="count(f:extension[@url = 'http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen']) &lt;= 1">extension with URL = 'http://fhir.de/StructureDefinition/icd-10-gm-mehrfachcodierungs-kennzeichen': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://fhir.de/StructureDefinition/seitenlokalisation']) &lt;= 1">extension with URL = 'http://fhir.de/StructureDefinition/seitenlokalisation': maximum cardinality of 'extension' is 1</sch:assert>
       <sch:assert test="count(f:extension[@url = 'http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit']) &lt;= 1">extension with URL = 'http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit': maximum cardinality of 'extension' is 1</sch:assert>
+      <sch:assert test="count(f:extension[@url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o']) &lt;= 1">extension with URL = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o': maximum cardinality of 'extension' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
@@ -149,6 +150,8 @@
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), 'value')])">Must have either extensions or value[x], not both</sch:assert>
       <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children</sch:assert>
       <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both</sch:assert>
+      <sch:assert test="@value|f:*|h:div">All FHIR elements must have a @value or children (inherited)</sch:assert>
+      <sch:assert test="exists(f:extension)!=exists(f:*[starts-with(local-name(.), &quot;value&quot;)])">Must have either extensions or value[x], not both (inherited)</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>
