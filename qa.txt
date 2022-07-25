@@ -3,7 +3,7 @@
 
 err = 29, warn = 87, info = 56
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.126
-Generated Mon Jul 25 14:24:10 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Mon Jul 25 14:42:59 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 19 / 0 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-diagnosesicherung-icd-o-3 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
