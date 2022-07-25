@@ -21,7 +21,7 @@ Description: "Profile for a tumor disorder"
     * system 1..1 MS
     * code 1..1 MS
     * display MS
-  * coding[icdo3-t] from $ICDO3M (required)
+  * coding[icdo3-t] from $ICDO3T (required)
     * system 1..1 MS
     * code 1..1 MS
     * version 1..1 MS
