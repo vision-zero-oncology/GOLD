@@ -318,3 +318,13 @@ Description: "This ValueSet contains the TNM residual tumor (R) classification c
 // * R1(is) R1(is)
 // * R1(cy) R1(cy)
 * $UICC-TNM#R2 "R2"
+
+// Recist Assessment
+ValueSet: RecistAssessmentTimepointResponseVS
+Id: recist-asstimepoint-response-vs
+Title: "recist-timepoint-response-vs"
+Description: "Defines the valid values for the recist assessment response observation resource"
+* $RID#11514 "stable disease"
+* $RID#11513 "partial response"
+* $RID#11511 "complete imaging response"
+* $RID#11515 "progressive disease"
