@@ -27,6 +27,9 @@ Please feel free to contribute to this implementation guide. Issues and change r
 
 * Issues: https://github.com/vision-zero-oncology/GOLD/issues
 
-Authors
+Authors (in alphabetical order)
 --------
+* `Andrea Essenwanger <https://github.com/bytegnome>`_
+* `Johannes Kast <https://github.com/johannes-kast-mint>`_
 * `Julian Saß <https://github.com/julsas>`_
+
