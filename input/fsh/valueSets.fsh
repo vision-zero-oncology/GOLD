@@ -331,10 +331,10 @@ Description: "Defines the valid values for the recist assessment response observ
 
 // ICD-O-3 Diagnosesicherung
 CodeSystem: DiagnosesicherungICDO3
-Id: diagnosesicherung-icd-o-3
+Id: cs-diagnosesicherung-icdo3
 Title: "Diagnosesicherung ICD-O-3"
 Description: "CodeSystem für die Diagnosesicherungscodes der ICD-O-3"
-* ^valueSet = "https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icd-o-3"
+* ^valueSet = $DiagnosesicherungVS
 * #0 "Nur Totenschein"
 * #1 "Klinisch"
 * #2 "Klinische Diagnostik"
@@ -344,8 +344,8 @@ Description: "CodeSystem für die Diagnosesicherungscodes der ICD-O-3"
 * #7 "Histologische Untersuchung eines Primärtumors"
 * #9 "Unbekannt"
 
-// ValueSet: Diagnosesicherung-ICD-O-3
-// Id: diagnosesicherung-icd-o-3
-// Title: "Diagnosesicherung ICD-O-3"
-// Description: "ValueSet für die Diagnosesicherungscodes der ICD-O-3"
-// * 
+ValueSet: DiagnosesicherungICDO3
+Id: vs-diagnosesicherung-icdo3
+Title: "Diagnosesicherung ICD-O-3"
+Description: "ValueSet für die Diagnosesicherungscodes der ICD-O-3"
+* include codes from system cs-diagnosesicherung-icdo3
