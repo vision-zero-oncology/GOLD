@@ -1,8 +1,8 @@
 [
   {
-    "id": "diagnosesicherung-icd-o-3",
+    "id": "cs-diagnosesicherung-icdo3",
     "type": "CodeSystem",
-    "url": "https://www.vision-zero-oncology.de/fhir/CodeSystem/diagnosesicherung-icd-o-3",
+    "url": "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3",
     "version": "0.1.0",
     "name": "DiagnosesicherungICDO3"
   },
@@ -327,5 +327,12 @@
     "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit",
     "version": "0.1.0",
     "name": "VS_TypeOfStudyArm_NCIT"
+  },
+  {
+    "id": "vs-diagnosesicherung-icdo3",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3",
+    "version": "0.1.0",
+    "name": "DiagnosesicherungICDO3"
   }
 ]

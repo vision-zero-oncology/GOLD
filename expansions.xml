@@ -1,11 +1,185 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="d528cbee-f33f-4c4a-a136-b902f10bf74c"/>
+  <id value="0c2aa822-4bc3-4279-86c9-a78813e5f8c3"/>
   <meta>
-    <lastUpdated value="2022-07-25T14:41:10.950+00:00"/>
+    <lastUpdated value="2022-08-01T09:41:51.407+00:00"/>
   </meta>
   <type value="collection"/>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3"/>
+    <resource>
+      <ValueSet>
+        <id value="vs-diagnosesicherung-icdo3"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 8 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-diagnosesicherung-icdo3.html">Diagnosesicherung ICD-O-3 v0.1.0 (CodeSystem)</a>
+            </p>
+            <p>All codes in this table are from the system 
+              <a href="CodeSystem-cs-diagnosesicherung-icdo3.html">
+                <code>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</code>
+              </a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+                <td>
+                  <b>Definition</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-0"> </a>
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-0">0</a>
+                </td>
+                <td>Nur Totenschein</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-1"> </a>
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-1">1</a>
+                </td>
+                <td>Klinisch</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-2"> </a>
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-2">2</a>
+                </td>
+                <td>Klinische Diagnostik</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-4"> </a>
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-4">4</a>
+                </td>
+                <td>Spezifische Tumor-Marker</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-5"> </a>
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-5">5</a>
+                </td>
+                <td>Zytologie</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-6"> </a>
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-6">6</a>
+                </td>
+                <td>Histologische Untersuchung einer Metastase</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-7"> </a>
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-7">7</a>
+                </td>
+                <td>Histologische Untersuchung eines Primärtumors</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-9"> </a>
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-9">9</a>
+                </td>
+                <td>Unbekannt</td>
+                <td/>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3"/>
+        <version value="0.1.0"/>
+        <name value="DiagnosesicherungICDO3"/>
+        <title value="Diagnosesicherung ICD-O-3"/>
+        <status value="active"/>
+        <date value="2022-08-01T09:41:51+00:00"/>
+        <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+        <contact>
+          <name value="Berlin Institute of Health at Charité (BIH)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/"/>
+          </telecom>
+        </contact>
+        <description value="ValueSet für die Diagnosesicherungscodes der ICD-O-3"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <copyright value="CC-BY-SA-4.0"/>
+        <expansion>
+          <identifier value="urn:uuid:a14a3b50-4dab-453c-b7a2-cdbaa63daaf6"/>
+          <timestamp value="2022-08-01T09:42:31+00:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="0"/>
+            <display value="Nur Totenschein"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="1"/>
+            <display value="Klinisch"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="2"/>
+            <display value="Klinische Diagnostik"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="4"/>
+            <display value="Spezifische Tumor-Marker"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="5"/>
+            <display value="Zytologie"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="6"/>
+            <display value="Histologische Untersuchung einer Metastase"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="7"/>
+            <display value="Histologische Untersuchung eines Primärtumors"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="9"/>
+            <display value="Unbekannt"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
   <entry>
     <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed"/>
     <resource>
@@ -15,7 +189,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 6 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -89,7 +263,7 @@
         <name value="VS_ECOG_Performance_Status_SNOMED"/>
         <title value="ValueSet ECOG Performance Status SNOMED"/>
         <status value="active"/>
-        <date value="2022-07-25T14:41:10+00:00"/>
+        <date value="2022-08-01T09:41:51+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -110,8 +284,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:41ee02e9-d41e-46cc-9886-fe4c703dc0d9"/>
-          <timestamp value="2022-07-25T14:42:07+00:00"/>
+          <identifier value="urn:uuid:5561edcb-bfb0-4457-8afc-0d09341916a2"/>
+          <timestamp value="2022-08-01T09:42:32+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -123,7 +297,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220131"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -168,7 +342,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 5 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -234,7 +408,7 @@
         <name value="VS_Histopathological_Grade_SNOMED"/>
         <title value="ValueSet Histologic Grade SNOMED"/>
         <status value="active"/>
-        <date value="2022-07-25T14:41:10+00:00"/>
+        <date value="2022-08-01T09:41:51+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -252,8 +426,8 @@
         </jurisdiction>
         <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
         <expansion>
-          <identifier value="urn:uuid:12b6285d-ca3b-4b81-9ebe-31b28a2a316a"/>
-          <timestamp value="2022-07-25T14:42:07+00:00"/>
+          <identifier value="urn:uuid:03b7b710-cc92-47a8-9036-380b31136648"/>
+          <timestamp value="2022-08-01T09:42:32+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -265,7 +439,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220131"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -305,7 +479,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -8064,7 +8238,7 @@
                   <a name="http---snomed.info-sct-128847002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=128847002">128847002</a>
                 </td>
-                <td>Refractory anemia with excess blasts</td>
+                <td>RAEB</td>
                 <td/>
               </tr>
               <tr>
@@ -8331,7 +8505,7 @@
         <name value="VS_Morphology_SNOMED"/>
         <title value="ValueSet Morphology SNOMED"/>
         <status value="active"/>
-        <date value="2022-07-25T14:41:10+00:00"/>
+        <date value="2022-08-01T09:41:51+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -8355,8 +8529,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:cba1259e-50e0-4716-b44b-d3cf6a541f68"/>
-          <timestamp value="2022-07-25T14:42:09+00:00"/>
+          <identifier value="urn:uuid:1f123f98-ba70-4273-a979-1645f65d1e47"/>
+          <timestamp value="2022-08-01T09:42:33+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -8368,7 +8542,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220131"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -13208,7 +13382,7 @@
           <contains>
             <system value="http://snomed.info/sct"/>
             <code value="128847002"/>
-            <display value="Refractory anemia with excess blasts"/>
+            <display value="RAEB"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -13425,7 +13599,7 @@
         <name value="VS_TNM_Classification_Type_LOINC"/>
         <title value="ValueSet TNM Classification Type LOINC"/>
         <status value="active"/>
-        <date value="2022-07-25T14:41:10+00:00"/>
+        <date value="2022-08-01T09:41:51+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13443,8 +13617,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:f27f128f-493b-4d26-958e-ff504e65d2b9"/>
-          <timestamp value="2022-07-25T14:42:12+00:00"/>
+          <identifier value="urn:uuid:eb2616ac-cff5-43d0-8c4d-15d0235cb9d5"/>
+          <timestamp value="2022-08-01T09:42:34+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13531,7 +13705,7 @@
         <name value="VS_TNM_M_Staging_Type_LOINC"/>
         <title value="ValueSet TNM M Staging Type LOINC"/>
         <status value="active"/>
-        <date value="2022-07-25T14:41:10+00:00"/>
+        <date value="2022-08-01T09:41:51+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13549,8 +13723,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:b20b4830-a081-4438-8d6b-596193034084"/>
-          <timestamp value="2022-07-25T14:42:15+00:00"/>
+          <identifier value="urn:uuid:1b21b83c-9875-425a-93ad-4934de33cbef"/>
+          <timestamp value="2022-08-01T09:42:35+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13642,7 +13816,7 @@
         <name value="VS_TNM_N_Staging_Type_LOINC"/>
         <title value="ValueSet TNM N Staging Type LOINC"/>
         <status value="active"/>
-        <date value="2022-07-25T14:41:10+00:00"/>
+        <date value="2022-08-01T09:41:51+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13660,8 +13834,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:7d5f3b13-ae3f-4cbc-a515-d450da8dccfe"/>
-          <timestamp value="2022-07-25T14:42:17+00:00"/>
+          <identifier value="urn:uuid:d61937ec-2eed-418b-bfb3-5f0fc5b462ac"/>
+          <timestamp value="2022-08-01T09:42:36+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13753,7 +13927,7 @@
         <name value="VS_TNM_T_Staging_Type_LOINC"/>
         <title value="ValueSet TNM T Staging Type LOINC"/>
         <status value="active"/>
-        <date value="2022-07-25T14:41:10+00:00"/>
+        <date value="2022-08-01T09:41:51+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13771,8 +13945,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:1266d1f5-500e-46a9-a9b8-4cb9cdfdd13d"/>
-          <timestamp value="2022-07-25T14:42:29+00:00"/>
+          <identifier value="urn:uuid:c4ffb7bb-1cce-44b5-b7c1-680daee950d6"/>
+          <timestamp value="2022-08-01T09:42:42+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13814,7 +13988,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Mar 2022</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on SNOMED CT International edition 31-Jan 2022</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-snomed-CT.html">
                 <code>http://snomed.info/sct</code>
@@ -20842,6 +21016,14 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-7275008"> </a>
+                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7275008">7275008</a>
+                </td>
+                <td>Lymphatics of appendix and large intestine</td>
+                <td/>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
                   <a name="http---snomed.info-sct-7295002"> </a>
                   <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=7295002">7295002</a>
                 </td>
@@ -21824,14 +22006,6 @@
                 <td>Moderate transitional cell atypia</td>
                 <td/>
               </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-8314003"> </a>
-                  <a href="http://browser.ihtsdotools.org/?perspective=full&amp;conceptId1=8314003">8314003</a>
-                </td>
-                <td>Mastoid fontanel of skull</td>
-                <td/>
-              </tr>
             </table>
           </div>
         </text>
@@ -21840,7 +22014,7 @@
         <name value="VS_Topography_SNOMED"/>
         <title value="ValueSet Topography SNOMED"/>
         <status value="active"/>
-        <date value="2022-07-25T14:41:10+00:00"/>
+        <date value="2022-08-01T09:41:51+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -21864,8 +22038,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:1f219374-f96e-4e30-8836-17a406031f0b"/>
-          <timestamp value="2022-07-25T14:42:32+00:00"/>
+          <identifier value="urn:uuid:c6d0ae78-ea1c-4709-95f2-b9145ece228b"/>
+          <timestamp value="2022-08-01T09:42:43+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -21877,7 +22051,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220331"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20220131"/>
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
@@ -26261,6 +26435,11 @@
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
+            <code value="7275008"/>
+            <display value="Lymphatics of appendix and large intestine"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
             <code value="7295002"/>
             <display value="Muscle of perineum"/>
           </contains>
@@ -26873,11 +27052,6 @@
             <system value="http://snomed.info/sct"/>
             <code value="8309002"/>
             <display value="Moderate transitional cell atypia"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="8314003"/>
-            <display value="Mastoid fontanel of skull"/>
           </contains>
         </expansion>
       </ValueSet>

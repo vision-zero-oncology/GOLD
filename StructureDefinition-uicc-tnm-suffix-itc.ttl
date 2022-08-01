@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "SD_UICC_TNM_Suffix_ITC"];
   fhir:StructureDefinition.title [ fhir:value "Extension UICC TNM Suffix ITC"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-07-25T14:41:10+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-01T09:41:51+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

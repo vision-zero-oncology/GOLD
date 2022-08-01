@@ -576,6 +576,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/vs-diagnosesicherung-icdo3"
+        },
+        "name": "Diagnosesicherung ICD-O-3",
+        "description": "ValueSet für die Diagnosesicherungscodes der ICD-O-3",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/recist-asstimepoint-response-vs"
         },
         "name": "recist-timepoint-response-vs",
@@ -982,7 +996,7 @@
           }
         ],
         "reference": {
-          "reference": "CodeSystem/diagnosesicherung-icd-o-3"
+          "reference": "CodeSystem/cs-diagnosesicherung-icdo3"
         },
         "name": "Diagnosesicherung ICD-O-3",
         "description": "CodeSystem für die Diagnosesicherungscodes der ICD-O-3",
