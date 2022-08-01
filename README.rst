@@ -43,6 +43,7 @@ Working Group Sylvia Thun, BIH@Charité (in alphabetical order)
 * Anna Trelinska-Finger, Charité CCC
 
 Further Working Groups (in alphabetical order)
+
 * Marc Bachmann, Novartis Pharma GmbH
 * Katja Beck, MASTER Program NCT Heidelberg
 * Loren Dimitrov, mint Medical GmbH
