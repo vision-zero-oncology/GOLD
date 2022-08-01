@@ -17,7 +17,7 @@
   fhir:StructureDefinition.name [ fhir:value "DiagnosesicherungICDO"];
   fhir:StructureDefinition.title [ fhir:value "Diagnosesicherung ICD O"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-01T09:45:26+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-01T09:59:26+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
