@@ -30,6 +30,7 @@ Please feel free to contribute to this implementation guide. Issues and change r
 ------
 
 GOLD Implementation Group
+------
 
 Working Group Christof von Kalle, CSC Charité & BIH (in alphabetical order)
 
