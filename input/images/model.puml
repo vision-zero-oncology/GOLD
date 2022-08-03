@@ -27,29 +27,29 @@ class Vitalstatus <<Observation>> {
     Todesursache: CodeableConcept
 }
 
-Patient <-- Vitalstatus : subject
+Vitalstatus --> Patient : subject
 
 abstract Körpermaße {
 
 }
 
-Patient <-- Körpermaße : subject
+Körpermaße --> Patient : subject
 
 class Körpergröße <<Observation>> {
     Messzeitpunkt : dateTime
     Messwert : Quantity
 }
 
-Körpermaße *-- Körpergröße
+Körpergröße --* Körpermaße
 
 class Körpergewicht <<Observation>> {
     Messzeitpunkt : dateTime
     Messwert : Quantity
 }
 
-Körpermaße *-- Körpergewicht
+Körpergewicht --* Körpermaße
 
-class Diagnose <<Condition>> {
+class Tumorerkrankung <<Condition>> {
     Diagnose ID
     id : id
     ..
@@ -69,9 +69,10 @@ class Diagnose <<Condition>> {
     recordedDate : dateTime
 }
 
-Diagnose --> ImagingStudy : evidence.detail
-Patient <-- Diagnose : subject
-Diagnose <-- Diagnose : "ocurredFollowing"
+Tumorerkrankung --> ImagingStudy : evidence.detail
+Tumorerkrankung --> Patient : subject
+Tumorerkrankung --> Tumorerkrankung : "ocurredFollowing"
+Tumorerkrankung --> Assessment : stage.assessment
 
 class RecistObservation <<Observation>> {
     code : CodeableConcept
@@ -80,19 +81,20 @@ class RecistObservation <<Observation>> {
 }
 
 RecistObservation --> Patient : subject
+RecistObservation --> ImagingStudy : partOf
+RecistObservation --> Therapie : partOf
 
 class Laborbefund <<DiagnosticReport>> {
     ID : Identifier
 }
 
-Patient <-- Laborbefund : subject
+Laborbefund --> Patient : subject
+Laborbefund --> Laborparameter : result
 
 class ImagingStudy <<ImagingStudy>> {
 
 }
 
-RecistObservation --> ImagingStudy : partOf
-RecistObservation --> Therapie : partOf
 
 class Laborparameter <<Observation>> {
     Code : CodeableConcept
@@ -101,26 +103,32 @@ class Laborparameter <<Observation>> {
     Referenzbereich : Quantity
 }
 
+Laborparameter --> Probe : specimen
+
 class Probe <<Specimen>> {
     ID : Identifier
     Probenart : CodeableConcept
     Entnahmestelle : CodeableConcept
 }
 
-Laborbefund --> Laborparameter : result
-Laborparameter --> Probe : specimen
-
 abstract Assessment {
 
 }
+
+Assessment *-- Staging
+Assessment *-- Grading
 
 abstract Staging {
 
 }
 
+Staging *-- TNM
+
 abstract Grading {
 
 }
+
+Grading *-- HistopathologischesGrading
 
 class TNM <<Observation>> {
     y : CodeableConcept
@@ -138,26 +146,24 @@ class TNM <<Observation>> {
     numberOfNodesExamined : Quantity
 }
 
+TNM --> ResidualTumorClassification : hasMember
+
 class ResidualTumorClassification <<Observation>> {
     R : CodeableConcept
 }
 
-TNM --> ResidualTumorClassification : hasMember
 
 class HistopathologischesGrading <<Observation>> {
     Grade : CodeableConcept
 }
 
-Assessment *-- Staging
-Assessment *-- Grading
-Staging *-- TNM
-Grading *-- HistopathologischesGrading
-Diagnose --> Assessment : stage.assessment
 HistopathologischesGrading --> Probe : specimen
 
 abstract Therapie {
 
 }
+
+Therapie --> Patient : subject
 
 class Prozedur <<Procedure>> {
     Code: CodeableConcept
@@ -166,7 +172,7 @@ class Prozedur <<Procedure>> {
     Körperstelle: CodeableConcept
 }
 
-Therapie *-- Prozedur
+Prozedur --* Therapie
 
 class MedikamentöseTherapie <<MedicationStatement>> {
     Wirkstoff: CodeableConcept
@@ -175,7 +181,6 @@ class MedikamentöseTherapie <<MedicationStatement>> {
     TherapieIntention: CodeableConcept
 }
 
-Therapie *-- MedikamentöseTherapie
-Patient <-- Therapie : subject
+MedikamentöseTherapie --* Therapie
 
 @enduml
