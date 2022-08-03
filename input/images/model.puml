@@ -1,7 +1,43 @@
 @startuml "GOLD"
 skinparam groupInheritance 2
 
-class Patient <<Patient>> {
+together {
+    abstract Assessment
+    abstract Staging
+    class "UICC TNM" as TNM <<Observation>>
+    class "UICC TNM Residual Tumor Classification" as ResidualTumorClassification <<Observation>> 
+    abstract Grading
+    class "Histopathological Tumor Grading WHO" as HistopathologischesGrading <<Observation>>
+    class "Tumor Disorder" as Tumorerkrankung <<Condition>>
+    class ImagingStudy
+}
+
+together {
+    abstract Therapie
+    class MedikamentöseTherapie
+}
+
+together {
+    ' class Patient
+    class "Vital Signs Base" as Vitalstatus <<Observation>> 
+    abstract Körpermaße
+    class "Body Height" as Körpergröße <<Observation>> 
+    class "Body Weight" as Körpergewicht <<Observation>>
+}
+
+together {
+    class Laborbefund <<DiagnosticReport>>
+    class Laborparameter <<Observation>>
+    class Probe <<Specimen>>
+    class Lesion <<BodyStructure>>
+}
+
+together {
+    class EpisodeOfCare
+    class Encounter
+}
+
+class Patient {
     Name
     name : HumanName
     ..
@@ -21,40 +57,31 @@ class Patient <<Patient>> {
     extension : CodeableConcept
 }
 
-class Vitalstatus <<Observation>> {
+class Vitalstatus {
     Verstorben: boolean
     Todeszeitpunkt: dateTime
     Todesursache: CodeableConcept
 }
 
-Patient <-- Vitalstatus : subject
+abstract Körpermaße {}
 
-abstract Körpermaße {
-
-}
-
-Patient <-- Körpermaße : subject
-
-class Körpergröße <<Observation>> {
+class Körpergröße {
     Messzeitpunkt : dateTime
     Messwert : Quantity
 }
 
-Körpermaße *-- Körpergröße
-
-class Körpergewicht <<Observation>> {
+class Körpergewicht {
     Messzeitpunkt : dateTime
     Messwert : Quantity
 }
 
-Körpermaße *-- Körpergewicht
-
-class Diagnose <<Condition>> {
+class Tumorerkrankung {
     Diagnose ID
     id : id
     ..
     Klinischer Status
     clinicalStatus : CodeableConcept
+
     ..
     Diagnosesicherheit
     verificationStatus : CodeableConcept
@@ -69,30 +96,17 @@ class Diagnose <<Condition>> {
     recordedDate : dateTime
 }
 
-Diagnose --> ImagingStudy : evidence.detail
-Patient <-- Diagnose : subject
-Diagnose <-- Diagnose : "ocurredFollowing"
-
 class RecistObservation <<Observation>> {
     code : CodeableConcept
     valueCodeableConcept : CodeableConcept
     effectiveDateTime : dateTime
 }
 
-RecistObservation --> Patient : subject
-
 class Laborbefund <<DiagnosticReport>> {
     ID : Identifier
 }
 
-Patient <-- Laborbefund : subject
-
-class ImagingStudy <<ImagingStudy>> {
-
-}
-
-RecistObservation --> ImagingStudy : partOf
-RecistObservation --> Therapie : partOf
+class ImagingStudy{}
 
 class Laborparameter <<Observation>> {
     Code : CodeableConcept
@@ -107,22 +121,11 @@ class Probe <<Specimen>> {
     Entnahmestelle : CodeableConcept
 }
 
-Laborbefund --> Laborparameter : result
-Laborparameter --> Probe : specimen
+abstract Assessment {}
+abstract Staging {}
+abstract Grading {}
 
-abstract Assessment {
-
-}
-
-abstract Staging {
-
-}
-
-abstract Grading {
-
-}
-
-class TNM <<Observation>> {
+class TNM {
     y : CodeableConcept
     r : CodeableConcept
     a : CodeableConcept
@@ -138,26 +141,15 @@ class TNM <<Observation>> {
     numberOfNodesExamined : Quantity
 }
 
-class ResidualTumorClassification <<Observation>> {
+class ResidualTumorClassification {
     R : CodeableConcept
 }
-
-TNM --> ResidualTumorClassification : hasMember
 
 class HistopathologischesGrading <<Observation>> {
     Grade : CodeableConcept
 }
 
-Assessment *-- Staging
-Assessment *-- Grading
-Staging *-- TNM
-Grading *-- HistopathologischesGrading
-Diagnose --> Assessment : stage.assessment
-HistopathologischesGrading --> Probe : specimen
-
-abstract Therapie {
-
-}
+abstract Therapie {}
 
 class Prozedur <<Procedure>> {
     Code: CodeableConcept
@@ -166,7 +158,6 @@ class Prozedur <<Procedure>> {
     Körperstelle: CodeableConcept
 }
 
-Therapie *-- Prozedur
 
 class MedikamentöseTherapie <<MedicationStatement>> {
     Wirkstoff: CodeableConcept
@@ -175,7 +166,49 @@ class MedikamentöseTherapie <<MedicationStatement>> {
     TherapieIntention: CodeableConcept
 }
 
-Therapie *-- MedikamentöseTherapie
-Patient <-- Therapie : subject
+class "ECOG Performance Status" as ECOG <<Observation>> {}
+class "Karnofsky Performance Status" as Karnofsky <<Observation>> {}
+class Lesion <<BodyStructure>> {}
+class EpisodeOfCare {}
+class Encounter {}
+
+
+Vitalstatus --> Patient : subject
+Körpergröße --* Körpermaße
+Körpermaße --> Patient : subject
+Körpergewicht --* Körpermaße
+Tumorerkrankung --> ImagingStudy : evidence.detail
+Tumorerkrankung --> Patient : subject
+Tumorerkrankung --> Tumorerkrankung : "ocurredFollowing"
+Tumorerkrankung --> Assessment : stage.assessment
+RecistObservation --> Patient : subject
+RecistObservation --> ImagingStudy : partOf
+RecistObservation --> Therapie : partOf
+Laborbefund --> Patient : subject
+Laborbefund --> Laborparameter : result
+Laborparameter --> Probe : specimen
+Staging --* Assessment
+Grading --* Assessment
+TNM --* Staging
+TNM --> ResidualTumorClassification : hasMember
+HistopathologischesGrading --* Grading
+HistopathologischesGrading --> Probe : specimen
+Therapie --> Patient : subject
+Prozedur --* Therapie
+MedikamentöseTherapie --* Therapie
+ECOG --> Patient : subject
+Karnofsky --> Patient : subject
+Lesion --> Patient : subject
+Probe --> Lesion : Extension
+Probe --> Patient : subject
+Laborparameter --> Lesion : focus
+Laborbefund --> Probe : specimen
+Encounter --> EpisodeOfCare : episodeOfCare
+EpisodeOfCare --> Tumorerkrankung : diagnosis.condition
+TNM --> EpisodeOfCare : Extension
+TNM --> Encounter : encounter
+Laborbefund --> Encounter : Extension
+Laborbefund --> Tumorerkrankung : Extension
+Prozedur --> Laborbefund : reasonReference
 
 @enduml
