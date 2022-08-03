@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "TumorDisorder"];
   fhir:StructureDefinition.title [ fhir:value "Tumor Disorder"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-01T09:59:26+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-03T15:26:13+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
