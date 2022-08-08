@@ -13,6 +13,7 @@ Alias: $RID = http://radlex.org/RID
 // Alias:   $HGNC = http://www.genenames.org
 // Alias:   $HGVS = http://varnomen.hgvs.org
 // Alias:   $SO = http://sequenceontology.org
+Alias: $iso3166 = urn:iso:std:iso:3166
 
 // From Terminology.hl7.org
 // Alias:   $IDTYPE = http://terminology.hl7.org/CodeSystem/v2-0203
@@ -30,6 +31,9 @@ Alias:   $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 // Alias:   $MedReqCat = 	http://terminology.hl7.org/CodeSystem/medicationrequest-category
 // Alias:   $RefMeaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
 // Alias:   $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
+Alias: $StudyPrimPurpType = http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html
+Alias: $StudyObjectiveType = http://terminology.hl7.org/CodeSystem/research-study-objective-type
+Alias: $StudyPhase = http://terminology.hl7.org/CodeSystem/research-study-phase
 
 // From hl7.org
 Alias: $BodyWeightUCUM = http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.0
