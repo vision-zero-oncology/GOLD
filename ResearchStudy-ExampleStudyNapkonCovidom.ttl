@@ -1,0 +1,127 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyNapkonCovidom> a fhir:ResearchStudy;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExampleStudyNapkonCovidom"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study";
+       fhir:index 0;
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NCT04679584</p><p><b>title</b>: COVIDOM: Longterm Morbidity of SARS-CoV-2 Infection and COVID-19 Disease - Consequences for Health Status and Quality of Life (NAPKON-POP)</p><p><b>status</b>: active</p><p><b>primaryPurposeType</b>: <span title=\"Codes: {http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html supportive-care}\">supportive-care</span></p><p><b>phase</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-phase n-a}\">N/A</span></p><p><b>category</b>: <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C16084}\">Observational Study</span>, <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C15208}\">Cohort Study</span>, <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C49659}\">Open Label Study</span>, <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C28279}\">Controlled Study</span></p><p><b>condition</b>: <span title=\"Codes: {http://snomed.info/sct 840539006}\">Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)</span></p><p><b>location</b>: <span title=\"Codes: {urn:iso:std:iso:3166 DEU}\">Germany</span></p><p><b>description</b>: Assessment of SARS-CoV-2-longterm morbidity and sequels on the population level</p><p><b>period</b>: 2020-11-16 --&gt; 2021-12-31</p><p><b>sponsor</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.3.1&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Organization/UKSH\">Organization/UKSH</a></p><p><b>site</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.3.1&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Organization/UKSH\">Organization/UKSH</a></p><h3>Objectives</h3><table class=\"grid\"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Longterm morbidities and sequels of SARS-CoV-2 infections in the general population</td><td><span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type primary}\">Primary</span></td></tr></table></div>"
+  ];
+  fhir:ResearchStudy.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://clinicaltrials.gov" ];
+     fhir:Identifier.value [ fhir:value "NCT04679584" ]
+  ];
+  fhir:ResearchStudy.title [ fhir:value "COVIDOM: Longterm Morbidity of SARS-CoV-2 Infection and COVID-19 Disease - Consequences for Health Status and Quality of Life (NAPKON-POP)"];
+  fhir:ResearchStudy.status [ fhir:value "active"];
+  fhir:ResearchStudy.primaryPurposeType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html" ];
+       fhir:Coding.code [ fhir:value "supportive-care" ]
+     ]
+  ];
+  fhir:ResearchStudy.phase [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-phase" ];
+       fhir:Coding.code [ fhir:value "n-a" ]
+     ]
+  ];
+  fhir:ResearchStudy.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+       fhir:Coding.code [ fhir:value "C16084" ];
+       fhir:Coding.display [ fhir:value "Observational Study" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+       fhir:Coding.code [ fhir:value "C15208" ];
+       fhir:Coding.display [ fhir:value "Cohort Study" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+       fhir:Coding.code [ fhir:value "C49659" ];
+       fhir:Coding.display [ fhir:value "Open Label Study" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+       fhir:Coding.code [ fhir:value "C28279" ];
+       fhir:Coding.display [ fhir:value "Controlled Study" ]
+     ]
+  ];
+  fhir:ResearchStudy.condition [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:840539006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "840539006" ];
+       fhir:Coding.display [ fhir:value "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)" ]
+     ]
+  ];
+  fhir:ResearchStudy.location [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DEU" ]
+     ]
+  ];
+  fhir:ResearchStudy.description [ fhir:value "Assessment of SARS-CoV-2-longterm morbidity and sequels on the population level"];
+  fhir:ResearchStudy.period [
+     fhir:Period.start [ fhir:value "2020-11-16"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2021-12-31"^^xsd:date ]
+  ];
+  fhir:ResearchStudy.sponsor [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Organization/UKSH>;
+     fhir:Reference.reference [ fhir:value "Organization/UKSH" ]
+  ];
+  fhir:ResearchStudy.site [
+     fhir:index 0;
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Organization/UKSH>;
+     fhir:Reference.reference [ fhir:value "Organization/UKSH" ]
+  ];
+  fhir:ResearchStudy.objective [
+     fhir:index 0;
+     fhir:ResearchStudy.objective.name [ fhir:value "Longterm morbidities and sequels of SARS-CoV-2 infections in the general population" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "primary" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyNapkonCovidom.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

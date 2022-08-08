@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ResearchStudy xmlns="http://hl7.org/fhir">
+  <id value="ExampleStudyNapkonCovidom"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NCT04679584</p><p><b>title</b>: COVIDOM: Longterm Morbidity of SARS-CoV-2 Infection and COVID-19 Disease - Consequences for Health Status and Quality of Life (NAPKON-POP)</p><p><b>status</b>: active</p><p><b>primaryPurposeType</b>: <span title="Codes: {http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html supportive-care}">supportive-care</span></p><p><b>phase</b>: <span title="Codes: {http://terminology.hl7.org/CodeSystem/research-study-phase n-a}">N/A</span></p><p><b>category</b>: <span title="Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C16084}">Observational Study</span>, <span title="Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C15208}">Cohort Study</span>, <span title="Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C49659}">Open Label Study</span>, <span title="Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C28279}">Controlled Study</span></p><p><b>condition</b>: <span title="Codes: {http://snomed.info/sct 840539006}">Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)</span></p><p><b>location</b>: <span title="Codes: {urn:iso:std:iso:3166 DEU}">Germany</span></p><p><b>description</b>: Assessment of SARS-CoV-2-longterm morbidity and sequels on the population level</p><p><b>period</b>: 2020-11-16 --&gt; 2021-12-31</p><p><b>sponsor</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.3.1&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Organization/UKSH">Organization/UKSH</a></p><p><b>site</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.3.1&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Organization/UKSH">Organization/UKSH</a></p><h3>Objectives</h3><table class="grid"><tr><td>-</td><td><b>Name</b></td><td><b>Type</b></td></tr><tr><td>*</td><td>Longterm morbidities and sequels of SARS-CoV-2 infections in the general population</td><td><span title="Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type primary}">Primary</span></td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://clinicaltrials.gov"/>
+    <value value="NCT04679584"/>
+  </identifier>
+  <title value="COVIDOM: Longterm Morbidity of SARS-CoV-2 Infection and COVID-19 Disease - Consequences for Health Status and Quality of Life (NAPKON-POP)"/>
+  <status value="active"/>
+  <primaryPurposeType>
+    <coding>
+      <system value="http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html"/>
+      <code value="supportive-care"/>
+    </coding>
+  </primaryPurposeType>
+  <phase>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/research-study-phase"/>
+      <code value="n-a"/>
+    </coding>
+  </phase>
+  <category>
+    <coding>
+      <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+      <code value="C16084"/>
+      <display value="Observational Study"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+      <code value="C15208"/>
+      <display value="Cohort Study"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+      <code value="C49659"/>
+      <display value="Open Label Study"/>
+    </coding>
+  </category>
+  <category>
+    <coding>
+      <system value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"/>
+      <code value="C28279"/>
+      <display value="Controlled Study"/>
+    </coding>
+  </category>
+  <condition>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="840539006"/>
+      <display value="Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)"/>
+    </coding>
+  </condition>
+  <location>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </location>
+  <description value="Assessment of SARS-CoV-2-longterm morbidity and sequels on the population level"/>
+  <period>
+    <start value="2020-11-16"/>
+    <end value="2021-12-31"/>
+  </period>
+  <sponsor>
+    <reference value="Organization/UKSH"/>
+  </sponsor>
+  <site>
+    <reference value="Organization/UKSH"/>
+  </site>
+  <objective>
+    <name value="Longterm morbidities and sequels of SARS-CoV-2 infections in the general population"/>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/research-study-objective-type"/>
+        <code value="primary"/>
+      </coding>
+    </type>
+  </objective>
+</ResearchStudy>

@@ -175,6 +175,13 @@
     "name": "VS_Studienkategorien_NCIT"
   },
   {
+    "id": "study-focus-ncit",
+    "type": "ValueSet",
+    "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/study-focus-ncit",
+    "version": "0.1.0",
+    "name": "VS_StudyFocus_NCIT"
+  },
+  {
     "id": "vs-tnm-classification-type-loinc",
     "type": "ValueSet",
     "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc",

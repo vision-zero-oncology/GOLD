@@ -487,6 +487,17 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/study-focus-ncit"/>
+      </reference>
+      <name value="ValueSet Study Focus NCIt"/>
+      <description value="Study Focus aus NCI Thesaurus (NCIt)"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/vs-tnm-classification-type-loinc"/>
       </reference>
       <name value="ValueSet TNM Classification Type LOINC"/>
@@ -756,6 +767,17 @@
       <name value="Example RECIST assessment timepoint response"/>
       <description value="Example RECIST assessment timepoint response observation."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/ExampleStudyNapkonCovidom"/>
+      </reference>
+      <name value="Example Study NAPKON COVIDOM"/>
+      <description value="Example Study NAPKON COVIDOM"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

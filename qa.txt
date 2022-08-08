@@ -1,9 +1,9 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 29, warn = 87, info = 56
-IG Publisher Version: 1.1.83 Out of date - current version is 1.1.127
-Generated Wed Aug 03 15:27:39 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+err = 40, warn = 88, info = 60
+IG Publisher Version: 1.1.83 Out of date - current version is 1.1.128
+Generated Mon Aug 08 13:19:14 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 19 / 0 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-cs-diagnosesicherung-icdo3 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
@@ -23,6 +23,7 @@ Generated Wed Aug 03 15:27:39 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/Observation-example-tnm-ypT1bpN139snL0V0Pn1cM0R0 : 0 / 11 / 13
  /github/workspace/fsh-generated/resources/Observation-example-vital-signs-base : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom : 11 / 0 / 5
  /github/workspace/fsh-generated/resources/StructureDefinition-body-height : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-body-weight : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-diagnosesicherung-icd-o : 0 / 1 / 1
@@ -31,7 +32,7 @@ Generated Wed Aug 03 15:27:39 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/StructureDefinition-histopathological-grading-who : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-karnofsky-performance-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-recist-assessment-response : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-sd-clinical-study : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-sd-clinical-study : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-tumor-disorder : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm : 0 / 0 / 7
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-prefix-cpu : 0 / 0 / 1
@@ -42,6 +43,7 @@ Generated Wed Aug 03 15:27:39 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/ValueSet-recist-asstimepoint-response-vs : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-studiendesign-ncit : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-studienkategorien-ncit : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-study-focus-ncit : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-type-of-blinding-ncit : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-type-of-randomization-ncit : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-type-of-study-arm-ncit : 0 / 1 / 1
@@ -203,6 +205,22 @@ WARNING: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.component
 INFORMATION: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.component[6].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 == fsh-generated/resources/Observation-example-vital-signs-base.json ==
 == fsh-generated/resources/Patient-ExamplePatient.json ==
+== fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json ==
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy: ResearchStudy.category:studyCategory: minimum required = 1, but only found 0 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study)
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.primaryPurposeType.coding[0]: The code system reference http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.primaryPurposeType.coding[0].system: URL value 'http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html' does not resolve
+INFORMATION: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.category[0].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
+INFORMATION: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.category[1].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
+INFORMATION: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.category[2].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
+INFORMATION: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.category[3].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.sponsor: Unable to resolve resource 'Organization/UKSH'
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.site[0]: Unable to resolve resource 'Organization/UKSH'
 == fsh-generated/resources/StructureDefinition-body-height.json ==
 == fsh-generated/resources/StructureDefinition-body-weight.json ==
 == fsh-generated/resources/StructureDefinition-diagnosesicherung-icd-o.json ==
@@ -215,7 +233,6 @@ WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fh
 INFORMATION: StructureDefinition/recist-assessment-response: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://radlex.org/RID' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/recist-assessment-response: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://radlex.org/RID' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-sd-clinical-study.json ==
-WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-tumor-disorder.json ==
 WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-uicc-tnm.json ==
@@ -239,6 +256,9 @@ WARNING: ValueSet.where(id = 'studiendesign-ncit'): Error from server: Unable to
 == fsh-generated/resources/ValueSet-studienkategorien-ncit.json ==
 WARNING: ValueSet/studienkategorien-ncit: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'studienkategorien-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
+== fsh-generated/resources/ValueSet-study-focus-ncit.json ==
+WARNING: ValueSet/study-focus-ncit: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
+WARNING: ValueSet.where(id = 'study-focus-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 == fsh-generated/resources/ValueSet-type-of-blinding-ncit.json ==
 WARNING: ValueSet/type-of-blinding-ncit: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'type-of-blinding-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl

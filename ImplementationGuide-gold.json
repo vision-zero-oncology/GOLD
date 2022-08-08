@@ -688,6 +688,20 @@
           }
         ],
         "reference": {
+          "reference": "ValueSet/study-focus-ncit"
+        },
+        "name": "ValueSet Study Focus NCIt",
+        "description": "Study Focus aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ValueSet"
+          }
+        ],
+        "reference": {
           "reference": "ValueSet/vs-tnm-classification-type-loinc"
         },
         "name": "ValueSet TNM Classification Type LOINC",
@@ -1029,6 +1043,20 @@
         "name": "Example RECIST assessment timepoint response",
         "description": "Example RECIST assessment timepoint response observation.",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchStudy"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchStudy/ExampleStudyNapkonCovidom"
+        },
+        "name": "Example Study NAPKON COVIDOM",
+        "description": "Example Study NAPKON COVIDOM",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study"
       },
       {
         "extension": [
