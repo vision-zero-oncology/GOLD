@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "VS_Studienkategorien_NCIT"];
   fhir:ValueSet.title [ fhir:value "ValueSet Studienkategorien NCIt"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-08-08T13:17:46+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-08-08T13:24:36+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ValueSet.contact [
      fhir:index 0;

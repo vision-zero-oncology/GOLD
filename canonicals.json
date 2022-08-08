@@ -77,6 +77,13 @@
     "name": "SD_Clinical_Study"
   },
   {
+    "id": "sd-probandin",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin",
+    "version": "0.1.0",
+    "name": "SD_Proband"
+  },
+  {
     "id": "tumor-disorder",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder",

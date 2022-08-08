@@ -55,6 +55,12 @@
         "title": "SD Clinical Study"
       }
     ],
+    "ResearchSubject": [
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin",
+        "title": "ProbandIn"
+      }
+    ],
     "Condition": [
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder",

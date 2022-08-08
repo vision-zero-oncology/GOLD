@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ResearchSubject xmlns="http://hl7.org/fhir">
+  <id value="ExampleResearchSubjectStudienteilnehmer"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Anonymous identifier: 12345</p><p><b>status</b>: candidate</p><p><b>period</b>: 2019-09-06 --&gt; (ongoing)</p><p><b>study</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.3.1&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ResearchStudy/MII-Beispielstudie">ResearchStudy/MII-Beispielstudie</a></p><p><b>individual</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.3.1&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/MII-Patient">Patient/MII-Patient</a></p><p><b>consent</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.3.1&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Consent/MII-Consent">Consent/MII-Consent</a></p></div>
+  </text>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="ANON"/>
+      </coding>
+    </type>
+    <system value="https://www.example.org/fhir/core/sid/SubjectIdentificationCode"/>
+    <value value="12345"/>
+  </identifier>
+  <status value="candidate"/>
+  <period>
+    <start value="2019-09-06"/>
+  </period>
+  <study>
+    <reference value="ResearchStudy/MII-Beispielstudie"/>
+  </study>
+  <individual>
+    <reference value="Patient/MII-Patient"/>
+  </individual>
+  <consent>
+    <reference value="Consent/MII-Consent"/>
+  </consent>
+</ResearchSubject>

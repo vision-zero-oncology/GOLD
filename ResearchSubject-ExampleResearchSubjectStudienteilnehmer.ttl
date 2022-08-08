@@ -1,0 +1,57 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ResearchSubject/ExampleResearchSubjectStudienteilnehmer> a fhir:ResearchSubject;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExampleResearchSubjectStudienteilnehmer"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin";
+       fhir:index 0;
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: Anonymous identifier: 12345</p><p><b>status</b>: candidate</p><p><b>period</b>: 2019-09-06 --&gt; (ongoing)</p><p><b>study</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.3.1&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ResearchStudy/MII-Beispielstudie\">ResearchStudy/MII-Beispielstudie</a></p><p><b>individual</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.3.1&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/MII-Patient\">Patient/MII-Patient</a></p><p><b>consent</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.3.1&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Consent/MII-Consent\">Consent/MII-Consent</a></p></div>"
+  ];
+  fhir:ResearchSubject.identifier [
+     fhir:index 0;
+     fhir:Identifier.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
+         fhir:Coding.code [ fhir:value "ANON" ]
+       ]
+     ];
+     fhir:Identifier.system [ fhir:value "https://www.example.org/fhir/core/sid/SubjectIdentificationCode" ];
+     fhir:Identifier.value [ fhir:value "12345" ]
+  ];
+  fhir:ResearchSubject.status [ fhir:value "candidate"];
+  fhir:ResearchSubject.period [
+     fhir:Period.start [ fhir:value "2019-09-06"^^xsd:date ]
+  ];
+  fhir:ResearchSubject.study [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchStudy/MII-Beispielstudie>;
+     fhir:Reference.reference [ fhir:value "ResearchStudy/MII-Beispielstudie" ]
+  ];
+  fhir:ResearchSubject.individual [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/MII-Patient>;
+     fhir:Reference.reference [ fhir:value "Patient/MII-Patient" ]
+  ];
+  fhir:ResearchSubject.consent [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Consent/MII-Consent>;
+     fhir:Reference.reference [ fhir:value "Consent/MII-Consent" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ResearchSubject/ExampleResearchSubjectStudienteilnehmer.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

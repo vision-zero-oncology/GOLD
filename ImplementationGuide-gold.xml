@@ -311,6 +311,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/sd-probandin"/>
+      </reference>
+      <name value="ProbandIn"/>
+      <description value="Dieses Profil beschreibt eine Proband*in."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/uicc-tnm"/>
       </reference>
       <name value="Profile UICC TNM"/>
@@ -767,6 +778,16 @@
       <name value="Example RECIST assessment timepoint response"/>
       <description value="Example RECIST assessment timepoint response observation."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchSubject"/>
+      </extension>
+      <reference>
+        <reference value="ResearchSubject/ExampleResearchSubjectStudienteilnehmer"/>
+      </reference>
+      <name value="ExampleResearchSubjectStudienteilnehmer"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

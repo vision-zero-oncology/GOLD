@@ -464,6 +464,20 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/sd-probandin"
+        },
+        "name": "ProbandIn",
+        "description": "Dieses Profil beschreibt eine Proband*in.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/uicc-tnm"
         },
         "name": "Profile UICC TNM",
@@ -1043,6 +1057,19 @@
         "name": "Example RECIST assessment timepoint response",
         "description": "Example RECIST assessment timepoint response observation.",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "ResearchSubject"
+          }
+        ],
+        "reference": {
+          "reference": "ResearchSubject/ExampleResearchSubjectStudienteilnehmer"
+        },
+        "name": "ExampleResearchSubjectStudienteilnehmer",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin"
       },
       {
         "extension": [
