@@ -1,5 +1,5 @@
 // Vitals Signs Base Profile
-Profile: SD_Vital_Signs_Base
+Profile: Vital_Signs_Base
 Parent: Observation
 Id: vital-signs-base
 Title: "Profile Vital Signs Base"
@@ -46,8 +46,8 @@ Description: "Example of a vital signs base observation."
 * valueQuantity = 167 'cm' "centimeter"
 
 //Body Height
-Profile: SD_Body_Height
-Parent: SD_Vital_Signs_Base
+Profile: Body_Height
+Parent: Vital_Signs_Base
 Id: body-height
 Title: "Profile Body Height"
 Description: "Profile for body height of a patient"
@@ -92,8 +92,8 @@ Description: "Example body height of a patient."
 * valueQuantity = 167 'cm' "centimeter"
 
 // Body Weight
-Profile: SD_Body_Weight
-Parent: SD_Vital_Signs_Base
+Profile: Body_Weight
+Parent: Vital_Signs_Base
 Id: body-weight
 Title: "Profile Body Weight"
 Description: "Profile for body weight of a patient"
@@ -138,7 +138,7 @@ Description: "Example body weight of a patient."
 * valueQuantity = 84 'kg' "kilogram"
 
 // ECOG
-Profile: SD_ECOG_Performance_Status
+Profile: ECOG_Performance_Status
 Parent: Observation
 Id: ecog-performance-status
 Title: "Profile ECOG Performance Status"
@@ -194,7 +194,7 @@ Description: "Example ECOG status observation."
 
 // KarnofskyIndex
 
-Profile: SD_Karnofsky_Performance_Status
+Profile: Karnofsky_Performance_Status
 Parent: Observation
 Id: karnofsky-performance-status
 Title: "Profile Karnofsky Performance Status"
@@ -235,7 +235,7 @@ Description: "Example Karnofsky performance status observation."
 
 // Morphology(Histology) / Topography
 
-Profile: SD_Histology_Topography
+Profile: Histology_Topography
 Parent: Observation
 Id: histology-topography
 Title: "Profile Histology Topography"
@@ -311,7 +311,7 @@ Description: "Example tumor histology and topography observation."
 
 // Histologic Tumor Grade
 
-Profile: SD_Histopathological_Grading_WHO
+Profile: Histopathological_Grading_WHO
 Parent: Observation
 Id: histopathological-grading-who
 Title: "Profile Histopathological Tumor Grading WHO"
