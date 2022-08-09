@@ -3,7 +3,7 @@
   "id": "ExampleResearchSubjectStudienteilnehmer",
   "meta": {
     "profile": [
-      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin"
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"
     ]
   },
   "text": {

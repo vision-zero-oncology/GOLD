@@ -23,10 +23,10 @@
   ];
   fhir:StructureDefinition.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"];
   fhir:StructureDefinition.version [ fhir:value "0.1.0"];
-  fhir:StructureDefinition.name [ fhir:value "SD_Vital_Signs_Base"];
+  fhir:StructureDefinition.name [ fhir:value "Vital_Signs_Base"];
   fhir:StructureDefinition.title [ fhir:value "Profile Vital Signs Base"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-08T13:24:36+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-09T12:15:50+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;

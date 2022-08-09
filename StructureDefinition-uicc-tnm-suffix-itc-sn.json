@@ -7,10 +7,10 @@
   },
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn",
   "version": "0.1.0",
-  "name": "SD_UICC_TNM_Suffix_ITC_SN",
+  "name": "UICC_TNM_Suffix_ITC_SN",
   "title": "Extension UICC TNM Suffix ITC SN",
   "status": "active",
-  "date": "2022-08-08T13:24:36+00:00",
+  "date": "2022-08-09T12:15:50+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {

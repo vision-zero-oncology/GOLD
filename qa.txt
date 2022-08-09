@@ -3,7 +3,7 @@
 
 err = 43, warn = 89, info = 60
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.128
-Generated Mon Aug 08 13:26:16 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Tue Aug 09 12:18:51 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 19 / 1 / 0
  /github/workspace/fsh-generated/resources/CodeSystem-cs-diagnosesicherung-icdo3 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
@@ -27,14 +27,14 @@ Generated Mon Aug 08 13:26:16 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/ResearchSubject-ExampleResearchSubjectStudienteilnehmer : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-body-height : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-body-weight : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-clinical-study : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-diagnosesicherung-icd-o : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-ecog-performance-status : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-histology-topography : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-histopathological-grading-who : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-karnofsky-performance-status : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-probandin : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-recist-assessment-response : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-sd-clinical-study : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-sd-probandin : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-tumor-disorder : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm : 0 / 0 / 7
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-prefix-cpu : 0 / 0 / 1
@@ -209,13 +209,13 @@ INFORMATION: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.compo
 == fsh-generated/resources/Observation-example-vital-signs-base.json ==
 == fsh-generated/resources/Patient-ExamplePatient.json ==
 == fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json ==
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy: ResearchStudy.category:studyCategory: minimum required = 1, but only found 0 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study)
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy: ResearchStudy.category:studyCategory: minimum required = 1, but only found 0 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study)
 ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.primaryPurposeType.coding[0]: The code system reference http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}
 ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.primaryPurposeType.coding[0].system: URL value 'http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html' does not resolve
 INFORMATION: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.category[0].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
@@ -230,17 +230,17 @@ ERROR: ResearchSubject/ExampleResearchSubjectStudienteilnehmer: ResearchSubject.
 ERROR: ResearchSubject/ExampleResearchSubjectStudienteilnehmer: ResearchSubject.consent: Unable to resolve resource 'Consent/MII-Consent'
 == fsh-generated/resources/StructureDefinition-body-height.json ==
 == fsh-generated/resources/StructureDefinition-body-weight.json ==
+== fsh-generated/resources/StructureDefinition-clinical-study.json ==
 == fsh-generated/resources/StructureDefinition-diagnosesicherung-icd-o.json ==
 WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o'): The Implementation Guide contains no examples for this extension
 == fsh-generated/resources/StructureDefinition-ecog-performance-status.json ==
 == fsh-generated/resources/StructureDefinition-histology-topography.json ==
 == fsh-generated/resources/StructureDefinition-histopathological-grading-who.json ==
 == fsh-generated/resources/StructureDefinition-karnofsky-performance-status.json ==
+== fsh-generated/resources/StructureDefinition-probandin.json ==
 == fsh-generated/resources/StructureDefinition-recist-assessment-response.json ==
 INFORMATION: StructureDefinition/recist-assessment-response: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://radlex.org/RID' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/recist-assessment-response: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://radlex.org/RID' is unknown so the code cannot be validated
-== fsh-generated/resources/StructureDefinition-sd-clinical-study.json ==
-== fsh-generated/resources/StructureDefinition-sd-probandin.json ==
 == fsh-generated/resources/StructureDefinition-tumor-disorder.json ==
 WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder'): The Implementation Guide contains no examples for this profile
 == fsh-generated/resources/StructureDefinition-uicc-tnm.json ==

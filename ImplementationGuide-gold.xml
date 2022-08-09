@@ -223,17 +223,6 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/recist-assessment-response"/>
-      </reference>
-      <name value="Profile RECIST timepoint assessment response"/>
-      <description value="Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/&#xA;Please note there is no assessment timepoint response for the baseline assessment."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
         <reference value="StructureDefinition/body-height"/>
       </reference>
       <name value="Profile Body Height"/>
@@ -256,9 +245,9 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sd-clinical-study"/>
+        <reference value="StructureDefinition/clinical-study"/>
       </reference>
-      <name value="SD Clinical Study"/>
+      <name value="Clinical Study"/>
       <description value="This profile describes a clinical study in which a patient takes part."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -311,10 +300,32 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/sd-probandin"/>
+        <reference value="StructureDefinition/probandin"/>
       </reference>
       <name value="ProbandIn"/>
       <description value="Dieses Profil beschreibt eine Proband*in."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/recist-assessment-response"/>
+      </reference>
+      <name value="Profile RECIST timepoint assessment response"/>
+      <description value="Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/&#xA;Please note there is no assessment timepoint response for the baseline assessment."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/tumor-disorder"/>
+      </reference>
+      <name value="Tumor Disorder"/>
+      <description value="Profile for a tumor disorder"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -348,17 +359,6 @@
       </reference>
       <name value="Profile Vital Signs Base"/>
       <description value="Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="StructureDefinition:resource"/>
-      </extension>
-      <reference>
-        <reference value="StructureDefinition/tumor-disorder"/>
-      </reference>
-      <name value="Tumor Disorder"/>
-      <description value="Profile for a tumor disorder"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -787,7 +787,7 @@
         <reference value="ResearchSubject/ExampleResearchSubjectStudienteilnehmer"/>
       </reference>
       <name value="ExampleResearchSubjectStudienteilnehmer"/>
-      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -798,7 +798,7 @@
       </reference>
       <name value="Example Study NAPKON COVIDOM"/>
       <description value="Example Study NAPKON COVIDOM"/>
-      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

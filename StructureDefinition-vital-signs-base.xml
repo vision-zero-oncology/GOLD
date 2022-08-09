@@ -28,10 +28,10 @@
   </extension>
   <url value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"/>
   <version value="0.1.0"/>
-  <name value="SD_Vital_Signs_Base"/>
+  <name value="Vital_Signs_Base"/>
   <title value="Profile Vital Signs Base"/>
   <status value="active"/>
-  <date value="2022-08-08T13:24:36+00:00"/>
+  <date value="2022-08-09T12:15:50+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>

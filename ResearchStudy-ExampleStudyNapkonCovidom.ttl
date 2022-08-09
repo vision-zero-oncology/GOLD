@@ -11,9 +11,9 @@
   fhir:Resource.id [ fhir:value "ExampleStudyNapkonCovidom"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study";
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study";
        fhir:index 0;
-       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study>
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>
      ]
   ];
   fhir:DomainResource.text [

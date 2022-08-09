@@ -352,20 +352,6 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/recist-assessment-response"
-        },
-        "name": "Profile RECIST timepoint assessment response",
-        "description": "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/\nPlease note there is no assessment timepoint response for the baseline assessment.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
           "reference": "StructureDefinition/body-height"
         },
         "name": "Profile Body Height",
@@ -394,9 +380,9 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/sd-clinical-study"
+          "reference": "StructureDefinition/clinical-study"
         },
-        "name": "SD Clinical Study",
+        "name": "Clinical Study",
         "description": "This profile describes a clinical study in which a patient takes part.",
         "exampleBoolean": false
       },
@@ -464,10 +450,38 @@
           }
         ],
         "reference": {
-          "reference": "StructureDefinition/sd-probandin"
+          "reference": "StructureDefinition/probandin"
         },
         "name": "ProbandIn",
         "description": "Dieses Profil beschreibt eine Proband*in.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/recist-assessment-response"
+        },
+        "name": "Profile RECIST timepoint assessment response",
+        "description": "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/\nPlease note there is no assessment timepoint response for the baseline assessment.",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/tumor-disorder"
+        },
+        "name": "Tumor Disorder",
+        "description": "Profile for a tumor disorder",
         "exampleBoolean": false
       },
       {
@@ -510,20 +524,6 @@
         },
         "name": "Profile Vital Signs Base",
         "description": "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes.",
-        "exampleBoolean": false
-      },
-      {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-            "valueString": "StructureDefinition:resource"
-          }
-        ],
-        "reference": {
-          "reference": "StructureDefinition/tumor-disorder"
-        },
-        "name": "Tumor Disorder",
-        "description": "Profile for a tumor disorder",
         "exampleBoolean": false
       },
       {
@@ -1069,7 +1069,7 @@
           "reference": "ResearchSubject/ExampleResearchSubjectStudienteilnehmer"
         },
         "name": "ExampleResearchSubjectStudienteilnehmer",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin"
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"
       },
       {
         "extension": [
@@ -1083,7 +1083,7 @@
         },
         "name": "Example Study NAPKON COVIDOM",
         "description": "Example Study NAPKON COVIDOM",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study"
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
       },
       {
         "extension": [

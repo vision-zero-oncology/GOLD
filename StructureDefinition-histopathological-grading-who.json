@@ -17,10 +17,10 @@
   ],
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who",
   "version": "0.1.0",
-  "name": "SD_Histopathological_Grading_WHO",
+  "name": "Histopathological_Grading_WHO",
   "title": "Profile Histopathological Tumor Grading WHO",
   "status": "active",
-  "date": "2022-08-08T13:24:36+00:00",
+  "date": "2022-08-09T12:15:50+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {

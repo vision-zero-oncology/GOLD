@@ -3,7 +3,7 @@
   "id": "ExampleStudyNapkonCovidom",
   "meta": {
     "profile": [
-      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study"
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
     ]
   },
   "text": {

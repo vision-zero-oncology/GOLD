@@ -51,13 +51,13 @@
     ],
     "ResearchStudy": [
       {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study",
-        "title": "SD Clinical Study"
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study",
+        "title": "Clinical Study"
       }
     ],
     "ResearchSubject": [
       {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin",
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin",
         "title": "ProbandIn"
       }
     ],

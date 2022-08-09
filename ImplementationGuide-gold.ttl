@@ -337,20 +337,6 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/recist-assessment-response" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile RECIST timepoint assessment response" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/\nPlease note there is no assessment timepoint response for the baseline assessment." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 1;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height>;
          fhir:Reference.reference [ fhir:value "StructureDefinition/body-height" ]
        ];
@@ -358,7 +344,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for body height of a patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 2;
+       fhir:index 1;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -372,21 +358,21 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for body weight of a patient" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 3;
+       fhir:index 2;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-clinical-study" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/clinical-study" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "SD Clinical Study" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Clinical Study" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "This profile describes a clinical study in which a patient takes part." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 4;
+       fhir:index 3;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -400,7 +386,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 5;
+       fhir:index 4;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -414,7 +400,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 6;
+       fhir:index 5;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -428,7 +414,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the description of a tumor's grade using the general four-tier grading scheme following the recommendations of the WHO classification of tumors and UICC." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 7;
+       fhir:index 6;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -442,6 +428,20 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
+       fhir:index 7;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/probandin" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ProbandIn" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dieses Profil beschreibt eine Proband*in." ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
        fhir:index 8;
        fhir:Element.extension [
          fhir:index 0;
@@ -449,14 +449,28 @@
          fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/sd-probandin" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/recist-assessment-response" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "ProbandIn" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Dieses Profil beschreibt eine Proband*in." ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile RECIST timepoint assessment response" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/\nPlease note there is no assessment timepoint response for the baseline assessment." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 9;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder>;
+         fhir:Reference.reference [ fhir:value "StructureDefinition/tumor-disorder" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tumor Disorder" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for a tumor disorder" ];
+       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
+     ], [
+       fhir:index 10;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -470,7 +484,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the tumor classification using TNM stage groups (I, II, III, or IV) and TNM staging elements (T, N, and M)." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 10;
+       fhir:index 11;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -484,7 +498,7 @@
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the residual tumor (R) classification as part of TNM." ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
-       fhir:index 11;
+       fhir:index 12;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -496,20 +510,6 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Profile Vital Signs Base" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes." ];
-       fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
-     ], [
-       fhir:index 12;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
-         fhir:Extension.valueString [ fhir:value "StructureDefinition:resource" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder>;
-         fhir:Reference.reference [ fhir:value "StructureDefinition/tumor-disorder" ]
-       ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Tumor Disorder" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Profile for a tumor disorder" ];
        fhir:ImplementationGuide.definition.resource.exampleBoolean [ fhir:value "false"^^xsd:boolean ]
      ], [
        fhir:index 13;
@@ -1059,8 +1059,8 @@
        ];
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "ExampleResearchSubjectStudienteilnehmer" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin";
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin>
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin>
        ]
      ], [
        fhir:index 52;
@@ -1076,8 +1076,8 @@
        fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Study NAPKON COVIDOM" ];
        fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Study NAPKON COVIDOM" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
-         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study";
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-clinical-study>
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>
        ]
      ], [
        fhir:index 53;

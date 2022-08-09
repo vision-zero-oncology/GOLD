@@ -10,9 +10,9 @@
   fhir:Resource.id [ fhir:value "ExampleResearchSubjectStudienteilnehmer"];
   fhir:Resource.meta [
      fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin";
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin";
        fhir:index 0;
-       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/sd-probandin>
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin>
      ]
   ];
   fhir:DomainResource.text [
