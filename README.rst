@@ -39,6 +39,7 @@ Working Group Christof von Kalle, CSC Charité & BIH (in alphabetical order)
 
 Working Group Sylvia Thun, BIH@Charité (in alphabetical order)
 
+* `Alexander Bartschke <https://github.com/Kosmos3>`_
 * `Andrea Essenwanger <https://github.com/bytegnome>`_
 * `Julian Saß <https://github.com/julsas>`_
 * Anna Trelinska-Finger, Charité CCC
