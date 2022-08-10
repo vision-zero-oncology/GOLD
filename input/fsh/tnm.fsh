@@ -1,5 +1,5 @@
 // UICC TNM Profile
-Profile: SD_UICC_TNM
+Profile: UICC_TNM
 Parent: Observation
 Id: uicc-tnm
 Title: "Profile UICC TNM"
@@ -18,7 +18,7 @@ Description: "Profile for the tumor classification using TNM stage groups (I, II
 * hasMember ^slicing.discriminator.path = "resolve()"
 * hasMember ^slicing.rules = #open
 * hasMember contains R-classification 0..1
-* hasMember[R-classification] only Reference(SD_UICC_TNM_R_Classification)
+* hasMember[R-classification] only Reference(UICC_TNM_R_Classification)
 * hasMember[R-classification] ^short = "Residual Tumor (R) Classification"
 * hasMember[R-classification] ^definition = "The absence or presence of residual tumour after treatment is described by the symbol R."
 * component ^slicing.discriminator.type = #pattern
@@ -55,9 +55,9 @@ Description: "Profile for the tumor classification using TNM stage groups (I, II
 * component[a-symbol].value[x] = $UICC-TNM#a "a"
 * component[T-code] ^short = "T - Primary Tumor"
 * component[T-code] ^definition = "The T-category describes the extent of the primary tumor."
-* component[T-code].extension contains SD_UICC_TNM_Prefix_CPU named cpuPrefix 0..1
-* component[T-code].extension[SD_UICC_TNM_Prefix_CPU] ^short = "Clinical or pathological classification"
-* component[T-code].extension[SD_UICC_TNM_Prefix_CPU] ^definition = "How the TNM-values are determined: clinically, by ultrasound or pathologically."
+* component[T-code].extension contains UICC_TNM_Prefix_CPU named cpuPrefix 0..1
+* component[T-code].extension[UICC_TNM_Prefix_CPU] ^short = "Clinical or pathological classification"
+* component[T-code].extension[UICC_TNM_Prefix_CPU] ^definition = "How the TNM-values are determined: clinically, by ultrasound or pathologically."
 * component[T-code].code from VS_TNM_T_Staging_Type_LOINC (required)
 * component[T-code].value[x] only CodeableConcept
 * component[T-code].value[x] from VS_TNM_T_Category_UICC (required)
@@ -69,27 +69,27 @@ Description: "Profile for the tumor classification using TNM stage groups (I, II
 * component[N-code] ^short = "N - Regional Lymph Nodes"
 * component[N-code] ^definition = "The N-category describes the absence or presence and extent of regional lymph node metastasis."
 * component[N-code].extension contains 
-    SD_UICC_TNM_Prefix_CPU named cpuPrefix 0..1 and 
-    SD_UICC_TNM_Suffix_ITC named itcSuffix 0..1 and
-    SD_UICC_TNM_Suffix_ITC_SN named snSuffix 0..1
-* component[N-code].extension[SD_UICC_TNM_Prefix_CPU] ^short = "Clinical or pathological classification"
-* component[N-code].extension[SD_UICC_TNM_Prefix_CPU] ^definition = "How the TNM-values are determined: clinically, by ultrasound or pathologically."
-* component[N-code].extension[SD_UICC_TNM_Suffix_ITC] ^short = "Isolated Tumor Cells"
-* component[N-code].extension[SD_UICC_TNM_Suffix_ITC] ^definition = "Isolated tumor cells (ITC) are single tumor cells or small clusters of cells not more than 0.2 mm in greatest extent that can be detected by routine H and E stains or immunohistochemistry."
-* component[N-code].extension[SD_UICC_TNM_Suffix_ITC_SN] ^short = "Sentinel Lymph Node"
-* component[N-code].extension[SD_UICC_TNM_Suffix_ITC_SN] ^definition = "The sentinel lymph node is the first lymph node to receive lymphatic drainage from a primary tumor. If it contains metastatic tumor this indicates that other lymph nodes may contain tumor."
+    UICC_TNM_Prefix_CPU named cpuPrefix 0..1 and 
+    UICC_TNM_Suffix_ITC named itcSuffix 0..1 and
+    UICC_TNM_Suffix_ITC_SN named snSuffix 0..1
+* component[N-code].extension[UICC_TNM_Prefix_CPU] ^short = "Clinical or pathological classification"
+* component[N-code].extension[UICC_TNM_Prefix_CPU] ^definition = "How the TNM-values are determined: clinically, by ultrasound or pathologically."
+* component[N-code].extension[UICC_TNM_Suffix_ITC] ^short = "Isolated Tumor Cells"
+* component[N-code].extension[UICC_TNM_Suffix_ITC] ^definition = "Isolated tumor cells (ITC) are single tumor cells or small clusters of cells not more than 0.2 mm in greatest extent that can be detected by routine H and E stains or immunohistochemistry."
+* component[N-code].extension[UICC_TNM_Suffix_ITC_SN] ^short = "Sentinel Lymph Node"
+* component[N-code].extension[UICC_TNM_Suffix_ITC_SN] ^definition = "The sentinel lymph node is the first lymph node to receive lymphatic drainage from a primary tumor. If it contains metastatic tumor this indicates that other lymph nodes may contain tumor."
 * component[N-code].code from VS_TNM_N_Staging_Type_LOINC (required)
 * component[N-code].value[x] only CodeableConcept
 * component[N-code].value[x] from VS_TNM_N_Category_UICC (required)
 * component[M-code] ^short = "M - Distant Metastasis"
 * component[M-code] ^definition = "The M-category describes the absence or presence of distant metastasis."
 * component[M-code].extension contains 
-    SD_UICC_TNM_Prefix_CPU named cpuPrefix 0..1 and 
-    SD_UICC_TNM_Suffix_ITC named itcSuffix 0..1
-* component[M-code].extension[SD_UICC_TNM_Prefix_CPU] ^short = "Clinical or pathological classification"
-* component[M-code].extension[SD_UICC_TNM_Prefix_CPU] ^definition = "How the TNM-values are determined: clinically, by ultrasound or pathologically."
-* component[M-code].extension[SD_UICC_TNM_Suffix_ITC] ^short = "Isolated Tumor Cells"
-* component[M-code].extension[SD_UICC_TNM_Suffix_ITC] ^definition = "Isolated tumor cells (ITC) are single tumor cells or small clusters of cells not more than 0.2 mm in greatest extent that can be detected by routine H and E stains or immunohistochemistry."
+    UICC_TNM_Prefix_CPU named cpuPrefix 0..1 and 
+    UICC_TNM_Suffix_ITC named itcSuffix 0..1
+* component[M-code].extension[UICC_TNM_Prefix_CPU] ^short = "Clinical or pathological classification"
+* component[M-code].extension[UICC_TNM_Prefix_CPU] ^definition = "How the TNM-values are determined: clinically, by ultrasound or pathologically."
+* component[M-code].extension[UICC_TNM_Suffix_ITC] ^short = "Isolated Tumor Cells"
+* component[M-code].extension[UICC_TNM_Suffix_ITC] ^definition = "Isolated tumor cells (ITC) are single tumor cells or small clusters of cells not more than 0.2 mm in greatest extent that can be detected by routine H and E stains or immunohistochemistry."
 * component[M-code].code from VS_TNM_M_Staging_Type_LOINC (required)
 * component[M-code].value[x] only CodeableConcept
 * component[M-code].value[x] from VS_TNM_M_Category_UICC (required)
@@ -121,7 +121,7 @@ Description: "Profile for the tumor classification using TNM stage groups (I, II
 * component[numberOfNodesExamined].valueQuantity.code = #1
 
 // cpu prefix Extension
-Extension: SD_UICC_TNM_Prefix_CPU
+Extension: UICC_TNM_Prefix_CPU
 Id: uicc-tnm-prefix-cpu
 Title: "Extension UICC TNM Prefix CPU"
 Description: "The Extension allows to add c, p and u prefixes to TNM stages."
@@ -129,7 +129,7 @@ Description: "The Extension allows to add c, p and u prefixes to TNM stages."
 * value[x] from VS_TNM_Prefix_CPU_UICC (required)
 
 // isolated tumor cells suffix Extension
-Extension: SD_UICC_TNM_Suffix_ITC
+Extension: UICC_TNM_Suffix_ITC
 Id: uicc-tnm-suffix-itc
 Title: "Extension UICC TNM Suffix ITC"
 Description: "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM."
@@ -137,7 +137,7 @@ Description: "The Extension allows to add isolated tumor cells (ITC) suffixes to
 * value[x] from VS_TNM_Suffix_ITC_UICC (required)
 
 // isolated tumor cells in sentinel lymph nodes suffix Extension
-Extension: SD_UICC_TNM_Suffix_ITC_SN
+Extension: UICC_TNM_Suffix_ITC_SN
 Id: uicc-tnm-suffix-itc-sn
 Title: "Extension UICC TNM Suffix ITC SN"
 Description: "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM."
@@ -145,7 +145,7 @@ Description: "The Extension allows to add isolated tumor cells (ITC) sentinel ly
 * value[x] from VS_TNM_Suffix_ITC_SN_UICC (required)
 
 // UICC TNM Residual Tumor R Classification Profile
-Profile: SD_UICC_TNM_R_Classification
+Profile: UICC_TNM_R_Classification
 Parent: Observation
 Id: uicc-tnm-r-classification
 Title: "Profile UICC TNM Residual Tumor (R) Classification"
@@ -190,15 +190,15 @@ Description: "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1."
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-03-07"
 * valueCodeableConcept = $UICC-TNM#IVC "Stage IVC"
-* component[T-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#u "u"
+* component[T-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#u "u"
 * component[T-code].code = $LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
 * component[T-code].valueCodeableConcept = $UICC-TNM#T2a2 "T2a2"
-* component[N-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
+* component[N-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
 * component[N-code].code = $LNC#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
 * component[N-code].valueCodeableConcept = $UICC-TNM#N0 "N0"
-* component[N-code].extension[SD_UICC_TNM_Suffix_ITC].valueCodeableConcept = $UICC-TNM#i- "(i-)"
-* component[N-code].extension[SD_UICC_TNM_Suffix_ITC_SN].valueCodeableConcept = $UICC-TNM#sn "(sn)"
-* component[M-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#c "c"
+* component[N-code].extension[UICC_TNM_Suffix_ITC].valueCodeableConcept = $UICC-TNM#i- "(i-)"
+* component[N-code].extension[UICC_TNM_Suffix_ITC_SN].valueCodeableConcept = $UICC-TNM#sn "(sn)"
+* component[M-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#c "c"
 * component[M-code].code = $LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
 * component[M-code].valueCodeableConcept = $UICC-TNM#M1 "M1"
 * component[numberOfNodesAffected].code = $LNC#21893-3 "Regional lymph nodes positive [#] Specimen"
@@ -217,15 +217,15 @@ Description: "Example TNM cT3 pN0 (mol-)(sn) cM1."
 * subject = Reference(ExamplePatient)
 * effectiveDateTime = "2022-03-07"
 * valueCodeableConcept = $UICC-TNM#IVC "Stage IVC"
-* component[T-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#c "c"
+* component[T-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#c "c"
 * component[T-code].code = $LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
 * component[T-code].valueCodeableConcept = $UICC-TNM#T3 "T3"
-* component[N-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
+* component[N-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
 * component[N-code].code = $LNC#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
 * component[N-code].valueCodeableConcept = $UICC-TNM#N0 "N0"
-* component[N-code].extension[SD_UICC_TNM_Suffix_ITC].valueCodeableConcept = $UICC-TNM#mol- "(mol-)"
-* component[N-code].extension[SD_UICC_TNM_Suffix_ITC_SN].valueCodeableConcept = $UICC-TNM#sn "(sn)"
-* component[M-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#c "c"
+* component[N-code].extension[UICC_TNM_Suffix_ITC].valueCodeableConcept = $UICC-TNM#mol- "(mol-)"
+* component[N-code].extension[UICC_TNM_Suffix_ITC_SN].valueCodeableConcept = $UICC-TNM#sn "(sn)"
+* component[M-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#c "c"
 * component[M-code].code = $LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
 * component[M-code].valueCodeableConcept = $UICC-TNM#M1 "M1"
 
@@ -243,14 +243,14 @@ Description: "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0."
 * hasMember[R-classification] = Reference(example-tnm-R0)
 * component[y-symbol].code = $SCT#277649004 "y - During therapy/following treatment (tumor staging)"
 * component[y-symbol].valueCodeableConcept = $UICC-TNM#y "y"
-* component[T-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
+* component[T-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
 * component[T-code].code = $LNC#21899-0 "Primary tumor.pathology Cancer"
 * component[T-code].valueCodeableConcept = $UICC-TNM#T1b "T1b"
-* component[N-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
+* component[N-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
 * component[N-code].code = $LNC#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
 * component[N-code].valueCodeableConcept = $UICC-TNM#N1 "N1"
-* component[N-code].extension[SD_UICC_TNM_Suffix_ITC_SN].valueCodeableConcept = $UICC-TNM#sn "(sn)"
-* component[M-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#c "c"
+* component[N-code].extension[UICC_TNM_Suffix_ITC_SN].valueCodeableConcept = $UICC-TNM#sn "(sn)"
+* component[M-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#c "c"
 * component[M-code].code = $LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
 * component[M-code].valueCodeableConcept = $UICC-TNM#M0 "M0"
 * component[L-descriptor].code = $LNC#33739-4 "Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
@@ -290,16 +290,16 @@ Description: "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)."
 * hasMember[R-classification] = Reference(example-tnm-R1)
 * component[r-symbol].code = $SCT#277647002 "r - Tumor recurrence (tumor staging)"
 * component[r-symbol].valueCodeableConcept = $UICC-TNM#r "r"
-* component[T-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
+* component[T-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
 * component[T-code].code = $LNC#21899-0 "Primary tumor.pathology Cancer"
 * component[T-code].valueCodeableConcept = $UICC-TNM#T3 "T3"
 * component[m-symbol].code = $SCT#277650004 "m - Multiple tumors (tumor staging)"
 * component[m-symbol].valueCodeableConcept = $UICC-TNM#m "(m)"
-* component[N-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
+* component[N-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#p "p"
 * component[N-code].code = $LNC#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
 * component[N-code].valueCodeableConcept = $UICC-TNM#N0 "N0"
-* component[N-code].extension[SD_UICC_TNM_Suffix_ITC].valueCodeableConcept = $UICC-TNM#i+ "(i+)"
-* component[M-code].extension[SD_UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#c "c"
+* component[N-code].extension[UICC_TNM_Suffix_ITC].valueCodeableConcept = $UICC-TNM#i+ "(i+)"
+* component[M-code].extension[UICC_TNM_Prefix_CPU].valueCodeableConcept = $UICC-TNM#c "c"
 * component[M-code].code = $LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
 * component[M-code].valueCodeableConcept = $UICC-TNM#M0 "M0"
 

@@ -1,6 +1,6 @@
-Profile: SD_Proband
+Profile: Probandin
 Parent: ResearchSubject
-Id: sd-probandin
+Id: probandin
 Title: "ProbandIn"
 Description: "Dieses Profil beschreibt eine Proband*in."
 * ^status = #active
@@ -26,7 +26,7 @@ Description: "Dieses Profil beschreibt eine Proband*in."
 * consent 1.. MS
 
 Instance: ExampleResearchSubjectStudienteilnehmer
-InstanceOf: sd-probandin
+InstanceOf: probandin
 Usage: #example
 * identifier[subjectIdentificationCode].type = http://terminology.hl7.org/CodeSystem/v2-0203#ANON
 * identifier[subjectIdentificationCode].system = "https://www.example.org/fhir/core/sid/SubjectIdentificationCode"
