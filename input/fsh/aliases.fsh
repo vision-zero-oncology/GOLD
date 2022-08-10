@@ -42,6 +42,7 @@ Alias: $IsikDiagnose = https://gematik.de/fhir/isik/v2/Basismodul/StructureDefin
 
 // MII
 Alias: $MIIBiobankVSBodySite = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-body-structures 
+Alias: $MIIBiobankBioprobeCore = https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/SpecimenCore
 
 // GOLD
 Alias: $DiagnosesicherungVS = https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3
