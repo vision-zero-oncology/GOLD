@@ -73,7 +73,7 @@ Description: "Studienkategorien aus NCI Thesaurus (NCIt)"
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
 * $NCIT#C98388 "Interventional Study"
 * $NCIT#C16084 "Observational Study"
-//* $NCIT#C142615 "Non-Interventional Study"
+* $NCIT#C142615 "Non-Interventional Study"
 
 // Studiendesign
 ValueSet: VS_Studiendesign_NCIT
@@ -93,9 +93,11 @@ Description: "Studiendesign aus NCI Thesaurus (NCIt)"
 * $NCIT#C15208 "Cohort Study"
 //* $NCIT#C139456 "Trend Analysis"
 //* $NCIT#C53311 "Panel Study"
-* $NCIT#C15273 "Longitudinal Study" 	
+//* $NCIT#C15273 "Longitudinal Study" 	
 * $NCIT#C53310 "Cross-Sectional Study"
 //* $NCIT#C15311 "Quality Control"
+* $NCIT#C46079 "Randomized Controlled Clinical Trial"
+* $NCIT#C93043 "Nonrandomized Clinical Trial"
 // other?
 
 // Blinding 
@@ -116,11 +118,7 @@ Id: type-of-randomization-ncit
 Title: "ValueSet Type of Randomization NCIt"
 Description: "Type of Randomization aus NCI Thesaurus (NCIt)"
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
-* $NCIT#C15417 "Randomized Clinical Trial"
-* $NCIT#C46079 "Randomized Controlled Clinical Trial"
 * include codes from system $NCIT where concept descendent-of #C25196 "Randomization"
-* $NCIT#C93043 "Nonrandomized Clinical Trial"
-* $NCIT#C28279 "Controlled Study"
 
 // Study Arm Type
 ValueSet: VS_TypeOfStudyArm_NCIT
