@@ -1,7 +1,7 @@
-Profile: SD_Clinical_Study
+Profile: Clinical_Study
 Parent: ResearchStudy
-Id: sd-clinical-study 
-Title: "SD Clinical Study"
+Id: clinical-study 
+Title: "Clinical Study"
 Description: "This profile describes a clinical study in which a patient takes part."
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern
@@ -140,7 +140,7 @@ Description: "Study Focus aus NCI Thesaurus (NCIt)"
 * $NCIT#C1505 "Dietary Supplement"
 
 Instance: ExampleStudyNapkonCovidom
-InstanceOf: sd-clinical-study
+InstanceOf: clinical-study
 Usage: #example
 Title: "Example Study NAPKON COVIDOM"
 Description: "Example Study NAPKON COVIDOM"
