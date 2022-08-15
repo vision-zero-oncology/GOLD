@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/BodyStructure/CerebellarSarcoma> a fhir:BodyStructure;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "CerebellarSarcoma"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor";
+       fhir:index 0;
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>morphology</b>: <span title=\"Codes: {http://snomed.info/sct 17302008}\">Cerebellar sarcoma (morphologic abnormality)</span></p><p><b>location</b>: <span title=\"Codes: {http://snomed.info/sct 1010600003}\">Structure of left cerebellar hemisphere (body structure)</span></p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1985-03-31</a></p></div>"
+  ];
+  fhir:BodyStructure.morphology [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:17302008;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "17302008" ];
+       fhir:Coding.display [ fhir:value "Cerebellar sarcoma (morphologic abnormality)" ]
+     ]
+  ];
+  fhir:BodyStructure.location [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:1010600003;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "1010600003" ];
+       fhir:Coding.display [ fhir:value "Structure of left cerebellar hemisphere (body structure)" ]
+     ]
+  ];
+  fhir:BodyStructure.patient [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/BodyStructure/CerebellarSarcoma.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

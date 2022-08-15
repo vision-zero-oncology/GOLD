@@ -13,6 +13,14 @@
       ]
     },
     {
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of",
+      "title": "Specimen part of Tumor",
+      "types": [
+        "Reference",
+        "Reference"
+      ]
+    },
+    {
       "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
       "title": "Extension UICC TNM Prefix CPU",
       "types": [
@@ -61,10 +69,22 @@
         "title": "ProbandIn"
       }
     ],
+    "BodyStructure": [
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor",
+        "title": "Tumor"
+      }
+    ],
     "Condition": [
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder",
         "title": "Tumor Disorder"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen",
+        "title": "Tumor Specimen"
       }
     ]
   },
@@ -130,8 +150,17 @@
     "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
       "ImplementationGuide.definition.resource"
     ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/EinstellungBlutversorgung": [
+      "Specimen.collection"
+    ],
+    "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/StructureDefinition/Temperaturbedingungen": [
+      "Specimen.processing"
+    ],
     "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o": [
       "Condition.code.coding"
+    ],
+    "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of": [
+      "Specimen"
     ],
     "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu": [
       "Observation.component"

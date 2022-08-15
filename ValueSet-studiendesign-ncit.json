@@ -3,14 +3,14 @@
   "id": "studiendesign-ncit",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C15197</td><td>Case-Control Study</td></tr><tr><td>C15208</td><td>Cohort Study</td></tr><tr><td>C15273</td><td>Longitudinal Study</td></tr><tr><td>C53310</td><td>Cross-Sectional Study</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C15197</td><td>Case-Control Study</td></tr><tr><td>C15208</td><td>Cohort Study</td></tr><tr><td>C53310</td><td>Cross-Sectional Study</td></tr><tr><td>C46079</td><td>Randomized Controlled Clinical Trial</td></tr><tr><td>C93043</td><td>Nonrandomized Clinical Trial</td></tr></table></li></ul></div>"
   },
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit",
   "version": "0.1.0",
   "name": "VS_Studiendesign_NCIT",
   "title": "ValueSet Studiendesign NCIt",
   "status": "active",
-  "date": "2022-08-10T11:55:04+00:00",
+  "date": "2022-08-15T15:57:18+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
@@ -49,12 +49,16 @@
             "display": "Cohort Study"
           },
           {
-            "code": "C15273",
-            "display": "Longitudinal Study"
-          },
-          {
             "code": "C53310",
             "display": "Cross-Sectional Study"
+          },
+          {
+            "code": "C46079",
+            "display": "Randomized Controlled Clinical Trial"
+          },
+          {
+            "code": "C93043",
+            "display": "Nonrandomized Clinical Trial"
           }
         ]
       }

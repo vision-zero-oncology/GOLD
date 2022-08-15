@@ -17,7 +17,7 @@
   fhir:ValueSet.name [ fhir:value "VS_ECOG_Performance_Status_SNOMED"];
   fhir:ValueSet.title [ fhir:value "ValueSet ECOG Performance Status SNOMED"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-08-10T11:55:04+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-08-15T15:57:18+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ValueSet.contact [
      fhir:index 0;

@@ -1,0 +1,34 @@
+{
+  "resourceType": "BodyStructure",
+  "id": "CerebellarSarcoma",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
+    ]
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>morphology</b>: <span title=\"Codes: {http://snomed.info/sct 17302008}\">Cerebellar sarcoma (morphologic abnormality)</span></p><p><b>location</b>: <span title=\"Codes: {http://snomed.info/sct 1010600003}\">Structure of left cerebellar hemisphere (body structure)</span></p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1985-03-31</a></p></div>"
+  },
+  "morphology": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "17302008",
+        "display": "Cerebellar sarcoma (morphologic abnormality)"
+      }
+    ]
+  },
+  "location": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1010600003",
+        "display": "Structure of left cerebellar hemisphere (body structure)"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/ExamplePatient"
+  }
+}

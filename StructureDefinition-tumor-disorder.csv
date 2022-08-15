@@ -246,7 +246,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Sometimes implied by being first","n/a","CD.codingRationale"
 "Condition.code.coding","icd-o-3-m","","",0,1,"Y","","Y","Coding {[]} {[]}
 ","Code defined by a terminology system","A reference to a code defined by a terminology system.","Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true.","Allows for alternative encodings within a code system, and translations to other code systems.","","","","<valueCoding xmlns=""http://hl7.org/fhir"">
-  <system value=""http://snomed.info/sct""/>
+  <system value=""http://terminology.hl7.org/CodeSystem/icd-o-3""/>
 </valueCoding>","","","",,"required","","http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie","",,,,"CodeableConcept.coding",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","CE/CNE/CWE subset one of the sets of component 1-3 or 4-6","C*E.1-8, C*E.10-22","n/a","CV","union(., ./translation)"
@@ -527,7 +527,6 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
   <coding>
     <system value=""http://snomed.info/sct""/>
     <code value=""254293002""/>
-    <display value=""Tumor-node-metastasis (TNM) tumor staging system (tumor staging)""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes describing the kind of condition staging (e.g. clinical or pathological).","http://hl7.org/fhir/ValueSet/condition-stage-type","",,,,"Condition.stage.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -564,7 +563,6 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
   <coding>
     <system value=""http://snomed.info/sct""/>
     <code value=""258244004""/>
-    <display value=""Tumor histopathological grade status values (tumor staging)""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes describing the kind of condition staging (e.g. clinical or pathological).","http://hl7.org/fhir/ValueSet/condition-stage-type","",,,,"Condition.stage.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}

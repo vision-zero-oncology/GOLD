@@ -70,6 +70,13 @@
     "name": "Karnofsky_Performance_Status"
   },
   {
+    "id": "part-of",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of",
+    "version": "0.1.0",
+    "name": "PartOf"
+  },
+  {
     "id": "probandin",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin",
@@ -84,11 +91,25 @@
     "name": "RecistAssessmentResponse"
   },
   {
+    "id": "tumor",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor",
+    "version": "0.1.0",
+    "name": "Tumor"
+  },
+  {
     "id": "tumor-disorder",
     "type": "StructureDefinition",
     "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder",
     "version": "0.1.0",
     "name": "TumorDisorder"
+  },
+  {
+    "id": "tumor-specimen",
+    "type": "StructureDefinition",
+    "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen",
+    "version": "0.1.0",
+    "name": "TumorSpecimen"
   },
   {
     "id": "uicc-tnm",

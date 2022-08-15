@@ -10,14 +10,14 @@
   fhir:Resource.id [ fhir:value "studiendesign-ncit"];
   fhir:DomainResource.text [
      fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C15197</td><td>Case-Control Study</td></tr><tr><td>C15208</td><td>Cohort Study</td></tr><tr><td>C15273</td><td>Longitudinal Study</td></tr><tr><td>C53310</td><td>Cross-Sectional Study</td></tr></table></li></ul></div>"
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C15197</td><td>Case-Control Study</td></tr><tr><td>C15208</td><td>Cohort Study</td></tr><tr><td>C53310</td><td>Cross-Sectional Study</td></tr><tr><td>C46079</td><td>Randomized Controlled Clinical Trial</td></tr><tr><td>C93043</td><td>Nonrandomized Clinical Trial</td></tr></table></li></ul></div>"
   ];
   fhir:ValueSet.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit"];
   fhir:ValueSet.version [ fhir:value "0.1.0"];
   fhir:ValueSet.name [ fhir:value "VS_Studiendesign_NCIT"];
   fhir:ValueSet.title [ fhir:value "ValueSet Studiendesign NCIt"];
   fhir:ValueSet.status [ fhir:value "active"];
-  fhir:ValueSet.date [ fhir:value "2022-08-10T11:55:04+00:00"^^xsd:dateTime];
+  fhir:ValueSet.date [ fhir:value "2022-08-15T15:57:18+00:00"^^xsd:dateTime];
   fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:ValueSet.contact [
      fhir:index 0;
@@ -52,12 +52,16 @@
          fhir:ValueSet.compose.include.concept.display [ fhir:value "Cohort Study" ]
        ], [
          fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "C15273" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Longitudinal Study" ]
-       ], [
-         fhir:index 3;
          fhir:ValueSet.compose.include.concept.code [ fhir:value "C53310" ];
          fhir:ValueSet.compose.include.concept.display [ fhir:value "Cross-Sectional Study" ]
+       ], [
+         fhir:index 3;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "C46079" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Randomized Controlled Clinical Trial" ]
+       ], [
+         fhir:index 4;
+         fhir:ValueSet.compose.include.concept.code [ fhir:value "C93043" ];
+         fhir:ValueSet.compose.include.concept.display [ fhir:value "Nonrandomized Clinical Trial" ]
        ]
      ]
   ] .

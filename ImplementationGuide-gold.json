@@ -45,13 +45,19 @@
       "id": "de_basisprofil_r4",
       "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
       "packageId": "de.basisprofil.r4",
-      "version": "1.3.1"
+      "version": "1.4.0"
     },
     {
       "id": "de_gematik_isik_basismodul",
       "uri": "http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul",
       "packageId": "de.gematik.isik-basismodul",
       "version": "2.0.0"
+    },
+    {
+      "id": "de_medizininformatikinitiative_kerndatensatz_biobank",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank",
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.biobank",
+      "version": "1.0.3"
     }
   ],
   "definition": {
@@ -478,10 +484,38 @@
           }
         ],
         "reference": {
+          "reference": "StructureDefinition/tumor"
+        },
+        "name": "Tumor",
+        "description": "Tumor",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
           "reference": "StructureDefinition/tumor-disorder"
         },
         "name": "Tumor Disorder",
         "description": "Profile for a tumor disorder",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:resource"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/tumor-specimen"
+        },
+        "name": "Tumor Specimen",
+        "description": "Tumor specimen",
         "exampleBoolean": false
       },
       {
@@ -538,6 +572,20 @@
         },
         "name": "Diagnosesicherung ICD O",
         "description": "Extension für die Erfassung der Diagnosesicherung der ICD-O-3",
+        "exampleBoolean": false
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "StructureDefinition:extension"
+          }
+        ],
+        "reference": {
+          "reference": "StructureDefinition/part-of"
+        },
+        "name": "Specimen part of Tumor",
+        "description": "Enables to reference a Tumor <BodyStructure> from its respective Specimen",
         "exampleBoolean": false
       },
       {
@@ -1034,6 +1082,20 @@
         "extension": [
           {
             "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "BodyStructure"
+          }
+        ],
+        "reference": {
+          "reference": "BodyStructure/CerebellarSarcoma"
+        },
+        "name": "Tumor Example - Cerebellar Sarcoma",
+        "description": "Example for the Tumor profile",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
             "valueString": "Patient"
           }
         ],
@@ -1280,6 +1342,20 @@
         "name": "Example Vital Signs Base Observation",
         "description": "Example of a vital signs base observation.",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
+      },
+      {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+            "valueString": "Condition"
+          }
+        ],
+        "reference": {
+          "reference": "Condition/mamma-ca-rechts"
+        },
+        "name": "Diagnose MammaCa rechts",
+        "description": "Beispiel einer Diagnose Mamma Ca rechts.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"
       }
     ],
     "page": {
