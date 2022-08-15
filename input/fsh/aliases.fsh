@@ -4,7 +4,7 @@ Alias: $SCT = http://snomed.info/sct
 Alias: $UCUM = http://unitsofmeasure.org
 Alias: $NCIT = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 Alias: $RID = http://radlex.org/RID
-// Alias:   $ICD10GM = http://fhir.de/CodeSystem/bfarm/icd-10-gm
+Alias: $ICD10GM = http://fhir.de/CodeSystem/bfarm/icd-10-gm
 // Alias:   $RXN = http://www.nlm.nih.gov/research/umls/rxnorm
 // Alias:   $CPT = http://www.ama-assn.org/go/cpt
 // Alias:   $AJCC = http://cancerstaging.org
@@ -19,8 +19,8 @@ Alias: $iso3166 = urn:iso:std:iso:3166
 // Alias:   $IDTYPE = http://terminology.hl7.org/CodeSystem/v2-0203
 // Alias:   $SPTY = http://terminology.hl7.org/CodeSystem/v2-0487
 // Alias:   $CondCat = http://terminology.hl7.org/CodeSystem/condition-category
-// Alias:   $ClinStatus = http://terminology.hl7.org/CodeSystem/condition-clinical
-// Alias:   $VerStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status
+Alias:   $ClinStatus = http://terminology.hl7.org/CodeSystem/condition-clinical
+Alias:   $VerStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias:   $ObsCat = http://terminology.hl7.org/CodeSystem/observation-category
 Alias:   $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 // Alias:   $ObsInt = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation
@@ -68,6 +68,7 @@ Alias: $UICC-TNM = urn:oid:2.16.840.1.113883.15.16
 // Alias: $DiagnoseSicherheit = http://fhir.de/StructureDefinition/icd-10-gm-diagnosesicherheit
 // Alias: $Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisation
 // Alias: $UICCCS = http://fhir.de/onkologie/CodeSystem/UICCCS
+Alias: $ICD10SeitenlokalisationCS = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION 
 
 // HL7 DE
 Alias: $ICDO3T = http://fhir.de/onkologie/ValueSet/icd-o-3-topologie
@@ -81,3 +82,4 @@ Alias: $MIIBiobankVSBodySite = https://www.medizininformatik-initiative.de/fhir/
 
 // GOLD
 Alias: $DiagnosesicherungVS = https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3
+Alias: $DiagnosesicherungCS = https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3
