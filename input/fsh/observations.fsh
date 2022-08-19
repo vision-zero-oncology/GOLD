@@ -387,7 +387,7 @@ Description: "Example RECIST assessment timepoint response observation."
 
 
 // TumorMeasurement
-Profile: TumorMeasurment
+Profile: TumorMeasurement
 Parent:  Observation
 Id: tumor-measurement
 Title: "Tumor Measurment Profile"
@@ -424,8 +424,7 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
     tumorLongestDimension 1..1 and
     shortAxis 0..1 and
     tumorArea 0..1 and
-    tumorVolume 0..1 and
-    tumorOtherDimension 
+    tumorVolume 0..1
 
 * component[tumorLongestDimension] ^short = "Longest tumor dimension (mm)"
 * component[tumorLongestDimension] ^definition = "The longest tumor dimension in mm."
@@ -464,7 +463,7 @@ Severity: #error
 
 // Example Tumor size
 Instance: tumor-size-pathology 
-InstanceOf: TumorMeasurment
+InstanceOf: TumorMeasurement
 Description: "Example of a resource conforming to the tumor size profile in pathology."
 * status = #final
 * method = SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
@@ -476,7 +475,7 @@ Description: "Example of a resource conforming to the tumor size profile in path
 * effectiveDateTime = "2019-05-01"
 
 Instance: tumor-size-radiology 
-InstanceOf: TumorMeasurment
+InstanceOf: TumorMeasurement
 Description: "Example of a resource conforming to the tumor size profile in radiology."
 * status = #final
 * method = SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
