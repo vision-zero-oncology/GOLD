@@ -410,7 +410,7 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
 
 * obeys must-have-focus-or-specimen-invariant
 
-* method from TumorSizeMethodVS (extensible)
+* method from $TumorSizeMethodVS (extensible)
 * method ^short = "Method for measuring the tumor"
 * method ^definition = "Method for measuring the tumor"
 * method ^comment = "Tumors are typically measured via gross pathology after excision, or via diagnostic imaging or physical exam prior to removal. If `specimen` is set, `method` is expected to be a \"gross pathology\" code. If `focus` is set, `method` is expected to be a type of diagnostic imaging or physical exam."
@@ -428,13 +428,13 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
 * component[longestDimension] ^definition = "The longest tumor dimension in mm."
 * component[longestDimension].code = $LNC#33728-7 // "Size.maximum dimension in Tumor"
 * component[longestDimension].value[x] only Quantity
-* component[longestDimension].valueQuantity from TumorSizeUnitsVS (required)
+* component[longestDimension].valueQuantity from $TumorSizeUnitsVS (required)
 
 * component[shortAxis] ^short = "short axis of the tumor lesion (mm or cm)"
 * component[shortAxis] ^definition = "short axis in mm or cm."
 * component[shortAxis].code = $LNC#33729-5 "Size additional dimension in Tumor"
 * component[shortAxis].value[x] only Quantity
-* component[shortAxis].valueQuantity from TumorSizeUnitsVS (required)
+* component[shortAxis].valueQuantity from $TumorSizeUnitsVS (required)
 
 * component[area] ^short = "area of the tumor (mm²)"
 * component[area] ^definition = "tumor area in mm²."
