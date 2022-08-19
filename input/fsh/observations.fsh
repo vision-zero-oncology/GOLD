@@ -393,8 +393,7 @@ Id: tumor-measurement
 Title: "Tumor Measurment Profile"
 Description:  "Records measurements of a tumor like the longest diameter or volume. The resource can be used for different measurement methods (e.g. methods in pathology, radiology or physical exams)."
 // LOINC code indicating this is a tumor size observation
-* ^extension[FMM].valueInteger = 3
-* code = LNC#21889-1 //"Size Tumor"
+* code = $LNC#21889-1 //"Size Tumor"
 * subject ^short = "The patient whose tumor was measured."
 * subject 1..1
 * subject only Reference(Patient)
