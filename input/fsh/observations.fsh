@@ -417,13 +417,15 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
 * method ^definition = "Method for measuring the tumor"
 * method ^comment = "Tumors are typically measured via gross pathology after excision, or via diagnostic imaging or physical exam prior to removal. If `specimen` is set, `method` is expected to be a \"gross pathology\" code. If `focus` is set, `method` is expected to be a type of diagnostic imaging or physical exam."
 
-* insert ObservationComponentSlicingRules
-// Require 1 dimension; the additional dimensions are optional
-* insert CreateComponent(tumorLongestDimension, 1, 1)
-* insert CreateComponent(shortAxis, 0, 1)
-* insert CreateComponent(tumorArea, 0, 1)
-* insert CreateComponent(tumorVolume, 0, 1)
-* insert CreateComponent(tumorOtherDimension, 0, 1)
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains
+    tumorLongestDimension 1..1 and
+    shortAxis 0..1 and
+    tumorArea 0..1 and
+    tumorVolume 0..1 and
+    tumorOtherDimension 
 
 * component[tumorLongestDimension] ^short = "Longest tumor dimension (mm)"
 * component[tumorLongestDimension] ^definition = "The longest tumor dimension in mm."
