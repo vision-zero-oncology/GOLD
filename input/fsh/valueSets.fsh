@@ -349,3 +349,13 @@ Id: vs-diagnosesicherung-icdo3
 Title: "Diagnosesicherung ICD-O-3"
 Description: "ValueSet für die Diagnosesicherungscodes der ICD-O-3"
 * include codes from system cs-diagnosesicherung-icdo3
+
+// Valid tumor size units
+ValueSet:        TumorSizeUnitsVS
+Id:              tumor-size-units-vs
+Title:           "Tumor Size Units Value Set"
+Description:     "Acceptable units for measuring tumor size"
+* $UCUM#mm        "Millimeter"
+* $UCUM#cm        "Centimeter"
+* $UCUM#mm2       "square millimeter"
+* $UCUM#ml        "mili liter"

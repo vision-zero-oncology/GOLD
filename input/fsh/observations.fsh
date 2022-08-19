@@ -385,7 +385,6 @@ Description: "Example RECIST assessment timepoint response observation."
 * effectiveDateTime = "2022-07-19"
 * valueCodeableConcept = $RID#11514 "stable disease"
 
-
 // TumorMeasurement
 Profile: TumorMeasurement
 Parent:  Observation
@@ -399,7 +398,7 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
 * subject only Reference(Patient)
 
 * focus 0..1
-* focus only Reference(BodyStructure)
+* focus only Reference(Tumor)
 * focus ^short = "Identifies a tumor that has NOT been removed from the body"
 * focus ^definition = "Reference to a BodyStructure resource conforming to Tumor."
 * focus ^comment = "Use **only** when the tumor **has not** been removed from the body. If the tumor has been removed, use `specimen` instead and leave `focus` empty."
@@ -420,16 +419,16 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
 * component ^slicing.discriminator.path = "code"
 * component ^slicing.rules = #open
 * component contains
-    tumorLongestDimension 1..1 and
+    longestDimension 1..1 and
     shortAxis 0..1 and
-    tumorArea 0..1 and
-    tumorVolume 0..1
+    area 0..1 and
+    volume 0..1
 
-* component[tumorLongestDimension] ^short = "Longest tumor dimension (mm)"
-* component[tumorLongestDimension] ^definition = "The longest tumor dimension in mm."
-* component[tumorLongestDimension].code = LNC#33728-7 // "Size.maximum dimension in Tumor"
-* component[tumorLongestDimension].value[x] only Quantity
-* component[tumorLongestDimension].valueQuantity from TumorSizeUnitsVS (required)
+* component[longestDimension] ^short = "Longest tumor dimension (mm)"
+* component[longestDimension] ^definition = "The longest tumor dimension in mm."
+* component[longestDimension].code = LNC#33728-7 // "Size.maximum dimension in Tumor"
+* component[longestDimension].value[x] only Quantity
+* component[longestDimension].valueQuantity from TumorSizeUnitsVS (required)
 
 * component[shortAxis] ^short = "short axis of the tumor lesion (mm)"
 * component[shortAxis] ^definition = "short axis in mm."
@@ -437,17 +436,17 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
 * component[shortAxis].value[x] only Quantity
 * component[shortAxis].valueQuantity from TumorSizeUnitsVS (required)
 
-* component[tumorArea] ^short = "area of the tumor (mm²)"
-* component[tumorArea] ^definition = "tumor area in mm²."
-//* component[tumorArea].code = LNC#33729-5 // "Area of the Tumor"
-* component[tumorArea].value[x] only Quantity
-* component[tumorArea].valueQuantity from TumorSizeUnitsVS (required)
+* component[area] ^short = "area of the tumor (mm²)"
+* component[area] ^definition = "tumor area in mm²."
+//* component[area].code = LNC#33729-5 // "Area of the Tumor"
+* component[area].value[x] only Quantity
+* component[area].valueQuantity from TumorSizeUnitsVS (required)
 
-* component[tumorVolume] ^short = "tumor volume (mm³)"
-* component[tumorVolume] ^definition = "tumor volume in mm³."
-//* component[tumorVolume].code = LNC#33729-5 // "Volume of the Tumor"
-* component[tumorVolume].value[x] only Quantity
-* component[tumorVolume].valueQuantity from TumorSizeUnitsVS (required)
+* component[volume] ^short = "tumor volume (mm³)"
+* component[volume] ^definition = "tumor volume in mm³."
+//* component[volume].code = LNC#33729-5 // "Volume of the Tumor"
+* component[volume].value[x] only Quantity
+* component[volume].valueQuantity from TumorSizeUnitsVS (required)
 
 // Group the Must Support to make it easier to see what's what
 * subject and code and effective[x] and component and method and specimen and focus MS
@@ -465,22 +464,22 @@ Instance: tumor-size-pathology
 InstanceOf: TumorMeasurement
 Description: "Example of a resource conforming to the tumor size profile in pathology."
 * status = #final
-* method = SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
+* method = $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
 * category = ObsCat#laboratory
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
-* specimen = Reference(Specimen/any-specimen-of-patient-eve-anyperson)
-* component[tumorLongestDimension].valueQuantity = 12 'mm' "mm"
-* component[volume].valueQuantity = 1000 'mm³' "mm³"
+* specimen = Reference(Tumor/any-specimen-of-patient-eve-anyperson)
+* component[longestDimension].valueQuantity = 12 'mm' "mm"
+* component[volume].valueQuantity = 1000 'ml' "ml"
 * effectiveDateTime = "2019-05-01"
 
 Instance: tumor-size-radiology 
 InstanceOf: TumorMeasurement
 Description: "Example of a resource conforming to the tumor size profile in radiology."
 * status = #final
-* method = SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
+* method = $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
 * category = ObsCat#laboratory
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
 * focus = Reference(BodyStructure/tumor-lobular-carcinoma-left-breast)
-* component[tumorLongestDimension].valueQuantity = 12 'mm' "mm"
+* component[longestDimension].valueQuantity = 12 'mm' "mm"
 * component[shortAxis].valueQuantity = 0.5 'mm' "mm"
 * effectiveDateTime = "2019-05-02"
