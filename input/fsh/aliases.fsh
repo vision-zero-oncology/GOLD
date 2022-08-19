@@ -51,3 +51,7 @@ Alias: $MIIBiobankBioprobeCore = https://www.medizininformatik-initiative.de/fhi
 // GOLD
 Alias: $DiagnosesicherungVS = https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3
 Alias: $DiagnosesicherungCS = https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3
+
+// mCode
+Alias: $TumorSizeMethodVS = http://hl7.org/fhir/us/mcode/ValueSet/mcode-tumor-size-method-vs
+Alias: $TumorSizeUnitsVS = http://hl7.org/fhir/us/mcode/ValueSet/mcode-tumor-size-units-vs

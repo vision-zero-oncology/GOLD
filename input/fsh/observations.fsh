@@ -428,25 +428,25 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
 * component[longestDimension] ^definition = "The longest tumor dimension in mm."
 * component[longestDimension].code = $LNC#33728-7 // "Size.maximum dimension in Tumor"
 * component[longestDimension].value[x] only Quantity
-* component[longestDimension].valueQuantity from $TumorSizeUnitsVS (required)
+* component[longestDimension].valueQuantity from TumorSizeUnitsVS (required)
 
 * component[shortAxis] ^short = "short axis of the tumor lesion (mm or cm)"
 * component[shortAxis] ^definition = "short axis in mm or cm."
 * component[shortAxis].code = $LNC#33729-5 "Size additional dimension in Tumor"
 * component[shortAxis].value[x] only Quantity
-* component[shortAxis].valueQuantity from $TumorSizeUnitsVS (required)
+* component[shortAxis].valueQuantity from TumorSizeUnitsVS (required)
 
 * component[area] ^short = "area of the tumor (mm²)"
 * component[area] ^definition = "tumor area in mm²."
 //* component[area].code = LNC#33729-5 // "Area of the Tumor"
 * component[area].value[x] only Quantity
-* component[area].valueQuantity from $TumorAreaUnitsVS (required)
+* component[area].valueQuantity from TumorAreaUnitsVS (required)
 
 * component[volume] ^short = "tumor volume (ml)"
 * component[volume] ^definition = "Tumor volume in ml."
 //* component[volume].code = LNC#33729-5 // "Volume of the Tumor"
 * component[volume].value[x] only Quantity
-* component[volume].valueQuantity from $TumorVolumeUnitsVS (required)
+* component[volume].valueQuantity from TumorVolumeUnitsVS (required)
 
 // Group the Must Support to make it easier to see what's what
 * subject and code and effective[x] and component and method and specimen and focus MS
@@ -477,10 +477,10 @@ Description: "Example of a resource conforming to the tumor size profile in path
 Instance: tumor-size-radiology 
 InstanceOf: TumorMeasurement
 Usage: #example
-Description: "Example of a resource conforming to the tumor size profile in radiology."
+Description: "Example of a resource conforming to the tumor size profile in radiology (MRI bidimensional measurement)."
 * status = #final
 * code = $LNC#21889-1
-* method = $SCT#79852000 "Morphometric analysis, tumor (procedure)"
+* method = $SCT#113091000 "Magnetic resonance imaging (procedure)"
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
 * focus = Reference(BodyStructure/tumor-lobular-carcinoma-left-breast)
 * component[longestDimension].valueQuantity = 12 'mm' "mm"
