@@ -357,5 +357,15 @@ Title:           "Tumor Size Units Value Set"
 Description:     "Acceptable units for measuring tumor size"
 * $UCUM#mm        "Millimeter"
 * $UCUM#cm        "Centimeter"
+
+ValueSet:        TumorAreaUnitsVS
+Id:              tumor-area-units-vs
+Title:           "Tumor Size Units Value Set"
+Description:     "Acceptable units for measuring tumor areas"
 * $UCUM#mm2       "square millimeter"
-* $UCUM#ml        "mililiter"
+
+ValueSet:        TumorVolumeUnitsVS
+Id:              tumor-volume-units-vs
+Title:           "Tumor Size Units Value Set"
+Description:     "Acceptable units for measuring tumor areas"
+* $UCUM#ml       "milliliter"

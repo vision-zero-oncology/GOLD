@@ -440,13 +440,13 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
 * component[area] ^definition = "tumor area in mm²."
 //* component[area].code = LNC#33729-5 // "Area of the Tumor"
 * component[area].value[x] only Quantity
-* component[area].valueQuantity from TumorSizeUnitsVS (required)
+* component[area].valueQuantity from TumorAreaUnitsVS (required)
 
 * component[volume] ^short = "tumor volume (ml)"
 * component[volume] ^definition = "Tumor volume in ml."
 //* component[volume].code = LNC#33729-5 // "Volume of the Tumor"
 * component[volume].value[x] only Quantity
-* component[volume].valueQuantity from TumorSizeUnitsVS (required)
+* component[volume].valueQuantity from TumorVolumeUnitsVS (required)
 
 // Group the Must Support to make it easier to see what's what
 * subject and code and effective[x] and component and method and specimen and focus MS
