@@ -426,13 +426,13 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
 
 * component[longestDimension] ^short = "Longest tumor dimension (mm)"
 * component[longestDimension] ^definition = "The longest tumor dimension in mm."
-* component[longestDimension].code = LNC#33728-7 // "Size.maximum dimension in Tumor"
+* component[longestDimension].code = $LNC#33728-7 // "Size.maximum dimension in Tumor"
 * component[longestDimension].value[x] only Quantity
 * component[longestDimension].valueQuantity from TumorSizeUnitsVS (required)
 
-* component[shortAxis] ^short = "short axis of the tumor lesion (mm)"
-* component[shortAxis] ^definition = "short axis in mm."
-//* component[shortAxis].code = LNC#33729-5 // "Short axis of the Tumor"
+* component[shortAxis] ^short = "short axis of the tumor lesion (mm or cm)"
+* component[shortAxis] ^definition = "short axis in mm or cm."
+* component[shortAxis].code = $LNC#33729-5 "Size additional dimension in Tumor"
 * component[shortAxis].value[x] only Quantity
 * component[shortAxis].valueQuantity from TumorSizeUnitsVS (required)
 
@@ -442,8 +442,8 @@ Description:  "Records measurements of a tumor like the longest diameter or volu
 * component[area].value[x] only Quantity
 * component[area].valueQuantity from TumorSizeUnitsVS (required)
 
-* component[volume] ^short = "tumor volume (mm³)"
-* component[volume] ^definition = "tumor volume in mm³."
+* component[volume] ^short = "tumor volume (ml)"
+* component[volume] ^definition = "Tumor volume in ml."
 //* component[volume].code = LNC#33729-5 // "Volume of the Tumor"
 * component[volume].value[x] only Quantity
 * component[volume].valueQuantity from TumorSizeUnitsVS (required)
