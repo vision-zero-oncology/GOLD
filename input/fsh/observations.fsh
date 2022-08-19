@@ -458,28 +458,33 @@ Expression: "(focus.exists() or specimen.exists()) and (focus.exists() and speci
 Severity: #error
 
 
-
 // Example Tumor size
 Instance: tumor-size-pathology 
 InstanceOf: TumorMeasurement
+Usage: #example
 Description: "Example of a resource conforming to the tumor size profile in pathology."
 * status = #final
+* code = $LNC#21889-1
 * method = $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
-* category = ObsCat#laboratory
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
 * specimen = Reference(Tumor/any-specimen-of-patient-eve-anyperson)
 * component[longestDimension].valueQuantity = 12 'mm' "mm"
+* component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
 * component[volume].valueQuantity = 1000 'ml' "ml"
+* component[volume].code = $UCUM#ml
 * effectiveDateTime = "2019-05-01"
 
 Instance: tumor-size-radiology 
 InstanceOf: TumorMeasurement
+Usage: #example
 Description: "Example of a resource conforming to the tumor size profile in radiology."
 * status = #final
-* method = $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
-* category = ObsCat#laboratory
+* code = $LNC#21889-1
+* method = $SCT#79852000 "Morphometric analysis, tumor (procedure)"
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
 * focus = Reference(BodyStructure/tumor-lobular-carcinoma-left-breast)
 * component[longestDimension].valueQuantity = 12 'mm' "mm"
+* component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
 * component[shortAxis].valueQuantity = 0.5 'mm' "mm"
+* component[shortAxis].code = $LNC#33729-5 "Size additional dimension in Tumor"
 * effectiveDateTime = "2019-05-02"
