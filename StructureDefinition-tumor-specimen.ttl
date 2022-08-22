@@ -27,7 +27,7 @@
   fhir:StructureDefinition.name [ fhir:value "TumorSpecimen"];
   fhir:StructureDefinition.title [ fhir:value "Tumor Specimen"];
   fhir:StructureDefinition.status [ fhir:value "active"];
-  fhir:StructureDefinition.date [ fhir:value "2022-08-15T15:57:18+00:00"^^xsd:dateTime];
+  fhir:StructureDefinition.date [ fhir:value "2022-08-22T12:50:52+00:00"^^xsd:dateTime];
   fhir:StructureDefinition.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
   fhir:StructureDefinition.contact [
      fhir:index 0;
