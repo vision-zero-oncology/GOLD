@@ -1,0 +1,30 @@
+{
+  "resourceType": "BodyStructure",
+  "id": "CerebellarSarcoma",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
+    ]
+  },
+  "morphology": {
+    "coding": [
+      {
+        "code": "17302008",
+        "system": "http://snomed.info/sct",
+        "display": "Cerebellar sarcoma (morphologic abnormality)"
+      }
+    ]
+  },
+  "location": {
+    "coding": [
+      {
+        "code": "1010600003",
+        "system": "http://snomed.info/sct",
+        "display": "Structure of left cerebellar hemisphere (body structure)"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/ExamplePatient"
+  }
+}

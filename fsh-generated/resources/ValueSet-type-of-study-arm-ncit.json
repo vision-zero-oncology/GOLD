@@ -1,0 +1,25 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TypeOfStudyArm_NCIT",
+  "id": "type-of-study-arm-ncit",
+  "title": "ValueSet Type of Study Arm NCIt",
+  "description": "Type of Study Arm aus NCI Thesaurus (NCIt)",
+  "version": "0.1.0",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit",
+  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "descendent-of",
+            "value": "C15538"
+          }
+        ]
+      }
+    ]
+  }
+}

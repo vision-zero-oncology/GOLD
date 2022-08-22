@@ -1,0 +1,23 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TNM_Suffix_ITC_SN_UICC",
+  "id": "vs-tnm-suffix-itc-sn-uicc",
+  "title": "ValueSet TNM Suffix ITC SN UICC",
+  "description": "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from TNM 8th edition UICC.",
+  "version": "0.1.0",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-sn-uicc",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "sn",
+            "display": "(sn)"
+          }
+        ]
+      }
+    ]
+  }
+}

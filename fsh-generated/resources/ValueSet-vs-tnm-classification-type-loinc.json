@@ -1,0 +1,27 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TNM_Classification_Type_LOINC",
+  "id": "vs-tnm-classification-type-loinc",
+  "title": "ValueSet TNM Classification Type LOINC",
+  "description": "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM).",
+  "version": "0.1.0",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc",
+  "compose": {
+    "include": [
+      {
+        "system": "http://loinc.org",
+        "concept": [
+          {
+            "code": "21908-9",
+            "display": "Stage group.clinical Cancer"
+          },
+          {
+            "code": "21902-2",
+            "display": "Stage group.pathology Cancer"
+          }
+        ]
+      }
+    ]
+  }
+}

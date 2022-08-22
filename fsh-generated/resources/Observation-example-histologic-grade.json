@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "example-histologic-grade",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "33732-9",
+        "system": "http://loinc.org",
+        "display": "Histology grade [Identifier] in Cancer specimen"
+      },
+      {
+        "code": "371469007",
+        "system": "http://snomed.info/sct",
+        "display": "Histologic grade of neoplasm (observable entity)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "54102005",
+        "display": "G1 grade (finding)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07"
+}

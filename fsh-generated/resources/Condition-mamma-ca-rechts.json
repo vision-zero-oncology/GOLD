@@ -1,0 +1,131 @@
+{
+  "resourceType": "Condition",
+  "id": "mamma-ca-rechts",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+        "extension": [
+          {
+            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
+            "valueCoding": {
+              "code": "R",
+              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+              "display": "Rechts"
+            }
+          }
+        ],
+        "code": "C50.2",
+        "display": "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse",
+        "version": "2019"
+      },
+      {
+        "extension": [
+          {
+            "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "7",
+                  "system": "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3",
+                  "display": "Histologische Untersuchung eines Primärtumors"
+                }
+              ]
+            }
+          }
+        ],
+        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+        "code": "8500/3",
+        "display": "Invasives duktales Karzinom o.n.A.",
+        "version": "2019"
+      }
+    ]
+  },
+  "stage": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "254293002",
+            "system": "http://snomed.info/sct",
+            "display": "Tumor-node-metastasis (TNM) tumor staging system (tumor staging)"
+          }
+        ]
+      },
+      "assessment": [
+        {
+          "reference": "Observation/tnm-cT2cN2cM1IV"
+        }
+      ]
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "258244004",
+            "system": "http://snomed.info/sct",
+            "display": "Tumor histopathological grade status values (tumor staging)"
+          }
+        ]
+      },
+      "assessment": [
+        {
+          "reference": "Observation/G3"
+        }
+      ]
+    }
+  ],
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
+      }
+    ]
+  },
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "C50.2",
+          "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+          "display": "Oberer innerer Quadrant der Brust",
+          "version": "2019"
+        }
+      ]
+    }
+  ],
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "onsetDateTime": "2019-09-17",
+  "recordedDate": "2019-09-19",
+  "recorder": {
+    "reference": "Practitioner/dokumentar"
+  },
+  "asserter": {
+    "reference": "Practitioner/kliniker"
+  },
+  "evidence": [
+    {
+      "detail": [
+        {
+          "reference": "DiagnosticReport/pathologie"
+        }
+      ]
+    }
+  ]
+}
