@@ -1,0 +1,685 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "gold",
+  "url": "https://www.vision-zero-oncology.de/fhir/ImplementationGuide/gold",
+  "version": "0.1.0",
+  "name": "GOLD",
+  "title": "German Oncological Data Standard (GOLD)",
+  "status": "draft",
+  "date": "2022-03-28",
+  "publisher": "Berlin Institute of Health at Charité (BIH)",
+  "contact": [
+    {
+      "name": "Berlin Institute of Health at Charité (BIH)",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.bihealth.org/"
+        }
+      ]
+    }
+  ],
+  "description": "Implementation Guide German Oncological Data Standard (GOLD)",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DEU",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "copyright": "CC-BY-SA-4.0",
+  "packageId": "gold",
+  "license": "CC-BY-SA-4.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.basisprofil.r4",
+      "version": "1.4.0",
+      "uri": "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
+      "id": "de_basisprofil_r4"
+    },
+    {
+      "packageId": "de.gematik.isik-basismodul",
+      "version": "2.0.0",
+      "uri": "http://fhir.org/packages/de.gematik.isik-basismodul/ImplementationGuide/de.gematik.isik-basismodul",
+      "id": "de_gematik_isik_basismodul"
+    },
+    {
+      "packageId": "de.medizininformatikinitiative.kerndatensatz.biobank",
+      "version": "1.0.3",
+      "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank",
+      "id": "de_medizininformatikinitiative_kerndatensatz_biobank"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "StructureDefinition/body-height"
+        },
+        "name": "Profile Body Height",
+        "description": "Profile for body height of a patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/body-weight"
+        },
+        "name": "Profile Body Weight",
+        "description": "Profile for body weight of a patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/clinical-study"
+        },
+        "name": "Clinical Study",
+        "description": "This profile describes a clinical study in which a patient takes part.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ecog-performance-status"
+        },
+        "name": "Profile ECOG Performance Status",
+        "description": "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/histology-topography"
+        },
+        "name": "Profile Histology Topography",
+        "description": "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/histopathological-grading-who"
+        },
+        "name": "Profile Histopathological Tumor Grading WHO",
+        "description": "Profile for the description of a tumor's grade using the general four-tier grading scheme following the recommendations of the WHO classification of tumors and UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/karnofsky-performance-status"
+        },
+        "name": "Profile Karnofsky Performance Status",
+        "description": "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/probandin"
+        },
+        "name": "ProbandIn",
+        "description": "Dieses Profil beschreibt eine Proband*in.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/recist-assessment-response"
+        },
+        "name": "Profile RECIST timepoint assessment response",
+        "description": "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/\nPlease note there is no assessment timepoint response for the baseline assessment.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumor"
+        },
+        "name": "Tumor",
+        "description": "Tumor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumor-disorder"
+        },
+        "name": "Tumor Disorder",
+        "description": "Profile for a tumor disorder",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumor-specimen"
+        },
+        "name": "Tumor Specimen",
+        "description": "Tumor specimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm"
+        },
+        "name": "Profile UICC TNM",
+        "description": "Profile for the tumor classification using TNM stage groups (I, II, III, or IV) and TNM staging elements (T, N, and M).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm-r-classification"
+        },
+        "name": "Profile UICC TNM Residual Tumor (R) Classification",
+        "description": "Profile for the residual tumor (R) classification as part of TNM.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/vital-signs-base"
+        },
+        "name": "Profile Vital Signs Base",
+        "description": "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/diagnosesicherung-icd-o"
+        },
+        "name": "Diagnosesicherung ICD O",
+        "description": "Extension für die Erfassung der Diagnosesicherung der ICD-O-3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/part-of"
+        },
+        "name": "Specimen part of Tumor",
+        "description": "Enables to reference a Tumor <BodyStructure> from its respective Specimen",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm-prefix-cpu"
+        },
+        "name": "Extension UICC TNM Prefix CPU",
+        "description": "The Extension allows to add c, p and u prefixes to TNM stages.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm-suffix-itc"
+        },
+        "name": "Extension UICC TNM Suffix ITC",
+        "description": "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm-suffix-itc-sn"
+        },
+        "name": "Extension UICC TNM Suffix ITC SN",
+        "description": "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-diagnosesicherung-icdo3"
+        },
+        "name": "Diagnosesicherung ICD-O-3",
+        "description": "ValueSet für die Diagnosesicherungscodes der ICD-O-3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/recist-asstimepoint-response-vs"
+        },
+        "name": "recist-timepoint-response-vs",
+        "description": "Defines the valid values for the recist assessment response observation resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-ecog-performance-status-snomed"
+        },
+        "name": "ValueSet ECOG Performance Status SNOMED",
+        "description": "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-histopathological-grade-snomed"
+        },
+        "name": "ValueSet Histologic Grade SNOMED",
+        "description": "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-morphology-icd-o-3"
+        },
+        "name": "ValueSet Morphology ICD-O-3",
+        "description": "The ValueSet contains the morphology (histology) codes from ICD-O-3.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-morphology-snomed"
+        },
+        "name": "ValueSet Morphology SNOMED",
+        "description": "The ValueSet contains the morphology (histology) codes from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/studiendesign-ncit"
+        },
+        "name": "ValueSet Studiendesign NCIt",
+        "description": "Studiendesign aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/studienkategorien-ncit"
+        },
+        "name": "ValueSet Studienkategorien NCIt",
+        "description": "Studienkategorien aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/study-focus-ncit"
+        },
+        "name": "ValueSet Study Focus NCIt",
+        "description": "Study Focus aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-classification-type-loinc"
+        },
+        "name": "ValueSet TNM Classification Type LOINC",
+        "description": "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-l-lymphatic-invasion-uicc"
+        },
+        "name": "ValueSet TNM L-Descriptor Lymphatic Invasion UICC",
+        "description": "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-m-category-uicc"
+        },
+        "name": "ValueSet TNM M Category UICC",
+        "description": "This ValueSet contains the TNM M category codes from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-m-staging-type-loinc"
+        },
+        "name": "ValueSet TNM M Staging Type LOINC",
+        "description": "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-n-category-uicc"
+        },
+        "name": "ValueSet TNM N Category UICC",
+        "description": "This ValueSet contains the TNM N category codes from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-n-staging-type-loinc"
+        },
+        "name": "ValueSet TNM N Staging Type LOINC",
+        "description": "This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-pn-perineural-invasion-uicc"
+        },
+        "name": "ValueSet TNM Pn-Descriptor Perineural Invasion UICC",
+        "description": "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-prefix-cpu-uicc"
+        },
+        "name": "ValueSet TNM Prefix CPU UICC",
+        "description": "This ValueSet contains the c, p and u prefixes for TNM stages from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-r-classification-uicc"
+        },
+        "name": "ValueSet TNM Residual Tumor (R) Classification UICC",
+        "description": "This ValueSet contains the TNM residual tumor (R) classification codes from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-s-serum-tumor-markers-uicc"
+        },
+        "name": "ValueSet TNM S Serum Tumour Markers UICC",
+        "description": "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-stage-group-uicc"
+        },
+        "name": "ValueSet TNM Stage Group UICC",
+        "description": "The ValueSet contains codes for the TNM stage groups ranging from I to IV to group cancer patients with similar prognosis from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-suffix-itc-sn-uicc"
+        },
+        "name": "ValueSet TNM Suffix ITC SN UICC",
+        "description": "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-suffix-itc-uicc"
+        },
+        "name": "ValueSet TNM Suffix ITC UICC",
+        "description": "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-t-category-uicc"
+        },
+        "name": "ValueSet TNM T Category UICC",
+        "description": "This ValueSet contains the TNM T category codes from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-t-multiplicity-uicc"
+        },
+        "name": "ValueSet TNM T Multiplicity UICC",
+        "description": "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-t-staging-type-loinc"
+        },
+        "name": "ValueSet TNM T Staging Type LOINC",
+        "description": "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-tnm-v-venous-invasion-uicc"
+        },
+        "name": "ValueSet TNM V-Descriptor Venous Invasion UICC",
+        "description": "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-topography-icd-o-3"
+        },
+        "name": "ValueSet Topography ICD-O-3",
+        "description": "The ValueSet contains the topography codes from ICD-O-3.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-topography-snomed"
+        },
+        "name": "ValueSet Topography SNOMED",
+        "description": "The ValueSet contains the topography codes from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/type-of-blinding-ncit"
+        },
+        "name": "ValueSet Type of Blinding NCIt",
+        "description": "Type of Blinding aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/type-of-randomization-ncit"
+        },
+        "name": "ValueSet Type of Randomization NCIt",
+        "description": "Type of Randomization aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/type-of-study-arm-ncit"
+        },
+        "name": "ValueSet Type of Study Arm NCIt",
+        "description": "Type of Study Arm aus NCI Thesaurus (NCIt)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-diagnosesicherung-icdo3"
+        },
+        "name": "Diagnosesicherung ICD-O-3",
+        "description": "CodeSystem für die Diagnosesicherungscodes der ICD-O-3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "BodyStructure/CerebellarSarcoma"
+        },
+        "name": "Tumor Example - Cerebellar Sarcoma",
+        "description": "Example for the Tumor profile",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
+      },
+      {
+        "reference": {
+          "reference": "Patient/ExamplePatient"
+        },
+        "name": "Example Patient",
+        "description": "Example of a patient.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleRecistAssessmentResponse"
+        },
+        "name": "Example RECIST assessment timepoint response",
+        "description": "Example RECIST assessment timepoint response observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/ExampleResearchSubjectStudienteilnehmer"
+        },
+        "name": "ExampleResearchSubjectStudienteilnehmer",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/ExampleStudyNapkonCovidom"
+        },
+        "name": "Example Study NAPKON COVIDOM",
+        "description": "Example Study NAPKON COVIDOM",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-body-height"
+        },
+        "name": "Example Body Height",
+        "description": "Example body height of a patient.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-body-weight"
+        },
+        "name": "Example Body Weight",
+        "description": "Example body weight of a patient.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-ecog-performance-status"
+        },
+        "name": "Example ECOG Performance Status",
+        "description": "Example ECOG status observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-histologic-grade"
+        },
+        "name": "Example Histologic Tumor Grade",
+        "description": "Example tumor grade using the general four-tier grading scheme.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-histology-topography"
+        },
+        "name": "Example Histology and Topography",
+        "description": "Example tumor histology and topography observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-karnofsky-performance-status"
+        },
+        "name": "Example Karnofsky Performance Status",
+        "description": "Example Karnofsky performance status observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-R0"
+        },
+        "name": "Example TNM R0",
+        "description": "Example TNM R0.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-R1"
+        },
+        "name": "Example TNM R1",
+        "description": "Example TNM R1.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-TisN0M0"
+        },
+        "name": "Example TNM Tis N0 M0",
+        "description": "Example TNM Tis N0 M0.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-cT3pN0mol-sncM1"
+        },
+        "name": "Example TNM cT3 pN0 (mol-)(sn) cM1",
+        "description": "Example TNM cT3 pN0 (mol-)(sn) cM1.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-rpT3mpN0icM0R1is"
+        },
+        "name": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)",
+        "description": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is).",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-uT2a2pN0023i-sncM1"
+        },
+        "name": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1",
+        "description": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0"
+        },
+        "name": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0",
+        "description": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-vital-signs-base"
+        },
+        "name": "Example Vital Signs Base Observation",
+        "description": "Example of a vital signs base observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
+      },
+      {
+        "reference": {
+          "reference": "Condition/mamma-ca-rechts"
+        },
+        "name": "Diagnose MammaCa rechts",
+        "description": "Beispiel einer Diagnose Mamma Ca rechts.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Home",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "logicalmodel.html",
+          "title": "Logical Model",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "usecase.html",
+          "title": "Use Case",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profiles",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "extensions.html",
+          "title": "Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2021+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "CI Build"
+      }
+    ]
+  }
+}

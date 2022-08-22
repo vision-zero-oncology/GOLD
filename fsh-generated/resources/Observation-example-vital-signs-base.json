@@ -1,0 +1,45 @@
+{
+  "resourceType": "Observation",
+  "id": "example-vital-signs-base",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "vital-signs",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "8302-2",
+        "system": "http://loinc.org",
+        "display": "Body height"
+      },
+      {
+        "code": "1153637007",
+        "system": "http://snomed.info/sct",
+        "display": "Body height (observable entity)"
+      }
+    ],
+    "text": "Body height"
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-02-18",
+  "valueQuantity": {
+    "value": 167,
+    "code": "cm",
+    "system": "http://unitsofmeasure.org",
+    "unit": "centimeter"
+  }
+}

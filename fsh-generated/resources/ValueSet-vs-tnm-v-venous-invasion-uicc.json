@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TNM_V_Venous_Invasion_UICC",
+  "id": "vs-tnm-v-venous-invasion-uicc",
+  "title": "ValueSet TNM V-Descriptor Venous Invasion UICC",
+  "description": "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC.",
+  "version": "0.1.0",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc",
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "V0",
+            "display": "V0"
+          },
+          {
+            "code": "V1",
+            "display": "V1"
+          },
+          {
+            "code": "V2",
+            "display": "V2"
+          },
+          {
+            "code": "VX",
+            "display": "VX"
+          }
+        ]
+      }
+    ]
+  }
+}

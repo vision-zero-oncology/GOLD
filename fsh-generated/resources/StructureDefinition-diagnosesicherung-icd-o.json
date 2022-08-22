@@ -1,0 +1,65 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "diagnosesicherung-icd-o",
+  "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o",
+  "version": "0.1.0",
+  "name": "DiagnosesicherungICDO",
+  "title": "Diagnosesicherung ICD O",
+  "status": "active",
+  "description": "Extension für die Erfassung der Diagnosesicherung der ICD-O-3",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Diagnosesicherung ICD O",
+        "definition": "Extension für die Erfassung der Diagnosesicherung der ICD-O-3"
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o"
+      },
+      {
+        "id": "Extension.value[x]:valueCodeableConcept",
+        "path": "Extension.value[x]",
+        "sliceName": "valueCodeableConcept",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3"
+        }
+      }
+    ]
+  }
+}
