@@ -1,7 +1,7 @@
 Profile: SD_Clinical_Study
 Parent: ResearchStudy
 Id: clinical-study 
-Title: "SD Clinical Study"
+Title: "Clinical Study"
 Description: "This profile describes a clinical study in which a patient takes part."
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern
