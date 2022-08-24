@@ -185,8 +185,8 @@ Description: "Example Study NAPKON COVIDOM"
 Instance: ExampleStudyRAAINBOW
 InstanceOf: clinical-study
 Usage: #example
-Title: "Example Study NAPKON COVIDOM"
-Description: "Example Study NAPKON COVIDOM"
+Title: "Example Study RAAINBOW"
+Description: "Example Study RAAINBOW"
 * identifier[NCT].system = "http://clinicaltrials.gov"
 * identifier[NCT].value = #NCT03240627
 * title = "Double-blind, Vehicle-controlled, Randomised, Multi-centre Study to Evaluate the Efficacy and Safety of LH-8 Cutaneous Solution in Children and Adolescents With Moderate to Severe Scalp Alopecia Areata."
