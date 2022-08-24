@@ -856,8 +856,8 @@
       <reference>
         <reference value="ResearchStudy/ExampleStudyRAAINBOW"/>
       </reference>
-      <name value="Example Study NAPKON COVIDOM"/>
-      <description value="Example Study NAPKON COVIDOM"/>
+      <name value="Example Study RAAINBOW"/>
+      <description value="Example Study RAAINBOW"/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"/>
     </resource>
     <resource>

@@ -3,7 +3,7 @@
 
 err = 80, warn = 95, info = 68
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.128
-Generated Wed Aug 24 11:56:26 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Wed Aug 24 12:56:24 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 49 / 1 / 0
  /github/workspace/fsh-generated/resources/BodyStructure-CerebellarSarcoma : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-diagnosesicherung-icdo3 : 0 / 0 / 1

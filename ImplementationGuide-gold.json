@@ -1157,8 +1157,8 @@
         "reference": {
           "reference": "ResearchStudy/ExampleStudyRAAINBOW"
         },
-        "name": "Example Study NAPKON COVIDOM",
-        "description": "Example Study NAPKON COVIDOM",
+        "name": "Example Study RAAINBOW",
+        "description": "Example Study RAAINBOW",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
       },
       {

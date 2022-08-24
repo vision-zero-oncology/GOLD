@@ -1158,8 +1158,8 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyRAAINBOW>;
          fhir:Reference.reference [ fhir:value "ResearchStudy/ExampleStudyRAAINBOW" ]
        ];
-       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Study NAPKON COVIDOM" ];
-       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Study NAPKON COVIDOM" ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Study RAAINBOW" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Study RAAINBOW" ];
        fhir:ImplementationGuide.definition.resource.exampleCanonical [
          fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study";
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>
