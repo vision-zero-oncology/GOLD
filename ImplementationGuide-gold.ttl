@@ -1152,6 +1152,23 @@
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
+         fhir:Extension.valueString [ fhir:value "ResearchStudy" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyRAAINBOW>;
+         fhir:Reference.reference [ fhir:value "ResearchStudy/ExampleStudyRAAINBOW" ]
+       ];
+       fhir:ImplementationGuide.definition.resource.name [ fhir:value "Example Study NAPKON COVIDOM" ];
+       fhir:ImplementationGuide.definition.resource.description [ fhir:value "Example Study NAPKON COVIDOM" ];
+       fhir:ImplementationGuide.definition.resource.exampleCanonical [
+         fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study";
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>
+       ]
+     ], [
+       fhir:index 58;
+       fhir:Element.extension [
+         fhir:index 0;
+         fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
          fhir:Extension.valueString [ fhir:value "Observation" ]
        ];
        fhir:ImplementationGuide.definition.resource.reference [
@@ -1165,7 +1182,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height>
        ]
      ], [
-       fhir:index 58;
+       fhir:index 59;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1182,7 +1199,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight>
        ]
      ], [
-       fhir:index 59;
+       fhir:index 60;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1199,7 +1216,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status>
        ]
      ], [
-       fhir:index 60;
+       fhir:index 61;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1216,7 +1233,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who>
        ]
      ], [
-       fhir:index 61;
+       fhir:index 62;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1233,7 +1250,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography>
        ]
      ], [
-       fhir:index 62;
+       fhir:index 63;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1250,7 +1267,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status>
        ]
      ], [
-       fhir:index 63;
+       fhir:index 64;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1267,7 +1284,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification>
        ]
      ], [
-       fhir:index 64;
+       fhir:index 65;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1284,7 +1301,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification>
        ]
      ], [
-       fhir:index 65;
+       fhir:index 66;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1301,7 +1318,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
        ]
      ], [
-       fhir:index 66;
+       fhir:index 67;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1318,7 +1335,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
        ]
      ], [
-       fhir:index 67;
+       fhir:index 68;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1335,7 +1352,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
        ]
      ], [
-       fhir:index 68;
+       fhir:index 69;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1352,7 +1369,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
        ]
      ], [
-       fhir:index 69;
+       fhir:index 70;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1369,7 +1386,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
        ]
      ], [
-       fhir:index 70;
+       fhir:index 71;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];
@@ -1386,7 +1403,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base>
        ]
      ], [
-       fhir:index 71;
+       fhir:index 72;
        fhir:Element.extension [
          fhir:index 0;
          fhir:Extension.url [ fhir:value "http://hl7.org/fhir/tools/StructureDefinition/resource-information" ];

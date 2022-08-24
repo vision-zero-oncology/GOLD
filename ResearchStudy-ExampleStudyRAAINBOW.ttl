@@ -1,0 +1,322 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyRAAINBOW> a fhir:ResearchStudy;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "ExampleStudyRAAINBOW"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study";
+       fhir:index 0;
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "generated" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p><b>identifier</b>: id: NCT03240627</p><p><b>title</b>: Double-blind, Vehicle-controlled, Randomised, Multi-centre Study to Evaluate the Efficacy and Safety of LH-8 Cutaneous Solution in Children and Adolescents With Moderate to Severe Scalp Alopecia Areata.</p><p><b>status</b>: completed</p><p><b>primaryPurposeType</b>: <span title=\"Codes: {http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html treatment}\">treatment</span></p><p><b>phase</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-phase phase-2-phase-3}\">Phase 2/Phase 3</span></p><p><b>category</b>: <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C98388}\">Interventional Study</span>, <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C46079}\">Randomized Controlled Clinical Trial</span>, <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C15228}\">Double Blind Study</span>, <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C142743}\">Unequal Randomization</span></p><p><b>focus</b>: <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C1909}\">Pharmacologic Substance</span></p><p><b>condition</b>: <span title=\"Codes: {http://snomed.info/sct 68225006}\">Alopecia areata (disorder)</span></p><p><b>location</b>: <span title=\"Codes: {urn:iso:std:iso:3166 DE}\">Germany</span>, <span title=\"Codes: {urn:iso:std:iso:3166 FR}\">France</span></p><p><b>period</b>: 2018-03-01 --&gt; 2022-03-17</p><p><b>principalInvestigator</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/example\">Practitioner/example</a></p><p><b>site</b>: </p><ul><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Organization/Charite-dermatology\">Organization/Charite-dermatology</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Organization/Sabouraud-Center\">Organization/Sabouraud-Center</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Organization/Diagnostic-consulting-center-XXIV-Sofia\">Organization/Diagnostic-consulting-center-XXIV-Sofia</a></li><li><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Organization/SC-Centrul-Medical-Sana-SRL\">Organization/SC-Centrul-Medical-Sana-SRL</a></li></ul><blockquote><p><b>arm</b></p><p><b>name</b>: Experimental: LH-8 cutaneous solution</p><p><b>type</b>: <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C174266}\">Investigational Arm</span></p><p><b>description</b>: LH-8 cutaneous solution (0.126 mL per spray) applied to the whole scalp</p></blockquote><blockquote><p><b>arm</b></p><p><b>name</b>: Placebo Comparator: Placebo cutaneous solution</p><p><b>type</b>: <span title=\"Codes: {http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl C174226}\">Control Arm</span></p><p><b>description</b>: Placebo cutaneous solution (0.126 mL per spray) applied to the whole scalp</p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Relative change in scalp alopecia areata severity scores (SALT) from baseline value to be assessed after 24 weeks of treatment. [ Time Frame: 24 weeks treatment ] Visual assessment and global standardised scalp photographs for SALT evaluation.</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type primary}\">Primary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Absolute change in SALT score from baseline at the end of 24 weeks' treatment period. [ Time Frame: 24 weeks treatment ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Proportion of the responders, i.e. subjects achieving at least a 40% relative reduction in SALT score from baseline at the end of 24 weeks' treatment period. [ Time Frame: 24 weeks treatment ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Adverse events [ Time Frame: 48 weeks ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: General physical examination findings, including irritation of eyes and skin [ Time Frame: 24 weeks treatment ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Visual assessment and global standardised scalp photographs for SALT evaluation. [ Time Frame: After 12 and 24 weeks treatment ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Evaluation of duration of treatment effect in responders, measured as relative SALT score changes from Visit 3 (end of treatment) after 12 weeks (Visit 4) and 24 weeks (Visit 5) of treatment-free period. (Visual assessment and global standardised scalp photographs for SALT evaluation.)</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Assessment of treatment effect on hair follicles in non-alopecic areas by quantifying the number of new alopecic areas. [ Time Frame: 24 weeks treatment ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Assessment of the rate of spontaneous hair regrowth. [ Time Frame: For 6-12 months ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Assessment of the rate of spontaneous hair regrowth in placebo treated subjects with alopecia areata active for 6-12 months compared to those with alopecia areata active for more than 12 months. (Visual assessment and global standardised scalp photographs for SALT evaluation).</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Absolute and relative change from baseline in Children's Dermatology Life Quality Index (CDLQI) scores. [ Time Frame: 48 weeks ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Change in percentage of subjects from baseline by the severity banding CDLQI scores. [ Time Frame: 48 weeks ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Percentages of subjects by EuroQol Five Dimensions Youth Questionnaire (EQ-5D-Y) dimensions and levels at Visits 1-5. [ Time Frame: 48 weeks ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Absolute and relative change of the EQ-Visual Analogue Scale (EQ-VAS) scores from baseline [ Time Frame: 48 weeks ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Evaluation of the Paediatric Alopecia Areata Patient Benefit Index (PAAPBI) scores at Visits 1 to 5. [ Time Frame: 48 weeks ]</p><p><b>type</b>: <span title=\"Codes: {http://terminology.hl7.org/CodeSystem/research-study-objective-type secondary}\">Secondary</span></p></blockquote></div>"
+  ];
+  fhir:ResearchStudy.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "http://clinicaltrials.gov" ];
+     fhir:Identifier.value [ fhir:value "NCT03240627" ]
+  ];
+  fhir:ResearchStudy.title [ fhir:value "Double-blind, Vehicle-controlled, Randomised, Multi-centre Study to Evaluate the Efficacy and Safety of LH-8 Cutaneous Solution in Children and Adolescents With Moderate to Severe Scalp Alopecia Areata."];
+  fhir:ResearchStudy.status [ fhir:value "completed"];
+  fhir:ResearchStudy.primaryPurposeType [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html" ];
+       fhir:Coding.code [ fhir:value "treatment" ]
+     ]
+  ];
+  fhir:ResearchStudy.phase [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-phase" ];
+       fhir:Coding.code [ fhir:value "phase-2-phase-3" ];
+       fhir:Coding.display [ fhir:value "Phase 2/Phase 3" ]
+     ]
+  ];
+  fhir:ResearchStudy.category [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+       fhir:Coding.code [ fhir:value "C98388" ];
+       fhir:Coding.display [ fhir:value "Interventional Study" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+       fhir:Coding.code [ fhir:value "C46079" ];
+       fhir:Coding.display [ fhir:value "Randomized Controlled Clinical Trial" ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+       fhir:Coding.code [ fhir:value "C15228" ];
+       fhir:Coding.display [ fhir:value "Double Blind Study" ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+       fhir:Coding.code [ fhir:value "C142743" ];
+       fhir:Coding.display [ fhir:value "Unequal Randomization" ]
+     ]
+  ];
+  fhir:ResearchStudy.focus [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+       fhir:Coding.code [ fhir:value "C1909" ];
+       fhir:Coding.display [ fhir:value "Pharmacologic Substance" ]
+     ]
+  ];
+  fhir:ResearchStudy.condition [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:68225006;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "68225006" ];
+       fhir:Coding.display [ fhir:value "Alopecia areata (disorder)" ]
+     ]
+  ];
+  fhir:ResearchStudy.location [
+     fhir:index 0;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "DE" ];
+       fhir:Coding.display [ fhir:value "Germany" ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
+       fhir:Coding.code [ fhir:value "FR" ];
+       fhir:Coding.display [ fhir:value "France" ]
+     ]
+  ];
+  fhir:ResearchStudy.period [
+     fhir:Period.start [ fhir:value "2018-03-01"^^xsd:date ];
+     fhir:Period.end [ fhir:value "2022-03-17"^^xsd:date ]
+  ];
+  fhir:ResearchStudy.principalInvestigator [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Practitioner/example>;
+     fhir:Reference.reference [ fhir:value "Practitioner/example" ]
+  ];
+  fhir:ResearchStudy.site [
+     fhir:index 0;
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Organization/Charite-dermatology>;
+     fhir:Reference.reference [ fhir:value "Organization/Charite-dermatology" ]
+  ], [
+     fhir:index 1;
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Organization/Sabouraud-Center>;
+     fhir:Reference.reference [ fhir:value "Organization/Sabouraud-Center" ]
+  ], [
+     fhir:index 2;
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Organization/Diagnostic-consulting-center-XXIV-Sofia>;
+     fhir:Reference.reference [ fhir:value "Organization/Diagnostic-consulting-center-XXIV-Sofia" ]
+  ], [
+     fhir:index 3;
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Organization/SC-Centrul-Medical-Sana-SRL>;
+     fhir:Reference.reference [ fhir:value "Organization/SC-Centrul-Medical-Sana-SRL" ]
+  ];
+  fhir:ResearchStudy.arm [
+     fhir:index 0;
+     fhir:ResearchStudy.arm.name [ fhir:value "Experimental: LH-8 cutaneous solution" ];
+     fhir:ResearchStudy.arm.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+         fhir:Coding.code [ fhir:value "C174266" ];
+         fhir:Coding.display [ fhir:value "Investigational Arm" ]
+       ]
+     ];
+     fhir:ResearchStudy.arm.description [ fhir:value "LH-8 cutaneous solution (0.126 mL per spray) applied to the whole scalp" ]
+  ], [
+     fhir:index 1;
+     fhir:ResearchStudy.arm.name [ fhir:value "Placebo Comparator: Placebo cutaneous solution" ];
+     fhir:ResearchStudy.arm.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
+         fhir:Coding.code [ fhir:value "C174226" ];
+         fhir:Coding.display [ fhir:value "Control Arm" ]
+       ]
+     ];
+     fhir:ResearchStudy.arm.description [ fhir:value "Placebo cutaneous solution (0.126 mL per spray) applied to the whole scalp" ]
+  ];
+  fhir:ResearchStudy.objective [
+     fhir:index 0;
+     fhir:ResearchStudy.objective.name [ fhir:value "Relative change in scalp alopecia areata severity scores (SALT) from baseline value to be assessed after 24 weeks of treatment. [ Time Frame: 24 weeks treatment ] Visual assessment and global standardised scalp photographs for SALT evaluation." ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "primary" ]
+       ]
+     ]
+  ], [
+     fhir:index 1;
+     fhir:ResearchStudy.objective.name [ fhir:value "Absolute change in SALT score from baseline at the end of 24 weeks' treatment period. [ Time Frame: 24 weeks treatment ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 2;
+     fhir:ResearchStudy.objective.name [ fhir:value "Proportion of the responders, i.e. subjects achieving at least a 40% relative reduction in SALT score from baseline at the end of 24 weeks' treatment period. [ Time Frame: 24 weeks treatment ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 3;
+     fhir:ResearchStudy.objective.name [ fhir:value "Adverse events [ Time Frame: 48 weeks ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 4;
+     fhir:ResearchStudy.objective.name [ fhir:value "General physical examination findings, including irritation of eyes and skin [ Time Frame: 24 weeks treatment ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 5;
+     fhir:ResearchStudy.objective.name [ fhir:value "Visual assessment and global standardised scalp photographs for SALT evaluation. [ Time Frame: After 12 and 24 weeks treatment ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 6;
+     fhir:ResearchStudy.objective.name [ fhir:value "Evaluation of duration of treatment effect in responders, measured as relative SALT score changes from Visit 3 (end of treatment) after 12 weeks (Visit 4) and 24 weeks (Visit 5) of treatment-free period. (Visual assessment and global standardised scalp photographs for SALT evaluation.)" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 7;
+     fhir:ResearchStudy.objective.name [ fhir:value "Assessment of treatment effect on hair follicles in non-alopecic areas by quantifying the number of new alopecic areas. [ Time Frame: 24 weeks treatment ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 8;
+     fhir:ResearchStudy.objective.name [ fhir:value "Assessment of the rate of spontaneous hair regrowth. [ Time Frame: For 6-12 months ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 9;
+     fhir:ResearchStudy.objective.name [ fhir:value "Assessment of the rate of spontaneous hair regrowth in placebo treated subjects with alopecia areata active for 6-12 months compared to those with alopecia areata active for more than 12 months. (Visual assessment and global standardised scalp photographs for SALT evaluation)." ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 10;
+     fhir:ResearchStudy.objective.name [ fhir:value "Absolute and relative change from baseline in Children's Dermatology Life Quality Index (CDLQI) scores. [ Time Frame: 48 weeks ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 11;
+     fhir:ResearchStudy.objective.name [ fhir:value "Change in percentage of subjects from baseline by the severity banding CDLQI scores. [ Time Frame: 48 weeks ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 12;
+     fhir:ResearchStudy.objective.name [ fhir:value "Percentages of subjects by EuroQol Five Dimensions Youth Questionnaire (EQ-5D-Y) dimensions and levels at Visits 1-5. [ Time Frame: 48 weeks ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 13;
+     fhir:ResearchStudy.objective.name [ fhir:value "Absolute and relative change of the EQ-Visual Analogue Scale (EQ-VAS) scores from baseline [ Time Frame: 48 weeks ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ], [
+     fhir:index 14;
+     fhir:ResearchStudy.objective.name [ fhir:value "Evaluation of the Paediatric Alopecia Areata Patient Benefit Index (PAAPBI) scores at Visits 1 to 5. [ Time Frame: 48 weeks ]" ];
+     fhir:ResearchStudy.objective.type [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
+         fhir:Coding.code [ fhir:value "secondary" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyRAAINBOW.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

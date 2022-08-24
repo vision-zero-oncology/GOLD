@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "5f7eafc9-b5b8-44f9-b462-a3891491a956",
+  "id" : "4d5d4590-a9fb-4857-80d2-32f152bb9851",
   "meta" : {
-    "lastUpdated" : "2022-08-22T12:50:52.331+00:00"
+    "lastUpdated" : "2022-08-24T11:54:47.060+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -19,7 +19,7 @@
       "name" : "DiagnosesicherungICDO3",
       "title" : "Diagnosesicherung ICD-O-3",
       "status" : "active",
-      "date" : "2022-08-22T12:50:52+00:00",
+      "date" : "2022-08-24T11:54:47+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -37,8 +37,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:f648028e-7fac-4170-ab9e-ca5a4082f0ef",
-        "timestamp" : "2022-08-22T12:51:41+00:00",
+        "identifier" : "urn:uuid:a244e225-0c72-48c1-97a1-1b6ba58046f0",
+        "timestamp" : "2022-08-24T11:55:39+00:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -105,7 +105,7 @@
       "name" : "VS_ECOG_Performance_Status_SNOMED",
       "title" : "ValueSet ECOG Performance Status SNOMED",
       "status" : "active",
-      "date" : "2022-08-22T12:50:52+00:00",
+      "date" : "2022-08-24T11:54:47+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -127,8 +127,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:3c89cd54-cf36-4fdc-9e4d-0a31ac062708",
-        "timestamp" : "2022-08-22T12:51:42+00:00",
+        "identifier" : "urn:uuid:cce06620-5e97-4571-8627-98b93f6d8b5b",
+        "timestamp" : "2022-08-24T11:55:40+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -189,7 +189,7 @@
       "name" : "VS_Histopathological_Grade_SNOMED",
       "title" : "ValueSet Histologic Grade SNOMED",
       "status" : "active",
-      "date" : "2022-08-22T12:50:52+00:00",
+      "date" : "2022-08-24T11:54:47+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -207,8 +207,8 @@
       }],
       "copyright" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
       "expansion" : {
-        "identifier" : "urn:uuid:0052cffe-7d88-4e4d-995c-83f5f264f9f0",
-        "timestamp" : "2022-08-22T12:51:42+00:00",
+        "identifier" : "urn:uuid:c73f7c01-bb98-41c6-840c-14cf59ea81c4",
+        "timestamp" : "2022-08-24T11:55:40+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -264,7 +264,7 @@
       "name" : "VS_Morphology_SNOMED",
       "title" : "ValueSet Morphology SNOMED",
       "status" : "active",
-      "date" : "2022-08-22T12:50:52+00:00",
+      "date" : "2022-08-24T11:54:47+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -290,8 +290,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:be4cd4c0-92de-4e74-a7b7-8f9ef403b624",
-        "timestamp" : "2022-08-22T12:51:43+00:00",
+        "identifier" : "urn:uuid:7e1a72b6-f28e-4a27-b331-de3292ff5389",
+        "timestamp" : "2022-08-24T11:55:41+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5315,14 +5315,14 @@
       "id" : "vs-tnm-classification-type-loinc",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.72</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21908-9\"> </a><a href=\"http://details.loinc.org/LOINC/21908-9.html\">21908-9</a></td><td>Stage group.clinical Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21902-2\"> </a><a href=\"http://details.loinc.org/LOINC/21902-2.html\">21902-2</a></td><td>Stage group.pathology Cancer</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 2 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21908-9\"> </a><a href=\"http://details.loinc.org/LOINC/21908-9.html\">21908-9</a></td><td>Stage group.clinical Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21902-2\"> </a><a href=\"http://details.loinc.org/LOINC/21902-2.html\">21902-2</a></td><td>Stage group.pathology Cancer</td><td/></tr></table></div>"
       },
       "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc",
       "version" : "0.1.0",
       "name" : "VS_TNM_Classification_Type_LOINC",
       "title" : "ValueSet TNM Classification Type LOINC",
       "status" : "active",
-      "date" : "2022-08-22T12:50:52+00:00",
+      "date" : "2022-08-24T11:54:47+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5340,8 +5340,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:a2903484-c69c-4f26-9255-c8445669d346",
-        "timestamp" : "2022-08-22T12:51:46+00:00",
+        "identifier" : "urn:uuid:00bedf00-e3b9-4b02-8b9d-69e5786737b8",
+        "timestamp" : "2022-08-24T11:55:44+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5353,7 +5353,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://loinc.org|2.72"
+          "valueUri" : "http://loinc.org|2.73"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
@@ -5375,14 +5375,14 @@
       "id" : "vs-tnm-m-staging-type-loinc",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.72</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21907-1\"> </a><a href=\"http://details.loinc.org/LOINC/21907-1.html\">21907-1</a></td><td>Distant metastases.clinical [Class] Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21901-4\"> </a><a href=\"http://details.loinc.org/LOINC/21901-4.html\">21901-4</a></td><td>Distant metastases.pathology [Class] Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21913-9\"> </a><a href=\"http://details.loinc.org/LOINC/21913-9.html\">21913-9</a></td><td>Distant metastases.other [Class] Cancer</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21907-1\"> </a><a href=\"http://details.loinc.org/LOINC/21907-1.html\">21907-1</a></td><td>Distant metastases.clinical [Class] Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21901-4\"> </a><a href=\"http://details.loinc.org/LOINC/21901-4.html\">21901-4</a></td><td>Distant metastases.pathology [Class] Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21913-9\"> </a><a href=\"http://details.loinc.org/LOINC/21913-9.html\">21913-9</a></td><td>Distant metastases.other [Class] Cancer</td><td/></tr></table></div>"
       },
       "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc",
       "version" : "0.1.0",
       "name" : "VS_TNM_M_Staging_Type_LOINC",
       "title" : "ValueSet TNM M Staging Type LOINC",
       "status" : "active",
-      "date" : "2022-08-22T12:50:52+00:00",
+      "date" : "2022-08-24T11:54:47+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5400,8 +5400,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:dbb227de-360d-4a10-a95e-62ce9b602e90",
-        "timestamp" : "2022-08-22T12:51:48+00:00",
+        "identifier" : "urn:uuid:93cc2f82-532d-4f5d-bdd6-cd4591a19f5b",
+        "timestamp" : "2022-08-24T11:55:46+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5413,7 +5413,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://loinc.org|2.72"
+          "valueUri" : "http://loinc.org|2.73"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
@@ -5440,14 +5440,14 @@
       "id" : "vs-tnm-n-staging-type-loinc",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.72</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21906-3\"> </a><a href=\"http://details.loinc.org/LOINC/21906-3.html\">21906-3</a></td><td>Regional lymph nodes.clinical [Class] Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21900-6\"> </a><a href=\"http://details.loinc.org/LOINC/21900-6.html\">21900-6</a></td><td>Regional lymph nodes.pathology [Class] Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21912-1\"> </a><a href=\"http://details.loinc.org/LOINC/21912-1.html\">21912-1</a></td><td>Regional lymph nodes.other [Class] Cancer</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21906-3\"> </a><a href=\"http://details.loinc.org/LOINC/21906-3.html\">21906-3</a></td><td>Regional lymph nodes.clinical [Class] Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21900-6\"> </a><a href=\"http://details.loinc.org/LOINC/21900-6.html\">21900-6</a></td><td>Regional lymph nodes.pathology [Class] Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21912-1\"> </a><a href=\"http://details.loinc.org/LOINC/21912-1.html\">21912-1</a></td><td>Regional lymph nodes.other [Class] Cancer</td><td/></tr></table></div>"
       },
       "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc",
       "version" : "0.1.0",
       "name" : "VS_TNM_N_Staging_Type_LOINC",
       "title" : "ValueSet TNM N Staging Type LOINC",
       "status" : "active",
-      "date" : "2022-08-22T12:50:52+00:00",
+      "date" : "2022-08-24T11:54:47+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5465,8 +5465,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:cb012939-29d6-46b7-809b-824f994b01cf",
-        "timestamp" : "2022-08-22T12:51:49+00:00",
+        "identifier" : "urn:uuid:a20825db-9178-4a56-b9ba-0bee11df03f0",
+        "timestamp" : "2022-08-24T11:55:47+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5478,7 +5478,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://loinc.org|2.72"
+          "valueUri" : "http://loinc.org|2.73"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
@@ -5505,14 +5505,14 @@
       "id" : "vs-tnm-t-staging-type-loinc",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.72</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21905-5\"> </a><a href=\"http://details.loinc.org/LOINC/21905-5.html\">21905-5</a></td><td>Primary tumor.clinical [Class] Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21899-0\"> </a><a href=\"http://details.loinc.org/LOINC/21899-0.html\">21899-0</a></td><td>Primary tumor.pathology Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21911-3\"> </a><a href=\"http://details.loinc.org/LOINC/21911-3.html\">21911-3</a></td><td>Primary tumor.other [Class] Cancer</td><td/></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set contains 3 concepts</p><p style=\"border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px\">Expansion based on Loinc v2.73</p><p>All codes in this table are from the system <a href=\"http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html\"><code>http://loinc.org</code></a></p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21905-5\"> </a><a href=\"http://details.loinc.org/LOINC/21905-5.html\">21905-5</a></td><td>Primary tumor.clinical [Class] Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21899-0\"> </a><a href=\"http://details.loinc.org/LOINC/21899-0.html\">21899-0</a></td><td>Primary tumor.pathology Cancer</td><td/></tr><tr><td style=\"white-space:nowrap\"><a name=\"http---loinc.org-21911-3\"> </a><a href=\"http://details.loinc.org/LOINC/21911-3.html\">21911-3</a></td><td>Primary tumor.other [Class] Cancer</td><td/></tr></table></div>"
       },
       "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc",
       "version" : "0.1.0",
       "name" : "VS_TNM_T_Staging_Type_LOINC",
       "title" : "ValueSet TNM T Staging Type LOINC",
       "status" : "active",
-      "date" : "2022-08-22T12:50:52+00:00",
+      "date" : "2022-08-24T11:54:47+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5530,8 +5530,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:512a5dac-57f2-4d9c-99b8-8c67bd97905f",
-        "timestamp" : "2022-08-22T12:51:58+00:00",
+        "identifier" : "urn:uuid:5c1d600d-d73f-44ee-8d59-72b8b872568b",
+        "timestamp" : "2022-08-24T11:55:53+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5543,7 +5543,7 @@
         },
         {
           "name" : "version",
-          "valueUri" : "http://loinc.org|2.72"
+          "valueUri" : "http://loinc.org|2.73"
         }],
         "contains" : [{
           "system" : "http://loinc.org",
@@ -5577,7 +5577,7 @@
       "name" : "VS_Topography_SNOMED",
       "title" : "ValueSet Topography SNOMED",
       "status" : "active",
-      "date" : "2022-08-22T12:50:52+00:00",
+      "date" : "2022-08-24T11:54:47+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5603,8 +5603,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:83105f5a-a3dd-4a14-9504-5e89c38b57c5",
-        "timestamp" : "2022-08-22T12:51:59+00:00",
+        "identifier" : "urn:uuid:d2b4ebe2-85e0-4051-98a4-f0ef4886581d",
+        "timestamp" : "2022-08-24T11:55:57+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",

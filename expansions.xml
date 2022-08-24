@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="5f7eafc9-b5b8-44f9-b462-a3891491a956"/>
+  <id value="4d5d4590-a9fb-4857-80d2-32f152bb9851"/>
   <meta>
-    <lastUpdated value="2022-08-22T12:50:52.331+00:00"/>
+    <lastUpdated value="2022-08-24T11:54:47.060+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -107,7 +107,7 @@
         <name value="DiagnosesicherungICDO3"/>
         <title value="Diagnosesicherung ICD-O-3"/>
         <status value="active"/>
-        <date value="2022-08-22T12:50:52+00:00"/>
+        <date value="2022-08-24T11:54:47+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -125,8 +125,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:f648028e-7fac-4170-ab9e-ca5a4082f0ef"/>
-          <timestamp value="2022-08-22T12:51:41+00:00"/>
+          <identifier value="urn:uuid:a244e225-0c72-48c1-97a1-1b6ba58046f0"/>
+          <timestamp value="2022-08-24T11:55:39+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -263,7 +263,7 @@
         <name value="VS_ECOG_Performance_Status_SNOMED"/>
         <title value="ValueSet ECOG Performance Status SNOMED"/>
         <status value="active"/>
-        <date value="2022-08-22T12:50:52+00:00"/>
+        <date value="2022-08-24T11:54:47+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -284,8 +284,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:3c89cd54-cf36-4fdc-9e4d-0a31ac062708"/>
-          <timestamp value="2022-08-22T12:51:42+00:00"/>
+          <identifier value="urn:uuid:cce06620-5e97-4571-8627-98b93f6d8b5b"/>
+          <timestamp value="2022-08-24T11:55:40+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -408,7 +408,7 @@
         <name value="VS_Histopathological_Grade_SNOMED"/>
         <title value="ValueSet Histologic Grade SNOMED"/>
         <status value="active"/>
-        <date value="2022-08-22T12:50:52+00:00"/>
+        <date value="2022-08-24T11:54:47+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -426,8 +426,8 @@
         </jurisdiction>
         <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
         <expansion>
-          <identifier value="urn:uuid:0052cffe-7d88-4e4d-995c-83f5f264f9f0"/>
-          <timestamp value="2022-08-22T12:51:42+00:00"/>
+          <identifier value="urn:uuid:c73f7c01-bb98-41c6-840c-14cf59ea81c4"/>
+          <timestamp value="2022-08-24T11:55:40+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -8505,7 +8505,7 @@
         <name value="VS_Morphology_SNOMED"/>
         <title value="ValueSet Morphology SNOMED"/>
         <status value="active"/>
-        <date value="2022-08-22T12:50:52+00:00"/>
+        <date value="2022-08-24T11:54:47+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -8529,8 +8529,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:be4cd4c0-92de-4e74-a7b7-8f9ef403b624"/>
-          <timestamp value="2022-08-22T12:51:43+00:00"/>
+          <identifier value="urn:uuid:7e1a72b6-f28e-4a27-b331-de3292ff5389"/>
+          <timestamp value="2022-08-24T11:55:41+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13557,7 +13557,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 2 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.72</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.73</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">
                 <code>http://loinc.org</code>
@@ -13599,7 +13599,7 @@
         <name value="VS_TNM_Classification_Type_LOINC"/>
         <title value="ValueSet TNM Classification Type LOINC"/>
         <status value="active"/>
-        <date value="2022-08-22T12:50:52+00:00"/>
+        <date value="2022-08-24T11:54:47+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13617,8 +13617,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:a2903484-c69c-4f26-9255-c8445669d346"/>
-          <timestamp value="2022-08-22T12:51:46+00:00"/>
+          <identifier value="urn:uuid:00bedf00-e3b9-4b02-8b9d-69e5786737b8"/>
+          <timestamp value="2022-08-24T11:55:44+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13630,7 +13630,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.72"/>
+            <valueUri value="http://loinc.org|2.73"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -13655,7 +13655,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.72</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.73</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">
                 <code>http://loinc.org</code>
@@ -13705,7 +13705,7 @@
         <name value="VS_TNM_M_Staging_Type_LOINC"/>
         <title value="ValueSet TNM M Staging Type LOINC"/>
         <status value="active"/>
-        <date value="2022-08-22T12:50:52+00:00"/>
+        <date value="2022-08-24T11:54:47+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13723,8 +13723,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:dbb227de-360d-4a10-a95e-62ce9b602e90"/>
-          <timestamp value="2022-08-22T12:51:48+00:00"/>
+          <identifier value="urn:uuid:93cc2f82-532d-4f5d-bdd6-cd4591a19f5b"/>
+          <timestamp value="2022-08-24T11:55:46+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13736,7 +13736,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.72"/>
+            <valueUri value="http://loinc.org|2.73"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -13766,7 +13766,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.72</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.73</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">
                 <code>http://loinc.org</code>
@@ -13816,7 +13816,7 @@
         <name value="VS_TNM_N_Staging_Type_LOINC"/>
         <title value="ValueSet TNM N Staging Type LOINC"/>
         <status value="active"/>
-        <date value="2022-08-22T12:50:52+00:00"/>
+        <date value="2022-08-24T11:54:47+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13834,8 +13834,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:cb012939-29d6-46b7-809b-824f994b01cf"/>
-          <timestamp value="2022-08-22T12:51:49+00:00"/>
+          <identifier value="urn:uuid:a20825db-9178-4a56-b9ba-0bee11df03f0"/>
+          <timestamp value="2022-08-24T11:55:47+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13847,7 +13847,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.72"/>
+            <valueUri value="http://loinc.org|2.73"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -13877,7 +13877,7 @@
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
             <p>This value set contains 3 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.72</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on Loinc v2.73</p>
             <p>All codes in this table are from the system 
               <a href="http://terminology.hl7.org/3.1.0/CodeSystem-v3-loinc.html">
                 <code>http://loinc.org</code>
@@ -13927,7 +13927,7 @@
         <name value="VS_TNM_T_Staging_Type_LOINC"/>
         <title value="ValueSet TNM T Staging Type LOINC"/>
         <status value="active"/>
-        <date value="2022-08-22T12:50:52+00:00"/>
+        <date value="2022-08-24T11:54:47+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13945,8 +13945,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:512a5dac-57f2-4d9c-99b8-8c67bd97905f"/>
-          <timestamp value="2022-08-22T12:51:58+00:00"/>
+          <identifier value="urn:uuid:5c1d600d-d73f-44ee-8d59-72b8b872568b"/>
+          <timestamp value="2022-08-24T11:55:53+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13958,7 +13958,7 @@
           </parameter>
           <parameter>
             <name value="version"/>
-            <valueUri value="http://loinc.org|2.72"/>
+            <valueUri value="http://loinc.org|2.73"/>
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
@@ -22014,7 +22014,7 @@
         <name value="VS_Topography_SNOMED"/>
         <title value="ValueSet Topography SNOMED"/>
         <status value="active"/>
-        <date value="2022-08-22T12:50:52+00:00"/>
+        <date value="2022-08-24T11:54:47+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -22038,8 +22038,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:83105f5a-a3dd-4a14-9504-5e89c38b57c5"/>
-          <timestamp value="2022-08-22T12:51:59+00:00"/>
+          <identifier value="urn:uuid:d2b4ebe2-85e0-4051-98a4-f0ef4886581d"/>
+          <timestamp value="2022-08-24T11:55:57+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>

@@ -851,6 +851,17 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ResearchStudy"/>
+      </extension>
+      <reference>
+        <reference value="ResearchStudy/ExampleStudyRAAINBOW"/>
+      </reference>
+      <name value="Example Study NAPKON COVIDOM"/>
+      <description value="Example Study NAPKON COVIDOM"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
