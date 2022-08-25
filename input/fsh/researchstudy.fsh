@@ -15,32 +15,32 @@ Description: "This profile describes a clinical study in which a patient takes p
     URI 0..1 and
     DRKS 0..1
 * identifier[eudraCT] ^short = "Eudra CT Number"
-* identifier[eudraCT] ^patternSystem = "https://www.clinicaltrialsregister.eu"
+* identifier[eudraCT] ^patternIdentifier.system = "https://www.clinicaltrialsregister.eu"
 * identifier[eudraCT].system = "https://www.clinicaltrialsregister.eu"
 * identifier[eudraCT].system 1.. MS
 * identifier[eudraCT].value 1.. MS
 * identifier[NCT] ^short = "NCT number"
-* identifier[NCT] ^patternSystem = "http://clinicaltrials.gov"
+* identifier[NCT] ^patternIdentifier.system = "http://clinicaltrials.gov"
 * identifier[NCT].system = "http://clinicaltrials.gov"
 * identifier[NCT].system 1.. MS
 * identifier[NCT].value 1.. MS
 * identifier[PMID] ^short = "Pubmed ID"
-* identifier[PMID] ^patternSystem = "http://www.ncbi.nlm.nih.gov/pubmed"
+* identifier[PMID] ^patternIdentifier.system = "http://www.ncbi.nlm.nih.gov/pubmed"
 * identifier[PMID].system = "http://www.ncbi.nlm.nih.gov/pubmed"
 * identifier[PMID].system 1.. MS
 * identifier[PMID].value 1.. MS
 * identifier[DOI] ^short = "Digital Object Identifier"
-* identifier[DOI] ^patternSystem = "https://doi.org"
+* identifier[DOI] ^patternIdentifier.system = "https://doi.org"
 * identifier[DOI].system = "https://doi.org"
 * identifier[DOI].system 1.. MS
 * identifier[DOI].value 1.. MS
 * identifier[URI] ^short = "Uniform Resource Identifier"
-* identifier[URI] ^patternSystem = "urn:ietf:rfc:3986"
+* identifier[URI] ^patternIdentifier.system = "urn:ietf:rfc:3986"
 * identifier[URI].system = "urn:ietf:rfc:3986"
 * identifier[URI].system 1.. MS
 * identifier[URI].value 1.. MS
 * identifier[DRKS] ^short = "Deusches Register Klinischer Studien"
-* identifier[DRKS] ^patternSystem = "https://www.drks.de"
+* identifier[DRKS] ^patternIdentifier.system = "https://www.drks.de"
 * identifier[DRKS].system = "https://www.drks.de"
 * identifier[DRKS].system 1.. MS
 * identifier[DRKS].value 1.. MS

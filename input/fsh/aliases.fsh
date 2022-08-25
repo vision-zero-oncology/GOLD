@@ -12,7 +12,7 @@ Alias: $ClinStatus = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $VerStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $ObsCat = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
-Alias: $StudyPrimPurpType = http://hl7.org/fhir/ValueSet/research-study-prim-purp-type
+Alias: $StudyPrimPurpType = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type
 Alias: $StudyObjectiveType = http://terminology.hl7.org/CodeSystem/research-study-objective-type
 Alias: $StudyPhase = http://terminology.hl7.org/CodeSystem/research-study-phase
 
