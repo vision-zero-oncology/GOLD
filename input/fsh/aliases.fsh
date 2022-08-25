@@ -31,7 +31,7 @@ Alias:   $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
 // Alias:   $MedReqCat = 	http://terminology.hl7.org/CodeSystem/medicationrequest-category
 // Alias:   $RefMeaning = http://terminology.hl7.org/CodeSystem/referencerange-meaning
 // Alias:   $v3-ActCode = http://terminology.hl7.org/CodeSystem/v3-ActCode
-Alias: $StudyPrimPurpType = http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html
+Alias: $StudyPrimPurpType = http://hl7.org/fhir/ValueSet/research-study-prim-purp-type
 Alias: $StudyObjectiveType = http://terminology.hl7.org/CodeSystem/research-study-objective-type
 Alias: $StudyPhase = http://terminology.hl7.org/CodeSystem/research-study-phase
 
