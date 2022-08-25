@@ -1,4 +1,4 @@
-Profile: SD_Clinical_Study
+Profile: Clinical_Study
 Parent: ResearchStudy
 Id: clinical-study 
 Title: "Clinical Study"

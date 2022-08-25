@@ -1,0 +1,198 @@
+{
+  "resourceType": "Observation",
+  "id": "example-tnm-rpT3mpN0icM0R1is",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "277647002",
+            "system": "http://snomed.info/sct",
+            "display": "r - Tumor recurrence (tumor staging)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "r",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "r"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "p",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "p"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21899-0",
+            "system": "http://loinc.org",
+            "display": "Primary tumor.pathology Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "T3",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "T3"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "277650004",
+            "system": "http://snomed.info/sct",
+            "display": "m - Multiple tumors (tumor staging)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "m",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "(m)"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "p",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "p"
+              }
+            ]
+          }
+        },
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "i+",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "(i+)"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21900-6",
+            "system": "http://loinc.org",
+            "display": "Regional lymph nodes.pathology [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "N0",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "N0"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "c",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "c"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21907-1",
+            "system": "http://loinc.org",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "M0",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "M0"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "258235000",
+        "system": "http://snomed.info/sct",
+        "display": "International Union Against Cancer (tumor staging)"
+      },
+      {
+        "code": "21902-2",
+        "system": "http://loinc.org",
+        "display": "Stage group.pathology Cancer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "IIB",
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "display": "Stage IIB"
+      }
+    ]
+  },
+  "hasMember": [
+    {
+      "reference": "Observation/example-tnm-R1"
+    }
+  ]
+}

@@ -4,7 +4,7 @@ temp
 template
 output
 input-cache
-fsh-generated
+# fsh-generated
 
 # IG publisher files #
 ###########################################

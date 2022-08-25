@@ -1,0 +1,36 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_StudyFocus_NCIT",
+  "id": "study-focus-ncit",
+  "title": "ValueSet Study Focus NCIt",
+  "description": "Study Focus aus NCI Thesaurus (NCIt)",
+  "version": "0.1.0",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/study-focus-ncit",
+  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C1909",
+            "display": "Pharmacologic Substance"
+          },
+          {
+            "code": "C16830",
+            "display": "Medical Device"
+          },
+          {
+            "code": "C78523",
+            "display": "Cosmetic"
+          },
+          {
+            "code": "C1505",
+            "display": "Dietary Supplement"
+          }
+        ]
+      }
+    ]
+  }
+}

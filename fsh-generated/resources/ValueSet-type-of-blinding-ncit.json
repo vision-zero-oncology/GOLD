@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_TypeOfBlinding_NCIT",
+  "id": "type-of-blinding-ncit",
+  "title": "ValueSet Type of Blinding NCIt",
+  "description": "Type of Blinding aus NCI Thesaurus (NCIt)",
+  "version": "0.1.0",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit",
+  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C49659",
+            "display": "Open Label Study"
+          },
+          {
+            "code": "C28233",
+            "display": "Single Blind Study"
+          },
+          {
+            "code": "C15228",
+            "display": "Double Blind Study"
+          },
+          {
+            "code": "C66959",
+            "display": "Triple Blind Study"
+          },
+          {
+            "code": "C156592",
+            "display": "Open Label for Treatment And Double Blind to Dose"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "RecistAssessmentTimepointResponseVS",
+  "id": "recist-asstimepoint-response-vs",
+  "title": "recist-timepoint-response-vs",
+  "description": "Defines the valid values for the recist assessment response observation resource",
+  "version": "0.1.0",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response-vs",
+  "compose": {
+    "include": [
+      {
+        "system": "http://radlex.org/RID",
+        "concept": [
+          {
+            "code": "11514",
+            "display": "stable disease"
+          },
+          {
+            "code": "11513",
+            "display": "partial response"
+          },
+          {
+            "code": "11511",
+            "display": "complete imaging response"
+          },
+          {
+            "code": "11515",
+            "display": "progressive disease"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "resourceType": "ValueSet",
+  "status": "active",
+  "name": "VS_Studiendesign_NCIT",
+  "id": "studiendesign-ncit",
+  "title": "ValueSet Studiendesign NCIt",
+  "description": "Studiendesign aus NCI Thesaurus (NCIt)",
+  "version": "0.1.0",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit",
+  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C15197",
+            "display": "Case-Control Study"
+          },
+          {
+            "code": "C15208",
+            "display": "Cohort Study"
+          },
+          {
+            "code": "C53310",
+            "display": "Cross-Sectional Study"
+          },
+          {
+            "code": "C46079",
+            "display": "Randomized Controlled Clinical Trial"
+          },
+          {
+            "code": "C93043",
+            "display": "Nonrandomized Clinical Trial"
+          }
+        ]
+      }
+    ]
+  }
+}

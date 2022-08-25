@@ -24,8 +24,9 @@ contact:
     value: https://www.bihealth.org/
 
 dependencies:
-  de.basisprofil.r4: 1.3.1
+  de.basisprofil.r4: 1.4.0
   de.gematik.isik-basismodul: 2.0.0
+  de.medizininformatikinitiative.kerndatensatz.biobank: 1.0.3
 
 pages:
   index.md:

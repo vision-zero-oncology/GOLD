@@ -1,0 +1,165 @@
+{
+  "resourceType": "Observation",
+  "id": "example-tnm-cT3pN0mol-sncM1",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    ]
+  },
+  "component": [
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "c",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "c"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21905-5",
+            "system": "http://loinc.org",
+            "display": "Primary tumor.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "T3",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "T3"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "p",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "p"
+              }
+            ]
+          }
+        },
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "mol-",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "(mol-)"
+              }
+            ]
+          }
+        },
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "sn",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "(sn)"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21900-6",
+            "system": "http://loinc.org",
+            "display": "Regional lymph nodes.pathology [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "N0",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "N0"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "c",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "c"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21907-1",
+            "system": "http://loinc.org",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "M1",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "M1"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "258235000",
+        "system": "http://snomed.info/sct",
+        "display": "International Union Against Cancer (tumor staging)"
+      },
+      {
+        "code": "21902-2",
+        "system": "http://loinc.org",
+        "display": "Stage group.pathology Cancer"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "IVC",
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "display": "Stage IVC"
+      }
+    ]
+  }
+}
