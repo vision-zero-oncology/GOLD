@@ -29,7 +29,7 @@ Instance: ExampleResearchSubjectStudienteilnehmer
 InstanceOf: probandin
 Usage: #example
 * identifier[subjectIdentificationCode].type = http://terminology.hl7.org/CodeSystem/v2-0203#ANON
-* identifier[subjectIdentificationCode].system = "https://www.example.org/fhir/core/sid/SubjectIdentificationCode"
+* identifier[subjectIdentificationCode].system = "https://charite.de/fhir/core/sid/SubjectIdentificationCode"
 * identifier[subjectIdentificationCode].value = "12345"
 * status = #candidate
 * period.start = "2019-09-06"
