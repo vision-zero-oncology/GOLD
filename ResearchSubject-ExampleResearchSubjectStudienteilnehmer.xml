@@ -15,7 +15,7 @@
         <code value="ANON"/>
       </coding>
     </type>
-    <system value="https://www.example.org/fhir/core/sid/SubjectIdentificationCode"/>
+    <system value="https://charite.de/fhir/core/sid/SubjectIdentificationCode"/>
     <value value="12345"/>
   </identifier>
   <status value="candidate"/>

@@ -1,6 +1,6 @@
 ﻿<!DOCTYPE HTML>
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
-<!-- broken links = 42, errors = 80, warn = 95, info = 68 -->
+<!-- broken links = 42, errors = 60, warn = 95, info = 74 -->
 <head>
   <title>GOLD : Validation Results</title>
   <link href="fhir.css" rel="stylesheet"/>
@@ -36,7 +36,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for GOLD</h1>
- <p>Generated Wed Aug 24 12:56:22 UTC 2022, FHIR version 4.0.1 for gold#0.1.0 (canonical = <a href="https://www.vision-zero-oncology.de/fhir">https://www.vision-zero-oncology.de/fhir</a> (<a href="https://www.vision-zero-oncology.de/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
+ <p>Generated Thu Aug 25 14:55:22 UTC 2022, FHIR version 4.0.1 for gold#0.1.0 (canonical = <a href="https://www.vision-zero-oncology.de/fhir">https://www.vision-zero-oncology.de/fhir</a> (<a href="https://www.vision-zero-oncology.de/fhir/history.html">history</a>)). See <a href="/github/workspace/output/qa.min.html">Errors Only</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v1.1.83, which is out of date. The current version is v1.1.128 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = gold, Canonical = https://www.vision-zero-oncology.de/fhir</td></tr>
@@ -55,7 +55,7 @@
  <br/><br/>The copyrightYear parameter ('2021+') in the IG resource is good</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.vision-zero-oncology.de/fhir (Problem #1 with package-list.json at https://www.vision-zero-oncology.de/fhir: https://www.vision-zero-oncology.de/fhir/package-list.json)</td></tr>
- <tr><td>Summary:</td><td> broken links = 42, errors = 80, warn = 95, info = 68</td></tr>
+ <tr><td>Summary:</td><td> broken links = 42, errors = 60, warn = 95, info = 74</td></tr>
 </table>
  <table class="grid">
    <tr>
@@ -125,10 +125,10 @@
      <td><a href="#_github_workspace_fsh-generated_resources_Patient-ExamplePatient"><b>/github/workspace/fsh-generated/resources/Patient-ExamplePatient</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_ResearchStudy-ExampleStudyNapkonCovidom"><b>/github/workspace/fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom</b></a></td><td><b>15</b></td><td><b>0</b></td><td><b>2</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_ResearchStudy-ExampleStudyNapkonCovidom"><b>/github/workspace/fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>4</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><a href="#_github_workspace_fsh-generated_resources_ResearchStudy-ExampleStudyRAAINBOW"><b>/github/workspace/fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW</b></a></td><td><b>14</b></td><td><b>3</b></td><td><b>7</b></td>
+     <td><a href="#_github_workspace_fsh-generated_resources_ResearchStudy-ExampleStudyRAAINBOW"><b>/github/workspace/fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW</b></a></td><td><b>6</b></td><td><b>3</b></td><td><b>11</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><a href="#_github_workspace_fsh-generated_resources_ResearchSubject-ExampleResearchSubjectStudienteilnehmer"><b>/github/workspace/fsh-generated/resources/ResearchSubject-ExampleResearchSubjectStudienteilnehmer</b></a></td><td><b>3</b></td><td><b>0</b></td><td><b>0</b></td>
@@ -497,13 +497,13 @@
      <td><b>Condition.code.coding[0].extension[0].value.ofType(Coding) (l17/c27)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Condition.code.coding[1] (l27/c8)</b></td><td><b>warning</b></td><td><b>The display &quot;Invasives duktales Karzinom o.n.A.&quot; is not a valid display for the code {http://terminology.hl7.org/CodeSystem/icd-o-3}8500/3 - should be one of ['Infiltrating duct carcinoma, NOS'] (from http://tx.fhir.org/r4) for 'http://terminology.hl7.org/CodeSystem/icd-o-3#8500/3'</b> (<a href="qa-tx.html#l157">see Tx log</a>)</td>
+     <td><b>Condition.code.coding[1] (l27/c8)</b></td><td><b>warning</b></td><td><b>The display &quot;Invasives duktales Karzinom o.n.A.&quot; is not a valid display for the code {http://terminology.hl7.org/CodeSystem/icd-o-3}8500/3 - should be one of ['Infiltrating duct carcinoma, NOS'] (from http://tx.fhir.org/r4) for 'http://terminology.hl7.org/CodeSystem/icd-o-3#8500/3'</b> (<a href="qa-tx.html#l156">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>Condition.code.coding[1] (l27/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie not found by validator</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Condition.bodySite[0].coding[0] (l102/c10)</b></td><td><b>warning</b></td><td><b>The system &quot;Oberer innerer Quadrant der Brust&quot; http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment); The display &quot;Oberer innerer Quadrant der Brust&quot; is not a valid display for the code {http://terminology.hl7.org/CodeSystem/icd-o-3}C50.2 - should be one of [] (from http://tx.fhir.org/r4) for 'http://terminology.hl7.org/CodeSystem/icd-o-3#C50.2'</b> (<a href="qa-tx.html#l158">see Tx log</a>)</td>
+     <td><b>Condition.bodySite[0].coding[0] (l102/c10)</b></td><td><b>warning</b></td><td><b>The system &quot;Oberer innerer Quadrant der Brust&quot; http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment); The display &quot;Oberer innerer Quadrant der Brust&quot; is not a valid display for the code {http://terminology.hl7.org/CodeSystem/icd-o-3}C50.2 - should be one of [] (from http://tx.fhir.org/r4) for 'http://terminology.hl7.org/CodeSystem/icd-o-3#C50.2'</b> (<a href="qa-tx.html#l157">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b><a href="">Condition.bodySite[0].coding[0] (l102/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder</b> <span id="sl61" class="flip" onclick="flip('l61')">Show Reasoning</span><div id="l61" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder<ul><li>Condition.bodySite[0].coding[0]: discriminator = true and ($this memberOf 'https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-body-structures')</li>, <li>Condition.bodySite[0].coding[0]: discriminator = true and ($this memberOf 'http://fhir.de/onkologie/ValueSet/icd-o-3-topologie')</li></ul></div></td>
@@ -608,13 +608,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l40/c8)</b></td><td><b>warning</b></td><td><b>The system &quot;schlecht differenziertes Plattenepithelkarzinom&quot; http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment); The display &quot;schlecht differenziertes Plattenepithelkarzinom&quot; is not a valid display for the code {http://terminology.hl7.org/CodeSystem/icd-o-3}8070/33 - should be one of [] (from http://tx.fhir.org/r4) for 'http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33'</b> (<a href="qa-tx.html#l73">see Tx log</a>)</td>
+     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l40/c8)</b></td><td><b>warning</b></td><td><b>The system &quot;schlecht differenziertes Plattenepithelkarzinom&quot; http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment); The display &quot;schlecht differenziertes Plattenepithelkarzinom&quot; is not a valid display for the code {http://terminology.hl7.org/CodeSystem/icd-o-3}8070/33 - should be one of [] (from http://tx.fhir.org/r4) for 'http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33'</b> (<a href="qa-tx.html#l72">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l40/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Observation.bodySite.coding[0] (l54/c8)</b></td><td><b>warning</b></td><td><b>The system &quot;Lungenoberlappen&quot; http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment); The display &quot;Lungenoberlappen&quot; is not a valid display for the code {http://terminology.hl7.org/CodeSystem/icd-o-3}C34.1 - should be one of [] (from http://tx.fhir.org/r4) for 'http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1'</b> (<a href="qa-tx.html#l77">see Tx log</a>)</td>
+     <td><b>Observation.bodySite.coding[0] (l54/c8)</b></td><td><b>warning</b></td><td><b>The system &quot;Lungenoberlappen&quot; http://terminology.hl7.org/CodeSystem/icd-o-3 was found but did not contain enough information to properly validate the code (mode = fragment); The display &quot;Lungenoberlappen&quot; is not a valid display for the code {http://terminology.hl7.org/CodeSystem/icd-o-3}C34.1 - should be one of [] (from http://tx.fhir.org/r4) for 'http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1'</b> (<a href="qa-tx.html#l76">see Tx log</a>)</td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation.bodySite.coding[0] (l54/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_NoValid_12"><b>The Coding provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3, and a code is required from this value set.  (error message = Not in value set https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3)</b></td>
@@ -999,41 +999,11 @@
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">ResearchStudy.category[0] (l30/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study</b> <span id="sl166" class="flip" onclick="flip('l166')">Show Reasoning</span><div id="l166" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study<ul><li>ResearchStudy.category[0]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit')</li>, <li>ResearchStudy.category[0]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit')</li>, <li>ResearchStudy.category[0]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit')</li>, <li>ResearchStudy.category[0]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit')</li></ul></div></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[1] (l14/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[1] (l14/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[1] (l14/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[1] (l14/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[1] (l14/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[1] (l14/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">ResearchStudy.category[1] (l39/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study</b> <span id="sl167" class="flip" onclick="flip('l167')">Show Reasoning</span><div id="l167" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study<ul><li>ResearchStudy.category[1]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit')</li>, <li>ResearchStudy.category[1]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit')</li>, <li>ResearchStudy.category[1]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit')</li>, <li>ResearchStudy.category[1]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit')</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>ResearchStudy (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ResearchStudy.category:studyCategory: minimum required = 1, but only found 0 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study)</b></td>
@@ -1060,32 +1030,20 @@
    <tr>
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">ResearchStudy.category[0] (l35/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study</b> <span id="sl173" class="flip" onclick="flip('l173')">Show Reasoning</span><div id="l173" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study<ul><li>ResearchStudy.category[0]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit')</li>, <li>ResearchStudy.category[0]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit')</li>, <li>ResearchStudy.category[0]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit')</li>, <li>ResearchStudy.category[0]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit')</li></ul></div></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">ResearchStudy.category[1] (l44/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study</b> <span id="sl174" class="flip" onclick="flip('l174')">Show Reasoning</span><div id="l174" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study<ul><li>ResearchStudy.category[1]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit')</li>, <li>ResearchStudy.category[1]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit')</li>, <li>ResearchStudy.category[1]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit')</li>, <li>ResearchStudy.category[1]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit')</li></ul></div></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">ResearchStudy.category[2] (l53/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study</b> <span id="sl175" class="flip" onclick="flip('l175')">Show Reasoning</span><div id="l175" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study<ul><li>ResearchStudy.category[2]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit')</li>, <li>ResearchStudy.category[2]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit')</li>, <li>ResearchStudy.category[2]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit')</li>, <li>ResearchStudy.category[2]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit')</li></ul></div></td>
    </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.identifier[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
+   <tr style="background-color: #ffffe6">
+     <td><b><a href="">ResearchStudy.category[3] (l62/c6)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study</b> <span id="sl176" class="flip" onclick="flip('l176')">Show Reasoning</span><div id="l176" style="display: none"><p>&nbsp;</p>This element does not match any known slicedefined_in_the_profilehttps://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study<ul><li>ResearchStudy.category[3]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit')</li>, <li>ResearchStudy.category[3]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit')</li>, <li>ResearchStudy.category[3]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit')</li>, <li>ResearchStudy.category[3]: discriminator = true and ($this memberOf 'https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit')</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>ResearchStudy (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>ResearchStudy.category:studyCategory: minimum required = 1, but only found 0 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study)</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.primaryPurposeType.coding[0] (l19/c8)</b></td><td><b>error</b></td><td title="TERMINOLOGY_TX_SYSTEM_WRONG_HTML"><b>The code system reference http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}</b></td>
-   </tr>
-   <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.primaryPurposeType.coding[0].system (l22/c8)</b></td><td><b>error</b></td><td title="Type_Specific_Checks_DT_URL_Resolve"><b>URL value 'http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html' does not resolve</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>ResearchStudy.category[0].coding[0] (l37/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
@@ -1401,7 +1359,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'recist-asstimepoint-response-vs')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://radlex.org/RID</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'recist-asstimepoint-response-vs')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://radlex.org/RID</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1417,7 +1375,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'studiendesign-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'studiendesign-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1433,7 +1391,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'studienkategorien-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'studienkategorien-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1449,7 +1407,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'study-focus-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'study-focus-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1465,7 +1423,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'type-of-blinding-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'type-of-blinding-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1478,7 +1436,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'type-of-randomization-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'type-of-randomization-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1491,7 +1449,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'type-of-study-arm-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'type-of-study-arm-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1543,7 +1501,7 @@
      <td><b>ValueSet.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: vs-morphology-icd-o-3/https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'vs-morphology-icd-o-3')</b></td><td><b>error</b></td><td><b>Error from server: The code system definition for http://terminology.hl7.org/CodeSystem/icd-o-3 is a fragment, so this expansion is not permitted unless the expansion parameter &quot;incomplete-ok&quot; has a value of &quot;true&quot;</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-morphology-icd-o-3')</b></td><td><b>error</b></td><td><b>Error from server: The code system definition for http://terminology.hl7.org/CodeSystem/icd-o-3 is a fragment, so this expansion is not permitted unless the expansion parameter &quot;incomplete-ok&quot; has a value of &quot;true&quot;</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1588,7 +1546,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-l-lymphatic-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-l-lymphatic-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1607,7 +1565,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-m-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-m-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1639,7 +1597,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-n-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-n-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1671,7 +1629,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-pn-perineural-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-pn-perineural-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1690,7 +1648,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-prefix-cpu-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-prefix-cpu-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1709,7 +1667,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-r-classification-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-r-classification-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1728,7 +1686,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-s-serum-tumor-markers-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-s-serum-tumor-markers-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1747,7 +1705,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-stage-group-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-stage-group-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1766,7 +1724,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-suffix-itc-sn-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-suffix-itc-sn-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1785,7 +1743,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-suffix-itc-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-suffix-itc-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1804,7 +1762,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-t-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-t-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1823,7 +1781,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-t-multiplicity-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-t-multiplicity-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1855,7 +1813,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System specified, so Concepts and Filters can''t be checked</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'vs-tnm-v-venous-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-tnm-v-venous-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1871,7 +1829,7 @@
      <td><b>ValueSet.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: vs-topography-icd-o-3/https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(id = 'vs-topography-icd-o-3')</b></td><td><b>error</b></td><td><b>Error from server: The code system definition for http://terminology.hl7.org/CodeSystem/icd-o-3 is a fragment, so this expansion is not permitted unless the expansion parameter &quot;incomplete-ok&quot; has a value of &quot;true&quot;</b> (<a href="qa-tx.html#l162">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'vs-topography-icd-o-3')</b></td><td><b>error</b></td><td><b>Error from server: The code system definition for http://terminology.hl7.org/CodeSystem/icd-o-3 is a fragment, so this expansion is not permitted unless the expansion parameter &quot;incomplete-ok&quot; has a value of &quot;true&quot;</b> (<a href="qa-tx.html#l161">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -2050,68 +2008,6 @@
    </tr>
    <tr style="background-color: #ffeeee">
      <td><a href="Condition-mamma-ca-rechts.html">fsh-generated/resources/Condition-mamma-ca-rechts.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice Condition.stage:grading in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyNapkonCovidom.html">fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyRAAINBOW.html">fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyRAAINBOW.html">fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyRAAINBOW.html">fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyRAAINBOW.html">fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyRAAINBOW.html">fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyRAAINBOW.html">fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW.json</a></td><td><b>Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="TERMINOLOGY_TX_SYSTEM_WRONG_HTML"> </a>
-<h2>TERMINOLOGY_TX_SYSTEM_WRONG_HTML</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyRAAINBOW.html">fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW.json</a></td><td><b>The code system reference http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}</b></td>
    </tr>
 </table>
 <hr/>
@@ -2357,14 +2253,6 @@
    </tr>
    <tr style="background-color: #fff4ee">
      <td><a href="Condition-mamma-ca-rechts.html">fsh-generated/resources/Condition-mamma-ca-rechts.json</a></td><td><b>ValueSet http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie not found by validator</b></td>
-   </tr>
-</table>
-<hr/>
-<a name="Type_Specific_Checks_DT_URL_Resolve"> </a>
-<h2>Type_Specific_Checks_DT_URL_Resolve</h2>
- <table class="grid">
-   <tr style="background-color: #ffeeee">
-     <td><a href="ResearchStudy-ExampleStudyRAAINBOW.html">fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW.json</a></td><td><b>URL value 'http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html' does not resolve</b></td>
    </tr>
 </table>
 <hr/>

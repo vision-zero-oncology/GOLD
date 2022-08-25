@@ -1,9 +1,9 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 80, warn = 95, info = 68
+err = 60, warn = 95, info = 74
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.128
-Generated Wed Aug 24 12:56:24 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Thu Aug 25 14:55:23 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 49 / 1 / 0
  /github/workspace/fsh-generated/resources/BodyStructure-CerebellarSarcoma : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-diagnosesicherung-icdo3 : 0 / 0 / 1
@@ -25,8 +25,8 @@ Generated Wed Aug 24 12:56:24 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/Observation-example-tnm-ypT1bpN139snL0V0Pn1cM0R0 : 0 / 11 / 13
  /github/workspace/fsh-generated/resources/Observation-example-vital-signs-base : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom : 15 / 0 / 3
- /github/workspace/fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW : 14 / 3 / 8
+ /github/workspace/fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom : 3 / 0 / 5
+ /github/workspace/fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW : 6 / 3 / 12
  /github/workspace/fsh-generated/resources/ResearchSubject-ExampleResearchSubjectStudienteilnehmer : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-body-height : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-body-weight : 0 / 0 / 1
@@ -268,33 +268,19 @@ INFORMATION: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.compo
 == fsh-generated/resources/Observation-example-vital-signs-base.json ==
 == fsh-generated/resources/Patient-ExamplePatient.json ==
 == fsh-generated/resources/ResearchStudy-ExampleStudyNapkonCovidom.json ==
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.identifier[1]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.category[0]: This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study
+INFORMATION: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.category[1]: This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study
 ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy: ResearchStudy.category:studyCategory: minimum required = 1, but only found 0 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study)
 INFORMATION: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.category[0].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
 INFORMATION: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.category[1].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
 ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.sponsor: Unable to resolve resource 'Organization/UKSH'
 ERROR: ResearchStudy/ExampleStudyNapkonCovidom: ResearchStudy.principalInvestigator: Unable to resolve resource 'Practitioner/example'
 == fsh-generated/resources/ResearchStudy-ExampleStudyRAAINBOW.json ==
-ERROR: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:eudraCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:NCT in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:PMID in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DOI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:URI in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
-ERROR: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.identifier[0]: Slicing cannot be evaluated: Could not match discriminator ([$this]) for slice ResearchStudy.identifier:DRKS in profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study - the discriminator [$this] does not have fixed value, binding or existence assertions
+INFORMATION: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.category[0]: This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study
+INFORMATION: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.category[1]: This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study
+INFORMATION: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.category[2]: This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study
+INFORMATION: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.category[3]: This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study
 ERROR: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy: ResearchStudy.category:studyCategory: minimum required = 1, but only found 0 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study)
-ERROR: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.primaryPurposeType.coding[0]: The code system reference http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html is wrong - the code system reference cannot be to an HTML page. This may be the correct reference: {unable to determine intended url}
-ERROR: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.primaryPurposeType.coding[0].system: URL value 'http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html' does not resolve
 INFORMATION: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.category[0].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
 INFORMATION: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.category[1].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated
 INFORMATION: ResearchStudy/ExampleStudyRAAINBOW: ResearchStudy.category[2].coding[0]: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated

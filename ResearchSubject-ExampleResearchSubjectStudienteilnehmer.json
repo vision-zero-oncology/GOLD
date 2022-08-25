@@ -20,7 +20,7 @@
           }
         ]
       },
-      "system": "https://www.example.org/fhir/core/sid/SubjectIdentificationCode",
+      "system": "https://charite.de/fhir/core/sid/SubjectIdentificationCode",
       "value": "12345"
     }
   ],

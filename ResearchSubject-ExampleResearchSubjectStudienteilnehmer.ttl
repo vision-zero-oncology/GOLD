@@ -28,7 +28,7 @@
          fhir:Coding.code [ fhir:value "ANON" ]
        ]
      ];
-     fhir:Identifier.system [ fhir:value "https://www.example.org/fhir/core/sid/SubjectIdentificationCode" ];
+     fhir:Identifier.system [ fhir:value "https://charite.de/fhir/core/sid/SubjectIdentificationCode" ];
      fhir:Identifier.value [ fhir:value "12345" ]
   ];
   fhir:ResearchSubject.status [ fhir:value "candidate"];
