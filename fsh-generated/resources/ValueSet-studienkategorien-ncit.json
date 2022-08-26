@@ -18,12 +18,12 @@
             "display": "Interventional Study"
           },
           {
-            "code": "C16084",
-            "display": "Observational Study"
-          },
-          {
             "code": "C142615",
             "display": "Non-Interventional Study"
+          },
+          {
+            "code": "C16084",
+            "display": "Observational Study"
           }
         ]
       }
