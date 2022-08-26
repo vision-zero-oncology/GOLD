@@ -49,7 +49,7 @@ jobs:
           node-version: '14'
 
       - name: Install fsh-sushi
-        run: npm install && npm install -g fsh-sushi
+        run: npm install && npm install -g fsh-sushi@3.0.0-beta.1
 
       - name: Untar FHIR packages to package repository
         working-directory: ./packages
