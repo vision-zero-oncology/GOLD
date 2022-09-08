@@ -32,6 +32,14 @@
           {
             "code": "C93043",
             "display": "Nonrandomized Clinical Trial"
+          },
+          {
+            "code": "C53312",
+            "display": "Retrospective Study"
+          },
+          {
+            "code": "C142646",
+            "display": "Prospective Study"
           }
         ]
       }

@@ -12,11 +12,38 @@
     "include": [
       {
         "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "filter": [
+        "concept": [
           {
-            "property": "concept",
-            "op": "descendent-of",
-            "value": "C25196"
+            "code": "C147126",
+            "display": "Adaptive Randomization"
+          },
+          {
+            "code": "C147127",
+            "display": "Block Randomization"
+          },
+          {
+            "code": "C147145",
+            "display": "Stratified Randomization"
+          },
+          {
+            "code": "C147143",
+            "display": "Minimization Randomization"
+          },
+          {
+            "code": "C186212",
+            "display": "Re-randomized"
+          },
+          {
+            "code": "C147144",
+            "display": "Simple Randomization"
+          },
+          {
+            "code": "C114209",
+            "display": "Subject is Randomized"
+          },
+          {
+            "code": "C142743",
+            "display": "Unequal Randomization"
           }
         ]
       }

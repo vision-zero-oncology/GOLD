@@ -515,6 +515,14 @@
       },
       {
         "reference": {
+          "reference": "ResearchStudy/ExampleStudyRAAINBOW"
+        },
+        "name": "Example Study RAAINBOW",
+        "description": "Example Study RAAINBOW",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
+      },
+      {
+        "reference": {
           "reference": "Observation/example-body-height"
         },
         "name": "Example Body Height",

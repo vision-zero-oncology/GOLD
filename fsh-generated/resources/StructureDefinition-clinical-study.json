@@ -72,7 +72,10 @@
         "sliceName": "eudraCT",
         "short": "Eudra CT Number",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "patternIdentifier": {
+          "system": "https://www.clinicaltrialsregister.eu"
+        }
       },
       {
         "id": "ResearchStudy.identifier:eudraCT.system",
@@ -93,7 +96,10 @@
         "sliceName": "NCT",
         "short": "NCT number",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "patternIdentifier": {
+          "system": "http://clinicaltrials.gov"
+        }
       },
       {
         "id": "ResearchStudy.identifier:NCT.system",
@@ -114,7 +120,10 @@
         "sliceName": "PMID",
         "short": "Pubmed ID",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "patternIdentifier": {
+          "system": "http://www.ncbi.nlm.nih.gov/pubmed"
+        }
       },
       {
         "id": "ResearchStudy.identifier:PMID.system",
@@ -135,7 +144,10 @@
         "sliceName": "DOI",
         "short": "Digital Object Identifier",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "patternIdentifier": {
+          "system": "https://doi.org"
+        }
       },
       {
         "id": "ResearchStudy.identifier:DOI.system",
@@ -156,7 +168,10 @@
         "sliceName": "URI",
         "short": "Uniform Resource Identifier",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "patternIdentifier": {
+          "system": "urn:ietf:rfc:3986"
+        }
       },
       {
         "id": "ResearchStudy.identifier:URI.system",
@@ -177,7 +192,10 @@
         "sliceName": "DRKS",
         "short": "Deusches Register Klinischer Studien",
         "min": 0,
-        "max": "1"
+        "max": "1",
+        "patternIdentifier": {
+          "system": "https://www.drks.de"
+        }
       },
       {
         "id": "ResearchStudy.identifier:DRKS.system",
