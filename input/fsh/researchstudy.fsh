@@ -127,7 +127,15 @@ Id: type-of-randomization-ncit
 Title: "ValueSet Type of Randomization NCIt"
 Description: "Type of Randomization aus NCI Thesaurus (NCIt)"
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
-* include codes from system $NCIT where concept descendent-of #C25196 "Randomization"
+//* include codes from system $NCIT where concept descendent-of #C25196 "Randomization"
+* $NCIT#C147126 "Adaptive Randomization"
+* $NCIT#C147127 "Block Randomization"
+* $NCIT#C147145 "Stratified Randomization"
+* $NCIT#C147143 "Minimization Randomization"
+* $NCIT#C186212 "Re-randomized"
+* $NCIT#C147144 "Simple Randomization"
+* $NCIT#C114209 "Subject is Randomized"
+* $NCIT#C142743 "Unequal Randomization"
 
 // Study Arm Type
 ValueSet: VS_TypeOfStudyArm_NCIT
