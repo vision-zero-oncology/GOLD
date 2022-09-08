@@ -1,9 +1,9 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 60, warn = 95, info = 74
+err = 60, warn = 96, info = 74
 IG Publisher Version: 1.1.83 Out of date - current version is 1.1.128
-Generated Fri Aug 26 08:19:03 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Thu Sep 08 11:40:20 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 49 / 1 / 0
  /github/workspace/fsh-generated/resources/BodyStructure-CerebellarSarcoma : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-diagnosesicherung-icdo3 : 0 / 0 / 1
@@ -53,7 +53,7 @@ Generated Fri Aug 26 08:19:03 UTC 2022. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/ValueSet-studienkategorien-ncit : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-study-focus-ncit : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-type-of-blinding-ncit : 0 / 2 / 1
- /github/workspace/fsh-generated/resources/ValueSet-type-of-randomization-ncit : 0 / 1 / 1
+ /github/workspace/fsh-generated/resources/ValueSet-type-of-randomization-ncit : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/ValueSet-type-of-study-arm-ncit : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-diagnosesicherung-icdo3 : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/ValueSet-vs-ecog-performance-status-snomed : 1 / 0 / 1
@@ -348,6 +348,7 @@ WARNING: ValueSet.where(id = 'study-focus-ncit'): Error from server: Unable to p
 WARNING: ValueSet/type-of-blinding-ncit: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'type-of-blinding-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 == fsh-generated/resources/ValueSet-type-of-randomization-ncit.json ==
+WARNING: ValueSet/type-of-randomization-ncit: ValueSet.compose[0].include[0]: Unknown System specified, so Concepts and Filters can''t be checked
 WARNING: ValueSet.where(id = 'type-of-randomization-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 == fsh-generated/resources/ValueSet-type-of-study-arm-ncit.json ==
 WARNING: ValueSet.where(id = 'type-of-study-arm-ncit'): Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
