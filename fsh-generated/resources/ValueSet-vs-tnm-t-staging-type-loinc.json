@@ -1,12 +1,23 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "VS_TNM_T_Staging_Type_LOINC",
   "id": "vs-tnm-t-staging-type-loinc",
   "title": "ValueSet TNM T Staging Type LOINC",
   "description": "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT).",
   "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {

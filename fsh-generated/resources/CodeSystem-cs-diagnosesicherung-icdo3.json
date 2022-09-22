@@ -1,6 +1,6 @@
 {
   "resourceType": "CodeSystem",
-  "status": "active",
+  "status": "draft",
   "content": "complete",
   "name": "DiagnosesicherungICDO3",
   "id": "cs-diagnosesicherung-icdo3",
@@ -40,6 +40,17 @@
     {
       "code": "9",
       "display": "Unbekannt"
+    }
+  ],
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
     }
   ],
   "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3",

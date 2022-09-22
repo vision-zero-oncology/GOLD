@@ -3,6 +3,7 @@ Parent: $MIIBiobankBioprobeCore
 Id: tumor-specimen
 Title: "Tumor Specimen"
 Description: "Tumor specimen"
+* insert Metadata
 * identifier 1.. 
 * collection.bodySite 1.. 
 * extension contains part-of named partOf 0..* MS 
@@ -12,6 +13,7 @@ Parent: BodyStructure
 Id: tumor
 Title: "Tumor"
 Description: "Tumor"
+* insert Metadata
 * morphology 1.. MS
 * location 1.. MS
 * patient MS
@@ -20,6 +22,7 @@ Extension: PartOf
 Id: part-of
 Title: "Specimen part of Tumor"
 Description: "Enables to reference a Tumor <BodyStructure> from its respective Specimen"
+* insert Metadata
 * valueReference only Reference(tumor)
 * ^context[+].type = #element
 * ^context[=].expression = "tumor-specimen"

@@ -5,7 +5,18 @@
   "version": "0.1.0",
   "name": "UICC_TNM_Prefix_CPU",
   "title": "Extension UICC TNM Prefix CPU",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "The Extension allows to add c, p and u prefixes to TNM stages.",
   "fhirVersion": "4.0.1",
   "mapping": [

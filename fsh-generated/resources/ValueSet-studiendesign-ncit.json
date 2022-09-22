@@ -1,12 +1,23 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "VS_Studiendesign_NCIT",
   "id": "studiendesign-ncit",
   "title": "ValueSet Studiendesign NCIt",
   "description": "Studiendesign aus NCI Thesaurus (NCIt)",
   "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
   "compose": {
     "include": [

@@ -1,12 +1,23 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "VS_TNM_L_Lymphatic_Invasion_UICC",
   "id": "vs-tnm-l-lymphatic-invasion-uicc",
   "title": "ValueSet TNM L-Descriptor Lymphatic Invasion UICC",
   "description": "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC.",
   "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-l-lymphatic-invasion-uicc",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {

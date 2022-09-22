@@ -15,7 +15,18 @@
   "version": "0.1.0",
   "name": "ECOG_Performance_Status",
   "title": "Profile ECOG Performance Status",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status.",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -1,12 +1,23 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "VS_TNM_M_Staging_Type_LOINC",
   "id": "vs-tnm-m-staging-type-loinc",
   "title": "ValueSet TNM M Staging Type LOINC",
   "description": "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM).",
   "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {

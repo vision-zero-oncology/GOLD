@@ -15,7 +15,18 @@
   "version": "0.1.0",
   "name": "TumorDisorder",
   "title": "Tumor Disorder",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Profile for a tumor disorder",
   "fhirVersion": "4.0.1",
   "mapping": [

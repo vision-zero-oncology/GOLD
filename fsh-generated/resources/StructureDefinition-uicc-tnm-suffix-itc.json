@@ -5,7 +5,18 @@
   "version": "0.1.0",
   "name": "UICC_TNM_Suffix_ITC",
   "title": "Extension UICC TNM Suffix ITC",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM.",
   "fhirVersion": "4.0.1",
   "mapping": [

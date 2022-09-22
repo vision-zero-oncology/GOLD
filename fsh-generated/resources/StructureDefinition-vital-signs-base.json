@@ -15,7 +15,18 @@
   "version": "0.1.0",
   "name": "Vital_Signs_Base",
   "title": "Profile Vital Signs Base",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes.",
   "fhirVersion": "4.0.1",
   "mapping": [

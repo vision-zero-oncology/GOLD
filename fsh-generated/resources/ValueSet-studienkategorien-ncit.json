@@ -1,12 +1,23 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "VS_Studienkategorien_NCIT",
   "id": "studienkategorien-ncit",
   "title": "ValueSet Studienkategorien NCIt",
   "description": "Studienkategorien aus NCI Thesaurus (NCIt)",
   "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
   "compose": {
     "include": [

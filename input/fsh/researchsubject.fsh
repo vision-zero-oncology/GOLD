@@ -3,6 +3,7 @@ Parent: ResearchSubject
 Id: probandin
 Title: "ProbandIn"
 Description: "Dieses Profil beschreibt eine Proband*in."
+* insert Metadata
 * ^status = #active
 * id MS
 * meta MS

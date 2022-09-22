@@ -15,7 +15,18 @@
   "version": "0.1.0",
   "name": "Clinical_Study",
   "title": "Clinical Study",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "This profile describes a clinical study in which a patient takes part.",
   "fhirVersion": "4.0.1",
   "mapping": [

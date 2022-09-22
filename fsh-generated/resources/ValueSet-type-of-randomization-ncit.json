@@ -1,12 +1,23 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "VS_TypeOfRandomization_NCIT",
   "id": "type-of-randomization-ncit",
   "title": "ValueSet Type of Randomization NCIt",
   "description": "Type of Randomization aus NCI Thesaurus (NCIt)",
   "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
   "compose": {
     "include": [
