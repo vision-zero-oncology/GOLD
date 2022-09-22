@@ -17,4 +17,5 @@ exclude_code_systems:
     - https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-body-structures
     - http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie
     - http://fhir.de/onkologie/ValueSet/icd-o-3-topologie
+    - http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 
