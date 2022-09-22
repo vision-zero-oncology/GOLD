@@ -15,7 +15,18 @@
   "version": "0.1.0",
   "name": "TumorSpecimen",
   "title": "Tumor Specimen",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Tumor specimen",
   "fhirVersion": "4.0.1",
   "mapping": [

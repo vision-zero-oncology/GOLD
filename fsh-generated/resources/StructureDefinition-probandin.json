@@ -16,6 +16,17 @@
   "name": "Probandin",
   "title": "ProbandIn",
   "status": "active",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Dieses Profil beschreibt eine Proband*in.",
   "fhirVersion": "4.0.1",
   "mapping": [

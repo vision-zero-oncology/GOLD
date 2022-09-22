@@ -5,7 +5,18 @@
   "version": "0.1.0",
   "name": "UICC_TNM_Suffix_ITC_SN",
   "title": "Extension UICC TNM Suffix ITC SN",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM.",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -15,7 +15,18 @@
   "version": "0.1.0",
   "name": "UICC_TNM_R_Classification",
   "title": "Profile UICC TNM Residual Tumor (R) Classification",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Profile for the residual tumor (R) classification as part of TNM.",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -4,6 +4,7 @@ Parent: Observation
 Id: vital-signs-base
 Title: "Profile Vital Signs Base"
 Description: "Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes."
+* insert Metadata
 * obeys vs-2
 * status MS
 * category MS
@@ -51,6 +52,7 @@ Parent: Vital_Signs_Base
 Id: body-height
 Title: "Profile Body Height"
 Description: "Profile for body height of a patient"
+* insert Metadata
 * code ^short = "Body Height"
 * code ^definition = "Body Height"
 * code ^comment = "Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."
@@ -97,6 +99,7 @@ Parent: Vital_Signs_Base
 Id: body-weight
 Title: "Profile Body Weight"
 Description: "Profile for body weight of a patient"
+* insert Metadata
 * code ^short = "Body Weight"
 * code ^definition = "Body Weight"
 * code ^comment = "Additional codes that translate or map to this code are allowed. For example a more granular LOINC code or code that is used locally in a system."
@@ -143,6 +146,7 @@ Parent: Observation
 Id: ecog-performance-status
 Title: "Profile ECOG Performance Status"
 Description: "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status."
+* insert Metadata
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -199,6 +203,7 @@ Parent: Observation
 Id: karnofsky-performance-status
 Title: "Profile Karnofsky Performance Status"
 Description: "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks."
+* insert Metadata
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -240,6 +245,7 @@ Parent: Observation
 Id: histology-topography
 Title: "Profile Histology Topography"
 Description: "Profile for the classification of a tumor's morphology(histology) and topography using ICD-O-3."
+* insert Metadata
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -316,6 +322,7 @@ Parent: Observation
 Id: histopathological-grading-who
 Title: "Profile Histopathological Tumor Grading WHO"
 Description: "Profile for the description of a tumor's grade using the general four-tier grading scheme following the recommendations of the WHO classification of tumors and UICC."
+* insert Metadata
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -367,6 +374,7 @@ Id: recist-assessment-response
 Title: "Profile RECIST timepoint assessment response"
 Description: "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/
 Please note there is no assessment timepoint response for the baseline assessment."
+* insert Metadata
 * partOf only Reference(ImagingStudy)
 * code = $RID#11510
 * subject 1..1

@@ -4,6 +4,7 @@ Parent: Observation
 Id: uicc-tnm
 Title: "Profile UICC TNM"
 Description: "Profile for the tumor classification using TNM stage groups (I, II, III, or IV) and TNM staging elements (T, N, and M)."
+* insert Metadata
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open
@@ -125,6 +126,7 @@ Extension: UICC_TNM_Prefix_CPU
 Id: uicc-tnm-prefix-cpu
 Title: "Extension UICC TNM Prefix CPU"
 Description: "The Extension allows to add c, p and u prefixes to TNM stages."
+* insert Metadata
 * value[x] only CodeableConcept
 * value[x] from VS_TNM_Prefix_CPU_UICC (required)
 
@@ -133,6 +135,7 @@ Extension: UICC_TNM_Suffix_ITC
 Id: uicc-tnm-suffix-itc
 Title: "Extension UICC TNM Suffix ITC"
 Description: "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM."
+* insert Metadata
 * value[x] only CodeableConcept
 * value[x] from VS_TNM_Suffix_ITC_UICC (required)
 
@@ -141,6 +144,7 @@ Extension: UICC_TNM_Suffix_ITC_SN
 Id: uicc-tnm-suffix-itc-sn
 Title: "Extension UICC TNM Suffix ITC SN"
 Description: "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM."
+* insert Metadata
 * value[x] only CodeableConcept
 * value[x] from VS_TNM_Suffix_ITC_SN_UICC (required)
 
@@ -150,6 +154,7 @@ Parent: Observation
 Id: uicc-tnm-r-classification
 Title: "Profile UICC TNM Residual Tumor (R) Classification"
 Description: "Profile for the residual tumor (R) classification as part of TNM."
+* insert Metadata
 * code.coding ^slicing.discriminator.type = #pattern
 * code.coding ^slicing.discriminator.path = "$this"
 * code.coding ^slicing.rules = #open

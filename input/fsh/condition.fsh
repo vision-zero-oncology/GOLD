@@ -4,6 +4,7 @@ Parent: $IsikDiagnose
 Id: tumor-disorder
 Title: "Tumor Disorder"
 Description: "Profile for a tumor disorder"
+* insert Metadata
 * code  
   * coding contains icd-o-3-m 0..1 MS
   * coding[icd-o-3-m] from $ICDO3M (required)
@@ -53,6 +54,7 @@ Extension: DiagnosesicherungICDO
 Id: diagnosesicherung-icd-o
 Title: "Diagnosesicherung ICD O"
 Description: "Extension für die Erfassung der Diagnosesicherung der ICD-O-3"
+* insert Metadata
 * valueCodeableConcept from $DiagnosesicherungVS (required)
 
 // TODO: Example 

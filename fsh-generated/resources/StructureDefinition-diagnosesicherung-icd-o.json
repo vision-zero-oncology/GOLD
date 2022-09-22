@@ -5,7 +5,18 @@
   "version": "0.1.0",
   "name": "DiagnosesicherungICDO",
   "title": "Diagnosesicherung ICD O",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Extension für die Erfassung der Diagnosesicherung der ICD-O-3",
   "fhirVersion": "4.0.1",
   "mapping": [

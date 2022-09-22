@@ -15,7 +15,18 @@
   "version": "0.1.0",
   "name": "RecistAssessmentResponse",
   "title": "Profile RECIST timepoint assessment response",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/\nPlease note there is no assessment timepoint response for the baseline assessment.",
   "fhirVersion": "4.0.1",
   "mapping": [

@@ -1,12 +1,23 @@
 {
   "resourceType": "ValueSet",
-  "status": "active",
+  "status": "draft",
   "name": "VS_Morphology_ICD_O_3",
   "id": "vs-morphology-icd-o-3",
   "title": "ValueSet Morphology ICD-O-3",
   "description": "The ValueSet contains the morphology (histology) codes from ICD-O-3.",
   "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "compose": {
     "include": [
       {

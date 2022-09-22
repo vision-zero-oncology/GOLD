@@ -15,7 +15,18 @@
   "version": "0.1.0",
   "name": "Body_Height",
   "title": "Profile Body Height",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Profile for body height of a patient",
   "fhirVersion": "4.0.1",
   "mapping": [

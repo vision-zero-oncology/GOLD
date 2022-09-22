@@ -5,7 +5,18 @@
   "version": "0.1.0",
   "name": "PartOf",
   "title": "Specimen part of Tumor",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Enables to reference a Tumor <BodyStructure> from its respective Specimen",
   "fhirVersion": "4.0.1",
   "mapping": [

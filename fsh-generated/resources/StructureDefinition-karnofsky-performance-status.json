@@ -15,7 +15,18 @@
   "version": "0.1.0",
   "name": "Karnofsky_Performance_Status",
   "title": "Profile Karnofsky Performance Status",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Profile for the Karnofsky Performance Status to measure a cancer patient's ability to perform ordinary tasks.",
   "fhirVersion": "4.0.1",
   "mapping": [

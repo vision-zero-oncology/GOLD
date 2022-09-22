@@ -15,7 +15,18 @@
   "version": "0.1.0",
   "name": "UICC_TNM",
   "title": "Profile UICC TNM",
-  "status": "active",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
   "description": "Profile for the tumor classification using TNM stage groups (I, II, III, or IV) and TNM staging elements (T, N, and M).",
   "fhirVersion": "4.0.1",
   "mapping": [
