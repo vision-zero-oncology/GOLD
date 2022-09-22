@@ -50,6 +50,7 @@ Description: "This profile describes a clinical study in which a patient takes p
 * phase 1.. 
 * phase from $ResearchStudyPhase (required)
 * category 1.. MS
+//* category from VS_ResearchStudy_Category (extensible)
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -136,6 +137,16 @@ Description: "Type of Randomization aus NCI Thesaurus (NCIt)"
 * $NCIT#C147144 "Simple Randomization"
 * $NCIT#C114209 "Subject is Randomized"
 * $NCIT#C142743 "Unequal Randomization"
+
+// .category combined
+// ValueSet: VS_ResearchStudy_Category
+// Id: vs-research-study-category
+// Title: "VS ResearchStudy Category"
+// Description: "ResearchStudy.category combined ValueSets"
+// * include codes from valueset VS_Studienkategorien_NCIT
+// * include codes from valueset VS_Studiendesign_NCIT
+// * include codes from valueset VS_TypeOfBlinding_NCIT
+// * include codes from valueset VS_TypeOfRandomization_NCIT
 
 // Study Arm Type
 ValueSet: VS_TypeOfStudyArm_NCIT
