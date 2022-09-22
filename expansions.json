@@ -1,8 +1,8 @@
 {
   "resourceType" : "Bundle",
-  "id" : "64aae159-4898-4848-8815-be94483c54eb",
+  "id" : "10f97005-3aee-4f3c-a2a3-957c15d330b8",
   "meta" : {
-    "lastUpdated" : "2022-09-22T12:10:51.232+00:00"
+    "lastUpdated" : "2022-09-22T12:32:38.673+00:00"
   },
   "type" : "collection",
   "entry" : [{
@@ -18,8 +18,8 @@
       "version" : "0.1.0",
       "name" : "DiagnosesicherungICDO3",
       "title" : "Diagnosesicherung ICD-O-3",
-      "status" : "active",
-      "date" : "2022-09-22T12:10:51+00:00",
+      "status" : "draft",
+      "date" : "2022-09-22T12:32:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -37,8 +37,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:2893c10d-11ef-4b5c-a684-cc4bf30f13b7",
-        "timestamp" : "2022-09-22T12:11:56+00:00",
+        "identifier" : "urn:uuid:04f6392f-703a-4d0f-b76d-500d4270b7c3",
+        "timestamp" : "2022-09-22T12:33:45+00:00",
         "total" : 8,
         "parameter" : [{
           "name" : "excludeNested",
@@ -104,8 +104,8 @@
       "version" : "0.1.0",
       "name" : "VS_ECOG_Performance_Status_SNOMED",
       "title" : "ValueSet ECOG Performance Status SNOMED",
-      "status" : "active",
-      "date" : "2022-09-22T12:10:51+00:00",
+      "status" : "draft",
+      "date" : "2022-09-22T12:32:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -127,8 +127,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:de2d653e-e71a-499c-bd9c-0de0183c29a0",
-        "timestamp" : "2022-09-22T12:11:57+00:00",
+        "identifier" : "urn:uuid:f234a030-7951-485c-9708-409a12e030aa",
+        "timestamp" : "2022-09-22T12:33:47+00:00",
         "total" : 6,
         "parameter" : [{
           "name" : "excludeNested",
@@ -188,8 +188,8 @@
       "version" : "0.1.0",
       "name" : "VS_Histopathological_Grade_SNOMED",
       "title" : "ValueSet Histologic Grade SNOMED",
-      "status" : "active",
-      "date" : "2022-09-22T12:10:51+00:00",
+      "status" : "draft",
+      "date" : "2022-09-22T12:32:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -207,8 +207,8 @@
       }],
       "copyright" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
       "expansion" : {
-        "identifier" : "urn:uuid:81eca426-8537-4228-8a8a-e11855b2f187",
-        "timestamp" : "2022-09-22T12:11:58+00:00",
+        "identifier" : "urn:uuid:36eb5bd3-e1c8-4d95-9748-3057fce7a3dc",
+        "timestamp" : "2022-09-22T12:33:47+00:00",
         "total" : 5,
         "parameter" : [{
           "name" : "excludeNested",
@@ -263,8 +263,8 @@
       "version" : "0.1.0",
       "name" : "VS_Morphology_SNOMED",
       "title" : "ValueSet Morphology SNOMED",
-      "status" : "active",
-      "date" : "2022-09-22T12:10:51+00:00",
+      "status" : "draft",
+      "date" : "2022-09-22T12:32:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -290,8 +290,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:84814406-9be7-4584-babb-475466e44aee",
-        "timestamp" : "2022-09-22T12:11:59+00:00",
+        "identifier" : "urn:uuid:6fcf0328-0e59-4dea-acb3-78940fc078cb",
+        "timestamp" : "2022-09-22T12:33:49+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5321,8 +5321,8 @@
       "version" : "0.1.0",
       "name" : "VS_TNM_Classification_Type_LOINC",
       "title" : "ValueSet TNM Classification Type LOINC",
-      "status" : "active",
-      "date" : "2022-09-22T12:10:51+00:00",
+      "status" : "draft",
+      "date" : "2022-09-22T12:32:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5340,8 +5340,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:9e8fb82d-bee1-4044-8fe9-dbe3adbfeb26",
-        "timestamp" : "2022-09-22T12:12:05+00:00",
+        "identifier" : "urn:uuid:f422f215-4e3b-42ae-9438-a7b1b85be48b",
+        "timestamp" : "2022-09-22T12:33:54+00:00",
         "total" : 2,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5381,8 +5381,8 @@
       "version" : "0.1.0",
       "name" : "VS_TNM_M_Staging_Type_LOINC",
       "title" : "ValueSet TNM M Staging Type LOINC",
-      "status" : "active",
-      "date" : "2022-09-22T12:10:51+00:00",
+      "status" : "draft",
+      "date" : "2022-09-22T12:32:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5400,8 +5400,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:4756dcdf-3df9-4672-995d-485d21bb6ac3",
-        "timestamp" : "2022-09-22T12:12:08+00:00",
+        "identifier" : "urn:uuid:cdd69859-bfc0-4ec9-9040-1d1f438fa9e8",
+        "timestamp" : "2022-09-22T12:33:58+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5446,8 +5446,8 @@
       "version" : "0.1.0",
       "name" : "VS_TNM_N_Staging_Type_LOINC",
       "title" : "ValueSet TNM N Staging Type LOINC",
-      "status" : "active",
-      "date" : "2022-09-22T12:10:51+00:00",
+      "status" : "draft",
+      "date" : "2022-09-22T12:32:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5465,8 +5465,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:186cba62-cd82-436d-ba3e-af186f6d1502",
-        "timestamp" : "2022-09-22T12:12:10+00:00",
+        "identifier" : "urn:uuid:b4319d5f-a57c-4516-bd8b-2691713cc972",
+        "timestamp" : "2022-09-22T12:34:00+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5511,8 +5511,8 @@
       "version" : "0.1.0",
       "name" : "VS_TNM_T_Staging_Type_LOINC",
       "title" : "ValueSet TNM T Staging Type LOINC",
-      "status" : "active",
-      "date" : "2022-09-22T12:10:51+00:00",
+      "status" : "draft",
+      "date" : "2022-09-22T12:32:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5530,8 +5530,8 @@
       }],
       "copyright" : "CC-BY-SA-4.0",
       "expansion" : {
-        "identifier" : "urn:uuid:51539417-bf8d-4d3c-a815-7c7d2e00b864",
-        "timestamp" : "2022-09-22T12:12:25+00:00",
+        "identifier" : "urn:uuid:d2b67934-0efd-477b-972f-1b1dbd48b788",
+        "timestamp" : "2022-09-22T12:34:14+00:00",
         "total" : 3,
         "parameter" : [{
           "name" : "excludeNested",
@@ -5576,8 +5576,8 @@
       "version" : "0.1.0",
       "name" : "VS_Topography_SNOMED",
       "title" : "ValueSet Topography SNOMED",
-      "status" : "active",
-      "date" : "2022-09-22T12:10:51+00:00",
+      "status" : "draft",
+      "date" : "2022-09-22T12:32:38+00:00",
       "publisher" : "Berlin Institute of Health at Charité (BIH)",
       "contact" : [{
         "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -5603,8 +5603,8 @@
           "url" : "http://hl7.org/fhir/StructureDefinition/valueset-unclosed",
           "valueBoolean" : true
         }],
-        "identifier" : "urn:uuid:b820060f-95c2-4a9b-a0ed-bf8c2843bdb8",
-        "timestamp" : "2022-09-22T12:12:28+00:00",
+        "identifier" : "urn:uuid:d13fa57b-c3c9-4e1e-8acf-6a770dfa210c",
+        "timestamp" : "2022-09-22T12:34:17+00:00",
         "total" : 1000,
         "parameter" : [{
           "name" : "excludeNested",

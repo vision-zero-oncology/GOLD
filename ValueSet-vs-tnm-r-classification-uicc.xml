@@ -9,8 +9,8 @@
   <version value="0.1.0"/>
   <name value="VS_TNM_R_Classification_UICC"/>
   <title value="ValueSet TNM Residual Tumor (R) Classification UICC"/>
-  <status value="active"/>
-  <date value="2022-09-22T12:10:51+00:00"/>
+  <status value="draft"/>
+  <date value="2022-09-22T12:32:38+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
