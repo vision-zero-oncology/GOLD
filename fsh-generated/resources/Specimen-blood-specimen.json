@@ -1,0 +1,49 @@
+{
+  "resourceType": "Specimen",
+  "id": "blood-specimen",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen"
+    ]
+  },
+  "type": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "16210851000119107",
+        "display": "Cerebellar neoplasm specimen (specimen)"
+      }
+    ]
+  },
+  "extension": [
+    {
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of",
+      "valueReference": {
+        "reference": "BodyStructure/CerebellarSarcoma"
+      }
+    }
+  ],
+  "status": "available",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "receivedTime": "2021-11-24",
+  "collection": {
+    "collectedDateTime": "2021-11-23",
+    "bodySite": {
+      "coding": [
+        {
+          "code": "113305005",
+          "system": "http://snomed.info/sct",
+          "display": "Cerebellar structure (body structure)"
+        }
+      ]
+    }
+  },
+  "identifier": [
+    {
+      "system": "https://www.charite.de/fhir/sid/bioproben",
+      "value": "specimen_02"
+    }
+  ]
+}

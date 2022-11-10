@@ -31,7 +31,7 @@
   "context": [
     {
       "type": "element",
-      "expression": "tumor-specimen"
+      "expression": "Specimen"
     }
   ],
   "type": "Extension",

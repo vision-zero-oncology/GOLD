@@ -523,6 +523,13 @@
       },
       {
         "reference": {
+          "reference": "Specimen/blood-specimen"
+        },
+        "name": "blood-specimen",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen"
+      },
+      {
+        "reference": {
           "reference": "Observation/example-body-height"
         },
         "name": "Example Body Height",

@@ -25,7 +25,7 @@ Description: "Enables to reference a Tumor <BodyStructure> from its respective S
 * insert Metadata
 * valueReference only Reference(tumor)
 * ^context[+].type = #element
-* ^context[=].expression = "tumor-specimen"
+* ^context[=].expression = "Specimen"
 
 // Examples
 Instance: CerebellarSarcoma
@@ -36,5 +36,18 @@ Description: "Example for the Tumor profile"
 * morphology = $SCT#17302008 "Cerebellar sarcoma (morphologic abnormality)"
 * location = $SCT#1010600003 "Structure of left cerebellar hemisphere (body structure)"
 * patient = Reference(ExamplePatient)
+
+Instance: blood-specimen
+InstanceOf: TumorSpecimen
+Usage: #example
+* extension[partOf].valueReference = Reference(CerebellarSarcoma)
+* status = #available
+* type = $SCT#16210851000119107 "Cerebellar neoplasm specimen (specimen)"
+* subject = Reference(ExamplePatient)
+* receivedTime = "2021-11-24"
+* collection.collectedDateTime = "2021-11-23"
+* collection.bodySite = $SCT#113305005 "Cerebellar structure (body structure)"
+* identifier.system = "https://www.charite.de/fhir/sid/bioproben"
+* identifier.value = "specimen_02"
 
 // TODO: Specimen collection procedure 450600007 
