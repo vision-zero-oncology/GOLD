@@ -1,0 +1,70 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/Specimen/blood-specimen> a fhir:Specimen;
+  fhir:nodeRole fhir:treeRoot;
+  fhir:Resource.id [ fhir:value "blood-specimen"];
+  fhir:Resource.meta [
+     fhir:Meta.profile [
+       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen";
+       fhir:index 0;
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen>
+     ]
+  ];
+  fhir:DomainResource.text [
+     fhir:Narrative.status [ fhir:value "extensions" ];
+     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Specimen</b><a name=\"blood-specimen\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Specimen &quot;blood-specimen&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor-specimen.html\">Tumor Specimen</a></p></div><p><b>Specimen part of Tumor</b>: <a href=\"BodyStructure-CerebellarSarcoma.html\">BodyStructure/CerebellarSarcoma</a></p><p><b>identifier</b>: id: specimen_02</p><p><b>status</b>: available</p><p><b>type</b>: Cerebellar neoplasm specimen (specimen) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#16210851000119107)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>receivedTime</b>: 2021-11-24</p><h3>Collections</h3><table class=\"grid\"><tr><td>-</td><td><b>Collected[x]</b></td><td><b>BodySite</b></td></tr><tr><td>*</td><td>2021-11-23</td><td>Cerebellar structure (body structure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#113305005)</span></td></tr></table></div>"
+  ];
+  fhir:DomainResource.extension [
+     fhir:index 0;
+     fhir:Extension.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of" ];
+     fhir:Extension.valueReference [
+       fhir:link <https://www.vision-zero-oncology.de/fhir/BodyStructure/CerebellarSarcoma>;
+       fhir:Reference.reference [ fhir:value "BodyStructure/CerebellarSarcoma" ]
+     ]
+  ];
+  fhir:Specimen.identifier [
+     fhir:index 0;
+     fhir:Identifier.system [ fhir:value "https://www.charite.de/fhir/sid/bioproben" ];
+     fhir:Identifier.value [ fhir:value "specimen_02" ]
+  ];
+  fhir:Specimen.status [ fhir:value "available"];
+  fhir:Specimen.type [
+     fhir:CodeableConcept.coding [
+       fhir:index 0;
+       a sct:16210851000119107;
+       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+       fhir:Coding.code [ fhir:value "16210851000119107" ];
+       fhir:Coding.display [ fhir:value "Cerebellar neoplasm specimen (specimen)" ]
+     ]
+  ];
+  fhir:Specimen.subject [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient>;
+     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
+  ];
+  fhir:Specimen.receivedTime [ fhir:value "2021-11-24"^^xsd:date];
+  fhir:Specimen.collection [
+     fhir:Specimen.collection.collectedDateTime [ fhir:value "2021-11-23"^^xsd:date ];
+     fhir:Specimen.collection.bodySite [
+       fhir:CodeableConcept.coding [
+         fhir:index 0;
+         a sct:113305005;
+         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
+         fhir:Coding.code [ fhir:value "113305005" ];
+         fhir:Coding.display [ fhir:value "Cerebellar structure (body structure)" ]
+       ]
+     ]
+  ] .
+
+# - ontology header ------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/Specimen/blood-specimen.ttl> a owl:Ontology;
+  owl:imports fhir:fhir.ttl .
+
+# -------------------------------------------------------------------------------------
+

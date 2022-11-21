@@ -8,7 +8,7 @@
   },
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative</b></p><p></p><p><b>code</b>: <span title=\"Codes: {http://radlex.org/RID 11510}\">Therapeutic response (observable entity)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Generated Summary: active: true; Sebastian Bach (OFFICIAL); gender: male; birthDate: 1985-03-31</a></p><p><b>effective</b>: 2022-07-19</p><p><b>value</b>: <span title=\"Codes: {http://radlex.org/RID 11514}\">stable disease</span></p></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"ExampleRecistAssessmentResponse\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;ExampleRecistAssessmentResponse&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-recist-assessment-response.html\">Profile RECIST timepoint assessment response</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Therapeutic response (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (RID#11510)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-07-19</p><p><b>value</b>: stable disease <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (RID#11514)</span></p></div>"
   },
   "status": "final",
   "code": {

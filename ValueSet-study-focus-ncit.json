@@ -3,14 +3,14 @@
   "id": "study-focus-ncit",
   "text": {
     "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C1909</td><td>Pharmacologic Substance</td></tr><tr><td>C16830</td><td>Medical Device</td></tr><tr><td>C78523</td><td>Cosmetic</td></tr><tr><td>C1505</td><td>Dietary Supplement</td></tr></table></li></ul></div>"
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C1909</td><td>Pharmacologic Substance</td></tr><tr><td>C16830</td><td>Medical Device</td></tr><tr><td>C78523</td><td>Cosmetic</td></tr><tr><td>C1505</td><td>Dietary Supplement</td></tr></table></li></ul></div>"
   },
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/study-focus-ncit",
   "version": "0.1.0",
   "name": "VS_StudyFocus_NCIT",
   "title": "ValueSet Study Focus NCIt",
   "status": "draft",
-  "date": "2022-09-22T12:32:38+00:00",
+  "date": "2022-11-21T12:36:42+00:00",
   "publisher": "Berlin Institute of Health at Charité (BIH)",
   "contact": [
     {
