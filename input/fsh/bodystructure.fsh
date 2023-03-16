@@ -5,8 +5,10 @@ Title: "Profile Body Structure"
 Description: "Profile for the base definition of all body structures."
 * ^version = "1.0.0"
 * ^status = #active
-* extension 1..*
-* extension contains Diagnosis named diagnosis 1..* MS
+* location 0..0
+* locationQualifier 0..0
+* extension 0..*
+* extension contains Diagnosis named diagnosis 0..* MS
 
 
 Extension: Diagnosis
