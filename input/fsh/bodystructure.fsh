@@ -31,8 +31,6 @@ Instance: example-body-structure
 InstanceOf: body-structure-base
 Usage: #example
 Title: "Example Body Structure"
-* status = #final
 * patient = Reference(ExamplePatient)
 * extension.url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis"
 * extension.valueReference = Reference(ExampleCondition)
-* result = Reference (ExampleCondition2)
