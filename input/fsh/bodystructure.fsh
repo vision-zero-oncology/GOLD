@@ -28,7 +28,7 @@ Description: "Enables to reference a diagnosis <Condition> the body stucture ref
 
 
 Instance: example-body-structure
-InstanceOf: body-structure
+InstanceOf: body-structure-base
 Usage: #example
 Title: "Example Body Structure"
 * status = #final
