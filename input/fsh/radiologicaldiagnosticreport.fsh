@@ -47,9 +47,10 @@ Instance: example-diagnostic-report
 InstanceOf: radiological-diagnostic-report
 Usage: #example
 Title: "Example Diagnostic Report"
+* code = $SCT#722124004 "Radiology studies report"
 * status = #final
 * category.coding = $LNC#18748-4 "Diagnostic imaging study"
 * subject = Reference(ExamplePatient)
 * extension.url = $SupportingInfo
 * extension.valueReference = Reference(ExampleFindingObservation)
-* result = Reference (ExampleReultObservation)
+* result = Reference (ExampleResultObservation)
