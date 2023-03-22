@@ -1,18 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "uicc-tnm-r-classification",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification",
-  "version": "0.1.0",
   "name": "UICC_TNM_R_Classification",
   "title": "Profile UICC TNM Residual Tumor (R) Classification",
   "status": "draft",

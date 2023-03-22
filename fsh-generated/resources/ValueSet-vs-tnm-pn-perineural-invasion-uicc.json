@@ -5,7 +5,6 @@
   "id": "vs-tnm-pn-perineural-invasion-uicc",
   "title": "ValueSet TNM Pn-Descriptor Perineural Invasion UICC",
   "description": "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from TNM 8th edition UICC.",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-pn-perineural-invasion-uicc",
   "publisher": "VISION ZERO E.V.",
   "contact": [

@@ -1,18 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "body-weight",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight",
-  "version": "0.1.0",
   "name": "Body_Weight",
   "title": "Profile Body Weight",
   "status": "draft",

@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "diagnosesicherung-icd-o",
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o",
-  "version": "0.1.0",
   "name": "DiagnosesicherungICDO",
   "title": "Diagnosesicherung ICD O",
   "status": "draft",
@@ -54,6 +53,20 @@
         "id": "Extension.url",
         "path": "Extension.url",
         "fixedUri": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "Extension.value[x]:valueCodeableConcept",

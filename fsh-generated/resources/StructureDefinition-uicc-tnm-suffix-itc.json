@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "uicc-tnm-suffix-itc",
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc",
-  "version": "0.1.0",
   "name": "UICC_TNM_Suffix_ITC",
   "title": "Extension UICC TNM Suffix ITC",
   "status": "draft",

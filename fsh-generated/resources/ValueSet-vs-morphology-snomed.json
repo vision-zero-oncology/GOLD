@@ -5,7 +5,6 @@
   "id": "vs-morphology-snomed",
   "title": "ValueSet Morphology SNOMED",
   "description": "The ValueSet contains the morphology (histology) codes from SNOMED CT.",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed",
   "publisher": "VISION ZERO E.V.",
   "contact": [

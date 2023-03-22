@@ -6,6 +6,20 @@
       "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
     ]
   },
+  "code": {
+    "coding": [
+      {
+        "code": "258235000",
+        "system": "http://snomed.info/sct",
+        "display": "International Union Against Cancer (tumor staging)"
+      },
+      {
+        "code": "21902-2",
+        "system": "http://loinc.org",
+        "display": "Stage group.pathology Cancer"
+      }
+    ]
+  },
   "component": [
     {
       "extension": [
@@ -135,20 +149,6 @@
     }
   ],
   "status": "final",
-  "code": {
-    "coding": [
-      {
-        "code": "258235000",
-        "system": "http://snomed.info/sct",
-        "display": "International Union Against Cancer (tumor staging)"
-      },
-      {
-        "code": "21902-2",
-        "system": "http://loinc.org",
-        "display": "Stage group.pathology Cancer"
-      }
-    ]
-  },
   "subject": {
     "reference": "Patient/ExamplePatient"
   },

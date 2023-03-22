@@ -1,18 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "histology-topography",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography",
-  "version": "0.1.0",
   "name": "Histology_Topography",
   "title": "Profile Histology Topography",
   "status": "draft",

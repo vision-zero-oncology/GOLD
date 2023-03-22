@@ -5,7 +5,6 @@
   "id": "type-of-blinding-ncit",
   "title": "ValueSet Type of Blinding NCIt",
   "description": "Type of Blinding aus NCI Thesaurus (NCIt)",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit",
   "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
   "publisher": "VISION ZERO E.V.",

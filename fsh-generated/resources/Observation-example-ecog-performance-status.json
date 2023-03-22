@@ -38,8 +38,8 @@
         "display": "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"
       },
       {
-        "code": "422512005",
         "system": "http://snomed.info/sct",
+        "code": "422512005",
         "display": "Eastern Cooperative Oncology Group performance status - grade 1 (finding)"
       }
     ]

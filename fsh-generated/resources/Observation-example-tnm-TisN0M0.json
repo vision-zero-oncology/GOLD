@@ -6,7 +6,6 @@
       "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
     ]
   },
-  "status": "final",
   "code": {
     "coding": [
       {
@@ -21,6 +20,7 @@
       }
     ]
   },
+  "status": "final",
   "subject": {
     "reference": "Patient/ExamplePatient"
   },

@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "uicc-tnm-prefix-cpu",
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
-  "version": "0.1.0",
   "name": "UICC_TNM_Prefix_CPU",
   "title": "Extension UICC TNM Prefix CPU",
   "status": "draft",
