@@ -51,9 +51,9 @@
       "type": {
         "coding": [
           {
-            "code": "254293002",
+            "code": "258234001",
             "system": "http://snomed.info/sct",
-            "display": "Tumor-node-metastasis (TNM) tumor staging system (tumor staging)"
+            "display": "Tumor-node-metastasis (TNM) tumor staging classifications (tumor staging)"
           }
         ]
       },

@@ -41,7 +41,7 @@ Description: "Profile for a tumor disorder"
   * assessment MS
   * assessment only Reference(uicc-tnm)
   * type 1.. MS
-  * type = $SCT#254293002
+  * type = $SCT#258234001
 * stage[grading]
   * assessment MS
   * assessment only Reference(histopathological-grading-who)
@@ -79,7 +79,7 @@ Description: "Beispiel einer Diagnose Mamma Ca rechts."
 * recorder = Reference(Practitioner/dokumentar)
 * asserter = Reference(Practitioner/kliniker)
 * stage[staging].assessment = Reference(Observation/tnm-cT2cN2cM1IV)
-* stage[staging].type = $SCT#254293002 "Tumor-node-metastasis (TNM) tumor staging system (tumor staging)"
+* stage[staging].type = $SCT#258234001 "Tumor-node-metastasis (TNM) tumor staging classifications (tumor staging)"
 * stage[grading].assessment = Reference(Observation/G3)
 * stage[grading].type = $SCT#258244004 "Tumor histopathological grade status values (tumor staging)"
 * evidence.detail = Reference(DiagnosticReport/pathologie)

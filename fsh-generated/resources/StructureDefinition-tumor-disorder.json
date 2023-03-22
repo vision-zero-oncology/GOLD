@@ -246,7 +246,7 @@
         "patternCodeableConcept": {
           "coding": [
             {
-              "code": "254293002",
+              "code": "258234001",
               "system": "http://snomed.info/sct"
             }
           ]
