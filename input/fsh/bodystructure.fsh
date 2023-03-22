@@ -15,9 +15,6 @@ Title: "Diagnosis"
 Description: "Enables to reference a diagnosis <Condition> the body stucture refers to"
 * . ^short = "Diagnosis the body structure refers to"
 * . ^definition = "Enables to reference a diagnosis <Condition> the body structure refers to"
-* . ^base.path = "DomainResource.extension"
-* . ^base.min = 1
-* . ^base.max = "1"
 * value[x] only Reference(Condition)
 * value[x] 1.. 
 
