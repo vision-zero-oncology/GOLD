@@ -1,75 +1,63 @@
 {
-  "resourceType": "Observation",
-  "id": "example-histology-topography",
-  "meta": {
-    "profile": [
-      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
-    ]
+  "resourceType" : "Observation",
+  "id" : "example-histology-topography",
+  "meta" : {
+    "profile" : ["https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-histology-topography\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-histology-topography&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-histology-topography.html\">Profile Histology Topography</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Histology and Behavior ICD-O-3 Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#59847-4; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1145214003 &quot;Histologic feature of proliferative mass (observable entity)&quot;; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#371480007 &quot;Anatomic location of neoplasm (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: schlecht differenziertes Plattenepithelkarzinom <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#8070/33; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1162767002 &quot;Squamous cell carcinoma (morphologic abnormality)&quot;)</span></p><p><b>bodySite</b>: Lungenoberlappen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#C34.1; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#45653009 &quot;Structure of upper lobe of lung (body structure)&quot;)</span></p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-histology-topography\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-histology-topography&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-histology-topography.html\">Profile Histology Topography</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Histology and Behavior ICD-O-3 Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#59847-4; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1145214003 &quot;Histologic feature of proliferative mass (observable entity)&quot;; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#371480007 &quot;Anatomic location of neoplasm (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: schlecht differenziertes Plattenepithelkarzinom <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#8070/33; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1162767002 &quot;Squamous cell carcinoma (morphologic abnormality)&quot;)</span></p><p><b>bodySite</b>: Lungenoberlappen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#C34.1; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#45653009 &quot;Structure of upper lobe of lung (body structure)&quot;)</span></p></div>"
   },
-  "status": "final",
-  "category": [
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "59847-4",
+      "display" : "Histology and Behavior ICD-O-3 Cancer"
+    },
     {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "laboratory"
-        }
-      ]
-    }
-  ],
-  "code": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "59847-4",
-        "display": "Histology and Behavior ICD-O-3 Cancer"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "1145214003",
-        "display": "Histologic feature of proliferative mass (observable entity)"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "371480007",
-        "display": "Anatomic location of neoplasm (observable entity)"
-      }
-    ]
+      "system" : "http://snomed.info/sct",
+      "code" : "1145214003",
+      "display" : "Histologic feature of proliferative mass (observable entity)"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "371480007",
+      "display" : "Anatomic location of neoplasm (observable entity)"
+    }]
   },
-  "subject": {
-    "reference": "Patient/ExamplePatient"
+  "subject" : {
+    "reference" : "Patient/ExamplePatient"
   },
-  "effectiveDateTime": "2022-03-07",
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
-        "code": "8070/33",
-        "display": "schlecht differenziertes Plattenepithelkarzinom"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "1162767002",
-        "display": "Squamous cell carcinoma (morphologic abnormality)"
-      }
-    ]
+  "effectiveDateTime" : "2022-03-07",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "code" : "8070/33",
+      "display" : "schlecht differenziertes Plattenepithelkarzinom"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "1162767002",
+      "display" : "Squamous cell carcinoma (morphologic abnormality)"
+    }]
   },
-  "bodySite": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
-        "code": "C34.1",
-        "display": "Lungenoberlappen"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "45653009",
-        "display": "Structure of upper lobe of lung (body structure)"
-      }
-    ]
+  "bodySite" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "code" : "C34.1",
+      "display" : "Lungenoberlappen"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "code" : "45653009",
+      "display" : "Structure of upper lobe of lung (body structure)"
+    }]
   }
 }

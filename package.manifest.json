@@ -1,8 +1,6 @@
 {
-  "version": "0.1.0",
-  "fhirVersion": [
-    "4.0.1"
-  ],
-  "date": "20221121123600",
-  "name": "gold"
+  "version" : "0.1.0",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20230322152615",
+  "name" : "gold"
 }

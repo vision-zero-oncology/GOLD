@@ -5,67 +5,53 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-v-venous-invasion-uicc> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "vs-tnm-v-venous-invasion-uicc"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>V0</td><td>V0</td></tr><tr><td>V1</td><td>V1</td></tr><tr><td>V2</td><td>V2</td></tr><tr><td>VX</td><td>VX</td></tr></table></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
-  fhir:ValueSet.name [ fhir:value "VS_TNM_V_Venous_Invasion_UICC"];
-  fhir:ValueSet.title [ fhir:value "ValueSet TNM V-Descriptor Venous Invasion UICC"];
-  fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-11-21T12:36:42+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Berlin Institute of Health at Charité (BIH)" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
-     ]
-  ];
-  fhir:ValueSet.description [ fhir:value "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC."];
-  fhir:ValueSet.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DEU" ]
-     ]
-  ];
-  fhir:ValueSet.copyright [ fhir:value "CC-BY-SA-4.0"];
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "V0" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "V0" ]
-       ], [
-         fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "V1" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "V1" ]
-       ], [
-         fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "V2" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "V2" ]
-       ], [
-         fhir:index 3;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "VX" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "VX" ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-v-venous-invasion-uicc.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-v-venous-invasion-uicc> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "vs-tnm-v-venous-invasion-uicc"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>V0</td><td>V0</td></tr><tr><td>V1</td><td>V1</td></tr><tr><td>V2</td><td>V2</td></tr><tr><td>VX</td><td>VX</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VS_TNM_V_Venous_Invasion_UICC"] ; # 
+  fhir:title [ fhir:v "ValueSet TNM V-Descriptor Venous Invasion UICC"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-03-22T15:27:03+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.bihealth.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DEU" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC-BY-SA-4.0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "V0" ] ;
+         fhir:display [ fhir:v "V0" ]
+       ] [
+         fhir:code [ fhir:v "V1" ] ;
+         fhir:display [ fhir:v "V1" ]
+       ] [
+         fhir:code [ fhir:v "V2" ] ;
+         fhir:display [ fhir:v "V2" ]
+       ] [
+         fhir:code [ fhir:v "VX" ] ;
+         fhir:display [ fhir:v "VX" ]
+       ] )
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

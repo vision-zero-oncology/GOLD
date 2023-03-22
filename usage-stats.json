@@ -13,6 +13,13 @@
       ]
     },
     {
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis",
+      "title": "Diagnosis",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of",
       "title": "Specimen part of Tumor",
       "types": [
@@ -57,6 +64,12 @@
         "title": "Profile Vital Signs Base"
       }
     ],
+    "BodyStructure": [
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor",
+        "title": "Tumor"
+      }
+    ],
     "ResearchStudy": [
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study",
@@ -67,12 +80,6 @@
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin",
         "title": "ProbandIn"
-      }
-    ],
-    "BodyStructure": [
-      {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor",
-        "title": "Tumor"
       }
     ],
     "Condition": [
@@ -126,9 +133,6 @@
     "http://hl7.org/fhir/StructureDefinition/regex": [
       "StructureDefinition.snapshot.element.type"
     ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-category": [
-      "StructureDefinition"
-    ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
       "StructureDefinition.snapshot.element"
     ],
@@ -137,9 +141,6 @@
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
       "StructureDefinition.snapshot.element"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category": [
-      "StructureDefinition"
     ],
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
@@ -165,6 +166,9 @@
     ],
     "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o": [
       "Condition.code.coding"
+    ],
+    "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis": [
+      "BodyStructure"
     ],
     "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of": [
       "Specimen"

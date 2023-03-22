@@ -1,52 +1,40 @@
 {
-  "resourceType": "ValueSet",
-  "id": "type-of-study-arm-ncit",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a> where concept  descends from  C15538</li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "type-of-study-arm-ncit",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a> where concept  descends from  C15538</li></ul></div>"
   },
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit",
-  "version": "0.1.0",
-  "name": "VS_TypeOfStudyArm_NCIT",
-  "title": "ValueSet Type of Study Arm NCIt",
-  "status": "draft",
-  "date": "2022-11-21T12:36:42+00:00",
-  "publisher": "Berlin Institute of Health at Charité (BIH)",
-  "contact": [
-    {
-      "name": "Berlin Institute of Health at Charité (BIH)",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.bihealth.org/"
-        }
-      ]
-    }
-  ],
-  "description": "Type of Study Arm aus NCI Thesaurus (NCIt)",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DEU"
-        }
-      ]
-    }
-  ],
-  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
-  "compose": {
-    "include": [
-      {
-        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "descendent-of",
-            "value": "C15538"
-          }
-        ]
-      }
-    ]
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit",
+  "version" : "0.1.0",
+  "name" : "VS_TypeOfStudyArm_NCIT",
+  "title" : "ValueSet Type of Study Arm NCIt",
+  "status" : "draft",
+  "date" : "2023-03-22T15:27:03+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "Type of Study Arm aus NCI Thesaurus (NCIt)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "C15538"
+      }]
+    }]
   }
 }

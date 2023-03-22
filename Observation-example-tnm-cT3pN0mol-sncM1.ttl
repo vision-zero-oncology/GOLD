@@ -1,5 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
@@ -7,170 +7,151 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-cT3pN0mol-sncM1> a fhir:Observation;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example-tnm-cT3pN0mol-sncM1"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm";
-       fhir:index 0;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-cT3pN0mol-sncM1> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-tnm-cT3pN0mol-sncM1"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
        fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-tnm-cT3pN0mol-sncM1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-tnm-cT3pN0mol-sncM1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-uicc-tnm.html\">Profile UICC TNM</a></p></div><p><b>status</b>: final</p><p><b>code</b>: International Union Against Cancer (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258235000; <a href=\"https://loinc.org/\">LOINC</a>#21902-2 &quot;Stage group.pathology Cancer&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: Stage IVC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#IVC)</span></p><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: c <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#c)</span></p><p><b>code</b>: Primary tumor.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21905-5)</span></p><p><b>value</b>: T3 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#T3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: p <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#p)</span></p><p><b>Extension UICC TNM Suffix ITC</b>: (mol-) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#mol-)</span></p><p><b>Extension UICC TNM Suffix ITC SN</b>: (sn) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#sn)</span></p><p><b>code</b>: Regional lymph nodes.pathology [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21900-6)</span></p><p><b>value</b>: N0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#N0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: c <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#c)</span></p><p><b>code</b>: Distant metastases.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21907-1)</span></p><p><b>value</b>: M1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#M1)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:258235000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "258235000" ] ;
+       fhir:display [ fhir:v "International Union Against Cancer (tumor staging)" ]
+     ] [
+       a loinc:21902-2 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21902-2" ] ;
+       fhir:display [ fhir:v "Stage group.pathology Cancer" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient> ;
+     fhir:reference [ fhir:v "Patient/ExamplePatient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-03-07"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "IVC" ] ;
+       fhir:display [ fhir:v "Stage IVC" ]
+     ] )
+  ] ; # 
+  fhir:component ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "c" ] ;
+           fhir:display [ fhir:v "c" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:21905-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21905-5" ] ;
+         fhir:display [ fhir:v "Primary tumor.clinical [Class] Cancer" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "T3" ] ;
+         fhir:display [ fhir:v "T3" ]
+       ] )
      ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "extensions" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-tnm-cT3pN0mol-sncM1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-tnm-cT3pN0mol-sncM1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-uicc-tnm.html\">Profile UICC TNM</a></p></div><p><b>status</b>: final</p><p><b>code</b>: International Union Against Cancer (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258235000; <a href=\"https://loinc.org/\">LOINC</a>#21902-2 &quot;Stage group.pathology Cancer&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: Stage IVC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#IVC)</span></p><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: c <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#c)</span></p><p><b>code</b>: Primary tumor.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21905-5)</span></p><p><b>value</b>: T3 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#T3)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: p <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#p)</span></p><p><b>Extension UICC TNM Suffix ITC</b>: (mol-) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#mol-)</span></p><p><b>Extension UICC TNM Suffix ITC SN</b>: (sn) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#sn)</span></p><p><b>code</b>: Regional lymph nodes.pathology [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21900-6)</span></p><p><b>value</b>: N0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#N0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: c <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#c)</span></p><p><b>code</b>: Distant metastases.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21907-1)</span></p><p><b>value</b>: M1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#M1)</span></p></blockquote></div>"
-  ];
-  fhir:Observation.status [ fhir:value "final"];
-  fhir:Observation.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:258235000;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "258235000" ];
-       fhir:Coding.display [ fhir:value "International Union Against Cancer (tumor staging)" ]
-     ], [
-       fhir:index 1;
-       a loinc:21902-2;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "21902-2" ];
-       fhir:Coding.display [ fhir:value "Stage group.pathology Cancer" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "p" ] ;
+           fhir:display [ fhir:v "p" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "mol-" ] ;
+           fhir:display [ fhir:v "(mol-)" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "sn" ] ;
+           fhir:display [ fhir:v "(sn)" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:21900-6 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21900-6" ] ;
+         fhir:display [ fhir:v "Regional lymph nodes.pathology [Class] Cancer" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N0" ] ;
+         fhir:display [ fhir:v "N0" ]
+       ] )
      ]
-  ];
-  fhir:Observation.subject [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient>;
-     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
-  ];
-  fhir:Observation.effectiveDateTime [ fhir:value "2022-03-07"^^xsd:date];
-  fhir:Observation.valueCodeableConcept [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
-       fhir:Coding.code [ fhir:value "IVC" ];
-       fhir:Coding.display [ fhir:value "Stage IVC" ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "c" ] ;
+           fhir:display [ fhir:v "c" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         a loinc:21907-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21907-1" ] ;
+         fhir:display [ fhir:v "Distant metastases.clinical [Class] Cancer" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "M1" ] ;
+         fhir:display [ fhir:v "M1" ]
+       ] )
      ]
-  ];
-  fhir:Observation.component [
-     fhir:index 0;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
-           fhir:Coding.code [ fhir:value "c" ];
-           fhir:Coding.display [ fhir:value "c" ]
-         ]
-       ]
-     ];
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:21905-5;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "21905-5" ];
-         fhir:Coding.display [ fhir:value "Primary tumor.clinical [Class] Cancer" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
-         fhir:Coding.code [ fhir:value "T3" ];
-         fhir:Coding.display [ fhir:value "T3" ]
-       ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
-           fhir:Coding.code [ fhir:value "p" ];
-           fhir:Coding.display [ fhir:value "p" ]
-         ]
-       ]
-     ], [
-       fhir:index 1;
-       fhir:Extension.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
-           fhir:Coding.code [ fhir:value "mol-" ];
-           fhir:Coding.display [ fhir:value "(mol-)" ]
-         ]
-       ]
-     ], [
-       fhir:index 2;
-       fhir:Extension.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
-           fhir:Coding.code [ fhir:value "sn" ];
-           fhir:Coding.display [ fhir:value "(sn)" ]
-         ]
-       ]
-     ];
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:21900-6;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "21900-6" ];
-         fhir:Coding.display [ fhir:value "Regional lymph nodes.pathology [Class] Cancer" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
-         fhir:Coding.code [ fhir:value "N0" ];
-         fhir:Coding.display [ fhir:value "N0" ]
-       ]
-     ]
-  ], [
-     fhir:index 2;
-     fhir:Element.extension [
-       fhir:index 0;
-       fhir:Extension.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu" ];
-       fhir:Extension.valueCodeableConcept [
-         fhir:CodeableConcept.coding [
-           fhir:index 0;
-           fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
-           fhir:Coding.code [ fhir:value "c" ];
-           fhir:Coding.display [ fhir:value "c" ]
-         ]
-       ]
-     ];
-     fhir:Observation.component.code [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a loinc:21907-1;
-         fhir:Coding.system [ fhir:value "http://loinc.org" ];
-         fhir:Coding.code [ fhir:value "21907-1" ];
-         fhir:Coding.display [ fhir:value "Distant metastases.clinical [Class] Cancer" ]
-       ]
-     ];
-     fhir:Observation.component.valueCodeableConcept [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "urn:oid:2.16.840.1.113883.15.16" ];
-         fhir:Coding.code [ fhir:value "M1" ];
-         fhir:Coding.display [ fhir:value "M1" ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-cT3pN0mol-sncM1.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

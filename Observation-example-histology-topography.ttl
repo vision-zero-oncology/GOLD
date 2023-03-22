@@ -1,5 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
@@ -7,88 +7,74 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/example-histology-topography> a fhir:Observation;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example-histology-topography"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography";
-       fhir:index 0;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-histology-topography> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-histology-topography"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"^^xsd:anyURI ;
        fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-histology-topography\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-histology-topography&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-histology-topography.html\">Profile Histology Topography</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Histology and Behavior ICD-O-3 Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#59847-4; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1145214003 &quot;Histologic feature of proliferative mass (observable entity)&quot;; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#371480007 &quot;Anatomic location of neoplasm (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: schlecht differenziertes Plattenepithelkarzinom <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#8070/33; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1162767002 &quot;Squamous cell carcinoma (morphologic abnormality)&quot;)</span></p><p><b>bodySite</b>: Lungenoberlappen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#C34.1; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#45653009 &quot;Structure of upper lobe of lung (body structure)&quot;)</span></p></div>"
-  ];
-  fhir:Observation.status [ fhir:value "final"];
-  fhir:Observation.category [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
-       fhir:Coding.code [ fhir:value "laboratory" ]
-     ]
-  ];
-  fhir:Observation.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a loinc:59847-4;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "59847-4" ];
-       fhir:Coding.display [ fhir:value "Histology and Behavior ICD-O-3 Cancer" ]
-     ], [
-       fhir:index 1;
-       a sct:1145214003;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "1145214003" ];
-       fhir:Coding.display [ fhir:value "Histologic feature of proliferative mass (observable entity)" ]
-     ], [
-       fhir:index 2;
-       a sct:371480007;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "371480007" ];
-       fhir:Coding.display [ fhir:value "Anatomic location of neoplasm (observable entity)" ]
-     ]
-  ];
-  fhir:Observation.subject [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient>;
-     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
-  ];
-  fhir:Observation.effectiveDateTime [ fhir:value "2022-03-07"^^xsd:date];
-  fhir:Observation.valueCodeableConcept [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/icd-o-3" ];
-       fhir:Coding.code [ fhir:value "8070/33" ];
-       fhir:Coding.display [ fhir:value "schlecht differenziertes Plattenepithelkarzinom" ]
-     ], [
-       fhir:index 1;
-       a sct:1162767002;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "1162767002" ];
-       fhir:Coding.display [ fhir:value "Squamous cell carcinoma (morphologic abnormality)" ]
-     ]
-  ];
-  fhir:Observation.bodySite [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/icd-o-3" ];
-       fhir:Coding.code [ fhir:value "C34.1" ];
-       fhir:Coding.display [ fhir:value "Lungenoberlappen" ]
-     ], [
-       fhir:index 1;
-       a sct:45653009;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "45653009" ];
-       fhir:Coding.display [ fhir:value "Structure of upper lobe of lung (body structure)" ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://www.vision-zero-oncology.de/fhir/Observation/example-histology-topography.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-histology-topography\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-histology-topography&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-histology-topography.html\">Profile Histology Topography</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Histology and Behavior ICD-O-3 Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#59847-4; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1145214003 &quot;Histologic feature of proliferative mass (observable entity)&quot;; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#371480007 &quot;Anatomic location of neoplasm (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: schlecht differenziertes Plattenepithelkarzinom <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#8070/33; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1162767002 &quot;Squamous cell carcinoma (morphologic abnormality)&quot;)</span></p><p><b>bodySite</b>: Lungenoberlappen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\">International Classification of Diseases for Oncology, version 3.</a>#C34.1; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#45653009 &quot;Structure of upper lobe of lung (body structure)&quot;)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:59847-4 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "59847-4" ] ;
+       fhir:display [ fhir:v "Histology and Behavior ICD-O-3 Cancer" ]
+     ] [
+       a sct:1145214003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1145214003" ] ;
+       fhir:display [ fhir:v "Histologic feature of proliferative mass (observable entity)" ]
+     ] [
+       a sct:371480007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "371480007" ] ;
+       fhir:display [ fhir:v "Anatomic location of neoplasm (observable entity)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient> ;
+     fhir:reference [ fhir:v "Patient/ExamplePatient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-03-07"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "8070/33" ] ;
+       fhir:display [ fhir:v "schlecht differenziertes Plattenepithelkarzinom" ]
+     ] [
+       a sct:1162767002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1162767002" ] ;
+       fhir:display [ fhir:v "Squamous cell carcinoma (morphologic abnormality)" ]
+     ] )
+  ] ; # 
+  fhir:bodySite [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C34.1" ] ;
+       fhir:display [ fhir:v "Lungenoberlappen" ]
+     ] [
+       a sct:45653009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "45653009" ] ;
+       fhir:display [ fhir:v "Structure of upper lobe of lung (body structure)" ]
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

@@ -1,52 +1,40 @@
 {
-  "resourceType": "ValueSet",
-  "id": "vs-ecog-performance-status-snomed",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  424122007 (Eastern Cooperative Oncology Group performance status finding (finding))</li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "vs-ecog-performance-status-snomed",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  424122007 (Eastern Cooperative Oncology Group performance status finding (finding))</li></ul></div>"
   },
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed",
-  "version": "0.1.0",
-  "name": "VS_ECOG_Performance_Status_SNOMED",
-  "title": "ValueSet ECOG Performance Status SNOMED",
-  "status": "draft",
-  "date": "2022-11-21T12:36:42+00:00",
-  "publisher": "Berlin Institute of Health at Charité (BIH)",
-  "contact": [
-    {
-      "name": "Berlin Institute of Health at Charité (BIH)",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.bihealth.org/"
-        }
-      ]
-    }
-  ],
-  "description": "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DEU"
-        }
-      ]
-    }
-  ],
-  "copyright": "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
-  "compose": {
-    "include": [
-      {
-        "system": "http://snomed.info/sct",
-        "filter": [
-          {
-            "property": "concept",
-            "op": "descendent-of",
-            "value": "424122007"
-          }
-        ]
-      }
-    ]
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed",
+  "version" : "0.1.0",
+  "name" : "VS_ECOG_Performance_Status_SNOMED",
+  "title" : "ValueSet ECOG Performance Status SNOMED",
+  "status" : "draft",
+  "date" : "2023-03-22T15:27:03+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "424122007"
+      }]
+    }]
   }
 }

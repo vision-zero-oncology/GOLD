@@ -1,201 +1,161 @@
 {
-  "resourceType": "Observation",
-  "id": "example-tnm-uT2a2pN0023i-sncM1",
-  "meta": {
-    "profile": [
-      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-    ]
+  "resourceType" : "Observation",
+  "id" : "example-tnm-uT2a2pN0023i-sncM1",
+  "meta" : {
+    "profile" : ["https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"]
   },
-  "text": {
-    "status": "extensions",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-tnm-uT2a2pN0023i-sncM1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-tnm-uT2a2pN0023i-sncM1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-uicc-tnm.html\">Profile UICC TNM</a></p></div><p><b>status</b>: final</p><p><b>code</b>: International Union Against Cancer (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258235000; <a href=\"https://loinc.org/\">LOINC</a>#21902-2 &quot;Stage group.pathology Cancer&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: Stage IVC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#IVC)</span></p><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: u <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#u)</span></p><p><b>code</b>: Primary tumor.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21905-5)</span></p><p><b>value</b>: T2a2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#T2a2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: p <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#p)</span></p><p><b>Extension UICC TNM Suffix ITC</b>: (i-) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#i-)</span></p><p><b>Extension UICC TNM Suffix ITC SN</b>: (sn) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#sn)</span></p><p><b>code</b>: Regional lymph nodes.pathology [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21900-6)</span></p><p><b>value</b>: N0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#N0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: c <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#c)</span></p><p><b>code</b>: Distant metastases.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21907-1)</span></p><p><b>value</b>: M1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#M1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Regional lymph nodes positive [#] Specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21893-3)</span></p><p><b>value</b>: 0 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code 1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Regional lymph nodes examined [#] Specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21894-1)</span></p><p><b>value</b>: 23 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code 1 = '1')</span></p></blockquote></div>"
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-tnm-uT2a2pN0023i-sncM1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-tnm-uT2a2pN0023i-sncM1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-uicc-tnm.html\">Profile UICC TNM</a></p></div><p><b>status</b>: final</p><p><b>code</b>: International Union Against Cancer (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258235000; <a href=\"https://loinc.org/\">LOINC</a>#21902-2 &quot;Stage group.pathology Cancer&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: Stage IVC <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#IVC)</span></p><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: u <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#u)</span></p><p><b>code</b>: Primary tumor.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21905-5)</span></p><p><b>value</b>: T2a2 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#T2a2)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: p <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#p)</span></p><p><b>Extension UICC TNM Suffix ITC</b>: (i-) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#i-)</span></p><p><b>Extension UICC TNM Suffix ITC SN</b>: (sn) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#sn)</span></p><p><b>code</b>: Regional lymph nodes.pathology [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21900-6)</span></p><p><b>value</b>: N0 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#N0)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>Extension UICC TNM Prefix CPU</b>: c <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#c)</span></p><p><b>code</b>: Distant metastases.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21907-1)</span></p><p><b>value</b>: M1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#M1)</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Regional lymph nodes positive [#] Specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21893-3)</span></p><p><b>value</b>: 0 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code 1 = '1')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Regional lymph nodes examined [#] Specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21894-1)</span></p><p><b>value</b>: 23 1<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code 1 = '1')</span></p></blockquote></div>"
   },
-  "status": "final",
-  "code": {
-    "coding": [
-      {
-        "system": "http://snomed.info/sct",
-        "code": "258235000",
-        "display": "International Union Against Cancer (tumor staging)"
-      },
-      {
-        "system": "http://loinc.org",
-        "code": "21902-2",
-        "display": "Stage group.pathology Cancer"
-      }
-    ]
-  },
-  "subject": {
-    "reference": "Patient/ExamplePatient"
-  },
-  "effectiveDateTime": "2022-03-07",
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "urn:oid:2.16.840.1.113883.15.16",
-        "code": "IVC",
-        "display": "Stage IVC"
-      }
-    ]
-  },
-  "component": [
-    {
-      "extension": [
-        {
-          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "code": "u",
-                "display": "u"
-              }
-            ]
-          }
-        }
-      ],
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "21905-5",
-            "display": "Primary tumor.clinical [Class] Cancer"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "code": "T2a2",
-            "display": "T2a2"
-          }
-        ]
-      }
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "258235000",
+      "display" : "International Union Against Cancer (tumor staging)"
     },
     {
-      "extension": [
-        {
-          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "code": "p",
-                "display": "p"
-              }
-            ]
-          }
-        },
-        {
-          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "code": "i-",
-                "display": "(i-)"
-              }
-            ]
-          }
-        },
-        {
-          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "code": "sn",
-                "display": "(sn)"
-              }
-            ]
-          }
-        }
-      ],
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "21900-6",
-            "display": "Regional lymph nodes.pathology [Class] Cancer"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "code": "N0",
-            "display": "N0"
-          }
-        ]
+      "system" : "http://loinc.org",
+      "code" : "21902-2",
+      "display" : "Stage group.pathology Cancer"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/ExamplePatient"
+  },
+  "effectiveDateTime" : "2022-03-07",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "urn:oid:2.16.840.1.113883.15.16",
+      "code" : "IVC",
+      "display" : "Stage IVC"
+    }]
+  },
+  "component" : [{
+    "extension" : [{
+      "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.15.16",
+          "code" : "u",
+          "display" : "u"
+        }]
       }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "21905-5",
+        "display" : "Primary tumor.clinical [Class] Cancer"
+      }]
     },
-    {
-      "extension": [
-        {
-          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
-          "valueCodeableConcept": {
-            "coding": [
-              {
-                "system": "urn:oid:2.16.840.1.113883.15.16",
-                "code": "c",
-                "display": "c"
-              }
-            ]
-          }
-        }
-      ],
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "21907-1",
-            "display": "Distant metastases.clinical [Class] Cancer"
-          }
-        ]
-      },
-      "valueCodeableConcept": {
-        "coding": [
-          {
-            "system": "urn:oid:2.16.840.1.113883.15.16",
-            "code": "M1",
-            "display": "M1"
-          }
-        ]
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "21893-3",
-            "display": "Regional lymph nodes positive [#] Specimen"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 0,
-        "system": "http://unitsofmeasure.org",
-        "code": "1"
-      }
-    },
-    {
-      "code": {
-        "coding": [
-          {
-            "system": "http://loinc.org",
-            "code": "21894-1",
-            "display": "Regional lymph nodes examined [#] Specimen"
-          }
-        ]
-      },
-      "valueQuantity": {
-        "value": 23,
-        "system": "http://unitsofmeasure.org",
-        "code": "1"
-      }
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.15.16",
+        "code" : "T2a2",
+        "display" : "T2a2"
+      }]
     }
-  ]
+  },
+  {
+    "extension" : [{
+      "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.15.16",
+          "code" : "p",
+          "display" : "p"
+        }]
+      }
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.15.16",
+          "code" : "i-",
+          "display" : "(i-)"
+        }]
+      }
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.15.16",
+          "code" : "sn",
+          "display" : "(sn)"
+        }]
+      }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "21900-6",
+        "display" : "Regional lymph nodes.pathology [Class] Cancer"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.15.16",
+        "code" : "N0",
+        "display" : "N0"
+      }]
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:oid:2.16.840.1.113883.15.16",
+          "code" : "c",
+          "display" : "c"
+        }]
+      }
+    }],
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "21907-1",
+        "display" : "Distant metastases.clinical [Class] Cancer"
+      }]
+    },
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "urn:oid:2.16.840.1.113883.15.16",
+        "code" : "M1",
+        "display" : "M1"
+      }]
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "21893-3",
+        "display" : "Regional lymph nodes positive [#] Specimen"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 0,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "1"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "21894-1",
+        "display" : "Regional lymph nodes examined [#] Specimen"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 23,
+      "system" : "http://unitsofmeasure.org",
+      "code" : "1"
+    }
+  }]
 }

@@ -1,51 +1,41 @@
 {
-  "resourceType": "Observation",
-  "id": "example-karnofsky-performance-status",
-  "meta": {
-    "profile": [
-      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
-    ]
+  "resourceType" : "Observation",
+  "id" : "example-karnofsky-performance-status",
+  "meta" : {
+    "profile" : ["https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-karnofsky-performance-status\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-karnofsky-performance-status&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-karnofsky-performance-status.html\">Profile Karnofsky Performance Status</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: Karnofsky Performance Status score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#89243-0; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#761869008 &quot;Karnofsky Performance Status score (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: Normal activity with effort; some signs or symptoms of disease <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA29177-5)</span></p></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-karnofsky-performance-status\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-karnofsky-performance-status&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-karnofsky-performance-status.html\">Profile Karnofsky Performance Status</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Survey <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#survey)</span></p><p><b>code</b>: Karnofsky Performance Status score <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#89243-0; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#761869008 &quot;Karnofsky Performance Status score (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: Normal activity with effort; some signs or symptoms of disease <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#LA29177-5)</span></p></div>"
   },
-  "status": "final",
-  "category": [
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "survey"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "89243-0",
+      "display" : "Karnofsky Performance Status score"
+    },
     {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/observation-category",
-          "code": "survey"
-        }
-      ]
-    }
-  ],
-  "code": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "89243-0",
-        "display": "Karnofsky Performance Status score"
-      },
-      {
-        "system": "http://snomed.info/sct",
-        "code": "761869008",
-        "display": "Karnofsky Performance Status score (observable entity)"
-      }
-    ]
+      "system" : "http://snomed.info/sct",
+      "code" : "761869008",
+      "display" : "Karnofsky Performance Status score (observable entity)"
+    }]
   },
-  "subject": {
-    "reference": "Patient/ExamplePatient"
+  "subject" : {
+    "reference" : "Patient/ExamplePatient"
   },
-  "effectiveDateTime": "2022-03-07",
-  "valueCodeableConcept": {
-    "coding": [
-      {
-        "system": "http://loinc.org",
-        "code": "LA29177-5",
-        "display": "Normal activity with effort; some signs or symptoms of disease"
-      }
-    ]
+  "effectiveDateTime" : "2022-03-07",
+  "valueCodeableConcept" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "LA29177-5",
+      "display" : "Normal activity with effort; some signs or symptoms of disease"
+    }]
   }
 }

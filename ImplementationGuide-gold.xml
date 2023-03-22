@@ -455,6 +455,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/body-structure-base"/>
+      </reference>
+      <name value="Profile Body Structure"/>
+      <description value="Profile for the base definition of all body structures."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/body-weight"/>
       </reference>
       <name value="Profile Body Weight"/>
@@ -613,6 +624,17 @@
       </reference>
       <name value="Diagnosesicherung ICD O"/>
       <description value="Extension für die Erfassung der Diagnosesicherung der ICD-O-3"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/diagnosis"/>
+      </reference>
+      <name value="Diagnosis"/>
+      <description value="Enables to reference a diagnosis &lt;Condition&gt; the body stucture refers to"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1096,6 +1118,16 @@
       <name value="Example Body Height"/>
       <description value="Example body height of a patient."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="BodyStructure"/>
+      </extension>
+      <reference>
+        <reference value="BodyStructure/example-body-structure"/>
+      </reference>
+      <name value="Example Body Structure"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

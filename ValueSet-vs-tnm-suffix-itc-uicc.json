@@ -1,63 +1,51 @@
 {
-  "resourceType": "ValueSet",
-  "id": "vs-tnm-suffix-itc-uicc",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>i+</td><td>(i+)</td></tr><tr><td>i-</td><td>(i-)</td></tr><tr><td>mol+</td><td>(mol+)</td></tr><tr><td>mol-</td><td>(mol-)</td></tr></table></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "vs-tnm-suffix-itc-uicc",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>i+</td><td>(i+)</td></tr><tr><td>i-</td><td>(i-)</td></tr><tr><td>mol+</td><td>(mol+)</td></tr><tr><td>mol-</td><td>(mol-)</td></tr></table></li></ul></div>"
   },
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc",
-  "version": "0.1.0",
-  "name": "VS_TNM_Suffix_ITC_UICC",
-  "title": "ValueSet TNM Suffix ITC UICC",
-  "status": "draft",
-  "date": "2022-11-21T12:36:42+00:00",
-  "publisher": "Berlin Institute of Health at Charité (BIH)",
-  "contact": [
-    {
-      "name": "Berlin Institute of Health at Charité (BIH)",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.bihealth.org/"
-        }
-      ]
-    }
-  ],
-  "description": "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DEU"
-        }
-      ]
-    }
-  ],
-  "copyright": "CC-BY-SA-4.0",
-  "compose": {
-    "include": [
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc",
+  "version" : "0.1.0",
+  "name" : "VS_TNM_Suffix_ITC_UICC",
+  "title" : "ValueSet TNM Suffix ITC UICC",
+  "status" : "draft",
+  "date" : "2023-03-22T15:27:03+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "CC-BY-SA-4.0",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.15.16",
+      "concept" : [{
+        "code" : "i+",
+        "display" : "(i+)"
+      },
       {
-        "system": "urn:oid:2.16.840.1.113883.15.16",
-        "concept": [
-          {
-            "code": "i+",
-            "display": "(i+)"
-          },
-          {
-            "code": "i-",
-            "display": "(i-)"
-          },
-          {
-            "code": "mol+",
-            "display": "(mol+)"
-          },
-          {
-            "code": "mol-",
-            "display": "(mol-)"
-          }
-        ]
-      }
-    ]
+        "code" : "i-",
+        "display" : "(i-)"
+      },
+      {
+        "code" : "mol+",
+        "display" : "(mol+)"
+      },
+      {
+        "code" : "mol-",
+        "display" : "(mol-)"
+      }]
+    }]
   }
 }

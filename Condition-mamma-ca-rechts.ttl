@@ -6,140 +6,119 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Condition/mamma-ca-rechts> a fhir:Condition;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "mamma-ca-rechts"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder";
-       fhir:index 0;
+<https://www.vision-zero-oncology.de/fhir/Condition/mamma-ca-rechts> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "mamma-ca-rechts"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"^^xsd:anyURI ;
        fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"mamma-ca-rechts\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;mamma-ca-rechts&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor-disorder.html\">Tumor Disorder</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ICD10GM[2019]#C50.2; International Classification of Diseases for Oncology, version 3.[2019]#8500/3 &quot;Invasives duktales Karzinom o.n.A.&quot;)</span></p><p><b>bodySite</b>: Oberer innerer Quadrant der Brust <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (International Classification of Diseases for Oncology, version 3.[2019]#C50.2)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example\">Patient/example</a></p><p><b>onset</b>: 2019-09-17</p><p><b>recordedDate</b>: 2019-09-19</p><p><b>recorder</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/dokumentar\">Practitioner/dokumentar</a></p><p><b>asserter</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/kliniker\">Practitioner/kliniker</a></p><blockquote><p><b>stage</b></p><p><b>assessment</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-cT2cN2cM1IV\">Observation/tnm-cT2cN2cM1IV</a></p><p><b>type</b>: Tumor-node-metastasis (TNM) tumor staging system (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#254293002)</span></p></blockquote><blockquote><p><b>stage</b></p><p><b>assessment</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/G3\">Observation/G3</a></p><p><b>type</b>: Tumor histopathological grade status values (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258244004)</span></p></blockquote><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/DiagnosticReport/pathologie\">DiagnosticReport/pathologie</a></td></tr></table></div>"
-  ];
-  fhir:Condition.clinicalStatus [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-clinical" ];
-       fhir:Coding.code [ fhir:value "active" ]
-     ]
-  ];
-  fhir:Condition.verificationStatus [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/condition-ver-status" ];
-       fhir:Coding.code [ fhir:value "confirmed" ]
-     ]
-  ];
-  fhir:Condition.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "http://fhir.de/StructureDefinition/seitenlokalisation" ];
-         fhir:Extension.valueCoding [
-           fhir:Coding.system [ fhir:value "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION" ];
-           fhir:Coding.code [ fhir:value "R" ];
-           fhir:Coding.display [ fhir:value "Rechts" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"mamma-ca-rechts\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;mamma-ca-rechts&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor-disorder.html\">Tumor Disorder</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ICD10GM[2019]#C50.2; International Classification of Diseases for Oncology, version 3.[2019]#8500/3 &quot;Invasives duktales Karzinom o.n.A.&quot;)</span></p><p><b>bodySite</b>: Oberer innerer Quadrant der Brust <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (International Classification of Diseases for Oncology, version 3.[2019]#C50.2)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example\">Patient/example</a></p><p><b>onset</b>: 2019-09-17</p><p><b>recordedDate</b>: 2019-09-19</p><p><b>recorder</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/dokumentar\">Practitioner/dokumentar</a></p><p><b>asserter</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/kliniker\">Practitioner/kliniker</a></p><blockquote><p><b>stage</b></p><p><b>assessment</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-cT2cN2cM1IV\">Observation/tnm-cT2cN2cM1IV</a></p><p><b>type</b>: Tumor-node-metastasis (TNM) tumor staging system (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#254293002)</span></p></blockquote><blockquote><p><b>stage</b></p><p><b>assessment</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/G3\">Observation/G3</a></p><p><b>type</b>: Tumor histopathological grade status values (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258244004)</span></p></blockquote><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/DiagnosticReport/pathologie\">DiagnosticReport/pathologie</a></td></tr></table></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.de/StructureDefinition/seitenlokalisation"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Coding ;
+           fhir:system [ fhir:v "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "R" ] ;
+           fhir:display [ fhir:v "Rechts" ]
          ]
-       ];
-       fhir:Coding.system [ fhir:value "http://fhir.de/CodeSystem/bfarm/icd-10-gm" ];
-       fhir:Coding.version [ fhir:value "2019" ];
-       fhir:Coding.code [ fhir:value "C50.2" ];
-       fhir:Coding.display [ fhir:value "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse" ]
-     ], [
-       fhir:index 1;
-       fhir:Element.extension [
-         fhir:index 0;
-         fhir:Extension.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o" ];
-         fhir:Extension.valueCodeableConcept [
-           fhir:CodeableConcept.coding [
-             fhir:index 0;
-             fhir:Coding.system [ fhir:value "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3" ];
-             fhir:Coding.code [ fhir:value "7" ];
-             fhir:Coding.display [ fhir:value "Histologische Untersuchung eines Primärtumors" ]
-           ]
+       ] ) ;
+       fhir:system [ fhir:v "http://fhir.de/CodeSystem/bfarm/icd-10-gm"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2019" ] ;
+       fhir:code [ fhir:v "C50.2" ] ;
+       fhir:display [ fhir:v "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "7" ] ;
+             fhir:display [ fhir:v "Histologische Untersuchung eines Primärtumors" ]
+           ] )
          ]
-       ];
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/icd-o-3" ];
-       fhir:Coding.version [ fhir:value "2019" ];
-       fhir:Coding.code [ fhir:value "8500/3" ];
-       fhir:Coding.display [ fhir:value "Invasives duktales Karzinom o.n.A." ]
+       ] ) ;
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2019" ] ;
+       fhir:code [ fhir:v "8500/3" ] ;
+       fhir:display [ fhir:v "Invasives duktales Karzinom o.n.A." ]
+     ] )
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/icd-o-3"^^xsd:anyURI ] ;
+       fhir:version [ fhir:v "2019" ] ;
+       fhir:code [ fhir:v "C50.2" ] ;
+       fhir:display [ fhir:v "Oberer innerer Quadrant der Brust" ]
+     ] )
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/example> ;
+     fhir:reference [ fhir:v "Patient/example" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2019-09-17"^^xsd:date] ; # 
+  fhir:recordedDate [ fhir:v "2019-09-19"^^xsd:date] ; # 
+  fhir:recorder [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Practitioner/dokumentar> ;
+     fhir:reference [ fhir:v "Practitioner/dokumentar" ]
+  ] ; # 
+  fhir:asserter [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Practitioner/kliniker> ;
+     fhir:reference [ fhir:v "Practitioner/kliniker" ]
+  ] ; # 
+  fhir:stage ( [
+     fhir:assessment ( [
+       fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/tnm-cT2cN2cM1IV> ;
+       fhir:reference [ fhir:v "Observation/tnm-cT2cN2cM1IV" ]
+     ] ) ;
+     fhir:type [
+       fhir:coding ( [
+         a sct:254293002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "254293002" ] ;
+         fhir:display [ fhir:v "Tumor-node-metastasis (TNM) tumor staging system (tumor staging)" ]
+       ] )
      ]
-  ];
-  fhir:Condition.bodySite [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/icd-o-3" ];
-       fhir:Coding.version [ fhir:value "2019" ];
-       fhir:Coding.code [ fhir:value "C50.2" ];
-       fhir:Coding.display [ fhir:value "Oberer innerer Quadrant der Brust" ]
+  ] [
+     fhir:assessment ( [
+       fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/G3> ;
+       fhir:reference [ fhir:v "Observation/G3" ]
+     ] ) ;
+     fhir:type [
+       fhir:coding ( [
+         a sct:258244004 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "258244004" ] ;
+         fhir:display [ fhir:v "Tumor histopathological grade status values (tumor staging)" ]
+       ] )
      ]
-  ];
-  fhir:Condition.subject [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/example>;
-     fhir:Reference.reference [ fhir:value "Patient/example" ]
-  ];
-  fhir:Condition.onsetDateTime [ fhir:value "2019-09-17"^^xsd:date];
-  fhir:Condition.recordedDate [ fhir:value "2019-09-19"^^xsd:date];
-  fhir:Condition.recorder [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Practitioner/dokumentar>;
-     fhir:Reference.reference [ fhir:value "Practitioner/dokumentar" ]
-  ];
-  fhir:Condition.asserter [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Practitioner/kliniker>;
-     fhir:Reference.reference [ fhir:value "Practitioner/kliniker" ]
-  ];
-  fhir:Condition.stage [
-     fhir:index 0;
-     fhir:Condition.stage.assessment [
-       fhir:index 0;
-       fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/tnm-cT2cN2cM1IV>;
-       fhir:Reference.reference [ fhir:value "Observation/tnm-cT2cN2cM1IV" ]
-     ];
-     fhir:Condition.stage.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a sct:254293002;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "254293002" ];
-         fhir:Coding.display [ fhir:value "Tumor-node-metastasis (TNM) tumor staging system (tumor staging)" ]
-       ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:Condition.stage.assessment [
-       fhir:index 0;
-       fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/G3>;
-       fhir:Reference.reference [ fhir:value "Observation/G3" ]
-     ];
-     fhir:Condition.stage.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         a sct:258244004;
-         fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-         fhir:Coding.code [ fhir:value "258244004" ];
-         fhir:Coding.display [ fhir:value "Tumor histopathological grade status values (tumor staging)" ]
-       ]
-     ]
-  ];
-  fhir:Condition.evidence [
-     fhir:index 0;
-     fhir:Condition.evidence.detail [
-       fhir:index 0;
-       fhir:link <https://www.vision-zero-oncology.de/fhir/DiagnosticReport/pathologie>;
-       fhir:Reference.reference [ fhir:value "DiagnosticReport/pathologie" ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://www.vision-zero-oncology.de/fhir/Condition/mamma-ca-rechts.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) ; # 
+  fhir:evidence ( [
+     fhir:detail ( [
+       fhir:link <https://www.vision-zero-oncology.de/fhir/DiagnosticReport/pathologie> ;
+       fhir:reference [ fhir:v "DiagnosticReport/pathologie" ]
+     ] )
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

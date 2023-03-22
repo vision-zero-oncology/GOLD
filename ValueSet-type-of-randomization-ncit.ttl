@@ -5,83 +5,65 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "type-of-randomization-ncit"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C147126</td><td>Adaptive Randomization</td></tr><tr><td>C147127</td><td>Block Randomization</td></tr><tr><td>C147145</td><td>Stratified Randomization</td></tr><tr><td>C147143</td><td>Minimization Randomization</td></tr><tr><td>C186212</td><td>Re-randomized</td></tr><tr><td>C147144</td><td>Simple Randomization</td></tr><tr><td>C114209</td><td>Subject is Randomized</td></tr><tr><td>C142743</td><td>Unequal Randomization</td></tr></table></li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
-  fhir:ValueSet.name [ fhir:value "VS_TypeOfRandomization_NCIT"];
-  fhir:ValueSet.title [ fhir:value "ValueSet Type of Randomization NCIt"];
-  fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-11-21T12:36:42+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Berlin Institute of Health at Charité (BIH)" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
-     ]
-  ];
-  fhir:ValueSet.description [ fhir:value "Type of Randomization aus NCI Thesaurus (NCIt)"];
-  fhir:ValueSet.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DEU" ]
-     ]
-  ];
-  fhir:ValueSet.copyright [ fhir:value "NCI THESAURUS is a registered trademark of the National Cancer Institute."];
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
-       fhir:ValueSet.compose.include.concept [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "C147126" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Adaptive Randomization" ]
-       ], [
-         fhir:index 1;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "C147127" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Block Randomization" ]
-       ], [
-         fhir:index 2;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "C147145" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Stratified Randomization" ]
-       ], [
-         fhir:index 3;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "C147143" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Minimization Randomization" ]
-       ], [
-         fhir:index 4;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "C186212" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Re-randomized" ]
-       ], [
-         fhir:index 5;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "C147144" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Simple Randomization" ]
-       ], [
-         fhir:index 6;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "C114209" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Subject is Randomized" ]
-       ], [
-         fhir:index 7;
-         fhir:ValueSet.compose.include.concept.code [ fhir:value "C142743" ];
-         fhir:ValueSet.compose.include.concept.display [ fhir:value "Unequal Randomization" ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "type-of-randomization-ncit"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C147126</td><td>Adaptive Randomization</td></tr><tr><td>C147127</td><td>Block Randomization</td></tr><tr><td>C147145</td><td>Stratified Randomization</td></tr><tr><td>C147143</td><td>Minimization Randomization</td></tr><tr><td>C186212</td><td>Re-randomized</td></tr><tr><td>C147144</td><td>Simple Randomization</td></tr><tr><td>C114209</td><td>Subject is Randomized</td></tr><tr><td>C142743</td><td>Unequal Randomization</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VS_TypeOfRandomization_NCIT"] ; # 
+  fhir:title [ fhir:v "ValueSet Type of Randomization NCIt"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-03-22T15:27:03+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.bihealth.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type of Randomization aus NCI Thesaurus (NCIt)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DEU" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "NCI THESAURUS is a registered trademark of the National Cancer Institute."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "C147126" ] ;
+         fhir:display [ fhir:v "Adaptive Randomization" ]
+       ] [
+         fhir:code [ fhir:v "C147127" ] ;
+         fhir:display [ fhir:v "Block Randomization" ]
+       ] [
+         fhir:code [ fhir:v "C147145" ] ;
+         fhir:display [ fhir:v "Stratified Randomization" ]
+       ] [
+         fhir:code [ fhir:v "C147143" ] ;
+         fhir:display [ fhir:v "Minimization Randomization" ]
+       ] [
+         fhir:code [ fhir:v "C186212" ] ;
+         fhir:display [ fhir:v "Re-randomized" ]
+       ] [
+         fhir:code [ fhir:v "C147144" ] ;
+         fhir:display [ fhir:v "Simple Randomization" ]
+       ] [
+         fhir:code [ fhir:v "C114209" ] ;
+         fhir:display [ fhir:v "Subject is Randomized" ]
+       ] [
+         fhir:code [ fhir:v "C142743" ] ;
+         fhir:display [ fhir:v "Unequal Randomization" ]
+       ] )
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

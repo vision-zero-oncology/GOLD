@@ -1,75 +1,63 @@
 {
-  "resourceType": "ValueSet",
-  "id": "studiendesign-ncit",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C15197</td><td>Case-Control Study</td></tr><tr><td>C15208</td><td>Cohort Study</td></tr><tr><td>C53310</td><td>Cross-Sectional Study</td></tr><tr><td>C46079</td><td>Randomized Controlled Clinical Trial</td></tr><tr><td>C93043</td><td>Nonrandomized Clinical Trial</td></tr><tr><td>C53312</td><td>Retrospective Study</td></tr><tr><td>C142646</td><td>Prospective Study</td></tr></table></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "studiendesign-ncit",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C15197</td><td>Case-Control Study</td></tr><tr><td>C15208</td><td>Cohort Study</td></tr><tr><td>C53310</td><td>Cross-Sectional Study</td></tr><tr><td>C46079</td><td>Randomized Controlled Clinical Trial</td></tr><tr><td>C93043</td><td>Nonrandomized Clinical Trial</td></tr><tr><td>C53312</td><td>Retrospective Study</td></tr><tr><td>C142646</td><td>Prospective Study</td></tr></table></li></ul></div>"
   },
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit",
-  "version": "0.1.0",
-  "name": "VS_Studiendesign_NCIT",
-  "title": "ValueSet Studiendesign NCIt",
-  "status": "draft",
-  "date": "2022-11-21T12:36:42+00:00",
-  "publisher": "Berlin Institute of Health at Charité (BIH)",
-  "contact": [
-    {
-      "name": "Berlin Institute of Health at Charité (BIH)",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.bihealth.org/"
-        }
-      ]
-    }
-  ],
-  "description": "Studiendesign aus NCI Thesaurus (NCIt)",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DEU"
-        }
-      ]
-    }
-  ],
-  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
-  "compose": {
-    "include": [
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit",
+  "version" : "0.1.0",
+  "name" : "VS_Studiendesign_NCIT",
+  "title" : "ValueSet Studiendesign NCIt",
+  "status" : "draft",
+  "date" : "2023-03-22T15:27:03+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "Studiendesign aus NCI Thesaurus (NCIt)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept" : [{
+        "code" : "C15197",
+        "display" : "Case-Control Study"
+      },
       {
-        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "concept": [
-          {
-            "code": "C15197",
-            "display": "Case-Control Study"
-          },
-          {
-            "code": "C15208",
-            "display": "Cohort Study"
-          },
-          {
-            "code": "C53310",
-            "display": "Cross-Sectional Study"
-          },
-          {
-            "code": "C46079",
-            "display": "Randomized Controlled Clinical Trial"
-          },
-          {
-            "code": "C93043",
-            "display": "Nonrandomized Clinical Trial"
-          },
-          {
-            "code": "C53312",
-            "display": "Retrospective Study"
-          },
-          {
-            "code": "C142646",
-            "display": "Prospective Study"
-          }
-        ]
-      }
-    ]
+        "code" : "C15208",
+        "display" : "Cohort Study"
+      },
+      {
+        "code" : "C53310",
+        "display" : "Cross-Sectional Study"
+      },
+      {
+        "code" : "C46079",
+        "display" : "Randomized Controlled Clinical Trial"
+      },
+      {
+        "code" : "C93043",
+        "display" : "Nonrandomized Clinical Trial"
+      },
+      {
+        "code" : "C53312",
+        "display" : "Retrospective Study"
+      },
+      {
+        "code" : "C142646",
+        "display" : "Prospective Study"
+      }]
+    }]
   }
 }

@@ -6,136 +6,109 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyNapkonCovidom> a fhir:ResearchStudy;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ExampleStudyNapkonCovidom"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study";
-       fhir:index 0;
+<https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyNapkonCovidom> a fhir:ResearchStudy ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleStudyNapkonCovidom"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"^^xsd:anyURI ;
        fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchStudy</b><a name=\"ExampleStudyNapkonCovidom\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchStudy &quot;ExampleStudyNapkonCovidom&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-clinical-study.html\">Clinical Study</a></p></div><p><b>identifier</b>: id: NCT04679584, id: DRKS00023742</p><p><b>title</b>: COVIDOM: Longterm Morbidity of SARS-CoV-2 Infection and COVID-19 Disease - Consequences for Health Status and Quality of Life (NAPKON-POP)</p><p><b>status</b>: active</p><p><b>phase</b>: N/A <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-phase.html\">ResearchStudyPhase</a>#n-a)</span></p><p><b>category</b>: Observational Study <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\">NCI Thesaurus</a>#C16084)</span>, Cohort Study <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\">NCI Thesaurus</a>#C15208)</span></p><p><b>condition</b>: Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#840539006)</span></p><p><b>contact</b>: Stefan Schreiber, Prof. Dr.: <a href=\"mailto:s.schreiber@mucosa.de\">s.schreiber@mucosa.de</a>,ph: 0049 (0)431 500 22201, <a href=\"mailto:thomas.bahmer@uksh.de\">thomas.bahmer@uksh.de</a>,ph: 0049 (0) 431 500 62629</p><p><b>location</b>: Germany <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#DE)</span></p><p><b>period</b>: 2020-11-16 --&gt; 2021-12-31</p><p><b>sponsor</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Organization/UKSH\">Organization/UKSH</a></p><p><b>principalInvestigator</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/example\">Practitioner/example</a></p><blockquote><p><b>objective</b></p><p><b>name</b>: Longterm morbidities and sequels of SARS-CoV-2 infections in the general population</p><p><b>type</b>: Primary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-objective-type.html\">ResearchStudyObjectiveType</a>#primary)</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Longterm quality of life of SARS-CoV-2 infected individuals recruited from the general population</p><p><b>type</b>: Secondary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-research-study-objective-type.html\">ResearchStudyObjectiveType</a>#secondary)</span></p></blockquote></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://clinicaltrials.gov"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "NCT04679584" ]
+  ] [
+     fhir:system [ fhir:v "https://www.drks.de"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "DRKS00023742" ]
+  ] ) ; # 
+  fhir:title [ fhir:v "COVIDOM: Longterm Morbidity of SARS-CoV-2 Infection and COVID-19 Disease - Consequences for Health Status and Quality of Life (NAPKON-POP)"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:phase [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-phase"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "n-a" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C16084" ] ;
+       fhir:display [ fhir:v "Observational Study" ]
+     ] )
+  ] [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "C15208" ] ;
+       fhir:display [ fhir:v "Cohort Study" ]
+     ] )
+  ] ) ; # 
+  fhir:condition ( [
+     fhir:coding ( [
+       a sct:840539006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "840539006" ] ;
+       fhir:display [ fhir:v "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)" ]
+     ] )
+  ] ) ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Stefan Schreiber, Prof. Dr." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "s.schreiber@mucosa.de" ]
+     ] [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "0049 (0)431 500 22201" ]
+     ] )
+  ] [
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "thomas.bahmer@uksh.de" ]
+     ] [
+       fhir:system [ fhir:v "phone" ] ;
+       fhir:value [ fhir:v "0049 (0) 431 500 62629" ]
+     ] )
+  ] ) ; # 
+  fhir:location ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DE" ] ;
+       fhir:display [ fhir:v "Germany" ]
+     ] )
+  ] ) ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2020-11-16"^^xsd:date ] ;
+     fhir:end [ fhir:v "2021-12-31"^^xsd:date ]
+  ] ; # 
+  fhir:sponsor [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Organization/UKSH> ;
+     fhir:reference [ fhir:v "Organization/UKSH" ]
+  ] ; # 
+  fhir:principalInvestigator [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Practitioner/example> ;
+     fhir:reference [ fhir:v "Practitioner/example" ]
+  ] ; # 
+  fhir:objective ( [
+     fhir:name [ fhir:v "Longterm morbidities and sequels of SARS-CoV-2 infections in the general population" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "primary" ]
+       ] )
      ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchStudy</b><a name=\"ExampleStudyNapkonCovidom\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchStudy &quot;ExampleStudyNapkonCovidom&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-clinical-study.html\">Clinical Study</a></p></div><p><b>identifier</b>: id: NCT04679584, id: DRKS00023742</p><p><b>title</b>: COVIDOM: Longterm Morbidity of SARS-CoV-2 Infection and COVID-19 Disease - Consequences for Health Status and Quality of Life (NAPKON-POP)</p><p><b>status</b>: active</p><p><b>phase</b>: N/A <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-research-study-phase.html\">ResearchStudyPhase</a>#n-a)</span></p><p><b>category</b>: Observational Study <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\">NCI Thesaurus</a>#C16084)</span>, Cohort Study <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\">NCI Thesaurus</a>#C15208)</span></p><p><b>condition</b>: Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#840539006)</span></p><p><b>contact</b>: Stefan Schreiber, Prof. Dr.: <a href=\"mailto:s.schreiber@mucosa.de\">s.schreiber@mucosa.de</a>,ph: 0049 (0)431 500 22201, <a href=\"mailto:thomas.bahmer@uksh.de\">thomas.bahmer@uksh.de</a>,ph: 0049 (0) 431 500 62629</p><p><b>location</b>: Germany <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-ISO3166Part1.html\">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>#DE)</span></p><p><b>period</b>: 2020-11-16 --&gt; 2021-12-31</p><p><b>sponsor</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Organization/UKSH\">Organization/UKSH</a></p><p><b>principalInvestigator</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/example\">Practitioner/example</a></p><blockquote><p><b>objective</b></p><p><b>name</b>: Longterm morbidities and sequels of SARS-CoV-2 infections in the general population</p><p><b>type</b>: Primary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-research-study-objective-type.html\">ResearchStudyObjectiveType</a>#primary)</span></p></blockquote><blockquote><p><b>objective</b></p><p><b>name</b>: Longterm quality of life of SARS-CoV-2 infected individuals recruited from the general population</p><p><b>type</b>: Secondary <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-research-study-objective-type.html\">ResearchStudyObjectiveType</a>#secondary)</span></p></blockquote></div>"
-  ];
-  fhir:ResearchStudy.identifier [
-     fhir:index 0;
-     fhir:Identifier.system [ fhir:value "http://clinicaltrials.gov" ];
-     fhir:Identifier.value [ fhir:value "NCT04679584" ]
-  ], [
-     fhir:index 1;
-     fhir:Identifier.system [ fhir:value "https://www.drks.de" ];
-     fhir:Identifier.value [ fhir:value "DRKS00023742" ]
-  ];
-  fhir:ResearchStudy.title [ fhir:value "COVIDOM: Longterm Morbidity of SARS-CoV-2 Infection and COVID-19 Disease - Consequences for Health Status and Quality of Life (NAPKON-POP)"];
-  fhir:ResearchStudy.status [ fhir:value "active"];
-  fhir:ResearchStudy.phase [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-phase" ];
-       fhir:Coding.code [ fhir:value "n-a" ]
+  ] [
+     fhir:name [ fhir:v "Longterm quality of life of SARS-CoV-2 infected individuals recruited from the general population" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/research-study-objective-type"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "secondary" ]
+       ] )
      ]
-  ];
-  fhir:ResearchStudy.category [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
-       fhir:Coding.code [ fhir:value "C16084" ];
-       fhir:Coding.display [ fhir:value "Observational Study" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
-       fhir:Coding.code [ fhir:value "C15208" ];
-       fhir:Coding.display [ fhir:value "Cohort Study" ]
-     ]
-  ];
-  fhir:ResearchStudy.condition [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:840539006;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "840539006" ];
-       fhir:Coding.display [ fhir:value "Disease caused by severe acute respiratory syndrome coronavirus 2 (disorder)" ]
-     ]
-  ];
-  fhir:ResearchStudy.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Stefan Schreiber, Prof. Dr." ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "s.schreiber@mucosa.de" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "phone" ];
-       fhir:ContactPoint.value [ fhir:value "0049 (0)431 500 22201" ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "email" ];
-       fhir:ContactPoint.value [ fhir:value "thomas.bahmer@uksh.de" ]
-     ], [
-       fhir:index 1;
-       fhir:ContactPoint.system [ fhir:value "phone" ];
-       fhir:ContactPoint.value [ fhir:value "0049 (0) 431 500 62629" ]
-     ]
-  ];
-  fhir:ResearchStudy.location [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DE" ];
-       fhir:Coding.display [ fhir:value "Germany" ]
-     ]
-  ];
-  fhir:ResearchStudy.period [
-     fhir:Period.start [ fhir:value "2020-11-16"^^xsd:date ];
-     fhir:Period.end [ fhir:value "2021-12-31"^^xsd:date ]
-  ];
-  fhir:ResearchStudy.sponsor [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Organization/UKSH>;
-     fhir:Reference.reference [ fhir:value "Organization/UKSH" ]
-  ];
-  fhir:ResearchStudy.principalInvestigator [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Practitioner/example>;
-     fhir:Reference.reference [ fhir:value "Practitioner/example" ]
-  ];
-  fhir:ResearchStudy.objective [
-     fhir:index 0;
-     fhir:ResearchStudy.objective.name [ fhir:value "Longterm morbidities and sequels of SARS-CoV-2 infections in the general population" ];
-     fhir:ResearchStudy.objective.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
-         fhir:Coding.code [ fhir:value "primary" ]
-       ]
-     ]
-  ], [
-     fhir:index 1;
-     fhir:ResearchStudy.objective.name [ fhir:value "Longterm quality of life of SARS-CoV-2 infected individuals recruited from the general population" ];
-     fhir:ResearchStudy.objective.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/research-study-objective-type" ];
-         fhir:Coding.code [ fhir:value "secondary" ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyNapkonCovidom.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+  ] ) . # 
 
 # -------------------------------------------------------------------------------------
 

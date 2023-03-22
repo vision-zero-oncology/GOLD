@@ -5,56 +5,45 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit> a fhir:ValueSet;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "type-of-study-arm-ncit"];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a> where concept  descends from  C15538</li></ul></div>"
-  ];
-  fhir:ValueSet.url [ fhir:value "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit"];
-  fhir:ValueSet.version [ fhir:value "0.1.0"];
-  fhir:ValueSet.name [ fhir:value "VS_TypeOfStudyArm_NCIT"];
-  fhir:ValueSet.title [ fhir:value "ValueSet Type of Study Arm NCIt"];
-  fhir:ValueSet.status [ fhir:value "draft"];
-  fhir:ValueSet.date [ fhir:value "2022-11-21T12:36:42+00:00"^^xsd:dateTime];
-  fhir:ValueSet.publisher [ fhir:value "Berlin Institute of Health at Charité (BIH)"];
-  fhir:ValueSet.contact [
-     fhir:index 0;
-     fhir:ContactDetail.name [ fhir:value "Berlin Institute of Health at Charité (BIH)" ];
-     fhir:ContactDetail.telecom [
-       fhir:index 0;
-       fhir:ContactPoint.system [ fhir:value "url" ];
-       fhir:ContactPoint.value [ fhir:value "https://www.bihealth.org/" ]
-     ]
-  ];
-  fhir:ValueSet.description [ fhir:value "Type of Study Arm aus NCI Thesaurus (NCIt)"];
-  fhir:ValueSet.jurisdiction [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "urn:iso:std:iso:3166" ];
-       fhir:Coding.code [ fhir:value "DEU" ]
-     ]
-  ];
-  fhir:ValueSet.copyright [ fhir:value "NCI THESAURUS is a registered trademark of the National Cancer Institute."];
-  fhir:ValueSet.compose [
-     fhir:ValueSet.compose.include [
-       fhir:index 0;
-       fhir:ValueSet.compose.include.system [ fhir:value "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl" ];
-       fhir:ValueSet.compose.include.filter [
-         fhir:index 0;
-         fhir:ValueSet.compose.include.filter.property [ fhir:value "concept" ];
-         fhir:ValueSet.compose.include.filter.op [ fhir:value "descendent-of" ];
-         fhir:ValueSet.compose.include.filter.value [ fhir:value "C15538" ]
-       ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+<https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "type-of-study-arm-ncit"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a> where concept  descends from  C15538</li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VS_TypeOfStudyArm_NCIT"] ; # 
+  fhir:title [ fhir:v "ValueSet Type of Study Arm NCIt"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2023-03-22T15:27:03+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.bihealth.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Type of Study Arm aus NCI Thesaurus (NCIt)"] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DEU" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "NCI THESAURUS is a registered trademark of the National Cancer Institute."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "descendent-of" ] ;
+         fhir:value [ fhir:v "C15538" ]
+       ] )
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

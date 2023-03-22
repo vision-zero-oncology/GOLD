@@ -1,59 +1,47 @@
 {
-  "resourceType": "ValueSet",
-  "id": "vs-tnm-l-lymphatic-invasion-uicc",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>L0</td><td>L0</td></tr><tr><td>L1</td><td>L1</td></tr><tr><td>LX</td><td>LX</td></tr></table></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "vs-tnm-l-lymphatic-invasion-uicc",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>L0</td><td>L0</td></tr><tr><td>L1</td><td>L1</td></tr><tr><td>LX</td><td>LX</td></tr></table></li></ul></div>"
   },
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-l-lymphatic-invasion-uicc",
-  "version": "0.1.0",
-  "name": "VS_TNM_L_Lymphatic_Invasion_UICC",
-  "title": "ValueSet TNM L-Descriptor Lymphatic Invasion UICC",
-  "status": "draft",
-  "date": "2022-11-21T12:36:42+00:00",
-  "publisher": "Berlin Institute of Health at Charité (BIH)",
-  "contact": [
-    {
-      "name": "Berlin Institute of Health at Charité (BIH)",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.bihealth.org/"
-        }
-      ]
-    }
-  ],
-  "description": "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC.",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DEU"
-        }
-      ]
-    }
-  ],
-  "copyright": "CC-BY-SA-4.0",
-  "compose": {
-    "include": [
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-l-lymphatic-invasion-uicc",
+  "version" : "0.1.0",
+  "name" : "VS_TNM_L_Lymphatic_Invasion_UICC",
+  "title" : "ValueSet TNM L-Descriptor Lymphatic Invasion UICC",
+  "status" : "draft",
+  "date" : "2023-03-22T15:27:03+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "CC-BY-SA-4.0",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.15.16",
+      "concept" : [{
+        "code" : "L0",
+        "display" : "L0"
+      },
       {
-        "system": "urn:oid:2.16.840.1.113883.15.16",
-        "concept": [
-          {
-            "code": "L0",
-            "display": "L0"
-          },
-          {
-            "code": "L1",
-            "display": "L1"
-          },
-          {
-            "code": "LX",
-            "display": "LX"
-          }
-        ]
-      }
-    ]
+        "code" : "L1",
+        "display" : "L1"
+      },
+      {
+        "code" : "LX",
+        "display" : "LX"
+      }]
+    }]
   }
 }

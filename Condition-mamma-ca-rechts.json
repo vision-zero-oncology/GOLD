@@ -1,135 +1,103 @@
 {
-  "resourceType": "Condition",
-  "id": "mamma-ca-rechts",
-  "meta": {
-    "profile": [
-      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"
-    ]
+  "resourceType" : "Condition",
+  "id" : "mamma-ca-rechts",
+  "meta" : {
+    "profile" : ["https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"]
   },
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"mamma-ca-rechts\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;mamma-ca-rechts&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor-disorder.html\">Tumor Disorder</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ICD10GM[2019]#C50.2; International Classification of Diseases for Oncology, version 3.[2019]#8500/3 &quot;Invasives duktales Karzinom o.n.A.&quot;)</span></p><p><b>bodySite</b>: Oberer innerer Quadrant der Brust <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (International Classification of Diseases for Oncology, version 3.[2019]#C50.2)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example\">Patient/example</a></p><p><b>onset</b>: 2019-09-17</p><p><b>recordedDate</b>: 2019-09-19</p><p><b>recorder</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/dokumentar\">Practitioner/dokumentar</a></p><p><b>asserter</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/kliniker\">Practitioner/kliniker</a></p><blockquote><p><b>stage</b></p><p><b>assessment</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-cT2cN2cM1IV\">Observation/tnm-cT2cN2cM1IV</a></p><p><b>type</b>: Tumor-node-metastasis (TNM) tumor staging system (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#254293002)</span></p></blockquote><blockquote><p><b>stage</b></p><p><b>assessment</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/G3\">Observation/G3</a></p><p><b>type</b>: Tumor histopathological grade status values (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258244004)</span></p></blockquote><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/DiagnosticReport/pathologie\">DiagnosticReport/pathologie</a></td></tr></table></div>"
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"mamma-ca-rechts\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;mamma-ca-rechts&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor-disorder.html\">Tumor Disorder</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>code</b>: Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (ICD10GM[2019]#C50.2; International Classification of Diseases for Oncology, version 3.[2019]#8500/3 &quot;Invasives duktales Karzinom o.n.A.&quot;)</span></p><p><b>bodySite</b>: Oberer innerer Quadrant der Brust <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (International Classification of Diseases for Oncology, version 3.[2019]#C50.2)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example\">Patient/example</a></p><p><b>onset</b>: 2019-09-17</p><p><b>recordedDate</b>: 2019-09-19</p><p><b>recorder</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/dokumentar\">Practitioner/dokumentar</a></p><p><b>asserter</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Practitioner/kliniker\">Practitioner/kliniker</a></p><blockquote><p><b>stage</b></p><p><b>assessment</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/tnm-cT2cN2cM1IV\">Observation/tnm-cT2cN2cM1IV</a></p><p><b>type</b>: Tumor-node-metastasis (TNM) tumor staging system (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#254293002)</span></p></blockquote><blockquote><p><b>stage</b></p><p><b>assessment</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Observation/G3\">Observation/G3</a></p><p><b>type</b>: Tumor histopathological grade status values (tumor staging) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#258244004)</span></p></blockquote><h3>Evidences</h3><table class=\"grid\"><tr><td>-</td><td><b>Detail</b></td></tr><tr><td>*</td><td><a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/DiagnosticReport/pathologie\">DiagnosticReport/pathologie</a></td></tr></table></div>"
   },
-  "clinicalStatus": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-clinical",
-        "code": "active"
-      }
-    ]
+  "clinicalStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "code" : "active"
+    }]
   },
-  "verificationStatus": {
-    "coding": [
-      {
-        "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status",
-        "code": "confirmed"
-      }
-    ]
+  "verificationStatus" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "code" : "confirmed"
+    }]
   },
-  "code": {
-    "coding": [
-      {
-        "extension": [
-          {
-            "url": "http://fhir.de/StructureDefinition/seitenlokalisation",
-            "valueCoding": {
-              "system": "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
-              "code": "R",
-              "display": "Rechts"
-            }
-          }
-        ],
-        "system": "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
-        "version": "2019",
-        "code": "C50.2",
-        "display": "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse"
-      },
-      {
-        "extension": [
-          {
-            "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o",
-            "valueCodeableConcept": {
-              "coding": [
-                {
-                  "system": "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3",
-                  "code": "7",
-                  "display": "Histologische Untersuchung eines Primärtumors"
-                }
-              ]
-            }
-          }
-        ],
-        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
-        "version": "2019",
-        "code": "8500/3",
-        "display": "Invasives duktales Karzinom o.n.A."
-      }
-    ]
-  },
-  "bodySite": [
-    {
-      "coding": [
-        {
-          "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
-          "version": "2019",
-          "code": "C50.2",
-          "display": "Oberer innerer Quadrant der Brust"
+  "code" : {
+    "coding" : [{
+      "extension" : [{
+        "url" : "http://fhir.de/StructureDefinition/seitenlokalisation",
+        "valueCoding" : {
+          "system" : "https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION",
+          "code" : "R",
+          "display" : "Rechts"
         }
-      ]
-    }
-  ],
-  "subject": {
-    "reference": "Patient/example"
-  },
-  "onsetDateTime": "2019-09-17",
-  "recordedDate": "2019-09-19",
-  "recorder": {
-    "reference": "Practitioner/dokumentar"
-  },
-  "asserter": {
-    "reference": "Practitioner/kliniker"
-  },
-  "stage": [
-    {
-      "assessment": [
-        {
-          "reference": "Observation/tnm-cT2cN2cM1IV"
-        }
-      ],
-      "type": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "254293002",
-            "display": "Tumor-node-metastasis (TNM) tumor staging system (tumor staging)"
-          }
-        ]
-      }
+      }],
+      "system" : "http://fhir.de/CodeSystem/bfarm/icd-10-gm",
+      "version" : "2019",
+      "code" : "C50.2",
+      "display" : "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse"
     },
     {
-      "assessment": [
-        {
-          "reference": "Observation/G3"
+      "extension" : [{
+        "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3",
+            "code" : "7",
+            "display" : "Histologische Untersuchung eines Primärtumors"
+          }]
         }
-      ],
-      "type": {
-        "coding": [
-          {
-            "system": "http://snomed.info/sct",
-            "code": "258244004",
-            "display": "Tumor histopathological grade status values (tumor staging)"
-          }
-        ]
-      }
+      }],
+      "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "version" : "2019",
+      "code" : "8500/3",
+      "display" : "Invasives duktales Karzinom o.n.A."
+    }]
+  },
+  "bodySite" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "version" : "2019",
+      "code" : "C50.2",
+      "display" : "Oberer innerer Quadrant der Brust"
+    }]
+  }],
+  "subject" : {
+    "reference" : "Patient/example"
+  },
+  "onsetDateTime" : "2019-09-17",
+  "recordedDate" : "2019-09-19",
+  "recorder" : {
+    "reference" : "Practitioner/dokumentar"
+  },
+  "asserter" : {
+    "reference" : "Practitioner/kliniker"
+  },
+  "stage" : [{
+    "assessment" : [{
+      "reference" : "Observation/tnm-cT2cN2cM1IV"
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "254293002",
+        "display" : "Tumor-node-metastasis (TNM) tumor staging system (tumor staging)"
+      }]
     }
-  ],
-  "evidence": [
-    {
-      "detail": [
-        {
-          "reference": "DiagnosticReport/pathologie"
-        }
-      ]
+  },
+  {
+    "assessment" : [{
+      "reference" : "Observation/G3"
+    }],
+    "type" : {
+      "coding" : [{
+        "system" : "http://snomed.info/sct",
+        "code" : "258244004",
+        "display" : "Tumor histopathological grade status values (tumor staging)"
+      }]
     }
-  ]
+  }],
+  "evidence" : [{
+    "detail" : [{
+      "reference" : "DiagnosticReport/pathologie"
+    }]
+  }]
 }

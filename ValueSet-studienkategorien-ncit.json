@@ -1,59 +1,47 @@
 {
-  "resourceType": "ValueSet",
-  "id": "studienkategorien-ncit",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C98388</td><td>Interventional Study</td></tr><tr><td>C142615</td><td>Non-Interventional Study</td></tr><tr><td>C16084</td><td>Observational Study</td></tr></table></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "studienkategorien-ncit",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C98388</td><td>Interventional Study</td></tr><tr><td>C142615</td><td>Non-Interventional Study</td></tr><tr><td>C16084</td><td>Observational Study</td></tr></table></li></ul></div>"
   },
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit",
-  "version": "0.1.0",
-  "name": "VS_Studienkategorien_NCIT",
-  "title": "ValueSet Studienkategorien NCIt",
-  "status": "draft",
-  "date": "2022-11-21T12:36:42+00:00",
-  "publisher": "Berlin Institute of Health at Charité (BIH)",
-  "contact": [
-    {
-      "name": "Berlin Institute of Health at Charité (BIH)",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.bihealth.org/"
-        }
-      ]
-    }
-  ],
-  "description": "Studienkategorien aus NCI Thesaurus (NCIt)",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DEU"
-        }
-      ]
-    }
-  ],
-  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
-  "compose": {
-    "include": [
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit",
+  "version" : "0.1.0",
+  "name" : "VS_Studienkategorien_NCIT",
+  "title" : "ValueSet Studienkategorien NCIt",
+  "status" : "draft",
+  "date" : "2023-03-22T15:27:03+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "Studienkategorien aus NCI Thesaurus (NCIt)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept" : [{
+        "code" : "C98388",
+        "display" : "Interventional Study"
+      },
       {
-        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "concept": [
-          {
-            "code": "C98388",
-            "display": "Interventional Study"
-          },
-          {
-            "code": "C142615",
-            "display": "Non-Interventional Study"
-          },
-          {
-            "code": "C16084",
-            "display": "Observational Study"
-          }
-        ]
-      }
-    ]
+        "code" : "C142615",
+        "display" : "Non-Interventional Study"
+      },
+      {
+        "code" : "C16084",
+        "display" : "Observational Study"
+      }]
+    }]
   }
 }

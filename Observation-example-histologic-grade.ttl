@@ -1,5 +1,5 @@
 @prefix fhir: <http://hl7.org/fhir/> .
-@prefix loinc: <http://loinc.org/rdf#> .
+@prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix sct: <http://snomed.info/id/> .
@@ -7,63 +7,53 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/Observation/example-histologic-grade> a fhir:Observation;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "example-histologic-grade"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who";
-       fhir:index 0;
+<https://www.vision-zero-oncology.de/fhir/Observation/example-histologic-grade> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-histologic-grade"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"^^xsd:anyURI ;
        fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-histologic-grade\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-histologic-grade&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-histopathological-grading-who.html\">Profile Histopathological Tumor Grading WHO</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/4.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Histology grade [Identifier] in Cancer specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#33732-9; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#371469007 &quot;Histologic grade of neoplasm (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: G1 grade (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#54102005)</span></p></div>"
-  ];
-  fhir:Observation.status [ fhir:value "final"];
-  fhir:Observation.category [
-     fhir:index 0;
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/observation-category" ];
-       fhir:Coding.code [ fhir:value "laboratory" ]
-     ]
-  ];
-  fhir:Observation.code [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a loinc:33732-9;
-       fhir:Coding.system [ fhir:value "http://loinc.org" ];
-       fhir:Coding.code [ fhir:value "33732-9" ];
-       fhir:Coding.display [ fhir:value "Histology grade [Identifier] in Cancer specimen" ]
-     ], [
-       fhir:index 1;
-       a sct:371469007;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "371469007" ];
-       fhir:Coding.display [ fhir:value "Histologic grade of neoplasm (observable entity)" ]
-     ]
-  ];
-  fhir:Observation.subject [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient>;
-     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
-  ];
-  fhir:Observation.effectiveDateTime [ fhir:value "2022-03-07"^^xsd:date];
-  fhir:Observation.valueCodeableConcept [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:54102005;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "54102005" ];
-       fhir:Coding.display [ fhir:value "G1 grade (finding)" ]
-     ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://www.vision-zero-oncology.de/fhir/Observation/example-histologic-grade.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-histologic-grade\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-histologic-grade&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-histopathological-grading-who.html\">Profile Histopathological Tumor Grading WHO</a></p></div><p><b>status</b>: final</p><p><b>category</b>: Laboratory <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-observation-category.html\">Observation Category Codes</a>#laboratory)</span></p><p><b>code</b>: Histology grade [Identifier] in Cancer specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#33732-9; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#371469007 &quot;Histologic grade of neoplasm (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: G1 grade (finding) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#54102005)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/observation-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "laboratory" ]
+     ] )
+  ] ) ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:33732-9 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "33732-9" ] ;
+       fhir:display [ fhir:v "Histology grade [Identifier] in Cancer specimen" ]
+     ] [
+       a sct:371469007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "371469007" ] ;
+       fhir:display [ fhir:v "Histologic grade of neoplasm (observable entity)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient> ;
+     fhir:reference [ fhir:v "Patient/ExamplePatient" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2022-03-07"^^xsd:date] ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:54102005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "54102005" ] ;
+       fhir:display [ fhir:v "G1 grade (finding)" ]
+     ] )
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

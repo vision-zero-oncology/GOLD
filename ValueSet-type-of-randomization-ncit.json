@@ -1,79 +1,67 @@
 {
-  "resourceType": "ValueSet",
-  "id": "type-of-randomization-ncit",
-  "text": {
-    "status": "generated",
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C147126</td><td>Adaptive Randomization</td></tr><tr><td>C147127</td><td>Block Randomization</td></tr><tr><td>C147145</td><td>Stratified Randomization</td></tr><tr><td>C147143</td><td>Minimization Randomization</td></tr><tr><td>C186212</td><td>Re-randomized</td></tr><tr><td>C147144</td><td>Simple Randomization</td></tr><tr><td>C114209</td><td>Subject is Randomized</td></tr><tr><td>C142743</td><td>Unequal Randomization</td></tr></table></li></ul></div>"
+  "resourceType" : "ValueSet",
+  "id" : "type-of-randomization-ncit",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C147126</td><td>Adaptive Randomization</td></tr><tr><td>C147127</td><td>Block Randomization</td></tr><tr><td>C147145</td><td>Stratified Randomization</td></tr><tr><td>C147143</td><td>Minimization Randomization</td></tr><tr><td>C186212</td><td>Re-randomized</td></tr><tr><td>C147144</td><td>Simple Randomization</td></tr><tr><td>C114209</td><td>Subject is Randomized</td></tr><tr><td>C142743</td><td>Unequal Randomization</td></tr></table></li></ul></div>"
   },
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit",
-  "version": "0.1.0",
-  "name": "VS_TypeOfRandomization_NCIT",
-  "title": "ValueSet Type of Randomization NCIt",
-  "status": "draft",
-  "date": "2022-11-21T12:36:42+00:00",
-  "publisher": "Berlin Institute of Health at Charité (BIH)",
-  "contact": [
-    {
-      "name": "Berlin Institute of Health at Charité (BIH)",
-      "telecom": [
-        {
-          "system": "url",
-          "value": "https://www.bihealth.org/"
-        }
-      ]
-    }
-  ],
-  "description": "Type of Randomization aus NCI Thesaurus (NCIt)",
-  "jurisdiction": [
-    {
-      "coding": [
-        {
-          "system": "urn:iso:std:iso:3166",
-          "code": "DEU"
-        }
-      ]
-    }
-  ],
-  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
-  "compose": {
-    "include": [
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit",
+  "version" : "0.1.0",
+  "name" : "VS_TypeOfRandomization_NCIT",
+  "title" : "ValueSet Type of Randomization NCIt",
+  "status" : "draft",
+  "date" : "2023-03-22T15:27:03+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "Type of Randomization aus NCI Thesaurus (NCIt)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "concept" : [{
+        "code" : "C147126",
+        "display" : "Adaptive Randomization"
+      },
       {
-        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
-        "concept": [
-          {
-            "code": "C147126",
-            "display": "Adaptive Randomization"
-          },
-          {
-            "code": "C147127",
-            "display": "Block Randomization"
-          },
-          {
-            "code": "C147145",
-            "display": "Stratified Randomization"
-          },
-          {
-            "code": "C147143",
-            "display": "Minimization Randomization"
-          },
-          {
-            "code": "C186212",
-            "display": "Re-randomized"
-          },
-          {
-            "code": "C147144",
-            "display": "Simple Randomization"
-          },
-          {
-            "code": "C114209",
-            "display": "Subject is Randomized"
-          },
-          {
-            "code": "C142743",
-            "display": "Unequal Randomization"
-          }
-        ]
-      }
-    ]
+        "code" : "C147127",
+        "display" : "Block Randomization"
+      },
+      {
+        "code" : "C147145",
+        "display" : "Stratified Randomization"
+      },
+      {
+        "code" : "C147143",
+        "display" : "Minimization Randomization"
+      },
+      {
+        "code" : "C186212",
+        "display" : "Re-randomized"
+      },
+      {
+        "code" : "C147144",
+        "display" : "Simple Randomization"
+      },
+      {
+        "code" : "C114209",
+        "display" : "Subject is Randomized"
+      },
+      {
+        "code" : "C142743",
+        "display" : "Unequal Randomization"
+      }]
+    }]
   }
 }

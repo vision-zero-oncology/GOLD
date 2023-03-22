@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BodyStructure xmlns="http://hl7.org/fhir">
+  <id value="example-body-structure"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: BodyStructure</b><a name="example-body-structure"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource BodyStructure &quot;example-body-structure&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-body-structure-base.html">Profile Body Structure</a></p></div><p><b>Diagnosis</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ExampleCondition">ExampleCondition</a></p><p><b>patient</b>: <a href="Patient-ExamplePatient.html">Patient/ExamplePatient</a> &quot; BACH&quot;</p></div>
+  </text>
+  <extension url="https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis">
+    <valueReference>
+      <reference value="ExampleCondition"/>
+    </valueReference>
+  </extension>
+  <patient>
+    <reference value="Patient/ExamplePatient"/>
+  </patient>
+</BodyStructure>

@@ -5,53 +5,45 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/ResearchSubject/ExampleResearchSubjectStudienteilnehmer> a fhir:ResearchSubject;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "ExampleResearchSubjectStudienteilnehmer"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin";
-       fhir:index 0;
+<https://www.vision-zero-oncology.de/fhir/ResearchSubject/ExampleResearchSubjectStudienteilnehmer> a fhir:ResearchSubject ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ExampleResearchSubjectStudienteilnehmer"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"^^xsd:anyURI ;
        fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchSubject</b><a name=\"ExampleResearchSubjectStudienteilnehmer\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchSubject &quot;ExampleResearchSubjectStudienteilnehmer&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-probandin.html\">ProbandIn</a></p></div><p><b>identifier</b>: Anonymous identifier: 12345</p><p><b>status</b>: candidate</p><p><b>period</b>: 2019-09-06 --&gt; (ongoing)</p><p><b>study</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ResearchStudy/MII-Beispielstudie\">ResearchStudy/MII-Beispielstudie</a></p><p><b>individual</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/MII-Patient\">Patient/MII-Patient</a></p><p><b>consent</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Consent/MII-Consent\">Consent/MII-Consent</a></p></div>"
-  ];
-  fhir:ResearchSubject.identifier [
-     fhir:index 0;
-     fhir:Identifier.type [
-       fhir:CodeableConcept.coding [
-         fhir:index 0;
-         fhir:Coding.system [ fhir:value "http://terminology.hl7.org/CodeSystem/v2-0203" ];
-         fhir:Coding.code [ fhir:value "ANON" ]
-       ]
-     ];
-     fhir:Identifier.system [ fhir:value "https://charite.de/fhir/core/sid/SubjectIdentificationCode" ];
-     fhir:Identifier.value [ fhir:value "12345" ]
-  ];
-  fhir:ResearchSubject.status [ fhir:value "candidate"];
-  fhir:ResearchSubject.period [
-     fhir:Period.start [ fhir:value "2019-09-06"^^xsd:date ]
-  ];
-  fhir:ResearchSubject.study [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchStudy/MII-Beispielstudie>;
-     fhir:Reference.reference [ fhir:value "ResearchStudy/MII-Beispielstudie" ]
-  ];
-  fhir:ResearchSubject.individual [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/MII-Patient>;
-     fhir:Reference.reference [ fhir:value "Patient/MII-Patient" ]
-  ];
-  fhir:ResearchSubject.consent [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Consent/MII-Consent>;
-     fhir:Reference.reference [ fhir:value "Consent/MII-Consent" ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://www.vision-zero-oncology.de/fhir/ResearchSubject/ExampleResearchSubjectStudienteilnehmer.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: ResearchSubject</b><a name=\"ExampleResearchSubjectStudienteilnehmer\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource ResearchSubject &quot;ExampleResearchSubjectStudienteilnehmer&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-probandin.html\">ProbandIn</a></p></div><p><b>identifier</b>: Anonymous identifier: 12345</p><p><b>status</b>: candidate</p><p><b>period</b>: 2019-09-06 --&gt; (ongoing)</p><p><b>study</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ResearchStudy/MII-Beispielstudie\">ResearchStudy/MII-Beispielstudie</a></p><p><b>individual</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/MII-Patient\">Patient/MII-Patient</a></p><p><b>consent</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Consent/MII-Consent\">Consent/MII-Consent</a></p></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ANON" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "https://charite.de/fhir/core/sid/SubjectIdentificationCode"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "candidate"] ; # 
+  fhir:period [
+     fhir:start [ fhir:v "2019-09-06"^^xsd:date ]
+  ] ; # 
+  fhir:study [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchStudy/MII-Beispielstudie> ;
+     fhir:reference [ fhir:v "ResearchStudy/MII-Beispielstudie" ]
+  ] ; # 
+  fhir:individual [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/MII-Patient> ;
+     fhir:reference [ fhir:v "Patient/MII-Patient" ]
+  ] ; # 
+  fhir:consent [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Consent/MII-Consent> ;
+     fhir:reference [ fhir:v "Consent/MII-Consent" ]
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 

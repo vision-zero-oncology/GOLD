@@ -6,47 +6,39 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://www.vision-zero-oncology.de/fhir/BodyStructure/CerebellarSarcoma> a fhir:BodyStructure;
-  fhir:nodeRole fhir:treeRoot;
-  fhir:Resource.id [ fhir:value "CerebellarSarcoma"];
-  fhir:Resource.meta [
-     fhir:Meta.profile [
-       fhir:value "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor";
-       fhir:index 0;
+<https://www.vision-zero-oncology.de/fhir/BodyStructure/CerebellarSarcoma> a fhir:BodyStructure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "CerebellarSarcoma"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"^^xsd:anyURI ;
        fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor>
-     ]
-  ];
-  fhir:DomainResource.text [
-     fhir:Narrative.status [ fhir:value "generated" ];
-     fhir:Narrative.div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: BodyStructure</b><a name=\"CerebellarSarcoma\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource BodyStructure &quot;CerebellarSarcoma&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor.html\">Tumor</a></p></div><p><b>morphology</b>: Cerebellar sarcoma (morphologic abnormality) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#17302008)</span></p><p><b>location</b>: Structure of left cerebellar hemisphere (body structure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1010600003)</span></p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p></div>"
-  ];
-  fhir:BodyStructure.morphology [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:17302008;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "17302008" ];
-       fhir:Coding.display [ fhir:value "Cerebellar sarcoma (morphologic abnormality)" ]
-     ]
-  ];
-  fhir:BodyStructure.location [
-     fhir:CodeableConcept.coding [
-       fhir:index 0;
-       a sct:1010600003;
-       fhir:Coding.system [ fhir:value "http://snomed.info/sct" ];
-       fhir:Coding.code [ fhir:value "1010600003" ];
-       fhir:Coding.display [ fhir:value "Structure of left cerebellar hemisphere (body structure)" ]
-     ]
-  ];
-  fhir:BodyStructure.patient [
-     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient>;
-     fhir:Reference.reference [ fhir:value "Patient/ExamplePatient" ]
-  ] .
-
-# - ontology header ------------------------------------------------------------
-
-<https://www.vision-zero-oncology.de/fhir/BodyStructure/CerebellarSarcoma.ttl> a owl:Ontology;
-  owl:imports fhir:fhir.ttl .
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: BodyStructure</b><a name=\"CerebellarSarcoma\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource BodyStructure &quot;CerebellarSarcoma&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor.html\">Tumor</a></p></div><p><b>morphology</b>: Cerebellar sarcoma (morphologic abnormality) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#17302008)</span></p><p><b>location</b>: Structure of left cerebellar hemisphere (body structure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#1010600003)</span></p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p></div>"
+  ] ; # 
+  fhir:morphology [
+     fhir:coding ( [
+       a sct:17302008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "17302008" ] ;
+       fhir:display [ fhir:v "Cerebellar sarcoma (morphologic abnormality)" ]
+     ] )
+  ] ; # 
+  fhir:location [
+     fhir:coding ( [
+       a sct:1010600003 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1010600003" ] ;
+       fhir:display [ fhir:v "Structure of left cerebellar hemisphere (body structure)" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient> ;
+     fhir:reference [ fhir:v "Patient/ExamplePatient" ]
+  ] . # 
 
 # -------------------------------------------------------------------------------------
 
