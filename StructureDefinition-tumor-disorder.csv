@@ -525,7 +525,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","Kind of staging","The kind of staging, such as pathological or clinical staging.","Not all terminology uses fit this general pattern. In some cases, models should not use CodeableConcept and use Coding directly and provide their own structure for managing text, codings, translations and the relationship between elements and pre- and post-coordination.","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://snomed.info/sct""/>
-    <code value=""254293002""/>
+    <code value=""258234001""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Codes describing the kind of condition staging (e.g. clinical or pathological).","http://hl7.org/fhir/ValueSet/condition-stage-type","",,,,"Condition.stage.type",0,1,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
