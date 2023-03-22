@@ -5,7 +5,6 @@
   "id": "studienkategorien-ncit",
   "title": "ValueSet Studienkategorien NCIt",
   "description": "Studienkategorien aus NCI Thesaurus (NCIt)",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit",
   "publisher": "VISION ZERO E.V.",
   "contact": [

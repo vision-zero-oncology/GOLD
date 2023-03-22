@@ -43,8 +43,8 @@
         "display": "schlecht differenziertes Plattenepithelkarzinom"
       },
       {
-        "code": "1162767002",
         "system": "http://snomed.info/sct",
+        "code": "1162767002",
         "display": "Squamous cell carcinoma (morphologic abnormality)"
       }
     ]
@@ -57,8 +57,8 @@
         "display": "Lungenoberlappen"
       },
       {
-        "code": "45653009",
         "system": "http://snomed.info/sct",
+        "code": "45653009",
         "display": "Structure of upper lobe of lung (body structure)"
       }
     ]

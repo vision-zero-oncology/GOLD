@@ -1,0 +1,20 @@
+{
+  "resourceType": "BodyStructure",
+  "id": "example-body-structure",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"
+    ]
+  },
+  "patient": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "extension": [
+    {
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis",
+      "valueReference": {
+        "reference": "ExampleCondition"
+      }
+    }
+  ]
+}

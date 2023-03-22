@@ -5,7 +5,6 @@
   "id": "studiendesign-ncit",
   "title": "ValueSet Studiendesign NCIt",
   "description": "Studiendesign aus NCI Thesaurus (NCIt)",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit",
   "publisher": "VISION ZERO E.V.",
   "contact": [

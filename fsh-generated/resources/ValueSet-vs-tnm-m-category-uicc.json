@@ -5,7 +5,6 @@
   "id": "vs-tnm-m-category-uicc",
   "title": "ValueSet TNM M Category UICC",
   "description": "This ValueSet contains the TNM M category codes from TNM 8th edition UICC.",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc",
   "publisher": "VISION ZERO E.V.",
   "contact": [

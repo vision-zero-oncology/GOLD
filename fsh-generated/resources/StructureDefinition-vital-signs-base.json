@@ -1,18 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "vital-signs-base",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base",
-  "version": "0.1.0",
   "name": "Vital_Signs_Base",
   "title": "Profile Vital Signs Base",
   "status": "draft",

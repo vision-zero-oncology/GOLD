@@ -1,18 +1,7 @@
 {
   "resourceType": "StructureDefinition",
   "id": "uicc-tnm",
-  "extension": [
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-category",
-      "valueString": "Clinical.Diagnostics"
-    },
-    {
-      "url": "http://hl7.org/fhir/StructureDefinition/structuredefinition-security-category",
-      "valueCode": "patient"
-    }
-  ],
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm",
-  "version": "0.1.0",
   "name": "UICC_TNM",
   "title": "Profile UICC TNM",
   "status": "draft",
