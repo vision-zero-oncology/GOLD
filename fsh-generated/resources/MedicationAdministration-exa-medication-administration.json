@@ -1,0 +1,57 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "exa-medication-administration",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration"
+    ]
+  },
+  "dosage": {
+    "dose": {
+      "system": "http://unitsofmeasure.org",
+      "value": 85,
+      "code": "mg",
+      "unit": "mg"
+    },
+    "rateRatio": {
+      "denominator": {
+        "system": "http://unitsofmeasure.org",
+        "value": 1,
+        "code": "h",
+        "unit": "hour"
+      },
+      "numerator": {
+        "system": "http://unitsofmeasure.org",
+        "value": 250,
+        "code": "mL",
+        "unit": "milliliter"
+      }
+    },
+    "route": {
+      "coding": [
+        {
+          "code": "20045000",
+          "system": "http://standardterms.edqm.eu",
+          "display": "Intravenous use"
+        }
+      ]
+    }
+  },
+  "effectivePeriod": {
+    "end": "2020-01-06T11:20:00.000+00:00",
+    "start": "2020-01-06T10:20:00.000+00:00"
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "L01DB01",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "display": "Doxorubicin"
+      }
+    ]
+  },
+  "status": "completed",
+  "subject": {
+    "reference": "Patient/example"
+  }
+}
