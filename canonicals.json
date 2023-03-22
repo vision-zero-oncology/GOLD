@@ -84,25 +84,11 @@
     "name" : "Karnofsky_Performance_Status"
   },
   {
-    "id" : "medication-administration",
-    "type" : "StructureDefinition",
-    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration",
-    "version" : "0.1.0",
-    "name" : "PR_MedicationAdministration"
-  },
-  {
     "id" : "part-of",
     "type" : "StructureDefinition",
     "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of",
     "version" : "0.1.0",
     "name" : "PartOf"
-  },
-  {
-    "id" : "pr-medication-statement",
-    "type" : "StructureDefinition",
-    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement",
-    "version" : "0.1.0",
-    "name" : "PR_MedicationStatement"
   },
   {
     "id" : "probandin",

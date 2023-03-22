@@ -18,7 +18,7 @@
   fhir:name [ fhir:v "TumorSpecimen"] ; # 
   fhir:title [ fhir:v "Tumor Specimen"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-03-22T15:45:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-03-22T15:45:58+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;

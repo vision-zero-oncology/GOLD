@@ -76,18 +76,6 @@
         "title": "Clinical Study"
       }
     ],
-    "MedicationAdministration": [
-      {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration",
-        "title": "MedicationAdministration"
-      }
-    ],
-    "MedicationStatement": [
-      {
-        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement",
-        "title": "MedicationStatement"
-      }
-    ],
     "ResearchSubject": [
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin",
