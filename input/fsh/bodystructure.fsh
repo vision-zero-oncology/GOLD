@@ -1,8 +1,17 @@
+Alias: $bodyStructureIdentifier = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-structure-identifier
+
 Profile: Body_Structure_Base
 Parent: BodyStructure
 Id: body-structure-base
 Title: "Profile Body Structure"
 Description: "Profile for the base definition of all body structures."
+* identifier 1..*
+* identifier ^slicing.discriminator.type = #pattern
+* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.rules = #open
+* identifier contains
+    bodyStructureIdentifier 1..1 
+* identifier[bodyStructureIdentifier] only $bodyStructureIdentifier
 * location 0..0
 * locationQualifier 0..0
 * extension 0..*
@@ -20,9 +29,12 @@ Description: "Enables to reference a diagnosis <Condition> the body stucture ref
 
 
 Instance: example-body-structure
-InstanceOf: body-structure-base
+InstanceOf: BodyStructure
 Usage: #example
-Title: "Example Body Structure"
+* identifier.use = #usual
+* identifier.type = http://hl7.org/fhir/resource-types#BodyStructure
+* identifier.system = "http://radiology.hospital.example.org"
+* identifier.value = "Tumor 1234"
 * patient = Reference(ExamplePatient)
 * extension.url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis"
 * extension.valueReference = Reference(ExampleCondition)

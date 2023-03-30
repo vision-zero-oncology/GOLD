@@ -54,3 +54,6 @@ Alias: $MIIBiobankBioprobeCore = https://www.medizininformatik-initiative.de/fhi
 // GOLD
 Alias: $DiagnosesicherungVS = https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3
 Alias: $DiagnosesicherungCS = https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3
+
+//MCode
+Alias: $bodyStructureIdentifier = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-structure-identifier
