@@ -24,6 +24,7 @@ Alias: $ResearchStudyPhase = http://hl7.org/fhir/ValueSet/research-study-phase
 // Core Extensions
 // Alias: $WorkFlowEpisodeOfCare = http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare
 
+
 //TNM related
 Alias: $UICC-TNM = urn:oid:2.16.840.1.113883.15.16
 
@@ -36,6 +37,7 @@ Alias: $UICC-TNM = urn:oid:2.16.840.1.113883.15.16
 // Alias: $Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisation
 // Alias: $UICCCS = http://fhir.de/onkologie/CodeSystem/UICCCS
 Alias: $ICD10SeitenlokalisationCS = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION 
+Alias: $SupportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 
 // HL7 DE
 Alias: $ICDO3T = http://fhir.de/onkologie/ValueSet/icd-o-3-topologie
@@ -52,4 +54,3 @@ Alias: $MIIBiobankBioprobeCore = https://www.medizininformatik-initiative.de/fhi
 // GOLD
 Alias: $DiagnosesicherungVS = https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3
 Alias: $DiagnosesicherungCS = https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3
-Alias: $SupportingInfo = https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo
