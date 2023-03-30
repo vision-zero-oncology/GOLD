@@ -2,7 +2,6 @@
   "resourceType": "StructureDefinition",
   "id": "part-of",
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of",
-  "version": "0.1.0",
   "name": "PartOf",
   "title": "Specimen part of Tumor",
   "status": "draft",
@@ -54,6 +53,20 @@
         "id": "Extension.url",
         "path": "Extension.url",
         "fixedUri": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "type",
+              "path": "$this"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
       },
       {
         "id": "Extension.value[x]:valueReference",

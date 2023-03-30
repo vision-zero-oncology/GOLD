@@ -1,0 +1,81 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "body-structure-base",
+  "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base",
+  "name": "Body_Structure_Base",
+  "title": "Profile Body Structure",
+  "status": "draft",
+  "description": "Profile for the base definition of all body structures.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "openehr",
+      "uri": "http://openehr.org",
+      "name": "Open EHR Archetype Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "BodyStructure",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "BodyStructure.extension",
+        "path": "BodyStructure.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "BodyStructure.extension:diagnosis",
+        "path": "BodyStructure.extension",
+        "sliceName": "diagnosis",
+        "min": 0,
+        "max": "*",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "BodyStructure.location",
+        "path": "BodyStructure.location",
+        "max": "0"
+      },
+      {
+        "id": "BodyStructure.locationQualifier",
+        "path": "BodyStructure.locationQualifier",
+        "max": "0"
+      }
+    ]
+  }
+}

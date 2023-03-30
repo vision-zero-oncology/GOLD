@@ -6,6 +6,9 @@ Alias: $NCIT = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 Alias: $RID = http://radlex.org/RID
 Alias: $ICD10GM = http://fhir.de/CodeSystem/bfarm/icd-10-gm
 Alias: $iso3166 = urn:iso:std:iso:3166
+Alias: $vs-atc = http://fhir.de/ValueSet/bfarm/atc
+Alias: $cs-atc = http://fhir.de/CodeSystem/bfarm/atc
+Alias: $standardterms = http://standardterms.edqm.eu
 
 // From Terminology.hl7.org
 Alias: $ClinStatus = http://terminology.hl7.org/CodeSystem/condition-clinical

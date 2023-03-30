@@ -60,6 +60,251 @@
     "resource": [
       {
         "reference": {
+          "reference": "Specimen/blood-specimen"
+        },
+        "name": "blood-specimen",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/clinical-study"
+        },
+        "name": "Clinical Study",
+        "description": "This profile describes a clinical study in which a patient takes part.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/mamma-ca-rechts"
+        },
+        "name": "Diagnose MammaCa rechts",
+        "description": "Beispiel einer Diagnose Mamma Ca rechts.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/diagnosesicherung-icd-o"
+        },
+        "name": "Diagnosesicherung ICD O",
+        "description": "Extension für die Erfassung der Diagnosesicherung der ICD-O-3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-diagnosesicherung-icdo3"
+        },
+        "name": "Diagnosesicherung ICD-O-3",
+        "description": "ValueSet für die Diagnosesicherungscodes der ICD-O-3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/cs-diagnosesicherung-icdo3"
+        },
+        "name": "Diagnosesicherung ICD-O-3",
+        "description": "CodeSystem für die Diagnosesicherungscodes der ICD-O-3",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/diagnosis"
+        },
+        "name": "Diagnosis",
+        "description": "Enables to reference a diagnosis <Condition> the body stucture refers to",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-body-height"
+        },
+        "name": "Example Body Height",
+        "description": "Example body height of a patient.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
+      },
+      {
+        "reference": {
+          "reference": "BodyStructure/example-body-structure"
+        },
+        "name": "Example Body Structure",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-body-weight"
+        },
+        "name": "Example Body Weight",
+        "description": "Example body weight of a patient.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-ecog-performance-status"
+        },
+        "name": "Example ECOG Performance Status",
+        "description": "Example ECOG status observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-histologic-grade"
+        },
+        "name": "Example Histologic Tumor Grade",
+        "description": "Example tumor grade using the general four-tier grading scheme.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-histology-topography"
+        },
+        "name": "Example Histology and Topography",
+        "description": "Example tumor histology and topography observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-karnofsky-performance-status"
+        },
+        "name": "Example Karnofsky Performance Status",
+        "description": "Example Karnofsky performance status observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
+      },
+      {
+        "reference": {
+          "reference": "Patient/ExamplePatient"
+        },
+        "name": "Example Patient",
+        "description": "Example of a patient.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Observation/ExampleRecistAssessmentResponse"
+        },
+        "name": "Example RECIST assessment timepoint response",
+        "description": "Example RECIST assessment timepoint response observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/ExampleStudyNapkonCovidom"
+        },
+        "name": "Example Study NAPKON COVIDOM",
+        "description": "Example Study NAPKON COVIDOM",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/ExampleStudyRAAINBOW"
+        },
+        "name": "Example Study RAAINBOW",
+        "description": "Example Study RAAINBOW",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-cT3pN0mol-sncM1"
+        },
+        "name": "Example TNM cT3 pN0 (mol-)(sn) cM1",
+        "description": "Example TNM cT3 pN0 (mol-)(sn) cM1.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-rpT3mpN0icM0R1is"
+        },
+        "name": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)",
+        "description": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is).",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-R0"
+        },
+        "name": "Example TNM R0",
+        "description": "Example TNM R0.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-R1"
+        },
+        "name": "Example TNM R1",
+        "description": "Example TNM R1.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-TisN0M0"
+        },
+        "name": "Example TNM Tis N0 M0",
+        "description": "Example TNM Tis N0 M0.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-uT2a2pN0023i-sncM1"
+        },
+        "name": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1",
+        "description": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0"
+        },
+        "name": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0",
+        "description": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+      },
+      {
+        "reference": {
+          "reference": "Observation/example-vital-signs-base"
+        },
+        "name": "Example Vital Signs Base Observation",
+        "description": "Example of a vital signs base observation.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/ExampleResearchSubjectStudienteilnehmer"
+        },
+        "name": "ExampleResearchSubjectStudienteilnehmer",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm-prefix-cpu"
+        },
+        "name": "Extension UICC TNM Prefix CPU",
+        "description": "The Extension allows to add c, p and u prefixes to TNM stages.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm-suffix-itc"
+        },
+        "name": "Extension UICC TNM Suffix ITC",
+        "description": "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/uicc-tnm-suffix-itc-sn"
+        },
+        "name": "Extension UICC TNM Suffix ITC SN",
+        "description": "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/probandin"
+        },
+        "name": "ProbandIn",
+        "description": "Dieses Profil beschreibt eine Proband*in.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/body-height"
         },
         "name": "Profile Body Height",
@@ -68,18 +313,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/body-weight"
+          "reference": "StructureDefinition/body-structure-base"
         },
-        "name": "Profile Body Weight",
-        "description": "Profile for body weight of a patient",
+        "name": "Profile Body Structure",
+        "description": "Profile for the base definition of all body structures.",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/clinical-study"
+          "reference": "StructureDefinition/body-weight"
         },
-        "name": "Clinical Study",
-        "description": "This profile describes a clinical study in which a patient takes part.",
+        "name": "Profile Body Weight",
+        "description": "Profile for body weight of a patient",
         "exampleBoolean": false
       },
       {
@@ -116,42 +361,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/probandin"
-        },
-        "name": "ProbandIn",
-        "description": "Dieses Profil beschreibt eine Proband*in.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/recist-assessment-response"
         },
         "name": "Profile RECIST timepoint assessment response",
         "description": "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/\nPlease note there is no assessment timepoint response for the baseline assessment.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/tumor"
-        },
-        "name": "Tumor",
-        "description": "Tumor",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/tumor-disorder"
-        },
-        "name": "Tumor Disorder",
-        "description": "Profile for a tumor disorder",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/tumor-specimen"
-        },
-        "name": "Tumor Specimen",
-        "description": "Tumor specimen",
         "exampleBoolean": false
       },
       {
@@ -180,10 +393,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/diagnosesicherung-icd-o"
+          "reference": "ValueSet/recist-asstimepoint-response-vs"
         },
-        "name": "Diagnosesicherung ICD O",
-        "description": "Extension für die Erfassung der Diagnosesicherung der ICD-O-3",
+        "name": "recist-timepoint-response-vs",
+        "description": "Defines the valid values for the recist assessment response observation resource",
         "exampleBoolean": false
       },
       {
@@ -196,42 +409,34 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/uicc-tnm-prefix-cpu"
+          "reference": "StructureDefinition/tumor"
         },
-        "name": "Extension UICC TNM Prefix CPU",
-        "description": "The Extension allows to add c, p and u prefixes to TNM stages.",
+        "name": "Tumor",
+        "description": "Tumor",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/uicc-tnm-suffix-itc"
+          "reference": "StructureDefinition/tumor-disorder"
         },
-        "name": "Extension UICC TNM Suffix ITC",
-        "description": "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM.",
+        "name": "Tumor Disorder",
+        "description": "Profile for a tumor disorder",
         "exampleBoolean": false
       },
       {
         "reference": {
-          "reference": "StructureDefinition/uicc-tnm-suffix-itc-sn"
+          "reference": "BodyStructure/CerebellarSarcoma"
         },
-        "name": "Extension UICC TNM Suffix ITC SN",
-        "description": "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM.",
-        "exampleBoolean": false
+        "name": "Tumor Example - Cerebellar Sarcoma",
+        "description": "Example for the Tumor profile",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
       },
       {
         "reference": {
-          "reference": "ValueSet/vs-diagnosesicherung-icdo3"
+          "reference": "StructureDefinition/tumor-specimen"
         },
-        "name": "Diagnosesicherung ICD-O-3",
-        "description": "ValueSet für die Diagnosesicherungscodes der ICD-O-3",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/recist-asstimepoint-response-vs"
-        },
-        "name": "recist-timepoint-response-vs",
-        "description": "Defines the valid values for the recist assessment response observation resource",
+        "name": "Tumor Specimen",
+        "description": "Tumor specimen",
         "exampleBoolean": false
       },
       {
@@ -465,188 +670,6 @@
         "name": "ValueSet Type of Study Arm NCIt",
         "description": "Type of Study Arm aus NCI Thesaurus (NCIt)",
         "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/cs-diagnosesicherung-icdo3"
-        },
-        "name": "Diagnosesicherung ICD-O-3",
-        "description": "CodeSystem für die Diagnosesicherungscodes der ICD-O-3",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "BodyStructure/CerebellarSarcoma"
-        },
-        "name": "Tumor Example - Cerebellar Sarcoma",
-        "description": "Example for the Tumor profile",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
-      },
-      {
-        "reference": {
-          "reference": "Patient/ExamplePatient"
-        },
-        "name": "Example Patient",
-        "description": "Example of a patient.",
-        "exampleBoolean": true
-      },
-      {
-        "reference": {
-          "reference": "Observation/ExampleRecistAssessmentResponse"
-        },
-        "name": "Example RECIST assessment timepoint response",
-        "description": "Example RECIST assessment timepoint response observation.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
-      },
-      {
-        "reference": {
-          "reference": "ResearchSubject/ExampleResearchSubjectStudienteilnehmer"
-        },
-        "name": "ExampleResearchSubjectStudienteilnehmer",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/ExampleStudyNapkonCovidom"
-        },
-        "name": "Example Study NAPKON COVIDOM",
-        "description": "Example Study NAPKON COVIDOM",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/ExampleStudyRAAINBOW"
-        },
-        "name": "Example Study RAAINBOW",
-        "description": "Example Study RAAINBOW",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
-      },
-      {
-        "reference": {
-          "reference": "Specimen/blood-specimen"
-        },
-        "name": "blood-specimen",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-body-height"
-        },
-        "name": "Example Body Height",
-        "description": "Example body height of a patient.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-body-weight"
-        },
-        "name": "Example Body Weight",
-        "description": "Example body weight of a patient.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-ecog-performance-status"
-        },
-        "name": "Example ECOG Performance Status",
-        "description": "Example ECOG status observation.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-histologic-grade"
-        },
-        "name": "Example Histologic Tumor Grade",
-        "description": "Example tumor grade using the general four-tier grading scheme.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-histology-topography"
-        },
-        "name": "Example Histology and Topography",
-        "description": "Example tumor histology and topography observation.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-karnofsky-performance-status"
-        },
-        "name": "Example Karnofsky Performance Status",
-        "description": "Example Karnofsky performance status observation.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-tnm-R0"
-        },
-        "name": "Example TNM R0",
-        "description": "Example TNM R0.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-tnm-R1"
-        },
-        "name": "Example TNM R1",
-        "description": "Example TNM R1.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-tnm-TisN0M0"
-        },
-        "name": "Example TNM Tis N0 M0",
-        "description": "Example TNM Tis N0 M0.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-tnm-cT3pN0mol-sncM1"
-        },
-        "name": "Example TNM cT3 pN0 (mol-)(sn) cM1",
-        "description": "Example TNM cT3 pN0 (mol-)(sn) cM1.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-tnm-rpT3mpN0icM0R1is"
-        },
-        "name": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)",
-        "description": "Example TNM r pT3(m) pN0 (i+) cM0 R1(is).",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-tnm-uT2a2pN0023i-sncM1"
-        },
-        "name": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1",
-        "description": "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0"
-        },
-        "name": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0",
-        "description": "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-      },
-      {
-        "reference": {
-          "reference": "Observation/example-vital-signs-base"
-        },
-        "name": "Example Vital Signs Base Observation",
-        "description": "Example of a vital signs base observation.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
-      },
-      {
-        "reference": {
-          "reference": "Condition/mamma-ca-rechts"
-        },
-        "name": "Diagnose MammaCa rechts",
-        "description": "Beispiel einer Diagnose Mamma Ca rechts.",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"
       }
     ],
     "page": {

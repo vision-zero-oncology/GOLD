@@ -14,3 +14,8 @@ Description: "If there is no a value a data absent reason must be present"
 Severity: #error
 Expression: "value.exists() or dataAbsentReason.exists()"
 XPath: "f:*[starts-with(local-name(.), 'value')] or f:dataAbsentReason"
+
+Invariant: dsg-1
+Description: "If present, dosage must include free text or structured data"
+Severity: #error
+Expression: "text.exists() or doseAndRate.exists()"

@@ -9,14 +9,14 @@
   "code": {
     "coding": [
       {
-        "code": "84892-9",
-        "system": "http://loinc.org",
-        "display": "Residual tumor classification [Type] in Cancer specimen"
-      },
-      {
         "code": "17964000",
         "system": "http://snomed.info/sct",
         "display": "Residual tumor stage (observable entity)"
+      },
+      {
+        "code": "84892-9",
+        "system": "http://loinc.org",
+        "display": "Residual tumor classification [Type] in Cancer specimen"
       }
     ]
   },

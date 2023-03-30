@@ -1,0 +1,44 @@
+{
+  "resourceType": "MedicationStatement",
+  "id": "exa-medication-statement-caelyx",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement"
+    ]
+  },
+  "status": "active",
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "L01DB01",
+        "system": "http://fhir.de/CodeSystem/bfarm/atc",
+        "display": "Doxorubicin"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/example"
+  },
+  "effectiveDateTime": "2020-01-02T09:30:00+01:00",
+  "dosage": [
+    {
+      "text": "Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 4,
+          "periodUnit": "wk"
+        }
+      },
+      "route": {
+        "coding": [
+          {
+            "code": "20045000",
+            "system": "http://standardterms.edqm.eu",
+            "display": "Intravenous use"
+          }
+        ]
+      }
+    }
+  ]
+}

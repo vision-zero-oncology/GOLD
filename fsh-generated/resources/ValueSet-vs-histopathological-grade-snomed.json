@@ -5,7 +5,6 @@
   "id": "vs-histopathological-grade-snomed",
   "title": "ValueSet Histologic Grade SNOMED",
   "description": "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT.",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed",
   "publisher": "VISION ZERO E.V.",
   "contact": [

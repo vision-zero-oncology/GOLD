@@ -5,7 +5,6 @@
   "id": "vs-ecog-performance-status-snomed",
   "title": "ValueSet ECOG Performance Status SNOMED",
   "description": "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed",
   "publisher": "VISION ZERO E.V.",
   "contact": [

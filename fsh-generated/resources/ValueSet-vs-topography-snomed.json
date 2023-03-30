@@ -5,7 +5,6 @@
   "id": "vs-topography-snomed",
   "title": "ValueSet Topography SNOMED",
   "description": "The ValueSet contains the topography codes from SNOMED CT.",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed",
   "publisher": "VISION ZERO E.V.",
   "contact": [

@@ -5,7 +5,6 @@
   "id": "type-of-randomization-ncit",
   "title": "ValueSet Type of Randomization NCIt",
   "description": "Type of Randomization aus NCI Thesaurus (NCIt)",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit",
   "publisher": "VISION ZERO E.V.",
   "contact": [

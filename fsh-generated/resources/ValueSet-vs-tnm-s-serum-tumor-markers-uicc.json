@@ -5,7 +5,6 @@
   "id": "vs-tnm-s-serum-tumor-markers-uicc",
   "title": "ValueSet TNM S Serum Tumour Markers UICC",
   "description": "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from TNM 8th edition UICC.",
-  "version": "0.1.0",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-s-serum-tumor-markers-uicc",
   "publisher": "VISION ZERO E.V.",
   "contact": [
