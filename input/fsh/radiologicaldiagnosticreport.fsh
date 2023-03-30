@@ -3,9 +3,6 @@ Parent: DiagnosticReport
 Id: radiological-diagnostic-report
 Title: "Profile Radiological Diagnostic Report"
 Description: "Profile for the base definition of all radiological diagnostic reports."
-* ^version = "1.0.0"
-* ^status = #active
-* status 
 * category 1..* 
 * category.coding 1.. 
 * category.coding ^slicing.discriminator.type = #pattern
@@ -30,9 +27,9 @@ Instance: example-diagnostic-report
 InstanceOf: radiological-diagnostic-report
 Usage: #example
 Title: "Example Diagnostic Report"
-* code = $SCT#722124004 "Radiology studies report"
+* code = $SCT#4231000179109 "Mammography report"
 * status = #final
-* category.coding = $SCT#4231000179109 "Mammography report"
+* category.coding[snomed-ct] = $SCT#4201000179104 "Imaging report"
 * subject = Reference(ExamplePatient)
 * extension.url = $SupportingInfo
 * extension.valueReference = Reference(ExampleFindingObservation)
