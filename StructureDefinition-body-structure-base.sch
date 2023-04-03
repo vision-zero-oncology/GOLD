@@ -10,13 +10,6 @@
     single schematron that validates contained resources (if you have any) 
   -->
   <sch:pattern>
-    <sch:title>f:BodyStructure</sch:title>
-    <sch:rule context="f:BodyStructure">
-      <sch:assert test="count(f:location) &lt;= 0">location: maximum cardinality of 'location' is 0</sch:assert>
-      <sch:assert test="count(f:locationQualifier) &lt;= 0">locationQualifier: maximum cardinality of 'locationQualifier' is 0</sch:assert>
-    </sch:rule>
-  </sch:pattern>
-  <sch:pattern>
     <sch:title>f:BodyStructure/f:identifier</sch:title>
     <sch:rule context="f:BodyStructure/f:identifier">
       <sch:assert test="count(f:id) &lt;= 1">id: maximum cardinality of 'id' is 1</sch:assert>

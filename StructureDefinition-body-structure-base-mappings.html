@@ -267,6 +267,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>Role.effectiveTime or implied by context</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>II.assigningAuthorityName but note that this is an improper use by the definition of the field.  Also Role.scoper</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>statusCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;location</td><td>.targetSiteCode</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;locationQualifier</td><td>.targetSiteCode</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;description</td><td>.text</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;image</td><td>outboundRelationship[typeCode=COMP].target</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>.scoper or .scoper.playsRole</td> </tr>
@@ -276,6 +278,8 @@
  <tr><td>BodyStructure</td><td>Archetype ID   openEHR-EHR-CLUSTER.anatomical_location.v1      Concept name   Anatomical Location      Concept description   Record details about an anatomical location.      Keywords   location, site, anatomical      Copyright   © openEHR Foundation      Purpose   To record details about anatomical location.      Misuse   Not for specifiying unilateral/bilateral occurrence - this is related to an evaluation which perhaps includes multiple locations.      Author   Author name: Heather Leslie Organization: Ocean Informatics Email: heather.leslie@oceaninformatics.com Date of Origination: 2008-11-10       Translator   Norwegian Bokmål: Lars Bitsch-Larsen, Haukeland University Hospital of Bergen, Norway, MD, DEAA, MBA, spec in anesthesia, spec in tropical medicine. Arabic (Syria): Mona Saleh       Other contributors   Heather Leslie, Ocean Informatics, Australia (Editor) Ian McNicoll, freshEHR Clinical Informatics, United Kingdom (Editor) Dunmail Hodkinson, Black Pear Software Ltd, UK      References   Use cases: - 5LICS, midclavicular line - L forearm, 2cm anterior to the cubital fossa - Right iliac fossa - 5 cm below L tibial tuberosity - 2 cm medial to R nipple - 4 cm below R costal margin in midclavicular line - R femur - midline nose - medial aspect of R great toe nail.</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier</td><td>Specific location  Cluster Optional (0..1) Cardinality: Mandatory, repeating, unordered (1..*)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (bodyStructureIdentifier)</td><td>Specific location  Cluster Optional (0..1) Cardinality: Mandatory, repeating, unordered (1..*)</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;location</td><td>Name of location</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;locationQualifier</td><td>Combines Side, Numerical identifier, Anatomical plane,and Aspect</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;description</td><td>Description of anatomical location/Visual markings/orientation</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;image</td><td>Image</td> </tr>
 </table>
@@ -286,6 +290,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;identifier (bodyStructureIdentifier)</td><td>FiveWs.identifier</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;active</td><td>FiveWs.status</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;morphology</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;location</td><td>FiveWs.what[x]</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;locationQualifier</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;description</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;image</td><td>FiveWs.what[x]</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>FiveWs.subject[x], FiveWs.subject</td> </tr>
@@ -309,6 +315,8 @@
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;period</td><td>CX.7 + CX.8</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;assigner</td><td>CX.4 / (CX.4,CX.9,CX.10)</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;morphology</td><td>SPM-4/SPM-5</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;location</td><td>OBX-20/SPM-8/SPM-10</td> </tr>
+ <tr><td>&nbsp;&nbsp;&nbsp;locationQualifier</td><td>No distinct element defined in V2.x. The IHE Radiology Technical Framework directs the use of OBR-15-specimen source to contain laterality for imaging studies./SPM-9</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;description</td><td>NTE</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;image</td><td>OBX</td> </tr>
  <tr><td>&nbsp;&nbsp;&nbsp;patient</td><td>PID-3</td> </tr>
@@ -366,7 +374,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">Berlin Institute of Health at Charité (BIH)</a>.  Package gold#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 3, 2023 12:58+0000">2023-04-03</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">Berlin Institute of Health at Charité (BIH)</a>.  Package gold#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 3, 2023 13:27+0000">2023-04-03</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

@@ -112,10 +112,10 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "BodyStructure.morphology","BodyStructure.morphology","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Kind of Structure","The kind of structure being represented by the body structure at `BodyStructure.location`.  This can define both normal and abnormal morphologies.","The minimum cardinality of 0 supports the use case of specifying a location without defining a morphology.","","","","","","","","",,"example","Codes describing anatomic morphology.","http://hl7.org/fhir/ValueSet/bodystructure-code","",,,,"BodyStructure.morphology",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","FiveWs.what[x]","SPM-4/SPM-5"
-"BodyStructure.location","BodyStructure.location","","","",0,0,"","","Y","CodeableConcept {[]} {[]}
+"BodyStructure.location","BodyStructure.location","","","",0,1,"","","Y","CodeableConcept {[]} {[]}
 ","Body site","The anatomical location or region of the specimen, lesion, or body structure.","","","","","","","","","",,"example","Codes describing anatomical locations. May include laterality.","http://hl7.org/fhir/ValueSet/body-site","",,,,"BodyStructure.location",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".targetSiteCode","Name of location","FiveWs.what[x]","OBX-20/SPM-8/SPM-10"
-"BodyStructure.locationQualifier","BodyStructure.locationQualifier","","","",0,0,"","","","CodeableConcept {[]} {[]}
+"BodyStructure.locationQualifier","BodyStructure.locationQualifier","","","",0,*,"","","","CodeableConcept {[]} {[]}
 ","Body site modifier","Qualifier to refine the anatomical location.  These include qualifiers for laterality, relative location, directionality, number, and plane.","","","","","","","","","",,"example","Concepts modifying the anatomic location.","http://hl7.org/fhir/ValueSet/bodystructure-relative-location","",,,,"BodyStructure.locationQualifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ",".targetSiteCode","Combines Side, Numerical identifier, Anatomical plane,and Aspect","FiveWs.what[x]","No distinct element defined in V2.x. The IHE Radiology Technical Framework directs the use of OBR-15-specimen source to contain laterality for imaging studies./SPM-9"
 "BodyStructure.description","BodyStructure.description","","","",0,1,"","","Y","string {[]} {[]}

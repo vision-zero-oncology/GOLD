@@ -1,11 +1,11 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 98, warn = 154, info = 106
+err = 99, warn = 155, info = 107
 IG Publisher Version: 1.3.4
-Generated Mon Apr 03 13:04:14 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Mon Apr 03 13:32:18 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 0 / 9 / 0
- /github/workspace/fsh-generated/resources/BodyStructure-CerebellarSarcoma : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/BodyStructure-CerebellarSarcoma : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/BodyStructure-example-body-structure : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-diagnosesicherung-icdo3 : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts : 12 / 2 / 6
@@ -47,7 +47,7 @@ Generated Mon Apr 03 13:04:14 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/StructureDefinition-pr-medication-statement : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/StructureDefinition-probandin : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-recist-assessment-response : 0 / 0 / 3
- /github/workspace/fsh-generated/resources/StructureDefinition-tumor : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-tumor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-tumor-disorder : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-tumor-specimen : 2 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm : 0 / 0 / 8
@@ -99,6 +99,8 @@ WARNING: 2: An HTML fragment from the set [cross-version-analysis.xhtml, cross-v
 WARNING: 3: An HTML fragment from the set [dependency-table.xhtml, dependency-table-short.xhtml] is not included anywhere in the produced implementation guide
 WARNING: 4: The HTML fragment 'globals-table.xhtml' is not included anywhere in the produced implementation guide
 == fsh-generated/resources/BodyStructure-CerebellarSarcoma.json ==
+ERROR: BodyStructure/CerebellarSarcoma: BodyStructure.identifier[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [$this] in profile BodyStructure.identifier:bodyStructureIdentifier - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor|0.1.0 does not have fixed value, binding or existence assertions
+INFORMATION: BodyStructure/CerebellarSarcoma: BodyStructure: BodyStructure.identifier:bodyStructureIdentifier: Found 0 matches, but unable to check minimum required (BodyStructure.identifier) due to lack of slicing validation (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor|0.1.0)
 == fsh-generated/resources/BodyStructure-example-body-structure.json ==
 ERROR: BodyStructure/example-body-structure: BodyStructure.extension[0].value.ofType(Reference): Unable to resolve resource with reference 'ExampleCondition'
 == fsh-generated/resources/CodeSystem-cs-diagnosesicherung-icdo3.json ==
@@ -333,6 +335,7 @@ INFORMATION: StructureDefinition/pr-medication-statement: StructureDefinition.sn
 INFORMATION: StructureDefinition/recist-assessment-response: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://radlex.org/RID' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/recist-assessment-response: StructureDefinition.differential.element[2].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'http://radlex.org/RID' is unknown so the code cannot be validated
 == fsh-generated/resources/StructureDefinition-tumor.json ==
+WARNING: StructureDefinition/tumor: StructureDefinition.snapshot.element[8].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 == fsh-generated/resources/StructureDefinition-tumor-disorder.json ==
 WARNING: StructureDefinition/tumor-disorder: StructureDefinition.differential.element[1].binding: The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie on element Condition.code.coding could not be resolved
 WARNING: StructureDefinition/tumor-disorder: StructureDefinition.differential.element[12].binding: The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-topologie on element Condition.bodySite.coding could not be resolved
