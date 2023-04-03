@@ -610,6 +610,30 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration> ;
+         fhir:reference [ fhir:v "StructureDefinition/medication-administration" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationAdministration" ] ;
+       fhir:description [ fhir:v "Describes the event of a patient consuming or otherwise being administered a medication." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement> ;
+         fhir:reference [ fhir:v "StructureDefinition/pr-medication-statement" ]
+       ] ;
+       fhir:name [ fhir:v "MedicationStatement" ] ;
+       fhir:description [ fhir:v "A record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin> ;
          fhir:reference [ fhir:v "StructureDefinition/probandin" ]
        ] ;
@@ -1259,6 +1283,34 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationAdministration" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/MedicationAdministration/exa-medication-administration> ;
+         fhir:reference [ fhir:v "MedicationAdministration/exa-medication-administration" ]
+       ] ;
+       fhir:name [ fhir:v "exa-medication-administration" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/MedicationStatement/exa-medication-statement-caelyx> ;
+         fhir:reference [ fhir:v "MedicationStatement/exa-medication-statement-caelyx" ]
+       ] ;
+       fhir:name [ fhir:v "exa-medication-statement-caelyx" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "Observation" ]
        ] ) ;
        fhir:reference [
@@ -1280,11 +1332,8 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/BodyStructure/example-body-structure> ;
          fhir:reference [ fhir:v "BodyStructure/example-body-structure" ]
        ] ;
-       fhir:name [ fhir:v "Example Body Structure" ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base>
-       ]
+       fhir:name [ fhir:v "example-body-structure" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;

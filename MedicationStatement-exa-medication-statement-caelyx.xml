@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="exa-medication-statement-caelyx"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: MedicationStatement</b><a name="exa-medication-statement-caelyx"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource MedicationStatement &quot;exa-medication-statement-caelyx&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-pr-medication-statement.html">MedicationStatement</a></p></div><p><b>status</b>: active</p><p><b>medication</b>: Doxorubicin <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.de/CodeSystem/bfarm/atc">Atc</a>#L01DB01)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/example">Patient/example</a></p><p><b>effective</b>: 2020-01-02 09:30:00+0100</p><h3>Dosages</h3><table class="grid"><tr><td>-</td><td><b>Text</b></td><td><b>Timing</b></td><td><b>Route</b></td></tr><tr><td>*</td><td>Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion</td><td>Once per 4 weeks</td><td>Intravenous use <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (standardterms.edqm.eu#20045000)</span></td></tr></table></div>
+  </text>
+  <status value="active"/>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://fhir.de/CodeSystem/bfarm/atc"/>
+      <code value="L01DB01"/>
+      <display value="Doxorubicin"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/example"/>
+  </subject>
+  <effectiveDateTime value="2020-01-02T09:30:00+01:00"/>
+  <dosage>
+    <text value="Doxorubicin (Caelyx) 50 mg je Quadratmeter Koerperoberflaeche alle vier Wochen per intravenoeser Tropfinfusion"/>
+    <timing>
+      <repeat>
+        <frequency value="1"/>
+        <period value="4"/>
+        <periodUnit value="wk"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://standardterms.edqm.eu"/>
+        <code value="20045000"/>
+        <display value="Intravenous use"/>
+      </coding>
+    </route>
+  </dosage>
+</MedicationStatement>

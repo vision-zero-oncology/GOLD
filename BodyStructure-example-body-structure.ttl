@@ -8,15 +8,9 @@
 <https://www.vision-zero-oncology.de/fhir/BodyStructure/example-body-structure> a fhir:BodyStructure ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "example-body-structure"] ; # 
-  fhir:meta [
-     fhir:profile ( [
-       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"^^xsd:anyURI ;
-       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base>
-     ] )
-  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: BodyStructure</b><a name=\"example-body-structure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource BodyStructure &quot;example-body-structure&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-body-structure-base.html\">Profile Body Structure</a></p></div><p><b>Diagnosis</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ExampleCondition\">ExampleCondition</a></p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: BodyStructure</b><a name=\"example-body-structure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource BodyStructure &quot;example-body-structure&quot; </p></div><p><b>Diagnosis</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ExampleCondition\">ExampleCondition</a></p><p><b>identifier</b>: BodyStructure: Tumor 1234 (use: USUAL)</p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p></div>"
   ] ; # 
   fhir:extension ( [
      fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis"^^xsd:anyURI ] ;
@@ -24,6 +18,17 @@
        a fhir:Reference ;
        fhir:reference [ fhir:v "ExampleCondition" ]
      ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "usual" ] ;
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://hl7.org/fhir/resource-types"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "BodyStructure" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://radiology.hospital.example.org"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "Tumor 1234" ]
   ] ) ; # 
   fhir:patient [
      fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient> ;

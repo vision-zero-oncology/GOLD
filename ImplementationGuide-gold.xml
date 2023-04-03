@@ -532,6 +532,28 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/medication-administration"/>
+      </reference>
+      <name value="MedicationAdministration"/>
+      <description value="Describes the event of a patient consuming or otherwise being administered a medication."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/pr-medication-statement"/>
+      </reference>
+      <name value="MedicationStatement"/>
+      <description value="A record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/probandin"/>
       </reference>
       <name value="ProbandIn"/>
@@ -1110,6 +1132,26 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationAdministration"/>
+      </extension>
+      <reference>
+        <reference value="MedicationAdministration/exa-medication-administration"/>
+      </reference>
+      <name value="exa-medication-administration"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="MedicationStatement"/>
+      </extension>
+      <reference>
+        <reference value="MedicationStatement/exa-medication-statement-caelyx"/>
+      </reference>
+      <name value="exa-medication-statement-caelyx"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Observation"/>
       </extension>
       <reference>
@@ -1126,8 +1168,8 @@
       <reference>
         <reference value="BodyStructure/example-body-structure"/>
       </reference>
-      <name value="Example Body Structure"/>
-      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"/>
+      <name value="example-body-structure"/>
+      <exampleBoolean value="true"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
