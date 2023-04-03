@@ -1,5 +1,3 @@
-Alias: $bodyStructureIdentifier = http://hl7.org/fhir/us/mcode/StructureDefinition/mcode-body-structure-identifier
-
 Profile: Body_Structure_Base
 Parent: BodyStructure
 Id: body-structure-base
@@ -11,7 +9,11 @@ Description: "Profile for the base definition of all body structures."
 * identifier ^slicing.rules = #open
 * identifier contains
     bodyStructureIdentifier 1..1 
-* identifier[bodyStructureIdentifier] only $bodyStructureIdentifier
+* identifier[bodyStructureIdentifier].use = #usual
+* identifier[bodyStructureIdentifier].type = http://hl7.org/fhir/resource-types#BodyStructure
+* identifier[bodyStructureIdentifier].type.coding.system 1..
+* identifier[bodyStructureIdentifier].type.coding.code 1..
+* identifier[bodyStructureIdentifier].value 1..
 * location 0..0
 * locationQualifier 0..0
 * extension 0..*

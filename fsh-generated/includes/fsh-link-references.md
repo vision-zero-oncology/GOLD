@@ -5,8 +5,9 @@
 [DiagnosesicherungICDO3]: ValueSet-vs-diagnosesicherung-icdo3.html
 [DiagnosesicherungICDO3]: CodeSystem-cs-diagnosesicherung-icdo3.html
 [Diagnosis]: StructureDefinition-diagnosis.html
+[exa-medication-administration]: MedicationAdministration-exa-medication-administration.html
+[exa-medication-statement-caelyx]: MedicationStatement-exa-medication-statement-caelyx.html
 [example-body-height]: Observation-example-body-height.html
-[example-body-structure]: BodyStructure-example-body-structure.html
 [example-body-weight]: Observation-example-body-weight.html
 [example-ecog-performance-status]: Observation-example-ecog-performance-status.html
 [example-histologic-grade]: Observation-example-histologic-grade.html
@@ -24,10 +25,13 @@
 [example-tnm-uT2a2pN0023i-sncM1]: Observation-example-tnm-uT2a2pN0023i-sncM1.html
 [example-tnm-ypT1bpN139snL0V0Pn1cM0R0]: Observation-example-tnm-ypT1bpN139snL0V0Pn1cM0R0.html
 [example-vital-signs-base]: Observation-example-vital-signs-base.html
+[example-body-structure]: BodyStructure-example-body-structure.html
 [ExampleResearchSubjectStudienteilnehmer]: ResearchSubject-ExampleResearchSubjectStudienteilnehmer.html
 [UICC_TNM_Prefix_CPU]: StructureDefinition-uicc-tnm-prefix-cpu.html
 [UICC_TNM_Suffix_ITC]: StructureDefinition-uicc-tnm-suffix-itc.html
 [UICC_TNM_Suffix_ITC_SN]: StructureDefinition-uicc-tnm-suffix-itc-sn.html
+[PR_MedicationAdministration]: StructureDefinition-medication-administration.html
+[PR_MedicationStatement]: StructureDefinition-pr-medication-statement.html
 [Probandin]: StructureDefinition-probandin.html
 [Body_Height]: StructureDefinition-body-height.html
 [Body_Structure_Base]: StructureDefinition-body-structure-base.html
