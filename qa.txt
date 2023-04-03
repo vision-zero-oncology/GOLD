@@ -3,7 +3,7 @@
 
 err = 99, warn = 155, info = 107
 IG Publisher Version: 1.3.4
-Generated Mon Apr 03 13:32:18 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Mon Apr 03 14:00:55 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 0 / 9 / 0
  /github/workspace/fsh-generated/resources/BodyStructure-CerebellarSarcoma : 1 / 0 / 2
  /github/workspace/fsh-generated/resources/BodyStructure-example-body-structure : 1 / 0 / 1
