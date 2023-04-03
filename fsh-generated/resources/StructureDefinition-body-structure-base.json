@@ -118,16 +118,6 @@
         "id": "BodyStructure.identifier:bodyStructureIdentifier.value",
         "path": "BodyStructure.identifier.value",
         "min": 1
-      },
-      {
-        "id": "BodyStructure.location",
-        "path": "BodyStructure.location",
-        "max": "0"
-      },
-      {
-        "id": "BodyStructure.locationQualifier",
-        "path": "BodyStructure.locationQualifier",
-        "max": "0"
       }
     ]
   }

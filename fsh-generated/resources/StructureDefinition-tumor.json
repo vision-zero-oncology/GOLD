@@ -43,7 +43,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "BodyStructure",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
+  "baseDefinition": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base",
   "derivation": "constraint",
   "differential": {
     "element": [

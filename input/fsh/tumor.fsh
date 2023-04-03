@@ -9,7 +9,7 @@ Description: "Tumor specimen"
 * extension contains part-of named partOf 0..* MS 
 
 Profile: Tumor
-Parent: BodyStructure
+Parent: body-structure-base
 Id: tumor
 Title: "Tumor"
 Description: "Tumor"
@@ -33,6 +33,10 @@ InstanceOf: Tumor
 Usage: #example
 Title: "Tumor Example - Cerebellar Sarcoma"
 Description: "Example for the Tumor profile"
+* identifier.use = #usual
+* identifier.type = http://hl7.org/fhir/resource-types#BodyStructure
+* identifier.system = "http://radiology.hospital.example.org"
+* identifier.value = "Tumor 1234"
 * morphology = $SCT#17302008 "Cerebellar sarcoma (morphologic abnormality)"
 * location = $SCT#1010600003 "Structure of left cerebellar hemisphere (body structure)"
 * patient = Reference(ExamplePatient)
