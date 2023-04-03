@@ -54,6 +54,12 @@
       "version": "1.0.3",
       "uri": "http://fhir.org/packages/de.medizininformatikinitiative.kerndatensatz.biobank/ImplementationGuide/de.medizininformatikinitiative.kerndatensatz.biobank",
       "id": "de_medizininformatikinitiative_kerndatensatz_biobank"
+    },
+    {
+      "packageId": "hl7.fhir.uv.ips",
+      "version": "1.0.0",
+      "uri": "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips",
+      "id": "hl7_fhir_uv_ips"
     }
   ],
   "definition": {

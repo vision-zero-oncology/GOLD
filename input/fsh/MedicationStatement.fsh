@@ -59,8 +59,11 @@ Description: "A record of a medication that is being consumed by a patient. A Me
 * effectivePeriod MS
 * dateAsserted MS
 * informationSource MS
+* derivedFrom MS
+* derivedFrom only Reference(Tumor)
 * reasonCode MS
 * reasonReference MS
+* reasonReference only Reference(tumor-disorder)
 * note MS
 * dosage obeys dsg-1
 * dosage MS

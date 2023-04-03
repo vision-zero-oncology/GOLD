@@ -243,6 +243,18 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.supportingInformation",
+        "path": "MedicationAdministration.supportingInformation",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
+            ]
+          }
+        ]
+      },
+      {
         "id": "MedicationAdministration.effective[x]",
         "path": "MedicationAdministration.effective[x]",
         "slicing": {
@@ -296,6 +308,14 @@
       {
         "id": "MedicationAdministration.reasonReference",
         "path": "MedicationAdministration.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {
