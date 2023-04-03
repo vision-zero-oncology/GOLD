@@ -73,6 +73,14 @@
      ] ;
      fhir:packageId [ fhir:v "de.medizininformatikinitiative.kerndatensatz.biobank" ] ;
      fhir:version [ fhir:v "1.0.3" ]
+  ] [
+     fhir:id [ fhir:v "hl7_fhir_uv_ips" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/uv/ips/ImplementationGuide/hl7.fhir.uv.ips>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.ips" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
   ] ) ; # 
   fhir:definition [
      fhir:extension ( [
