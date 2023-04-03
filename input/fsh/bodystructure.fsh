@@ -14,8 +14,8 @@ Description: "Profile for the base definition of all body structures."
 * identifier[bodyStructureIdentifier].type.coding.system 1..
 * identifier[bodyStructureIdentifier].type.coding.code 1..
 * identifier[bodyStructureIdentifier].value 1..
-* location 0..0
-* locationQualifier 0..0
+// * location 0..0
+// * locationQualifier 0..0
 * extension 0..*
 * extension contains Diagnosis named diagnosis 0..* MS
 
