@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "VS_TypeOfStudyArm_NCIT"] ; # 
   fhir:title [ fhir:v "ValueSet Type of Study Arm NCIt"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-04-03T12:34:04+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-03T12:58:47+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;
