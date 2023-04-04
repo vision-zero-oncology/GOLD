@@ -33,7 +33,7 @@ Description: "Profile for a tumor disorder"
 * abatement[x] only dateTime
 * stage MS
 * stage ^slicing.discriminator.type = #pattern
-* stage ^slicing.discriminator.path = "$this"
+* stage ^slicing.discriminator.path = "type"
 * stage ^slicing.rules = #open
 * stage ^slicing.ordered = false
 * stage contains staging 0..* and grading 0..* MS
