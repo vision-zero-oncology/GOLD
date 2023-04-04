@@ -8,6 +8,7 @@
   },
   "identifier": [
     {
+      "use": "usual",
       "type": {
         "coding": [
           {
@@ -16,7 +17,6 @@
           }
         ]
       },
-      "use": "usual",
       "system": "http://radiology.hospital.example.org",
       "value": "Tumor 1234"
     }
