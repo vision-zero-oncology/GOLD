@@ -65,14 +65,11 @@ Title: "Diagnose MammaCa rechts"
 Description: "Beispiel einer Diagnose Mamma Ca rechts."
 * clinicalStatus = $ClinStatus#active
 * verificationStatus = $VerStatus#confirmed
-* code.coding[ICD-10-GM] = $ICD10GM#C50.2 "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse"
-* code.coding[ICD-10-GM].version = "2019"
+* code.coding[ICD-10-GM] = $ICD10GM|2019#C50.2 "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse"
 * code.coding[ICD-10-GM].extension[seitenlokalisation].valueCoding = $ICD10SeitenlokalisationCS#R "Rechts"
-* code.coding[icd-o-3-m] = $ICDO3#8500/3 "Invasives duktales Karzinom o.n.A."
-* code.coding[icd-o-3-m].version = "2019"
+* code.coding[icd-o-3-m] = $ICDO3|2019#8500/3 "Invasives duktales Karzinom o.n.A."
 * code.coding[icd-o-3-m].extension[diagnosesicherung-icd-o].valueCodeableConcept = $DiagnosesicherungCS#7 "Histologische Untersuchung eines Primärtumors"
-* bodySite.coding[icdo3-t] = $ICDO3#C50.2 "Oberer innerer Quadrant der Brust"
-* bodySite.coding[icdo3-t].version = "2019"
+* bodySite.coding[icdo3-t] = $ICDO3|2019#C50.2 "Oberer innerer Quadrant der Brust"
 * subject = Reference(Patient/example)
 * encounter = Reference(Encounter/example)
 * onsetDateTime = "2019-09-17"
