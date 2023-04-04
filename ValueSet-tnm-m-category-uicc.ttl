@@ -1,0 +1,67 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tnm-m-category-uicc"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>M0</td><td>M0</td></tr><tr><td>M1</td><td>M1</td></tr><tr><td>M1a</td><td>M1a</td></tr><tr><td>M1b</td><td>M1b</td></tr><tr><td>M1c</td><td>M1c</td></tr><tr><td>M1d</td><td>M1d</td></tr><tr><td>MX</td><td>MX</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VS_TNM_M_Category_UICC"] ; # 
+  fhir:title [ fhir:v "ValueSet TNM M Category UICC"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-04-04T16:41:07+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.bihealth.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This ValueSet contains the TNM M category codes from TNM 8th edition UICC."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DEU" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC-BY-SA-4.0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "urn:oid:2.16.840.1.113883.15.16"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "M0" ] ;
+         fhir:display [ fhir:v "M0" ]
+       ] [
+         fhir:code [ fhir:v "M1" ] ;
+         fhir:display [ fhir:v "M1" ]
+       ] [
+         fhir:code [ fhir:v "M1a" ] ;
+         fhir:display [ fhir:v "M1a" ]
+       ] [
+         fhir:code [ fhir:v "M1b" ] ;
+         fhir:display [ fhir:v "M1b" ]
+       ] [
+         fhir:code [ fhir:v "M1c" ] ;
+         fhir:display [ fhir:v "M1c" ]
+       ] [
+         fhir:code [ fhir:v "M1d" ] ;
+         fhir:display [ fhir:v "M1d" ]
+       ] [
+         fhir:code [ fhir:v "MX" ] ;
+         fhir:display [ fhir:v "MX" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tnm-m-staging-type-loinc"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://loinc.org"><code>http://loinc.org</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="https://loinc.org/21907-1/">21907-1</a></td><td>Distant metastases.clinical [Class] Cancer</td></tr><tr><td><a href="https://loinc.org/21901-4/">21901-4</a></td><td>Distant metastases.pathology [Class] Cancer</td></tr><tr><td><a href="https://loinc.org/21913-9/">21913-9</a></td><td>Distant metastases.other [Class] Cancer</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc"/>
+  <version value="0.1.0"/>
+  <name value="VS_TNM_M_Staging_Type_LOINC"/>
+  <title value="ValueSet TNM M Staging Type LOINC"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-04-04T16:41:07+00:00"/>
+  <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+  <contact>
+    <name value="Berlin Institute of Health at Charité (BIH)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM)."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+      <concept>
+        <code value="21907-1"/>
+        <display value="Distant metastases.clinical [Class] Cancer"/>
+      </concept>
+      <concept>
+        <code value="21901-4"/>
+        <display value="Distant metastases.pathology [Class] Cancer"/>
+      </concept>
+      <concept>
+        <code value="21913-9"/>
+        <display value="Distant metastases.other [Class] Cancer"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,48 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tnm-m-staging-type-loinc",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/21907-1/\">21907-1</a></td><td>Distant metastases.clinical [Class] Cancer</td></tr><tr><td><a href=\"https://loinc.org/21901-4/\">21901-4</a></td><td>Distant metastases.pathology [Class] Cancer</td></tr><tr><td><a href=\"https://loinc.org/21913-9/\">21913-9</a></td><td>Distant metastases.other [Class] Cancer</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc",
+  "version" : "0.1.0",
+  "name" : "VS_TNM_M_Staging_Type_LOINC",
+  "title" : "ValueSet TNM M Staging Type LOINC",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-04-04T16:41:07+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM).",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "CC-BY-SA-4.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "21907-1",
+        "display" : "Distant metastases.clinical [Class] Cancer"
+      },
+      {
+        "code" : "21901-4",
+        "display" : "Distant metastases.pathology [Class] Cancer"
+      },
+      {
+        "code" : "21913-9",
+        "display" : "Distant metastases.other [Class] Cancer"
+      }]
+    }]
+  }
+}

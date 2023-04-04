@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tnm-t-multiplicity-uicc"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>m</td><td>(m)</td></tr><tr><td>2</td><td>(2)</td></tr><tr><td>3</td><td>(3)</td></tr><tr><td>4</td><td>(4)</td></tr><tr><td>5</td><td>(5)</td></tr><tr><td>6</td><td>(6)</td></tr><tr><td>7</td><td>(7)</td></tr><tr><td>8</td><td>(8)</td></tr><tr><td>9</td><td>(9)</td></tr><tr><td>10</td><td>(10)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-multiplicity-uicc"/>
+  <version value="0.1.0"/>
+  <name value="VS_TNM_T_Multiplicity_UICC"/>
+  <title value="ValueSet TNM T Multiplicity UICC"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-04-04T16:41:07+00:00"/>
+  <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+  <contact>
+    <name value="Berlin Institute of Health at Charité (BIH)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from TNM 8th edition UICC."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.15.16"/>
+      <concept>
+        <code value="m"/>
+        <display value="(m)"/>
+      </concept>
+      <concept>
+        <code value="2"/>
+        <display value="(2)"/>
+      </concept>
+      <concept>
+        <code value="3"/>
+        <display value="(3)"/>
+      </concept>
+      <concept>
+        <code value="4"/>
+        <display value="(4)"/>
+      </concept>
+      <concept>
+        <code value="5"/>
+        <display value="(5)"/>
+      </concept>
+      <concept>
+        <code value="6"/>
+        <display value="(6)"/>
+      </concept>
+      <concept>
+        <code value="7"/>
+        <display value="(7)"/>
+      </concept>
+      <concept>
+        <code value="8"/>
+        <display value="(8)"/>
+      </concept>
+      <concept>
+        <code value="9"/>
+        <display value="(9)"/>
+      </concept>
+      <concept>
+        <code value="10"/>
+        <display value="(10)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -464,7 +464,7 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ref-1:SHALL have a contained resource if a local reference is provided {reference.startsWith('#').not() or (reference.substring(1).trace('url') in %rootResource.contained.id.trace('ids'))}","REL-7.1 identifier + REL-7.12 type code","n/a","The target of a resource reference is a RIM entry point (Act, Role, or Entity)",".participation[typeCode=INF].role","FiveWs.source"
 "Condition.stage","Condition.stage","","","",0,*,"Y","","","BackboneElement {[]} {[]}
-","Stage/grade, usually assessed formally","Clinical stage or grade of a condition. May include formal severity assessments.","","","","","","","","","",,,,,"","pattern:$this}
+","Stage/grade, usually assessed formally","Clinical stage or grade of a condition. May include formal severity assessments.","","","","","","","","","",,,,,"","pattern:type}
 ","",,"open","Condition.stage",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 con-1:Stage SHALL have summary or assessment {summary.exists() or assessment.exists()}","n/a","./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""stage/grade""]"

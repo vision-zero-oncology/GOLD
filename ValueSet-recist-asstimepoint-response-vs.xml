@@ -10,7 +10,8 @@
   <name value="RecistAssessmentTimepointResponseVS"/>
   <title value="recist-timepoint-response-vs"/>
   <status value="draft"/>
-  <date value="2023-04-03T13:54:41+00:00"/>
+  <experimental value="false"/>
+  <date value="2023-04-04T16:41:07+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>

@@ -182,28 +182,28 @@
     "name" : "Vital_Signs_Base"
   },
   {
-    "id" : "vs-ecog-performance-status-snomed",
+    "id" : "ecog-performance-status-snomed",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed",
     "version" : "0.1.0",
     "name" : "VS_ECOG_Performance_Status_SNOMED"
   },
   {
-    "id" : "vs-histopathological-grade-snomed",
+    "id" : "histopathological-grade-snomed",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed",
     "version" : "0.1.0",
     "name" : "VS_Histopathological_Grade_SNOMED"
   },
   {
-    "id" : "vs-morphology-icd-o-3",
+    "id" : "morphology-icd-o-3",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3",
     "version" : "0.1.0",
     "name" : "VS_Morphology_ICD_O_3"
   },
   {
-    "id" : "vs-morphology-snomed",
+    "id" : "morphology-snomed",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed",
     "version" : "0.1.0",
@@ -238,133 +238,133 @@
     "name" : "VS_StudyFocus_NCIT"
   },
   {
-    "id" : "vs-tnm-classification-type-loinc",
+    "id" : "tnm-classification-type-loinc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc",
     "version" : "0.1.0",
     "name" : "VS_TNM_Classification_Type_LOINC"
   },
   {
-    "id" : "vs-tnm-l-lymphatic-invasion-uicc",
+    "id" : "tnm-l-lymphatic-invasion-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-l-lymphatic-invasion-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_L_Lymphatic_Invasion_UICC"
   },
   {
-    "id" : "vs-tnm-m-category-uicc",
+    "id" : "tnm-m-category-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_M_Category_UICC"
   },
   {
-    "id" : "vs-tnm-m-staging-type-loinc",
+    "id" : "tnm-m-staging-type-loinc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc",
     "version" : "0.1.0",
     "name" : "VS_TNM_M_Staging_Type_LOINC"
   },
   {
-    "id" : "vs-tnm-n-category-uicc",
+    "id" : "tnm-n-category-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_N_Category_UICC"
   },
   {
-    "id" : "vs-tnm-n-staging-type-loinc",
+    "id" : "tnm-n-staging-type-loinc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc",
     "version" : "0.1.0",
     "name" : "VS_TNM_N_Staging_Type_LOINC"
   },
   {
-    "id" : "vs-tnm-pn-perineural-invasion-uicc",
+    "id" : "tnm-pn-perineural-invasion-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-pn-perineural-invasion-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_Pn_Perineural_Invasion_UICC"
   },
   {
-    "id" : "vs-tnm-prefix-cpu-uicc",
+    "id" : "tnm-prefix-cpu-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_Prefix_CPU_UICC"
   },
   {
-    "id" : "vs-tnm-r-classification-uicc",
+    "id" : "tnm-r-classification-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-r-classification-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_R_Classification_UICC"
   },
   {
-    "id" : "vs-tnm-s-serum-tumor-markers-uicc",
+    "id" : "tnm-s-serum-tumor-markers-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-s-serum-tumor-markers-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_S_Serum_Tumor_Markers_UICC"
   },
   {
-    "id" : "vs-tnm-stage-group-uicc",
+    "id" : "tnm-stage-group-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_Stage_Group_UICC"
   },
   {
-    "id" : "vs-tnm-suffix-itc-sn-uicc",
+    "id" : "tnm-suffix-itc-sn-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-sn-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_Suffix_ITC_SN_UICC"
   },
   {
-    "id" : "vs-tnm-suffix-itc-uicc",
+    "id" : "tnm-suffix-itc-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_Suffix_ITC_UICC"
   },
   {
-    "id" : "vs-tnm-t-category-uicc",
+    "id" : "tnm-t-category-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_T_Category_UICC"
   },
   {
-    "id" : "vs-tnm-t-multiplicity-uicc",
+    "id" : "tnm-t-multiplicity-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-multiplicity-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_T_Multiplicity_UICC"
   },
   {
-    "id" : "vs-tnm-t-staging-type-loinc",
+    "id" : "tnm-t-staging-type-loinc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc",
     "version" : "0.1.0",
     "name" : "VS_TNM_T_Staging_Type_LOINC"
   },
   {
-    "id" : "vs-tnm-v-venous-invasion-uicc",
+    "id" : "tnm-v-venous-invasion-uicc",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc",
     "version" : "0.1.0",
     "name" : "VS_TNM_V_Venous_Invasion_UICC"
   },
   {
-    "id" : "vs-topography-icd-o-3",
+    "id" : "topography-icd-o-3",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3",
     "version" : "0.1.0",
     "name" : "VS_Topography_ICD_O_3"
   },
   {
-    "id" : "vs-topography-snomed",
+    "id" : "topography-snomed",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed",
     "version" : "0.1.0",

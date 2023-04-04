@@ -834,8 +834,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-ecog-performance-status-snomed> ;
-         fhir:reference [ fhir:v "ValueSet/vs-ecog-performance-status-snomed" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed> ;
+         fhir:reference [ fhir:v "ValueSet/ecog-performance-status-snomed" ]
        ] ;
        fhir:name [ fhir:v "ValueSet ECOG Performance Status SNOMED" ] ;
        fhir:description [ fhir:v "The ValueSet contains the ECOG Performance Status values from SNOMED CT." ] ;
@@ -846,8 +846,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-histopathological-grade-snomed> ;
-         fhir:reference [ fhir:v "ValueSet/vs-histopathological-grade-snomed" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed> ;
+         fhir:reference [ fhir:v "ValueSet/histopathological-grade-snomed" ]
        ] ;
        fhir:name [ fhir:v "ValueSet Histologic Grade SNOMED" ] ;
        fhir:description [ fhir:v "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT." ] ;
@@ -858,8 +858,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-icd-o-3> ;
-         fhir:reference [ fhir:v "ValueSet/vs-morphology-icd-o-3" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3> ;
+         fhir:reference [ fhir:v "ValueSet/morphology-icd-o-3" ]
        ] ;
        fhir:name [ fhir:v "ValueSet Morphology ICD-O-3" ] ;
        fhir:description [ fhir:v "The ValueSet contains the morphology (histology) codes from ICD-O-3." ] ;
@@ -870,8 +870,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-morphology-snomed> ;
-         fhir:reference [ fhir:v "ValueSet/vs-morphology-snomed" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed> ;
+         fhir:reference [ fhir:v "ValueSet/morphology-snomed" ]
        ] ;
        fhir:name [ fhir:v "ValueSet Morphology SNOMED" ] ;
        fhir:description [ fhir:v "The ValueSet contains the morphology (histology) codes from SNOMED CT." ] ;
@@ -918,8 +918,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-classification-type-loinc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-classification-type-loinc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-classification-type-loinc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM Classification Type LOINC" ] ;
        fhir:description [ fhir:v "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM)." ] ;
@@ -930,8 +930,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-l-lymphatic-invasion-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-l-lymphatic-invasion-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-l-lymphatic-invasion-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-l-lymphatic-invasion-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM L-Descriptor Lymphatic Invasion UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC." ] ;
@@ -942,8 +942,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-m-category-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-m-category-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-m-category-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM M Category UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the TNM M category codes from TNM 8th edition UICC." ] ;
@@ -954,8 +954,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-m-staging-type-loinc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-m-staging-type-loinc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-m-staging-type-loinc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM M Staging Type LOINC" ] ;
        fhir:description [ fhir:v "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM)." ] ;
@@ -966,8 +966,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-n-category-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-n-category-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-n-category-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM N Category UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the TNM N category codes from TNM 8th edition UICC." ] ;
@@ -978,8 +978,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-n-staging-type-loinc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-n-staging-type-loinc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-n-staging-type-loinc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM N Staging Type LOINC" ] ;
        fhir:description [ fhir:v "This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN)." ] ;
@@ -990,8 +990,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-pn-perineural-invasion-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-pn-perineural-invasion-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-pn-perineural-invasion-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-pn-perineural-invasion-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM Pn-Descriptor Perineural Invasion UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from TNM 8th edition UICC." ] ;
@@ -1002,8 +1002,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-prefix-cpu-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-prefix-cpu-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-prefix-cpu-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM Prefix CPU UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the c, p and u prefixes for TNM stages from TNM 8th edition UICC." ] ;
@@ -1014,8 +1014,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-r-classification-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-r-classification-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-r-classification-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-r-classification-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM Residual Tumor (R) Classification UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the TNM residual tumor (R) classification codes from TNM 8th edition UICC." ] ;
@@ -1026,8 +1026,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-s-serum-tumor-markers-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-s-serum-tumor-markers-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-s-serum-tumor-markers-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-s-serum-tumor-markers-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM S Serum Tumour Markers UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from TNM 8th edition UICC." ] ;
@@ -1038,8 +1038,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-stage-group-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-stage-group-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-stage-group-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM Stage Group UICC" ] ;
        fhir:description [ fhir:v "The ValueSet contains codes for the TNM stage groups ranging from I to IV to group cancer patients with similar prognosis from TNM 8th edition UICC." ] ;
@@ -1050,8 +1050,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-suffix-itc-sn-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-suffix-itc-sn-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-sn-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-suffix-itc-sn-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM Suffix ITC SN UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from TNM 8th edition UICC." ] ;
@@ -1062,8 +1062,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-suffix-itc-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-suffix-itc-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-suffix-itc-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM Suffix ITC UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC." ] ;
@@ -1074,8 +1074,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-t-category-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-t-category-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-t-category-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM T Category UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the TNM T category codes from TNM 8th edition UICC." ] ;
@@ -1086,8 +1086,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-t-multiplicity-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-t-multiplicity-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-multiplicity-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-t-multiplicity-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM T Multiplicity UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from TNM 8th edition UICC." ] ;
@@ -1098,8 +1098,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-t-staging-type-loinc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-t-staging-type-loinc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-t-staging-type-loinc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM T Staging Type LOINC" ] ;
        fhir:description [ fhir:v "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT)." ] ;
@@ -1110,8 +1110,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-v-venous-invasion-uicc> ;
-         fhir:reference [ fhir:v "ValueSet/vs-tnm-v-venous-invasion-uicc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc> ;
+         fhir:reference [ fhir:v "ValueSet/tnm-v-venous-invasion-uicc" ]
        ] ;
        fhir:name [ fhir:v "ValueSet TNM V-Descriptor Venous Invasion UICC" ] ;
        fhir:description [ fhir:v "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC." ] ;
@@ -1122,8 +1122,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-icd-o-3> ;
-         fhir:reference [ fhir:v "ValueSet/vs-topography-icd-o-3" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3> ;
+         fhir:reference [ fhir:v "ValueSet/topography-icd-o-3" ]
        ] ;
        fhir:name [ fhir:v "ValueSet Topography ICD-O-3" ] ;
        fhir:description [ fhir:v "The ValueSet contains the topography codes from ICD-O-3." ] ;
@@ -1134,8 +1134,8 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-topography-snomed> ;
-         fhir:reference [ fhir:v "ValueSet/vs-topography-snomed" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed> ;
+         fhir:reference [ fhir:v "ValueSet/topography-snomed" ]
        ] ;
        fhir:name [ fhir:v "ValueSet Topography SNOMED" ] ;
        fhir:description [ fhir:v "The ValueSet contains the topography codes from SNOMED CT." ] ;

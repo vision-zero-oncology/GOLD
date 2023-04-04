@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tnm-m-category-uicc"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>M0</td><td>M0</td></tr><tr><td>M1</td><td>M1</td></tr><tr><td>M1a</td><td>M1a</td></tr><tr><td>M1b</td><td>M1b</td></tr><tr><td>M1c</td><td>M1c</td></tr><tr><td>M1d</td><td>M1d</td></tr><tr><td>MX</td><td>MX</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc"/>
+  <version value="0.1.0"/>
+  <name value="VS_TNM_M_Category_UICC"/>
+  <title value="ValueSet TNM M Category UICC"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-04-04T16:41:07+00:00"/>
+  <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+  <contact>
+    <name value="Berlin Institute of Health at Charité (BIH)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet contains the TNM M category codes from TNM 8th edition UICC."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.15.16"/>
+      <concept>
+        <code value="M0"/>
+        <display value="M0"/>
+      </concept>
+      <concept>
+        <code value="M1"/>
+        <display value="M1"/>
+      </concept>
+      <concept>
+        <code value="M1a"/>
+        <display value="M1a"/>
+      </concept>
+      <concept>
+        <code value="M1b"/>
+        <display value="M1b"/>
+      </concept>
+      <concept>
+        <code value="M1c"/>
+        <display value="M1c"/>
+      </concept>
+      <concept>
+        <code value="M1d"/>
+        <display value="M1d"/>
+      </concept>
+      <concept>
+        <code value="MX"/>
+        <display value="MX"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

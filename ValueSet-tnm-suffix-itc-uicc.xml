@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tnm-suffix-itc-uicc"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>i+</td><td>(i+)</td></tr><tr><td>i-</td><td>(i-)</td></tr><tr><td>mol+</td><td>(mol+)</td></tr><tr><td>mol-</td><td>(mol-)</td></tr></table></li></ul></div>
+  </text>
+  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc"/>
+  <version value="0.1.0"/>
+  <name value="VS_TNM_Suffix_ITC_UICC"/>
+  <title value="ValueSet TNM Suffix ITC UICC"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-04-04T16:41:07+00:00"/>
+  <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+  <contact>
+    <name value="Berlin Institute of Health at Charité (BIH)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.15.16"/>
+      <concept>
+        <code value="i+"/>
+        <display value="(i+)"/>
+      </concept>
+      <concept>
+        <code value="i-"/>
+        <display value="(i-)"/>
+      </concept>
+      <concept>
+        <code value="mol+"/>
+        <display value="(mol+)"/>
+      </concept>
+      <concept>
+        <code value="mol-"/>
+        <display value="(mol-)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

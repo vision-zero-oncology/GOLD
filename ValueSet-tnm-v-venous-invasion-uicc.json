@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tnm-v-venous-invasion-uicc",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>V0</td><td>V0</td></tr><tr><td>V1</td><td>V1</td></tr><tr><td>V2</td><td>V2</td></tr><tr><td>VX</td><td>VX</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc",
+  "version" : "0.1.0",
+  "name" : "VS_TNM_V_Venous_Invasion_UICC",
+  "title" : "ValueSet TNM V-Descriptor Venous Invasion UICC",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-04-04T16:41:07+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "CC-BY-SA-4.0",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.15.16",
+      "concept" : [{
+        "code" : "V0",
+        "display" : "V0"
+      },
+      {
+        "code" : "V1",
+        "display" : "V1"
+      },
+      {
+        "code" : "V2",
+        "display" : "V2"
+      },
+      {
+        "code" : "VX",
+        "display" : "VX"
+      }]
+    }]
+  }
+}

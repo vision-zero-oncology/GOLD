@@ -911,7 +911,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-ecog-performance-status-snomed"
+        "reference" : "ValueSet/ecog-performance-status-snomed"
       },
       "name" : "ValueSet ECOG Performance Status SNOMED",
       "description" : "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
@@ -923,7 +923,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-histopathological-grade-snomed"
+        "reference" : "ValueSet/histopathological-grade-snomed"
       },
       "name" : "ValueSet Histologic Grade SNOMED",
       "description" : "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT.",
@@ -935,7 +935,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-morphology-icd-o-3"
+        "reference" : "ValueSet/morphology-icd-o-3"
       },
       "name" : "ValueSet Morphology ICD-O-3",
       "description" : "The ValueSet contains the morphology (histology) codes from ICD-O-3.",
@@ -947,7 +947,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-morphology-snomed"
+        "reference" : "ValueSet/morphology-snomed"
       },
       "name" : "ValueSet Morphology SNOMED",
       "description" : "The ValueSet contains the morphology (histology) codes from SNOMED CT.",
@@ -995,7 +995,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-classification-type-loinc"
+        "reference" : "ValueSet/tnm-classification-type-loinc"
       },
       "name" : "ValueSet TNM Classification Type LOINC",
       "description" : "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM).",
@@ -1007,7 +1007,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-l-lymphatic-invasion-uicc"
+        "reference" : "ValueSet/tnm-l-lymphatic-invasion-uicc"
       },
       "name" : "ValueSet TNM L-Descriptor Lymphatic Invasion UICC",
       "description" : "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC.",
@@ -1019,7 +1019,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-m-category-uicc"
+        "reference" : "ValueSet/tnm-m-category-uicc"
       },
       "name" : "ValueSet TNM M Category UICC",
       "description" : "This ValueSet contains the TNM M category codes from TNM 8th edition UICC.",
@@ -1031,7 +1031,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-m-staging-type-loinc"
+        "reference" : "ValueSet/tnm-m-staging-type-loinc"
       },
       "name" : "ValueSet TNM M Staging Type LOINC",
       "description" : "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM).",
@@ -1043,7 +1043,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-n-category-uicc"
+        "reference" : "ValueSet/tnm-n-category-uicc"
       },
       "name" : "ValueSet TNM N Category UICC",
       "description" : "This ValueSet contains the TNM N category codes from TNM 8th edition UICC.",
@@ -1055,7 +1055,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-n-staging-type-loinc"
+        "reference" : "ValueSet/tnm-n-staging-type-loinc"
       },
       "name" : "ValueSet TNM N Staging Type LOINC",
       "description" : "This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN).",
@@ -1067,7 +1067,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-pn-perineural-invasion-uicc"
+        "reference" : "ValueSet/tnm-pn-perineural-invasion-uicc"
       },
       "name" : "ValueSet TNM Pn-Descriptor Perineural Invasion UICC",
       "description" : "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from TNM 8th edition UICC.",
@@ -1079,7 +1079,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-prefix-cpu-uicc"
+        "reference" : "ValueSet/tnm-prefix-cpu-uicc"
       },
       "name" : "ValueSet TNM Prefix CPU UICC",
       "description" : "This ValueSet contains the c, p and u prefixes for TNM stages from TNM 8th edition UICC.",
@@ -1091,7 +1091,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-r-classification-uicc"
+        "reference" : "ValueSet/tnm-r-classification-uicc"
       },
       "name" : "ValueSet TNM Residual Tumor (R) Classification UICC",
       "description" : "This ValueSet contains the TNM residual tumor (R) classification codes from TNM 8th edition UICC.",
@@ -1103,7 +1103,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-s-serum-tumor-markers-uicc"
+        "reference" : "ValueSet/tnm-s-serum-tumor-markers-uicc"
       },
       "name" : "ValueSet TNM S Serum Tumour Markers UICC",
       "description" : "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from TNM 8th edition UICC.",
@@ -1115,7 +1115,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-stage-group-uicc"
+        "reference" : "ValueSet/tnm-stage-group-uicc"
       },
       "name" : "ValueSet TNM Stage Group UICC",
       "description" : "The ValueSet contains codes for the TNM stage groups ranging from I to IV to group cancer patients with similar prognosis from TNM 8th edition UICC.",
@@ -1127,7 +1127,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-suffix-itc-sn-uicc"
+        "reference" : "ValueSet/tnm-suffix-itc-sn-uicc"
       },
       "name" : "ValueSet TNM Suffix ITC SN UICC",
       "description" : "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from TNM 8th edition UICC.",
@@ -1139,7 +1139,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-suffix-itc-uicc"
+        "reference" : "ValueSet/tnm-suffix-itc-uicc"
       },
       "name" : "ValueSet TNM Suffix ITC UICC",
       "description" : "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC.",
@@ -1151,7 +1151,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-t-category-uicc"
+        "reference" : "ValueSet/tnm-t-category-uicc"
       },
       "name" : "ValueSet TNM T Category UICC",
       "description" : "This ValueSet contains the TNM T category codes from TNM 8th edition UICC.",
@@ -1163,7 +1163,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-t-multiplicity-uicc"
+        "reference" : "ValueSet/tnm-t-multiplicity-uicc"
       },
       "name" : "ValueSet TNM T Multiplicity UICC",
       "description" : "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from TNM 8th edition UICC.",
@@ -1175,7 +1175,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-t-staging-type-loinc"
+        "reference" : "ValueSet/tnm-t-staging-type-loinc"
       },
       "name" : "ValueSet TNM T Staging Type LOINC",
       "description" : "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT).",
@@ -1187,7 +1187,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-tnm-v-venous-invasion-uicc"
+        "reference" : "ValueSet/tnm-v-venous-invasion-uicc"
       },
       "name" : "ValueSet TNM V-Descriptor Venous Invasion UICC",
       "description" : "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC.",
@@ -1199,7 +1199,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-topography-icd-o-3"
+        "reference" : "ValueSet/topography-icd-o-3"
       },
       "name" : "ValueSet Topography ICD-O-3",
       "description" : "The ValueSet contains the topography codes from ICD-O-3.",
@@ -1211,7 +1211,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-topography-snomed"
+        "reference" : "ValueSet/topography-snomed"
       },
       "name" : "ValueSet Topography SNOMED",
       "description" : "The ValueSet contains the topography codes from SNOMED CT.",
