@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "VS_TNM_Classification_Type_LOINC",
-  "id": "vs-tnm-classification-type-loinc",
+  "id": "tnm-classification-type-loinc",
   "title": "ValueSet TNM Classification Type LOINC",
   "description": "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM).",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc",
@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "experimental": false,
   "compose": {
     "include": [
       {

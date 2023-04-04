@@ -5,7 +5,7 @@ Title: "Profile Body Structure"
 Description: "Profile for the base definition of all body structures."
 * identifier 1..*
 * identifier ^slicing.discriminator.type = #pattern
-* identifier ^slicing.discriminator.path = "$this"
+* identifier ^slicing.discriminator.path = "type"
 * identifier ^slicing.rules = #open
 * identifier contains
     bodyStructureIdentifier 1..1 
