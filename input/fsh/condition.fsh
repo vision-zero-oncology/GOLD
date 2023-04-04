@@ -74,6 +74,7 @@ Description: "Beispiel einer Diagnose Mamma Ca rechts."
 * bodySite.coding[icdo3-t] = $ICDO3#C50.2 "Oberer innerer Quadrant der Brust"
 * bodySite.coding[icdo3-t].version = "2019"
 * subject = Reference(Patient/example)
+* encounter = Reference(Encounter/example)
 * onsetDateTime = "2019-09-17"
 * recordedDate = "2019-09-19"
 * recorder = Reference(Practitioner/dokumentar)

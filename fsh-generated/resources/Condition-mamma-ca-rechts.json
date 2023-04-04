@@ -111,6 +111,9 @@
   "subject": {
     "reference": "Patient/example"
   },
+  "encounter": {
+    "reference": "Encounter/example"
+  },
   "onsetDateTime": "2019-09-17",
   "recordedDate": "2019-09-19",
   "recorder": {
