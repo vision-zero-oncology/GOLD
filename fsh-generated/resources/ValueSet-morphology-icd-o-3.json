@@ -1,11 +1,11 @@
 {
   "resourceType": "ValueSet",
   "status": "draft",
-  "name": "VS_Topography_ICD_O_3",
-  "id": "vs-topography-icd-o-3",
-  "title": "ValueSet Topography ICD-O-3",
-  "description": "The ValueSet contains the topography codes from ICD-O-3.",
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3",
+  "name": "VS_Morphology_ICD_O_3",
+  "id": "morphology-icd-o-3",
+  "title": "ValueSet Morphology ICD-O-3",
+  "description": "The ValueSet contains the morphology (histology) codes from ICD-O-3.",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3",
   "publisher": "VISION ZERO E.V.",
   "contact": [
     {
@@ -26,7 +26,7 @@
           {
             "property": "concept",
             "op": "regex",
-            "value": "^C\\S*$"
+            "value": "^\\d\\S*$"
           }
         ]
       }

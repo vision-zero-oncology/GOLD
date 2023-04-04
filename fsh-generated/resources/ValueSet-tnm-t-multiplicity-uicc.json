@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "VS_TNM_T_Multiplicity_UICC",
-  "id": "vs-tnm-t-multiplicity-uicc",
+  "id": "tnm-t-multiplicity-uicc",
   "title": "ValueSet TNM T Multiplicity UICC",
   "description": "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from TNM 8th edition UICC.",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-multiplicity-uicc",

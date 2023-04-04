@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "VS_Histopathological_Grade_SNOMED",
-  "id": "vs-histopathological-grade-snomed",
+  "id": "histopathological-grade-snomed",
   "title": "ValueSet Histologic Grade SNOMED",
   "description": "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT.",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed",

@@ -1,6 +1,6 @@
 // ECOG
 ValueSet: VS_ECOG_Performance_Status_SNOMED
-Id: vs-ecog-performance-status-snomed
+Id: ecog-performance-status-snomed
 Title: "ValueSet ECOG Performance Status SNOMED"
 Description: "The ValueSet contains the ECOG Performance Status values from SNOMED CT."
 * insert Metadata
@@ -11,7 +11,7 @@ Description: "The ValueSet contains the ECOG Performance Status values from SNOM
 
 // Morphology ICD-O-3 
 ValueSet: VS_Morphology_ICD_O_3
-Id: vs-morphology-icd-o-3
+Id: morphology-icd-o-3
 Title: "ValueSet Morphology ICD-O-3"
 Description: "The ValueSet contains the morphology (histology) codes from ICD-O-3."
 * insert Metadata
@@ -21,7 +21,7 @@ Description: "The ValueSet contains the morphology (histology) codes from ICD-O-
 
 // Topography ICD-O-3 
 ValueSet: VS_Topography_ICD_O_3
-Id: vs-topography-icd-o-3
+Id: topography-icd-o-3
 Title: "ValueSet Topography ICD-O-3"
 Description: "The ValueSet contains the topography codes from ICD-O-3."
 * insert Metadata
@@ -31,7 +31,7 @@ Description: "The ValueSet contains the topography codes from ICD-O-3."
 
 // Morphology SNOMED
 ValueSet: VS_Morphology_SNOMED
-Id: vs-morphology-snomed
+Id: morphology-snomed
 Title: "ValueSet Morphology SNOMED"
 Description: "The ValueSet contains the morphology (histology) codes from SNOMED CT."
 * insert Metadata
@@ -42,7 +42,7 @@ Description: "The ValueSet contains the morphology (histology) codes from SNOMED
 
 // Topography SNOMED
 ValueSet: VS_Topography_SNOMED
-Id: vs-topography-snomed
+Id: topography-snomed
 Title: "ValueSet Topography SNOMED"
 Description: "The ValueSet contains the topography codes from SNOMED CT."
 * insert Metadata
@@ -53,7 +53,7 @@ Description: "The ValueSet contains the topography codes from SNOMED CT."
 
 // Tumor Histologic Grade SNOMED 
 ValueSet: VS_Histopathological_Grade_SNOMED
-Id: vs-histopathological-grade-snomed
+Id: histopathological-grade-snomed
 Title: "ValueSet Histologic Grade SNOMED"
 Description: "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT."
 * insert Metadata
@@ -68,7 +68,7 @@ Description: "The ValueSet contains codes for the tumor grading system following
 
 //TNM
 ValueSet: VS_TNM_Classification_Type_LOINC
-Id: vs-tnm-classification-type-loinc
+Id: tnm-classification-type-loinc
 Title: "ValueSet TNM Classification Type LOINC"
 Description: "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM)."
 * insert Metadata
@@ -79,7 +79,7 @@ Description: "This ValueSet contains codes to specifiy the type of TNM classific
 
 // TNM Stage Group
 ValueSet: VS_TNM_Stage_Group_UICC
-Id: vs-tnm-stage-group-uicc
+Id: tnm-stage-group-uicc
 Title: "ValueSet TNM Stage Group UICC"
 Description: "The ValueSet contains codes for the TNM stage groups ranging from I to IV to group cancer patients with similar prognosis from TNM 8th edition UICC."
 * insert Metadata
@@ -119,7 +119,7 @@ Description: "The ValueSet contains codes for the TNM stage groups ranging from 
 
 // TNM cpu prefixes
 ValueSet: VS_TNM_Prefix_CPU_UICC
-Id: vs-tnm-prefix-cpu-uicc
+Id: tnm-prefix-cpu-uicc
 Title: "ValueSet TNM Prefix CPU UICC"
 Description: "This ValueSet contains the c, p and u prefixes for TNM stages from TNM 8th edition UICC."
 * insert Metadata
@@ -131,7 +131,7 @@ Description: "This ValueSet contains the c, p and u prefixes for TNM stages from
 
 // TNM T category LOINC
 ValueSet: VS_TNM_T_Staging_Type_LOINC
-Id: vs-tnm-t-staging-type-loinc
+Id: tnm-t-staging-type-loinc
 Title: "ValueSet TNM T Staging Type LOINC"
 Description: "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT)."
 * insert Metadata
@@ -143,7 +143,7 @@ Description: "This ValueSet contains codes to specifiy the TNM primary tumor (T)
 
 // TNM T category values
 ValueSet: VS_TNM_T_Category_UICC
-Id: vs-tnm-t-category-uicc
+Id: tnm-t-category-uicc
 Title: "ValueSet TNM T Category UICC"
 Description: "This ValueSet contains the TNM T category codes from TNM 8th edition UICC."
 * insert Metadata
@@ -194,7 +194,7 @@ Description: "This ValueSet contains the TNM T category codes from TNM 8th editi
 
 // TNM T category values
 ValueSet: VS_TNM_T_Multiplicity_UICC
-Id: vs-tnm-t-multiplicity-uicc
+Id: tnm-t-multiplicity-uicc
 Title: "ValueSet TNM T Multiplicity UICC"
 Description: "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from TNM 8th edition UICC."
 * insert Metadata
@@ -213,7 +213,7 @@ Description: "This ValueSet contains the TNM primary tumor multiplicity codes us
 
 // TNM N category LOINC
 ValueSet: VS_TNM_N_Staging_Type_LOINC
-Id: vs-tnm-n-staging-type-loinc
+Id: tnm-n-staging-type-loinc
 Title: "ValueSet TNM N Staging Type LOINC"
 Description: "This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN)."
 * insert Metadata
@@ -225,7 +225,7 @@ Description: "This ValueSet contains codes to specifiy the TNM regional lymph no
 
 // TNM N category values
 ValueSet: VS_TNM_N_Category_UICC
-Id: vs-tnm-n-category-uicc
+Id: tnm-n-category-uicc
 Title: "ValueSet TNM N Category UICC"
 Description: "This ValueSet contains the TNM N category codes from TNM 8th edition UICC."
 * insert Metadata
@@ -249,7 +249,7 @@ Description: "This ValueSet contains the TNM N category codes from TNM 8th editi
 
 // TNM M category LOINC
 ValueSet: VS_TNM_M_Staging_Type_LOINC
-Id: vs-tnm-m-staging-type-loinc
+Id: tnm-m-staging-type-loinc
 Title: "ValueSet TNM M Staging Type LOINC"
 Description: "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM)."
 * insert Metadata
@@ -261,7 +261,7 @@ Description: "This ValueSet contains codes to specifiy the TNM distant metastase
 
 // TNM M category values
 ValueSet: VS_TNM_M_Category_UICC
-Id: vs-tnm-m-category-uicc
+Id: tnm-m-category-uicc
 Title: "ValueSet TNM M Category UICC"
 Description: "This ValueSet contains the TNM M category codes from TNM 8th edition UICC."
 * insert Metadata
@@ -278,7 +278,7 @@ Description: "This ValueSet contains the TNM M category codes from TNM 8th editi
 
 // TNM L-descriptor values
 ValueSet: VS_TNM_L_Lymphatic_Invasion_UICC
-Id: vs-tnm-l-lymphatic-invasion-uicc
+Id: tnm-l-lymphatic-invasion-uicc
 Title: "ValueSet TNM L-Descriptor Lymphatic Invasion UICC"
 Description: "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC."
 * insert Metadata
@@ -290,7 +290,7 @@ Description: "This ValueSet contains the TNM degree of lymphatic invasion codes 
 
 // TNM V-descriptor values
 ValueSet: VS_TNM_V_Venous_Invasion_UICC
-Id: vs-tnm-v-venous-invasion-uicc
+Id: tnm-v-venous-invasion-uicc
 Title: "ValueSet TNM V-Descriptor Venous Invasion UICC"
 Description: "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC."
 * insert Metadata
@@ -303,7 +303,7 @@ Description: "This ValueSet contains the TNM degree of venous invasion codes use
 
 // TNM Pn-descriptor values
 ValueSet: VS_TNM_Pn_Perineural_Invasion_UICC
-Id: vs-tnm-pn-perineural-invasion-uicc
+Id: tnm-pn-perineural-invasion-uicc
 Title: "ValueSet TNM Pn-Descriptor Perineural Invasion UICC"
 Description: "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from TNM 8th edition UICC."
 * insert Metadata
@@ -315,7 +315,7 @@ Description: "This ValueSet contains the TNM degree of perineural (lymphatic ner
 
 // TNM S-symbol values
 ValueSet: VS_TNM_S_Serum_Tumor_Markers_UICC
-Id: vs-tnm-s-serum-tumor-markers-uicc
+Id: tnm-s-serum-tumor-markers-uicc
 Title: "ValueSet TNM S Serum Tumour Markers UICC"
 Description: "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from TNM 8th edition UICC."
 * insert Metadata
@@ -329,7 +329,7 @@ Description: "This ValueSet contains the TNM serum levels of tumor markers coded
 
 // TNM itc suffixes
 ValueSet: VS_TNM_Suffix_ITC_UICC
-Id: vs-tnm-suffix-itc-uicc
+Id: tnm-suffix-itc-uicc
 Title: "ValueSet TNM Suffix ITC UICC"
 Description: "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC."
 * insert Metadata
@@ -342,7 +342,7 @@ Description: "This ValueSet contains the isolated tumor cells (ITC) suffixes for
 
 // TNM itc sn suffixes
 ValueSet: VS_TNM_Suffix_ITC_SN_UICC
-Id: vs-tnm-suffix-itc-sn-uicc
+Id: tnm-suffix-itc-sn-uicc
 Title: "ValueSet TNM Suffix ITC SN UICC"
 Description: "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from TNM 8th edition UICC."
 * insert Metadata
@@ -352,7 +352,7 @@ Description: "This ValueSet contains the isolated tumor cells (ITC) sentinel lym
 
 // TNM Residual Tumor R Classification
 ValueSet: VS_TNM_R_Classification_UICC
-Id: vs-tnm-r-classification-uicc
+Id: tnm-r-classification-uicc
 Title: "ValueSet TNM Residual Tumor (R) Classification UICC"
 Description: "This ValueSet contains the TNM residual tumor (R) classification codes from TNM 8th edition UICC."
 * insert Metadata

@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "VS_Morphology_SNOMED",
-  "id": "vs-morphology-snomed",
+  "id": "morphology-snomed",
   "title": "ValueSet Morphology SNOMED",
   "description": "The ValueSet contains the morphology (histology) codes from SNOMED CT.",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed",

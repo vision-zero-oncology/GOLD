@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "VS_TNM_R_Classification_UICC",
-  "id": "vs-tnm-r-classification-uicc",
+  "id": "tnm-r-classification-uicc",
   "title": "ValueSet TNM Residual Tumor (R) Classification UICC",
   "description": "This ValueSet contains the TNM residual tumor (R) classification codes from TNM 8th edition UICC.",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-r-classification-uicc",

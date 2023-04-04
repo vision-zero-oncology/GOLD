@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "VS_ECOG_Performance_Status_SNOMED",
-  "id": "vs-ecog-performance-status-snomed",
+  "id": "ecog-performance-status-snomed",
   "title": "ValueSet ECOG Performance Status SNOMED",
   "description": "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed",

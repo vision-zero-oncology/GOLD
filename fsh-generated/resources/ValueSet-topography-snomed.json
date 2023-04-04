@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "VS_Topography_SNOMED",
-  "id": "vs-topography-snomed",
+  "id": "topography-snomed",
   "title": "ValueSet Topography SNOMED",
   "description": "The ValueSet contains the topography codes from SNOMED CT.",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed",
