@@ -73,7 +73,7 @@
           "discriminator": [
             {
               "type": "pattern",
-              "path": "$this"
+              "path": "type"
             }
           ],
           "rules": "open"
@@ -95,6 +95,7 @@
       {
         "id": "BodyStructure.identifier:bodyStructureIdentifier.type",
         "path": "BodyStructure.identifier.type",
+        "min": 1,
         "patternCodeableConcept": {
           "coding": [
             {
