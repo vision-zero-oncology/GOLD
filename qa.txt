@@ -3,7 +3,7 @@
 
 err = 25, warn = 124, info = 106
 IG Publisher Version: 1.3.4
-Generated Tue Apr 04 16:46:30 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Thu Apr 06 11:49:30 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 0 / 9 / 0
  /github/workspace/fsh-generated/resources/BodyStructure-CerebellarSarcoma : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/BodyStructure-example-body-structure : 1 / 0 / 1
@@ -376,7 +376,7 @@ WARNING: ValueSet.where(id = 'study-focus-ncit'): Error from server: Unable to p
 WARNING: ValueSet/tnm-l-lymphatic-invasion-uicc: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)
 WARNING: ValueSet.where(id = 'tnm-l-lymphatic-invasion-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
 == fsh-generated/resources/ValueSet-tnm-m-category-uicc.json ==
-WARNING: ValueSet/tnm-m-category-uicc: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)
+WARNING: ValueSet/tnm-m-category-uicc: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system urn:oid:2.16.840.1.113883.15.16. Server Error: The code system 'urn:oid:2.16.840.1.113883.15.16' is not known (encountered paired with code = 'M0'); The code provided (urn:oid:2.16.840.1.113883.15.16#M0) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
 WARNING: ValueSet.where(id = 'tnm-m-category-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
 == fsh-generated/resources/ValueSet-tnm-m-staging-type-loinc.json ==
 == fsh-generated/resources/ValueSet-tnm-n-category-uicc.json ==
@@ -408,7 +408,7 @@ WARNING: ValueSet.where(id = 'tnm-suffix-itc-uicc'): Error from server: Unable t
 WARNING: ValueSet/tnm-t-category-uicc: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)
 WARNING: ValueSet.where(id = 'tnm-t-category-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
 == fsh-generated/resources/ValueSet-tnm-t-multiplicity-uicc.json ==
-WARNING: ValueSet/tnm-t-multiplicity-uicc: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Local Error: Unable to resolve system urn:oid:2.16.840.1.113883.15.16. Server Error: The code system 'urn:oid:2.16.840.1.113883.15.16' is not known (encountered paired with code = 'm'); The code provided (urn:oid:2.16.840.1.113883.15.16#m) is not valid in the value set 'All codes known to the system' (from http://tx.fhir.org/r4))
+WARNING: ValueSet/tnm-t-multiplicity-uicc: ValueSet.compose[0].include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)
 WARNING: ValueSet.where(id = 'tnm-t-multiplicity-uicc'): Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
 == fsh-generated/resources/ValueSet-tnm-t-staging-type-loinc.json ==
 == fsh-generated/resources/ValueSet-tnm-v-venous-invasion-uicc.json ==
