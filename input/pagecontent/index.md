@@ -32,7 +32,6 @@ FHIR Implementation Guide for the German OncoLogical Data Standard (GOLD).
 * Patrick Metzger, Universitätsklinikum Freiburg
 * Mathias Muth, Novartis Pharma GmbH
 * Stefan Palm, WTZ Essen, Westdeutsches Tumorzentrum Netzwerk
-* (former member) Bärbel Söhlke, zielGENau e.V., Patientenvertreterin
 
 ## Participation and commenting
 
