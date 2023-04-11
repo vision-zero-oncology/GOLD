@@ -3,7 +3,7 @@
   "id": "probandin",
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin",
   "name": "Probandin",
-  "title": "ProbandIn",
+  "title": "Profile ProbandIn",
   "status": "active",
   "publisher": "VISION ZERO E.V.",
   "contact": [

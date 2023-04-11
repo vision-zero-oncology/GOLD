@@ -73,14 +73,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/clinical-study"
-        },
-        "name": "Clinical Study",
-        "description": "This profile describes a clinical study in which a patient takes part.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "Condition/mamma-ca-rechts"
         },
         "name": "Diagnose MammaCa rechts",
@@ -93,14 +85,6 @@
         },
         "name": "Diagnosesicherung ICD O",
         "description": "Extension für die Erfassung der Diagnosesicherung der ICD-O-3",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "ValueSet/vs-diagnosesicherung-icdo3"
-        },
-        "name": "Diagnosesicherung ICD-O-3",
-        "description": "ValueSet für die Diagnosesicherungscodes der ICD-O-3",
         "exampleBoolean": false
       },
       {
@@ -131,7 +115,7 @@
           "reference": "MedicationStatement/exa-medication-statement-caelyx"
         },
         "name": "exa-medication-statement-caelyx",
-        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement"
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement"
       },
       {
         "reference": {
@@ -317,30 +301,6 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/medication-administration"
-        },
-        "name": "MedicationAdministration",
-        "description": "Describes the event of a patient consuming or otherwise being administered a medication.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/pr-medication-statement"
-        },
-        "name": "MedicationStatement",
-        "description": "A record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/probandin"
-        },
-        "name": "ProbandIn",
-        "description": "Dieses Profil beschreibt eine Proband*in.",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/body-height"
         },
         "name": "Profile Body Height",
@@ -361,6 +321,14 @@
         },
         "name": "Profile Body Weight",
         "description": "Profile for body weight of a patient",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/clinical-study"
+        },
+        "name": "Profile Clinical Study",
+        "description": "Profile to describe a clinical study in which a patient takes part.",
         "exampleBoolean": false
       },
       {
@@ -397,10 +365,58 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/medication-administration"
+        },
+        "name": "Profile MedicationAdministration",
+        "description": "Profile to describe the event of a patient consuming or otherwise being administered a medication.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/medication-statement"
+        },
+        "name": "Profile MedicationStatement",
+        "description": "Profile to capture a record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/probandin"
+        },
+        "name": "Profile ProbandIn",
+        "description": "Dieses Profil beschreibt eine Proband*in.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/recist-assessment-response"
         },
         "name": "Profile RECIST timepoint assessment response",
         "description": "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/\nPlease note there is no assessment timepoint response for the baseline assessment.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumor"
+        },
+        "name": "Profile Tumor",
+        "description": "Profile of a tumor",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumor-disorder"
+        },
+        "name": "Profile Tumor Disorder",
+        "description": "Profile for a tumor disorder",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/tumor-specimen"
+        },
+        "name": "Profile Tumor Specimen",
+        "description": "Profile of a tumor specimen",
         "exampleBoolean": false
       },
       {
@@ -429,34 +445,10 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/recist-asstimepoint-response-vs"
-        },
-        "name": "recist-timepoint-response-vs",
-        "description": "Defines the valid values for the recist assessment response observation resource",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/part-of"
         },
         "name": "Specimen part of Tumor",
         "description": "Enables to reference a Tumor <BodyStructure> from its respective Specimen",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/tumor"
-        },
-        "name": "Tumor",
-        "description": "Tumor",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
-          "reference": "StructureDefinition/tumor-disorder"
-        },
-        "name": "Tumor Disorder",
-        "description": "Profile for a tumor disorder",
         "exampleBoolean": false
       },
       {
@@ -469,10 +461,10 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/tumor-specimen"
+          "reference": "ValueSet/diagnosesicherung-icdo3"
         },
-        "name": "Tumor Specimen",
-        "description": "Tumor specimen",
+        "name": "ValieSet Diagnosesicherung ICD-O-3",
+        "description": "ValueSet für die Diagnosesicherungscodes der ICD-O-3",
         "exampleBoolean": false
       },
       {
@@ -505,6 +497,14 @@
         },
         "name": "ValueSet Morphology SNOMED",
         "description": "The ValueSet contains the morphology (histology) codes from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/recist-asstimepoint-response"
+        },
+        "name": "ValueSet Recist Timepoint Response",
+        "description": "Defines the valid values for the recist assessment response observation resource",
         "exampleBoolean": false
       },
       {

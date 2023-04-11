@@ -367,8 +367,8 @@ Description: "This ValueSet contains the TNM residual tumor (R) classification c
 
 // Recist Assessment
 ValueSet: RecistAssessmentTimepointResponseVS
-Id: recist-asstimepoint-response-vs
-Title: "recist-timepoint-response-vs"
+Id: recist-asstimepoint-response
+Title: "ValueSet Recist Timepoint Response"
 Description: "Defines the valid values for the recist assessment response observation resource"
 * insert Metadata
 * ^experimental = false
@@ -394,8 +394,8 @@ Description: "CodeSystem für die Diagnosesicherungscodes der ICD-O-3"
 * #9 "Unbekannt"
 
 ValueSet: DiagnosesicherungICDO3
-Id: vs-diagnosesicherung-icdo3
-Title: "Diagnosesicherung ICD-O-3"
+Id: diagnosesicherung-icdo3
+Title: "ValieSet Diagnosesicherung ICD-O-3"
 Description: "ValueSet für die Diagnosesicherungscodes der ICD-O-3"
 * insert Metadata
 * ^experimental = false

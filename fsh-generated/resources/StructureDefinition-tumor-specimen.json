@@ -3,7 +3,7 @@
   "id": "tumor-specimen",
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen",
   "name": "TumorSpecimen",
-  "title": "Tumor Specimen",
+  "title": "Profile Tumor Specimen",
   "status": "draft",
   "publisher": "VISION ZERO E.V.",
   "contact": [
@@ -16,7 +16,7 @@
       ]
     }
   ],
-  "description": "Tumor specimen",
+  "description": "Profile of a tumor specimen",
   "fhirVersion": "4.0.1",
   "mapping": [
     {

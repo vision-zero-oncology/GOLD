@@ -2,10 +2,10 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "RecistAssessmentTimepointResponseVS",
-  "id": "recist-asstimepoint-response-vs",
-  "title": "recist-timepoint-response-vs",
+  "id": "recist-asstimepoint-response",
+  "title": "ValueSet Recist Timepoint Response",
   "description": "Defines the valid values for the recist assessment response observation resource",
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response-vs",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response",
   "publisher": "VISION ZERO E.V.",
   "contact": [
     {

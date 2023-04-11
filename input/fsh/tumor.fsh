@@ -1,8 +1,8 @@
 Profile: TumorSpecimen
 Parent: $MIIBiobankBioprobeCore
 Id: tumor-specimen
-Title: "Tumor Specimen"
-Description: "Tumor specimen"
+Title: "Profile Tumor Specimen"
+Description: "Profile of a tumor specimen"
 * insert Metadata
 * identifier 1.. 
 * collection.bodySite 1.. 
@@ -11,8 +11,8 @@ Description: "Tumor specimen"
 Profile: Tumor
 Parent: body-structure-base
 Id: tumor
-Title: "Tumor"
-Description: "Tumor"
+Title: "Profile Tumor"
+Description: "Profile of a tumor"
 * insert Metadata
 * morphology 1.. MS
 * location 1.. MS

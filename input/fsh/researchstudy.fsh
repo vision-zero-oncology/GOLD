@@ -1,8 +1,8 @@
 Profile: Clinical_Study
 Parent: ResearchStudy
 Id: clinical-study 
-Title: "Clinical Study"
-Description: "This profile describes a clinical study in which a patient takes part."
+Title: "Profile Clinical Study"
+Description: "Profile to describe a clinical study in which a patient takes part."
 * insert Metadata
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern

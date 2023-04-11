@@ -1,9 +1,9 @@
 {
   "resourceType": "StructureDefinition",
-  "id": "pr-medication-statement",
-  "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement",
+  "id": "medication-statement",
+  "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement",
   "name": "PR_MedicationStatement",
-  "title": "MedicationStatement",
+  "title": "Profile MedicationStatement",
   "status": "draft",
   "publisher": "VISION ZERO E.V.",
   "contact": [
@@ -16,7 +16,7 @@
       ]
     }
   ],
-  "description": "A record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future.",
+  "description": "Profile to capture a record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -366,7 +366,7 @@
             "severity": "error",
             "human": "If present, dosage must include free text or structured data",
             "expression": "text.exists() or doseAndRate.exists()",
-            "source": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement"
+            "source": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement"
           }
         ],
         "mustSupport": true

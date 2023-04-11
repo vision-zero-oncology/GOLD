@@ -1,7 +1,7 @@
 Profile: Probandin
 Parent: ResearchSubject
 Id: probandin
-Title: "ProbandIn"
+Title: "Profile ProbandIn"
 Description: "Dieses Profil beschreibt eine Proband*in."
 * insert Metadata
 * ^status = #active
