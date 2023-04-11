@@ -2,10 +2,10 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "DiagnosesicherungICDO3",
-  "id": "vs-diagnosesicherung-icdo3",
-  "title": "Diagnosesicherung ICD-O-3",
+  "id": "diagnosesicherung-icdo3",
+  "title": "ValieSet Diagnosesicherung ICD-O-3",
   "description": "ValueSet für die Diagnosesicherungscodes der ICD-O-3",
-  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3",
   "publisher": "VISION ZERO E.V.",
   "contact": [
     {

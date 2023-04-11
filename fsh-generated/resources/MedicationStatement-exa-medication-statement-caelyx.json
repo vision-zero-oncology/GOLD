@@ -3,7 +3,7 @@
   "id": "exa-medication-statement-caelyx",
   "meta": {
     "profile": [
-      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement"
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement"
     ]
   },
   "status": "active",

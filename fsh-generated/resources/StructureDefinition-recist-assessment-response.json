@@ -104,7 +104,7 @@
         ],
         "binding": {
           "strength": "required",
-          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response-vs"
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response"
         }
       }
     ]

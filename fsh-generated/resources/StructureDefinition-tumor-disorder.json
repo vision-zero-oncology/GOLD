@@ -3,7 +3,7 @@
   "id": "tumor-disorder",
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder",
   "name": "TumorDisorder",
-  "title": "Tumor Disorder",
+  "title": "Profile Tumor Disorder",
   "status": "draft",
   "publisher": "VISION ZERO E.V.",
   "contact": [

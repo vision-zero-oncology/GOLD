@@ -2,7 +2,7 @@
 Profile: TumorDisorder
 Parent: $IsikDiagnose
 Id: tumor-disorder
-Title: "Tumor Disorder"
+Title: "Profile Tumor Disorder"
 Description: "Profile for a tumor disorder"
 * insert Metadata
 * code  
