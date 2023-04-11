@@ -637,8 +637,8 @@
       "reference" : {
         "reference" : "StructureDefinition/clinical-study"
       },
-      "name" : "Clinical Study",
-      "description" : "This profile describes a clinical study in which a patient takes part.",
+      "name" : "Profile Clinical Study",
+      "description" : "Profile to describe a clinical study in which a patient takes part.",
       "exampleBoolean" : false
     },
     {
@@ -697,8 +697,8 @@
       "reference" : {
         "reference" : "StructureDefinition/medication-administration"
       },
-      "name" : "MedicationAdministration",
-      "description" : "Describes the event of a patient consuming or otherwise being administered a medication.",
+      "name" : "Profile MedicationAdministration",
+      "description" : "Profile to describe the event of a patient consuming or otherwise being administered a medication.",
       "exampleBoolean" : false
     },
     {
@@ -707,10 +707,10 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/pr-medication-statement"
+        "reference" : "StructureDefinition/medication-statement"
       },
-      "name" : "MedicationStatement",
-      "description" : "A record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future.",
+      "name" : "Profile MedicationStatement",
+      "description" : "Profile to capture a record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future.",
       "exampleBoolean" : false
     },
     {
@@ -721,7 +721,7 @@
       "reference" : {
         "reference" : "StructureDefinition/probandin"
       },
-      "name" : "ProbandIn",
+      "name" : "Profile ProbandIn",
       "description" : "Dieses Profil beschreibt eine Proband*in.",
       "exampleBoolean" : false
     },
@@ -745,8 +745,8 @@
       "reference" : {
         "reference" : "StructureDefinition/tumor"
       },
-      "name" : "Tumor",
-      "description" : "Tumor",
+      "name" : "Profile Tumor",
+      "description" : "Profile of a tumor",
       "exampleBoolean" : false
     },
     {
@@ -757,7 +757,7 @@
       "reference" : {
         "reference" : "StructureDefinition/tumor-disorder"
       },
-      "name" : "Tumor Disorder",
+      "name" : "Profile Tumor Disorder",
       "description" : "Profile for a tumor disorder",
       "exampleBoolean" : false
     },
@@ -769,8 +769,8 @@
       "reference" : {
         "reference" : "StructureDefinition/tumor-specimen"
       },
-      "name" : "Tumor Specimen",
-      "description" : "Tumor specimen",
+      "name" : "Profile Tumor Specimen",
+      "description" : "Profile of a tumor specimen",
       "exampleBoolean" : false
     },
     {
@@ -887,9 +887,9 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/vs-diagnosesicherung-icdo3"
+        "reference" : "ValueSet/diagnosesicherung-icdo3"
       },
-      "name" : "Diagnosesicherung ICD-O-3",
+      "name" : "ValieSet Diagnosesicherung ICD-O-3",
       "description" : "ValueSet für die Diagnosesicherungscodes der ICD-O-3",
       "exampleBoolean" : false
     },
@@ -899,9 +899,9 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/recist-asstimepoint-response-vs"
+        "reference" : "ValueSet/recist-asstimepoint-response"
       },
-      "name" : "recist-timepoint-response-vs",
+      "name" : "ValueSet Recist Timepoint Response",
       "description" : "Defines the valid values for the recist assessment response observation resource",
       "exampleBoolean" : false
     },
@@ -1367,7 +1367,7 @@
         "reference" : "MedicationStatement/exa-medication-statement-caelyx"
       },
       "name" : "exa-medication-statement-caelyx",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement"
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement"
     },
     {
       "extension" : [{

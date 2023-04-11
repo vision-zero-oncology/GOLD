@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="a0dab905-55b0-482a-88b4-6ce28158968b"/>
+  <id value="627f5aae-4979-4f1d-8327-9b3b601868ed"/>
   <meta>
-    <lastUpdated value="2023-04-06T11:42:20.006+00:00"/>
+    <lastUpdated value="2023-04-11T09:33:35.990+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -8037,7 +8037,7 @@
         <title value="ValueSet Morphology SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-04-06T11:42:20+00:00"/>
+        <date value="2023-04-11T09:33:35+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -8061,8 +8061,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:177b1a5f-6b35-4ab5-90cc-df52c944bd2d"/>
-          <timestamp value="2023-04-06T11:44:44+00:00"/>
+          <identifier value="urn:uuid:204d2493-abf5-42f4-9342-088787ab04be"/>
+          <timestamp value="2023-04-11T09:35:15+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13135,7 +13135,7 @@
         <title value="ValueSet TNM T Staging Type LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-04-06T11:42:20+00:00"/>
+        <date value="2023-04-11T09:33:35+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13153,8 +13153,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:4ec763cd-59fc-4748-9117-7627f4d0d0a8"/>
-          <timestamp value="2023-04-06T11:45:18+00:00"/>
+          <identifier value="urn:uuid:c7f412a5-7854-46b9-9e25-13341d5e69fb"/>
+          <timestamp value="2023-04-11T09:35:42+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13242,7 +13242,7 @@
         <title value="ValueSet TNM N Staging Type LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-04-06T11:42:20+00:00"/>
+        <date value="2023-04-11T09:33:35+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13260,8 +13260,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:028c3eda-a355-4b1b-a8cf-e741dd0f12fa"/>
-          <timestamp value="2023-04-06T11:45:18+00:00"/>
+          <identifier value="urn:uuid:1e836ef6-27e2-4e5a-bf5b-3a8269a2a14d"/>
+          <timestamp value="2023-04-11T09:35:43+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13289,6 +13289,176 @@
             <system value="http://loinc.org"/>
             <code value="21912-1"/>
             <display value="Regional lymph nodes.other [Class] Cancer"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3"/>
+    <resource>
+      <ValueSet>
+        <id value="diagnosesicherung-icdo3"/>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 8 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-diagnosesicherung-icdo3.html">Diagnosesicherung ICD-O-3 v0.1.0 (CodeSystem)</a>
+            </p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-0"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-0">0</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Nur Totenschein</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-1"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-1">1</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Klinisch</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-2"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-2">2</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Klinische Diagnostik</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-4"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-4">4</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Spezifische Tumor-Marker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-5"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-5">5</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Zytologie</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-6"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-6">6</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Histologische Untersuchung einer Metastase</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-7"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-7">7</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Histologische Untersuchung eines Primärtumors</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-9"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-9">9</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Unbekannt</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3"/>
+        <version value="0.1.0"/>
+        <name value="DiagnosesicherungICDO3"/>
+        <title value="ValieSet Diagnosesicherung ICD-O-3"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-04-11T09:33:35+00:00"/>
+        <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+        <contact>
+          <name value="Berlin Institute of Health at Charité (BIH)"/>
+          <telecom>
+            <system value="url"/>
+            <value value="https://www.bihealth.org/"/>
+          </telecom>
+        </contact>
+        <description value="ValueSet für die Diagnosesicherungscodes der ICD-O-3"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <copyright value="CC-BY-SA-4.0"/>
+        <expansion>
+          <identifier value="urn:uuid:e5f8112d-10c4-42cb-9b6f-e5863756b706"/>
+          <timestamp value="2023-04-11T09:35:54+00:00"/>
+          <total value="8"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3|0.1.0"/>
+          </parameter>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="0"/>
+            <display value="Nur Totenschein"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="1"/>
+            <display value="Klinisch"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="2"/>
+            <display value="Klinische Diagnostik"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="4"/>
+            <display value="Spezifische Tumor-Marker"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="5"/>
+            <display value="Zytologie"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="6"/>
+            <display value="Histologische Untersuchung einer Metastase"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="7"/>
+            <display value="Histologische Untersuchung eines Primärtumors"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="9"/>
+            <display value="Unbekannt"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -13349,7 +13519,7 @@
         <title value="ValueSet TNM M Staging Type LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-04-06T11:42:20+00:00"/>
+        <date value="2023-04-11T09:33:35+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13367,8 +13537,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:cb541e61-5ef7-483d-b78f-317957cc0064"/>
-          <timestamp value="2023-04-06T11:45:40+00:00"/>
+          <identifier value="urn:uuid:6c13a79b-50f3-4e52-8197-8c4507f97aa5"/>
+          <timestamp value="2023-04-11T09:36:04+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13480,7 +13650,7 @@
         <title value="ValueSet ECOG Performance Status SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-04-06T11:42:20+00:00"/>
+        <date value="2023-04-11T09:33:35+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -13501,8 +13671,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:b779ac53-4f03-4d51-a113-0aacd79265e9"/>
-          <timestamp value="2023-04-06T11:45:40+00:00"/>
+          <identifier value="urn:uuid:643b30a1-3367-4b91-88e3-9fa68ac9582f"/>
+          <timestamp value="2023-04-11T09:36:04+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -21581,7 +21751,7 @@
         <title value="ValueSet Topography SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-04-06T11:42:20+00:00"/>
+        <date value="2023-04-11T09:33:35+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -21605,8 +21775,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:a3c9a1ae-8fdb-44ca-9f4f-756cf23118bc"/>
-          <timestamp value="2023-04-06T11:45:40+00:00"/>
+          <identifier value="urn:uuid:883f8395-28e1-4306-8ed1-5ae48033f618"/>
+          <timestamp value="2023-04-11T09:36:04+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -26695,7 +26865,7 @@
         <title value="ValueSet Histologic Grade SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-04-06T11:42:20+00:00"/>
+        <date value="2023-04-11T09:33:35+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -26713,8 +26883,8 @@
         </jurisdiction>
         <copyright value="This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."/>
         <expansion>
-          <identifier value="urn:uuid:117a091b-6639-49f8-ad7b-fb8966a727d1"/>
-          <timestamp value="2023-04-06T11:45:44+00:00"/>
+          <identifier value="urn:uuid:d41085e7-feaf-41e5-84fd-5f114814a12e"/>
+          <timestamp value="2023-04-11T09:36:08+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -26804,7 +26974,7 @@
         <title value="ValueSet TNM Classification Type LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-04-06T11:42:20+00:00"/>
+        <date value="2023-04-11T09:33:35+00:00"/>
         <publisher value="Berlin Institute of Health at Charité (BIH)"/>
         <contact>
           <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -26822,8 +26992,8 @@
         </jurisdiction>
         <copyright value="CC-BY-SA-4.0"/>
         <expansion>
-          <identifier value="urn:uuid:bf052e0b-4d39-499b-8b12-310c935e17a8"/>
-          <timestamp value="2023-04-06T11:45:52+00:00"/>
+          <identifier value="urn:uuid:aa860023-d963-4a2b-bc6b-3eda0f7354c1"/>
+          <timestamp value="2023-04-11T09:36:12+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -26846,176 +27016,6 @@
             <system value="http://loinc.org"/>
             <code value="21902-2"/>
             <display value="Stage group.pathology Cancer"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3"/>
-    <resource>
-      <ValueSet>
-        <id value="vs-diagnosesicherung-icdo3"/>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 8 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-cs-diagnosesicherung-icdo3.html">Diagnosesicherung ICD-O-3 v0.1.0 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-0"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-0">0</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Nur Totenschein</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-1"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-1">1</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Klinisch</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-2"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-2">2</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Klinische Diagnostik</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-4"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-4">4</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Spezifische Tumor-Marker</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-5"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-5">5</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Zytologie</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-6"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-6">6</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Histologische Untersuchung einer Metastase</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-7"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-7">7</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Histologische Untersuchung eines Primärtumors</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-9"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-9">9</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Unbekannt</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3"/>
-        <version value="0.1.0"/>
-        <name value="DiagnosesicherungICDO3"/>
-        <title value="Diagnosesicherung ICD-O-3"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2023-04-06T11:42:20+00:00"/>
-        <publisher value="Berlin Institute of Health at Charité (BIH)"/>
-        <contact>
-          <name value="Berlin Institute of Health at Charité (BIH)"/>
-          <telecom>
-            <system value="url"/>
-            <value value="https://www.bihealth.org/"/>
-          </telecom>
-        </contact>
-        <description value="ValueSet für die Diagnosesicherungscodes der ICD-O-3"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DEU"/>
-          </coding>
-        </jurisdiction>
-        <copyright value="CC-BY-SA-4.0"/>
-        <expansion>
-          <identifier value="urn:uuid:4a80a01d-7800-4813-bffd-4638aaef2d96"/>
-          <timestamp value="2023-04-06T11:45:57+00:00"/>
-          <total value="8"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="0"/>
-            <display value="Nur Totenschein"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="1"/>
-            <display value="Klinisch"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="2"/>
-            <display value="Klinische Diagnostik"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="4"/>
-            <display value="Spezifische Tumor-Marker"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="5"/>
-            <display value="Zytologie"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="6"/>
-            <display value="Histologische Untersuchung einer Metastase"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="7"/>
-            <display value="Histologische Untersuchung eines Primärtumors"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="9"/>
-            <display value="Unbekannt"/>
           </contains>
         </expansion>
       </ValueSet>

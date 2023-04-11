@@ -15,9 +15,9 @@
   fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "Tumor"] ; # 
-  fhir:title [ fhir:v "Tumor"] ; # 
+  fhir:title [ fhir:v "Profile Tumor"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-04-06T11:42:20+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-04-11T09:33:35+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;
@@ -26,7 +26,7 @@
        fhir:value [ fhir:v "https://www.bihealth.org/" ]
      ] )
   ] ) ; # 
-  fhir:description [ fhir:v "Tumor"] ; # 
+  fhir:description [ fhir:v "Profile of a tumor"] ; # 
   fhir:jurisdiction ( [
      fhir:coding ( [
        fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;

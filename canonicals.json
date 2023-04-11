@@ -91,18 +91,18 @@
     "name" : "PR_MedicationAdministration"
   },
   {
+    "id" : "medication-statement",
+    "type" : "StructureDefinition",
+    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement",
+    "version" : "0.1.0",
+    "name" : "PR_MedicationStatement"
+  },
+  {
     "id" : "part-of",
     "type" : "StructureDefinition",
     "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of",
     "version" : "0.1.0",
     "name" : "PartOf"
-  },
-  {
-    "id" : "pr-medication-statement",
-    "type" : "StructureDefinition",
-    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement",
-    "version" : "0.1.0",
-    "name" : "PR_MedicationStatement"
   },
   {
     "id" : "probandin",
@@ -182,6 +182,13 @@
     "name" : "Vital_Signs_Base"
   },
   {
+    "id" : "diagnosesicherung-icdo3",
+    "type" : "ValueSet",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3",
+    "version" : "0.1.0",
+    "name" : "DiagnosesicherungICDO3"
+  },
+  {
     "id" : "ecog-performance-status-snomed",
     "type" : "ValueSet",
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed",
@@ -210,9 +217,9 @@
     "name" : "VS_Morphology_SNOMED"
   },
   {
-    "id" : "recist-asstimepoint-response-vs",
+    "id" : "recist-asstimepoint-response",
     "type" : "ValueSet",
-    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response-vs",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response",
     "version" : "0.1.0",
     "name" : "RecistAssessmentTimepointResponseVS"
   },
@@ -390,12 +397,5 @@
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit",
     "version" : "0.1.0",
     "name" : "VS_TypeOfStudyArm_NCIT"
-  },
-  {
-    "id" : "vs-diagnosesicherung-icdo3",
-    "type" : "ValueSet",
-    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3",
-    "version" : "0.1.0",
-    "name" : "DiagnosesicherungICDO3"
   }
 ]

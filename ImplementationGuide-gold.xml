@@ -484,8 +484,8 @@
       <reference>
         <reference value="StructureDefinition/clinical-study"/>
       </reference>
-      <name value="Clinical Study"/>
-      <description value="This profile describes a clinical study in which a patient takes part."/>
+      <name value="Profile Clinical Study"/>
+      <description value="Profile to describe a clinical study in which a patient takes part."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -539,8 +539,8 @@
       <reference>
         <reference value="StructureDefinition/medication-administration"/>
       </reference>
-      <name value="MedicationAdministration"/>
-      <description value="Describes the event of a patient consuming or otherwise being administered a medication."/>
+      <name value="Profile MedicationAdministration"/>
+      <description value="Profile to describe the event of a patient consuming or otherwise being administered a medication."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -548,10 +548,10 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/pr-medication-statement"/>
+        <reference value="StructureDefinition/medication-statement"/>
       </reference>
-      <name value="MedicationStatement"/>
-      <description value="A record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future."/>
+      <name value="Profile MedicationStatement"/>
+      <description value="Profile to capture a record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -561,7 +561,7 @@
       <reference>
         <reference value="StructureDefinition/probandin"/>
       </reference>
-      <name value="ProbandIn"/>
+      <name value="Profile ProbandIn"/>
       <description value="Dieses Profil beschreibt eine Proband*in."/>
       <exampleBoolean value="false"/>
     </resource>
@@ -583,8 +583,8 @@
       <reference>
         <reference value="StructureDefinition/tumor"/>
       </reference>
-      <name value="Tumor"/>
-      <description value="Tumor"/>
+      <name value="Profile Tumor"/>
+      <description value="Profile of a tumor"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -594,7 +594,7 @@
       <reference>
         <reference value="StructureDefinition/tumor-disorder"/>
       </reference>
-      <name value="Tumor Disorder"/>
+      <name value="Profile Tumor Disorder"/>
       <description value="Profile for a tumor disorder"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -605,8 +605,8 @@
       <reference>
         <reference value="StructureDefinition/tumor-specimen"/>
       </reference>
-      <name value="Tumor Specimen"/>
-      <description value="Tumor specimen"/>
+      <name value="Profile Tumor Specimen"/>
+      <description value="Profile of a tumor specimen"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -713,9 +713,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/vs-diagnosesicherung-icdo3"/>
+        <reference value="ValueSet/diagnosesicherung-icdo3"/>
       </reference>
-      <name value="Diagnosesicherung ICD-O-3"/>
+      <name value="ValieSet Diagnosesicherung ICD-O-3"/>
       <description value="ValueSet für die Diagnosesicherungscodes der ICD-O-3"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -724,9 +724,9 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
-        <reference value="ValueSet/recist-asstimepoint-response-vs"/>
+        <reference value="ValueSet/recist-asstimepoint-response"/>
       </reference>
-      <name value="recist-timepoint-response-vs"/>
+      <name value="ValueSet Recist Timepoint Response"/>
       <description value="Defines the valid values for the recist assessment response observation resource"/>
       <exampleBoolean value="false"/>
     </resource>
@@ -1153,7 +1153,7 @@
         <reference value="MedicationStatement/exa-medication-statement-caelyx"/>
       </reference>
       <name value="exa-medication-statement-caelyx"/>
-      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">

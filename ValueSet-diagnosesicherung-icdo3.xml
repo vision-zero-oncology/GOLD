@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="diagnosesicherung-icdo3"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-cs-diagnosesicherung-icdo3.html"><code>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</code></a></li></ul></div>
+  </text>
+  <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3"/>
+  <version value="0.1.0"/>
+  <name value="DiagnosesicherungICDO3"/>
+  <title value="ValieSet Diagnosesicherung ICD-O-3"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-04-11T09:33:35+00:00"/>
+  <publisher value="Berlin Institute of Health at Charité (BIH)"/>
+  <contact>
+    <name value="Berlin Institute of Health at Charité (BIH)"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.bihealth.org/"/>
+    </telecom>
+  </contact>
+  <description value="ValueSet für die Diagnosesicherungscodes der ICD-O-3"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DEU"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="CC-BY-SA-4.0"/>
+  <compose>
+    <include>
+      <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+    </include>
+  </compose>
+</ValueSet>

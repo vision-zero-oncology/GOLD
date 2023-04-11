@@ -561,8 +561,8 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study> ;
          fhir:reference [ fhir:v "StructureDefinition/clinical-study" ]
        ] ;
-       fhir:name [ fhir:v "Clinical Study" ] ;
-       fhir:description [ fhir:v "This profile describes a clinical study in which a patient takes part." ] ;
+       fhir:name [ fhir:v "Profile Clinical Study" ] ;
+       fhir:description [ fhir:v "Profile to describe a clinical study in which a patient takes part." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -621,8 +621,8 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration> ;
          fhir:reference [ fhir:v "StructureDefinition/medication-administration" ]
        ] ;
-       fhir:name [ fhir:v "MedicationAdministration" ] ;
-       fhir:description [ fhir:v "Describes the event of a patient consuming or otherwise being administered a medication." ] ;
+       fhir:name [ fhir:v "Profile MedicationAdministration" ] ;
+       fhir:description [ fhir:v "Profile to describe the event of a patient consuming or otherwise being administered a medication." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -630,11 +630,11 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement> ;
-         fhir:reference [ fhir:v "StructureDefinition/pr-medication-statement" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement> ;
+         fhir:reference [ fhir:v "StructureDefinition/medication-statement" ]
        ] ;
-       fhir:name [ fhir:v "MedicationStatement" ] ;
-       fhir:description [ fhir:v "A record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future." ] ;
+       fhir:name [ fhir:v "Profile MedicationStatement" ] ;
+       fhir:description [ fhir:v "Profile to capture a record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -645,7 +645,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin> ;
          fhir:reference [ fhir:v "StructureDefinition/probandin" ]
        ] ;
-       fhir:name [ fhir:v "ProbandIn" ] ;
+       fhir:name [ fhir:v "Profile ProbandIn" ] ;
        fhir:description [ fhir:v "Dieses Profil beschreibt eine Proband*in." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -669,8 +669,8 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor> ;
          fhir:reference [ fhir:v "StructureDefinition/tumor" ]
        ] ;
-       fhir:name [ fhir:v "Tumor" ] ;
-       fhir:description [ fhir:v "Tumor" ] ;
+       fhir:name [ fhir:v "Profile Tumor" ] ;
+       fhir:description [ fhir:v "Profile of a tumor" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -681,7 +681,7 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder> ;
          fhir:reference [ fhir:v "StructureDefinition/tumor-disorder" ]
        ] ;
-       fhir:name [ fhir:v "Tumor Disorder" ] ;
+       fhir:name [ fhir:v "Profile Tumor Disorder" ] ;
        fhir:description [ fhir:v "Profile for a tumor disorder" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -693,8 +693,8 @@
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen> ;
          fhir:reference [ fhir:v "StructureDefinition/tumor-specimen" ]
        ] ;
-       fhir:name [ fhir:v "Tumor Specimen" ] ;
-       fhir:description [ fhir:v "Tumor specimen" ] ;
+       fhir:name [ fhir:v "Profile Tumor Specimen" ] ;
+       fhir:description [ fhir:v "Profile of a tumor specimen" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -810,10 +810,10 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3> ;
-         fhir:reference [ fhir:v "ValueSet/vs-diagnosesicherung-icdo3" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3> ;
+         fhir:reference [ fhir:v "ValueSet/diagnosesicherung-icdo3" ]
        ] ;
-       fhir:name [ fhir:v "Diagnosesicherung ICD-O-3" ] ;
+       fhir:name [ fhir:v "ValieSet Diagnosesicherung ICD-O-3" ] ;
        fhir:description [ fhir:v "ValueSet für die Diagnosesicherungscodes der ICD-O-3" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -822,10 +822,10 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response-vs> ;
-         fhir:reference [ fhir:v "ValueSet/recist-asstimepoint-response-vs" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response> ;
+         fhir:reference [ fhir:v "ValueSet/recist-asstimepoint-response" ]
        ] ;
-       fhir:name [ fhir:v "recist-timepoint-response-vs" ] ;
+       fhir:name [ fhir:v "ValueSet Recist Timepoint Response" ] ;
        fhir:description [ fhir:v "Defines the valid values for the recist assessment response observation resource" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
@@ -1313,8 +1313,8 @@
        ] ;
        fhir:name [ fhir:v "exa-medication-statement-caelyx" ] ;
        fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/pr-medication-statement>
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement>
        ]
      ] [
        fhir:extension ( [

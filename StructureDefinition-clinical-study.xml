@@ -46,9 +46,9 @@
   <url value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"/>
   <version value="0.1.0"/>
   <name value="Clinical_Study"/>
-  <title value="Clinical Study"/>
+  <title value="Profile Clinical Study"/>
   <status value="draft"/>
-  <date value="2023-04-06T11:42:20+00:00"/>
+  <date value="2023-04-11T09:33:35+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
@@ -57,7 +57,7 @@
       <value value="https://www.bihealth.org/"/>
     </telecom>
   </contact>
-  <description value="This profile describes a clinical study in which a patient takes part."/>
+  <description value="Profile to describe a clinical study in which a patient takes part."/>
   <jurisdiction>
     <coding>
       <system value="urn:iso:std:iso:3166"/>
