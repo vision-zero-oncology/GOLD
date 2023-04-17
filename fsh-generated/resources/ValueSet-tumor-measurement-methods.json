@@ -1,0 +1,54 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VS_Tumor_Measurement_Methods",
+  "id": "tumor-measurement-methods",
+  "title": "ValueSet Tumor Measurement Methods",
+  "description": "Codes for methods of measuring tumor size, including physical examination, pathology, and imaging.",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods",
+  "compose": {
+    "include": [
+      {
+        "system": "http://snomed.info/sct",
+        "concept": [
+          {
+            "code": "787377000",
+            "display": "Gross examination and sampling of tissue specimen (procedure)"
+          },
+          {
+            "code": "104157003",
+            "display": "Light microscopy (procedure)"
+          },
+          {
+            "code": "5880005",
+            "display": "Physical examination procedure (procedure)"
+          },
+          {
+            "code": "16310003",
+            "display": "Diagnostic ultrasonography (procedure)"
+          },
+          {
+            "code": "113091000",
+            "display": "Magnetic resonance imaging (procedure)"
+          },
+          {
+            "code": "77477000",
+            "display": "Computerized axial tomography (procedure)"
+          },
+          {
+            "code": "82918005",
+            "display": "Positron emission tomography (procedure)"
+          },
+          {
+            "code": "363680008",
+            "display": "Radiographic imaging procedure (procedure)"
+          },
+          {
+            "code": "363679005",
+            "display": "Imaging (procedure)"
+          }
+        ]
+      }
+    ]
+  }
+}

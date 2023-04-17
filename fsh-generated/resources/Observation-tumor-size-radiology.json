@@ -1,0 +1,72 @@
+{
+  "resourceType": "Observation",
+  "id": "tumor-size-radiology",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "21889-1",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "33728-7",
+            "system": "http://loinc.org",
+            "display": "Size.maximum dimension in Tumor"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 12,
+        "code": "mm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mm"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "33729-5",
+            "system": "http://loinc.org",
+            "display": "Size additional dimension in Tumor"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 0.5,
+        "code": "mm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mm"
+      }
+    }
+  ],
+  "status": "final",
+  "method": {
+    "coding": [
+      {
+        "code": "113091000",
+        "system": "http://snomed.info/sct",
+        "display": "Magnetic resonance imaging (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/cancer-patient-eve-anyperson"
+  },
+  "focus": [
+    {
+      "reference": "BodyStructure/tumor-lobular-carcinoma-left-breast"
+    }
+  ],
+  "effectiveDateTime": "2019-05-02"
+}
