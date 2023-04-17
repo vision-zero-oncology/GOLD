@@ -393,3 +393,100 @@ Description: "Example RECIST assessment timepoint response observation."
 * effectiveDateTime = "2022-07-19"
 * valueCodeableConcept = $RID#11514 "stable disease"
 
+// TumorMeasurement
+Profile: TumorMeasurement
+Parent:  Observation
+Id: tumor-measurement
+Title: "Profile Tumor Measurment"
+Description:  "Profile for recording measurements of a tumor like the longest diameter or volume. The resource can be used for different measurement methods (e.g. methods in pathology, radiology or physical exams)."
+// LOINC code indicating this is a tumor size observation
+* code = $LNC#21889-1 //"Size Tumor"
+* subject ^short = "The patient whose tumor was measured."
+* subject 1..1
+* subject only Reference(Patient)
+* focus 0..1
+* focus only Reference(Tumor)
+* focus ^short = "Identifies a tumor that has NOT been removed from the body"
+* focus ^definition = "Reference to a BodyStructure resource conforming to Tumor."
+* focus ^comment = "Use **only** when the tumor **has not** been removed from the body. If the tumor has been removed, use `specimen` instead and leave `focus` empty."
+* specimen only Reference(Specimen)
+* specimen ^short = "Identifies a tumor that has been removed from the body"
+* specimen ^definition = "Reference to a Specimen resource."
+* specimen ^comment = "Use **only** when the tumor **has** been removed from the body. If the tumor has been not removed, use `focus` instead and leave `specimen` empty."
+* obeys must-have-focus-or-specimen-invariant
+* method from VS_Tumor_Measurement_Methods (extensible)
+* method ^short = "Method for measuring the tumor"
+* method ^definition = "Method for measuring the tumor"
+* method ^comment = "Tumors are typically measured via gross pathology after excision, or via diagnostic imaging or physical exam prior to removal. If `specimen` is set, `method` is expected to be a \"gross pathology\" code. If `focus` is set, `method` is expected to be a type of diagnostic imaging or physical exam."
+* component ^slicing.discriminator.type = #pattern
+* component ^slicing.discriminator.path = "code"
+* component ^slicing.rules = #open
+* component contains
+    longestDimension 1..1 and
+    shortAxis 0..1 and
+    area 0..1 and
+    volume 0..1
+* component[longestDimension] ^short = "Longest tumor dimension (mm)"
+* component[longestDimension] ^definition = "The longest tumor dimension in mm."
+* component[longestDimension].code = $LNC#33728-7 // "Size.maximum dimension in Tumor"
+* component[longestDimension].value[x] only Quantity
+* component[longestDimension].valueQuantity from VS_Tumor_Size_Units (required)
+
+* component[shortAxis] ^short = "short axis of the tumor lesion (mm or cm)"
+* component[shortAxis] ^definition = "short axis in mm or cm."
+* component[shortAxis].code = $LNC#33729-5 "Size additional dimension in Tumor"
+* component[shortAxis].value[x] only Quantity
+* component[shortAxis].valueQuantity from VS_Tumor_Size_Units (required)
+
+* component[area] ^short = "area of the tumor (mm²)"
+* component[area] ^definition = "tumor area in mm²."
+//* component[area].code = LNC#33729-5 // "Area of the Tumor"
+* component[area].value[x] only Quantity
+* component[area].valueQuantity from VS_Tumor_Area_Units (required)
+
+* component[volume] ^short = "tumor volume (ml)"
+* component[volume] ^definition = "Tumor volume in ml."
+//* component[volume].code = LNC#33729-5 // "Volume of the Tumor"
+* component[volume].value[x] only Quantity
+* component[volume].valueQuantity from VS_Tumor_Volume_Units (required)
+
+// Group the Must Support to make it easier to see what's what
+* subject and code and effective[x] and component and method and specimen and focus MS
+
+// This invariant has been exhaustively tested with the FHIR validator
+Invariant: must-have-focus-or-specimen-invariant
+Description: "Either `focus` OR `specimen` MUST be populated"
+Expression: "(focus.exists() or specimen.exists()) and (focus.exists() and specimen.exists()).not()"
+Severity: #error
+
+
+// Example Tumor size
+Instance: tumor-size-pathology 
+InstanceOf: TumorMeasurement
+Usage: #example
+Description: "Example of a resource conforming to the tumor size profile in pathology."
+* status = #final
+* code = $LNC#21889-1
+* method = $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
+* subject = Reference(Patient/cancer-patient-eve-anyperson)
+* specimen = Reference(Tumor/any-specimen-of-patient-eve-anyperson)
+* component[longestDimension].valueQuantity = 12 'mm' "mm"
+* component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
+* component[volume].valueQuantity = 1000 'ml' "ml"
+* component[volume].code = $UCUM#ml
+* effectiveDateTime = "2019-05-01"
+
+Instance: tumor-size-radiology 
+InstanceOf: TumorMeasurement
+Usage: #example
+Description: "Example of a resource conforming to the tumor size profile in radiology (MRI bidimensional measurement)."
+* status = #final
+* code = $LNC#21889-1
+* method = $SCT#113091000 "Magnetic resonance imaging (procedure)"
+* subject = Reference(Patient/cancer-patient-eve-anyperson)
+* focus = Reference(BodyStructure/tumor-lobular-carcinoma-left-breast)
+* component[longestDimension].valueQuantity = 12 'mm' "mm"
+* component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
+* component[shortAxis].valueQuantity = 0.5 'mm' "mm"
+* component[shortAxis].code = $LNC#33729-5 "Size additional dimension in Tumor"
+* effectiveDateTime = "2019-05-02"
