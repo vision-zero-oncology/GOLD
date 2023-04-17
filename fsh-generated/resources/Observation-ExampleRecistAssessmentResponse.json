@@ -1,0 +1,32 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleRecistAssessmentResponse",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "11510",
+        "system": "http://radlex.org/RID",
+        "display": "Therapeutic response (observable entity)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-07-19",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "11514",
+        "system": "http://radlex.org/RID",
+        "display": "stable disease"
+      }
+    ]
+  }
+}

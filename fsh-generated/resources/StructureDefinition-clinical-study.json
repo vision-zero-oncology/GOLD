@@ -1,0 +1,325 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "clinical-study",
+  "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study",
+  "name": "Clinical_Study",
+  "title": "Profile Clinical Study",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "description": "Profile to describe a clinical study in which a patient takes part.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "BRIDG5.1",
+      "uri": "https://bridgmodel.nci.nih.gov",
+      "name": "BRIDG 5.1 Mapping"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "clinicaltrials-gov",
+      "uri": "http://clinicaltrials.gov",
+      "name": "ClinicalTrials.gov Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "ResearchStudy",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/ResearchStudy",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "ResearchStudy.identifier",
+        "path": "ResearchStudy.identifier",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:eudraCT",
+        "path": "ResearchStudy.identifier",
+        "sliceName": "eudraCT",
+        "short": "Eudra CT Number",
+        "min": 0,
+        "max": "1",
+        "patternIdentifier": {
+          "system": "https://www.clinicaltrialsregister.eu"
+        }
+      },
+      {
+        "id": "ResearchStudy.identifier:eudraCT.system",
+        "path": "ResearchStudy.identifier.system",
+        "min": 1,
+        "patternUri": "https://www.clinicaltrialsregister.eu",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:eudraCT.value",
+        "path": "ResearchStudy.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:NCT",
+        "path": "ResearchStudy.identifier",
+        "sliceName": "NCT",
+        "short": "NCT number",
+        "min": 0,
+        "max": "1",
+        "patternIdentifier": {
+          "system": "http://clinicaltrials.gov"
+        }
+      },
+      {
+        "id": "ResearchStudy.identifier:NCT.system",
+        "path": "ResearchStudy.identifier.system",
+        "min": 1,
+        "patternUri": "http://clinicaltrials.gov",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:NCT.value",
+        "path": "ResearchStudy.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:PMID",
+        "path": "ResearchStudy.identifier",
+        "sliceName": "PMID",
+        "short": "Pubmed ID",
+        "min": 0,
+        "max": "1",
+        "patternIdentifier": {
+          "system": "http://www.ncbi.nlm.nih.gov/pubmed"
+        }
+      },
+      {
+        "id": "ResearchStudy.identifier:PMID.system",
+        "path": "ResearchStudy.identifier.system",
+        "min": 1,
+        "patternUri": "http://www.ncbi.nlm.nih.gov/pubmed",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:PMID.value",
+        "path": "ResearchStudy.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:DOI",
+        "path": "ResearchStudy.identifier",
+        "sliceName": "DOI",
+        "short": "Digital Object Identifier",
+        "min": 0,
+        "max": "1",
+        "patternIdentifier": {
+          "system": "https://doi.org"
+        }
+      },
+      {
+        "id": "ResearchStudy.identifier:DOI.system",
+        "path": "ResearchStudy.identifier.system",
+        "min": 1,
+        "patternUri": "https://doi.org",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:DOI.value",
+        "path": "ResearchStudy.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:URI",
+        "path": "ResearchStudy.identifier",
+        "sliceName": "URI",
+        "short": "Uniform Resource Identifier",
+        "min": 0,
+        "max": "1",
+        "patternIdentifier": {
+          "system": "urn:ietf:rfc:3986"
+        }
+      },
+      {
+        "id": "ResearchStudy.identifier:URI.system",
+        "path": "ResearchStudy.identifier.system",
+        "min": 1,
+        "patternUri": "urn:ietf:rfc:3986",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:URI.value",
+        "path": "ResearchStudy.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:DRKS",
+        "path": "ResearchStudy.identifier",
+        "sliceName": "DRKS",
+        "short": "Deusches Register Klinischer Studien",
+        "min": 0,
+        "max": "1",
+        "patternIdentifier": {
+          "system": "https://www.drks.de"
+        }
+      },
+      {
+        "id": "ResearchStudy.identifier:DRKS.system",
+        "path": "ResearchStudy.identifier.system",
+        "min": 1,
+        "patternUri": "https://www.drks.de",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.identifier:DRKS.value",
+        "path": "ResearchStudy.identifier.value",
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.title",
+        "path": "ResearchStudy.title",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.status",
+        "path": "ResearchStudy.status",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.primaryPurposeType",
+        "path": "ResearchStudy.primaryPurposeType",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.phase",
+        "path": "ResearchStudy.phase",
+        "min": 1,
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://hl7.org/fhir/ValueSet/research-study-phase"
+        }
+      },
+      {
+        "id": "ResearchStudy.category",
+        "path": "ResearchStudy.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.category:studyCategory",
+        "path": "ResearchStudy.category",
+        "sliceName": "studyCategory",
+        "min": 1,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit"
+        }
+      },
+      {
+        "id": "ResearchStudy.category:studyDesign",
+        "path": "ResearchStudy.category",
+        "sliceName": "studyDesign",
+        "min": 0,
+        "max": "*",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit"
+        }
+      },
+      {
+        "id": "ResearchStudy.category:typeOfBlinding",
+        "path": "ResearchStudy.category",
+        "sliceName": "typeOfBlinding",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit"
+        }
+      },
+      {
+        "id": "ResearchStudy.category:typeOfRandomization",
+        "path": "ResearchStudy.category",
+        "sliceName": "typeOfRandomization",
+        "min": 0,
+        "max": "1",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit"
+        }
+      },
+      {
+        "id": "ResearchStudy.focus",
+        "path": "ResearchStudy.focus",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/study-focus-ncit"
+        }
+      },
+      {
+        "id": "ResearchStudy.arm",
+        "path": "ResearchStudy.arm",
+        "mustSupport": true
+      },
+      {
+        "id": "ResearchStudy.arm.type",
+        "path": "ResearchStudy.arm.type",
+        "mustSupport": true,
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit"
+        }
+      }
+    ]
+  }
+}

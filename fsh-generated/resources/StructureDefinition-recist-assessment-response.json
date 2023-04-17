@@ -1,0 +1,112 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "recist-assessment-response",
+  "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response",
+  "name": "RecistAssessmentResponse",
+  "title": "Profile RECIST timepoint assessment response",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "description": "Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/\nPlease note there is no assessment timepoint response for the baseline assessment.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.partOf",
+        "path": "Observation.partOf",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/ImagingStudy"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "11510",
+              "system": "http://radlex.org/RID"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response"
+        }
+      }
+    ]
+  }
+}

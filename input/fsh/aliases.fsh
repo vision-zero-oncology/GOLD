@@ -6,13 +6,16 @@ Alias: $NCIT = http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 Alias: $RID = http://radlex.org/RID
 Alias: $ICD10GM = http://fhir.de/CodeSystem/bfarm/icd-10-gm
 Alias: $iso3166 = urn:iso:std:iso:3166
+Alias: $vs-atc = http://fhir.de/ValueSet/bfarm/atc
+Alias: $cs-atc = http://fhir.de/CodeSystem/bfarm/atc
+Alias: $standardterms = http://standardterms.edqm.eu
 
 // From Terminology.hl7.org
 Alias: $ClinStatus = http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $VerStatus = http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $ObsCat = http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $ICDO3 = http://terminology.hl7.org/CodeSystem/icd-o-3
-Alias: $StudyPrimPurpType = http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html
+Alias: $StudyPrimPurpType = http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type
 Alias: $StudyObjectiveType = http://terminology.hl7.org/CodeSystem/research-study-objective-type
 Alias: $StudyPhase = http://terminology.hl7.org/CodeSystem/research-study-phase
 

@@ -1,0 +1,270 @@
+{
+  "resourceType": "Observation",
+  "id": "example-tnm-ypT1bpN139snL0V0Pn1cM0R0",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "258235000",
+        "system": "http://snomed.info/sct",
+        "display": "International Union Against Cancer (tumor staging)"
+      },
+      {
+        "code": "21902-2",
+        "system": "http://loinc.org",
+        "display": "Stage group.pathology Cancer"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "277649004",
+            "system": "http://snomed.info/sct",
+            "display": "y - During therapy/following treatment (tumor staging)"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "y",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "y"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "p",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "p"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21899-0",
+            "system": "http://loinc.org",
+            "display": "Primary tumor.pathology Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "T1b",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "T1b"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "p",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "p"
+              }
+            ]
+          }
+        },
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "sn",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "(sn)"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21900-6",
+            "system": "http://loinc.org",
+            "display": "Regional lymph nodes.pathology [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "N1",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "N1"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "c",
+                "system": "urn:oid:2.16.840.1.113883.15.16",
+                "display": "c"
+              }
+            ]
+          }
+        }
+      ],
+      "code": {
+        "coding": [
+          {
+            "code": "21907-1",
+            "system": "http://loinc.org",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "M0",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "M0"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "33739-4",
+            "system": "http://loinc.org",
+            "display": "Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "L0",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "L0"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "33740-2",
+            "system": "http://loinc.org",
+            "display": "Venous.large vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "V0",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "V0"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "92837-4",
+            "system": "http://loinc.org",
+            "display": "Perineural invasion [Presence] in Cancer specimen"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Pn1",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "Pn1"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "21893-3",
+            "system": "http://loinc.org",
+            "display": "Regional lymph nodes positive [#] Specimen"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 3,
+        "code": "1",
+        "system": "http://unitsofmeasure.org"
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "21894-1",
+            "system": "http://loinc.org",
+            "display": "Regional lymph nodes examined [#] Specimen"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 9,
+        "code": "1",
+        "system": "http://unitsofmeasure.org"
+      }
+    }
+  ],
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "IIIB",
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "display": "Stage IIIB"
+      }
+    ]
+  },
+  "hasMember": [
+    {
+      "reference": "Observation/example-tnm-R0"
+    }
+  ]
+}

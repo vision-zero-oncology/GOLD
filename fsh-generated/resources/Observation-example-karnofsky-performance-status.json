@@ -1,0 +1,47 @@
+{
+  "resourceType": "Observation",
+  "id": "example-karnofsky-performance-status",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "89243-0",
+        "system": "http://loinc.org",
+        "display": "Karnofsky Performance Status score"
+      },
+      {
+        "code": "761869008",
+        "system": "http://snomed.info/sct",
+        "display": "Karnofsky Performance Status score (observable entity)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "LA29177-5",
+        "system": "http://loinc.org",
+        "display": "Normal activity with effort; some signs or symptoms of disease"
+      }
+    ]
+  }
+}

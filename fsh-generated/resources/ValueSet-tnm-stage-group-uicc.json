@@ -1,0 +1,154 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VS_TNM_Stage_Group_UICC",
+  "id": "tnm-stage-group-uicc",
+  "title": "ValueSet TNM Stage Group UICC",
+  "description": "The ValueSet contains codes for the TNM stage groups ranging from I to IV to group cancer patients with similar prognosis from TNM 8th edition UICC.",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "okk",
+            "display": "Stage X"
+          },
+          {
+            "code": "0",
+            "display": "Stage 0"
+          },
+          {
+            "code": "0a",
+            "display": "Stage 0a"
+          },
+          {
+            "code": "0is",
+            "display": "Stage 0is"
+          },
+          {
+            "code": "I",
+            "display": "Stage I"
+          },
+          {
+            "code": "IA1",
+            "display": "Stage IA1"
+          },
+          {
+            "code": "IA2",
+            "display": "Stage IA2"
+          },
+          {
+            "code": "IA3",
+            "display": "Stage IA3"
+          },
+          {
+            "code": "IB",
+            "display": "Stage IB"
+          },
+          {
+            "code": "IB1",
+            "display": "Stage IB1"
+          },
+          {
+            "code": "IB2",
+            "display": "Stage IB2"
+          },
+          {
+            "code": "IC",
+            "display": "Stage IC"
+          },
+          {
+            "code": "IS",
+            "display": "Stage IS"
+          },
+          {
+            "code": "II",
+            "display": "Stage II"
+          },
+          {
+            "code": "IIA",
+            "display": "Stage IIA"
+          },
+          {
+            "code": "IIA1",
+            "display": "Stage IIA1"
+          },
+          {
+            "code": "IIA2",
+            "display": "Stage IIA2"
+          },
+          {
+            "code": "IIB",
+            "display": "Stage IIB"
+          },
+          {
+            "code": "IIC",
+            "display": "Stage IIC"
+          },
+          {
+            "code": "III",
+            "display": "Stage III"
+          },
+          {
+            "code": "IIIA",
+            "display": "Stage IIIA"
+          },
+          {
+            "code": "IIIA1",
+            "display": "Stage IIIA1"
+          },
+          {
+            "code": "IIIA2",
+            "display": "Stage IIIA2"
+          },
+          {
+            "code": "IIIB",
+            "display": "Stage IIIB"
+          },
+          {
+            "code": "IIIC",
+            "display": "Stage IIIC"
+          },
+          {
+            "code": "IIIC1",
+            "display": "Stage IIIC1"
+          },
+          {
+            "code": "IIIC2",
+            "display": "Stage IIIC2"
+          },
+          {
+            "code": "IV",
+            "display": "Stage IV"
+          },
+          {
+            "code": "IVA",
+            "display": "Stage IVA"
+          },
+          {
+            "code": "IVB",
+            "display": "Stage IVB"
+          },
+          {
+            "code": "IVC",
+            "display": "Stage IVC"
+          }
+        ]
+      }
+    ]
+  }
+}

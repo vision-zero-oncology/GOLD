@@ -1,0 +1,72 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "uicc-tnm-prefix-cpu",
+  "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
+  "name": "UICC_TNM_Prefix_CPU",
+  "title": "Extension UICC TNM Prefix CPU",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "description": "The Extension allows to add c, p and u prefixes to TNM stages.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    }
+  ],
+  "kind": "complex-type",
+  "abstract": false,
+  "context": [
+    {
+      "type": "element",
+      "expression": "Element"
+    }
+  ],
+  "type": "Extension",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Extension",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Extension",
+        "path": "Extension",
+        "short": "Extension UICC TNM Prefix CPU",
+        "definition": "The Extension allows to add c, p and u prefixes to TNM stages."
+      },
+      {
+        "id": "Extension.extension",
+        "path": "Extension.extension",
+        "max": "0"
+      },
+      {
+        "id": "Extension.url",
+        "path": "Extension.url",
+        "fixedUri": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu"
+      },
+      {
+        "id": "Extension.value[x]",
+        "path": "Extension.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc"
+        }
+      }
+    ]
+  }
+}

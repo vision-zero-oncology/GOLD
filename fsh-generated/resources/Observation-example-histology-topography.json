@@ -1,0 +1,71 @@
+{
+  "resourceType": "Observation",
+  "id": "example-histology-topography",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "laboratory",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "59847-4",
+        "system": "http://loinc.org",
+        "display": "Histology and Behavior ICD-O-3 Cancer"
+      },
+      {
+        "code": "1145214003",
+        "system": "http://snomed.info/sct",
+        "display": "Histologic feature of proliferative mass (observable entity)"
+      },
+      {
+        "code": "371480007",
+        "system": "http://snomed.info/sct",
+        "display": "Anatomic location of neoplasm (observable entity)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+        "code": "8070/33",
+        "display": "schlecht differenziertes Plattenepithelkarzinom"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "1162767002",
+        "display": "Squamous cell carcinoma (morphologic abnormality)"
+      }
+    ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+        "code": "C34.1",
+        "display": "Lungenoberlappen"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "45653009",
+        "display": "Structure of upper lobe of lung (body structure)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07"
+}

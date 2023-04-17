@@ -1,0 +1,46 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VS_TNM_Suffix_ITC_UICC",
+  "id": "tnm-suffix-itc-uicc",
+  "title": "ValueSet TNM Suffix ITC UICC",
+  "description": "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC.",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "i+",
+            "display": "(i+)"
+          },
+          {
+            "code": "i-",
+            "display": "(i-)"
+          },
+          {
+            "code": "mol+",
+            "display": "(mol+)"
+          },
+          {
+            "code": "mol-",
+            "display": "(mol-)"
+          }
+        ]
+      }
+    ]
+  }
+}

@@ -1,0 +1,58 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VS_TNM_M_Category_UICC",
+  "id": "tnm-m-category-uicc",
+  "title": "ValueSet TNM M Category UICC",
+  "description": "This ValueSet contains the TNM M category codes from TNM 8th edition UICC.",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "M0",
+            "display": "M0"
+          },
+          {
+            "code": "M1",
+            "display": "M1"
+          },
+          {
+            "code": "M1a",
+            "display": "M1a"
+          },
+          {
+            "code": "M1b",
+            "display": "M1b"
+          },
+          {
+            "code": "M1c",
+            "display": "M1c"
+          },
+          {
+            "code": "M1d",
+            "display": "M1d"
+          },
+          {
+            "code": "MX",
+            "display": "MX"
+          }
+        ]
+      }
+    ]
+  }
+}

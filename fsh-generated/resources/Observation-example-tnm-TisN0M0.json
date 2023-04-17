@@ -1,0 +1,99 @@
+{
+  "resourceType": "Observation",
+  "id": "example-tnm-TisN0M0",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "258235000",
+        "system": "http://snomed.info/sct",
+        "display": "International Union Against Cancer (tumor staging)"
+      },
+      {
+        "code": "21908-9",
+        "system": "http://loinc.org",
+        "display": "Stage group.clinical Cancer"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07",
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "code": "0",
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "display": "Stage 0"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "21905-5",
+            "system": "http://loinc.org",
+            "display": "Primary tumor.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "Tis",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "Tis"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "21906-3",
+            "system": "http://loinc.org",
+            "display": "Regional lymph nodes.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "N0",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "N0"
+          }
+        ]
+      }
+    },
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "21907-1",
+            "system": "http://loinc.org",
+            "display": "Distant metastases.clinical [Class] Cancer"
+          }
+        ]
+      },
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "M0",
+            "system": "urn:oid:2.16.840.1.113883.15.16",
+            "display": "M0"
+          }
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType": "Observation",
+  "id": "example-ecog-performance-status",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "survey",
+          "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+        }
+      ]
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "89247-1",
+        "system": "http://loinc.org",
+        "display": "ECOG Performance Status score"
+      },
+      {
+        "code": "423740007",
+        "system": "http://snomed.info/sct",
+        "display": "Eastern Cooperative Oncology Group performance status (observable entity)"
+      }
+    ]
+  },
+  "valueCodeableConcept": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "LA9623-5",
+        "display": "Restricted in physically strenuous activity but ambulatory and able to carry out work of a light or sedentary nature, e.g., light house work, office work"
+      },
+      {
+        "system": "http://snomed.info/sct",
+        "code": "422512005",
+        "display": "Eastern Cooperative Oncology Group performance status - grade 1 (finding)"
+      }
+    ]
+  },
+  "status": "final",
+  "subject": {
+    "reference": "Patient/ExamplePatient"
+  },
+  "effectiveDateTime": "2022-03-07"
+}

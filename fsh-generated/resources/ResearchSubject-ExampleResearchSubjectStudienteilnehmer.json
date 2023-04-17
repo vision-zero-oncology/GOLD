@@ -1,0 +1,36 @@
+{
+  "resourceType": "ResearchSubject",
+  "id": "ExampleResearchSubjectStudienteilnehmer",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "ANON",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "https://charite.de/fhir/core/sid/SubjectIdentificationCode",
+      "value": "12345"
+    }
+  ],
+  "status": "candidate",
+  "period": {
+    "start": "2019-09-06"
+  },
+  "study": {
+    "reference": "ResearchStudy/MII-Beispielstudie"
+  },
+  "individual": {
+    "reference": "Patient/MII-Patient"
+  },
+  "consent": {
+    "reference": "Consent/MII-Consent"
+  }
+}

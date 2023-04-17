@@ -1,0 +1,35 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VS_Topography_ICD_O_3",
+  "id": "topography-icd-o-3",
+  "title": "ValueSet Topography ICD-O-3",
+  "description": "The ValueSet contains the topography codes from ICD-O-3.",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/icd-o-3",
+        "filter": [
+          {
+            "property": "concept",
+            "op": "regex",
+            "value": "^C\\S*$"
+          }
+        ]
+      }
+    ]
+  }
+}

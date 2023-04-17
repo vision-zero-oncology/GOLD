@@ -1,0 +1,57 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "draft",
+  "content": "complete",
+  "name": "DiagnosesicherungICDO3",
+  "id": "cs-diagnosesicherung-icdo3",
+  "title": "Diagnosesicherung ICD-O-3",
+  "description": "CodeSystem für die Diagnosesicherungscodes der ICD-O-3",
+  "url": "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3",
+  "concept": [
+    {
+      "code": "0",
+      "display": "Nur Totenschein"
+    },
+    {
+      "code": "1",
+      "display": "Klinisch"
+    },
+    {
+      "code": "2",
+      "display": "Klinische Diagnostik"
+    },
+    {
+      "code": "4",
+      "display": "Spezifische Tumor-Marker"
+    },
+    {
+      "code": "5",
+      "display": "Zytologie"
+    },
+    {
+      "code": "6",
+      "display": "Histologische Untersuchung einer Metastase"
+    },
+    {
+      "code": "7",
+      "display": "Histologische Untersuchung eines Primärtumors"
+    },
+    {
+      "code": "9",
+      "display": "Unbekannt"
+    }
+  ],
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3",
+  "count": 8
+}

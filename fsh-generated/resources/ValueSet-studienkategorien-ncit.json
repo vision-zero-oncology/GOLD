@@ -1,0 +1,43 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VS_Studienkategorien_NCIT",
+  "id": "studienkategorien-ncit",
+  "title": "ValueSet Studienkategorien NCIt",
+  "description": "Studienkategorien aus NCI Thesaurus (NCIt)",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C98388",
+            "display": "Interventional Study"
+          },
+          {
+            "code": "C142615",
+            "display": "Non-Interventional Study"
+          },
+          {
+            "code": "C16084",
+            "display": "Observational Study"
+          }
+        ]
+      }
+    ]
+  }
+}

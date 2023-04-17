@@ -1,0 +1,772 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "uicc-tnm",
+  "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm",
+  "name": "UICC_TNM",
+  "title": "Profile UICC TNM",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "description": "Profile for the tumor classification using TNM stage groups (I, II, III, or IV) and TNM staging elements (T, N, and M).",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:snomed",
+        "path": "Observation.code.coding",
+        "sliceName": "snomed",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "code": "258235000",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "1",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"
+        }
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc"
+        }
+      },
+      {
+        "id": "Observation.hasMember",
+        "path": "Observation.hasMember",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "profile",
+              "path": "resolve()"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.hasMember:R-classification",
+        "path": "Observation.hasMember",
+        "sliceName": "R-classification",
+        "short": "Residual Tumor (R) Classification",
+        "definition": "The absence or presence of residual tumour after treatment is described by the symbol R.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:y-symbol",
+        "path": "Observation.component",
+        "sliceName": "y-symbol",
+        "short": "y Symbol",
+        "definition": "In those cases in which classification is performed during or following multimodality therapy, the cTNM or pTNM category is identified by a y prefix.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:y-symbol.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "277649004",
+              "system": "http://snomed.info/sct",
+              "display": "y - During therapy/following treatment (tumor staging)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:y-symbol.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "y",
+              "system": "urn:oid:2.16.840.1.113883.15.16",
+              "display": "y"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:r-symbol",
+        "path": "Observation.component",
+        "sliceName": "r-symbol",
+        "short": "r Symbol",
+        "definition": "Recurrent tumours, when classified after a disease free interval, are identified by the prefix r.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:r-symbol.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "277647002",
+              "system": "http://snomed.info/sct",
+              "display": "r - Tumor recurrence (tumor staging)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:r-symbol.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "r",
+              "system": "urn:oid:2.16.840.1.113883.15.16",
+              "display": "r"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:a-symbol",
+        "path": "Observation.component",
+        "sliceName": "a-symbol",
+        "short": "a Symbol",
+        "definition": "The prefix a indicates that classification is first determined at autopsy.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:a-symbol.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "277646006",
+              "system": "http://snomed.info/sct",
+              "display": "a - At autopsy (tumor staging)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:a-symbol.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "a",
+              "system": "urn:oid:2.16.840.1.113883.15.16",
+              "display": "a"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:T-code",
+        "path": "Observation.component",
+        "sliceName": "T-code",
+        "short": "T - Primary Tumor",
+        "definition": "The T-category describes the extent of the primary tumor.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:T-code.extension",
+        "path": "Observation.component.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:T-code.extension:cpuPrefix",
+        "path": "Observation.component.extension",
+        "sliceName": "cpuPrefix",
+        "short": "Clinical or pathological classification",
+        "definition": "How the TNM-values are determined: clinically, by ultrasound or pathologically.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:T-code.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc"
+        }
+      },
+      {
+        "id": "Observation.component:T-code.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:m-symbol",
+        "path": "Observation.component",
+        "sliceName": "m-symbol",
+        "short": "m Symbol",
+        "definition": "The suffix m, in parentheses, is used to indicate the presence of multiple primary tumors at a single site.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:m-symbol.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "277650004",
+              "system": "http://snomed.info/sct",
+              "display": "m - Multiple tumors (tumor staging)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:m-symbol.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-multiplicity-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:N-code",
+        "path": "Observation.component",
+        "sliceName": "N-code",
+        "short": "N - Regional Lymph Nodes",
+        "definition": "The N-category describes the absence or presence and extent of regional lymph node metastasis.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:N-code.extension",
+        "path": "Observation.component.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:N-code.extension:cpuPrefix",
+        "path": "Observation.component.extension",
+        "sliceName": "cpuPrefix",
+        "short": "Clinical or pathological classification",
+        "definition": "How the TNM-values are determined: clinically, by ultrasound or pathologically.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:N-code.extension:itcSuffix",
+        "path": "Observation.component.extension",
+        "sliceName": "itcSuffix",
+        "short": "Isolated Tumor Cells",
+        "definition": "Isolated tumor cells (ITC) are single tumor cells or small clusters of cells not more than 0.2 mm in greatest extent that can be detected by routine H and E stains or immunohistochemistry.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:N-code.extension:snSuffix",
+        "path": "Observation.component.extension",
+        "sliceName": "snSuffix",
+        "short": "Sentinel Lymph Node",
+        "definition": "The sentinel lymph node is the first lymph node to receive lymphatic drainage from a primary tumor. If it contains metastatic tumor this indicates that other lymph nodes may contain tumor.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:N-code.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc"
+        }
+      },
+      {
+        "id": "Observation.component:N-code.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:M-code",
+        "path": "Observation.component",
+        "sliceName": "M-code",
+        "short": "M - Distant Metastasis",
+        "definition": "The M-category describes the absence or presence of distant metastasis.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:M-code.extension",
+        "path": "Observation.component.extension",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "value",
+              "path": "url"
+            }
+          ],
+          "ordered": false,
+          "rules": "open"
+        }
+      },
+      {
+        "id": "Observation.component:M-code.extension:cpuPrefix",
+        "path": "Observation.component.extension",
+        "sliceName": "cpuPrefix",
+        "short": "Clinical or pathological classification",
+        "definition": "How the TNM-values are determined: clinically, by ultrasound or pathologically.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:M-code.extension:itcSuffix",
+        "path": "Observation.component.extension",
+        "sliceName": "itcSuffix",
+        "short": "Isolated Tumor Cells",
+        "definition": "Isolated tumor cells (ITC) are single tumor cells or small clusters of cells not more than 0.2 mm in greatest extent that can be detected by routine H and E stains or immunohistochemistry.",
+        "min": 0,
+        "max": "1",
+        "type": [
+          {
+            "code": "Extension",
+            "profile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:M-code.code",
+        "path": "Observation.component.code",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc"
+        }
+      },
+      {
+        "id": "Observation.component:M-code.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:L-descriptor",
+        "path": "Observation.component",
+        "sliceName": "L-descriptor",
+        "short": "L - Lymphatic Invasion",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:L-descriptor.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "33739-4",
+              "system": "http://loinc.org",
+              "display": "Lymphatic.small vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:L-descriptor.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-l-lymphatic-invasion-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:V-descriptor",
+        "path": "Observation.component",
+        "sliceName": "V-descriptor",
+        "short": "V - Venous Invasion",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:V-descriptor.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "33740-2",
+              "system": "http://loinc.org",
+              "display": "Venous.large vessel.invasion [Identifier] in Specimen by CAP cancer protocols"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:V-descriptor.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:Pn-descriptor",
+        "path": "Observation.component",
+        "sliceName": "Pn-descriptor",
+        "short": "Pn - Perineural Invasion",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:Pn-descriptor.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "92837-4",
+              "system": "http://loinc.org",
+              "display": "Perineural invasion [Presence] in Cancer specimen"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:Pn-descriptor.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-pn-perineural-invasion-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:S-symbol",
+        "path": "Observation.component",
+        "sliceName": "S-symbol",
+        "short": "Serum Tumor Markers",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:S-symbol.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "399424006",
+              "system": "http://snomed.info/sct",
+              "display": "Serum tumor marker category (observable entity)"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:S-symbol.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-s-serum-tumor-markers-uicc"
+        }
+      },
+      {
+        "id": "Observation.component:numberOfNodesAffected",
+        "path": "Observation.component",
+        "sliceName": "numberOfNodesAffected",
+        "short": "Number of regional lymph nodes positive",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:numberOfNodesAffected.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "21893-3",
+              "system": "http://loinc.org",
+              "display": "Regional lymph nodes positive [#] Specimen"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:numberOfNodesAffected.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:numberOfNodesAffected.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:numberOfNodesAffected.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "patternCode": "1"
+      },
+      {
+        "id": "Observation.component:numberOfNodesExamined",
+        "path": "Observation.component",
+        "sliceName": "numberOfNodesExamined",
+        "short": "Number of regional lymph nodes examined",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:numberOfNodesExamined.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "21894-1",
+              "system": "http://loinc.org",
+              "display": "Regional lymph nodes examined [#] Specimen"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:numberOfNodesExamined.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ]
+      },
+      {
+        "id": "Observation.component:numberOfNodesExamined.value[x].system",
+        "path": "Observation.component.value[x].system",
+        "patternUri": "http://unitsofmeasure.org"
+      },
+      {
+        "id": "Observation.component:numberOfNodesExamined.value[x].code",
+        "path": "Observation.component.value[x].code",
+        "patternCode": "1"
+      }
+    ]
+  }
+}

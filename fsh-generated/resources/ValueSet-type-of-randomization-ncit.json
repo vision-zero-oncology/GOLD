@@ -1,0 +1,63 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VS_TypeOfRandomization_NCIT",
+  "id": "type-of-randomization-ncit",
+  "title": "ValueSet Type of Randomization NCIt",
+  "description": "Type of Randomization aus NCI Thesaurus (NCIt)",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
+  "compose": {
+    "include": [
+      {
+        "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+        "concept": [
+          {
+            "code": "C147126",
+            "display": "Adaptive Randomization"
+          },
+          {
+            "code": "C147127",
+            "display": "Block Randomization"
+          },
+          {
+            "code": "C147145",
+            "display": "Stratified Randomization"
+          },
+          {
+            "code": "C147143",
+            "display": "Minimization Randomization"
+          },
+          {
+            "code": "C186212",
+            "display": "Re-randomized"
+          },
+          {
+            "code": "C147144",
+            "display": "Simple Randomization"
+          },
+          {
+            "code": "C114209",
+            "display": "Subject is Randomized"
+          },
+          {
+            "code": "C142743",
+            "display": "Unequal Randomization"
+          }
+        ]
+      }
+    ]
+  }
+}

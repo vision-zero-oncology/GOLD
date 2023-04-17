@@ -1,0 +1,14 @@
+{
+  "name": "gold",
+  "version": "0.1.0",
+  "description": "German Oncological Data Standard (GOLD)",
+  "author": "juliansass",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "dependencies": {
+    "de.basisprofil.r4": "1.4.0",
+    "de.gematik.isik-basismodul": "2.0.0",
+    "de.medizininformatikinitiative.kerndatensatz.biobank": "1.0.3"
+  }
+}

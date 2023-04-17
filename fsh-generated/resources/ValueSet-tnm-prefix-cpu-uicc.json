@@ -1,0 +1,42 @@
+{
+  "resourceType": "ValueSet",
+  "status": "draft",
+  "name": "VS_TNM_Prefix_CPU_UICC",
+  "id": "tnm-prefix-cpu-uicc",
+  "title": "ValueSet TNM Prefix CPU UICC",
+  "description": "This ValueSet contains the c, p and u prefixes for TNM stages from TNM 8th edition UICC.",
+  "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "experimental": false,
+  "compose": {
+    "include": [
+      {
+        "system": "urn:oid:2.16.840.1.113883.15.16",
+        "concept": [
+          {
+            "code": "c",
+            "display": "c"
+          },
+          {
+            "code": "p",
+            "display": "p"
+          },
+          {
+            "code": "u",
+            "display": "u"
+          }
+        ]
+      }
+    ]
+  }
+}

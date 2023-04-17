@@ -1,0 +1,231 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "ecog-performance-status",
+  "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status",
+  "name": "ECOG_Performance_Status",
+  "title": "Profile ECOG Performance Status",
+  "status": "draft",
+  "publisher": "VISION ZERO E.V.",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.vision-zero-oncology.de/"
+        }
+      ]
+    }
+  ],
+  "description": "Profile for the Eastern Cooperative Oncology Group (ECOG) Performance Status that represents a cancer patient's functional status.",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation.category",
+        "path": "Observation.category",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.category:survey",
+        "path": "Observation.category",
+        "sliceName": "survey",
+        "min": 1,
+        "max": "*",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "survey",
+              "system": "http://terminology.hl7.org/CodeSystem/observation-category"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.code.coding",
+        "path": "Observation.code.coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:loinc",
+        "path": "Observation.code.coding",
+        "sliceName": "loinc",
+        "min": 1,
+        "max": "*",
+        "patternCoding": {
+          "code": "89247-1",
+          "system": "http://loinc.org"
+        }
+      },
+      {
+        "id": "Observation.code.coding:loinc.system",
+        "path": "Observation.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:loinc.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:snomed",
+        "path": "Observation.code.coding",
+        "sliceName": "snomed",
+        "min": 0,
+        "max": "*",
+        "patternCoding": {
+          "code": "423740007",
+          "system": "http://snomed.info/sct"
+        }
+      },
+      {
+        "id": "Observation.code.coding:snomed.system",
+        "path": "Observation.code.coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.code.coding:snomed.code",
+        "path": "Observation.code.coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x]",
+        "path": "Observation.value[x]",
+        "type": [
+          {
+            "code": "CodeableConcept"
+          }
+        ]
+      },
+      {
+        "id": "Observation.value[x].coding",
+        "path": "Observation.value[x].coding",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "$this"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x].coding:valueLoinc",
+        "path": "Observation.value[x].coding",
+        "sliceName": "valueLoinc",
+        "min": 1,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://loinc.org"
+        },
+        "binding": {
+          "strength": "required",
+          "valueSet": "http://loinc.org/vs/LL529-9"
+        }
+      },
+      {
+        "id": "Observation.value[x].coding:valueLoinc.system",
+        "path": "Observation.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x].coding:valueLoinc.code",
+        "path": "Observation.value[x].coding.code",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x].coding:valueSnomed",
+        "path": "Observation.value[x].coding",
+        "sliceName": "valueSnomed",
+        "min": 0,
+        "max": "1",
+        "patternCoding": {
+          "system": "http://snomed.info/sct"
+        },
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed"
+        }
+      },
+      {
+        "id": "Observation.value[x].coding:valueSnomed.system",
+        "path": "Observation.value[x].coding.system",
+        "min": 1
+      },
+      {
+        "id": "Observation.value[x].coding:valueSnomed.code",
+        "path": "Observation.value[x].coding.code",
+        "min": 1
+      }
+    ]
+  }
+}

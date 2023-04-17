@@ -2,8 +2,9 @@
 Profile: TumorDisorder
 Parent: $IsikDiagnose
 Id: tumor-disorder
-Title: "Tumor Disorder"
+Title: "Profile Tumor Disorder"
 Description: "Profile for a tumor disorder"
+* insert Metadata
 * code  
   * coding contains icd-o-3-m 0..1 MS
   * coding[icd-o-3-m] from $ICDO3M (required)
@@ -32,7 +33,7 @@ Description: "Profile for a tumor disorder"
 * abatement[x] only dateTime
 * stage MS
 * stage ^slicing.discriminator.type = #pattern
-* stage ^slicing.discriminator.path = "$this"
+* stage ^slicing.discriminator.path = "type"
 * stage ^slicing.rules = #open
 * stage ^slicing.ordered = false
 * stage contains staging 0..* and grading 0..* MS
@@ -40,7 +41,7 @@ Description: "Profile for a tumor disorder"
   * assessment MS
   * assessment only Reference(uicc-tnm)
   * type 1.. MS
-  * type = $SCT#254293002
+  * type = $SCT#258234001
 * stage[grading]
   * assessment MS
   * assessment only Reference(histopathological-grading-who)
@@ -53,6 +54,7 @@ Extension: DiagnosesicherungICDO
 Id: diagnosesicherung-icd-o
 Title: "Diagnosesicherung ICD O"
 Description: "Extension für die Erfassung der Diagnosesicherung der ICD-O-3"
+* insert Metadata
 * valueCodeableConcept from $DiagnosesicherungVS (required)
 
 // TODO: Example 
@@ -63,21 +65,19 @@ Title: "Diagnose MammaCa rechts"
 Description: "Beispiel einer Diagnose Mamma Ca rechts."
 * clinicalStatus = $ClinStatus#active
 * verificationStatus = $VerStatus#confirmed
-* code.coding[ICD-10-GM] = $ICD10GM#C50.2 "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse"
-* code.coding[ICD-10-GM].version = "2019"
+* code.coding[ICD-10-GM] = $ICD10GM|2019#C50.2 "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse"
 * code.coding[ICD-10-GM].extension[seitenlokalisation].valueCoding = $ICD10SeitenlokalisationCS#R "Rechts"
-* code.coding[icd-o-3-m] = $ICDO3#8500/3 "Invasives duktales Karzinom o.n.A."
-* code.coding[icd-o-3-m].version = "2019"
+* code.coding[icd-o-3-m] = $ICDO3|2019#8500/3 "Invasives duktales Karzinom o.n.A."
 * code.coding[icd-o-3-m].extension[diagnosesicherung-icd-o].valueCodeableConcept = $DiagnosesicherungCS#7 "Histologische Untersuchung eines Primärtumors"
-* bodySite.coding[icdo3-t] = $ICDO3#C50.2 "Oberer innerer Quadrant der Brust"
-* bodySite.coding[icdo3-t].version = "2019"
+* bodySite.coding[icdo3-t] = $ICDO3|2019#C50.2 "Oberer innerer Quadrant der Brust"
 * subject = Reference(Patient/example)
+* encounter = Reference(Encounter/example)
 * onsetDateTime = "2019-09-17"
 * recordedDate = "2019-09-19"
 * recorder = Reference(Practitioner/dokumentar)
 * asserter = Reference(Practitioner/kliniker)
 * stage[staging].assessment = Reference(Observation/tnm-cT2cN2cM1IV)
-* stage[staging].type = $SCT#254293002 "Tumor-node-metastasis (TNM) tumor staging system (tumor staging)"
+* stage[staging].type = $SCT#258234001 "Tumor-node-metastasis (TNM) tumor staging classifications (tumor staging)"
 * stage[grading].assessment = Reference(Observation/G3)
 * stage[grading].type = $SCT#258244004 "Tumor histopathological grade status values (tumor staging)"
 * evidence.detail = Reference(DiagnosticReport/pathologie)
