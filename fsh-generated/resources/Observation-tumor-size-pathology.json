@@ -1,0 +1,69 @@
+{
+  "resourceType": "Observation",
+  "id": "tumor-size-pathology",
+  "meta": {
+    "profile": [
+      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"
+    ]
+  },
+  "code": {
+    "coding": [
+      {
+        "code": "21889-1",
+        "system": "http://loinc.org"
+      }
+    ]
+  },
+  "component": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "33728-7",
+            "system": "http://loinc.org",
+            "display": "Size.maximum dimension in Tumor"
+          }
+        ]
+      },
+      "valueQuantity": {
+        "value": 12,
+        "code": "mm",
+        "system": "http://unitsofmeasure.org",
+        "unit": "mm"
+      }
+    },
+    {
+      "valueQuantity": {
+        "value": 1000,
+        "code": "ml",
+        "system": "http://unitsofmeasure.org",
+        "unit": "ml"
+      },
+      "code": {
+        "coding": [
+          {
+            "code": "ml",
+            "system": "http://unitsofmeasure.org"
+          }
+        ]
+      }
+    }
+  ],
+  "status": "final",
+  "method": {
+    "coding": [
+      {
+        "code": "787377000",
+        "system": "http://snomed.info/sct",
+        "display": "Gross examination and sampling of tissue specimen (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/cancer-patient-eve-anyperson"
+  },
+  "specimen": {
+    "reference": "Tumor/any-specimen-of-patient-eve-anyperson"
+  },
+  "effectiveDateTime": "2019-05-01"
+}

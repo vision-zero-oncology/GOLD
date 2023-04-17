@@ -413,6 +413,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/tumor-measurement"
+        },
+        "name": "Profile Tumor Measurment",
+        "description": "Profile for recording measurements of a tumor like the longest diameter or volume. The resource can be used for different measurement methods (e.g. methods in pathology, radiology or physical exams).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/tumor-specimen"
         },
         "name": "Profile Tumor Specimen",
@@ -458,6 +466,22 @@
         "name": "Tumor Example - Cerebellar Sarcoma",
         "description": "Example for the Tumor profile",
         "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
+      },
+      {
+        "reference": {
+          "reference": "Observation/tumor-size-pathology"
+        },
+        "name": "tumor-size-pathology",
+        "description": "Example of a resource conforming to the tumor size profile in pathology.",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"
+      },
+      {
+        "reference": {
+          "reference": "Observation/tumor-size-radiology"
+        },
+        "name": "tumor-size-radiology",
+        "description": "Example of a resource conforming to the tumor size profile in radiology (MRI bidimensional measurement).",
+        "exampleCanonical": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"
       },
       {
         "reference": {
@@ -681,6 +705,38 @@
         },
         "name": "ValueSet Topography SNOMED",
         "description": "The ValueSet contains the topography codes from SNOMED CT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tumor-measurement-methods"
+        },
+        "name": "ValueSet Tumor Measurement Methods",
+        "description": "Codes for methods of measuring tumor size, including physical examination, pathology, and imaging.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tumor-size-units"
+        },
+        "name": "ValueSet Tumor Size Units",
+        "description": "Acceptable units for measuring tumor size",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tumor-volume-units"
+        },
+        "name": "ValueSet Tumor Size Units Value Set",
+        "description": "Acceptable units for measuring tumor volumes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tumor-area-units"
+        },
+        "name": "ValueSet Tumor Size Units ValueSet",
+        "description": "Acceptable units for measuring tumor areas",
         "exampleBoolean": false
       },
       {

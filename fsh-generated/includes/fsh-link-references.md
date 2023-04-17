@@ -42,12 +42,15 @@
 [RecistAssessmentResponse]: StructureDefinition-recist-assessment-response.html
 [Tumor]: StructureDefinition-tumor.html
 [TumorDisorder]: StructureDefinition-tumor-disorder.html
+[TumorMeasurement]: StructureDefinition-tumor-measurement.html
 [TumorSpecimen]: StructureDefinition-tumor-specimen.html
 [UICC_TNM]: StructureDefinition-uicc-tnm.html
 [UICC_TNM_R_Classification]: StructureDefinition-uicc-tnm-r-classification.html
 [Vital_Signs_Base]: StructureDefinition-vital-signs-base.html
 [PartOf]: StructureDefinition-part-of.html
 [CerebellarSarcoma]: BodyStructure-CerebellarSarcoma.html
+[tumor-size-pathology]: Observation-tumor-size-pathology.html
+[tumor-size-radiology]: Observation-tumor-size-radiology.html
 [DiagnosesicherungICDO3]: ValueSet-diagnosesicherung-icdo3.html
 [VS_ECOG_Performance_Status_SNOMED]: ValueSet-ecog-performance-status-snomed.html
 [VS_Histopathological_Grade_SNOMED]: ValueSet-histopathological-grade-snomed.html
@@ -76,6 +79,10 @@
 [VS_TNM_V_Venous_Invasion_UICC]: ValueSet-tnm-v-venous-invasion-uicc.html
 [VS_Topography_ICD_O_3]: ValueSet-topography-icd-o-3.html
 [VS_Topography_SNOMED]: ValueSet-topography-snomed.html
+[VS_Tumor_Measurement_Methods]: ValueSet-tumor-measurement-methods.html
+[VS_Tumor_Size_Units]: ValueSet-tumor-size-units.html
+[VS_Tumor_Volume_Units]: ValueSet-tumor-volume-units.html
+[VS_Tumor_Area_Units]: ValueSet-tumor-area-units.html
 [VS_TypeOfBlinding_NCIT]: ValueSet-type-of-blinding-ncit.html
 [VS_TypeOfRandomization_NCIT]: ValueSet-type-of-randomization-ncit.html
 [VS_TypeOfStudyArm_NCIT]: ValueSet-type-of-study-arm-ncit.html
