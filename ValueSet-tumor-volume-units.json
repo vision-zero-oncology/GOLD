@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tumor-volume-units",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://unitsofmeasure.org\"><code>http://unitsofmeasure.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>ml</td><td>milliliter</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-volume-units",
+  "version" : "0.1.0",
+  "name" : "VS_Tumor_Volume_Units",
+  "title" : "ValueSet Tumor Size Units Value Set",
+  "status" : "active",
+  "date" : "2023-04-17T09:23:06+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "Acceptable units for measuring tumor volumes",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "CC-BY-SA-4.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org",
+      "concept" : [{
+        "code" : "ml",
+        "display" : "milliliter"
+      }]
+    }]
+  }
+}

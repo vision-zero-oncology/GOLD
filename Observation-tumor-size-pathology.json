@@ -1,0 +1,61 @@
+{
+  "resourceType" : "Observation",
+  "id" : "tumor-size-pathology",
+  "meta" : {
+    "profile" : ["https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"tumor-size-pathology\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;tumor-size-pathology&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor-measurement.html\">Profile Tumor Measurment</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Size Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21889-1)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/cancer-patient-eve-anyperson\">Patient/cancer-patient-eve-anyperson</a></p><p><b>effective</b>: 2019-05-01</p><p><b>method</b>: Gross examination and sampling of tissue specimen (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#787377000)</span></p><p><b>specimen</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Tumor/any-specimen-of-patient-eve-anyperson\">Tumor/any-specimen-of-patient-eve-anyperson</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Size.maximum dimension in Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#33728-7)</span></p><p><b>value</b>: 12 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm = 'mm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ml <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://ucum.org\">UCUM</a>#ml)</span></p><p><b>value</b>: 1000 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ml = 'ml')</span></p></blockquote></div>"
+  },
+  "status" : "final",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "21889-1"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/cancer-patient-eve-anyperson"
+  },
+  "effectiveDateTime" : "2019-05-01",
+  "method" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "787377000",
+      "display" : "Gross examination and sampling of tissue specimen (procedure)"
+    }]
+  },
+  "specimen" : {
+    "reference" : "Tumor/any-specimen-of-patient-eve-anyperson"
+  },
+  "component" : [{
+    "code" : {
+      "coding" : [{
+        "system" : "http://loinc.org",
+        "code" : "33728-7",
+        "display" : "Size.maximum dimension in Tumor"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 12,
+      "unit" : "mm",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "mm"
+    }
+  },
+  {
+    "code" : {
+      "coding" : [{
+        "system" : "http://unitsofmeasure.org",
+        "code" : "ml"
+      }]
+    },
+    "valueQuantity" : {
+      "value" : 1000,
+      "unit" : "ml",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "ml"
+    }
+  }]
+}

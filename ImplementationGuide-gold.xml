@@ -603,6 +603,17 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/tumor-measurement"/>
+      </reference>
+      <name value="Profile Tumor Measurment"/>
+      <description value="Profile for recording measurements of a tumor like the longest diameter or volume. The resource can be used for different measurement methods (e.g. methods in pathology, radiology or physical exams)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/tumor-specimen"/>
       </reference>
       <name value="Profile Tumor Specimen"/>
@@ -1021,6 +1032,50 @@
         <valueString value="ValueSet"/>
       </extension>
       <reference>
+        <reference value="ValueSet/tumor-area-units"/>
+      </reference>
+      <name value="ValueSet Tumor Size Units ValueSet"/>
+      <description value="Acceptable units for measuring tumor areas"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tumor-measurement-methods"/>
+      </reference>
+      <name value="ValueSet Tumor Measurement Methods"/>
+      <description value="Codes for methods of measuring tumor size, including physical examination, pathology, and imaging."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tumor-size-units"/>
+      </reference>
+      <name value="ValueSet Tumor Size Units"/>
+      <description value="Acceptable units for measuring tumor size"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/tumor-volume-units"/>
+      </reference>
+      <name value="ValueSet Tumor Size Units Value Set"/>
+      <description value="Acceptable units for measuring tumor volumes"/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
         <reference value="ValueSet/type-of-blinding-ncit"/>
       </reference>
       <name value="ValueSet Type of Blinding NCIt"/>
@@ -1329,6 +1384,28 @@
       <name value="Diagnose MammaCa rechts"/>
       <description value="Beispiel einer Diagnose Mamma Ca rechts."/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tumor-size-pathology"/>
+      </reference>
+      <name value="tumor-size-pathology"/>
+      <description value="Example of a resource conforming to the tumor size profile in pathology."/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Observation"/>
+      </extension>
+      <reference>
+        <reference value="Observation/tumor-size-radiology"/>
+      </reference>
+      <name value="tumor-size-radiology"/>
+      <description value="Example of a resource conforming to the tumor size profile in radiology (MRI bidimensional measurement)."/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"/>
     </resource>
     <page>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">

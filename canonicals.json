@@ -133,6 +133,13 @@
     "name" : "TumorDisorder"
   },
   {
+    "id" : "tumor-measurement",
+    "type" : "StructureDefinition",
+    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement",
+    "version" : "0.1.0",
+    "name" : "TumorMeasurement"
+  },
+  {
     "id" : "tumor-specimen",
     "type" : "StructureDefinition",
     "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen",
@@ -376,6 +383,34 @@
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed",
     "version" : "0.1.0",
     "name" : "VS_Topography_SNOMED"
+  },
+  {
+    "id" : "tumor-area-units",
+    "type" : "ValueSet",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-area-units",
+    "version" : "0.1.0",
+    "name" : "VS_Tumor_Area_Units"
+  },
+  {
+    "id" : "tumor-measurement-methods",
+    "type" : "ValueSet",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods",
+    "version" : "0.1.0",
+    "name" : "VS_Tumor_Measurement_Methods"
+  },
+  {
+    "id" : "tumor-size-units",
+    "type" : "ValueSet",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-size-units",
+    "version" : "0.1.0",
+    "name" : "VS_Tumor_Size_Units"
+  },
+  {
+    "id" : "tumor-volume-units",
+    "type" : "ValueSet",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-volume-units",
+    "version" : "0.1.0",
+    "name" : "VS_Tumor_Volume_Units"
   },
   {
     "id" : "type-of-blinding-ncit",

@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/Observation/tumor-size-pathology> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tumor-size-pathology"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"^^xsd:anyURI ;
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"tumor-size-pathology\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;tumor-size-pathology&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor-measurement.html\">Profile Tumor Measurment</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Size Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21889-1)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/cancer-patient-eve-anyperson\">Patient/cancer-patient-eve-anyperson</a></p><p><b>effective</b>: 2019-05-01</p><p><b>method</b>: Gross examination and sampling of tissue specimen (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#787377000)</span></p><p><b>specimen</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Tumor/any-specimen-of-patient-eve-anyperson\">Tumor/any-specimen-of-patient-eve-anyperson</a></p><blockquote><p><b>component</b></p><p><b>code</b>: Size.maximum dimension in Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#33728-7)</span></p><p><b>value</b>: 12 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm = 'mm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: ml <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://ucum.org\">UCUM</a>#ml)</span></p><p><b>value</b>: 1000 ml<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code ml = 'ml')</span></p></blockquote></div>"
+  ] ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:21889-1 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21889-1" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/cancer-patient-eve-anyperson> ;
+     fhir:reference [ fhir:v "Patient/cancer-patient-eve-anyperson" ]
+  ] ; # 
+  fhir:effective [ fhir:v "2019-05-01"^^xsd:date] ; # 
+  fhir:method [
+     fhir:coding ( [
+       a sct:787377000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "787377000" ] ;
+       fhir:display [ fhir:v "Gross examination and sampling of tissue specimen (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:specimen [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Tumor/any-specimen-of-patient-eve-anyperson> ;
+     fhir:reference [ fhir:v "Tumor/any-specimen-of-patient-eve-anyperson" ]
+  ] ; # 
+  fhir:component ( [
+     fhir:code [
+       fhir:coding ( [
+         a loinc:33728-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "33728-7" ] ;
+         fhir:display [ fhir:v "Size.maximum dimension in Tumor" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "12"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mm" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mm" ]
+     ]
+  ] [
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "ml" ]
+       ] )
+     ] ;
+     fhir:value [
+       a fhir:Quantity ;
+       fhir:value [ fhir:v "1000"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "ml" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "ml" ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

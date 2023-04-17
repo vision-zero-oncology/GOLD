@@ -690,6 +690,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement> ;
+         fhir:reference [ fhir:v "StructureDefinition/tumor-measurement" ]
+       ] ;
+       fhir:name [ fhir:v "Profile Tumor Measurment" ] ;
+       fhir:description [ fhir:v "Profile for recording measurements of a tumor like the longest diameter or volume. The resource can be used for different measurement methods (e.g. methods in pathology, radiology or physical exams)." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen> ;
          fhir:reference [ fhir:v "StructureDefinition/tumor-specimen" ]
        ] ;
@@ -1146,6 +1158,54 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-area-units> ;
+         fhir:reference [ fhir:v "ValueSet/tumor-area-units" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet Tumor Size Units ValueSet" ] ;
+       fhir:description [ fhir:v "Acceptable units for measuring tumor areas" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods> ;
+         fhir:reference [ fhir:v "ValueSet/tumor-measurement-methods" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet Tumor Measurement Methods" ] ;
+       fhir:description [ fhir:v "Codes for methods of measuring tumor size, including physical examination, pathology, and imaging." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-size-units> ;
+         fhir:reference [ fhir:v "ValueSet/tumor-size-units" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet Tumor Size Units" ] ;
+       fhir:description [ fhir:v "Acceptable units for measuring tumor size" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-volume-units> ;
+         fhir:reference [ fhir:v "ValueSet/tumor-volume-units" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet Tumor Size Units Value Set" ] ;
+       fhir:description [ fhir:v "Acceptable units for measuring tumor volumes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit> ;
          fhir:reference [ fhir:v "ValueSet/type-of-blinding-ncit" ]
        ] ;
@@ -1551,6 +1611,36 @@
        fhir:example [
          fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"^^xsd:anyURI ;
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/tumor-size-pathology> ;
+         fhir:reference [ fhir:v "Observation/tumor-size-pathology" ]
+       ] ;
+       fhir:name [ fhir:v "tumor-size-pathology" ] ;
+       fhir:description [ fhir:v "Example of a resource conforming to the tumor size profile in pathology." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/tumor-size-radiology> ;
+         fhir:reference [ fhir:v "Observation/tumor-size-radiology" ]
+       ] ;
+       fhir:name [ fhir:v "tumor-size-radiology" ] ;
+       fhir:description [ fhir:v "Example of a resource conforming to the tumor size profile in radiology (MRI bidimensional measurement)." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement>
        ]
      ] ) ;
      fhir:page [

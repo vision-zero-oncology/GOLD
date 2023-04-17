@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tumor-measurement-methods"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/787377000\">787377000</a></td><td>Gross examination and sampling of tissue specimen (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/104157003\">104157003</a></td><td>Light microscopy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/5880005\">5880005</a></td><td>Physical examination procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/16310003\">16310003</a></td><td>Diagnostic ultrasonography (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/113091000\">113091000</a></td><td>Magnetic resonance imaging (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/77477000\">77477000</a></td><td>Computerized axial tomography (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/82918005\">82918005</a></td><td>Positron emission tomography (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/363680008\">363680008</a></td><td>Radiographic imaging procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/363679005\">363679005</a></td><td>Imaging (procedure)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "VS_Tumor_Measurement_Methods"] ; # 
+  fhir:title [ fhir:v "ValueSet Tumor Measurement Methods"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:date [ fhir:v "2023-04-17T09:23:06+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://www.bihealth.org/" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for methods of measuring tumor size, including physical examination, pathology, and imaging."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "DEU" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "CC-BY-SA-4.0"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "787377000" ] ;
+         fhir:display [ fhir:v "Gross examination and sampling of tissue specimen (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "104157003" ] ;
+         fhir:display [ fhir:v "Light microscopy (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "5880005" ] ;
+         fhir:display [ fhir:v "Physical examination procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "16310003" ] ;
+         fhir:display [ fhir:v "Diagnostic ultrasonography (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "113091000" ] ;
+         fhir:display [ fhir:v "Magnetic resonance imaging (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "77477000" ] ;
+         fhir:display [ fhir:v "Computerized axial tomography (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "82918005" ] ;
+         fhir:display [ fhir:v "Positron emission tomography (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "363680008" ] ;
+         fhir:display [ fhir:v "Radiographic imaging procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "363679005" ] ;
+         fhir:display [ fhir:v "Imaging (procedure)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+
