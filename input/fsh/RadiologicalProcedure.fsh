@@ -1,10 +1,3 @@
-Alias: $RadReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-read-procedure
-Alias: $RadRecistReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure
-Alias: $RadTnmReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-tnm-read-procedure
-Alias: $LNC = http://loinc.org
-Alias: $SCT = http://snomed.info/sct
-Alias: $DSS = http://terminology.hl7.org/CodeSystem/v2-0074
-
 //Base Profile
 //Radiological Read Procedure Profile
 Profile: Radiological_Read_Procedure
@@ -69,7 +62,7 @@ Id: vs-recist-radiological-read-procedure
 Title: "Valueset for RECIST Radiological Read Procedures"
 Description: "TODO"
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure"
-* $system #code	"display" // value set contains differern available RECIST versions (TODO start with current versions?)
+* $SCT#103337004 "In partial remission" //TODO value set contains differern available RECIST versions (TODO start with current versions?)
 
 //RECIST Example
 Instance: example-radiological-recist-read-procedure
@@ -79,7 +72,7 @@ Title: "Example of a RECIST Radiological Read Procedure"
 * category = $SCT#103693007 "Diagnostic procedure"
 * status = #completed
 * subject = Reference(ExamplePatient)
-* code = //TODO
+* code = $SCT#103337004 "In partial remission"//TODO
 * report = Reference(ExampleDiagnosticReport)
 
 

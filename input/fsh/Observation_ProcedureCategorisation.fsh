@@ -60,16 +60,16 @@ Id: vs-recsit-category-observation
 Title: "Valueset for Categories of a BodyStructure in the context of one RECIST procedure"
 Description: "TODO"
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recsit-category-observation"
-* $system #code	"display" //TODO
+* $SCT#103337004 "In partial remission" //TODO
 
 //RECIST Example
 Instance: example-recist-category-observation
 InstanceOf: recist-category-observation
 Usage: #example
 Title: "Example of a RECIST Tumor Category Observation"
-* code = //TODO
+* code = 103337004 //TODO
 * status = #completed
-* valueCodeableConcept = //TODO
+* valueCodeableConcept = SCT#103337004 "In partial remission"//TODO
 * partOf = Reference(Procedure/ExampleRECISTProcedure)
 * subject = Reference(ExamplePatient)
 * focus = Reference(ExampleBodyStructure)
