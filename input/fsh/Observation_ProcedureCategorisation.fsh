@@ -1,16 +1,10 @@
-Alias: $RadRecistReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure
-Alias: $RadTnmReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-tnm-read-procedure
-Alias: $LNC = http://loinc.org
-Alias: $SCT = http://snomed.info/sct
-
-
 //TNM
 // TNM Tumor Category Observation
 Profile: TNM_Category_Observation
 Parent: Observation
 Id: tnm-category-observation
-Title:"TNM Tumor Category Observation"
-Description:"Profiles the category of a BodyStructure resource in the context of one TNM procedure"
+Title: "TNM Tumor Category Observation"
+Description: "Profiles the category of a BodyStructure resource in the context of one TNM procedure"
 * value[x] only CodeableConcept
 * value[x] from VS_TNM_Category_Observation (required)
 * partOf 1..1 
@@ -47,9 +41,9 @@ Title: "Example of a TNM Tumor Category Observation"
 // RECIST Tumor Category Observation
 Profile: RECISTCategoryObservation
 Parent: Observation
-Id:tnm-category-observation
-Title:"RECIST Tumor Category Observation"
-Description:"Profiles the category of a BodyStructure resource in the context of one RECIST procedure"
+Id: recist-category-observation
+Title: "RECIST Tumor Category Observation"
+Description: "Profiles the category of a BodyStructure resource in the context of one RECIST procedure"
 * ^url = "https://www.vision-zero-oncology.de/fhir/"
 * value[x] only CodeableConcept
 * value[x] from VS_ (required)
@@ -72,7 +66,7 @@ Description: "TODO"
 Instance: example-recist-category-observation
 InstanceOf: recist-category-observation
 Usage: #example
-Title:"Example of a RECIST Tumor Category Observation"
+Title: "Example of a RECIST Tumor Category Observation"
 * code = //TODO
 * status = #completed
 * valueCodeableConcept = //TODO
