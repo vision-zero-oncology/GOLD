@@ -7,8 +7,8 @@ Title: "TNM Tumor Category Observation"
 Description: "Profiles the category of a BodyStructure resource in the context of one TNM procedure"
 * value[x] only CodeableConcept
 * value[x] from VS_TNM_Category_Observation (required)
-* partOf 1..1 
-* partOf only Reference(radiological-tnm-read-procedure) MS
+* partOf 1..1 MS
+* partOf only Reference(radiological-tnm-read-procedure)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * focus 1..1 MS
@@ -47,8 +47,8 @@ Description: "Profiles the category of a BodyStructure resource in the context o
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation"
 * value[x] only CodeableConcept
 * value[x] from VS_RECIST_Category_Observation (required)
-* partOf 1..1 
-* partOf only Reference(radiological-recist-read-procedure) MS
+* partOf 1..1 MS
+* partOf only Reference(radiological-recist-read-procedure)
 * subject 1..1 MS
 * subject only Reference(Patient)
 * focus 1..1 MS
@@ -67,9 +67,9 @@ Instance: example-recist-category-observation
 InstanceOf: recist-category-observation
 Usage: #example
 Title: "Example of a RECIST Tumor Category Observation"
-* code = 103337004 //TODO
+* code = $SCT#103337004 "In partial remission" //TODO
 * status = #completed
-* valueCodeableConcept = SCT#103337004 "In partial remission"//TODO
+* valueCodeableConcept = $SCT#103337004 "In partial remission"//TODO
 * partOf = Reference(Procedure/exampleRECISTProcedure)
 * subject = Reference(Patient/examplePatient)
 * focus = Reference(BodyStructure/exampleBodyStructure)
