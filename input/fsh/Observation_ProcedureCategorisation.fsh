@@ -33,8 +33,8 @@ Title: "Example of a TNM Tumor Category Observation"
 * status = #completed
 * valueCodeableConcept = $LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
 * partOf = Reference(Procedure/ExampleTNMProcedure)
-* subject = Reference(ExamplePatient)
-* focus = Reference(ExampleBodyStructure)
+* subject = Reference(Patient/examplePatient)
+* focus = Reference(BodyStructure/exampleBodyStructure)
 
 
 //RECIST
@@ -44,9 +44,9 @@ Parent: Observation
 Id: recist-category-observation
 Title: "RECIST Tumor Category Observation"
 Description: "Profiles the category of a BodyStructure resource in the context of one RECIST procedure"
-* ^url = "https://www.vision-zero-oncology.de/fhir/"
+* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation"
 * value[x] only CodeableConcept
-* value[x] from VS_ (required)
+* value[x] from VS_RECIST_Category_Observation (required)
 * partOf 1..1 
 * partOf only $RadRecistReadProc 
 * subject 1..1 MS
@@ -70,8 +70,8 @@ Title: "Example of a RECIST Tumor Category Observation"
 * code = 103337004 //TODO
 * status = #completed
 * valueCodeableConcept = SCT#103337004 "In partial remission"//TODO
-* partOf = Reference(Procedure/ExampleRECISTProcedure)
-* subject = Reference(ExamplePatient)
-* focus = Reference(ExampleBodyStructure)
+* partOf = Reference(Procedure/exampleRECISTProcedure)
+* subject = Reference(Patient/examplePatient)
+* focus = Reference(BodyStructure/exampleBodyStructure)
 
 
