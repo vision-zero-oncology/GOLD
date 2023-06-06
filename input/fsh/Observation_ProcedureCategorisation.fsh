@@ -8,11 +8,11 @@ Description: "Profiles the category of a BodyStructure resource in the context o
 * value[x] only CodeableConcept
 * value[x] from VS_TNM_Category_Observation (required)
 * partOf 1..1 
-* partOf only $RadTnmReadProc 
+* partOf only Reference(radiological-tnm-read-procedure) MS
 * subject 1..1 MS
-* subject only Patient
+* subject only Reference(Patient)
 * focus 1..1 MS
-* focus only BodyStructure 
+* focus only Reference(BodyStructure) 
 
 // TNM Categories Valueset
 ValueSet: VS_TNM_Category_Observation
@@ -48,11 +48,11 @@ Description: "Profiles the category of a BodyStructure resource in the context o
 * value[x] only CodeableConcept
 * value[x] from VS_RECIST_Category_Observation (required)
 * partOf 1..1 
-* partOf only $RadRecistReadProc 
+* partOf only Reference(radiological-recist-read-procedure) MS
 * subject 1..1 MS
-* subject only Patient
+* subject only Reference(Patient)
 * focus 1..1 MS
-* focus only BodyStructure 
+* focus only Reference(BodyStructure) 
 
 // RECIST Categories Valueset
 ValueSet: VS_RECIST_Category_Observation
