@@ -30,7 +30,7 @@ InstanceOf: tnm-category-observation
 Usage: #example
 Title: "Example of a TNM Tumor Category Observation"
 * code = $SCT#254353002 "TNM Brain tumor staging" //TODO Is this Code correct?
-* status = #completed
+* status = #final
 * valueCodeableConcept = $LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
 * partOf = Reference(Procedure/ExampleTNMProcedure)
 * subject = Reference(Patient/examplePatient)
@@ -68,7 +68,7 @@ InstanceOf: recist-category-observation
 Usage: #example
 Title: "Example of a RECIST Tumor Category Observation"
 * code = $SCT#103337004 "In partial remission" //TODO
-* status = #completed
+* status = #final
 * valueCodeableConcept = $SCT#103337004 "In partial remission"//TODO
 * partOf = Reference(Procedure/exampleRECISTProcedure)
 * subject = Reference(Patient/examplePatient)
