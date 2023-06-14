@@ -1,0 +1,55 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-category-observation> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "example-tnm-category-observation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tnm-category-observation"^^xsd:anyURI ;
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tnm-category-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-tnm-category-observation\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-tnm-category-observation&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tnm-category-observation.html\">TNM Tumor Category Observation</a></p></div><p><b>partOf</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/ExampleTNMProcedure\">Procedure/ExampleTNMProcedure</a></p><p><b>status</b>: final</p><p><b>code</b>: TNM Brain tumor staging <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#254353002)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/examplePatient\">Patient/examplePatient</a></p><p><b>focus</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/BodyStructure/exampleBodyStructure\">BodyStructure/exampleBodyStructure</a></p><p><b>value</b>: Primary tumor.clinical [Class] Cancer <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21905-5)</span></p></div>"
+  ] ; # 
+  fhir:partOf ( [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Procedure/ExampleTNMProcedure> ;
+     fhir:reference [ fhir:v "Procedure/ExampleTNMProcedure" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "final"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:254353002 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "254353002" ] ;
+       fhir:display [ fhir:v "TNM Brain tumor staging" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/examplePatient> ;
+     fhir:reference [ fhir:v "Patient/examplePatient" ]
+  ] ; # 
+  fhir:focus ( [
+     fhir:link <https://www.vision-zero-oncology.de/fhir/BodyStructure/exampleBodyStructure> ;
+     fhir:reference [ fhir:v "BodyStructure/exampleBodyStructure" ]
+  ] ) ; # 
+  fhir:value [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a loinc:21905-5 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "21905-5" ] ;
+       fhir:display [ fhir:v "Primary tumor.clinical [Class] Cancer" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

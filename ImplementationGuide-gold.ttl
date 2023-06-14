@@ -50,6 +50,18 @@
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
      fhir:version [ fhir:v "5.0.0" ]
   ] [
+     fhir:id [ fhir:v "hl7ext" ] ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack" ]
+     ] ) ;
+     fhir:uri [
+       fhir:v "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"^^xsd:anyURI ;
+       fhir:link <http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions>
+     ] ;
+     fhir:packageId [ fhir:v "hl7.fhir.uv.extensions.r4" ] ;
+     fhir:version [ fhir:v "1.0.0" ]
+  ] [
      fhir:id [ fhir:v "de_basisprofil_r4" ] ;
      fhir:uri [
        fhir:v "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4"^^xsd:anyURI ;
@@ -300,6 +312,9 @@
        ] ) ;
        fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"^^xsd:anyURI ]
      ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "hl7.fhir.uv.tools#current" ]
+     ] [
        fhir:extension ( [
          fhir:url [ fhir:v "code"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "copyrightyear" ]
@@ -519,6 +534,497 @@
      fhir:resource ( [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Specimen" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Specimen/blood-specimen> ;
+         fhir:reference [ fhir:v "Specimen/blood-specimen" ]
+       ] ;
+       fhir:name [ fhir:v "blood-specimen" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Condition" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Condition/mamma-ca-rechts> ;
+         fhir:reference [ fhir:v "Condition/mamma-ca-rechts" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnose MammaCa rechts" ] ;
+       fhir:description [ fhir:v "Beispiel einer Diagnose Mamma Ca rechts." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o> ;
+         fhir:reference [ fhir:v "StructureDefinition/diagnosesicherung-icd-o" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnosesicherung ICD O" ] ;
+       fhir:description [ fhir:v "Extension für die Erfassung der Diagnosesicherung der ICD-O-3" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "CodeSystem" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3> ;
+         fhir:reference [ fhir:v "CodeSystem/cs-diagnosesicherung-icdo3" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnosesicherung ICD-O-3" ] ;
+       fhir:description [ fhir:v "CodeSystem für die Diagnosesicherungscodes der ICD-O-3" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis> ;
+         fhir:reference [ fhir:v "StructureDefinition/diagnosis" ]
+       ] ;
+       fhir:name [ fhir:v "Diagnosis" ] ;
+       fhir:description [ fhir:v "Enables to reference a diagnosis <Condition> the body stucture refers to" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationAdministration" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/MedicationAdministration/exa-medication-administration> ;
+         fhir:reference [ fhir:v "MedicationAdministration/exa-medication-administration" ]
+       ] ;
+       fhir:name [ fhir:v "exa-medication-administration" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "MedicationStatement" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/MedicationStatement/exa-medication-statement-caelyx> ;
+         fhir:reference [ fhir:v "MedicationStatement/exa-medication-statement-caelyx" ]
+       ] ;
+       fhir:name [ fhir:v "exa-medication-statement-caelyx" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-body-height> ;
+         fhir:reference [ fhir:v "Observation/example-body-height" ]
+       ] ;
+       fhir:name [ fhir:v "Example Body Height" ] ;
+       fhir:description [ fhir:v "Example body height of a patient." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-body-weight> ;
+         fhir:reference [ fhir:v "Observation/example-body-weight" ]
+       ] ;
+       fhir:name [ fhir:v "Example Body Weight" ] ;
+       fhir:description [ fhir:v "Example body weight of a patient." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "DiagnosticReport" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/DiagnosticReport/example-diagnostic-report> ;
+         fhir:reference [ fhir:v "DiagnosticReport/example-diagnostic-report" ]
+       ] ;
+       fhir:name [ fhir:v "Example Diagnostic Report" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-diagnostic-report"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-diagnostic-report>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-ecog-performance-status> ;
+         fhir:reference [ fhir:v "Observation/example-ecog-performance-status" ]
+       ] ;
+       fhir:name [ fhir:v "Example ECOG Performance Status" ] ;
+       fhir:description [ fhir:v "Example ECOG status observation." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-histologic-grade> ;
+         fhir:reference [ fhir:v "Observation/example-histologic-grade" ]
+       ] ;
+       fhir:name [ fhir:v "Example Histologic Tumor Grade" ] ;
+       fhir:description [ fhir:v "Example tumor grade using the general four-tier grading scheme." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-histology-topography> ;
+         fhir:reference [ fhir:v "Observation/example-histology-topography" ]
+       ] ;
+       fhir:name [ fhir:v "Example Histology and Topography" ] ;
+       fhir:description [ fhir:v "Example tumor histology and topography observation." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-karnofsky-performance-status> ;
+         fhir:reference [ fhir:v "Observation/example-karnofsky-performance-status" ]
+       ] ;
+       fhir:name [ fhir:v "Example Karnofsky Performance Status" ] ;
+       fhir:description [ fhir:v "Example Karnofsky performance status observation." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Procedure/example-radiological-recist-read-procedure> ;
+         fhir:reference [ fhir:v "Procedure/example-radiological-recist-read-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Example of a RECIST Radiological Read Procedure" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-recist-category-observation> ;
+         fhir:reference [ fhir:v "Observation/example-recist-category-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Example of a RECIST Tumor Category Observation" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Procedure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Procedure/example-radiological-tnm-read-procedure> ;
+         fhir:reference [ fhir:v "Procedure/example-radiological-tnm-read-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Example of a TNM Radiological Read Procedure" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-tnm-read-procedure"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-tnm-read-procedure>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-category-observation> ;
+         fhir:reference [ fhir:v "Observation/example-tnm-category-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Example of a TNM Tumor Category Observation" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tnm-category-observation"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tnm-category-observation>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Patient" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient> ;
+         fhir:reference [ fhir:v "Patient/ExamplePatient" ]
+       ] ;
+       fhir:name [ fhir:v "Example Patient" ] ;
+       fhir:description [ fhir:v "Example of a patient." ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/ExampleRecistAssessmentResponse> ;
+         fhir:reference [ fhir:v "Observation/ExampleRecistAssessmentResponse" ]
+       ] ;
+       fhir:name [ fhir:v "Example RECIST assessment timepoint response" ] ;
+       fhir:description [ fhir:v "Example RECIST assessment timepoint response observation." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ResearchStudy" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyNapkonCovidom> ;
+         fhir:reference [ fhir:v "ResearchStudy/ExampleStudyNapkonCovidom" ]
+       ] ;
+       fhir:name [ fhir:v "Example Study NAPKON COVIDOM" ] ;
+       fhir:description [ fhir:v "Example Study NAPKON COVIDOM" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ResearchStudy" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyRAAINBOW> ;
+         fhir:reference [ fhir:v "ResearchStudy/ExampleStudyRAAINBOW" ]
+       ] ;
+       fhir:name [ fhir:v "Example Study RAAINBOW" ] ;
+       fhir:description [ fhir:v "Example Study RAAINBOW" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-cT3pN0mol-sncM1> ;
+         fhir:reference [ fhir:v "Observation/example-tnm-cT3pN0mol-sncM1" ]
+       ] ;
+       fhir:name [ fhir:v "Example TNM cT3 pN0 (mol-)(sn) cM1" ] ;
+       fhir:description [ fhir:v "Example TNM cT3 pN0 (mol-)(sn) cM1." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-rpT3mpN0icM0R1is> ;
+         fhir:reference [ fhir:v "Observation/example-tnm-rpT3mpN0icM0R1is" ]
+       ] ;
+       fhir:name [ fhir:v "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)" ] ;
+       fhir:description [ fhir:v "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-R0> ;
+         fhir:reference [ fhir:v "Observation/example-tnm-R0" ]
+       ] ;
+       fhir:name [ fhir:v "Example TNM R0" ] ;
+       fhir:description [ fhir:v "Example TNM R0." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-R1> ;
+         fhir:reference [ fhir:v "Observation/example-tnm-R1" ]
+       ] ;
+       fhir:name [ fhir:v "Example TNM R1" ] ;
+       fhir:description [ fhir:v "Example TNM R1." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-TisN0M0> ;
+         fhir:reference [ fhir:v "Observation/example-tnm-TisN0M0" ]
+       ] ;
+       fhir:name [ fhir:v "Example TNM Tis N0 M0" ] ;
+       fhir:description [ fhir:v "Example TNM Tis N0 M0." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-uT2a2pN0023i-sncM1> ;
+         fhir:reference [ fhir:v "Observation/example-tnm-uT2a2pN0023i-sncM1" ]
+       ] ;
+       fhir:name [ fhir:v "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1" ] ;
+       fhir:description [ fhir:v "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0> ;
+         fhir:reference [ fhir:v "Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0" ]
+       ] ;
+       fhir:name [ fhir:v "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0" ] ;
+       fhir:description [ fhir:v "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-vital-signs-base> ;
+         fhir:reference [ fhir:v "Observation/example-vital-signs-base" ]
+       ] ;
+       fhir:name [ fhir:v "Example Vital Signs Base Observation" ] ;
+       fhir:description [ fhir:v "Example of a vital signs base observation." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "BodyStructure" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/BodyStructure/example-body-structure> ;
+         fhir:reference [ fhir:v "BodyStructure/example-body-structure" ]
+       ] ;
+       fhir:name [ fhir:v "example-body-structure" ] ;
+       fhir:example [ fhir:v "true"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ResearchSubject" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchSubject/ExampleResearchSubjectStudienteilnehmer> ;
+         fhir:reference [ fhir:v "ResearchSubject/ExampleResearchSubjectStudienteilnehmer" ]
+       ] ;
+       fhir:name [ fhir:v "ExampleResearchSubjectStudienteilnehmer" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu> ;
+         fhir:reference [ fhir:v "StructureDefinition/uicc-tnm-prefix-cpu" ]
+       ] ;
+       fhir:name [ fhir:v "Extension UICC TNM Prefix CPU" ] ;
+       fhir:description [ fhir:v "The Extension allows to add c, p and u prefixes to TNM stages." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc> ;
+         fhir:reference [ fhir:v "StructureDefinition/uicc-tnm-suffix-itc" ]
+       ] ;
+       fhir:name [ fhir:v "Extension UICC TNM Suffix ITC" ] ;
+       fhir:description [ fhir:v "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn> ;
+         fhir:reference [ fhir:v "StructureDefinition/uicc-tnm-suffix-itc-sn" ]
+       ] ;
+       fhir:name [ fhir:v "Extension UICC TNM Suffix ITC SN" ] ;
+       fhir:description [ fhir:v "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
@@ -654,6 +1160,18 @@
          fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-diagnostic-report> ;
+         fhir:reference [ fhir:v "StructureDefinition/radiological-diagnostic-report" ]
+       ] ;
+       fhir:name [ fhir:v "Profile Radiological Diagnostic Report" ] ;
+       fhir:description [ fhir:v "Profile for the base definition of all radiological diagnostic reports." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response> ;
          fhir:reference [ fhir:v "StructureDefinition/recist-assessment-response" ]
        ] ;
@@ -747,26 +1265,50 @@
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosesicherung-icd-o> ;
-         fhir:reference [ fhir:v "StructureDefinition/diagnosesicherung-icd-o" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-read-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/radiological-read-procedure" ]
        ] ;
-       fhir:name [ fhir:v "Diagnosesicherung ICD O" ] ;
-       fhir:description [ fhir:v "Extension für die Erfassung der Diagnosesicherung der ICD-O-3" ] ;
+       fhir:name [ fhir:v "Radiological read procedure" ] ;
+       fhir:description [ fhir:v "This radiological procedure profile describes a radiological reading process or an automated procedure like an AI algorithm for segmentation. Not the procedure performed during image aquisition which is described in the ImagingStudy procedureReference of the linked reports in this resource. The purpose of this resource is to give structured information in the Diagnostic Report the right context. For example this way a TNM observation resource gets the context which version of TNM was used and which entity was addressed. It can also be used to give BodyStructures resources which were addressed during a radiological read additional attributes. E.g. the category of tumor within a TNM read could be 'Primary' and the very same lesion (BodyStructure) could be 'Target' in the scope of a RECIST read procedure." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis> ;
-         fhir:reference [ fhir:v "StructureDefinition/diagnosis" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-tnm-read-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/radiological-tnm-read-procedure" ]
        ] ;
-       fhir:name [ fhir:v "Diagnosis" ] ;
-       fhir:description [ fhir:v "Enables to reference a diagnosis <Condition> the body stucture refers to" ] ;
+       fhir:name [ fhir:v "Radiological read procedure for clinical TNM" ] ;
+       fhir:description [ fhir:v "This radiological procedure profile describes the radiological reading process following TNM criteria. It derives from the Radiological_Read_Procedure and needs to define which entity and in which version the read was performed." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure> ;
+         fhir:reference [ fhir:v "StructureDefinition/radiological-recist-read-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Radiological read procedure for RECIST" ] ;
+       fhir:description [ fhir:v "This radiological procedure profile describes the radiological reading process following the RECIST criteria. Not the procedure performed during image aquisition which is described in the ImagingStudy procedureReference of the linked reports in this resource." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-category-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/recist-category-observation" ]
+       ] ;
+       fhir:name [ fhir:v "RECIST Tumor Category Observation" ] ;
+       fhir:description [ fhir:v "Profiles the category of a BodyStructure resource in the context of one RECIST procedure" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -786,36 +1328,69 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu> ;
-         fhir:reference [ fhir:v "StructureDefinition/uicc-tnm-prefix-cpu" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info> ;
+         fhir:reference [ fhir:v "StructureDefinition/supporting-info" ]
        ] ;
-       fhir:name [ fhir:v "Extension UICC TNM Prefix CPU" ] ;
-       fhir:description [ fhir:v "The Extension allows to add c, p and u prefixes to TNM stages." ] ;
+       fhir:name [ fhir:v "Supporting Info" ] ;
+       fhir:description [ fhir:v "Enables to reference a finding <Observation> the diagnostic report refers to" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
+         fhir:value [ fhir:v "StructureDefinition:resource" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc> ;
-         fhir:reference [ fhir:v "StructureDefinition/uicc-tnm-suffix-itc" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tnm-category-observation> ;
+         fhir:reference [ fhir:v "StructureDefinition/tnm-category-observation" ]
        ] ;
-       fhir:name [ fhir:v "Extension UICC TNM Suffix ITC" ] ;
-       fhir:description [ fhir:v "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM." ] ;
+       fhir:name [ fhir:v "TNM Tumor Category Observation" ] ;
+       fhir:description [ fhir:v "Profiles the category of a BodyStructure resource in the context of one TNM procedure" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "StructureDefinition:extension" ]
+         fhir:value [ fhir:v "BodyStructure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-suffix-itc-sn> ;
-         fhir:reference [ fhir:v "StructureDefinition/uicc-tnm-suffix-itc-sn" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/BodyStructure/CerebellarSarcoma> ;
+         fhir:reference [ fhir:v "BodyStructure/CerebellarSarcoma" ]
        ] ;
-       fhir:name [ fhir:v "Extension UICC TNM Suffix ITC SN" ] ;
-       fhir:description [ fhir:v "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM." ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
+       fhir:name [ fhir:v "Tumor Example - Cerebellar Sarcoma" ] ;
+       fhir:description [ fhir:v "Example for the Tumor profile" ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/tumor-size-pathology> ;
+         fhir:reference [ fhir:v "Observation/tumor-size-pathology" ]
+       ] ;
+       fhir:name [ fhir:v "tumor-size-pathology" ] ;
+       fhir:description [ fhir:v "Example of a resource conforming to the tumor size profile in pathology." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement>
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "Observation" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/tumor-size-radiology> ;
+         fhir:reference [ fhir:v "Observation/tumor-size-radiology" ]
+       ] ;
+       fhir:name [ fhir:v "tumor-size-radiology" ] ;
+       fhir:description [ fhir:v "Example of a resource conforming to the tumor size profile in radiology (MRI bidimensional measurement)." ] ;
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -834,11 +1409,11 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response> ;
-         fhir:reference [ fhir:v "ValueSet/recist-asstimepoint-response" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed> ;
+         fhir:reference [ fhir:v "ValueSet/ecog-performance-status-snomed" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet Recist Timepoint Response" ] ;
-       fhir:description [ fhir:v "Defines the valid values for the recist assessment response observation resource" ] ;
+       fhir:name [ fhir:v "ValueSet ECOG Performance Status SNOMED" ] ;
+       fhir:description [ fhir:v "The ValueSet contains the ECOG Performance Status values from SNOMED CT." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -846,11 +1421,47 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed> ;
-         fhir:reference [ fhir:v "ValueSet/ecog-performance-status-snomed" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recsit-category-observation> ;
+         fhir:reference [ fhir:v "ValueSet/vs-recsit-category-observation" ]
        ] ;
-       fhir:name [ fhir:v "ValueSet ECOG Performance Status SNOMED" ] ;
-       fhir:description [ fhir:v "The ValueSet contains the ECOG Performance Status values from SNOMED CT." ] ;
+       fhir:name [ fhir:v "Valueset for Categories of a BodyStructure in the context of one RECIST procedure" ] ;
+       fhir:description [ fhir:v "TODO" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-category-observation> ;
+         fhir:reference [ fhir:v "ValueSet/vs-tnm-category-observation" ]
+       ] ;
+       fhir:name [ fhir:v "Valueset for Categories of a BodyStructure in the context of one TNM procedure" ] ;
+       fhir:description [ fhir:v "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-radiological-read-procedure> ;
+         fhir:reference [ fhir:v "ValueSet/vs-recist-radiological-read-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Valueset for RECIST Radiological Read Procedures" ] ;
+       fhir:description [ fhir:v "TODO" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-radiological-read-procedure> ;
+         fhir:reference [ fhir:v "ValueSet/vs-tnm-radiological-read-procedure" ]
+       ] ;
+       fhir:name [ fhir:v "Valueset for TNM Radiological Read Procedures" ] ;
+       fhir:description [ fhir:v "This Valueset contains the snomed codes of the different TNM tumor staging systems" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -887,6 +1498,18 @@
        ] ;
        fhir:name [ fhir:v "ValueSet Morphology SNOMED" ] ;
        fhir:description [ fhir:v "The ValueSet contains the morphology (histology) codes from SNOMED CT." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response> ;
+         fhir:reference [ fhir:v "ValueSet/recist-asstimepoint-response" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet Recist Timepoint Response" ] ;
+       fhir:description [ fhir:v "Defines the valid values for the recist assessment response observation resource" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1158,18 +1781,6 @@
          fhir:value [ fhir:v "ValueSet" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-area-units> ;
-         fhir:reference [ fhir:v "ValueSet/tumor-area-units" ]
-       ] ;
-       fhir:name [ fhir:v "ValueSet Tumor Size Units ValueSet" ] ;
-       fhir:description [ fhir:v "Acceptable units for measuring tumor areas" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ValueSet" ]
-       ] ) ;
-       fhir:reference [
          fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods> ;
          fhir:reference [ fhir:v "ValueSet/tumor-measurement-methods" ]
        ] ;
@@ -1199,6 +1810,18 @@
        ] ;
        fhir:name [ fhir:v "ValueSet Tumor Size Units Value Set" ] ;
        fhir:description [ fhir:v "Acceptable units for measuring tumor volumes" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ValueSet" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-area-units> ;
+         fhir:reference [ fhir:v "ValueSet/tumor-area-units" ]
+       ] ;
+       fhir:name [ fhir:v "ValueSet Tumor Size Units ValueSet" ] ;
+       fhir:description [ fhir:v "Acceptable units for measuring tumor areas" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1236,412 +1859,6 @@
        fhir:name [ fhir:v "ValueSet Type of Study Arm NCIt" ] ;
        fhir:description [ fhir:v "Type of Study Arm aus NCI Thesaurus (NCIt)" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "CodeSystem" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3> ;
-         fhir:reference [ fhir:v "CodeSystem/cs-diagnosesicherung-icdo3" ]
-       ] ;
-       fhir:name [ fhir:v "Diagnosesicherung ICD-O-3" ] ;
-       fhir:description [ fhir:v "CodeSystem für die Diagnosesicherungscodes der ICD-O-3" ] ;
-       fhir:example [ fhir:v "false"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "BodyStructure" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/BodyStructure/CerebellarSarcoma> ;
-         fhir:reference [ fhir:v "BodyStructure/CerebellarSarcoma" ]
-       ] ;
-       fhir:name [ fhir:v "Tumor Example - Cerebellar Sarcoma" ] ;
-       fhir:description [ fhir:v "Example for the Tumor profile" ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Patient" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Patient/ExamplePatient> ;
-         fhir:reference [ fhir:v "Patient/ExamplePatient" ]
-       ] ;
-       fhir:name [ fhir:v "Example Patient" ] ;
-       fhir:description [ fhir:v "Example of a patient." ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/ExampleRecistAssessmentResponse> ;
-         fhir:reference [ fhir:v "Observation/ExampleRecistAssessmentResponse" ]
-       ] ;
-       fhir:name [ fhir:v "Example RECIST assessment timepoint response" ] ;
-       fhir:description [ fhir:v "Example RECIST assessment timepoint response observation." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ResearchSubject" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchSubject/ExampleResearchSubjectStudienteilnehmer> ;
-         fhir:reference [ fhir:v "ResearchSubject/ExampleResearchSubjectStudienteilnehmer" ]
-       ] ;
-       fhir:name [ fhir:v "ExampleResearchSubjectStudienteilnehmer" ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ResearchStudy" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyNapkonCovidom> ;
-         fhir:reference [ fhir:v "ResearchStudy/ExampleStudyNapkonCovidom" ]
-       ] ;
-       fhir:name [ fhir:v "Example Study NAPKON COVIDOM" ] ;
-       fhir:description [ fhir:v "Example Study NAPKON COVIDOM" ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "ResearchStudy" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/ResearchStudy/ExampleStudyRAAINBOW> ;
-         fhir:reference [ fhir:v "ResearchStudy/ExampleStudyRAAINBOW" ]
-       ] ;
-       fhir:name [ fhir:v "Example Study RAAINBOW" ] ;
-       fhir:description [ fhir:v "Example Study RAAINBOW" ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Specimen" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Specimen/blood-specimen> ;
-         fhir:reference [ fhir:v "Specimen/blood-specimen" ]
-       ] ;
-       fhir:name [ fhir:v "blood-specimen" ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "MedicationAdministration" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/MedicationAdministration/exa-medication-administration> ;
-         fhir:reference [ fhir:v "MedicationAdministration/exa-medication-administration" ]
-       ] ;
-       fhir:name [ fhir:v "exa-medication-administration" ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "MedicationStatement" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/MedicationStatement/exa-medication-statement-caelyx> ;
-         fhir:reference [ fhir:v "MedicationStatement/exa-medication-statement-caelyx" ]
-       ] ;
-       fhir:name [ fhir:v "exa-medication-statement-caelyx" ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-body-height> ;
-         fhir:reference [ fhir:v "Observation/example-body-height" ]
-       ] ;
-       fhir:name [ fhir:v "Example Body Height" ] ;
-       fhir:description [ fhir:v "Example body height of a patient." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "BodyStructure" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/BodyStructure/example-body-structure> ;
-         fhir:reference [ fhir:v "BodyStructure/example-body-structure" ]
-       ] ;
-       fhir:name [ fhir:v "example-body-structure" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-body-weight> ;
-         fhir:reference [ fhir:v "Observation/example-body-weight" ]
-       ] ;
-       fhir:name [ fhir:v "Example Body Weight" ] ;
-       fhir:description [ fhir:v "Example body weight of a patient." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-ecog-performance-status> ;
-         fhir:reference [ fhir:v "Observation/example-ecog-performance-status" ]
-       ] ;
-       fhir:name [ fhir:v "Example ECOG Performance Status" ] ;
-       fhir:description [ fhir:v "Example ECOG status observation." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-histologic-grade> ;
-         fhir:reference [ fhir:v "Observation/example-histologic-grade" ]
-       ] ;
-       fhir:name [ fhir:v "Example Histologic Tumor Grade" ] ;
-       fhir:description [ fhir:v "Example tumor grade using the general four-tier grading scheme." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-histology-topography> ;
-         fhir:reference [ fhir:v "Observation/example-histology-topography" ]
-       ] ;
-       fhir:name [ fhir:v "Example Histology and Topography" ] ;
-       fhir:description [ fhir:v "Example tumor histology and topography observation." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-karnofsky-performance-status> ;
-         fhir:reference [ fhir:v "Observation/example-karnofsky-performance-status" ]
-       ] ;
-       fhir:name [ fhir:v "Example Karnofsky Performance Status" ] ;
-       fhir:description [ fhir:v "Example Karnofsky performance status observation." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-R0> ;
-         fhir:reference [ fhir:v "Observation/example-tnm-R0" ]
-       ] ;
-       fhir:name [ fhir:v "Example TNM R0" ] ;
-       fhir:description [ fhir:v "Example TNM R0." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-R1> ;
-         fhir:reference [ fhir:v "Observation/example-tnm-R1" ]
-       ] ;
-       fhir:name [ fhir:v "Example TNM R1" ] ;
-       fhir:description [ fhir:v "Example TNM R1." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-TisN0M0> ;
-         fhir:reference [ fhir:v "Observation/example-tnm-TisN0M0" ]
-       ] ;
-       fhir:name [ fhir:v "Example TNM Tis N0 M0" ] ;
-       fhir:description [ fhir:v "Example TNM Tis N0 M0." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-cT3pN0mol-sncM1> ;
-         fhir:reference [ fhir:v "Observation/example-tnm-cT3pN0mol-sncM1" ]
-       ] ;
-       fhir:name [ fhir:v "Example TNM cT3 pN0 (mol-)(sn) cM1" ] ;
-       fhir:description [ fhir:v "Example TNM cT3 pN0 (mol-)(sn) cM1." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-rpT3mpN0icM0R1is> ;
-         fhir:reference [ fhir:v "Observation/example-tnm-rpT3mpN0icM0R1is" ]
-       ] ;
-       fhir:name [ fhir:v "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)" ] ;
-       fhir:description [ fhir:v "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-uT2a2pN0023i-sncM1> ;
-         fhir:reference [ fhir:v "Observation/example-tnm-uT2a2pN0023i-sncM1" ]
-       ] ;
-       fhir:name [ fhir:v "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1" ] ;
-       fhir:description [ fhir:v "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0> ;
-         fhir:reference [ fhir:v "Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0" ]
-       ] ;
-       fhir:name [ fhir:v "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0" ] ;
-       fhir:description [ fhir:v "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/example-vital-signs-base> ;
-         fhir:reference [ fhir:v "Observation/example-vital-signs-base" ]
-       ] ;
-       fhir:name [ fhir:v "Example Vital Signs Base Observation" ] ;
-       fhir:description [ fhir:v "Example of a vital signs base observation." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Condition" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Condition/mamma-ca-rechts> ;
-         fhir:reference [ fhir:v "Condition/mamma-ca-rechts" ]
-       ] ;
-       fhir:name [ fhir:v "Diagnose MammaCa rechts" ] ;
-       fhir:description [ fhir:v "Beispiel einer Diagnose Mamma Ca rechts." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/tumor-size-pathology> ;
-         fhir:reference [ fhir:v "Observation/tumor-size-pathology" ]
-       ] ;
-       fhir:name [ fhir:v "tumor-size-pathology" ] ;
-       fhir:description [ fhir:v "Example of a resource conforming to the tumor size profile in pathology." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement>
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
-         fhir:value [ fhir:v "Observation" ]
-       ] ) ;
-       fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/Observation/tumor-size-radiology> ;
-         fhir:reference [ fhir:v "Observation/tumor-size-radiology" ]
-       ] ;
-       fhir:name [ fhir:v "tumor-size-radiology" ] ;
-       fhir:description [ fhir:v "Example of a resource conforming to the tumor size profile in radiology (MRI bidimensional measurement)." ] ;
-       fhir:example [
-         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"^^xsd:anyURI ;
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement>
-       ]
      ] ) ;
      fhir:page [
        fhir:extension ( [

@@ -31,10 +31,10 @@
     <![endif]-->
 
     <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png"/>
-    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png"/>
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
     <link rel="shortcut icon" href="assets/ico/favicon.png"/>
   </head>
   <body onload="document.body.style.opacity='1'">
@@ -199,6 +199,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <li><a href="StructureDefinition-recist-assessment-response.html">Profile RECIST timepoint assessment response</a> <p>Profile for the RECIST timepoint assessment response which is available for each assessment timepoint as published here: https://recist.eortc.org/recist-1-1-2/
 Please note there is no assessment timepoint response for the baseline assessment.</p>
 </li>
+<li><a href="StructureDefinition-radiological-diagnostic-report.html">Profile Radiological Diagnostic Report</a> <p>Profile for the base definition of all radiological diagnostic reports.</p>
+</li>
 <li><a href="StructureDefinition-tumor.html">Profile Tumor</a> <p>Profile of a tumor</p>
 </li>
 <li><a href="StructureDefinition-tumor-disorder.html">Profile Tumor Disorder</a> <p>Profile for a tumor disorder</p>
@@ -212,6 +214,16 @@ Please note there is no assessment timepoint response for the baseline assessmen
 <li><a href="StructureDefinition-uicc-tnm-r-classification.html">Profile UICC TNM Residual Tumor (R) Classification</a> <p>Profile for the residual tumor (R) classification as part of TNM.</p>
 </li>
 <li><a href="StructureDefinition-vital-signs-base.html">Profile Vital Signs Base</a> <p>Profile for the base definition of all vital signs. May not be used directly. Only for reprofiling purposes.</p>
+</li>
+<li><a href="StructureDefinition-recist-category-observation.html">RECIST Tumor Category Observation</a> <p>Profiles the category of a BodyStructure resource in the context of one RECIST procedure</p>
+</li>
+<li><a href="StructureDefinition-radiological-read-procedure.html">Radiological read procedure</a> <p>This radiological procedure profile describes a radiological reading process or an automated procedure like an AI algorithm for segmentation. Not the procedure performed during image aquisition which is described in the ImagingStudy procedureReference of the linked reports in this resource. The purpose of this resource is to give structured information in the Diagnostic Report the right context. For example this way a TNM observation resource gets the context which version of TNM was used and which entity was addressed. It can also be used to give BodyStructures resources which were addressed during a radiological read additional attributes. E.g. the category of tumor within a TNM read could be 'Primary' and the very same lesion (BodyStructure) could be 'Target' in the scope of a RECIST read procedure.</p>
+</li>
+<li><a href="StructureDefinition-radiological-recist-read-procedure.html">Radiological read procedure for RECIST</a> <p>This radiological procedure profile describes the radiological reading process following the RECIST criteria. Not the procedure performed during image aquisition which is described in the ImagingStudy procedureReference of the linked reports in this resource.</p>
+</li>
+<li><a href="StructureDefinition-radiological-tnm-read-procedure.html">Radiological read procedure for clinical TNM</a> <p>This radiological procedure profile describes the radiological reading process following TNM criteria. It derives from the Radiological_Read_Procedure and needs to define which entity and in which version the read was performed.</p>
+</li>
+<li><a href="StructureDefinition-tnm-category-observation.html">TNM Tumor Category Observation</a> <p>Profiles the category of a BodyStructure resource in the context of one TNM procedure</p>
 </li>
 
 
@@ -239,7 +251,7 @@ Please note there is no assessment timepoint response for the baseline assessmen
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">Berlin Institute of Health at Charité (BIH)</a>.  Package gold#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Mon, Apr 17, 2023 12:55+0000">2023-04-17</span>
+          IG &#169; 2021+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.bihealth.org/">Berlin Institute of Health at Charité (BIH)</a>.  Package gold#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Wed, Jun 14, 2023 11:38+0000">2023-06-14</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

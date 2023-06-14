@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-tnm-radiological-read-procedure",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  254293002 (TNM tumour staging)</li></ul></div>"
+  },
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-radiological-read-procedure",
+  "version" : "0.1.0",
+  "name" : "VS_TNM_Radiological_Read_Procedures",
+  "title" : "Valueset for TNM Radiological Read Procedures",
+  "status" : "draft",
+  "date" : "2023-06-14T11:38:14+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "This Valueset contains the snomed codes of the different TNM tumor staging systems",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "CC-BY-SA-4.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "254293002"
+      }]
+    }]
+  }
+}

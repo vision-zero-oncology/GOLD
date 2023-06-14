@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vs-tnm-category-observation",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/21905-5/\">21905-5</a></td><td>Primary tumor.clinical [Class] Cancer</td></tr><tr><td><a href=\"https://loinc.org/21906-3/\">21906-3</a></td><td>Regional lymph nodes.clinical [Class] Cancer</td></tr><tr><td><a href=\"https://loinc.org/21907-1/\">21907-1</a></td><td>Distant metastases.clinical [Class] Cancer</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-category-observation",
+  "version" : "0.1.0",
+  "name" : "VS_TNM_Category_Observation",
+  "title" : "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
+  "status" : "draft",
+  "date" : "2023-06-14T11:38:14+00:00",
+  "publisher" : "Berlin Institute of Health at Charité (BIH)",
+  "contact" : [{
+    "name" : "Berlin Institute of Health at Charité (BIH)",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.bihealth.org/"
+    }]
+  }],
+  "description" : "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DEU"
+    }]
+  }],
+  "copyright" : "CC-BY-SA-4.0",
+  "compose" : {
+    "include" : [{
+      "system" : "http://loinc.org",
+      "concept" : [{
+        "code" : "21905-5",
+        "display" : "Primary tumor.clinical [Class] Cancer"
+      },
+      {
+        "code" : "21906-3",
+        "display" : "Regional lymph nodes.clinical [Class] Cancer"
+      },
+      {
+        "code" : "21907-1",
+        "display" : "Distant metastases.clinical [Class] Cancer"
+      }]
+    }]
+  }
+}

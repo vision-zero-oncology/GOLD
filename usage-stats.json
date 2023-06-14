@@ -28,6 +28,13 @@
       ]
     },
     {
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info",
+      "title": "Supporting Info",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
       "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu",
       "title": "Extension UICC TNM Prefix CPU",
       "types": [
@@ -62,6 +69,10 @@
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base",
         "title": "Profile Vital Signs Base"
+      },
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation",
+        "title": "RECIST Tumor Category Observation"
       }
     ],
     "BodyStructure": [
@@ -92,6 +103,26 @@
       {
         "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin",
         "title": "Profile ProbandIn"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-diagnostic-report",
+        "title": "Profile Radiological Diagnostic Report"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-read-procedure",
+        "title": "Radiological read procedure"
+      },
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure",
+        "title": "Radiological read procedure for RECIST"
+      },
+      {
+        "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-tnm-read-procedure",
+        "title": "Radiological read procedure for clinical TNM"
       }
     ],
     "Condition": [
@@ -157,6 +188,9 @@
     "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
       "StructureDefinition.snapshot.element"
     ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
     "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
       "ImplementationGuide.definition.page",
       "ImplementationGuide.definition.page.page"
@@ -184,6 +218,12 @@
     ],
     "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of": [
       "Specimen"
+    ],
+    "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info": [
+      "DiagnosticReport"
+    ],
+    "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo": [
+      "DiagnosticReport"
     ],
     "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-prefix-cpu": [
       "Observation.component"

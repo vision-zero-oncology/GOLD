@@ -41,6 +41,16 @@
     "version" : "5.0.0"
   },
   {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "1.0.0"
+  },
+  {
     "id" : "de_basisprofil_r4",
     "uri" : "http://fhir.org/packages/de.basisprofil.r4/ImplementationGuide/de.basisprofil.r4",
     "packageId" : "de.basisprofil.r4",
@@ -330,6 +340,10 @@
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
     {
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools#current"
+    },
+    {
       "extension" : [{
         "url" : "code",
         "valueCode" : "copyrightyear"
@@ -596,6 +610,416 @@
     "resource" : [{
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Specimen"
+      }],
+      "reference" : {
+        "reference" : "Specimen/blood-specimen"
+      },
+      "name" : "blood-specimen",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Condition"
+      }],
+      "reference" : {
+        "reference" : "Condition/mamma-ca-rechts"
+      },
+      "name" : "Diagnose MammaCa rechts",
+      "description" : "Beispiel einer Diagnose Mamma Ca rechts.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/diagnosesicherung-icd-o"
+      },
+      "name" : "Diagnosesicherung ICD O",
+      "description" : "Extension für die Erfassung der Diagnosesicherung der ICD-O-3",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/cs-diagnosesicherung-icdo3"
+      },
+      "name" : "Diagnosesicherung ICD-O-3",
+      "description" : "CodeSystem für die Diagnosesicherungscodes der ICD-O-3",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/diagnosis"
+      },
+      "name" : "Diagnosis",
+      "description" : "Enables to reference a diagnosis <Condition> the body stucture refers to",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationAdministration"
+      }],
+      "reference" : {
+        "reference" : "MedicationAdministration/exa-medication-administration"
+      },
+      "name" : "exa-medication-administration",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "MedicationStatement"
+      }],
+      "reference" : {
+        "reference" : "MedicationStatement/exa-medication-statement-caelyx"
+      },
+      "name" : "exa-medication-statement-caelyx",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-body-height"
+      },
+      "name" : "Example Body Height",
+      "description" : "Example body height of a patient.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-body-weight"
+      },
+      "name" : "Example Body Weight",
+      "description" : "Example body weight of a patient.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "DiagnosticReport"
+      }],
+      "reference" : {
+        "reference" : "DiagnosticReport/example-diagnostic-report"
+      },
+      "name" : "Example Diagnostic Report",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-diagnostic-report"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-ecog-performance-status"
+      },
+      "name" : "Example ECOG Performance Status",
+      "description" : "Example ECOG status observation.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-histologic-grade"
+      },
+      "name" : "Example Histologic Tumor Grade",
+      "description" : "Example tumor grade using the general four-tier grading scheme.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-histology-topography"
+      },
+      "name" : "Example Histology and Topography",
+      "description" : "Example tumor histology and topography observation.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-karnofsky-performance-status"
+      },
+      "name" : "Example Karnofsky Performance Status",
+      "description" : "Example Karnofsky performance status observation.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/example-radiological-recist-read-procedure"
+      },
+      "name" : "Example of a RECIST Radiological Read Procedure",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-recist-category-observation"
+      },
+      "name" : "Example of a RECIST Tumor Category Observation",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Procedure"
+      }],
+      "reference" : {
+        "reference" : "Procedure/example-radiological-tnm-read-procedure"
+      },
+      "name" : "Example of a TNM Radiological Read Procedure",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-tnm-read-procedure"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-tnm-category-observation"
+      },
+      "name" : "Example of a TNM Tumor Category Observation",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tnm-category-observation"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      }],
+      "reference" : {
+        "reference" : "Patient/ExamplePatient"
+      },
+      "name" : "Example Patient",
+      "description" : "Example of a patient.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/ExampleRecistAssessmentResponse"
+      },
+      "name" : "Example RECIST assessment timepoint response",
+      "description" : "Example RECIST assessment timepoint response observation.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/ExampleStudyNapkonCovidom"
+      },
+      "name" : "Example Study NAPKON COVIDOM",
+      "description" : "Example Study NAPKON COVIDOM",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/ExampleStudyRAAINBOW"
+      },
+      "name" : "Example Study RAAINBOW",
+      "description" : "Example Study RAAINBOW",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-tnm-cT3pN0mol-sncM1"
+      },
+      "name" : "Example TNM cT3 pN0 (mol-)(sn) cM1",
+      "description" : "Example TNM cT3 pN0 (mol-)(sn) cM1.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-tnm-rpT3mpN0icM0R1is"
+      },
+      "name" : "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)",
+      "description" : "Example TNM r pT3(m) pN0 (i+) cM0 R1(is).",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-tnm-R0"
+      },
+      "name" : "Example TNM R0",
+      "description" : "Example TNM R0.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-tnm-R1"
+      },
+      "name" : "Example TNM R1",
+      "description" : "Example TNM R1.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-tnm-TisN0M0"
+      },
+      "name" : "Example TNM Tis N0 M0",
+      "description" : "Example TNM Tis N0 M0.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-tnm-uT2a2pN0023i-sncM1"
+      },
+      "name" : "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1",
+      "description" : "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0"
+      },
+      "name" : "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0",
+      "description" : "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/example-vital-signs-base"
+      },
+      "name" : "Example Vital Signs Base Observation",
+      "description" : "Example of a vital signs base observation.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "BodyStructure"
+      }],
+      "reference" : {
+        "reference" : "BodyStructure/example-body-structure"
+      },
+      "name" : "example-body-structure",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchSubject"
+      }],
+      "reference" : {
+        "reference" : "ResearchSubject/ExampleResearchSubjectStudienteilnehmer"
+      },
+      "name" : "ExampleResearchSubjectStudienteilnehmer",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/uicc-tnm-prefix-cpu"
+      },
+      "name" : "Extension UICC TNM Prefix CPU",
+      "description" : "The Extension allows to add c, p and u prefixes to TNM stages.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/uicc-tnm-suffix-itc"
+      },
+      "name" : "Extension UICC TNM Suffix ITC",
+      "description" : "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/uicc-tnm-suffix-itc-sn"
+      },
+      "name" : "Extension UICC TNM Suffix ITC SN",
+      "description" : "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -731,6 +1155,18 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
+        "reference" : "StructureDefinition/radiological-diagnostic-report"
+      },
+      "name" : "Profile Radiological Diagnostic Report",
+      "description" : "Profile for the base definition of all radiological diagnostic reports.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
         "reference" : "StructureDefinition/recist-assessment-response"
       },
       "name" : "Profile RECIST timepoint assessment response",
@@ -824,25 +1260,49 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/diagnosesicherung-icd-o"
+        "reference" : "StructureDefinition/radiological-read-procedure"
       },
-      "name" : "Diagnosesicherung ICD O",
-      "description" : "Extension für die Erfassung der Diagnosesicherung der ICD-O-3",
+      "name" : "Radiological read procedure",
+      "description" : "This radiological procedure profile describes a radiological reading process or an automated procedure like an AI algorithm for segmentation. Not the procedure performed during image aquisition which is described in the ImagingStudy procedureReference of the linked reports in this resource. The purpose of this resource is to give structured information in the Diagnostic Report the right context. For example this way a TNM observation resource gets the context which version of TNM was used and which entity was addressed. It can also be used to give BodyStructures resources which were addressed during a radiological read additional attributes. E.g. the category of tumor within a TNM read could be 'Primary' and the very same lesion (BodyStructure) could be 'Target' in the scope of a RECIST read procedure.",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/diagnosis"
+        "reference" : "StructureDefinition/radiological-tnm-read-procedure"
       },
-      "name" : "Diagnosis",
-      "description" : "Enables to reference a diagnosis <Condition> the body stucture refers to",
+      "name" : "Radiological read procedure for clinical TNM",
+      "description" : "This radiological procedure profile describes the radiological reading process following TNM criteria. It derives from the Radiological_Read_Procedure and needs to define which entity and in which version the read was performed.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/radiological-recist-read-procedure"
+      },
+      "name" : "Radiological read procedure for RECIST",
+      "description" : "This radiological procedure profile describes the radiological reading process following the RECIST criteria. Not the procedure performed during image aquisition which is described in the ImagingStudy procedureReference of the linked reports in this resource.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:resource"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/recist-category-observation"
+      },
+      "name" : "RECIST Tumor Category Observation",
+      "description" : "Profiles the category of a BodyStructure resource in the context of one RECIST procedure",
       "exampleBoolean" : false
     },
     {
@@ -863,35 +1323,59 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/uicc-tnm-prefix-cpu"
+        "reference" : "StructureDefinition/supporting-info"
       },
-      "name" : "Extension UICC TNM Prefix CPU",
-      "description" : "The Extension allows to add c, p and u prefixes to TNM stages.",
+      "name" : "Supporting Info",
+      "description" : "Enables to reference a finding <Observation> the diagnostic report refers to",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/uicc-tnm-suffix-itc"
+        "reference" : "StructureDefinition/tnm-category-observation"
       },
-      "name" : "Extension UICC TNM Suffix ITC",
-      "description" : "The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM.",
+      "name" : "TNM Tumor Category Observation",
+      "description" : "Profiles the category of a BodyStructure resource in the context of one TNM procedure",
       "exampleBoolean" : false
     },
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "StructureDefinition:extension"
+        "valueString" : "BodyStructure"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/uicc-tnm-suffix-itc-sn"
+        "reference" : "BodyStructure/CerebellarSarcoma"
       },
-      "name" : "Extension UICC TNM Suffix ITC SN",
-      "description" : "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM.",
-      "exampleBoolean" : false
+      "name" : "Tumor Example - Cerebellar Sarcoma",
+      "description" : "Example for the Tumor profile",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tumor-size-pathology"
+      },
+      "name" : "tumor-size-pathology",
+      "description" : "Example of a resource conforming to the tumor size profile in pathology.",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/tumor-size-radiology"
+      },
+      "name" : "tumor-size-radiology",
+      "description" : "Example of a resource conforming to the tumor size profile in radiology (MRI bidimensional measurement).",
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"
     },
     {
       "extension" : [{
@@ -911,10 +1395,10 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/recist-asstimepoint-response"
+        "reference" : "ValueSet/ecog-performance-status-snomed"
       },
-      "name" : "ValueSet Recist Timepoint Response",
-      "description" : "Defines the valid values for the recist assessment response observation resource",
+      "name" : "ValueSet ECOG Performance Status SNOMED",
+      "description" : "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
       "exampleBoolean" : false
     },
     {
@@ -923,10 +1407,46 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/ecog-performance-status-snomed"
+        "reference" : "ValueSet/vs-recsit-category-observation"
       },
-      "name" : "ValueSet ECOG Performance Status SNOMED",
-      "description" : "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
+      "name" : "Valueset for Categories of a BodyStructure in the context of one RECIST procedure",
+      "description" : "TODO",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-tnm-category-observation"
+      },
+      "name" : "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
+      "description" : "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-recist-radiological-read-procedure"
+      },
+      "name" : "Valueset for RECIST Radiological Read Procedures",
+      "description" : "TODO",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/vs-tnm-radiological-read-procedure"
+      },
+      "name" : "Valueset for TNM Radiological Read Procedures",
+      "description" : "This Valueset contains the snomed codes of the different TNM tumor staging systems",
       "exampleBoolean" : false
     },
     {
@@ -963,6 +1483,18 @@
       },
       "name" : "ValueSet Morphology SNOMED",
       "description" : "The ValueSet contains the morphology (histology) codes from SNOMED CT.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/recist-asstimepoint-response"
+      },
+      "name" : "ValueSet Recist Timepoint Response",
+      "description" : "Defines the valid values for the recist assessment response observation resource",
       "exampleBoolean" : false
     },
     {
@@ -1235,18 +1767,6 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/tumor-area-units"
-      },
-      "name" : "ValueSet Tumor Size Units ValueSet",
-      "description" : "Acceptable units for measuring tumor areas",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
         "reference" : "ValueSet/tumor-measurement-methods"
       },
       "name" : "ValueSet Tumor Measurement Methods",
@@ -1275,6 +1795,18 @@
       },
       "name" : "ValueSet Tumor Size Units Value Set",
       "description" : "Acceptable units for measuring tumor volumes",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/tumor-area-units"
+      },
+      "name" : "ValueSet Tumor Size Units ValueSet",
+      "description" : "Acceptable units for measuring tumor areas",
       "exampleBoolean" : false
     },
     {
@@ -1312,337 +1844,6 @@
       "name" : "ValueSet Type of Study Arm NCIt",
       "description" : "Type of Study Arm aus NCI Thesaurus (NCIt)",
       "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/cs-diagnosesicherung-icdo3"
-      },
-      "name" : "Diagnosesicherung ICD-O-3",
-      "description" : "CodeSystem für die Diagnosesicherungscodes der ICD-O-3",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "BodyStructure"
-      }],
-      "reference" : {
-        "reference" : "BodyStructure/CerebellarSarcoma"
-      },
-      "name" : "Tumor Example - Cerebellar Sarcoma",
-      "description" : "Example for the Tumor profile",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      }],
-      "reference" : {
-        "reference" : "Patient/ExamplePatient"
-      },
-      "name" : "Example Patient",
-      "description" : "Example of a patient.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/ExampleRecistAssessmentResponse"
-      },
-      "name" : "Example RECIST assessment timepoint response",
-      "description" : "Example RECIST assessment timepoint response observation.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchSubject"
-      }],
-      "reference" : {
-        "reference" : "ResearchSubject/ExampleResearchSubjectStudienteilnehmer"
-      },
-      "name" : "ExampleResearchSubjectStudienteilnehmer",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/ExampleStudyNapkonCovidom"
-      },
-      "name" : "Example Study NAPKON COVIDOM",
-      "description" : "Example Study NAPKON COVIDOM",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/ExampleStudyRAAINBOW"
-      },
-      "name" : "Example Study RAAINBOW",
-      "description" : "Example Study RAAINBOW",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Specimen"
-      }],
-      "reference" : {
-        "reference" : "Specimen/blood-specimen"
-      },
-      "name" : "blood-specimen",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationAdministration"
-      }],
-      "reference" : {
-        "reference" : "MedicationAdministration/exa-medication-administration"
-      },
-      "name" : "exa-medication-administration",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "MedicationStatement"
-      }],
-      "reference" : {
-        "reference" : "MedicationStatement/exa-medication-statement-caelyx"
-      },
-      "name" : "exa-medication-statement-caelyx",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-statement"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-body-height"
-      },
-      "name" : "Example Body Height",
-      "description" : "Example body height of a patient.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-height"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "BodyStructure"
-      }],
-      "reference" : {
-        "reference" : "BodyStructure/example-body-structure"
-      },
-      "name" : "example-body-structure",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-body-weight"
-      },
-      "name" : "Example Body Weight",
-      "description" : "Example body weight of a patient.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-weight"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-ecog-performance-status"
-      },
-      "name" : "Example ECOG Performance Status",
-      "description" : "Example ECOG status observation.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/ecog-performance-status"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-histologic-grade"
-      },
-      "name" : "Example Histologic Tumor Grade",
-      "description" : "Example tumor grade using the general four-tier grading scheme.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histopathological-grading-who"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-histology-topography"
-      },
-      "name" : "Example Histology and Topography",
-      "description" : "Example tumor histology and topography observation.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/histology-topography"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-karnofsky-performance-status"
-      },
-      "name" : "Example Karnofsky Performance Status",
-      "description" : "Example Karnofsky performance status observation.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/karnofsky-performance-status"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-tnm-R0"
-      },
-      "name" : "Example TNM R0",
-      "description" : "Example TNM R0.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-tnm-R1"
-      },
-      "name" : "Example TNM R1",
-      "description" : "Example TNM R1.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm-r-classification"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-tnm-TisN0M0"
-      },
-      "name" : "Example TNM Tis N0 M0",
-      "description" : "Example TNM Tis N0 M0.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-tnm-cT3pN0mol-sncM1"
-      },
-      "name" : "Example TNM cT3 pN0 (mol-)(sn) cM1",
-      "description" : "Example TNM cT3 pN0 (mol-)(sn) cM1.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-tnm-rpT3mpN0icM0R1is"
-      },
-      "name" : "Example TNM r pT3(m) pN0 (i+) cM0 R1(is)",
-      "description" : "Example TNM r pT3(m) pN0 (i+) cM0 R1(is).",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-tnm-uT2a2pN0023i-sncM1"
-      },
-      "name" : "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1",
-      "description" : "Example TNM uT2a2 pN0 (0/23) (i-)(sn) cM1.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0"
-      },
-      "name" : "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0",
-      "description" : "Example TNM y pT1b pN1 (3/9) (sn) L0 V0 Pn1 cM0 R0.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/uicc-tnm"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/example-vital-signs-base"
-      },
-      "name" : "Example Vital Signs Base Observation",
-      "description" : "Example of a vital signs base observation.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/vital-signs-base"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Condition"
-      }],
-      "reference" : {
-        "reference" : "Condition/mamma-ca-rechts"
-      },
-      "name" : "Diagnose MammaCa rechts",
-      "description" : "Beispiel einer Diagnose Mamma Ca rechts.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/tumor-size-pathology"
-      },
-      "name" : "tumor-size-pathology",
-      "description" : "Example of a resource conforming to the tumor size profile in pathology.",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Observation"
-      }],
-      "reference" : {
-        "reference" : "Observation/tumor-size-radiology"
-      },
-      "name" : "tumor-size-radiology",
-      "description" : "Example of a resource conforming to the tumor size profile in radiology (MRI bidimensional measurement).",
-      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"
     }],
     "page" : {
       "extension" : [{

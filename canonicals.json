@@ -112,11 +112,53 @@
     "name" : "Probandin"
   },
   {
+    "id" : "radiological-diagnostic-report",
+    "type" : "StructureDefinition",
+    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-diagnostic-report",
+    "version" : "0.1.0",
+    "name" : "Radiological_Diagnostic_Report"
+  },
+  {
+    "id" : "radiological-read-procedure",
+    "type" : "StructureDefinition",
+    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-read-procedure",
+    "version" : "0.1.0",
+    "name" : "Radiological_Read_Procedure"
+  },
+  {
+    "id" : "radiological-recist-read-procedure",
+    "type" : "StructureDefinition",
+    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure",
+    "version" : "0.1.0",
+    "name" : "RECIST_Radiological_Read_Procedure"
+  },
+  {
+    "id" : "radiological-tnm-read-procedure",
+    "type" : "StructureDefinition",
+    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-tnm-read-procedure",
+    "version" : "0.1.0",
+    "name" : "TNM_Radiological_Read_Procedure"
+  },
+  {
     "id" : "recist-assessment-response",
     "type" : "StructureDefinition",
     "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-assessment-response",
     "version" : "0.1.0",
     "name" : "RecistAssessmentResponse"
+  },
+  {
+    "id" : "supporting-info",
+    "type" : "StructureDefinition",
+    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info",
+    "version" : "0.1.0",
+    "name" : "Supporting_Info"
+  },
+  {
+    "id" : "tnm-category-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tnm-category-observation",
+    "version" : "0.1.0",
+    "name" : "TNM_Category_Observation"
   },
   {
     "id" : "tumor",
@@ -432,5 +474,40 @@
     "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit",
     "version" : "0.1.0",
     "name" : "VS_TypeOfStudyArm_NCIT"
+  },
+  {
+    "id" : "recist-category-observation",
+    "type" : "StructureDefinition",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation",
+    "version" : "0.1.0",
+    "name" : "RECISTCategoryObservation"
+  },
+  {
+    "id" : "vs-recsit-category-observation",
+    "type" : "ValueSet",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recsit-category-observation",
+    "version" : "0.1.0",
+    "name" : "VS_RECIST_Category_Observation"
+  },
+  {
+    "id" : "vs-tnm-category-observation",
+    "type" : "ValueSet",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-category-observation",
+    "version" : "0.1.0",
+    "name" : "VS_TNM_Category_Observation"
+  },
+  {
+    "id" : "vs-tnm-radiological-read-procedure",
+    "type" : "ValueSet",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-radiological-read-procedure",
+    "version" : "0.1.0",
+    "name" : "VS_TNM_Radiological_Read_Procedures"
+  },
+  {
+    "id" : "vs-recist-radiological-read-procedure",
+    "type" : "ValueSet",
+    "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure",
+    "version" : "0.1.0",
+    "name" : "VS_RECIST_Radiological_Read_Procedures"
   }
 ]

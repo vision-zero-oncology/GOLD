@@ -6,19 +6,19 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-tnm-R1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-tnm-R1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-uicc-tnm-r-classification.html\">Profile UICC TNM Residual Tumor (R) Classification</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Residual tumor classification [Type] in Cancer specimen <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#84892-9; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#17964000 &quot;Residual tumor stage (observable entity)&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: R1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#R1)</span></p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"example-tnm-R1\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;example-tnm-R1&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-uicc-tnm-r-classification.html\">Profile UICC TNM Residual Tumor (R) Classification</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Residual tumor stage (observable entity) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#17964000; <a href=\"https://loinc.org/\">LOINC</a>#84892-9 &quot;Residual tumor classification [Type] in Cancer specimen&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p><p><b>effective</b>: 2022-03-07</p><p><b>value</b>: R1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (unknown#R1)</span></p></div>"
   },
   "status" : "final",
   "code" : {
     "coding" : [{
-      "system" : "http://loinc.org",
-      "code" : "84892-9",
-      "display" : "Residual tumor classification [Type] in Cancer specimen"
-    },
-    {
       "system" : "http://snomed.info/sct",
       "code" : "17964000",
       "display" : "Residual tumor stage (observable entity)"
+    },
+    {
+      "system" : "http://loinc.org",
+      "code" : "84892-9",
+      "display" : "Residual tumor classification [Type] in Cancer specimen"
     }]
   },
   "subject" : {

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="example-diagnostic-report"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-diagnostic-report"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h2><span title="Codes: {http://snomed.info/sct 4231000179109}">Mammography report</span> (<span title="Codes: {http://snomed.info/sct 4201000179104}">Imaging report</span>) </h2><table class="grid"><tr><td>Subject</td><td><b>Sebastian Bach (OFFICIAL)</b> male, DoB: 1985-03-31</td></tr></table><p><b>Report Details</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Value</b></td></tr><tr><td colspan="2"><i>Observation</i></td></tr></table></div>
+  </text>
+  <extension url="https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo">
+    <valueReference>
+      <reference value="Procedure/ExampleProcedure"/>
+    </valueReference>
+  </extension>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="4201000179104"/>
+      <display value="Imaging report"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="4231000179109"/>
+      <display value="Mammography report"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/ExamplePatient"/>
+  </subject>
+  <result>
+    <reference value="ExampleResultObservation"/>
+  </result>
+  <imagingStudy>
+    <reference value="ExampleStudy"/>
+  </imagingStudy>
+</DiagnosticReport>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="example-radiological-recist-read-procedure"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Procedure</b><a name="example-radiological-recist-read-procedure"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Procedure &quot;example-radiological-recist-read-procedure&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-radiological-recist-read-procedure.html">Radiological read procedure for RECIST</a></p></div><p><b>status</b>: completed</p><p><b>category</b>: Diagnostic procedure <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#103693007)</span></p><p><b>code</b>: In partial remission <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#103337004)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Pateint/examplePatient">Pateint/examplePatient</a></p><p><b>report</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/DiagnosticReport/exampleDiagnosticReport">DiagnosticReport/exampleDiagnosticReport</a></p></div>
+  </text>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="103693007"/>
+      <display value="Diagnostic procedure"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="103337004"/>
+      <display value="In partial remission"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Pateint/examplePatient"/>
+  </subject>
+  <report>
+    <reference value="DiagnosticReport/exampleDiagnosticReport"/>
+  </report>
+</Procedure>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="example-recist-category-observation"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Observation</b><a name="example-recist-category-observation"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Observation &quot;example-recist-category-observation&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-recist-category-observation.html">RECIST Tumor Category Observation</a></p></div><p><b>partOf</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Procedure/exampleRECISTProcedure">Procedure/exampleRECISTProcedure</a></p><p><b>status</b>: final</p><p><b>code</b>: In partial remission <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#103337004)</span></p><p><b>subject</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/examplePatient">Patient/examplePatient</a></p><p><b>focus</b>: <a href="https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/BodyStructure/exampleBodyStructure">BodyStructure/exampleBodyStructure</a></p><p><b>value</b>: In partial remission <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#103337004)</span></p></div>
+  </text>
+  <partOf>
+    <reference value="Procedure/exampleRECISTProcedure"/>
+  </partOf>
+  <status value="final"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="103337004"/>
+      <display value="In partial remission"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/examplePatient"/>
+  </subject>
+  <focus>
+    <reference value="BodyStructure/exampleBodyStructure"/>
+  </focus>
+  <valueCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="103337004"/>
+      <display value="In partial remission"/>
+    </coding>
+  </valueCodeableConcept>
+</Observation>
