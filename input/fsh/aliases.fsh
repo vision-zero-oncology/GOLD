@@ -23,6 +23,7 @@ Alias: $StudyPhase = http://terminology.hl7.org/CodeSystem/research-study-phase
 Alias: $BodyWeightUCUM = http://hl7.org/fhir/ValueSet/ucum-bodyweight|4.0.0
 Alias: $BodyLengthUCUM = http://hl7.org/fhir/ValueSet/ucum-bodylength|4.0.0
 Alias: $ResearchStudyPhase = http://hl7.org/fhir/ValueSet/research-study-phase
+Alias: $DSS = http://terminology.hl7.org/CodeSystem/v2-0074
 
 // Core Extensions
 // Alias: $WorkFlowEpisodeOfCare = http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare
@@ -54,3 +55,6 @@ Alias: $MIIBiobankBioprobeCore = https://www.medizininformatik-initiative.de/fhi
 // GOLD
 Alias: $DiagnosesicherungVS = https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3
 Alias: $DiagnosesicherungCS = https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3
+Alias: $RadReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-read-procedure
+Alias: $RadTnmReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-tnm-read-procedure
+Alias: $RadRecistReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure
