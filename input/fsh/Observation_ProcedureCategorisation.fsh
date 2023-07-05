@@ -14,15 +14,6 @@ Description: "Profiles the category of a BodyStructure resource in the context o
 * focus 1..1 MS
 * focus only Reference(BodyStructure) 
 
-// TNM Categories Valueset
-ValueSet: VS_TNM_Category_Observation
-Id: vs-tnm-category-observation
-Title: "Valueset for Categories of a BodyStructure in the context of one TNM procedure"
-Description: "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)"
-* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-category-observation"
-* $LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
-* $LNC#21906-3 "Regional lymph nodes.clinical [Class] Cancer"
-* $LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
 
 //TNM Example
 Instance: example-tnm-category-observation
@@ -54,13 +45,6 @@ Description: "Profiles the category of a BodyStructure resource in the context o
 * focus 1..1 MS
 * focus only Reference(BodyStructure) 
 
-// RECIST Categories Valueset
-ValueSet: VS_RECIST_Category_Observation
-Id: vs-recsit-category-observation
-Title: "Valueset for Categories of a BodyStructure in the context of one RECIST procedure"
-Description: "TODO"
-* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recsit-category-observation"
-* $SCT#103337004 "In partial remission" //TODO
 
 //RECIST Example
 Instance: example-recist-category-observation
@@ -73,5 +57,6 @@ Title: "Example of a RECIST Tumor Category Observation"
 * partOf = Reference(Procedure/exampleRECISTProcedure)
 * subject = Reference(Patient/examplePatient)
 * focus = Reference(BodyStructure/exampleBodyStructure)
+
 
 

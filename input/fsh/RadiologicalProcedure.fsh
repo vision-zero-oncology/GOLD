@@ -25,13 +25,6 @@ Description: "This radiological procedure profile describes the radiological rea
 * code 1..1
 * code from VS_TNM_Radiological_Read_Procedures (required)
 
-// TNM Procedures Valueset
-ValueSet: VS_TNM_Radiological_Read_Procedures
-Id: vs-tnm-radiological-read-procedure
-Title: "Valueset for TNM Radiological Read Procedures"
-Description: "This Valueset contains the snomed codes of the different TNM tumor staging systems"
-* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-radiological-read-procedure"
-* include codes from system $SCT where concept descendent-of #254293002
 
 //TNM Example
 Instance: example-radiological-tnm-read-procedure
@@ -56,13 +49,6 @@ Description: "This radiological procedure profile describes the radiological rea
 * code 1..1
 * code from VS_RECIST_Radiological_Read_Procedures (required) //TODO: Fixed Code or Value Set?
 
-// RECIST Procedures Valueset
-ValueSet: VS_RECIST_Radiological_Read_Procedures
-Id: vs-recist-radiological-read-procedure
-Title: "Valueset for RECIST Radiological Read Procedures"
-Description: "TODO"
-* ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure"
-* $SCT#103337004 "In partial remission" //TODO value set contains differern available RECIST versions (TODO start with current versions?)
 
 //RECIST Example
 Instance: example-radiological-recist-read-procedure
