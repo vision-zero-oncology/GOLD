@@ -1,7 +1,3 @@
-Alias: $LNC = http://loinc.org
-Alias: $SCT = http://snomed.info/sct
-Alias: $DSS = http://terminology.hl7.org/CodeSystem/v2-0074
-
 //Profile for a Radiological Diagnostic Report
 Profile: Radiological_Diagnostic_Report
 Parent: DiagnosticReport
