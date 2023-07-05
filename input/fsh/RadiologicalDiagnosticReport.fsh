@@ -25,11 +25,11 @@ Description: "Profile for the base definition of all radiological diagnostic rep
 * code.coding 1..* 
 * subject 1..1 
 * subject only Reference(Patient)
-* extension 1..* 
+* extension 0..* 
 * extension contains Supporting_Info named supportingInfo 0..* MS
 * extension[supportingInfo] ^definition = "Enables to reference a supporting info <Observation or Procedure>. It contains additional information not containt in results and was used/applied during the creation of the report e.g. intermediate Observation results like RECIST target sum or infiltrations used within TNM staging procedures."
 * result 0..* MS 
-* imagingStudy 1..* MS
+* imagingStudy 0..* MS
 * specimen 0..0
 
 
