@@ -1,0 +1,262 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "tumor-measurement",
+  "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement",
+  "name": "TumorMeasurement",
+  "title": "Profile Tumor Measurment",
+  "status": "draft",
+  "description": "Profile for recording measurements of a tumor like the longest diameter or volume. The resource can be used for different measurement methods (e.g. methods in pathology, radiology or physical exams).",
+  "fhirVersion": "4.0.1",
+  "mapping": [
+    {
+      "identity": "workflow",
+      "uri": "http://hl7.org/fhir/workflow",
+      "name": "Workflow Pattern"
+    },
+    {
+      "identity": "sct-concept",
+      "uri": "http://snomed.info/conceptdomain",
+      "name": "SNOMED CT Concept Domain Binding"
+    },
+    {
+      "identity": "v2",
+      "uri": "http://hl7.org/v2",
+      "name": "HL7 v2 Mapping"
+    },
+    {
+      "identity": "rim",
+      "uri": "http://hl7.org/v3",
+      "name": "RIM Mapping"
+    },
+    {
+      "identity": "w5",
+      "uri": "http://hl7.org/fhir/fivews",
+      "name": "FiveWs Pattern Mapping"
+    },
+    {
+      "identity": "sct-attr",
+      "uri": "http://snomed.org/attributebinding",
+      "name": "SNOMED CT Attribute Binding"
+    }
+  ],
+  "kind": "resource",
+  "abstract": false,
+  "type": "Observation",
+  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/Observation",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Observation",
+        "path": "Observation",
+        "constraint": [
+          {
+            "key": "must-have-focus-or-specimen-invariant",
+            "severity": "error",
+            "human": "Either `focus` OR `specimen` MUST be populated",
+            "expression": "(focus.exists() or specimen.exists()) and (focus.exists() and specimen.exists()).not()",
+            "source": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"
+          }
+        ]
+      },
+      {
+        "id": "Observation.code",
+        "path": "Observation.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "21889-1",
+              "system": "http://loinc.org"
+            }
+          ]
+        },
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.subject",
+        "path": "Observation.subject",
+        "short": "The patient whose tumor was measured.",
+        "min": 1,
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "http://hl7.org/fhir/StructureDefinition/Patient"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.focus",
+        "path": "Observation.focus",
+        "short": "Identifies a tumor that has NOT been removed from the body",
+        "definition": "Reference to a BodyStructure resource conforming to Tumor.",
+        "comment": "Use **only** when the tumor **has not** been removed from the body. If the tumor has been removed, use `specimen` instead and leave `focus` empty.",
+        "max": "1",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
+            ]
+          }
+        ],
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.effective[x]",
+        "path": "Observation.effective[x]",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.method",
+        "path": "Observation.method",
+        "short": "Method for measuring the tumor",
+        "definition": "Method for measuring the tumor",
+        "comment": "Tumors are typically measured via gross pathology after excision, or via diagnostic imaging or physical exam prior to removal. If `specimen` is set, `method` is expected to be a \"gross pathology\" code. If `focus` is set, `method` is expected to be a type of diagnostic imaging or physical exam.",
+        "mustSupport": true,
+        "binding": {
+          "strength": "extensible",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods"
+        }
+      },
+      {
+        "id": "Observation.specimen",
+        "path": "Observation.specimen",
+        "short": "Identifies a tumor that has been removed from the body",
+        "definition": "Reference to a Specimen resource.",
+        "comment": "Use **only** when the tumor **has** been removed from the body. If the tumor has been not removed, use `focus` instead and leave `specimen` empty.",
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component",
+        "path": "Observation.component",
+        "slicing": {
+          "discriminator": [
+            {
+              "type": "pattern",
+              "path": "code"
+            }
+          ],
+          "rules": "open"
+        },
+        "min": 1,
+        "mustSupport": true
+      },
+      {
+        "id": "Observation.component:longestDimension",
+        "path": "Observation.component",
+        "sliceName": "longestDimension",
+        "short": "Longest tumor dimension (mm)",
+        "definition": "The longest tumor dimension in mm.",
+        "min": 1,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:longestDimension.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "33728-7",
+              "system": "http://loinc.org"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:longestDimension.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-size-units"
+        }
+      },
+      {
+        "id": "Observation.component:shortAxis",
+        "path": "Observation.component",
+        "sliceName": "shortAxis",
+        "short": "short axis of the tumor lesion (mm or cm)",
+        "definition": "short axis in mm or cm.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:shortAxis.code",
+        "path": "Observation.component.code",
+        "patternCodeableConcept": {
+          "coding": [
+            {
+              "code": "33729-5",
+              "system": "http://loinc.org",
+              "display": "Size additional dimension in Tumor"
+            }
+          ]
+        }
+      },
+      {
+        "id": "Observation.component:shortAxis.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-size-units"
+        }
+      },
+      {
+        "id": "Observation.component:area",
+        "path": "Observation.component",
+        "sliceName": "area",
+        "short": "area of the tumor (mm²)",
+        "definition": "tumor area in mm².",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:area.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-area-units"
+        }
+      },
+      {
+        "id": "Observation.component:volume",
+        "path": "Observation.component",
+        "sliceName": "volume",
+        "short": "tumor volume (ml)",
+        "definition": "Tumor volume in ml.",
+        "min": 0,
+        "max": "1"
+      },
+      {
+        "id": "Observation.component:volume.value[x]",
+        "path": "Observation.component.value[x]",
+        "type": [
+          {
+            "code": "Quantity"
+          }
+        ],
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-volume-units"
+        }
+      }
+    ]
+  }
+}

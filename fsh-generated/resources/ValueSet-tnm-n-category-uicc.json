@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "VS_TNM_N_Category_UICC",
-  "id": "vs-tnm-n-category-uicc",
+  "id": "tnm-n-category-uicc",
   "title": "ValueSet TNM N Category UICC",
   "description": "This ValueSet contains the TNM N category codes from TNM 8th edition UICC.",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc",
@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "experimental": false,
   "compose": {
     "include": [
       {

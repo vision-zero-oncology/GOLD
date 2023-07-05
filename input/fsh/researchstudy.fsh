@@ -1,8 +1,8 @@
 Profile: Clinical_Study
 Parent: ResearchStudy
 Id: clinical-study 
-Title: "Clinical Study"
-Description: "This profile describes a clinical study in which a patient takes part."
+Title: "Profile Clinical Study"
+Description: "Profile to describe a clinical study in which a patient takes part."
 * insert Metadata
 * identifier MS
 * identifier ^slicing.discriminator.type = #pattern
@@ -79,6 +79,7 @@ Id: studienkategorien-ncit
 Title: "ValueSet Studienkategorien NCIt"
 Description: "Studienkategorien aus NCI Thesaurus (NCIt)"
 * insert Metadata
+* ^experimental = false
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
 * $NCIT#C98388 "Interventional Study"
 * $NCIT#C142615 "Non-Interventional Study"
@@ -91,6 +92,7 @@ Id: studiendesign-ncit
 Title: "ValueSet Studiendesign NCIt"
 Description: "Studiendesign aus NCI Thesaurus (NCIt)"
 * insert Metadata
+* ^experimental = false
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
 //* $NCIT#C165842 "Umbrella Protocol"
 //* $NCIT#C165823 "Basket Protocol"
@@ -120,6 +122,7 @@ Title: "ValueSet Type of Blinding NCIt"
 Description: "Type of Blinding aus NCI Thesaurus (NCIt)"
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
 * insert Metadata
+* ^experimental = false
 * $NCIT#C49659 "Open Label Study" // unverblindet
 * $NCIT#C28233 "Single Blind Study" // einfach-verblindet
 * $NCIT#C15228 "Double Blind Study" // doppelt verblindet
@@ -132,6 +135,7 @@ Id: type-of-randomization-ncit
 Title: "ValueSet Type of Randomization NCIt"
 Description: "Type of Randomization aus NCI Thesaurus (NCIt)"
 * insert Metadata
+* ^experimental = false
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
 //* include codes from system $NCIT where concept descendent-of #C25196 "Randomization"
 * $NCIT#C147126 "Adaptive Randomization"
@@ -159,6 +163,7 @@ Id: type-of-study-arm-ncit
 Title: "ValueSet Type of Study Arm NCIt"
 Description: "Type of Study Arm aus NCI Thesaurus (NCIt)"
 * insert Metadata
+* ^experimental = false
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
 * include codes from system $NCIT where concept descendent-of #C15538 "Protocol Treatment Arm"
 
@@ -168,6 +173,7 @@ Id: study-focus-ncit
 Title: "ValueSet Study Focus NCIt"
 Description: "Study Focus aus NCI Thesaurus (NCIt)"
 * insert Metadata
+* ^experimental = false
 * ^copyright = "NCI THESAURUS is a registered trademark of the National Cancer Institute."
 * $NCIT#C1909 "Pharmacologic Substance" //AMG
 * $NCIT#C16830 "Medical Device" //MPG

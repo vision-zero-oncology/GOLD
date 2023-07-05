@@ -1,8 +1,8 @@
 Profile: PR_MedicationStatement
 Parent: MedicationStatement
-Id: pr-medication-statement
-Title: "MedicationStatement"
-Description: "A record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future."
+Id: medication-statement
+Title: "Profile MedicationStatement"
+Description: "Profile to capture a record of a medication that is being consumed by a patient. A MedicationStatement may indicate that the patient may be taking the medication now or has taken the medication in the past or will be taking the medication in the future."
 * insert Metadata
 * id MS
 * meta MS
@@ -59,8 +59,11 @@ Description: "A record of a medication that is being consumed by a patient. A Me
 * effectivePeriod MS
 * dateAsserted MS
 * informationSource MS
+* derivedFrom MS
+* derivedFrom only Reference(Tumor)
 * reasonCode MS
 * reasonReference MS
+* reasonReference only Reference(tumor-disorder)
 * note MS
 * dosage obeys dsg-1
 * dosage MS
@@ -215,7 +218,7 @@ Description: "A record of a medication that is being consumed by a patient. A Me
 * dosage.maxDosePerAdministration.code 1.. MS
 
 Instance: exa-medication-statement-caelyx
-InstanceOf: pr-medication-statement
+InstanceOf: medication-statement
 Usage: #example
 * status = #active
 * medicationCodeableConcept.coding = $cs-atc#L01DB01 "Doxorubicin"

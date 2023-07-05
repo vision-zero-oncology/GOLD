@@ -1,18 +1,18 @@
 Profile: TumorSpecimen
 Parent: $MIIBiobankBioprobeCore
 Id: tumor-specimen
-Title: "Tumor Specimen"
-Description: "Tumor specimen"
+Title: "Profile Tumor Specimen"
+Description: "Profile of a tumor specimen"
 * insert Metadata
 * identifier 1.. 
 * collection.bodySite 1.. 
 * extension contains part-of named partOf 0..* MS 
 
 Profile: Tumor
-Parent: BodyStructure
+Parent: body-structure-base
 Id: tumor
-Title: "Tumor"
-Description: "Tumor"
+Title: "Profile Tumor"
+Description: "Profile of a tumor"
 * insert Metadata
 * morphology 1.. MS
 * location 1.. MS
@@ -33,6 +33,10 @@ InstanceOf: Tumor
 Usage: #example
 Title: "Tumor Example - Cerebellar Sarcoma"
 Description: "Example for the Tumor profile"
+* identifier[bodyStructureIdentifier].use = #usual
+* identifier[bodyStructureIdentifier].type = http://hl7.org/fhir/resource-types#BodyStructure
+* identifier[bodyStructureIdentifier].system = "http://radiology.hospital.example.org"
+* identifier[bodyStructureIdentifier].value = "Tumor 1234"
 * morphology = $SCT#17302008 "Cerebellar sarcoma (morphologic abnormality)"
 * location = $SCT#1010600003 "Structure of left cerebellar hemisphere (body structure)"
 * patient = Reference(ExamplePatient)

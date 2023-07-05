@@ -2,7 +2,7 @@
   "resourceType": "ValueSet",
   "status": "draft",
   "name": "VS_TNM_Stage_Group_UICC",
-  "id": "vs-tnm-stage-group-uicc",
+  "id": "tnm-stage-group-uicc",
   "title": "ValueSet TNM Stage Group UICC",
   "description": "The ValueSet contains codes for the TNM stage groups ranging from I to IV to group cancer patients with similar prognosis from TNM 8th edition UICC.",
   "url": "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc",
@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "experimental": false,
   "compose": {
     "include": [
       {

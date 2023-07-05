@@ -3,7 +3,7 @@
   "id": "tumor",
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor",
   "name": "Tumor",
-  "title": "Tumor",
+  "title": "Profile Tumor",
   "status": "draft",
   "publisher": "VISION ZERO E.V.",
   "contact": [
@@ -16,7 +16,7 @@
       ]
     }
   ],
-  "description": "Tumor",
+  "description": "Profile of a tumor",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -43,7 +43,7 @@
   "kind": "resource",
   "abstract": false,
   "type": "BodyStructure",
-  "baseDefinition": "http://hl7.org/fhir/StructureDefinition/BodyStructure",
+  "baseDefinition": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base",
   "derivation": "constraint",
   "differential": {
     "element": [

@@ -1,8 +1,8 @@
 Profile: PR_MedicationAdministration
 Parent: MedicationAdministration
 Id: medication-administration
-Title: "MedicationAdministration"
-Description: "Describes the event of a patient consuming or otherwise being administered a medication."
+Title: "Profile MedicationAdministration"
+Description: "Profile to describe the event of a patient consuming or otherwise being administered a medication."
 * insert Metadata
 * id MS
 * meta MS
@@ -46,12 +46,14 @@ Description: "Describes the event of a patient consuming or otherwise being admi
 * medicationCodeableConcept.text MS
 * subject MS
 * context MS
+* supportingInformation only Reference(Tumor)
 * effective[x] MS
 * effectiveDateTime MS
 * effectivePeriod MS
 * performer MS
 * reasonCode MS
 * reasonReference MS
+* reasonReference only Reference(tumor-disorder)
 * request MS
 * note MS
 * dosage MS

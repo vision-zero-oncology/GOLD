@@ -6,6 +6,21 @@
       "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
     ]
   },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "code": "BodyStructure",
+            "system": "http://hl7.org/fhir/resource-types"
+          }
+        ]
+      },
+      "system": "http://radiology.hospital.example.org",
+      "value": "Tumor 1234"
+    }
+  ],
   "morphology": {
     "coding": [
       {

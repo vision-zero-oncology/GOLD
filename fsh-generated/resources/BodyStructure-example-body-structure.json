@@ -1,11 +1,21 @@
 {
   "resourceType": "BodyStructure",
   "id": "example-body-structure",
-  "meta": {
-    "profile": [
-      "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"
-    ]
-  },
+  "identifier": [
+    {
+      "use": "usual",
+      "type": {
+        "coding": [
+          {
+            "code": "BodyStructure",
+            "system": "http://hl7.org/fhir/resource-types"
+          }
+        ]
+      },
+      "system": "http://radiology.hospital.example.org",
+      "value": "Tumor 1234"
+    }
+  ],
   "patient": {
     "reference": "Patient/ExamplePatient"
   },

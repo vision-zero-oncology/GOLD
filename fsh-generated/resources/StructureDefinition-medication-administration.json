@@ -3,7 +3,7 @@
   "id": "medication-administration",
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/medication-administration",
   "name": "PR_MedicationAdministration",
-  "title": "MedicationAdministration",
+  "title": "Profile MedicationAdministration",
   "status": "draft",
   "publisher": "VISION ZERO E.V.",
   "contact": [
@@ -16,7 +16,7 @@
       ]
     }
   ],
-  "description": "Describes the event of a patient consuming or otherwise being administered a medication.",
+  "description": "Profile to describe the event of a patient consuming or otherwise being administered a medication.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
@@ -243,6 +243,18 @@
         "mustSupport": true
       },
       {
+        "id": "MedicationAdministration.supportingInformation",
+        "path": "MedicationAdministration.supportingInformation",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"
+            ]
+          }
+        ]
+      },
+      {
         "id": "MedicationAdministration.effective[x]",
         "path": "MedicationAdministration.effective[x]",
         "slicing": {
@@ -296,6 +308,14 @@
       {
         "id": "MedicationAdministration.reasonReference",
         "path": "MedicationAdministration.reasonReference",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder"
+            ]
+          }
+        ],
         "mustSupport": true
       },
       {

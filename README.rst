@@ -66,5 +66,4 @@ Members of the Evaluation Group (in alphabetical order)
 * Patrick Metzger, Universitätsklinikum Freiburg
 * Mathias Muth, Novartis Pharma GmbH
 * Stefan Palm, WTZ Essen, Westdeutsches Tumorzentrum Netzwerk
-* Bärbel Söhlke, zielGENau e.V., Patientenvertreterin
 

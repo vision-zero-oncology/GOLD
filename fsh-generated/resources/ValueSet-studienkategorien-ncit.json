@@ -17,6 +17,7 @@
       ]
     }
   ],
+  "experimental": false,
   "copyright": "NCI THESAURUS is a registered trademark of the National Cancer Institute.",
   "compose": {
     "include": [

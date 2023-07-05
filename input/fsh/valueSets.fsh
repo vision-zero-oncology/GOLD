@@ -1,59 +1,65 @@
 // ECOG
 ValueSet: VS_ECOG_Performance_Status_SNOMED
-Id: vs-ecog-performance-status-snomed
+Id: ecog-performance-status-snomed
 Title: "ValueSet ECOG Performance Status SNOMED"
 Description: "The ValueSet contains the ECOG Performance Status values from SNOMED CT."
 * insert Metadata
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed"
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
+* ^experimental = false
 * include codes from system $SCT where concept descendent-of #424122007
 
 // Morphology ICD-O-3 
 ValueSet: VS_Morphology_ICD_O_3
-Id: vs-morphology-icd-o-3
+Id: morphology-icd-o-3
 Title: "ValueSet Morphology ICD-O-3"
 Description: "The ValueSet contains the morphology (histology) codes from ICD-O-3."
 * insert Metadata
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3"
+* ^experimental = false
 * include codes from system $ICDO3 where concept regex "^\\d\\S*$"
 
 // Topography ICD-O-3 
 ValueSet: VS_Topography_ICD_O_3
-Id: vs-topography-icd-o-3
+Id: topography-icd-o-3
 Title: "ValueSet Topography ICD-O-3"
 Description: "The ValueSet contains the topography codes from ICD-O-3."
 * insert Metadata
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3"
+* ^experimental = false
 * include codes from system $ICDO3 where concept regex "^C\\S*$"
 
 // Morphology SNOMED
 ValueSet: VS_Morphology_SNOMED
-Id: vs-morphology-snomed
+Id: morphology-snomed
 Title: "ValueSet Morphology SNOMED"
 Description: "The ValueSet contains the morphology (histology) codes from SNOMED CT."
 * insert Metadata
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed"
+* ^experimental = false
 * include codes from system $SCT where concept descendent-of #400177003
 
 // Topography SNOMED
 ValueSet: VS_Topography_SNOMED
-Id: vs-topography-snomed
+Id: topography-snomed
 Title: "ValueSet Topography SNOMED"
 Description: "The ValueSet contains the topography codes from SNOMED CT."
 * insert Metadata
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed"
+* ^experimental = false
 * include codes from system $SCT where concept descendent-of #123037004
 
 // Tumor Histologic Grade SNOMED 
 ValueSet: VS_Histopathological_Grade_SNOMED
-Id: vs-histopathological-grade-snomed
+Id: histopathological-grade-snomed
 Title: "ValueSet Histologic Grade SNOMED"
 Description: "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT."
 * insert Metadata
 * ^copyright = "This artefact includes content from SNOMED Clinical Terms® (SNOMED CT®) which is copyright of the International Health Terminology Standards Development Organisation (IHTSDO). Implementers of these artefacts must have the appropriate SNOMED CT Affiliate license - for more information contact http://www.snomed.org/snomed-ct/getsnomed-ct or info@snomed.org."
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed"
+* ^experimental = false
 * $SCT#12619005 "GX grade (finding)"
 * $SCT#54102005 "G1 grade (finding)"
 * $SCT#1663004 "G2 grade (finding)"
@@ -62,20 +68,22 @@ Description: "The ValueSet contains codes for the tumor grading system following
 
 //TNM
 ValueSet: VS_TNM_Classification_Type_LOINC
-Id: vs-tnm-classification-type-loinc
+Id: tnm-classification-type-loinc
 Title: "ValueSet TNM Classification Type LOINC"
 Description: "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM)."
 * insert Metadata
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"
+* ^experimental = false
 * $LNC#21908-9 "Stage group.clinical Cancer"
 * $LNC#21902-2 "Stage group.pathology Cancer"
 
 // TNM Stage Group
 ValueSet: VS_TNM_Stage_Group_UICC
-Id: vs-tnm-stage-group-uicc
+Id: tnm-stage-group-uicc
 Title: "ValueSet TNM Stage Group UICC"
 Description: "The ValueSet contains codes for the TNM stage groups ranging from I to IV to group cancer patients with similar prognosis from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc"
 * $UICC-TNM#okk	"Stage X"
 * $UICC-TNM#0	"Stage 0"
@@ -111,10 +119,11 @@ Description: "The ValueSet contains codes for the TNM stage groups ranging from 
 
 // TNM cpu prefixes
 ValueSet: VS_TNM_Prefix_CPU_UICC
-Id: vs-tnm-prefix-cpu-uicc
+Id: tnm-prefix-cpu-uicc
 Title: "ValueSet TNM Prefix CPU UICC"
 Description: "This ValueSet contains the c, p and u prefixes for TNM stages from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc"
 * $UICC-TNM#c "c"
 * $UICC-TNM#p "p"
@@ -122,10 +131,11 @@ Description: "This ValueSet contains the c, p and u prefixes for TNM stages from
 
 // TNM T category LOINC
 ValueSet: VS_TNM_T_Staging_Type_LOINC
-Id: vs-tnm-t-staging-type-loinc
+Id: tnm-t-staging-type-loinc
 Title: "ValueSet TNM T Staging Type LOINC"
 Description: "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT)."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc"
 * $LNC#21905-5 "Primary tumor.clinical [Class] Cancer"
 * $LNC#21899-0 "Primary tumor.pathology Cancer"
@@ -133,10 +143,11 @@ Description: "This ValueSet contains codes to specifiy the TNM primary tumor (T)
 
 // TNM T category values
 ValueSet: VS_TNM_T_Category_UICC
-Id: vs-tnm-t-category-uicc
+Id: tnm-t-category-uicc
 Title: "ValueSet TNM T Category UICC"
 Description: "This ValueSet contains the TNM T category codes from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc"
 * $UICC-TNM#TX	"TX"
 * $UICC-TNM#T0	"T0"
@@ -183,10 +194,11 @@ Description: "This ValueSet contains the TNM T category codes from TNM 8th editi
 
 // TNM T category values
 ValueSet: VS_TNM_T_Multiplicity_UICC
-Id: vs-tnm-t-multiplicity-uicc
+Id: tnm-t-multiplicity-uicc
 Title: "ValueSet TNM T Multiplicity UICC"
 Description: "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-multiplicity-uicc"
 * $UICC-TNM#m "(m)"
 * $UICC-TNM#2 "(2)"
@@ -201,10 +213,11 @@ Description: "This ValueSet contains the TNM primary tumor multiplicity codes us
 
 // TNM N category LOINC
 ValueSet: VS_TNM_N_Staging_Type_LOINC
-Id: vs-tnm-n-staging-type-loinc
+Id: tnm-n-staging-type-loinc
 Title: "ValueSet TNM N Staging Type LOINC"
 Description: "This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN)."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc"
 * $LNC#21906-3 "Regional lymph nodes.clinical [Class] Cancer"
 * $LNC#21900-6 "Regional lymph nodes.pathology [Class] Cancer"
@@ -212,10 +225,11 @@ Description: "This ValueSet contains codes to specifiy the TNM regional lymph no
 
 // TNM N category values
 ValueSet: VS_TNM_N_Category_UICC
-Id: vs-tnm-n-category-uicc
+Id: tnm-n-category-uicc
 Title: "ValueSet TNM N Category UICC"
 Description: "This ValueSet contains the TNM N category codes from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc"
 * $UICC-TNM#NX	"Nx"
 * $UICC-TNM#N0	"N0"
@@ -235,10 +249,11 @@ Description: "This ValueSet contains the TNM N category codes from TNM 8th editi
 
 // TNM M category LOINC
 ValueSet: VS_TNM_M_Staging_Type_LOINC
-Id: vs-tnm-m-staging-type-loinc
+Id: tnm-m-staging-type-loinc
 Title: "ValueSet TNM M Staging Type LOINC"
 Description: "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM)."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc"
 * $LNC#21907-1 "Distant metastases.clinical [Class] Cancer"
 * $LNC#21901-4 "Distant metastases.pathology [Class] Cancer"
@@ -246,10 +261,11 @@ Description: "This ValueSet contains codes to specifiy the TNM distant metastase
 
 // TNM M category values
 ValueSet: VS_TNM_M_Category_UICC
-Id: vs-tnm-m-category-uicc
+Id: tnm-m-category-uicc
 Title: "ValueSet TNM M Category UICC"
 Description: "This ValueSet contains the TNM M category codes from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc"
 * $UICC-TNM#M0 "M0"
 * $UICC-TNM#M1 "M1"
@@ -262,10 +278,11 @@ Description: "This ValueSet contains the TNM M category codes from TNM 8th editi
 
 // TNM L-descriptor values
 ValueSet: VS_TNM_L_Lymphatic_Invasion_UICC
-Id: vs-tnm-l-lymphatic-invasion-uicc
+Id: tnm-l-lymphatic-invasion-uicc
 Title: "ValueSet TNM L-Descriptor Lymphatic Invasion UICC"
 Description: "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-l-lymphatic-invasion-uicc"
 * $UICC-TNM#L0 "L0"
 * $UICC-TNM#L1 "L1"
@@ -273,10 +290,11 @@ Description: "This ValueSet contains the TNM degree of lymphatic invasion codes 
 
 // TNM V-descriptor values
 ValueSet: VS_TNM_V_Venous_Invasion_UICC
-Id: vs-tnm-v-venous-invasion-uicc
+Id: tnm-v-venous-invasion-uicc
 Title: "ValueSet TNM V-Descriptor Venous Invasion UICC"
 Description: "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc"
 * $UICC-TNM#V0 "V0"
 * $UICC-TNM#V1 "V1"
@@ -285,10 +303,11 @@ Description: "This ValueSet contains the TNM degree of venous invasion codes use
 
 // TNM Pn-descriptor values
 ValueSet: VS_TNM_Pn_Perineural_Invasion_UICC
-Id: vs-tnm-pn-perineural-invasion-uicc
+Id: tnm-pn-perineural-invasion-uicc
 Title: "ValueSet TNM Pn-Descriptor Perineural Invasion UICC"
 Description: "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-pn-perineural-invasion-uicc"
 * $UICC-TNM#Pn0 "Pn0"
 * $UICC-TNM#Pn1 "Pn1"
@@ -296,10 +315,11 @@ Description: "This ValueSet contains the TNM degree of perineural (lymphatic ner
 
 // TNM S-symbol values
 ValueSet: VS_TNM_S_Serum_Tumor_Markers_UICC
-Id: vs-tnm-s-serum-tumor-markers-uicc
+Id: tnm-s-serum-tumor-markers-uicc
 Title: "ValueSet TNM S Serum Tumour Markers UICC"
 Description: "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-s-serum-tumor-markers-uicc"
 * $UICC-TNM#S0 "S0"
 * $UICC-TNM#S1 "S1"
@@ -309,10 +329,11 @@ Description: "This ValueSet contains the TNM serum levels of tumor markers coded
 
 // TNM itc suffixes
 ValueSet: VS_TNM_Suffix_ITC_UICC
-Id: vs-tnm-suffix-itc-uicc
+Id: tnm-suffix-itc-uicc
 Title: "ValueSet TNM Suffix ITC UICC"
 Description: "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc"
 * $UICC-TNM#i+ "(i+)"
 * $UICC-TNM#i- "(i-)"
@@ -321,19 +342,21 @@ Description: "This ValueSet contains the isolated tumor cells (ITC) suffixes for
 
 // TNM itc sn suffixes
 ValueSet: VS_TNM_Suffix_ITC_SN_UICC
-Id: vs-tnm-suffix-itc-sn-uicc
+Id: tnm-suffix-itc-sn-uicc
 Title: "ValueSet TNM Suffix ITC SN UICC"
 Description: "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-sn-uicc"
 * $UICC-TNM#sn "(sn)"
 
 // TNM Residual Tumor R Classification
 ValueSet: VS_TNM_R_Classification_UICC
-Id: vs-tnm-r-classification-uicc
+Id: tnm-r-classification-uicc
 Title: "ValueSet TNM Residual Tumor (R) Classification UICC"
 Description: "This ValueSet contains the TNM residual tumor (R) classification codes from TNM 8th edition UICC."
 * insert Metadata
+* ^experimental = false
 * ^url = "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-r-classification-uicc"
 * $UICC-TNM#RX "RX"
 * $UICC-TNM#R0 "R0"
@@ -344,10 +367,11 @@ Description: "This ValueSet contains the TNM residual tumor (R) classification c
 
 // Recist Assessment
 ValueSet: RecistAssessmentTimepointResponseVS
-Id: recist-asstimepoint-response-vs
-Title: "recist-timepoint-response-vs"
+Id: recist-asstimepoint-response
+Title: "ValueSet Recist Timepoint Response"
 Description: "Defines the valid values for the recist assessment response observation resource"
 * insert Metadata
+* ^experimental = false
 * $RID#11514 "stable disease"
 * $RID#11513 "partial response"
 * $RID#11511 "complete imaging response"
@@ -370,8 +394,43 @@ Description: "CodeSystem für die Diagnosesicherungscodes der ICD-O-3"
 * #9 "Unbekannt"
 
 ValueSet: DiagnosesicherungICDO3
-Id: vs-diagnosesicherung-icdo3
-Title: "Diagnosesicherung ICD-O-3"
+Id: diagnosesicherung-icdo3
+Title: "ValieSet Diagnosesicherung ICD-O-3"
 Description: "ValueSet für die Diagnosesicherungscodes der ICD-O-3"
 * insert Metadata
+* ^experimental = false
 * include codes from system cs-diagnosesicherung-icdo3
+
+// Valid tumor size units in addition to mCode tumor size units
+ValueSet:        VS_Tumor_Area_Units
+Id:              tumor-area-units
+Title:           "ValueSet Tumor Size Units ValueSet"
+Description:     "Acceptable units for measuring tumor areas"
+* $UCUM#mm2       "square millimeter"
+
+ValueSet:        VS_Tumor_Volume_Units
+Id:              tumor-volume-units
+Title:           "ValueSet Tumor Size Units Value Set"
+Description:     "Acceptable units for measuring tumor volumes"
+* $UCUM#ml       "milliliter"
+
+ValueSet: VS_Tumor_Measurement_Methods
+Id: tumor-measurement-methods
+Title: "ValueSet Tumor Measurement Methods"
+Description: "Codes for methods of measuring tumor size, including physical examination, pathology, and imaging."
+* $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
+* $SCT#104157003 "Light microscopy (procedure)"
+* $SCT#5880005 "Physical examination procedure (procedure)"
+* $SCT#16310003 "Diagnostic ultrasonography (procedure)"
+* $SCT#113091000 "Magnetic resonance imaging (procedure)"
+* $SCT#77477000 "Computerized axial tomography (procedure)"
+* $SCT#82918005 "Positron emission tomography (procedure)"
+* $SCT#363680008 "Radiographic imaging procedure (procedure)"
+* $SCT#363679005 "Imaging (procedure)"
+
+ValueSet: VS_Tumor_Size_Units
+Id: tumor-size-units
+Title: "ValueSet Tumor Size Units"
+Description: "Acceptable units for measuring tumor size"
+* $UCUM#mm "Millimeter"
+* $UCUM#cm "Centimeter"

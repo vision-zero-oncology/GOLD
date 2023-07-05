@@ -3,7 +3,7 @@
   "id": "clinical-study",
   "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study",
   "name": "Clinical_Study",
-  "title": "Clinical Study",
+  "title": "Profile Clinical Study",
   "status": "draft",
   "publisher": "VISION ZERO E.V.",
   "contact": [
@@ -16,7 +16,7 @@
       ]
     }
   ],
-  "description": "This profile describes a clinical study in which a patient takes part.",
+  "description": "Profile to describe a clinical study in which a patient takes part.",
   "fhirVersion": "4.0.1",
   "mapping": [
     {
