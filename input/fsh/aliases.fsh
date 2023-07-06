@@ -28,6 +28,7 @@ Alias: $DSS = http://terminology.hl7.org/CodeSystem/v2-0074
 // Core Extensions
 // Alias: $WorkFlowEpisodeOfCare = http://hl7.org/fhir/StructureDefinition/workflow-episodeOfCare
 
+
 //TNM related
 Alias: $UICC-TNM = urn:oid:2.16.840.1.113883.15.16
 
@@ -40,10 +41,12 @@ Alias: $UICC-TNM = urn:oid:2.16.840.1.113883.15.16
 // Alias: $Seitenlokalisation = http://fhir.de/StructureDefinition/seitenlokalisation
 // Alias: $UICCCS = http://fhir.de/onkologie/CodeSystem/UICCCS
 Alias: $ICD10SeitenlokalisationCS = https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION 
+Alias: $SupportingInfo = http://hl7.org/fhir/StructureDefinition/workflow-supportingInfo
 
 // HL7 DE
 Alias: $ICDO3T = http://fhir.de/onkologie/ValueSet/icd-o-3-topologie
 Alias: $ICDO3M = http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie
+Alias: $DSS = http://terminology.hl7.org/CodeSystem/v2-0074
 
 //ISIK
 Alias: $IsikDiagnose = https://gematik.de/fhir/isik/v2/Basismodul/StructureDefinition/ISiKDiagnose

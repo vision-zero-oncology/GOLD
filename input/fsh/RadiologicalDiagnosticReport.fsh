@@ -1,7 +1,3 @@
-Alias: $LNC = http://loinc.org
-Alias: $SCT = http://snomed.info/sct
-Alias: $DSS = http://terminology.hl7.org/CodeSystem/v2-0074
-
 //Profile for a Radiological Diagnostic Report
 Profile: Radiological_Diagnostic_Report
 Parent: DiagnosticReport
@@ -25,23 +21,11 @@ Description: "Profile for the base definition of all radiological diagnostic rep
 * code.coding 1..* 
 * subject 1..1 
 * subject only Reference(Patient)
-* extension 1..* 
+* extension 0..* 
 * extension contains Supporting_Info named supportingInfo 0..* MS
-* extension[supportingInfo] ^definition = "Enables to reference a supporting info <Observation or Procedure>. It contains additional information not containt in results and was used/applied during the creation of the report e.g. intermediate Observation results like RECIST target sum or infiltrations used within TNM staging procedures."
 * result 0..* MS 
-* imagingStudy 1..* MS
+* imagingStudy 0..* MS
 * specimen 0..0
-
-
-//Supporting Info Extension. HL7 Extension for supporting info not used because of Reference restriction to Observation or Procedure
-Extension: Supporting_Info
-Id: supporting-info
-Title: "Supporting Info"
-Description: "Enables to reference a finding <Observation> the diagnostic report refers to"
-* ^url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info" 
-* value[x] 1..1
-* value[x] only Reference(Observation or Procedure)
-
 
 //Example of a Radiological Diagnostic Report
 Instance: example-diagnostic-report
