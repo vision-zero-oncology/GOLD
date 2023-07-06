@@ -20,6 +20,7 @@ FHIR Implementation Guide for the German OncoLogical Data Standard (GOLD).
 * Simon Kreutzfeldt, MASTER Program NCT Heidelberg
 * Thomas Massier, mint Medical GmbH
 * Erika Schirghuber, Roche Pharma AG
+* Friederike Schneider, mint Medical GmbH
 * Christoph Benedikt Westphalen, CCC München LMU
 * Niko Wolf, Snke OS GmbH Healthcare Plattform
 
