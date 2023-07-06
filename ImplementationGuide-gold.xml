@@ -1110,10 +1110,10 @@
         <valueString value="StructureDefinition:extension"/>
       </extension>
       <reference>
-        <reference value="StructureDefinition/supporting-info"/>
+        <reference value="StructureDefinition/supportingInfo"/>
       </reference>
       <name value="Supporting Info"/>
-      <description value="Enables to reference a finding &lt;Observation&gt; the diagnostic report refers to"/>
+      <description value="Enables to reference a supporting info &lt;Observation or Procedure&gt;. It contains additional information not containt in results and was used/applied during the creation of the report e.g. intermediate Observation results like RECIST target sum or infiltrations used within TNM staging procedures."/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>

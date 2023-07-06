@@ -2477,6 +2477,20 @@ ref-1:SHALL have a contained resource if a local reference is provided {referenc
 ","Additional information about the Condition","Additional information about the Condition. This is a general notes/comments entry  for description of the Condition, its diagnosis and prognosis.","For systems that do not have structured annotations, they can simply communicate a single annotation with no author or time.  This element may need to be included in narrative because of the potential for modifying information.  *Annotations SHOULD NOT* be used to communicate ""modifying"" information that could be computable. (This is a SHOULD because enforcing user behavior is nearly impossible).","","","","","","","","",,,,,"",,,,"Condition.note",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
+"supportingInfo","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
+","Supporting Info","Enables to reference a supporting info <Observation or Procedure>. It contains additional information not containt in results and was used/applied during the creation of the report e.g. intermediate Observation results like RECIST target sum or infiltrations used within TNM staging procedures.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
+",""
+"supportingInfo","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
+","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
+"supportingInfo","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
+","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
+","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
+"supportingInfo","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
+","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
+"supportingInfo","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/Procedure]]}
+","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"
 "uicc-tnm-suffix-itc","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
 ","Extension UICC TNM Suffix ITC","The Extension allows to add isolated tumor cells (ITC) suffixes to the N- and M-categories in TNM.","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
 ",""
@@ -4172,11 +4186,11 @@ htmlxhtmldisplay","",0,1,"","","","Narrative {[]} {[]}
 "radiological-diagnostic-report","DiagnosticReport.contained","DiagnosticReport.contained","","inline resources
 anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Contained, inline Resources","These resources do not have an independent existence apart from the resource that contains them - they cannot be identified independently, and nor can they have their own independent transaction scope.","This should never be done when the content can be identified properly, as once identification is lost, it is extremely difficult (and context dependent) to restore it again. Contained resources may have profiles and tags In their meta elements, but SHALL NOT have security labels.","","","","","","","","",,,,,"",,,,"DomainResource.contained",0,*,"",""
-"radiological-diagnostic-report","DiagnosticReport.extension","DiagnosticReport.extension","","","",1,*,"","","","Extension {[]} {[]}
+"radiological-diagnostic-report","DiagnosticReport.extension","DiagnosticReport.extension","","","",0,*,"","","","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"radiological-diagnostic-report","DiagnosticReport.extension:supportingInfo","DiagnosticReport.extension","supportingInfo","","",0,*,"Y","","","Extension {[CanonicalType[https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info]]} {[]}
+"radiological-diagnostic-report","DiagnosticReport.extension:supportingInfo","DiagnosticReport.extension","supportingInfo","","",0,*,"Y","","","Extension {[CanonicalType[https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo]]} {[]}
 ","Supporting Info","Enables to reference a supporting info <Observation or Procedure>. It contains additional information not containt in results and was used/applied during the creation of the report e.g. intermediate Observation results like RECIST target sum or infiltrations used within TNM staging procedures.","","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -4284,7 +4298,7 @@ Reported by","",0,*,"","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhi
 Atomic ValueResultAtomic resultDataTestAnalyteBatteryOrganizer","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation]]}
 ","Observations","[Observations](http://hl7.org/fhir/R4/observation.html)  that are part of this diagnostic report.","Observations can contain observations.","Need to support individual results, or  groups of results, where the result grouping is arbitrary, but meaningful.","","","","","","","",,,,,"",,,,"DiagnosticReport.result",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"radiological-diagnostic-report","DiagnosticReport.imagingStudy","DiagnosticReport.imagingStudy","","","",1,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ImagingStudy]]}
+"radiological-diagnostic-report","DiagnosticReport.imagingStudy","DiagnosticReport.imagingStudy","","","",0,*,"Y","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/ImagingStudy]]}
 ","Reference to full details of imaging associated with the diagnostic report","One or more links to full details of any imaging performed during the diagnostic investigation. Typically, this is imaging performed by DICOM enabled modalities, but this is not required. A fully enabled PACS viewer can use this information to provide views of the source images.","ImagingStudy and the image element are somewhat overlapping - typically, the list of image references in the image element will also be found in one of the imaging study resources. However, each caters to different types of displays for different types of purposes. Neither, either, or both may be provided.","","","","","","","","",,,,,"",,,,"DiagnosticReport.imagingStudy",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "radiological-diagnostic-report","DiagnosticReport.media","DiagnosticReport.media","","DICOM
@@ -5006,20 +5020,6 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "tumor","BodyStructure.patient","BodyStructure.patient","","","",1,1,"Y","","Y","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient]]}
 ","Who this is about","The person to which the body site belongs.","","","","","","","","","",,,,,"",,,,"BodyStructure.patient",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-"
-"supporting-info","Extension","Extension","","","",0,*,"","","","null {[]} {[]}
-","Supporting Info","Enables to reference a finding <Observation> the diagnostic report refers to","","","","","","","","","",,,,,"",,,,"Extension",0,*,"ele-1
-",""
-"supporting-info","Extension.id","Extension.id","","","",0,1,"","","","string {[]} {[]}
-","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
-"supporting-info","Extension.extension","Extension.extension","","","",0,0,"","","","Extension {[]} {[]}
-","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
-","Extensions are always sliced by (at least) url",,"open","Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
-ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"supporting-info","Extension.url","Extension.url","","","",1,1,"","","","uri {[]} {[]}
-","identifies the meaning of the extension","Source of the definition for the extension code - a logical name or a URL.","The definition may point directly to a computable or human-readable definition of the extensibility codes, or it may be a logical URI as declared in some other specification. The definition SHALL be a URI for the Structure Definition defining the extension.","","","","<valueUri xmlns=""http://hl7.org/fhir"" value=""https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info""/>","","","","",,,,,"",,,,"Extension.url",1,1,"",""
-"supporting-info","Extension.value[x]","Extension.value[x]","","","",1,1,"","","","Reference {[]} {[CanonicalType[http://hl7.org/fhir/StructureDefinition/Observation], CanonicalType[http://hl7.org/fhir/StructureDefinition/Procedure]]}
-","Value of extension","Value of extension - must be one of a constrained set of the data types (see [Extensibility](http://hl7.org/fhir/R4/extensibility.html) for a list).","","","","","","","","","",,,,,"",,,,"Extension.value[x]",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "histology-topography","Observation","Observation","","Vital Signs
 MeasurementResultsTests","",0,*,"","","","null {[]} {[]}

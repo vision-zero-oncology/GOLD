@@ -1,15 +1,15 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 84, warn = 110, info = 101
+err = 83, warn = 108, info = 100
 IG Publisher Version: 1.3.22
-Generated Thu Jul 06 08:32:15 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+Generated Thu Jul 06 08:33:11 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 0 / 14 / 0
  /github/workspace/fsh-generated/resources/BodyStructure-CerebellarSarcoma : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/BodyStructure-example-body-structure : 1 / 0 / 1
  /github/workspace/fsh-generated/resources/CodeSystem-cs-diagnosesicherung-icdo3 : 0 / 2 / 2
  /github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts : 8 / 3 / 6
- /github/workspace/fsh-generated/resources/DiagnosticReport-example-diagnostic-report : 4 / 0 / 2
+ /github/workspace/fsh-generated/resources/DiagnosticReport-example-diagnostic-report : 3 / 0 / 1
  /github/workspace/fsh-generated/resources/ImplementationGuide-gold : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/MedicationAdministration-exa-medication-administration : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/MedicationStatement-exa-medication-statement-caelyx : 2 / 0 / 2
@@ -53,13 +53,13 @@ Generated Thu Jul 06 08:32:15 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/StructureDefinition-medication-statement : 0 / 0 / 6
  /github/workspace/fsh-generated/resources/StructureDefinition-part-of : 0 / 3 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-probandin : 0 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-radiological-diagnostic-report : 0 / 2 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-radiological-diagnostic-report : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-radiological-read-procedure : 0 / 2 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-radiological-recist-read-procedure : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-radiological-tnm-read-procedure : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-recist-assessment-response : 0 / 0 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-recist-category-observation : 3 / 0 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-supporting-info : 0 / 5 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-supportingInfo : 0 / 4 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-tnm-category-observation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-tumor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-tumor-disorder : 0 / 4 / 1
@@ -149,8 +149,6 @@ ERROR: Condition/mamma-ca-rechts: Condition.stage[0].assessment[0]: Unable to re
 ERROR: Condition/mamma-ca-rechts: Condition.stage[1].assessment[0]: Unable to resolve resource with reference 'Observation/G3'
 ERROR: Condition/mamma-ca-rechts: Condition.evidence[0].detail[0]: Unable to resolve resource with reference 'DiagnosticReport/pathologie'
 == fsh-generated/resources/DiagnosticReport-example-diagnostic-report.json ==
-INFORMATION: DiagnosticReport/example-diagnostic-report: DiagnosticReport.extension[0]: This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-diagnostic-report|0.1.0
-ERROR: DiagnosticReport/example-diagnostic-report: DiagnosticReport.extension[0]: The extension https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo is unknown, and not allowed here
 ERROR: DiagnosticReport/example-diagnostic-report: DiagnosticReport.extension[0].value.ofType(Reference): Unable to resolve resource with reference 'Procedure/ExampleProcedure'
 ERROR: DiagnosticReport/example-diagnostic-report: DiagnosticReport.result[0]: Unable to resolve resource with reference 'ExampleResultObservation'
 ERROR: DiagnosticReport/example-diagnostic-report: DiagnosticReport.imagingStudy[0]: Unable to resolve resource with reference 'ExampleStudy'
@@ -365,7 +363,6 @@ WARNING: StructureDefinition/part-of: StructureDefinition.differential.element[0
 == fsh-generated/resources/StructureDefinition-probandin.json ==
 == fsh-generated/resources/StructureDefinition-radiological-diagnostic-report.json ==
 WARNING: StructureDefinition/radiological-diagnostic-report: StructureDefinition.snapshot.element[8].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-WARNING: StructureDefinition/radiological-diagnostic-report: StructureDefinition.differential.element[2].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 == fsh-generated/resources/StructureDefinition-radiological-read-procedure.json ==
 WARNING: StructureDefinition/radiological-read-procedure: StructureDefinition.snapshot.element[16].fixed.ofType(CodeableConcept): For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance
 WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-read-procedure'): The Implementation Guide contains no examples for this profile
@@ -380,12 +377,11 @@ INFORMATION: StructureDefinition/recist-assessment-response: StructureDefinition
 ERROR: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation'): Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-recist-category-observation.json - the canonical URL (https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-category-observation) does not match the URL (https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation)
 ERROR: StructureDefinition.url: Resource id/url mismatch: recist-category-observation/https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation
 ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-recist-category-observation: URL Mismatch https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-category-observation vs https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation
-== fsh-generated/resources/StructureDefinition-supporting-info.json ==
-WARNING: StructureDefinition/supporting-info: StructureDefinition.description: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-WARNING: StructureDefinition/supporting-info: StructureDefinition.snapshot.element[0].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-WARNING: StructureDefinition/supporting-info: StructureDefinition.differential.element[0].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-WARNING: StructureDefinition/supporting-info: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
-WARNING: StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info'): The Implementation Guide contains no examples for this extension
+== fsh-generated/resources/StructureDefinition-supportingInfo.json ==
+WARNING: StructureDefinition/supportingInfo: StructureDefinition.description: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: StructureDefinition/supportingInfo: StructureDefinition.snapshot.element[0].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: StructureDefinition/supportingInfo: StructureDefinition.differential.element[0].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
+WARNING: StructureDefinition/supportingInfo: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-tnm-category-observation.json ==
 == fsh-generated/resources/StructureDefinition-tumor.json ==
 WARNING: StructureDefinition/tumor: StructureDefinition.snapshot.element[8].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour

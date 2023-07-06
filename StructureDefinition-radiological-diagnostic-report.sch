@@ -15,7 +15,6 @@
       <sch:assert test="count(f:category) &gt;= 1">category: minimum cardinality of 'category' is 1</sch:assert>
       <sch:assert test="count(f:subject) &gt;= 1">subject: minimum cardinality of 'subject' is 1</sch:assert>
       <sch:assert test="count(f:specimen) &lt;= 0">specimen: maximum cardinality of 'specimen' is 0</sch:assert>
-      <sch:assert test="count(f:imagingStudy) &gt;= 1">imagingStudy: minimum cardinality of 'imagingStudy' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
   <sch:pattern>

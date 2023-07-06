@@ -1323,10 +1323,10 @@
         "valueString" : "StructureDefinition:extension"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/supporting-info"
+        "reference" : "StructureDefinition/supportingInfo"
       },
       "name" : "Supporting Info",
-      "description" : "Enables to reference a finding <Observation> the diagnostic report refers to",
+      "description" : "Enables to reference a supporting info <Observation or Procedure>. It contains additional information not containt in results and was used/applied during the creation of the report e.g. intermediate Observation results like RECIST target sum or infiltrations used within TNM staging procedures.",
       "exampleBoolean" : false
     },
     {

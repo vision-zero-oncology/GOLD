@@ -1328,11 +1328,11 @@
          fhir:value [ fhir:v "StructureDefinition:extension" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info> ;
-         fhir:reference [ fhir:v "StructureDefinition/supporting-info" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo> ;
+         fhir:reference [ fhir:v "StructureDefinition/supportingInfo" ]
        ] ;
        fhir:name [ fhir:v "Supporting Info" ] ;
-       fhir:description [ fhir:v "Enables to reference a finding <Observation> the diagnostic report refers to" ] ;
+       fhir:description [ fhir:v "Enables to reference a supporting info <Observation or Procedure>. It contains additional information not containt in results and was used/applied during the creation of the report e.g. intermediate Observation results like RECIST target sum or infiltrations used within TNM staging procedures." ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [

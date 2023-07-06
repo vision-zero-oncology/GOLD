@@ -28,7 +28,7 @@
       ]
     },
     {
-      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info",
+      "url": "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo",
       "title": "Supporting Info",
       "types": [
         "Reference"
@@ -218,9 +218,6 @@
     ],
     "https://www.vision-zero-oncology.de/fhir/StructureDefinition/part-of": [
       "Specimen"
-    ],
-    "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info": [
-      "DiagnosticReport"
     ],
     "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo": [
       "DiagnosticReport"

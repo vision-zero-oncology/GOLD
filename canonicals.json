@@ -147,9 +147,9 @@
     "name" : "RecistAssessmentResponse"
   },
   {
-    "id" : "supporting-info",
+    "id" : "supportingInfo",
     "type" : "StructureDefinition",
-    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info",
+    "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo",
     "version" : "0.1.0",
     "name" : "Supporting_Info"
   },
