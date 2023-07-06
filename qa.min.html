@@ -36,12 +36,12 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for GOLD</h1>
- <p>Generated Mon Jun 26 12:27:40 UTC 2023, FHIR version 4.0.1 for gold#0.1.0 (canonical = <a href="https://www.vision-zero-oncology.de/fhir">https://www.vision-zero-oncology.de/fhir</a> (<a href="https://www.vision-zero-oncology.de/fhir/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
+ <p>Generated Thu Jul 06 08:32:15 UTC 2023, FHIR version 4.0.1 for gold#0.1.0 (canonical = <a href="https://www.vision-zero-oncology.de/fhir">https://www.vision-zero-oncology.de/fhir</a> (<a href="https://www.vision-zero-oncology.de/fhir/history.html">history</a>)). See <a href="qa.html">Full QA Report</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
- <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.3.18</span></td></tr>
+ <tr><td>Publisher Version:</td><td><span>IG Publisher Version: v1.3.22</span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = gold, Canonical = https://www.vision-zero-oncology.de/fhir</td></tr>
  <tr><td>Realm Check for n/a:</td><td><span style="color: maroon; font-weight: bold"></span><ul><li>n/a</li></ul></td></tr>
- <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from https://vision-zero-oncology.de/fhir/package-list.json?nocache=1687782458024 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
+ <tr><td>Publication Request:</td><td><ul><li><span title="Invalid HTTP response 404 from https://vision-zero-oncology.de/fhir/package-list.json?nocache=1688632333250 (Not Found) (content in /tmp/http-log/fhir-http-3.log)">This IG has never been published</span> <img src="information.png" height="16px" width="16px"/></li>
 <li>No publication request found <img src="information.png" height="16px" width="16px"/></li>
 </ul>
 </td></tr>
@@ -62,7 +62,7 @@
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Modifier Extensions:</td><td><span style="color: grey">(none)</span></td></tr>
- <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.vision-zero-oncology.de/fhir (Problem #1 with package-list.json at https://www.vision-zero-oncology.de/fhir: Invalid HTTP response 404 from https://vision-zero-oncology.de/fhir/package-list.json?nocache=1687782037421 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
+ <tr><td>Previous Version Comparison:</td><td> Unable to compare with previous version: Unable to find version history at https://www.vision-zero-oncology.de/fhir (Problem #1 with package-list.json at https://www.vision-zero-oncology.de/fhir: Invalid HTTP response 404 from https://vision-zero-oncology.de/fhir/package-list.json?nocache=1688631994925 (Not Found) (content in /tmp/http-log/fhir-http-2.log))</td></tr>
  <tr><td>IPA Comparison:</td><td> n/a</td></tr>
  <tr><td>Summary:</td><td> errors = 84, warn = 110, info = 101, broken links = 0</td></tr>
 </table>
@@ -324,7 +324,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>BodyStructure.extension[0].value.ofType(Reference) (l25/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'ExampleCondition'</b></td>
+     <td><b>BodyStructure&#8203;.extension[0]&#8203;.value&#8203;.ofType(Reference) (l25&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'ExampleCondition'</b></td>
    </tr>
 </table>
 <hr/>
@@ -359,19 +359,19 @@
      <td><b>Condition.code.coding[0] (l11/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://fhir.de/CodeSystem/bfarm/icd-10-gm' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>Condition.code.coding[0].extension[0].value.ofType(Coding) (l16/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION' is unknown so the code cannot be validated</b></td>
+     <td><b>Condition&#8203;.code&#8203;.coding[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l16&#8203;/c14)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Condition.code.coding[0].extension[0].value.ofType(Coding) (l16/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION not found by validator</b></td>
+     <td><b>Condition&#8203;.code&#8203;.coding[0]&#8203;.extension[0]&#8203;.value&#8203;.ofType(Coding) (l16&#8203;/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION not found</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Condition.code.coding[1].extension[0].value.ofType(CodeableConcept) (l32/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 not found by validator</b></td>
+     <td><b>Condition&#8203;.code&#8203;.coding[1]&#8203;.extension[0]&#8203;.value&#8203;.ofType(CodeableConcept) (l32&#8203;/c14)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 not found</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>Condition.code.coding[1] (l27/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie not found by validator</b></td>
+     <td><b>Condition.code.coding[1] (l27/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie not found</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b><a href="">Condition.bodySite[0].coding[0] (l102/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder|0.1.0</b> <span id="sl23" class="flip" onclick="flip('l23')">Show Reasoning</span><div id="l23" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder|0.1.0<ul><li>Condition.bodySite[0].coding[0]: discriminator = true and ($this memberOf 'https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-body-structures')</li>, <li>Condition.bodySite[0].coding[0]: discriminator = true and ($this memberOf 'http://fhir.de/onkologie/ValueSet/icd-o-3-topologie')</li></ul></div></td>
+     <td><b><a href="">Condition&#8203;.bodySite[0]&#8203;.coding[0] (l102&#8203;/c10)</a></b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder|0.1.0</b> <span id="sl23" class="flip" onclick="flip('l23')">Show Reasoning</span><div id="l23" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder|0.1.0<ul><li>Condition.bodySite[0].coding[0]: discriminator = true and ($this memberOf 'https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-body-structures')</li>, <li>Condition.bodySite[0].coding[0]: discriminator = true and ($this memberOf 'http://fhir.de/onkologie/ValueSet/icd-o-3-topologie')</li></ul></div></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Condition.bodySite[0] (l100/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Condition.bodySite.coding:icdo3-t: minimum required = 1, but only found 0 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder|0.1.0)</b></td>
@@ -389,13 +389,13 @@
      <td><b>Condition.asserter (l122/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Practitioner/kliniker'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Condition.stage[0].assessment[0] (l61/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/tnm-cT2cN2cM1IV'</b></td>
+     <td><b>Condition&#8203;.stage[0]&#8203;.assessment[0] (l61&#8203;/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/tnm-cT2cN2cM1IV'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Condition.stage[1].assessment[0] (l77/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/G3'</b></td>
+     <td><b>Condition&#8203;.stage[1]&#8203;.assessment[0] (l77&#8203;/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Observation/G3'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Condition.evidence[0].detail[0] (l128/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'DiagnosticReport/pathologie'</b></td>
+     <td><b>Condition&#8203;.evidence[0]&#8203;.detail[0] (l128&#8203;/c10)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'DiagnosticReport/pathologie'</b></td>
    </tr>
 </table>
 <hr/>
@@ -414,13 +414,13 @@
      <td><b>DiagnosticReport.extension[0] (l34/c6)</b></td><td><b>error</b></td><td title="Extension_EXT_Unknown_NotHere"><b>The extension https://www.vision-zero-oncology.de/fhir/StructureDefinition/supportingInfo is unknown, and not allowed here</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>DiagnosticReport.extension[0].value.ofType(Reference) (l36/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Procedure/ExampleProcedure'</b></td>
+     <td><b>DiagnosticReport&#8203;.extension[0]&#8203;.value&#8203;.ofType(Reference) (l36&#8203;/c8)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Procedure/ExampleProcedure'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>DiagnosticReport.result[0] (l42/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'ExampleResultObservation'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>DiagnosticReport.imagingStudy[0] (l47/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'ExampleStudy'</b></td>
+     <td><b>DiagnosticReport&#8203;.imagingStudy[0] (l47&#8203;/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'ExampleStudy'</b></td>
    </tr>
 </table>
 <hr/>
@@ -433,13 +433,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>MedicationAdministration.medication.ofType(CodeableConcept).coding[0] (l46/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://fhir.de/CodeSystem/bfarm/atc' is unknown so the code cannot be validated</b></td>
+     <td><b>MedicationAdministration&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l46&#8203;/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://fhir.de/CodeSystem/bfarm/atc' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicationAdministration.medication.ofType(CodeableConcept).coding[0] (l46/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (http://fhir.de/CodeSystem/bfarm/atc#L01DB01) is not in the value set 'ATC' (http://fhir.de/ValueSet/bfarm/atc|1.4.0), and a code from this value set is required: Unable to check whether the code is in the value set http://fhir.de/ValueSet/bfarm/atc|1.4.0</b></td>
+     <td><b>MedicationAdministration&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l46&#8203;/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (http://fhir.de/CodeSystem/bfarm/atc#L01DB01) is not in the value set 'ATC' (http://fhir.de/ValueSet/bfarm/atc|1.4.0), and a code from this value set is required: Unable to check whether the code is in the value set http://fhir.de/ValueSet/bfarm/atc|1.4.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicationAdministration.subject (l54/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/example'</b></td>
+     <td><b>MedicationAdministration&#8203;.subject (l54&#8203;/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/example'</b></td>
    </tr>
 </table>
 <hr/>
@@ -452,10 +452,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>MedicationStatement.medication.ofType(CodeableConcept).coding[0] (l12/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://fhir.de/CodeSystem/bfarm/atc' is unknown so the code cannot be validated</b></td>
+     <td><b>MedicationStatement&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l12&#8203;/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://fhir.de/CodeSystem/bfarm/atc' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>MedicationStatement.medication.ofType(CodeableConcept).coding[0] (l12/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (http://fhir.de/CodeSystem/bfarm/atc#L01DB01) is not in the value set 'ATC' (http://fhir.de/ValueSet/bfarm/atc|1.4.0), and a code from this value set is required: Unable to check whether the code is in the value set http://fhir.de/ValueSet/bfarm/atc|1.4.0</b></td>
+     <td><b>MedicationStatement&#8203;.medication&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l12&#8203;/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (http://fhir.de/CodeSystem/bfarm/atc#L01DB01) is not in the value set 'ATC' (http://fhir.de/ValueSet/bfarm/atc|1.4.0), and a code from this value set is required: Unable to check whether the code is in the value set http://fhir.de/ValueSet/bfarm/atc|1.4.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>MedicationStatement.subject (l19/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Patient/example'</b></td>
@@ -471,7 +471,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>Observation.value.ofType(CodeableConcept).coding[0] (l40/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set 'ValueSet Morphology ICD-O-3' (https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3|0.1.0), and a code from this value set is required: Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3|0.1.0</b></td>
+     <td><b>Observation&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0] (l40&#8203;/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set 'ValueSet Morphology ICD-O-3' (https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3|0.1.0), and a code from this value set is required: Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3|0.1.0</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>Observation.bodySite.coding[0] (l54/c8)</b></td><td><b>error</b></td><td title="Terminology_TX_Confirm_4a"><b>The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set 'ValueSet Topography ICD-O-3' (https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3|0.1.0), and a code from this value set is required: Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3|0.1.0</b></td>
@@ -637,19 +637,19 @@
      <td><b>ResearchStudy (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>ResearchStudy.category:studyCategory: max allowed = 1, but found 2 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study|0.1.0)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ResearchStudy.category[0].coding[0] (l32/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
+     <td><b>ResearchStudy&#8203;.category[0]&#8203;.coding[0] (l32&#8203;/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ResearchStudy.category[1] (l39/c6)</b></td><td><b>warning</b></td><td title="Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit|0.1.0"><b>Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit|0.1.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ResearchStudy.category[1].coding[0] (l41/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
+     <td><b>ResearchStudy&#8203;.category[1]&#8203;.coding[0] (l41&#8203;/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>ResearchStudy.sponsor (l105/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Organization/UKSH'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.principalInvestigator (l102/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Practitioner/example'</b></td>
+     <td><b>ResearchStudy&#8203;.principalInvestigator (l102&#8203;/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Practitioner/example'</b></td>
    </tr>
 </table>
 <hr/>
@@ -701,31 +701,31 @@
      <td><b>ResearchStudy (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Maximum"><b>ResearchStudy.category:studyCategory: max allowed = 1, but found 4 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/clinical-study|0.1.0)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ResearchStudy.category[0].coding[0] (l37/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
+     <td><b>ResearchStudy&#8203;.category[0]&#8203;.coding[0] (l37&#8203;/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ResearchStudy.category[1] (l44/c6)</b></td><td><b>warning</b></td><td title="Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit|0.1.0"><b>Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit|0.1.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ResearchStudy.category[1].coding[0] (l46/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
+     <td><b>ResearchStudy&#8203;.category[1]&#8203;.coding[0] (l46&#8203;/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ResearchStudy.category[2] (l53/c6)</b></td><td><b>warning</b></td><td title="Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit|0.1.0"><b>Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit|0.1.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ResearchStudy.category[2].coding[0] (l55/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
+     <td><b>ResearchStudy&#8203;.category[2]&#8203;.coding[0] (l55&#8203;/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ResearchStudy.category[3] (l62/c6)</b></td><td><b>warning</b></td><td title="Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit|0.1.0"><b>Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit|0.1.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ResearchStudy.category[3].coding[0] (l64/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
+     <td><b>ResearchStudy&#8203;.category[3]&#8203;.coding[0] (l64&#8203;/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ResearchStudy.focus[0].coding[0] (l75/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
+     <td><b>ResearchStudy&#8203;.focus[0]&#8203;.coding[0] (l75&#8203;/c10)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ResearchStudy.principalInvestigator (l118/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Practitioner/example'</b></td>
+     <td><b>ResearchStudy&#8203;.principalInvestigator (l118&#8203;/c4)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Practitioner/example'</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>ResearchStudy.site[0] (l122/c6)</b></td><td><b>error</b></td><td title="Reference_REF_CantResolve"><b>Unable to resolve resource with reference 'Organization/Charite-dermatology'</b></td>
@@ -743,13 +743,13 @@
      <td><b>ResearchStudy.arm[0].type (l138/c8)</b></td><td><b>warning</b></td><td title="Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit|0.1.0"><b>Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit|0.1.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ResearchStudy.arm[0].type.coding[0] (l140/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
+     <td><b>ResearchStudy&#8203;.arm[0]&#8203;.type&#8203;.coding[0] (l140&#8203;/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ResearchStudy.arm[1].type (l151/c8)</b></td><td><b>warning</b></td><td title="Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit|0.1.0"><b>Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit|0.1.0</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>ResearchStudy.arm[1].type.coding[0] (l153/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
+     <td><b>ResearchStudy&#8203;.arm[1]&#8203;.type&#8203;.coding[0] (l153&#8203;/c12)</b></td><td><b>information</b></td><td title="Terminology_TX_System_NotKnown"><b>Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated</b></td>
    </tr>
 </table>
 <hr/>
@@ -781,10 +781,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[8].definition (l1/c44857)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.definition (l1&#8203;/c45057)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/www&#8203;.vision-zero-oncology&#8203;.de&#8203;/fhir&#8203;/StructureDefinition&#8203;/body-structure-base')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -800,10 +800,10 @@
      <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[4].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 on element Extension.value[x] could not be resolved</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[4]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 on element Extension.value[x] could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[5].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 on element Extension.value[x] could not be resolved</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[5]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 on element Extension.value[x] could not be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -816,13 +816,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.description (l1/c11297)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.description (l1&#8203;/c11297)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[0].definition (l1/c11906)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.definition (l1&#8203;/c11906)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[0].definition (l1/c15924)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0]&#8203;.definition (l1&#8203;/c15924)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
@@ -838,19 +838,19 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[13].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://loinc.org/vs/LL529-9 on element Observation.value[x].coding could not be resolved</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[13]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://loinc.org/vs/LL529-9 on element Observation.value[x].coding could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[19].pattern.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[27].pattern.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[46].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://loinc.org/vs/LL529-9 on element Observation.value[x].coding could not be resolved</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[46]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://loinc.org/vs/LL529-9 on element Observation.value[x].coding could not be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -863,19 +863,19 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[11].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://loinc.org/vs/LL4986-7 on element Observation.value[x] could not be resolved</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[11]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://loinc.org/vs/LL4986-7 on element Observation.value[x] could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[14]&#8203;.pattern&#8203;.ofType(CodeableConcept)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[19].pattern.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[19]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[27].pattern.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[27]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[42].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://loinc.org/vs/LL4986-7 on element Observation.value[x] could not be resolved</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[42]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://loinc.org/vs/LL4986-7 on element Observation.value[x] could not be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -888,13 +888,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.description (l1/c13462)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.description (l1&#8203;/c13462)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[0].definition (l1/c14056)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.definition (l1&#8203;/c14056)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[0].definition (l1/c18901)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0]&#8203;.definition (l1&#8203;/c18901)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
 </table>
 <hr/>
@@ -907,10 +907,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[8].definition (l1/c60497)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.definition (l1&#8203;/c60497)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[2].definition (l1/c108403)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[2]&#8203;.definition (l1&#8203;/c108403)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
 </table>
 <hr/>
@@ -923,10 +923,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[16].fixed.ofType(CodeableConcept)</b></td><td><b>warning</b></td><td title=""><b>For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[16]&#8203;.fixed&#8203;.ofType(CodeableConcept)</b></td><td><b>warning</b></td><td title=""><b>For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-read-procedure')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/www&#8203;.vision-zero-oncology&#8203;.de&#8203;/fhir&#8203;/StructureDefinition&#8203;/radiological-read-procedure')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this profile</b></td>
    </tr>
 </table>
 <hr/>
@@ -939,7 +939,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[16].fixed.ofType(CodeableConcept)</b></td><td><b>warning</b></td><td title=""><b>For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[16]&#8203;.fixed&#8203;.ofType(CodeableConcept)</b></td><td><b>warning</b></td><td title=""><b>For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance</b></td>
    </tr>
 </table>
 <hr/>
@@ -952,7 +952,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[16].fixed.ofType(CodeableConcept)</b></td><td><b>warning</b></td><td title=""><b>For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[16]&#8203;.fixed&#8203;.ofType(CodeableConcept)</b></td><td><b>warning</b></td><td title=""><b>For the complex type CodeableConcept, consider using a pattern rather than a fixed value to avoid over-constraining the instance</b></td>
    </tr>
 </table>
 <hr/>
@@ -965,13 +965,13 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-recist-category-observation.json - the canonical URL (https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-category-observation) does not match the URL (https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation)</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/www&#8203;.vision-zero-oncology&#8203;.de&#8203;/fhir&#8203;/ValueSet&#8203;/vs-recist-category-observation')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/StructureDefinition-recist-category-observation.json - the canonical URL (https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-category-observation) does not match the URL (https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>StructureDefinition.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: recist-category-observation/https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/StructureDefinition-recist-category-observation</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-category-observation vs https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation</b></td>
+     <td><b>fsh-generated&#8203;/resources&#8203;/StructureDefinition-recist-category-observation</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.vision-zero-oncology.de/fhir/StructureDefinition/recist-category-observation vs https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-category-observation</b></td>
    </tr>
 </table>
 <hr/>
@@ -984,19 +984,19 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.description (l1/c11399)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.description (l1&#8203;/c11399)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[0].definition (l1/c11988)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[0]&#8203;.definition (l1&#8203;/c11988)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[0].definition (l1/c16046)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[0]&#8203;.definition (l1&#8203;/c16046)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>StructureDefinition.context[0]</b></td><td><b>warning</b></td><td title=""><b>Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.where(url = 'https://www.vision-zero-oncology.de/fhir/StructureDefinition/supporting-info')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
+     <td><b>StructureDefinition&#8203;.where(url = 'https:&#8203;/&#8203;/www&#8203;.vision-zero-oncology&#8203;.de&#8203;/fhir&#8203;/StructureDefinition&#8203;/supporting-info')</b></td><td><b>warning</b></td><td title=""><b>The Implementation Guide contains no examples for this extension</b></td>
    </tr>
 </table>
 <hr/>
@@ -1009,7 +1009,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[8].definition (l1/c25088)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.definition (l1&#8203;/c25088)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
 </table>
 <hr/>
@@ -1022,16 +1022,16 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[1].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie on element Condition.code.coding could not be resolved</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[1]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie on element Condition.code.coding could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.differential.element[12].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-topologie on element Condition.bodySite.coding could not be resolved</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element[12]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-topologie on element Condition.bodySite.coding could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[54].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie on element Condition.code.coding could not be resolved</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[54]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie on element Condition.code.coding could not be resolved</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[76].binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-topologie on element Condition.bodySite.coding could not be resolved</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[76]&#8203;.binding</b></td><td><b>warning</b></td><td title=""><b>The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-topologie on element Condition.bodySite.coding could not be resolved</b></td>
    </tr>
 </table>
 <hr/>
@@ -1044,31 +1044,31 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen#Specimen.processing:lagerprozess.extension</b></td><td><b>error</b></td><td title=""><b>The slice definition for Specimen.processing:lagerprozess.extension has a minimum of 0 but the slices add up to a minimum of 1</b></td>
+     <td><b>https:&#8203;/&#8203;/www&#8203;.vision-zero-oncology&#8203;.de&#8203;/fhir&#8203;/StructureDefinition&#8203;/tumor-specimen&#8203;#Specimen&#8203;.processing:lagerprozess&#8203;.extension</b></td><td><b>error</b></td><td title=""><b>The slice definition for Specimen.processing:lagerprozess.extension has a minimum of 0 but the slices add up to a minimum of 1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-specimen#Specimen.processing:lagerprozess.time[x]:timePeriod</b></td><td><b>error</b></td><td title=""><b>The element Specimen.processing:lagerprozess.time[x]:timePeriod ([95]) launches straight into slicing without the slicing being set up properly first</b></td>
+     <td><b>https:&#8203;/&#8203;/www&#8203;.vision-zero-oncology&#8203;.de&#8203;/fhir&#8203;/StructureDefinition&#8203;/tumor-specimen&#8203;#Specimen&#8203;.processing:lagerprozess&#8203;.time[x]:timePeriod</b></td><td><b>error</b></td><td title=""><b>The element Specimen.processing:lagerprozess.time[x]:timePeriod ([95]) launches straight into slicing without the slicing being set up properly first</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>StructureDefinition.snapshot.element[8].definition (l1/c27201)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[8]&#8203;.definition (l1&#8203;/c27201)</b></td><td><b>warning</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_MARKDOWN_HTML"><b>The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.differential.element.where(path = 'Specimen.processing:lagerprozess.extension')</b></td><td><b>error</b></td><td title=""><b>The slice definition for Specimen.processing:lagerprozess.extension has a minimum of 0 but the slices add up to a minimum of 1</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element&#8203;.where(path = 'Specimen&#8203;.processing:lagerprozess&#8203;.extension')</b></td><td><b>error</b></td><td title=""><b>The slice definition for Specimen.processing:lagerprozess.extension has a minimum of 0 but the slices add up to a minimum of 1</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.differential.element.where(path = 'Specimen.processing:lagerprozess.time[x]:timePeriod')</b></td><td><b>error</b></td><td title=""><b>The element Specimen.processing:lagerprozess.time[x]:timePeriod ([95]) launches straight into slicing without the slicing being set up properly first</b></td>
+     <td><b>StructureDefinition&#8203;.differential&#8203;.element&#8203;.where(path = 'Specimen&#8203;.processing:lagerprozess&#8203;.time[x]:timePeriod')</b></td><td><b>error</b></td><td title=""><b>The element Specimen.processing:lagerprozess.time[x]:timePeriod ([95]) launches straight into slicing without the slicing being set up properly first</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[73].pattern.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[73]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
    <tr style="background-color: #ffffe6">
-     <td><b>StructureDefinition.snapshot.element[91].pattern.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[91]&#8203;.pattern&#8203;.ofType(Coding)</b></td><td><b>information</b></td><td title=""><b>The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.snapshot.element[109]</b></td><td><b>error</b></td><td title="SD_ILLEGAL_CHARACTERISTICS"><b>This element has a Binding but the types [Reference] do not make this kind of constraint relevant</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[109]</b></td><td><b>error</b></td><td title="SD_ILLEGAL_CHARACTERISTICS"><b>This element has a Binding but the types [Reference] do not make this kind of constraint relevant</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>StructureDefinition.snapshot.element[109].binding</b></td><td><b>error</b></td><td title="SD_ED_BIND_NO_BINDABLE"><b>The element Specimen.container.additive[x] has a binding, but no bindable types are present [Reference]</b></td>
+     <td><b>StructureDefinition&#8203;.snapshot&#8203;.element[109]&#8203;.binding</b></td><td><b>error</b></td><td title="SD_ED_BIND_NO_BINDABLE"><b>The element Specimen.container.additive[x] has a binding, but no bindable types are present [Reference]</b></td>
    </tr>
 </table>
 <hr/>
@@ -1120,7 +1120,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'morphology-icd-o-3')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3</b> (<a href="qa-tx.html#l261">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'morphology-icd-o-3')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3</b> (<a href="qa-tx.html#l294">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1136,7 +1136,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'http://radlex.org/RID' specified, so Concepts and Filters can't be checked (Details: The CodeSystem http://radlex.org/RID is unknown (from Tx-Server))</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'recist-asstimepoint-response')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://radlex.org/RID</b> (<a href="qa-tx.html#l294">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'recist-asstimepoint-response')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://radlex.org/RID</b> (<a href="qa-tx.html#l303">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1152,7 +1152,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'studiendesign-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l307">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'studiendesign-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l279">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1168,7 +1168,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'studienkategorien-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l305">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'studienkategorien-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l306">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1184,7 +1184,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'study-focus-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l272">see Tx log</a>)</td>
+     <td><b>ValueSet.where(id = 'study-focus-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l286">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1200,7 +1200,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-l-lymphatic-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l283">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-l-lymphatic-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l283">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1216,7 +1216,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-m-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l300">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-m-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l298">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1232,7 +1232,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-n-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l309">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-n-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l265">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1245,10 +1245,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: The CodeSystem urn:oid:2.16.840.1.113883.15.16 is unknown (from Tx-Server))</b></td>
+     <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-pn-perineural-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l257">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-pn-perineural-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l290">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1264,7 +1264,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-prefix-cpu-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l279">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-prefix-cpu-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l296">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1280,7 +1280,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-r-classification-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l259">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-r-classification-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l275">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1296,7 +1296,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-s-serum-tumor-markers-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l285">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-s-serum-tumor-markers-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l288">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1309,10 +1309,10 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
+     <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: The CodeSystem urn:oid:2.16.840.1.113883.15.16 is unknown (from Tx-Server))</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-stage-group-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l290">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-stage-group-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l256">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1328,7 +1328,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-suffix-itc-sn-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l267">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-suffix-itc-sn-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l267">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1344,7 +1344,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-suffix-itc-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l265">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-suffix-itc-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l258">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1360,7 +1360,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-t-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l263">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-t-category-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l292">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1376,7 +1376,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-t-multiplicity-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l296">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-t-multiplicity-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l310">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1392,7 +1392,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'tnm-v-venous-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l269">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'tnm-v-venous-invasion-uicc')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16</b> (<a href="qa-tx.html#l269">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1405,7 +1405,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'topography-icd-o-3')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3</b> (<a href="qa-tx.html#l254">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'topography-icd-o-3')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://terminology.hl7.org/CodeSystem/icd-o-3</b> (<a href="qa-tx.html#l281">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1473,7 +1473,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'type-of-blinding-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l281">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'type-of-blinding-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l300">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1489,7 +1489,7 @@
      <td><b>ValueSet.compose[0].include[0]</b></td><td><b>warning</b></td><td title=""><b>Unknown System 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' specified, so Concepts and Filters can't be checked (Details: Code System URI 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' is unknown so the code cannot be validated)</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'type-of-randomization-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l274">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'type-of-randomization-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l272">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1502,7 +1502,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ValueSet.where(id = 'type-of-study-arm-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l276">see Tx log</a>)</td>
+     <td><b>ValueSet&#8203;.where(id = 'type-of-study-arm-ncit')</b></td><td><b>warning</b></td><td><b>Error from server: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</b> (<a href="qa-tx.html#l263">see Tx log</a>)</td>
    </tr>
 </table>
 <hr/>
@@ -1515,7 +1515,7 @@
      <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>ValueSet.where(url = 'https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-recist-radiological-read-procedure.json - the canonical URL (https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-radiological-read-procedure) does not match the URL (https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure)</b></td>
+     <td><b>ValueSet&#8203;.where(url = 'https:&#8203;/&#8203;/www&#8203;.vision-zero-oncology&#8203;.de&#8203;/fhir&#8203;/ValueSet&#8203;/vs_recist_radiological_read_procedure')</b></td><td><b>error</b></td><td title="RESOURCE_CANONICAL_MISMATCH"><b>Conformance resource /github/workspace/fsh-generated/resources/ValueSet-vs-recist-radiological-read-procedure.json - the canonical URL (https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-radiological-read-procedure) does not match the URL (https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure)</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>ValueSet.url</b></td><td><b>error</b></td><td title="RESOURCE_ID_MISMATCH"><b>Resource id/url mismatch: vs-recist-radiological-read-procedure/https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure</b></td>
@@ -1524,7 +1524,7 @@
      <td><b>ValueSet (l1/c1217)</b></td><td><b>warning</b></td><td title="VALUESET_SHAREABLE_MISSING"><b>The ShareableValueSet profile says that the experimental element is mandatory, but it is not present. Published value sets SHOULD conform to the ShareableValueSet profile</b></td>
    </tr>
    <tr style="background-color: #ffcccc">
-     <td><b>fsh-generated/resources/ValueSet-vs-recist-radiological-read-procedure</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-radiological-read-procedure vs https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure</b></td>
+     <td><b>fsh-generated&#8203;/resources&#8203;/ValueSet-vs-recist-radiological-read-procedure</b></td><td><b>error</b></td><td title=""><b>URL Mismatch https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recist-radiological-read-procedure vs https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure</b></td>
    </tr>
 </table>
 <hr/>
@@ -2067,13 +2067,13 @@
 <h2>Terminology_TX_ValueSet_NotFound</h2>
  <table class="grid">
    <tr style="background-color: #fff4ee">
-     <td><a href="Condition-mamma-ca-rechts.html">fsh-generated/resources/Condition-mamma-ca-rechts.json</a></td><td><b>ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION not found by validator</b></td>
+     <td><a href="Condition-mamma-ca-rechts.html">fsh-generated/resources/Condition-mamma-ca-rechts.json</a></td><td><b>ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION not found</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Condition-mamma-ca-rechts.html">fsh-generated/resources/Condition-mamma-ca-rechts.json</a></td><td><b>ValueSet https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 not found by validator</b></td>
+     <td><a href="Condition-mamma-ca-rechts.html">fsh-generated/resources/Condition-mamma-ca-rechts.json</a></td><td><b>ValueSet https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 not found</b></td>
    </tr>
    <tr style="background-color: #fff4ee">
-     <td><a href="Condition-mamma-ca-rechts.html">fsh-generated/resources/Condition-mamma-ca-rechts.json</a></td><td><b>ValueSet http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie not found by validator</b></td>
+     <td><a href="Condition-mamma-ca-rechts.html">fsh-generated/resources/Condition-mamma-ca-rechts.json</a></td><td><b>ValueSet http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie not found</b></td>
    </tr>
 </table>
 <hr/>

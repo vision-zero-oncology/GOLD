@@ -17,7 +17,7 @@
   fhir:name [ fhir:v "VS_TNM_Radiological_Read_Procedures"] ; # 
   fhir:title [ fhir:v "Valueset for TNM Radiological Read Procedures"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-06-26T12:20:42+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-07-06T08:26:38+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;

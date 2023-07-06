@@ -4,9 +4,9 @@
 /github/workspace/fsh-generated/resources/CodeSystem-cs-diagnosesicherung-icdo3.json: line 1, col 2508, Warning - The ShareableCodeSystem profile says that the caseSensitive element is mandatory, but it is not present. Published code systems SHOULD conform to the ShareableCodeSystem profile (REQUIRED)
 /github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 11, col 8, Info - Code System URI 'http://fhir.de/CodeSystem/bfarm/icd-10-gm' is unknown so the code cannot be validated (UNKNOWN)
 /github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 16, col 14, Info - Code System URI 'https://fhir.kbv.de/CodeSystem/KBV_CS_SFHIR_ICD_SEITENLOKALISATION' is unknown so the code cannot be validated (UNKNOWN)
-/github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 16, col 14, Warning - ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION not found by validator (CODEINVALID)
-/github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 32, col 14, Warning - ValueSet https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 not found by validator (CODEINVALID)
-/github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 27, col 8, Warning - ValueSet http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie not found by validator (CODEINVALID)
+/github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 16, col 14, Warning - ValueSet https://fhir.kbv.de/ValueSet/KBV_VS_SFHIR_ICD_SEITENLOKALISATION not found (CODEINVALID)
+/github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 32, col 14, Warning - ValueSet https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 not found (CODEINVALID)
+/github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 27, col 8, Warning - ValueSet http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie not found (CODEINVALID)
 /github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 102, col 10, Info - This element does not match any known slice defined in the profile https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder|0.1.0 (INFORMATIONAL)
 /github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 100, col 6, Error - Condition.bodySite.coding:icdo3-t: minimum required = 1, but only found 0 (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-disorder|0.1.0) (STRUCTURE)
 /github/workspace/fsh-generated/resources/Condition-mamma-ca-rechts.json: line 111, col 4, Error - Unable to resolve resource with reference 'Patient/example' (STRUCTURE)
@@ -147,7 +147,7 @@
 /github/workspace/fsh-generated/resources/ResearchSubject-ExampleResearchSubjectStudienteilnehmer.json: line 33, col 4, Error - Unable to resolve resource with reference 'Consent/MII-Consent' (STRUCTURE)
 /github/workspace/fsh-generated/resources/StructureDefinition-body-height.json: line 0, col 0, Info - The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) (EXCEPTION)
 /github/workspace/fsh-generated/resources/StructureDefinition-body-height.json: line 0, col 0, Info - The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) (EXCEPTION)
-/github/workspace/fsh-generated/resources/StructureDefinition-body-structure-base.json: line 1, col 44857, Warning - The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour (INVALID)
+/github/workspace/fsh-generated/resources/StructureDefinition-body-structure-base.json: line 1, col 45057, Warning - The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour (INVALID)
 /github/workspace/fsh-generated/resources/StructureDefinition-body-structure-base.json: line 0, col 0, Warning - The Implementation Guide contains no examples for this profile (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/StructureDefinition-body-weight.json: line 0, col 0, Info - The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) (EXCEPTION)
 /github/workspace/fsh-generated/resources/StructureDefinition-body-weight.json: line 0, col 0, Info - The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users) (EXCEPTION)
@@ -242,7 +242,7 @@
 /github/workspace/fsh-generated/resources/ValueSet-tnm-m-category-uicc.json: line 0, col 0, Warning - Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16 (EXCEPTION)
 /github/workspace/fsh-generated/resources/ValueSet-tnm-n-category-uicc.json: line 0, col 0, Warning - Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-tnm-n-category-uicc.json: line 0, col 0, Warning - Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16 (EXCEPTION)
-/github/workspace/fsh-generated/resources/ValueSet-tnm-pn-perineural-invasion-uicc.json: line 0, col 0, Warning - Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: The CodeSystem urn:oid:2.16.840.1.113883.15.16 is unknown (from Tx-Server)) (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/ValueSet-tnm-pn-perineural-invasion-uicc.json: line 0, col 0, Warning - Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-tnm-pn-perineural-invasion-uicc.json: line 0, col 0, Warning - Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16 (EXCEPTION)
 /github/workspace/fsh-generated/resources/ValueSet-tnm-prefix-cpu-uicc.json: line 0, col 0, Warning - Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-tnm-prefix-cpu-uicc.json: line 0, col 0, Warning - Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16 (EXCEPTION)
@@ -250,7 +250,7 @@
 /github/workspace/fsh-generated/resources/ValueSet-tnm-r-classification-uicc.json: line 0, col 0, Warning - Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16 (EXCEPTION)
 /github/workspace/fsh-generated/resources/ValueSet-tnm-s-serum-tumor-markers-uicc.json: line 0, col 0, Warning - Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-tnm-s-serum-tumor-markers-uicc.json: line 0, col 0, Warning - Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16 (EXCEPTION)
-/github/workspace/fsh-generated/resources/ValueSet-tnm-stage-group-uicc.json: line 0, col 0, Warning - Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated) (BUSINESSRULE)
+/github/workspace/fsh-generated/resources/ValueSet-tnm-stage-group-uicc.json: line 0, col 0, Warning - Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: The CodeSystem urn:oid:2.16.840.1.113883.15.16 is unknown (from Tx-Server)) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-tnm-stage-group-uicc.json: line 0, col 0, Warning - Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16 (EXCEPTION)
 /github/workspace/fsh-generated/resources/ValueSet-tnm-suffix-itc-sn-uicc.json: line 0, col 0, Warning - Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated) (BUSINESSRULE)
 /github/workspace/fsh-generated/resources/ValueSet-tnm-suffix-itc-sn-uicc.json: line 0, col 0, Warning - Error from server: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16 (EXCEPTION)
@@ -284,5 +284,5 @@ GOLD : Validation Results
 =========================================
 
 err = 84, warn = 110, info = 101
-IG Publisher Version: 1.3.18
-Generated Mon Jun 26 12:27:41 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+IG Publisher Version: 1.3.22
+Generated Thu Jul 06 08:32:15 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
