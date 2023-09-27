@@ -3,7 +3,7 @@
   "id" : "type-of-blinding-ncit",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-v3-nciThesaurus.html\"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>C49659</td><td>Open Label Study</td></tr><tr><td>C28233</td><td>Single Blind Study</td></tr><tr><td>C15228</td><td>Double Blind Study</td></tr><tr><td>C66959</td><td>Triple Blind Study</td></tr><tr><td>C156592</td><td>Open Label for Treatment And Double Blind to Dose</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "ValueSet Type of Blinding NCIt",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-07-06T08:27:50+00:00",
+  "date" : "2023-09-27T08:44:59+00:00",
   "publisher" : "Berlin Institute of Health at Charité (BIH)",
   "contact" : [{
     "name" : "Berlin Institute of Health at Charité (BIH)",

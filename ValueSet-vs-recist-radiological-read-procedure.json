@@ -3,14 +3,14 @@
   "id" : "vs-recist-radiological-read-procedure",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/103337004\">103337004</a></td><td>In partial remission</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure",
   "version" : "0.1.0",
   "name" : "VS_RECIST_Radiological_Read_Procedures",
   "title" : "Valueset for RECIST Radiological Read Procedures",
   "status" : "draft",
-  "date" : "2023-07-06T08:27:50+00:00",
+  "date" : "2023-09-27T08:44:59+00:00",
   "publisher" : "Berlin Institute of Health at Charité (BIH)",
   "contact" : [{
     "name" : "Berlin Institute of Health at Charité (BIH)",

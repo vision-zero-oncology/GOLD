@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "tnm-t-multiplicity-uicc"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>m</td><td>(m)</td></tr><tr><td>2</td><td>(2)</td></tr><tr><td>3</td><td>(3)</td></tr><tr><td>4</td><td>(4)</td></tr><tr><td>5</td><td>(5)</td></tr><tr><td>6</td><td>(6)</td></tr><tr><td>7</td><td>(7)</td></tr><tr><td>8</td><td>(8)</td></tr><tr><td>9</td><td>(9)</td></tr><tr><td>10</td><td>(10)</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-multiplicity-uicc"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "ValueSet TNM T Multiplicity UICC"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-07-06T08:27:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-27T08:44:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;

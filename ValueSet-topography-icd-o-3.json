@@ -3,7 +3,7 @@
   "id" : "topography-icd-o-3",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://terminology.hl7.org/5.0.0/CodeSystem-icd-o-3.html\"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a> where concept  matches (by regex)  ^C\\S*$</li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   },
   "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "ValueSet Topography ICD-O-3",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-07-06T08:27:50+00:00",
+  "date" : "2023-09-27T08:44:59+00:00",
   "publisher" : "Berlin Institute of Health at Charité (BIH)",
   "contact" : [{
     "name" : "Berlin Institute of Health at Charité (BIH)",

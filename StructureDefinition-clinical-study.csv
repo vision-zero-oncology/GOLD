@@ -1,7 +1,8 @@
 "Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: BRIDG 5.1 Mapping","Mapping: HL7 v2 Mapping","Mapping: RIM Mapping","Mapping: ClinicalTrials.gov Mapping","Mapping: FiveWs Pattern Mapping"
 "ResearchStudy","ResearchStudy","","Clinical Trial
 Study","",0,*,"","","","null {[]} {[]}
-","Investigation to increase healthcare-related patient-independent knowledge","A process where a researcher or organization plans and then executes a series of steps intended to increase the field of healthcare-related knowledge.  This includes studies of safety, efficacy, comparative effectiveness and other information about medications, devices, therapies and other interventional and investigative techniques.  A ResearchStudy involves the gathering of information about human or animal subjects.","Need to make sure we encompass public health studies.","","","","","","","","",,,,,"",,,,"ResearchStudy",0,*,"","","ObservationalStudyProtocolVersion; Study;
+","Investigation to increase healthcare-related patient-independent knowledge","A process where a researcher or organization plans and then executes a series of steps intended to increase the field of healthcare-related knowledge.  This includes studies of safety, efficacy, comparative effectiveness and other information about medications, devices, therapies and other interventional and investigative techniques.  A ResearchStudy involves the gathering of information about human or animal subjects.","Need to make sure we encompass public health studies.","","","","","","","","",,,,,"",,,,"ResearchStudy",0,*,"","dom-2:If the resource is contained in another resource, it SHALL NOT contain nested Resources {contained.contained.empty()}
+dom-3:If the resource is contained in another resource, it SHALL be referred to from elsewhere in the resource or SHALL refer to the containing resource {contained.where((('#'+id in (%resource.descendants().reference | %resource.descendants().as(canonical) | %resource.descendants().as(uri) | %resource.descendants().as(url))) or descendants().where(reference = '#').exists() or descendants().where(as(canonical) = '#').exists() or descendants().where(as(canonical) = '#').exists()).not()).trace('unmatched', id).empty()}dom-4:If a resource is contained in another resource, it SHALL NOT have a meta.versionId or a meta.lastUpdated {contained.meta.versionId.empty() and contained.meta.lastUpdated.empty()}dom-5:If a resource is contained in another resource, it SHALL NOT have a security label {contained.meta.security.empty()}dom-6:A resource should have narrative for robust management {text.`div`.exists()}","ObservationalStudyProtocolVersion; Study;
 StudyProtocolVersion","OBX","Entity. Role, or Act","Observation[classCode=CLNTRL, moodCode=EVN]"
 "ResearchStudy.id","ResearchStudy.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
@@ -38,7 +39,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ResearchStudy.identifier:eudraCT","ResearchStudy.identifier","eudraCT","","",0,1,"","","Y","Identifier {[]} {[]}
 ","Eudra CT Number","Identifiers assigned to this research study by the sponsor or other systems.","","Allows identification of the research study as it is known by various participating systems and in a way that remains consistent across servers.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
   <system value=""https://www.clinicaltrialsregister.eu""/>
-</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
+</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
 "ResearchStudy.identifier:eudraCT.id","ResearchStudy.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ResearchStudy.identifier:eudraCT.extension","ResearchStudy.identifier.extension","","extensions
@@ -67,7 +69,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ResearchStudy.identifier:NCT","ResearchStudy.identifier","NCT","","",0,1,"","","Y","Identifier {[]} {[]}
 ","NCT number","Identifiers assigned to this research study by the sponsor or other systems.","","Allows identification of the research study as it is known by various participating systems and in a way that remains consistent across servers.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
   <system value=""http://clinicaltrials.gov""/>
-</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
+</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
 "ResearchStudy.identifier:NCT.id","ResearchStudy.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ResearchStudy.identifier:NCT.extension","ResearchStudy.identifier.extension","","extensions
@@ -96,7 +99,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ResearchStudy.identifier:PMID","ResearchStudy.identifier","PMID","","",0,1,"","","Y","Identifier {[]} {[]}
 ","Pubmed ID","Identifiers assigned to this research study by the sponsor or other systems.","","Allows identification of the research study as it is known by various participating systems and in a way that remains consistent across servers.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
   <system value=""http://www.ncbi.nlm.nih.gov/pubmed""/>
-</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
+</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
 "ResearchStudy.identifier:PMID.id","ResearchStudy.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ResearchStudy.identifier:PMID.extension","ResearchStudy.identifier.extension","","extensions
@@ -125,7 +129,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ResearchStudy.identifier:DOI","ResearchStudy.identifier","DOI","","",0,1,"","","Y","Identifier {[]} {[]}
 ","Digital Object Identifier","Identifiers assigned to this research study by the sponsor or other systems.","","Allows identification of the research study as it is known by various participating systems and in a way that remains consistent across servers.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
   <system value=""https://doi.org""/>
-</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
+</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
 "ResearchStudy.identifier:DOI.id","ResearchStudy.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ResearchStudy.identifier:DOI.extension","ResearchStudy.identifier.extension","","extensions
@@ -154,7 +159,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ResearchStudy.identifier:URI","ResearchStudy.identifier","URI","","",0,1,"","","Y","Identifier {[]} {[]}
 ","Uniform Resource Identifier","Identifiers assigned to this research study by the sponsor or other systems.","","Allows identification of the research study as it is known by various participating systems and in a way that remains consistent across servers.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
   <system value=""urn:ietf:rfc:3986""/>
-</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
+</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
 "ResearchStudy.identifier:URI.id","ResearchStudy.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ResearchStudy.identifier:URI.extension","ResearchStudy.identifier.extension","","extensions
@@ -183,7 +189,8 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "ResearchStudy.identifier:DRKS","ResearchStudy.identifier","DRKS","","",0,1,"","","Y","Identifier {[]} {[]}
 ","Deusches Register Klinischer Studien","Identifiers assigned to this research study by the sponsor or other systems.","","Allows identification of the research study as it is known by various participating systems and in a way that remains consistent across servers.","","","","<valueIdentifier xmlns=""http://hl7.org/fhir"">
   <system value=""https://www.drks.de""/>
-</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
+</valueIdentifier>","","","",,,,,"",,,,"ResearchStudy.identifier",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","No BRIDG mapping (although there is  DocumentVersion.identifier > StudyProtocolDocumentVersion, this is arguably a different semantic)",".identifier","Organization's Unique Protocol ID; Secondary IDs","FiveWs.identifier"
 "ResearchStudy.identifier:DRKS.id","ResearchStudy.identifier.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
 "ResearchStudy.identifier:DRKS.extension","ResearchStudy.identifier.extension","","extensions

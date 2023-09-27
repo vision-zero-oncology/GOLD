@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="tumor-measurement-methods"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/787377000">787377000</a></td><td>Gross examination and sampling of tissue specimen (procedure)</td></tr><tr><td><a href="http://snomed.info/id/104157003">104157003</a></td><td>Light microscopy (procedure)</td></tr><tr><td><a href="http://snomed.info/id/5880005">5880005</a></td><td>Physical examination procedure (procedure)</td></tr><tr><td><a href="http://snomed.info/id/16310003">16310003</a></td><td>Diagnostic ultrasonography (procedure)</td></tr><tr><td><a href="http://snomed.info/id/113091000">113091000</a></td><td>Magnetic resonance imaging (procedure)</td></tr><tr><td><a href="http://snomed.info/id/77477000">77477000</a></td><td>Computerized axial tomography (procedure)</td></tr><tr><td><a href="http://snomed.info/id/82918005">82918005</a></td><td>Positron emission tomography (procedure)</td></tr><tr><td><a href="http://snomed.info/id/363680008">363680008</a></td><td>Radiographic imaging procedure (procedure)</td></tr><tr><td><a href="http://snomed.info/id/363679005">363679005</a></td><td>Imaging (procedure)</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods"/>
   <version value="0.1.0"/>
   <name value="VS_Tumor_Measurement_Methods"/>
   <title value="ValueSet Tumor Measurement Methods"/>
   <status value="draft"/>
-  <date value="2023-07-06T08:27:50+00:00"/>
+  <date value="2023-09-27T08:44:59+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>

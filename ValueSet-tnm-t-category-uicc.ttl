@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "tnm-t-category-uicc"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>TX</td><td>TX</td></tr><tr><td>T0</td><td>T0</td></tr><tr><td>Ta</td><td>Ta</td></tr><tr><td>Tis</td><td>Tis</td></tr><tr><td>Tis(LAMN)</td><td>Tis(LAMN)</td></tr><tr><td>Tis(DCIS)</td><td>Tis(DCIS)</td></tr><tr><td>Tis(LCIS)</td><td>Tis(LCIS)</td></tr><tr><td>Tis(Paget)</td><td>Tis(Paget)</td></tr><tr><td>Tis(pu)</td><td>Tis(pu)</td></tr><tr><td>Tis(pd)</td><td>Tis(pd)</td></tr><tr><td>T1</td><td>T1</td></tr><tr><td>T1mi</td><td>T1mi</td></tr><tr><td>T1a</td><td>T1a</td></tr><tr><td>T1a1</td><td>T1a1</td></tr><tr><td>T1a2</td><td>T1a2</td></tr><tr><td>T1b</td><td>T1b</td></tr><tr><td>T1b1</td><td>T1b1</td></tr><tr><td>T1b2</td><td>T1b2</td></tr><tr><td>T1c</td><td>T1c</td></tr><tr><td>T1c1</td><td>T1c1</td></tr><tr><td>T1c2</td><td>T1c2</td></tr><tr><td>T1c3</td><td>T1c3</td></tr><tr><td>T1d</td><td>T1d</td></tr><tr><td>T2</td><td>T2</td></tr><tr><td>T2a</td><td>T2a</td></tr><tr><td>T2a1</td><td>T2a1</td></tr><tr><td>T2a2</td><td>T2a2</td></tr><tr><td>T2b</td><td>T2b</td></tr><tr><td>T2c</td><td>T2c</td></tr><tr><td>T2d</td><td>T2d</td></tr><tr><td>T3</td><td>T3</td></tr><tr><td>T3a</td><td>T3a</td></tr><tr><td>T3b</td><td>T3b</td></tr><tr><td>T3c</td><td>T3c</td></tr><tr><td>T3d</td><td>T3d</td></tr><tr><td>T3e</td><td>T3e</td></tr><tr><td>T4</td><td>T4</td></tr><tr><td>T4a</td><td>T4a</td></tr><tr><td>T4b</td><td>T4b</td></tr><tr><td>T4c</td><td>T4c</td></tr><tr><td>T4d</td><td>T4d</td></tr><tr><td>T4e</td><td>T4e</td></tr></table></li></ul></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
   ] ; # 
   fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "ValueSet TNM T Category UICC"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-07-06T08:27:50+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-09-27T08:44:59+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;

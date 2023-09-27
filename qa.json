@@ -3,10 +3,11 @@
   "name" : "GOLD",
   "package-id" : "gold",
   "ig-ver" : "0.1.0",
-  "date" : "Thu, 06 Jul, 2023 08:27:50 +0000",
-  "errs" : 83,
-  "warnings" : 108,
-  "hints" : 100,
+  "date" : "Wed, 27 Sep, 2023 08:44:59 +0000",
+  "errs" : 81,
+  "warnings" : 185,
+  "hints" : 130,
   "version" : "4.0.1",
-  "tool" : "5.0.0 (3)"
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1858361112
 }

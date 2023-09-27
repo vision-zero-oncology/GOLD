@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="tnm-stage-group-uicc"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>okk</td><td>Stage X</td></tr><tr><td>0</td><td>Stage 0</td></tr><tr><td>0a</td><td>Stage 0a</td></tr><tr><td>0is</td><td>Stage 0is</td></tr><tr><td>I</td><td>Stage I</td></tr><tr><td>IA1</td><td>Stage IA1</td></tr><tr><td>IA2</td><td>Stage IA2</td></tr><tr><td>IA3</td><td>Stage IA3</td></tr><tr><td>IB</td><td>Stage IB</td></tr><tr><td>IB1</td><td>Stage IB1</td></tr><tr><td>IB2</td><td>Stage IB2</td></tr><tr><td>IC</td><td>Stage IC</td></tr><tr><td>IS</td><td>Stage IS</td></tr><tr><td>II</td><td>Stage II</td></tr><tr><td>IIA</td><td>Stage IIA</td></tr><tr><td>IIA1</td><td>Stage IIA1</td></tr><tr><td>IIA2</td><td>Stage IIA2</td></tr><tr><td>IIB</td><td>Stage IIB</td></tr><tr><td>IIC</td><td>Stage IIC</td></tr><tr><td>III</td><td>Stage III</td></tr><tr><td>IIIA</td><td>Stage IIIA</td></tr><tr><td>IIIA1</td><td>Stage IIIA1</td></tr><tr><td>IIIA2</td><td>Stage IIIA2</td></tr><tr><td>IIIB</td><td>Stage IIIB</td></tr><tr><td>IIIC</td><td>Stage IIIC</td></tr><tr><td>IIIC1</td><td>Stage IIIC1</td></tr><tr><td>IIIC2</td><td>Stage IIIC2</td></tr><tr><td>IV</td><td>Stage IV</td></tr><tr><td>IVA</td><td>Stage IVA</td></tr><tr><td>IVB</td><td>Stage IVB</td></tr><tr><td>IVC</td><td>Stage IVC</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
   </text>
   <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc"/>
   <version value="0.1.0"/>
@@ -11,7 +11,7 @@
   <title value="ValueSet TNM Stage Group UICC"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-07-06T08:27:50+00:00"/>
+  <date value="2023-09-27T08:44:59+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>
