@@ -11,7 +11,7 @@ Profile: Radiological_Read_Procedure
 Parent: Procedure
 Id: radiological-read-procedure
 Title: "Radiological read procedure"
-Description: "This radiological procedure profile describes a radiological reading process or an automated procedure like an AI algorithm for segmentation. Not the procedure performed during image aquisition which is described in the ImagingStudy procedureReference of the linked reports in this resource. The purpose of this resource is to give structured information in the Diagnostic Report the right context. For example this way a TNM observation resource gets the context which version of TNM was used and which entity was addressed. It can also be used to give BodyStructures resources which were addressed during a radiological read additional attributes. E.g. the category of tumor within a TNM read could be 'Primary' and the very same lesion (BodyStructure) could be 'Target' in the scope of a RECIST read procedure."
+Description: "This radiological procedure profile describes a radiological reading process or an automated procedure like an AI algorithm for segmentation. Not the procedure performed during image aquisition which is described in the ImagingStudy procedureReference of the linked reports in this resource. The purpose of this resource is to give structured information in the Diagnostic Report the right context. For example this way a TNM observation resource gets the context which version of TNM was used and which entity was addressed. It can also be used to give BodyStructures resources which were addressed during a radiological read additional attributes. E.g. the category of tumor within a TNM read could be 'Primary' and the very same lesion (BodyStructure) could be 'Target' in the scope of a RECIST read procedure. The resource can be linked to multiple RadiologicalDiagnosticReport resources in cases where the context of the procedure is used over several timepoints and the additional information (e.g. the RECIST category) will not change over time."
 * ^url = $RadReadProc
 * category 1..1
 * category = $SCT#103693007 "Diagnostic procedure" (exactly)
@@ -81,5 +81,3 @@ Title: "Example of a RECIST Radiological Read Procedure"
 * subject = Reference(ExamplePatient)
 * code = //TODO
 * report = Reference(ExampleDiagnosticReport)
-
-
