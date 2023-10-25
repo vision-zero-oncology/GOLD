@@ -1,22 +1,3 @@
-Alias: $structure = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.structure
-Alias: $laterality = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality
-Alias: $landmarkDescription = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.landmarkDescription
-Alias: $clockFacePosition = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.clockFacePosition
-Alias: $device = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.device
-Alias: $value = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.value
-Alias: $surfaceOrientation = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation
-Alias: $spatialReference = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.spatialReference
-Alias: $qualifier = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.qualifier
-Alias: $excludedstructure = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.structure
-Alias: $excludedlaterality = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.laterality
-Alias: $excludedlandmarkDescription = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.landmarkDescription
-Alias: $excludedclockFacePosition = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.clockFacePosition
-Alias: $excludeddevice = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.distanceFromLandmark.device
-Alias: $excludedvalue = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.distanceFromLandmark.value
-Alias: $excludedsurfaceOrientation = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.surfaceOrientation
-Alias: $excludedspatialReference = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.spatialReference
-Alias: $excludedqualifier = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.qualifier
-
 Profile: Body_Structure_Base
 Parent: BodyStructure
 Id: body-structure-base
@@ -43,7 +24,7 @@ Extension: IncludedStructure
 Id: included-structure
 Title: "Included Structure"
 Description: "Description of the included Structure of the Body Structure"
-* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure" (exactly)
+* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"
 * extension contains 
     $structure 1..* MS 
     and $laterality 0..* MS
@@ -60,7 +41,7 @@ Description: "Description of the included Structure of the Body Structure"
 * extension[$clockFacePosition].value[x] only CodeableConcept
 * extension[$device].value[x] only Reference or CodeableConcept
 * extension[$value].value[x] only Quantity
-* extension[$surfaceOrientation].value[x] only surfaceOrientation
+* extension[$surfaceOrientation].value[x] only CodeableConcept
 * extension[$spatialReference].value[x] only Reference or CodeableConcept
 * extension[$qualifier].value[x] only CodeableConcept
 
@@ -70,7 +51,7 @@ Extension: ExcludedStructure
 Id: excluded-structure
 Title: "Excluded Structure"
 Description: "Description of the excluded Structure of the Body Structure"
-* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure (exactly)"
+* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure"
 * extension contains
     $excludedstructure 1..* MS and
     $excludedlaterality 0..* MS and
@@ -103,12 +84,15 @@ Description: "Enables to reference a diagnosis <Condition> the body stucture ref
 
 
 Instance: example-body-structure
-InstanceOf: BodyStructure
+InstanceOf: Body_Structure_Base
 Usage: #example
 * identifier.use = #usual
 * identifier.type = http://hl7.org/fhir/resource-types#BodyStructure
 * identifier.system = "http://radiology.hospital.example.org"
 * identifier.value = "Tumor 1234"
 * patient = Reference(ExamplePatient)
-* extension.url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis"
-* extension.valueReference = Reference(ExampleCondition)
+* extension[diagnosis].url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis"
+* extension[diagnosis].valueReference = Reference(ExampleCondition)
+* extension[included-structure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"
+* extension[included-structure].extension[$structure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.structure"
+* extension[included-structure].extension[$structure].valueCodeableConcept.coding = $ICD10GM|2019#C50.2 "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse"

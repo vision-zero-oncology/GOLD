@@ -61,3 +61,23 @@ Alias: $DiagnosesicherungCS = https://www.vision-zero-oncology.de/fhir/CodeSyste
 Alias: $RadReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-read-procedure
 Alias: $RadTnmReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-tnm-read-procedure
 Alias: $RadRecistReadProc = https://www.vision-zero-oncology.de/fhir/StructureDefinition/radiological-recist-read-procedure
+
+// HL7 Backport
+Alias: $structure = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.structure
+Alias: $laterality = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality
+Alias: $landmarkDescription = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.landmarkDescription
+Alias: $clockFacePosition = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.clockFacePosition
+Alias: $device = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.device
+Alias: $value = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.value
+Alias: $surfaceOrientation = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation
+Alias: $spatialReference = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.spatialReference
+Alias: $qualifier = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.qualifier
+Alias: $excludedstructure = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.structure
+Alias: $excludedlaterality = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.laterality
+Alias: $excludedlandmarkDescription = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.landmarkDescription
+Alias: $excludedclockFacePosition = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.clockFacePosition
+Alias: $excludeddevice = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.distanceFromLandmark.device
+Alias: $excludedvalue = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.distanceFromLandmark.value
+Alias: $excludedsurfaceOrientation = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.surfaceOrientation
+Alias: $excludedspatialReference = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.spatialReference
+Alias: $excludedqualifier = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.qualifier
