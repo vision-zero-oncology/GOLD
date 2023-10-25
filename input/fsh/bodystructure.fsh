@@ -68,7 +68,7 @@ Description: "Description of the excluded Structure of the Body Structure"
 * extension[$excludedclockFacePosition].value[x] only CodeableConcept
 * extension[$excludeddevice].value[x] only Reference or CodeableConcept
 * extension[$excludedvalue].value[x] only Quantity
-* extension[$excludedsurfaceOrientation].value[x] only surfaceOrientation
+* extension[$excludedsurfaceOrientation].value[x] only CodeableConcept
 * extension[$excludedspatialReference].value[x] only Reference or CodeableConcept
 * extension[$excludedqualifier].value[x] only CodeableConcept
 
