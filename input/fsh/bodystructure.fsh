@@ -16,7 +16,7 @@ Description: "Profile for the base definition of all body structures."
 * identifier[bodyStructureIdentifier].value 1..*
 * location 0..0
 * locationQualifier 0..0
-* extension 1..*
+* extension 1..* MS
 * extension contains diagnosis 0..* MS and
             included-structure 1..* MS and
             excluded-structure 0..* MS and
@@ -27,7 +27,7 @@ Id: included-structure
 Title: "Included Structure"
 Description: "Description of the included Structure of the Body Structure"
 * url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure (exactly)"
-* extension 1..*
+* extension 1..* MS
 * extension contains 
             structure 1..* MS 
             and laterality 0..* MS 
@@ -39,23 +39,23 @@ Description: "Description of the included Structure of the Body Structure"
             and spatialReference 0..* MS 
             and qualifier 0..* MS 
 * extension[structure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.structure" 
-* extension[structure].value[x] = only CodeableConcept
+* extension[structure].value[x] only CodeableConcept
 * extension[laterality].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality" 
-* extension[laterality].value[x] = only CodeableConcept
+* extension[laterality].value[x] only CodeableConcept
 * extension[landmarkDescription].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.landmarkDescription"
-* extension[landmarkDescription].value[x] = only CodeableReference
+* extension[landmarkDescription].value[x] only CodeableReference
 * extension[clockFacePosition].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.clockFacePosition"
-* extension[clockFacePosition].value[x] = only CodeableReference
+* extension[clockFacePosition].value[x] only CodeableReference
 * extension[device].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.device"
-* extension[device].value[x] = only CodeableReference
+* extension[device].value[x] only CodeableReference
 * extension[value].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.value"
-* extension[value].value[x] = only Quantity
+* extension[value].value[x] only Quantity
 * extension[surfaceOrientation].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation" 
-* extension[surfaceOrientation].value[x] = only surfaceOrientation
+* extension[surfaceOrientation].value[x] only surfaceOrientation
 * extension[spatialReference].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.spatialReference" 
-* extension[spatialReference].value[x] = only CodeableReference
+* extension[spatialReference].value[x] only CodeableReference
 * extension[qualifier].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.qualifier" 
-* extension[qualifier].value[x] = only CodeableConcept
+* extension[qualifier].value[x] only CodeableConcept
 
 
 
@@ -76,23 +76,23 @@ Description: "Description of the excluded Structure of the Body Structure"
             excludedspatialReference 0..* MS and
             excludedqualifier 0..* MS
 * extension[excludedstructure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.structure" 
-* extension[excludedstructure].value[x] = only CodeableConcept
+* extension[excludedstructure].value[x] only CodeableConcept
 * extension[excludedlaterality].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.laterality" 
-* extension[excludedlaterality].value[x] = only CodeableConcept
+* extension[excludedlaterality].value[x] only CodeableConcept
 * extension[excludedlandmarkDescription].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.landmarkDescription"
-* extension[excludedlandmarkDescription].value[x] = only CodeableReference
+* extension[excludedlandmarkDescription].value[x] only CodeableReference
 * extension[excludedclockFacePosition].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.clockFacePosition"
-* extension[excludedclockFacePosition].value[x] = only CodeableReference
+* extension[excludedclockFacePosition].value[x] only CodeableReference
 * extension[excludeddevice].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.distanceFromLandmark.device"
-* extension[excludeddevice].value[x] = only CodeableReference
+* extension[excludeddevice].value[x] only CodeableReference
 * extension[excludedvalue].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.distanceFromLandmark.value"
-* extension[excludedvalue].value[x] = only Quantity
+* extension[excludedvalue].value[x] only Quantity
 * extension[excludedsurfaceOrientation].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.surfaceOrientation"
-* extension[excludedsurfaceOrientation].value[x] = only surfaceOrientation
+* extension[excludedsurfaceOrientation].value[x] only surfaceOrientation
 * extension[excludedspatialReference].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.spatialReference"
-* extension[excludedspatialReference].value[x] = only CodeableReference
+* extension[excludedspatialReference].value[x] only CodeableReference
 * extension[excludedqualifier].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.qualifier "
-* extension[excludedqualifier].value[x] = only CodeableConcept
+* extension[excludedqualifier].value[x] only CodeableConcept
 
 
 Extension: Diagnosis
