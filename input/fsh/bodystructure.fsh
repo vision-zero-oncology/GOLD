@@ -18,7 +18,7 @@ Description: "Profile for the base definition of all body structures."
 * locationQualifier 0..0
 * extension contains Diagnosis named diagnosis 0..* MS and
     IncludedStructure named included-structure 1..* MS and
-    ExcludedStructure named excluded-structure 0..* MS and
+    ExcludedStructure named excluded-structure 0..* MS
 
 
 Extension: IncludedStructure
