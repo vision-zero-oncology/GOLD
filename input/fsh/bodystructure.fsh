@@ -18,7 +18,7 @@ Description: "Profile for the base definition of all body structures."
 * locationQualifier 0..0
 * extension 1..*
 * extension contains Diagnosis named diagnosis 0..* MS 
-            and structure 1..* MS 
+            and Structure named structure 1..* MS 
             and laterality 0..* MS 
             and landmarkDescription 0..* MS 
             and clockFacePosition 0..* MS 
