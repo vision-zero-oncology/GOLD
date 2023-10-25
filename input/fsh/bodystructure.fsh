@@ -22,7 +22,7 @@ Description: "Profile for the base definition of all body structures."
             ExcludedStructure named encludedStructure 0..* MS and
 
 
-Extention: IncludedStructure
+Extension: IncludedStructure
 Id: includedStructure
 Title: "Included Structure"
 Description: "Description of the included Structure of the Body Structure"
@@ -59,7 +59,7 @@ Description: "Description of the included Structure of the Body Structure"
 
 
 
-Extention: ExcludedStructure
+Extension: ExcludedStructure
 Id: excludedStructure
 Title: "Excluded Structure"
 Description: "Description of the excluded Structure of the Body Structure"
