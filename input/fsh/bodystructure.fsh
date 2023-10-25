@@ -17,13 +17,13 @@ Description: "Profile for the base definition of all body structures."
 * location 0..0
 * locationQualifier 0..0
 * extension 1..*
-* extension contains Diagnosis named diagnosis 0..* MS and
-            IncludedStructure named includedStructure 1..* MS and
-            ExcludedStructure named encludedStructure 0..* MS and
+* extension contains diagnosis 0..* MS and
+            included-structure 1..* MS and
+            excluded-structure 0..* MS and
 
 
 Extension: IncludedStructure
-Id: includedStructure
+Id: included-structure
 Title: "Included Structure"
 Description: "Description of the included Structure of the Body Structure"
 * url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure (exactly)"
@@ -60,7 +60,7 @@ Description: "Description of the included Structure of the Body Structure"
 
 
 Extension: ExcludedStructure
-Id: excludedStructure
+Id: excluded-structure
 Title: "Excluded Structure"
 Description: "Description of the excluded Structure of the Body Structure"
 * url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure (exactly)"
