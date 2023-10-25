@@ -93,4 +93,6 @@ Usage: #example
 * patient = Reference(ExamplePatient)
 * extension[diagnosis].url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis"
 * extension[diagnosis].valueReference = Reference(ExampleCondition)
-* extension[included-structure].extension[$structure].valueCodeableConcept.coding = $ICD10GM|2019#C50.2 "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse"
+* extension[included-structure].extension[$structure].valueCodeableConcept.coding = $SCT#14975008 "Forearm"
+* extension[included-structure].extension[$laterality].valueCodeableConcept.coding = $SCT#419161000 "Unilateral left"
+* extension[included-structure].extension[$qualifier].valueCodeableConcept.coding = $SCT#263929005 "Volar"
