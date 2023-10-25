@@ -29,7 +29,7 @@ Description: "Description of the included Structure of the Body Structure"
 * url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure (exactly)"
 * extension 1..*
 * extension contains 
-            and structure 1..* MS 
+            structure 1..* MS 
             and laterality 0..* MS 
             and landmarkDescription 0..* MS 
             and clockFacePosition 0..* MS 
