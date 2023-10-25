@@ -1,3 +1,6 @@
+Alias: $structure = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.structure
+
+
 Profile: Body_Structure_Base
 Parent: BodyStructure
 Id: body-structure-base
@@ -11,8 +14,7 @@ Description: "Profile for the base definition of all body structures."
     bodyStructureIdentifier 1..1 
 * identifier[bodyStructureIdentifier].use = #usual
 * identifier[bodyStructureIdentifier].type = http://hl7.org/fhir/resource-types#BodyStructure
-* identifier[bodyStructureIdentifier].type.coding.system 1..*
-* identifier[bodyStructureIdentifier].type.coding.code 1..*
+* identifier[bodyStructureIdentifier].type.coding 1..*
 * identifier[bodyStructureIdentifier].value 1..*
 * location 0..0
 * locationQualifier 0..0
@@ -25,35 +27,35 @@ Extension: IncludedStructure
 Id: included-structure
 Title: "Included Structure"
 Description: "Description of the included Structure of the Body Structure"
-* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure (exactly)"
+* url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure" (exactly)
 * extension contains 
-    structure 1..* MS 
-    and laterality 0..* MS
-    and landmarkDescription 0..* MS 
-    and clockFacePosition 0..* MS 
-    and device 0..* MS 
-    and value 0..* MS 
-    and surfaceOrientation 0..* MS 
-    and spatialReference 0..* MS 
-    and qualifier 0..* MS 
-* extension[structure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.structure" 
-* extension[structure].value[x] only CodeableConcept
-* extension[laterality].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality" 
-* extension[laterality].value[x] only CodeableConcept
-* extension[landmarkDescription].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.landmarkDescription"
-* extension[landmarkDescription].value[x] only CodeableConcept
-* extension[clockFacePosition].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.clockFacePosition"
-* extension[clockFacePosition].value[x] only CodeableConcept
-* extension[device].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.device"
-* extension[device].value[x] only Reference
-* extension[value].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.value"
-* extension[value].value[x] only Quantity
-* extension[surfaceOrientation].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation" 
-* extension[surfaceOrientation].value[x] only surfaceOrientation
-* extension[spatialReference].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.spatialReference" 
-* extension[spatialReference].value[x] only Reference
-* extension[qualifier].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.qualifier" 
-* extension[qualifier].value[x] only CodeableConcept
+    $structure 1..* MS 
+    and $laterality 0..* MS
+    and $landmarkDescription 0..* MS 
+    and $clockFacePosition 0..* MS 
+    and $device 0..* MS 
+    and $value 0..* MS 
+    and $surfaceOrientation 0..* MS 
+    and $spatialReference 0..* MS 
+    and $qualifier 0..* MS 
+//* extension[structure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.structure"(exactly)
+* extension[$structure].value[x] only CodeableConcept
+//* extension[laterality].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality"(exactly)
+* extension[$laterality].value[x] only CodeableConcept
+//* extension[landmarkDescription].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.landmarkDescription"(exactly)
+* extension[$landmarkDescription].value[x] only CodeableConcept
+//* extension[clockFacePosition].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.clockFacePosition"(exactly)
+* extension[$clockFacePosition].value[x] only CodeableConcept
+//* extension[device].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.device"(exactly)
+* extension[$device].value[x] only Reference
+//* extension[value].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.distanceFromLandmark.value"(exactly)
+* extension[$value].value[x] only Quantity
+//* extension[surfaceOrientation].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.bodyLandmarkOrientation.surfaceOrientation"(exactly)
+* extension[$surfaceOrientation].value[x] only surfaceOrientation
+//* extension[spatialReference].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.spatialReference"(exactly) 
+* extension[$spatialReference].value[x] only Reference or CodeableConcept
+//* extension[qualifier].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.qualifier"(exactly) 
+* extension[$qualifier].value[x] only CodeableConcept
 
 
 
@@ -61,7 +63,7 @@ Extension: ExcludedStructure
 Id: excluded-structure
 Title: "Excluded Structure"
 Description: "Description of the excluded Structure of the Body Structure"
-* ^url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure (exactly)"
+* url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure (exactly)"
 * extension contains
     excludedstructure 1..* MS and
     excludedlaterality 0..* MS and
@@ -72,23 +74,23 @@ Description: "Description of the excluded Structure of the Body Structure"
     excludedsurfaceOrientation 0..* MS and
     excludedspatialReference 0..* MS and
     excludedqualifier 0..* MS
-* extension[excludedstructure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.structure" 
+* extension[excludedstructure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.structure"(exactly) 
 * extension[excludedstructure].value[x] only CodeableConcept
-* extension[excludedlaterality].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.laterality" 
+* extension[excludedlaterality].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.laterality"(exactly) 
 * extension[excludedlaterality].value[x] only CodeableConcept
-* extension[excludedlandmarkDescription].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.landmarkDescription"
+* extension[excludedlandmarkDescription].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.landmarkDescription"(exactly)
 * extension[excludedlandmarkDescription].value[x] only CodeableConcept
-* extension[excludedclockFacePosition].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.clockFacePosition"
+* extension[excludedclockFacePosition].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.clockFacePosition"(exactly)
 * extension[excludedclockFacePosition].value[x] only CodeableConcept
-* extension[excludeddevice].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.distanceFromLandmark.device"
+* extension[excludeddevice].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.distanceFromLandmark.device"(exactly)
 * extension[excludeddevice].value[x] only Reference
-* extension[excludedvalue].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.distanceFromLandmark.value"
+* extension[excludedvalue].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.distanceFromLandmark.value"(exactly)
 * extension[excludedvalue].value[x] only Quantity
-* extension[excludedsurfaceOrientation].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.surfaceOrientation"
+* extension[excludedsurfaceOrientation].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.bodyLandmarkOrientation.surfaceOrientation"(exactly)
 * extension[excludedsurfaceOrientation].value[x] only surfaceOrientation
-* extension[excludedspatialReference].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.spatialReference"
+* extension[excludedspatialReference].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.spatialReference"(exactly)
 * extension[excludedspatialReference].value[x] only Reference
-* extension[excludedqualifier].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.qualifier "
+* extension[excludedqualifier].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.qualifier "(exactly)
 * extension[excludedqualifier].value[x] only CodeableConcept
 
 
