@@ -14,7 +14,7 @@ Id: tumor
 Title: "Profile Tumor"
 Description: "Profile of a tumor"
 * insert Metadata
-* morphoplogy 1..1 MS
+* morphology 1..1 MS
 * patient MS
 
 Extension: PartOf
