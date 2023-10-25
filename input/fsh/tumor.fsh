@@ -37,8 +37,6 @@ Description: "Example for the Tumor profile"
 * identifier[bodyStructureIdentifier].value = "Tumor 1234"
 //* morphology = $SCT#17302008 "Cerebellar sarcoma (morphologic abnormality)"
 //* location = $SCT#1010600003 "Structure of left cerebellar hemisphere (body structure)"
-* extension[included-structure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"
-* extension[included-structure].extension[$structure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.structure"
 * extension[included-structure].extension[$structure].valueCodeableConcept.coding = $ICD10GM|2019#C50.2 "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse"
 * patient = Reference(ExamplePatient)
 

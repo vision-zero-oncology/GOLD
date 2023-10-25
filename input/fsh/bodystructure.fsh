@@ -93,6 +93,4 @@ Usage: #example
 * patient = Reference(ExamplePatient)
 * extension[diagnosis].url = "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis"
 * extension[diagnosis].valueReference = Reference(ExampleCondition)
-* extension[included-structure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"
-* extension[included-structure].extension[$structure].url = "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.structure"
 * extension[included-structure].extension[$structure].valueCodeableConcept.coding = $ICD10GM|2019#C50.2 "Bösartige Neubildung der Brustdrüse [Mamma] Oberer innerer Quadrant der Brustdrüse"
