@@ -17,7 +17,23 @@ Description: "Profile for the base definition of all body structures."
 * location 0..0
 * locationQualifier 0..0
 * extension 1..*
-* extension contains Diagnosis named diagnosis 0..* MS and structure 1..* MS and laterality 0..* MS and landmarkDescription 0..* MS and clockFacePosition 0..* MS device 0..* MS an value 0..* MS and surfaceOrientation 0..* MS and spatialReference 0..* MS and qualifier 0..* MS and excludedstructure 1..* MS and excludedlaterality 0..* MS and excludedlandmarkDescription 0..* MS and excludedclockFacePosition 0..* MS excludeddevice 0..* MS and excludedvalue 0..* MS and excludedsurfaceOrientation 0..* MS and excludedspatialReference 0..* MS and excludedqualifier 0..* MS
+* extension contains Diagnosis named diagnosis 0..* MS 
+                    and structure 1..* MS 
+                    and laterality 0..* MS 
+                    and landmarkDescription 0..* MS 
+                    and clockFacePosition 0..* MS device 0..* MS 
+                    and value 0..* MS and surfaceOrientation 0..* MS 
+                    and spatialReference 0..* MS 
+                    and qualifier 0..* MS 
+                    and excludedstructure 1..* MS 
+                    and excludedlaterality 0..* MS 
+                    and excludedlandmarkDescription 0..* MS 
+                    and excludedclockFacePosition 0..* MS 
+                    and excludeddevice 0..* MS 
+                    and excludedvalue 0..* MS 
+                    and excludedsurfaceOrientation 0..* MS 
+                    and excludedspatialReference 0..* MS 
+                    and excludedqualifier 0..* MS
 * extension[structure].url = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.structure 
 * extension[structure].value[x] = only CodeableConcept
 * extension[laterality].url = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure.laterality 
@@ -54,7 +70,6 @@ Description: "Profile for the base definition of all body structures."
 * extension[excludedspatialReference].value[x] = only CodeableReference
 * extension[excludedqualifier].url = http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure.qualifier 
 * extension[excludedqualifier].value[x] = only CodeableConcept
-
 
 Extension: Diagnosis
 Id: diagnosis
