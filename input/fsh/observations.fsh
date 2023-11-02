@@ -498,9 +498,15 @@ Description: "Example of a resource conforming to the tumor size profile in path
 * method = $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
 * specimen = Reference(Tumor/any-specimen-of-patient-eve-anyperson)
-* component[longestDimension].valueQuantity = 12 $UCUM#mm"mm"
+* component[longestDimension].valueQuantity = 12 
+* component[longestDimension].valueQuantity.unit = "mm"
+* component[longestDimension].valueQuantity.code = "mm"
+* component[longestDimension].valueQuantity.system = $UCUM
 * component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
-* component[volume].valueQuantity = 1000 $UCUM#ml"ml"
+* component[volume].valueQuantity = 1000 
+* component[volume].valueQuantity.unit = "mm"
+* component[volume].valueQuantity.code = "mm"
+* component[volume].valueQuantity.system = $UCUM
 * component[volume].$LNC#33729-5"Volume of the Tumor" 
 * effectiveDateTime = "2019-05-01"
 
@@ -513,8 +519,14 @@ Description: "Example of a resource conforming to the tumor size profile in radi
 * method = $SCT#113091000 "Magnetic resonance imaging (procedure)"
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
 * focus = Reference(BodyStructure/tumor-lobular-carcinoma-left-breast)
-* component[longestDimension].valueQuantity = 12 $UCUM#mm"mm"
+* component[longestDimension].valueQuantity.value = 12 
+* component[longestDimension].valueQuantity.unit = "mm"
+* component[longestDimension].valueQuantity.code = "mm"
+* component[longestDimension].valueQuantity.system = $UCUM
 * component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
-* component[shortAxis].valueQuantity = 0.5 $UCUM#mm"mm"
+* component[shortAxis].valueQuantity = 0.5 
+* component[shortAxis].valueQuantity.unit = "mm"
+* component[shortAxis].valueQuantity.code = "mm"
+* component[shortAxis].valueQuantity.system = $UCUM
 * component[shortAxis].code = $LNC#21889-1"Size Tumor"
 * effectiveDateTime = "2019-05-02"
