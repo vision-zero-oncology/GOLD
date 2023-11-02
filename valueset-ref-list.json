@@ -10,8 +10,8 @@
       "systems" : ["http://fhir.de/CodeSystem/bfarm/atc"],
       "uses" : {
       },
-      "StructureDefinition-medication-administration.html" : "Profile MedicationAdministration",
-      "StructureDefinition-medication-statement.html" : "Profile MedicationStatement"
+      "StructureDefinition-medication-statement.html" : "Profile MedicationStatement",
+      "StructureDefinition-medication-administration.html" : "Profile MedicationAdministration"
     },
     {
       "url" : "http://hl7.org/fhir/ValueSet/medication-statement-category",
@@ -81,8 +81,8 @@
       "systems" : ["http://standardterms.edqm.eu"],
       "uses" : {
       },
-      "StructureDefinition-medication-administration.html" : "Profile MedicationAdministration",
-      "StructureDefinition-medication-statement.html" : "Profile MedicationStatement"
+      "StructureDefinition-medication-statement.html" : "Profile MedicationStatement",
+      "StructureDefinition-medication-administration.html" : "Profile MedicationAdministration"
     },
     {
       "url" : "http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips",
@@ -94,8 +94,8 @@
       "systems" : ["http://snomed.info/sct"],
       "uses" : {
       },
-      "StructureDefinition-medication-administration.html" : "Profile MedicationAdministration",
-      "StructureDefinition-medication-statement.html" : "Profile MedicationStatement"
+      "StructureDefinition-medication-statement.html" : "Profile MedicationStatement",
+      "StructureDefinition-medication-administration.html" : "Profile MedicationAdministration"
     },
     {
       "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-body-structures",

@@ -21,11 +21,11 @@
       "oids" : ["2.16.840.1.113883.6.1"],
       "uses" : {
       },
-      "ValueSet-tnm-t-staging-type-loinc.html" : "ValueSet TNM T Staging Type LOINC",
-      "ValueSet-tnm-classification-type-loinc.html" : "ValueSet TNM Classification Type LOINC",
       "ValueSet-vs-tnm-category-observation.html" : "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
+      "ValueSet-tnm-m-staging-type-loinc.html" : "ValueSet TNM M Staging Type LOINC",
       "ValueSet-tnm-n-staging-type-loinc.html" : "ValueSet TNM N Staging Type LOINC",
-      "ValueSet-tnm-m-staging-type-loinc.html" : "ValueSet TNM M Staging Type LOINC"
+      "ValueSet-tnm-classification-type-loinc.html" : "ValueSet TNM Classification Type LOINC",
+      "ValueSet-tnm-t-staging-type-loinc.html" : "ValueSet TNM T Staging Type LOINC"
     },
     {
       "url" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
@@ -37,12 +37,12 @@
       "oids" : ["2.16.840.1.113883.3.26.1.1"],
       "uses" : {
       },
-      "ValueSet-type-of-randomization-ncit.html" : "ValueSet Type of Randomization NCIt",
-      "ValueSet-study-focus-ncit.html" : "ValueSet Study Focus NCIt",
-      "ValueSet-studiendesign-ncit.html" : "ValueSet Studiendesign NCIt",
       "ValueSet-type-of-study-arm-ncit.html" : "ValueSet Type of Study Arm NCIt",
+      "ValueSet-type-of-randomization-ncit.html" : "ValueSet Type of Randomization NCIt",
+      "ValueSet-studienkategorien-ncit.html" : "ValueSet Studienkategorien NCIt",
+      "ValueSet-study-focus-ncit.html" : "ValueSet Study Focus NCIt",
       "ValueSet-type-of-blinding-ncit.html" : "ValueSet Type of Blinding NCIt",
-      "ValueSet-studienkategorien-ncit.html" : "ValueSet Studienkategorien NCIt"
+      "ValueSet-studiendesign-ncit.html" : "ValueSet Studiendesign NCIt"
     },
     {
       "url" : "http://snomed.info/sct",
@@ -54,16 +54,16 @@
       "oids" : ["2.16.840.1.113883.6.96"],
       "uses" : {
       },
-      "ValueSet-morphology-snomed.html" : "ValueSet Morphology SNOMED",
-      "https://simplifier.net/resolve?scope=hl7.fhir.uv.ips@1.0.0&canonical=http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" : "Target Site - IPS",
-      "ValueSet-vs-recsit-category-observation.html" : "Valueset for Categories of a BodyStructure in the context of one RECIST procedure",
-      "ValueSet-vs-tnm-radiological-read-procedure.html" : "Valueset for TNM Radiological Read Procedures",
-      "ValueSet-tumor-measurement-methods.html" : "ValueSet Tumor Measurement Methods",
       "ValueSet-topography-snomed.html" : "ValueSet Topography SNOMED",
-      "ValueSet-ecog-performance-status-snomed.html" : "ValueSet ECOG Performance Status SNOMED",
+      "ValueSet-vs-recist-radiological-read-procedure.html" : "Valueset for RECIST Radiological Read Procedures",
       "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@1.0.3&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-body-structures" : "ValueSet - SNOMED CT Body Strutures",
+      "ValueSet-ecog-performance-status-snomed.html" : "ValueSet ECOG Performance Status SNOMED",
+      "ValueSet-tumor-measurement-methods.html" : "ValueSet Tumor Measurement Methods",
       "ValueSet-histopathological-grade-snomed.html" : "ValueSet Histologic Grade SNOMED",
-      "ValueSet-vs-recist-radiological-read-procedure.html" : "Valueset for RECIST Radiological Read Procedures"
+      "ValueSet-morphology-snomed.html" : "ValueSet Morphology SNOMED",
+      "ValueSet-vs-tnm-radiological-read-procedure.html" : "Valueset for TNM Radiological Read Procedures",
+      "https://simplifier.net/resolve?scope=hl7.fhir.uv.ips@1.0.0&canonical=http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" : "Target Site - IPS",
+      "ValueSet-vs-recsit-category-observation.html" : "Valueset for Categories of a BodyStructure in the context of one RECIST procedure"
     },
     {
       "url" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
@@ -112,11 +112,11 @@
       "oids" : ["2.16.840.1.113883.6.8"],
       "uses" : {
       },
-      "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units",
-      "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units",
-      "ValueSet-tumor-size-units.html" : "ValueSet Tumor Size Units",
       "ValueSet-tumor-area-units.html" : "ValueSet Tumor Size Units ValueSet",
-      "ValueSet-tumor-volume-units.html" : "ValueSet Tumor Size Units Value Set"
+      "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units",
+      "ValueSet-tumor-size-units.html" : "ValueSet Tumor Size Units",
+      "ValueSet-tumor-volume-units.html" : "ValueSet Tumor Size Units Value Set",
+      "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units"
     },
     {
       "url" : "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3",
