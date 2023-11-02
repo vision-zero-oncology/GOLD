@@ -53,6 +53,7 @@ Further Working Groups (in alphabetical order)
 * Simon Kreutzfeldt, MASTER Program NCT Heidelberg
 * Thomas Massier, mint Medical GmbH
 * Erika Schirghuber, Roche Pharma AG
+* Friederike Schneider
 * Christoph Benedikt Westphalen, CCC München LMU
 * Niko Wolf, Snke OS GmbH Healthcare Plattform
 
