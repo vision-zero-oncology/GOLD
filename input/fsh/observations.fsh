@@ -400,7 +400,7 @@ Id: tumor-measurement
 Title: "Profile Tumor Measurment"
 Description:  "Profile for recording measurements of a tumor like the longest diameter or volume. The resource can be used for different measurement methods (e.g. methods in pathology, radiology or physical exams)."
 // LOINC code indicating this is a tumor size observation
-* code = $LNC#21889-1 //"Size Tumor"
+* code = $LNC#21889-1 "Size Tumor"
 * subject ^short = "The patient whose tumor was measured."
 * subject 1..1
 * subject only Reference(Patient)
@@ -428,25 +428,53 @@ Description:  "Profile for recording measurements of a tumor like the longest di
     volume 0..1
 * component[longestDimension] ^short = "Longest tumor dimension (mm)"
 * component[longestDimension] ^definition = "The longest tumor dimension in mm."
-* component[longestDimension].code = $LNC#33728-7 // "Size.maximum dimension in Tumor"
+* component[longestDimension].code.coding ^slicing.discriminator.type = #pattern
+* component[longestDimension].code.coding ^slicing.discriminator.path = "code"
+* component[longestDimension].code.coding ^slicing.rules = #open
+* component[longestDimension].code.coding contains
+    loinc 1..1 and
+    snomed 0..1
+* component[longestDimension].code.coding[loinc] = $LNC#33728-7 "Size.maximum dimension in Tumor"
+* component[longestDimension].code.coding[snomed] = $SCT#371479009 "Tumor size, largest dimension"
 * component[longestDimension].value[x] only Quantity
 * component[longestDimension].valueQuantity from VS_Tumor_Size_Units (required)
 
 * component[shortAxis] ^short = "short axis of the tumor lesion (mm or cm)"
 * component[shortAxis] ^definition = "short axis in mm or cm."
-* component[shortAxis].code = $LNC#33729-5 "Size additional dimension in Tumor"
+* component[shortAxis].code.coding ^slicing.discriminator.type = #pattern
+* component[shortAxis].code.coding ^slicing.discriminator.path = "code"
+* component[shortAxis].code.coding ^slicing.rules = #open
+* component[shortAxis].code.coding contains
+    loinc 1..1 and
+    snomed 0..1
+* component[shortAxis].code.coding[loinc] = $LNC#21889-1 "Size Tumor"
+* component[shortAxis].code.coding[snomed] = $SCT#372299002 "Tumor size, dimension 1"
 * component[shortAxis].value[x] only Quantity
 * component[shortAxis].valueQuantity from VS_Tumor_Size_Units (required)
 
 * component[area] ^short = "area of the tumor (mm²)"
 * component[area] ^definition = "tumor area in mm²."
-//* component[area].code = LNC#33729-5 // "Area of the Tumor"
+* component[area].code.coding ^slicing.discriminator.type = #pattern
+* component[area].code.coding ^slicing.discriminator.path = "code"
+* component[area].code.coding ^slicing.rules = #open
+* component[area].code.coding contains
+    loinc 1..1 and
+    snomed 0..1
+* component[area].code.coding[loinc] = $LNC#33729-5 "Area of the Tumor"
+* component[area].code.coding[snomed] = $SCT#2372300005 "Tumor size, dimension 2"
 * component[area].value[x] only Quantity
 * component[area].valueQuantity from VS_Tumor_Area_Units (required)
 
 * component[volume] ^short = "tumor volume (ml)"
 * component[volume] ^definition = "Tumor volume in ml."
-//* component[volume].code = LNC#33729-5 // "Volume of the Tumor"
+* component[volume].code.coding ^slicing.discriminator.type = #pattern
+* component[volume].code.coding ^slicing.discriminator.path = "code"
+* component[volume].code.coding ^slicing.rules = #open
+* component[volume].code.coding contains
+    loinc 1..1 and
+    snomed 0..1
+* component[volume].code.coding[loinc] = $LNC#33729-5 "Volume of the Tumor"
+* component[volume].code.coding[snomed] = $SCT#258261001 "Tumor volume"
 * component[volume].value[x] only Quantity
 * component[volume].valueQuantity from VS_Tumor_Volume_Units (required)
 
@@ -466,14 +494,14 @@ InstanceOf: TumorMeasurement
 Usage: #example
 Description: "Example of a resource conforming to the tumor size profile in pathology."
 * status = #final
-* code = $LNC#21889-1
+* code = $LNC#21889-1 "Size Tumor"
 * method = $SCT#787377000 "Gross examination and sampling of tissue specimen (procedure)"
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
 * specimen = Reference(Tumor/any-specimen-of-patient-eve-anyperson)
 * component[longestDimension].valueQuantity = 12 'mm' "mm"
 * component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
-* component[volume].valueQuantity = 1000 'ml' "ml"
-* component[volume].code = $UCUM#ml
+* component[volume].valueQuantity = 1000 'mm²' "mm²" 
+* component[volume].code = $LNC#33729-5 "Volume of the Tumor" 
 * effectiveDateTime = "2019-05-01"
 
 Instance: tumor-size-radiology 
@@ -481,12 +509,12 @@ InstanceOf: TumorMeasurement
 Usage: #example
 Description: "Example of a resource conforming to the tumor size profile in radiology (MRI bidimensional measurement)."
 * status = #final
-* code = $LNC#21889-1
+* code = $LNC#21889-1 "Size Tumor"
 * method = $SCT#113091000 "Magnetic resonance imaging (procedure)"
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
 * focus = Reference(BodyStructure/tumor-lobular-carcinoma-left-breast)
 * component[longestDimension].valueQuantity = 12 'mm' "mm"
 * component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
 * component[shortAxis].valueQuantity = 0.5 'mm' "mm"
-* component[shortAxis].code = $LNC#33729-5 "Size additional dimension in Tumor"
+* component[shortAxis].code = $LNC#21889-1 "Size Tumor"
 * effectiveDateTime = "2019-05-02"
