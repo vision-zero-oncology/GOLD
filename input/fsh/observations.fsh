@@ -501,7 +501,7 @@ Description: "Example of a resource conforming to the tumor size profile in path
 * component[longestDimension].valueQuantity = 12 'mm' "mm"
 * component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
 * component[volume].valueQuantity = 1000 'mm²' "mm²" 
-* component[volume].$LNC#33729-5 "Volume of the Tumor" 
+* component[volume].code = $LNC#33729-5 "Volume of the Tumor" 
 * effectiveDateTime = "2019-05-01"
 
 Instance: tumor-size-radiology 
@@ -513,7 +513,7 @@ Description: "Example of a resource conforming to the tumor size profile in radi
 * method = $SCT#113091000 "Magnetic resonance imaging (procedure)"
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
 * focus = Reference(BodyStructure/tumor-lobular-carcinoma-left-breast)
-* component[longestDimension].valueQuantity = 12'mm' "mm"
+* component[longestDimension].valueQuantity = 12 'mm' "mm"
 * component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
 * component[shortAxis].valueQuantity = 0.5 'mm' "mm"
 * component[shortAxis].code = $LNC#21889-1 "Size Tumor"
