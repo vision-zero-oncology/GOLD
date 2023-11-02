@@ -513,7 +513,7 @@ Description: "Example of a resource conforming to the tumor size profile in radi
 * method = $SCT#113091000 "Magnetic resonance imaging (procedure)"
 * subject = Reference(Patient/cancer-patient-eve-anyperson)
 * focus = Reference(BodyStructure/tumor-lobular-carcinoma-left-breast)
-* component[longestDimension].valueQuantity.value = 12 'mm' "mm"
+* component[longestDimension].valueQuantity = 12'mm' "mm"
 * component[longestDimension].code = $LNC#33728-7 "Size.maximum dimension in Tumor"
 * component[shortAxis].valueQuantity = 0.5 'mm' "mm"
 * component[shortAxis].code = $LNC#21889-1 "Size Tumor"
