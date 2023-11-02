@@ -3,7 +3,7 @@
   "id" : "tnm-s-serum-tumor-markers-uicc",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>urn:oid:2.16.840.1.113883.15.16</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>S0</td><td>S0</td></tr><tr><td>S1</td><td>S1</td></tr><tr><td>S2</td><td>S2</td></tr><tr><td>S3</td><td>S3</td></tr><tr><td>SX</td><td>SX</td></tr></table></li></ul></div>"
   },
   "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-s-serum-tumor-markers-uicc",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "ValueSet TNM S Serum Tumour Markers UICC",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-09-27T08:44:59+00:00",
+  "date" : "2023-11-02T12:02:41+00:00",
   "publisher" : "Berlin Institute of Health at Charité (BIH)",
   "contact" : [{
     "name" : "Berlin Institute of Health at Charité (BIH)",

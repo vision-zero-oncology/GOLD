@@ -3,14 +3,14 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="cs-diagnosesicherung-icdo3"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This  code system <code>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0<a name="cs-diagnosesicherung-icdo3-0"> </a></td><td>Nur Totenschein</td></tr><tr><td style="white-space:nowrap">1<a name="cs-diagnosesicherung-icdo3-1"> </a></td><td>Klinisch</td></tr><tr><td style="white-space:nowrap">2<a name="cs-diagnosesicherung-icdo3-2"> </a></td><td>Klinische Diagnostik</td></tr><tr><td style="white-space:nowrap">4<a name="cs-diagnosesicherung-icdo3-4"> </a></td><td>Spezifische Tumor-Marker</td></tr><tr><td style="white-space:nowrap">5<a name="cs-diagnosesicherung-icdo3-5"> </a></td><td>Zytologie</td></tr><tr><td style="white-space:nowrap">6<a name="cs-diagnosesicherung-icdo3-6"> </a></td><td>Histologische Untersuchung einer Metastase</td></tr><tr><td style="white-space:nowrap">7<a name="cs-diagnosesicherung-icdo3-7"> </a></td><td>Histologische Untersuchung eines Primärtumors</td></tr><tr><td style="white-space:nowrap">9<a name="cs-diagnosesicherung-icdo3-9"> </a></td><td>Unbekannt</td></tr></table></div>
   </text>
   <url value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
   <version value="0.1.0"/>
   <name value="DiagnosesicherungICDO3"/>
   <title value="Diagnosesicherung ICD-O-3"/>
   <status value="draft"/>
-  <date value="2023-09-27T08:44:59+00:00"/>
+  <date value="2023-11-02T12:02:41+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>

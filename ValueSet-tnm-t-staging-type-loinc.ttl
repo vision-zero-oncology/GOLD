@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "tnm-t-staging-type-loinc"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/21905-5/\">21905-5</a></td><td>Primary tumor.clinical [Class] Cancer</td></tr><tr><td><a href=\"https://loinc.org/21899-0/\">21899-0</a></td><td>Primary tumor.pathology Cancer</td></tr><tr><td><a href=\"https://loinc.org/21911-3/\">21911-3</a></td><td>Primary tumor.other [Class] Cancer</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "ValueSet TNM T Staging Type LOINC"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-09-27T08:44:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-02T12:02:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;

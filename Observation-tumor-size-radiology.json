@@ -6,13 +6,14 @@
   },
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"tumor-size-radiology\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;tumor-size-radiology&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor-measurement.html\">Profile Tumor Measurment</a></p></div><p><b>status</b>: final</p><p><b>code</b>: 21889-1 <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21889-1)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/cancer-patient-eve-anyperson\">Patient/cancer-patient-eve-anyperson</a></p><p><b>focus</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/BodyStructure/tumor-lobular-carcinoma-left-breast\">BodyStructure/tumor-lobular-carcinoma-left-breast</a></p><p><b>effective</b>: 2019-05-02</p><p><b>method</b>: Magnetic resonance imaging (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#113091000)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Size.maximum dimension in Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#33728-7)</span></p><p><b>value</b>: 12 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm = 'mm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Size additional dimension in Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#33729-5)</span></p><p><b>value</b>: 0.5 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm = 'mm')</span></p></blockquote></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"tumor-size-radiology\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;tumor-size-radiology&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-tumor-measurement.html\">Profile Tumor Measurment</a></p></div><p><b>status</b>: final</p><p><b>code</b>: Size Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21889-1)</span></p><p><b>subject</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/Patient/cancer-patient-eve-anyperson\">Patient/cancer-patient-eve-anyperson</a></p><p><b>focus</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/BodyStructure/tumor-lobular-carcinoma-left-breast\">BodyStructure/tumor-lobular-carcinoma-left-breast</a></p><p><b>effective</b>: 2019-05-02</p><p><b>method</b>: Magnetic resonance imaging (procedure) <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#113091000)</span></p><blockquote><p><b>component</b></p><p><b>code</b>: Size.maximum dimension in Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#33728-7)</span></p><p><b>value</b>: 12 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm = 'mm')</span></p></blockquote><blockquote><p><b>component</b></p><p><b>code</b>: Size Tumor <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#21889-1)</span></p><p><b>value</b>: 0.5 mm<span style=\"background: LightGoldenRodYellow\"> (Details: UCUM code mm = 'mm')</span></p></blockquote></div>"
   },
   "status" : "final",
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "code" : "21889-1"
+      "code" : "21889-1",
+      "display" : "Size Tumor"
     }]
   },
   "subject" : {
@@ -48,8 +49,8 @@
     "code" : {
       "coding" : [{
         "system" : "http://loinc.org",
-        "code" : "33729-5",
-        "display" : "Size additional dimension in Tumor"
+        "code" : "21889-1",
+        "display" : "Size Tumor"
       }]
     },
     "valueQuantity" : {

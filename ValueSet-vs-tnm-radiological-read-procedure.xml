@@ -3,14 +3,14 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="vs-tnm-radiological-read-procedure"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  254293002 (null)</li></ul></div>
   </text>
   <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-radiological-read-procedure"/>
   <version value="0.1.0"/>
   <name value="VS_TNM_Radiological_Read_Procedures"/>
   <title value="Valueset for TNM Radiological Read Procedures"/>
   <status value="draft"/>
-  <date value="2023-09-27T08:44:59+00:00"/>
+  <date value="2023-11-02T12:02:41+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>

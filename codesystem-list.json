@@ -1,0 +1,12 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DiagnosesicherungICDO3",
+      "title" : "Diagnosesicherung ICD-O-3",
+      "description" : "CodeSystem für die Diagnosesicherungscodes der ICD-O-3"
+    }
+  ]
+}

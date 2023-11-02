@@ -3,7 +3,7 @@
   "id" : "recist-asstimepoint-response",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <code>http://radlex.org/RID</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>11514</td><td>stable disease</td></tr><tr><td>11513</td><td>partial response</td></tr><tr><td>11511</td><td>complete imaging response</td></tr><tr><td>11515</td><td>progressive disease</td></tr></table></li></ul></div>"
   },
   "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response",
   "version" : "0.1.0",
@@ -11,7 +11,7 @@
   "title" : "ValueSet Recist Timepoint Response",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2023-09-27T08:44:59+00:00",
+  "date" : "2023-11-02T12:02:41+00:00",
   "publisher" : "Berlin Institute of Health at Charité (BIH)",
   "contact" : [{
     "name" : "Berlin Institute of Health at Charité (BIH)",

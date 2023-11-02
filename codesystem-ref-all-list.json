@@ -1,0 +1,662 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.de/CodeSystem/bfarm/alpha-id",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "AlphaId",
+      "title" : null,
+      "description" : "Alpha-ID Platzhalter-CodeSystem",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&canonical=http://fhir.de/ValueSet/bfarm/alpha-id" : "AlphaId"
+    },
+    {
+      "url" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Atc",
+      "title" : null,
+      "description" : "ATC Platzhalter-CodeSystem",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&canonical=http://fhir.de/ValueSet/bfarm/atc" : "ATC"
+    },
+    {
+      "url" : "http://hl7.org/fhir/CodeSystem/medication-statement-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication Status Codes",
+      "title" : "Medication  status  codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1379"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-statement-status.html" : "Medication  status  codes"
+    },
+    {
+      "url" : "http://hl7.org/fhir/days-of-week",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "DaysOfWeek",
+      "title" : "DaysOfWeek",
+      "description" : "The days of the week.",
+      "oids" : ["2.16.840.1.113883.4.642.4.513"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-days-of-week.html" : "DaysOfWeek"
+    },
+    {
+      "url" : "http://hl7.org/fhir/diagnostic-report-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DiagnosticReportStatus",
+      "title" : "DiagnosticReportStatus",
+      "description" : "The status of the diagnostic report.",
+      "oids" : ["2.16.840.1.113883.4.642.4.236"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-diagnostic-report-status.html" : "DiagnosticReportStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/event-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "EventStatus",
+      "title" : "EventStatus",
+      "description" : "Codes identifying the lifecycle stage of an event.",
+      "oids" : ["2.16.840.1.113883.4.642.4.110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-event-status.html" : "EventStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/event-timing",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "EventTiming",
+      "title" : "EventTiming",
+      "description" : "Real world event relating to the schedule.",
+      "oids" : ["2.16.840.1.113883.4.642.4.76"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+    },
+    {
+      "url" : "http://hl7.org/fhir/fhir-types",
+      "version" : "5.0.0",
+      "status" : "active",
+      "name" : "FHIRTypes",
+      "title" : "All FHIR Types",
+      "description" : "One of the types defined as part of this version of FHIR.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1802"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R5/valueset-resource-types.html" : "Resource Types"
+    },
+    {
+      "url" : "http://hl7.org/fhir/identifier-use",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "IdentifierUse",
+      "title" : "IdentifierUse",
+      "description" : "Identifies the purpose for this identifier, if known .",
+      "oids" : ["2.16.840.1.113883.4.642.4.58"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-use.html" : "IdentifierUse"
+    },
+    {
+      "url" : "http://hl7.org/fhir/observation-status",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "ObservationStatus",
+      "title" : "ObservationStatus",
+      "description" : "Codes providing the status of an observation.",
+      "oids" : ["2.16.840.1.113883.4.642.4.401"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-status.html" : "ObservationStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/quantity-comparator",
+      "version" : "4.0.1",
+      "status" : "active",
+      "name" : "QuantityComparator",
+      "title" : "QuantityComparator",
+      "description" : "How the Quantity should be understood and represented.",
+      "oids" : ["2.16.840.1.113883.4.642.4.60"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-quantity-comparator.html" : "QuantityComparator"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-study-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchStudyStatus",
+      "title" : "ResearchStudyStatus",
+      "description" : "Codes that convey the current status of the research study.",
+      "oids" : ["2.16.840.1.113883.4.642.4.820"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-status.html" : "ResearchStudyStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/research-subject-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchSubjectStatus",
+      "title" : "ResearchSubjectStatus",
+      "description" : "Indicates the progression of a study subject through a study.",
+      "oids" : ["2.16.840.1.113883.4.642.4.830"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-subject-status.html" : "ResearchSubjectStatus"
+    },
+    {
+      "url" : "http://hl7.org/fhir/specimen-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SpecimenStatus",
+      "title" : "SpecimenStatus",
+      "description" : "Codes providing the status/availability of a specimen.",
+      "oids" : ["2.16.840.1.113883.4.642.4.472"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-specimen-status.html" : "SpecimenStatus"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-report-codes.html" : "LOINC Diagnostic Report Codes",
+      "ValueSet-tnm-t-staging-type-loinc.html" : "ValueSet TNM T Staging Type LOINC",
+      "http://hl7.org/fhir/R4/valueset-observation-codes.html" : "LOINC Codes",
+      "ValueSet-tnm-classification-type-loinc.html" : "ValueSet TNM Classification Type LOINC",
+      "ValueSet-vs-tnm-category-observation.html" : "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
+      "ValueSet-tnm-n-staging-type-loinc.html" : "ValueSet TNM N Staging Type LOINC",
+      "ValueSet-tnm-m-staging-type-loinc.html" : "ValueSet TNM M Staging Type LOINC"
+    },
+    {
+      "url" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NciThesaurus",
+      "title" : "NCI Thesaurus",
+      "description" : "NCI Thesaurus NCI Thesaurus is a biomedical thesaurus created specifically to meet the needs of the cancer research community, especially those engaged in translational research NCI Thesaurus is produced by the NCI Enterprise Vocabulary Services project. The NCI Thesaurus is provided under an open content license.",
+      "oids" : ["2.16.840.1.113883.3.26.1.1"],
+      "uses" : {
+      },
+      "ValueSet-type-of-randomization-ncit.html" : "ValueSet Type of Randomization NCIt",
+      "ValueSet-study-focus-ncit.html" : "ValueSet Study Focus NCIt",
+      "ValueSet-studiendesign-ncit.html" : "ValueSet Studiendesign NCIt",
+      "ValueSet-type-of-study-arm-ncit.html" : "ValueSet Type of Study Arm NCIt",
+      "ValueSet-type-of-blinding-ncit.html" : "ValueSet Type of Blinding NCIt",
+      "ValueSet-studienkategorien-ncit.html" : "ValueSet Studienkategorien NCIt"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-vs-recsit-category-observation.html" : "Valueset for Categories of a BodyStructure in the context of one RECIST procedure",
+      "http://hl7.org/fhir/R4/valueset-approach-site-codes.html" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-not-performed-reason.html" : "Procedure Not Performed Reason (SNOMED-CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-followup.html" : "Procedure Follow up Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-route-codes.html" : "SNOMED CT Route Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+      "http://hl7.org/fhir/R4/valueset-medication-as-needed-reason.html" : "SNOMED CT Medication As Needed Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-administration-method-codes.html" : "SNOMED CT Administration Method Codes",
+      "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
+      "http://hl7.org/fhir/R4/valueset-device-kind.html" : "FHIR Device Types",
+      "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+      "http://hl7.org/fhir/R4/valueset-observation-methods.html" : "Observation Methods",
+      "ValueSet-tumor-measurement-methods.html" : "ValueSet Tumor Measurement Methods",
+      "http://hl7.org/fhir/R4/valueset-specimen-collection-method.html" : "FHIR Specimen Collection Method",
+      "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+      "http://hl7.org/fhir/R4/valueset-procedure-category.html" : "Procedure Category Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-clinical-findings.html" : "SNOMED CT Clinical Findings",
+      "ValueSet-histopathological-grade-snomed.html" : "ValueSet Histologic Grade SNOMED",
+      "http://hl7.org/fhir/R4/valueset-condition-code.html" : "Condition/Problem/Diagnosis Codes",
+      "ValueSet-vs-recist-radiological-read-procedure.html" : "Valueset for RECIST Radiological Read Procedures",
+      "http://hl7.org/fhir/R4/valueset-additional-instruction-codes.html" : "SNOMED CT Additional Dosage Instructions",
+      "http://hl7.org/fhir/R4/valueset-procedure-reason.html" : "Procedure Reason Codes",
+      "http://hl7.org/fhir/R4/valueset-device-action.html" : "Procedure Device Action Codes",
+      "https://simplifier.net/resolve?scope=de.gematik.isik-basismodul@2.0.0&canonical=https://gematik.de/fhir/isik/v2/Basismodul/ValueSet/DiagnosesSCT" : "DiagnosesSCT",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@1.0.3&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/containertyp" : "ValueSet - Containertyp",
+      "http://hl7.org/fhir/R4/valueset-bodystructure-relative-location.html" : "Bodystructure Location Qualifier",
+      "http://hl7.org/fhir/R4/valueset-procedure-outcome.html" : "Procedure Outcome Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-procedure-code.html" : "Procedure Codes (SNOMED CT)",
+      "http://hl7.org/fhir/R4/valueset-medication-codes.html" : "SNOMED CT Medication Codes",
+      "ValueSet-topography-snomed.html" : "ValueSet Topography SNOMED",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-not-given-codes.html" : "SNOMED CT Reason Medication Not Given Codes",
+      "ValueSet-ecog-performance-status-snomed.html" : "ValueSet ECOG Performance Status SNOMED",
+      "http://hl7.org/fhir/R4/valueset-bodystructure-code.html" : "SNOMED CT Morphologic Abnormalities",
+      "ValueSet-morphology-snomed.html" : "ValueSet Morphology SNOMED",
+      "https://simplifier.net/resolve?scope=hl7.fhir.uv.ips@1.0.0&canonical=http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" : "Target Site - IPS",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@1.0.3&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-lab-procedure" : "ValueSet - SNOMED CT Laboratory Procedure",
+      "ValueSet-vs-tnm-radiological-read-procedure.html" : "Valueset for TNM Radiological Read Procedures",
+      "http://hl7.org/fhir/R4/valueset-referencerange-appliesto.html" : "Observation Reference Range Applies To Codes",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@1.0.3&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/probenart" : "ValueSet - Probenart",
+      "http://hl7.org/fhir/R4/valueset-reason-medication-status-codes.html" : "SNOMED CT Drug Therapy Status codes ",
+      "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@1.0.3&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-body-structures" : "ValueSet - SNOMED CT Body Strutures",
+      "http://hl7.org/fhir/R4/valueset-performer-role.html" : "Procedure Performer Role Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "CommonTags",
+      "title" : "Common Tags",
+      "description" : "Common Tag Codes defined by FHIR project",
+      "oids" : ["2.16.840.1.113883.4.642.1.1067"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-common-tags.html" : "Common Tags"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
+      "version" : "0.5.0",
+      "status" : "draft",
+      "name" : "ConditionCategoryCodes",
+      "title" : "Condition Category Codes",
+      "description" : "Preferred value set for Condition Categories.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1073"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+      "version" : "2.0.0",
+      "status" : "active",
+      "name" : "ConditionClinicalStatusCodes",
+      "title" : "Condition Clinical Status Codes",
+      "description" : "Preferred value set for Condition Clinical Status.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1074"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-condition-clinical.html" : "Condition Clinical Status Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+      "version" : "1.0.0",
+      "status" : "draft",
+      "name" : "ConditionVerificationStatus",
+      "title" : "ConditionVerificationStatus",
+      "description" : "The verification status to support or decline the clinical status of the condition or diagnosis.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1075"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "version" : "0.1.0",
+      "status" : "active",
+      "name" : "DataAbsentReason",
+      "title" : "DataAbsentReason",
+      "description" : "Used to specify why the normally expected content of the data element is missing.",
+      "oids" : ["2.16.840.1.113883.4.642.4.1048"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-data-absent-reason.html" : "DataAbsentReason"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/dose-rate-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1069"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-dose-rate-type.html" : "DoseAndRateType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "IcdO3",
+      "title" : "International Classification of Diseases for Oncology, version 3.",
+      "description" : "International Classification of Diseases for Oncology, version 3. For more information see http://www.who.int/classifications/icd/adaptations/oncology/en/.",
+      "oids" : ["2.16.840.1.113883.6.43.1"],
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@1.0.3&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/icd-o-3-topography" : "ValueSet - ICD-O-3 Topography",
+      "ValueSet-morphology-icd-o-3.html" : "ValueSet Morphology ICD-O-3",
+      "ValueSet-topography-icd-o-3.html" : "ValueSet Topography ICD-O-3"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/med-admin-perform-function",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "MedicationAdministrationPerformerFunctionCodes",
+      "title" : "MedicationAdministration Performer Function Codes",
+      "description" : "MedicationAdministration Performer Function Codes",
+      "oids" : ["2.16.840.1.113883.4.642.1.1112"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-med-admin-perform-function.html" : "Medication administration  performer  function  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Category Codes",
+      "title" : "Medication administration  category  codes",
+      "description" : "MedicationAdministration Category Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1111"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-admin-category.html" : "Medication administration  category  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-admin-status",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "MedicationAdministration Status Codes",
+      "title" : "Medication administration  status  codes",
+      "description" : "MedicationAdministration Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1311"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-admin-status.html" : "Medication administration  status  codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication usage category codes",
+      "title" : "Medication usage category codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1120"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-statement-category.html" : "Medication usage category codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ObservationCategoryCodes",
+      "title" : "Observation Category Codes",
+      "description" : "Observation Category codes.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1125"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-category.html" : "Observation Category Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/reason-medication-given",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ReasonMedicationGivenCodes",
+      "title" : "Reason Medication Given Codes",
+      "description" : "This value set is provided as an example. The value set to instantiate this attribute should be drawn from a robust terminology code system that consists of or contains concepts to support the medication process.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1110"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-reason-medication-given-codes.html" : "Reason Medication Given Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/referencerange-meaning",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ObservationReferenceRangeMeaningCodes",
+      "title" : "Observation Reference Range Meaning Codes",
+      "description" : "This value set defines a set of codes that can be used to indicate the meaning/use of a reference range for a particular target population.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1124"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-referencerange-meaning.html" : "Observation Reference Range Meaning Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/research-study-objective-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchStudyObjectiveType",
+      "title" : "ResearchStudyObjectiveType",
+      "description" : "Codes for the kind of study objective.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1248"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-objective-type.html" : "ResearchStudyObjectiveType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/research-study-phase",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPhase",
+      "title" : "ResearchStudyPhase",
+      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1247"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-phase.html" : "ResearchStudyPhase"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/research-study-prim-purp-type",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPrimaryPurposeType",
+      "title" : "ResearchStudyPrimaryPurposeType",
+      "description" : "Codes for the main intent of the study.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1250"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-prim-purp-type.html" : "ResearchStudyPrimaryPurposeType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/research-study-reason-stopped",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchStudyReasonStopped",
+      "title" : "ResearchStudyReasonStopped",
+      "description" : "Codes for why the study ended prematurely.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1249"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-reason-stopped.html" : "ResearchStudyReasonStopped"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0074",
+      "version" : "2.5.0",
+      "status" : "active",
+      "name" : "DiagnosticServiceSectionId",
+      "title" : "diagnosticServiceSectionId",
+      "description" : "HL7-defined code system of concepts which specify a section of a diagnostic service where the observation may be performed.  Used in HL7 Version 2.x messaging in the OBR and OM4 segments.",
+      "oids" : ["2.16.840.1.113883.18.29"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-diagnostic-service-sections.html" : "Diagnostic Service Section Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "IdentifierType",
+      "title" : "identifierType",
+      "description" : "HL7-defined code system of concepts specifying type of identifier. Used in HL7 Version 2.x messaging data types CX, PLN, PPN, XCN and XON.",
+      "oids" : ["2.16.840.1.113883.18.108"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-identifier-type.html" : "IdentifierType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0371",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "AdditivePreservative",
+      "title" : "additivePreservative",
+      "description" : "HL7-defined code system of concepts specifying any additive introduced to the specimen before or at the time of collection.  These additives may be introduced in order to preserve, maintain or enhance the particular nature or component of the specimen.  Used in HL7 Version 2.x messaging in the SPM and SAC segments.",
+      "oids" : ["2.16.840.1.113883.18.229"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.3.0/ValueSet-v2-0371.html" : "hl7VS-additivePreservative"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0373",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "Treatment",
+      "title" : "treatment",
+      "description" : "Code system of concepts that identify the specimen treatment performed during lab processing.  Used in the Interaction Specimen Container Detail (SAC) segment in HL7 Version 2.x messaging.",
+      "oids" : ["2.16.840.1.113883.18.231"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-specimen-processing-procedure.html" : "Specimen processing procedure"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0487",
+      "version" : "2.3.0",
+      "status" : "active",
+      "name" : "SpecimenType",
+      "title" : "specimenType",
+      "description" : "HL7-defined code system of concepts that describe the precise nature of an entity that may be used as the source material for an observation.  This is one of two code systems that are used instead of table 0070 (code system 2.16.840.1.113883.18.28) which conflated specimen types and specimen collection methods.   Used in HL7 Version 2.x messaging in the SPM segment.",
+      "oids" : ["2.16.840.1.113883.18.311"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.3.0/ValueSet-v2-0487.html" : "hl7VS-specimenType"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0493",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "SpecimenCondition",
+      "title" : "specimenCondition",
+      "description" : "Code system of concepts specifying a mode or state of being that describes the nature of the specimen.  Used in HL7 Version 2.x messaging in the SPM segment.",
+      "oids" : ["2.16.840.1.113883.18.317"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.3.0/ValueSet-v2-0493.html" : "hl7VS-specimenCondition"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v2-0916",
+      "version" : "2.2.0",
+      "status" : "active",
+      "name" : "RelevantClincialInformation",
+      "title" : "relevantClincialInformation",
+      "description" : "Code system of concepts specifying additional clinical information about the patient or specimen to report the supporting and/or suspected diagnosis and clinical findings on requests for interpreted diagnostic studies. Used in HL7 Version 2.x messaging in the OBR segment.",
+      "oids" : ["2.16.840.1.113883.18.422"],
+      "uses" : {
+      },
+      "http://terminology.hl7.org/5.3.0/ValueSet-v2-0916.html" : "hl7VS-relevantClincialInformation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-GTSAbbreviation",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "GTSAbbreviation",
+      "title" : "GTSAbbreviation",
+      "description" : "*Open Issue:* It appears that the printnames are suboptimal and should be improved for many of the existing codes.",
+      "oids" : ["2.16.840.1.113883.5.1022"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-timing-abbreviation.html" : "TimingAbbreviation"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "ObservationInterpretation",
+      "title" : "ObservationInterpretation",
+      "description" : "One or more codes providing a rough qualitative interpretation of the observation, such as \"normal\" / \"abnormal\", \"low\" / \"high\", \"better\" / \"worse\", \"resistant\" / \"susceptible\", \"expected\" / \"not expected\". The value set is intended to be for ANY use where coded representation of an interpretation is needed.",
+      "oids" : ["2.16.840.1.113883.5.83"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-observation-interpretation.html" : "Observation Interpretation Codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/v3-TimingEvent",
+      "version" : "2.1.0",
+      "status" : "active",
+      "name" : "TimingEvent",
+      "title" : "TimingEvent",
+      "description" : "**** MISSING DESCRIPTION ****",
+      "oids" : ["2.16.840.1.113883.5.139"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-event-timing.html" : "EventTiming"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-units-of-time.html" : "UnitsOfTime",
+      "http://hl7.org/fhir/R4/valueset-duration-units.html" : "Common UCUM Codes for Duration",
+      "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units",
+      "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units",
+      "ValueSet-tumor-size-units.html" : "ValueSet Tumor Size Units",
+      "ValueSet-tumor-area-units.html" : "ValueSet Tumor Size Units ValueSet",
+      "ValueSet-tumor-volume-units.html" : "ValueSet Tumor Size Units Value Set"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DiagnosesicherungICDO3",
+      "title" : "Diagnosesicherung ICD-O-3",
+      "description" : "CodeSystem für die Diagnosesicherungscodes der ICD-O-3",
+      "uses" : {
+      },
+      "ValueSet-diagnosesicherung-icdo3.html" : "ValieSet Diagnosesicherung ICD-O-3"
+    },
+    {
+      "url" : "urn:ietf:bcp:47",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "Ietf3066",
+      "title" : "Tags for the Identification of Languages",
+      "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+      "oids" : ["2.16.840.1.113883.6.121"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "ISO3166Part1",
+      "title" : "ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code",
+      "description" : "ISO 3166-1 establishes codes that represent the current names of countries, dependencies, and other areas of particular geopolitical interest, on the basis of country names obtained from the United Nations.",
+      "oids" : ["1.0.3166.1"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+    },
+    {
+      "url" : "urn:iso:std:iso:3166:-2",
+      "version" : "2013-11",
+      "status" : "retired",
+      "name" : "Iso3166_2",
+      "title" : "ISO 3166 Part 2 Country Subdivision Codes",
+      "description" : "Identifies the coding system published in the ISO 3166-2 Standard for Country Subdivision codes. This standard is released periodically, and a new OID will be assigned by ISO for new editions.",
+      "oids" : ["1.0.3166.2"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-jurisdiction.html" : "Jurisdiction"
+    }
+  ]
+}

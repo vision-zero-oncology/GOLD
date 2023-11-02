@@ -10,7 +10,7 @@
   fhir:id [ fhir:v "topography-snomed"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  123037004 (null)</li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
@@ -18,7 +18,7 @@
   fhir:title [ fhir:v "ValueSet Topography SNOMED"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
   fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
-  fhir:date [ fhir:v "2023-09-27T08:44:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-02T12:02:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;

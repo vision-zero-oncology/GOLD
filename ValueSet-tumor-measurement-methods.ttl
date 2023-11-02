@@ -10,14 +10,14 @@
   fhir:id [ fhir:v "tumor-measurement-methods"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/787377000\">787377000</a></td><td>Gross examination and sampling of tissue specimen (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/104157003\">104157003</a></td><td>Light microscopy (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/5880005\">5880005</a></td><td>Physical examination procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/16310003\">16310003</a></td><td>Diagnostic ultrasonography (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/113091000\">113091000</a></td><td>Magnetic resonance imaging (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/77477000\">77477000</a></td><td>Computerized axial tomography (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/82918005\">82918005</a></td><td>Positron emission tomography (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/363680008\">363680008</a></td><td>Radiographic imaging procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/363679005\">363679005</a></td><td>Imaging (procedure)</td></tr></table></li></ul></div>"
   ] ; # 
   fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "VS_Tumor_Measurement_Methods"] ; # 
   fhir:title [ fhir:v "ValueSet Tumor Measurement Methods"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-27T08:44:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-02T12:02:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;

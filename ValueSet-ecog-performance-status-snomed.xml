@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="ecog-performance-status-snomed"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  descends from  424122007 (null)</li></ul></div>
   </text>
   <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed"/>
   <version value="0.1.0"/>
@@ -11,7 +11,7 @@
   <title value="ValueSet ECOG Performance Status SNOMED"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-09-27T08:44:59+00:00"/>
+  <date value="2023-11-02T12:02:41+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>

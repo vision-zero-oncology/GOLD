@@ -1,9 +1,9 @@
 ﻿GOLD : Validation Results
 =========================================
 
-err = 81, warn = 185, info = 130
-IG Publisher Version: 1.4.8
-Generated Wed Sep 27 08:49:47 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
+err = 97, warn = 185, info = 132
+IG Publisher Version: 1.5.1
+Generated Thu Nov 02 12:16:44 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canonical = https://www.vision-zero-oncology.de/fhir)
  Build Errors : 0 / 14 / 0
  /github/workspace/fsh-generated/resources/BodyStructure-CerebellarSarcoma : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/BodyStructure-example-body-structure : 1 / 0 / 1
@@ -30,8 +30,8 @@ Generated Wed Sep 27 08:49:47 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/Observation-example-tnm-uT2a2pN0023i-sncM1 : 0 / 10 / 11
  /github/workspace/fsh-generated/resources/Observation-example-tnm-ypT1bpN139snL0V0Pn1cM0R0 : 0 / 12 / 15
  /github/workspace/fsh-generated/resources/Observation-example-vital-signs-base : 0 / 1 / 1
- /github/workspace/fsh-generated/resources/Observation-tumor-size-pathology : 6 / 1 / 1
- /github/workspace/fsh-generated/resources/Observation-tumor-size-radiology : 6 / 1 / 1
+ /github/workspace/fsh-generated/resources/Observation-tumor-size-pathology : 12 / 1 / 2
+ /github/workspace/fsh-generated/resources/Observation-tumor-size-radiology : 10 / 1 / 2
  /github/workspace/fsh-generated/resources/Patient-ExamplePatient : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/Procedure-example-radiological-recist-read-procedure : 2 / 0 / 2
  /github/workspace/fsh-generated/resources/Procedure-example-radiological-tnm-read-procedure : 3 / 0 / 3
@@ -63,7 +63,7 @@ Generated Wed Sep 27 08:49:47 UTC 2023. FHIR version 4.0.1 for gold#0.1.0 (canon
  /github/workspace/fsh-generated/resources/StructureDefinition-tnm-category-observation : 0 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-tumor : 0 / 1 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-tumor-disorder : 0 / 4 / 1
- /github/workspace/fsh-generated/resources/StructureDefinition-tumor-measurement : 0 / 0 / 1
+ /github/workspace/fsh-generated/resources/StructureDefinition-tumor-measurement : 6 / 0 / 1
  /github/workspace/fsh-generated/resources/StructureDefinition-tumor-specimen : 4 / 1 / 3
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm : 0 / 0 / 18
  /github/workspace/fsh-generated/resources/StructureDefinition-uicc-tnm-prefix-cpu : 0 / 1 / 1
@@ -167,37 +167,37 @@ ERROR: MedicationStatement/exa-medication-statement-caelyx: MedicationStatement.
 INFORMATION: Observation/ExampleRecistAssessmentResponse: Observation.code.coding[0]: Code System URI 'http://radlex.org/RID' is unknown so the code cannot be validated
 WARNING: Observation/ExampleRecistAssessmentResponse: Observation.value.ofType(CodeableConcept): Code System URI 'http://radlex.org/RID' is unknown so the code cannot be validated
 INFORMATION: Observation/ExampleRecistAssessmentResponse: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'http://radlex.org/RID' is unknown so the code cannot be validated
-WARNING: Observation/ExampleRecistAssessmentResponse: Observation: All observations should have a performer
+WARNING: Observation/ExampleRecistAssessmentResponse: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-body-height.json ==
-WARNING: Observation/example-body-height: Observation: All observations should have a performer
+WARNING: Observation/example-body-height: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-body-weight.json ==
-WARNING: Observation/example-body-weight: Observation: All observations should have a performer
+WARNING: Observation/example-body-weight: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-ecog-performance-status.json ==
-WARNING: Observation/example-ecog-performance-status: Observation: All observations should have a performer
+WARNING: Observation/example-ecog-performance-status: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-histologic-grade.json ==
-WARNING: Observation/example-histologic-grade: Observation: All observations should have a performer
+WARNING: Observation/example-histologic-grade: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-histology-topography.json ==
 INFORMATION: Observation/example-histology-topography: Observation.value.ofType(CodeableConcept).coding[0]: The definition for the Code System with URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' doesnt provide any codes so the code cannot be validated
 ERROR: Observation/example-histology-topography: Observation.value.ofType(CodeableConcept).coding[0]: The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#8070/33) is not in the value set 'ValueSet Morphology ICD-O-3' (https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3|0.1.0), and a code from this value set is required: Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3|0.1.0
 INFORMATION: Observation/example-histology-topography: Observation.bodySite.coding[0]: The definition for the Code System with URI 'http://terminology.hl7.org/CodeSystem/icd-o-3' doesnt provide any codes so the code cannot be validated
 ERROR: Observation/example-histology-topography: Observation.bodySite.coding[0]: The code provided (http://terminology.hl7.org/CodeSystem/icd-o-3#C34.1) is not in the value set 'ValueSet Topography ICD-O-3' (https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3|0.1.0), and a code from this value set is required: Unable to check whether the code is in the value set https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3|0.1.0
-WARNING: Observation/example-histology-topography: Observation: All observations should have a performer
+WARNING: Observation/example-histology-topography: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-karnofsky-performance-status.json ==
-WARNING: Observation/example-karnofsky-performance-status: Observation: All observations should have a performer
+WARNING: Observation/example-karnofsky-performance-status: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-recist-category-observation.json ==
 ERROR: Observation/example-recist-category-observation: Observation.partOf[0]: Unable to resolve resource with reference 'Procedure/exampleRECISTProcedure'
 ERROR: Observation/example-recist-category-observation: Observation.subject: Unable to resolve resource with reference 'Patient/examplePatient'
 ERROR: Observation/example-recist-category-observation: Observation.focus[0]: Unable to resolve resource with reference 'BodyStructure/exampleBodyStructure'
-WARNING: Observation/example-recist-category-observation: Observation: All observations should have a performer
-WARNING: Observation/example-recist-category-observation: Observation: All observations should have an effectiveDateTime or an effectivePeriod
+WARNING: Observation/example-recist-category-observation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/example-recist-category-observation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-tnm-R0.json ==
 WARNING: Observation/example-tnm-R0: Observation.value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 INFORMATION: Observation/example-tnm-R0: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-WARNING: Observation/example-tnm-R0: Observation: All observations should have a performer
+WARNING: Observation/example-tnm-R0: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-tnm-R1.json ==
 WARNING: Observation/example-tnm-R1: Observation.value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 INFORMATION: Observation/example-tnm-R1: Observation.value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-WARNING: Observation/example-tnm-R1: Observation: All observations should have a performer
+WARNING: Observation/example-tnm-R1: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-tnm-TisN0M0.json ==
 INFORMATION: Observation/example-tnm-TisN0M0: Observation.code.coding[0]: The code '258235000' is valid but is not active
 WARNING: Observation/example-tnm-TisN0M0: Observation.value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
@@ -208,7 +208,7 @@ WARNING: Observation/example-tnm-TisN0M0: Observation.component[1].value.ofType(
 INFORMATION: Observation/example-tnm-TisN0M0: Observation.component[1].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 WARNING: Observation/example-tnm-TisN0M0: Observation.component[2].value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 INFORMATION: Observation/example-tnm-TisN0M0: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-WARNING: Observation/example-tnm-TisN0M0: Observation: All observations should have a performer
+WARNING: Observation/example-tnm-TisN0M0: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-tnm-cT3pN0mol-sncM1.json ==
 INFORMATION: Observation/example-tnm-cT3pN0mol-sncM1: Observation.code.coding[0]: The code '258235000' is valid but is not active
 WARNING: Observation/example-tnm-cT3pN0mol-sncM1: Observation.value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
@@ -229,14 +229,14 @@ WARNING: Observation/example-tnm-cT3pN0mol-sncM1: Observation.component[2].exten
 INFORMATION: Observation/example-tnm-cT3pN0mol-sncM1: Observation.component[2].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 WARNING: Observation/example-tnm-cT3pN0mol-sncM1: Observation.component[2].value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 INFORMATION: Observation/example-tnm-cT3pN0mol-sncM1: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-WARNING: Observation/example-tnm-cT3pN0mol-sncM1: Observation: All observations should have a performer
+WARNING: Observation/example-tnm-cT3pN0mol-sncM1: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-tnm-category-observation.json ==
 ERROR: Observation/example-tnm-category-observation: Observation.partOf[0]: Unable to resolve resource with reference 'Procedure/ExampleTNMProcedure'
 INFORMATION: Observation/example-tnm-category-observation: Observation.code.coding[0]: The code '254353002' is valid but is not active
 ERROR: Observation/example-tnm-category-observation: Observation.subject: Unable to resolve resource with reference 'Patient/examplePatient'
 ERROR: Observation/example-tnm-category-observation: Observation.focus[0]: Unable to resolve resource with reference 'BodyStructure/exampleBodyStructure'
-WARNING: Observation/example-tnm-category-observation: Observation: All observations should have a performer
-WARNING: Observation/example-tnm-category-observation: Observation: All observations should have an effectiveDateTime or an effectivePeriod
+WARNING: Observation/example-tnm-category-observation: Observation: Best Practice Recommendation: In general, all observations should have a performer
+WARNING: Observation/example-tnm-category-observation: Observation: Best Practice Recommendation: In general, all observations should have an effective[x] ()
 == fsh-generated/resources/Observation-example-tnm-rpT3mpN0icM0R1is.json ==
 INFORMATION: Observation/example-tnm-rpT3mpN0icM0R1is: Observation.code.coding[0]: The code '258235000' is valid but is not active
 WARNING: Observation/example-tnm-rpT3mpN0icM0R1is: Observation.value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
@@ -260,7 +260,7 @@ WARNING: Observation/example-tnm-rpT3mpN0icM0R1is: Observation.component[4].exte
 INFORMATION: Observation/example-tnm-rpT3mpN0icM0R1is: Observation.component[4].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 WARNING: Observation/example-tnm-rpT3mpN0icM0R1is: Observation.component[4].value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 INFORMATION: Observation/example-tnm-rpT3mpN0icM0R1is: Observation.component[4].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-WARNING: Observation/example-tnm-rpT3mpN0icM0R1is: Observation: All observations should have a performer
+WARNING: Observation/example-tnm-rpT3mpN0icM0R1is: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-tnm-uT2a2pN0023i-sncM1.json ==
 INFORMATION: Observation/example-tnm-uT2a2pN0023i-sncM1: Observation.code.coding[0]: The code '258235000' is valid but is not active
 WARNING: Observation/example-tnm-uT2a2pN0023i-sncM1: Observation.value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
@@ -281,7 +281,7 @@ WARNING: Observation/example-tnm-uT2a2pN0023i-sncM1: Observation.component[2].ex
 INFORMATION: Observation/example-tnm-uT2a2pN0023i-sncM1: Observation.component[2].extension[0].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 WARNING: Observation/example-tnm-uT2a2pN0023i-sncM1: Observation.component[2].value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 INFORMATION: Observation/example-tnm-uT2a2pN0023i-sncM1: Observation.component[2].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-WARNING: Observation/example-tnm-uT2a2pN0023i-sncM1: Observation: All observations should have a performer
+WARNING: Observation/example-tnm-uT2a2pN0023i-sncM1: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-tnm-ypT1bpN139snL0V0Pn1cM0R0.json ==
 INFORMATION: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.code.coding[0]: The code '258235000' is valid but is not active
 WARNING: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
@@ -308,25 +308,37 @@ WARNING: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.component
 INFORMATION: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.component[5].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 WARNING: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.component[6].value.ofType(CodeableConcept): Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 INFORMATION: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation.component[6].value.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-WARNING: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation: All observations should have a performer
+WARNING: Observation/example-tnm-ypT1bpN139snL0V0Pn1cM0R0: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-example-vital-signs-base.json ==
-WARNING: Observation/example-vital-signs-base: Observation: All observations should have a performer
+WARNING: Observation/example-vital-signs-base: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-tumor-size-pathology.json ==
+ERROR: Observation/tumor-size-pathology: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:longestDimension - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
+ERROR: Observation/tumor-size-pathology: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:longestDimension - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
+ERROR: Observation/tumor-size-pathology: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:shortAxis - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
+ERROR: Observation/tumor-size-pathology: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:shortAxis - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
 ERROR: Observation/tumor-size-pathology: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:area - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
 ERROR: Observation/tumor-size-pathology: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:area - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
 ERROR: Observation/tumor-size-pathology: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:volume - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
 ERROR: Observation/tumor-size-pathology: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:volume - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
+INFORMATION: Observation/tumor-size-pathology: Observation: Observation.component:longestDimension: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0)
 ERROR: Observation/tumor-size-pathology: Observation.subject: Unable to resolve resource with reference 'Patient/cancer-patient-eve-anyperson'
 ERROR: Observation/tumor-size-pathology: Observation.specimen: Unable to resolve resource with reference 'Tumor/any-specimen-of-patient-eve-anyperson'
-WARNING: Observation/tumor-size-pathology: Observation: All observations should have a performer
+ERROR: Observation/tumor-size-pathology: Observation.component[1].code.coding[0]: Wrong Display Name 'Volume of the Tumor' for http://loinc.org#33729-5 - should be one of 41 choices: 'Size additional dimension in Tumor', 'Size addl dim Tumor', '一般病理学原始记录' (zh-CN), '普通病理学原始记录' (zh-CN), '病理学.原始记录.普通' (zh-CN), '病理学.方案.一般' (zh-CN), '病理学.方案.普通' (zh-CN), '病理学原始记录.一般' (zh-CN), '病理学原始记录.普通' (zh-CN), '病理学方案.一般' (zh-CN), '病理学方案.普通 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 外形尺寸' (zh-CN), '外型尺寸' (zh-CN), '维度' (zh-CN), '维' (zh-CN), '大小 大小.额外尺寸' (zh-CN), '大小.附加尺寸 尺寸 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 病理学.方案 病理学原始记录 病理学方案 瘤' (zh-CN), '肿块' (zh-CN), '赘生物 长' (zh-CN), '长短 附加的 额外 额外的' (zh-CN), 'Size add'l dim' (pt-BR), 'Length' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'CAP protocol' (pt-BR), 'Add' (pt-BR), 'PATHOLOGY PROTOCOLS general' (pt-BR), 'Dimensione addizionale di dimensione Lunghezza Neoplasia Patologia Protocolli patologia - generale Punto nel tempo (episodio)' (it-IT), 'Süre' (tr-TR), 'Длина Количественный Точка во времени' (ru-RU) or 'Момент' (ru-RU) (for the language(s) '--') (from Tx-Server) for 'http://loinc.org#33729-5'
+ERROR: Observation/tumor-size-pathology: Observation.component[1].value.ofType(Quantity): Error processing Unit_ "mm²": unexpected character "²" at position 3; Unknown Code 'mm²' in the system 'http://unitsofmeasure.org|2.0.1'; The provided code 'http://unitsofmeasure.org#mm²' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://unitsofmeasure.org#mm²'
+WARNING: Observation/tumor-size-pathology: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Observation-tumor-size-radiology.json ==
+ERROR: Observation/tumor-size-radiology: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:longestDimension - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
+ERROR: Observation/tumor-size-radiology: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:longestDimension - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
+ERROR: Observation/tumor-size-radiology: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:shortAxis - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
+ERROR: Observation/tumor-size-radiology: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:shortAxis - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
 ERROR: Observation/tumor-size-radiology: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:area - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
 ERROR: Observation/tumor-size-radiology: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:area - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
 ERROR: Observation/tumor-size-radiology: Observation.component[0]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:volume - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
 ERROR: Observation/tumor-size-radiology: Observation.component[1]: Slicing cannot be evaluated: Could not match discriminator (1) for slice [code] in profile Observation.component:volume - the discriminator https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0 does not have fixed value, binding or existence assertions
+INFORMATION: Observation/tumor-size-radiology: Observation: Observation.component:longestDimension: Found 0 matches, but unable to check minimum required (Observation.component) due to lack of slicing validation (from https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement|0.1.0)
 ERROR: Observation/tumor-size-radiology: Observation.subject: Unable to resolve resource with reference 'Patient/cancer-patient-eve-anyperson'
 ERROR: Observation/tumor-size-radiology: Observation.focus[0]: Unable to resolve resource with reference 'BodyStructure/tumor-lobular-carcinoma-left-breast'
-WARNING: Observation/tumor-size-radiology: Observation: All observations should have a performer
+WARNING: Observation/tumor-size-radiology: Observation: Best Practice Recommendation: In general, all observations should have a performer
 == fsh-generated/resources/Patient-ExamplePatient.json ==
 == fsh-generated/resources/Procedure-example-radiological-recist-read-procedure.json ==
 INFORMATION: Procedure/example-radiological-recist-read-procedure: Procedure.category.coding[0]: The code '103693007' is valid but is not active
@@ -413,14 +425,14 @@ INFORMATION: StructureDefinition/body-weight: StructureDefinition.snapshot.eleme
 INFORMATION: StructureDefinition/body-weight: StructureDefinition.snapshot.element[27].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-clinical-study.json ==
 == fsh-generated/resources/StructureDefinition-diagnosesicherung-icd-o.json ==
-WARNING: StructureDefinition/diagnosesicherung-icd-o: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/diagnosesicherung-icd-o: StructureDefinition.context[0]: Review the extension type for diagnosesicherung-icd-o: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 WARNING: StructureDefinition/diagnosesicherung-icd-o: StructureDefinition.differential.element[4].binding: The valueSet reference https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 on element Extension.value[x] could not be resolved
 WARNING: StructureDefinition/diagnosesicherung-icd-o: StructureDefinition.snapshot.element[5].binding: The valueSet reference https://www.vision-zero-oncology.de/fhir/ValueSet/vs-diagnosesicherung-icdo3 on element Extension.value[x] could not be resolved
 == fsh-generated/resources/StructureDefinition-diagnosis.json ==
 WARNING: StructureDefinition/diagnosis: StructureDefinition.description: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 WARNING: StructureDefinition/diagnosis: StructureDefinition.snapshot.element[0].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 WARNING: StructureDefinition/diagnosis: StructureDefinition.differential.element[0].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-WARNING: StructureDefinition/diagnosis: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/diagnosis: StructureDefinition.context[0]: Review the extension type for diagnosis: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-ecog-performance-status.json ==
 INFORMATION: StructureDefinition/ecog-performance-status: StructureDefinition.snapshot.element[14].pattern.ofType(CodeableConcept): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 INFORMATION: StructureDefinition/ecog-performance-status: StructureDefinition.snapshot.element[19].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
@@ -478,16 +490,22 @@ ERROR: /github/workspace/fsh-generated/resources/StructureDefinition-recist-cate
 WARNING: StructureDefinition/supportingInfo: StructureDefinition.description: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 WARNING: StructureDefinition/supportingInfo: StructureDefinition.snapshot.element[0].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 WARNING: StructureDefinition/supportingInfo: StructureDefinition.differential.element[0].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
-WARNING: StructureDefinition/supportingInfo: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/supportingInfo: StructureDefinition.context[0]: Review the extension type for supportingInfo: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-tnm-category-observation.json ==
 == fsh-generated/resources/StructureDefinition-tumor.json ==
 WARNING: StructureDefinition/tumor: StructureDefinition.snapshot.element[8].definition: The markdown contains content that appears to be an embedded HTML tag starting at 'En'. This will (or SHOULD) be escaped by the presentation layer. The content should be checked to confirm that this is the desired behaviour
 == fsh-generated/resources/StructureDefinition-tumor-disorder.json ==
-WARNING: StructureDefinition/tumor-disorder: StructureDefinition.differential.element[1].binding: The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie on element Condition.code.coding could not be resolved
-WARNING: StructureDefinition/tumor-disorder: StructureDefinition.differential.element[12].binding: The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-topologie on element Condition.bodySite.coding could not be resolved
+WARNING: StructureDefinition/tumor-disorder: StructureDefinition.differential.element[0].binding: The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie on element Condition.code.coding could not be resolved
+WARNING: StructureDefinition/tumor-disorder: StructureDefinition.differential.element[11].binding: The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-topologie on element Condition.bodySite.coding could not be resolved
 WARNING: StructureDefinition/tumor-disorder: StructureDefinition.snapshot.element[54].binding: The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-morphologie on element Condition.code.coding could not be resolved
 WARNING: StructureDefinition/tumor-disorder: StructureDefinition.snapshot.element[76].binding: The valueSet reference http://fhir.de/onkologie/ValueSet/icd-o-3-topologie on element Condition.bodySite.coding could not be resolved
 == fsh-generated/resources/StructureDefinition-tumor-measurement.json ==
+ERROR: StructureDefinition/tumor-measurement: StructureDefinition.snapshot.element[88].pattern.ofType(Coding): Wrong Display Name 'Area of the Tumor' for http://loinc.org#33729-5 - should be one of 41 choices: 'Size additional dimension in Tumor', 'Size addl dim Tumor', '一般病理学原始记录' (zh-CN), '普通病理学原始记录' (zh-CN), '病理学.原始记录.普通' (zh-CN), '病理学.方案.一般' (zh-CN), '病理学.方案.普通' (zh-CN), '病理学原始记录.一般' (zh-CN), '病理学原始记录.普通' (zh-CN), '病理学方案.一般' (zh-CN), '病理学方案.普通 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 外形尺寸' (zh-CN), '外型尺寸' (zh-CN), '维度' (zh-CN), '维' (zh-CN), '大小 大小.额外尺寸' (zh-CN), '大小.附加尺寸 尺寸 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 病理学.方案 病理学原始记录 病理学方案 瘤' (zh-CN), '肿块' (zh-CN), '赘生物 长' (zh-CN), '长短 附加的 额外 额外的' (zh-CN), 'Size add'l dim' (pt-BR), 'Length' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'CAP protocol' (pt-BR), 'Add' (pt-BR), 'PATHOLOGY PROTOCOLS general' (pt-BR), 'Dimensione addizionale di dimensione Lunghezza Neoplasia Patologia Protocolli patologia - generale Punto nel tempo (episodio)' (it-IT), 'Süre' (tr-TR), 'Длина Количественный Точка во времени' (ru-RU) or 'Момент' (ru-RU) (for the language(s) '--') (from Tx-Server) for 'http://loinc.org#33729-5'
+ERROR: StructureDefinition/tumor-measurement: StructureDefinition.snapshot.element[89].pattern.ofType(Coding): Unable to find code 2372300005 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code '2372300005' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#2372300005' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://snomed.info/sct#2372300005'
+ERROR: StructureDefinition/tumor-measurement: StructureDefinition.snapshot.element[103].pattern.ofType(Coding): Wrong Display Name 'Volume of the Tumor' for http://loinc.org#33729-5 - should be one of 41 choices: 'Size additional dimension in Tumor', 'Size addl dim Tumor', '一般病理学原始记录' (zh-CN), '普通病理学原始记录' (zh-CN), '病理学.原始记录.普通' (zh-CN), '病理学.方案.一般' (zh-CN), '病理学.方案.普通' (zh-CN), '病理学原始记录.一般' (zh-CN), '病理学原始记录.普通' (zh-CN), '病理学方案.一般' (zh-CN), '病理学方案.普通 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 外形尺寸' (zh-CN), '外型尺寸' (zh-CN), '维度' (zh-CN), '维' (zh-CN), '大小 大小.额外尺寸' (zh-CN), '大小.附加尺寸 尺寸 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 病理学.方案 病理学原始记录 病理学方案 瘤' (zh-CN), '肿块' (zh-CN), '赘生物 长' (zh-CN), '长短 附加的 额外 额外的' (zh-CN), 'Size add'l dim' (pt-BR), 'Length' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'CAP protocol' (pt-BR), 'Add' (pt-BR), 'PATHOLOGY PROTOCOLS general' (pt-BR), 'Dimensione addizionale di dimensione Lunghezza Neoplasia Patologia Protocolli patologia - generale Punto nel tempo (episodio)' (it-IT), 'Süre' (tr-TR), 'Длина Количественный Точка во времени' (ru-RU) or 'Момент' (ru-RU) (for the language(s) '--') (from Tx-Server) for 'http://loinc.org#33729-5'
+ERROR: StructureDefinition/tumor-measurement: StructureDefinition.differential.element[20].pattern.ofType(Coding): Wrong Display Name 'Area of the Tumor' for http://loinc.org#33729-5 - should be one of 41 choices: 'Size additional dimension in Tumor', 'Size addl dim Tumor', '一般病理学原始记录' (zh-CN), '普通病理学原始记录' (zh-CN), '病理学.原始记录.普通' (zh-CN), '病理学.方案.一般' (zh-CN), '病理学.方案.普通' (zh-CN), '病理学原始记录.一般' (zh-CN), '病理学原始记录.普通' (zh-CN), '病理学方案.一般' (zh-CN), '病理学方案.普通 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 外形尺寸' (zh-CN), '外型尺寸' (zh-CN), '维度' (zh-CN), '维' (zh-CN), '大小 大小.额外尺寸' (zh-CN), '大小.附加尺寸 尺寸 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 病理学.方案 病理学原始记录 病理学方案 瘤' (zh-CN), '肿块' (zh-CN), '赘生物 长' (zh-CN), '长短 附加的 额外 额外的' (zh-CN), 'Size add'l dim' (pt-BR), 'Length' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'CAP protocol' (pt-BR), 'Add' (pt-BR), 'PATHOLOGY PROTOCOLS general' (pt-BR), 'Dimensione addizionale di dimensione Lunghezza Neoplasia Patologia Protocolli patologia - generale Punto nel tempo (episodio)' (it-IT), 'Süre' (tr-TR), 'Длина Количественный Точка во времени' (ru-RU) or 'Момент' (ru-RU) (for the language(s) '--') (from Tx-Server) for 'http://loinc.org#33729-5'
+ERROR: StructureDefinition/tumor-measurement: StructureDefinition.differential.element[21].pattern.ofType(Coding): Unable to find code 2372300005 in http://snomed.info/sct (version http://snomed.info/sct/900000000000207008/version/20230901); Unknown Code '2372300005' in the system 'http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901'; The provided code 'http://snomed.info/sct#2372300005' is not in the value set 'http://hl7.org/fhir/ValueSet/@all' (from Tx-Server) for 'http://snomed.info/sct#2372300005'
+ERROR: StructureDefinition/tumor-measurement: StructureDefinition.differential.element[25].pattern.ofType(Coding): Wrong Display Name 'Volume of the Tumor' for http://loinc.org#33729-5 - should be one of 41 choices: 'Size additional dimension in Tumor', 'Size addl dim Tumor', '一般病理学原始记录' (zh-CN), '普通病理学原始记录' (zh-CN), '病理学.原始记录.普通' (zh-CN), '病理学.方案.一般' (zh-CN), '病理学.方案.普通' (zh-CN), '病理学原始记录.一般' (zh-CN), '病理学原始记录.普通' (zh-CN), '病理学方案.一般' (zh-CN), '病理学方案.普通 可用数量表示的' (zh-CN), '定量性' (zh-CN), '数值型' (zh-CN), '数量型' (zh-CN), '连续数值型标尺 外形尺寸' (zh-CN), '外型尺寸' (zh-CN), '维度' (zh-CN), '维' (zh-CN), '大小 大小.额外尺寸' (zh-CN), '大小.附加尺寸 尺寸 时刻' (zh-CN), '随机' (zh-CN), '随意' (zh-CN), '瞬间 病理学.方案 病理学原始记录 病理学方案 瘤' (zh-CN), '肿块' (zh-CN), '赘生物 长' (zh-CN), '长短 附加的 额外 额外的' (zh-CN), 'Size add'l dim' (pt-BR), 'Length' (pt-BR), 'Point in time' (pt-BR), 'Random' (pt-BR), 'Quantitative' (pt-BR), 'QNT' (pt-BR), 'Quant' (pt-BR), 'Quan' (pt-BR), 'CAP protocol' (pt-BR), 'Add' (pt-BR), 'PATHOLOGY PROTOCOLS general' (pt-BR), 'Dimensione addizionale di dimensione Lunghezza Neoplasia Patologia Protocolli patologia - generale Punto nel tempo (episodio)' (it-IT), 'Süre' (tr-TR), 'Длина Количественный Точка во времени' (ru-RU) or 'Момент' (ru-RU) (for the language(s) '--') (from Tx-Server) for 'http://loinc.org#33729-5'
 == fsh-generated/resources/StructureDefinition-tumor-specimen.json ==
 ERROR: StructureDefinition.snapshot.element[84]: The slice definition for Specimen.processing:lagerprozess.extension has a minimum of 0 but the slices add up to a minimum of 1
 ERROR: StructureDefinition.snapshot.element[95]: The element Specimen.processing:lagerprozess.time[x]:timePeriod launches straight into slicing without the slicing being set up properly first
@@ -505,22 +523,22 @@ INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.snapshot.element[
 INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.snapshot.element[79].pattern.ofType(CodeableConcept).coding[0]: The code '277646006' is valid but is not active
 INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.snapshot.element[80].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
 INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.snapshot.element[98].pattern.ofType(CodeableConcept).coding[0]: The code '277650004' is valid but is not active
-INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[2].pattern.ofType(Coding): The code '258235000' is valid but is not active
-INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept).coding[0]: The code '277649004' is valid but is not active
-INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[11].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0]: The code '277647002' is valid but is not active
-INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[14].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0]: The code '277646006' is valid but is not active
-INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[17].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
-INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[24].pattern.ofType(CodeableConcept).coding[0]: The code '277650004' is valid but is not active
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[1].pattern.ofType(Coding): The code '258235000' is valid but is not active
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[9].pattern.ofType(CodeableConcept).coding[0]: The code '277649004' is valid but is not active
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[10].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[12].pattern.ofType(CodeableConcept).coding[0]: The code '277647002' is valid but is not active
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[13].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[15].pattern.ofType(CodeableConcept).coding[0]: The code '277646006' is valid but is not active
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[16].pattern.ofType(CodeableConcept).coding[0]: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated
+INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.differential.element[23].pattern.ofType(CodeableConcept).coding[0]: The code '277650004' is valid but is not active
 INFORMATION: StructureDefinition/uicc-tnm: StructureDefinition.snapshot.element[18].pattern.ofType(Coding): The repeating element has a pattern. The pattern will apply to all the repeats (this has not been clear to all users)
 == fsh-generated/resources/StructureDefinition-uicc-tnm-prefix-cpu.json ==
-WARNING: StructureDefinition/uicc-tnm-prefix-cpu: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/uicc-tnm-prefix-cpu: StructureDefinition.context[0]: Review the extension type for uicc-tnm-prefix-cpu: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-uicc-tnm-r-classification.json ==
 == fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc.json ==
-WARNING: StructureDefinition/uicc-tnm-suffix-itc: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/uicc-tnm-suffix-itc: StructureDefinition.context[0]: Review the extension type for uicc-tnm-suffix-itc: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-uicc-tnm-suffix-itc-sn.json ==
-WARNING: StructureDefinition/uicc-tnm-suffix-itc-sn: StructureDefinition.context[0]: Review the extension type: extensions should not have a context of Element unless it's really intended that they can be used anywhere
+WARNING: StructureDefinition/uicc-tnm-suffix-itc-sn: StructureDefinition.context[0]: Review the extension type for uicc-tnm-suffix-itc-sn: extensions should not have a context of Element unless it's really intended that they can be used anywhere
 == fsh-generated/resources/StructureDefinition-vital-signs-base.json ==
 == fsh-generated/resources/ValueSet-diagnosesicherung-icdo3.json ==
 == fsh-generated/resources/ValueSet-ecog-performance-status-snomed.json ==
@@ -542,7 +560,7 @@ WARNING: ValueSet/study-focus-ncit: ValueSet.compose.include[0]: Unknown System 
 WARNING: ValueSet.where(id = 'study-focus-ncit'): Error from http://tx.fhir.org/r4: Unable to provide support for code system http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl
 == fsh-generated/resources/ValueSet-tnm-classification-type-loinc.json ==
 == fsh-generated/resources/ValueSet-tnm-l-lymphatic-invasion-uicc.json ==
-WARNING: ValueSet/tnm-l-lymphatic-invasion-uicc: ValueSet.compose.include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)
+WARNING: ValueSet/tnm-l-lymphatic-invasion-uicc: ValueSet.compose.include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: The CodeSystem urn:oid:2.16.840.1.113883.15.16 is unknown (from Tx-Server))
 WARNING: ValueSet.where(id = 'tnm-l-lymphatic-invasion-uicc'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
 == fsh-generated/resources/ValueSet-tnm-m-category-uicc.json ==
 WARNING: ValueSet/tnm-m-category-uicc: ValueSet.compose.include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)
@@ -556,7 +574,7 @@ WARNING: ValueSet.where(id = 'tnm-n-category-uicc'): Error from http://tx.fhir.o
 WARNING: ValueSet/tnm-pn-perineural-invasion-uicc: ValueSet.compose.include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)
 WARNING: ValueSet.where(id = 'tnm-pn-perineural-invasion-uicc'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
 == fsh-generated/resources/ValueSet-tnm-prefix-cpu-uicc.json ==
-WARNING: ValueSet/tnm-prefix-cpu-uicc: ValueSet.compose.include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: The CodeSystem urn:oid:2.16.840.1.113883.15.16 is unknown (from Tx-Server))
+WARNING: ValueSet/tnm-prefix-cpu-uicc: ValueSet.compose.include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)
 WARNING: ValueSet.where(id = 'tnm-prefix-cpu-uicc'): Error from http://tx.fhir.org/r4: Unable to provide support for code system urn:oid:2.16.840.1.113883.15.16
 == fsh-generated/resources/ValueSet-tnm-r-classification-uicc.json ==
 WARNING: ValueSet/tnm-r-classification-uicc: ValueSet.compose.include[0]: Unknown System 'urn:oid:2.16.840.1.113883.15.16' specified, so Concepts and Filters can't be checked (Details: Code System URI 'urn:oid:2.16.840.1.113883.15.16' is unknown so the code cannot be validated)

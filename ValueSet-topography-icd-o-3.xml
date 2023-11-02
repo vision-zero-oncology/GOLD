@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="topography-icd-o-3"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://terminology.hl7.org/5.3.0/CodeSystem-icd-o-3.html"><code>http://terminology.hl7.org/CodeSystem/icd-o-3</code></a> where concept  matches (by regex)  ^C\S*$</li></ul></div>
   </text>
   <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3"/>
   <version value="0.1.0"/>
@@ -11,7 +11,7 @@
   <title value="ValueSet Topography ICD-O-3"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-09-27T08:44:59+00:00"/>
+  <date value="2023-11-02T12:02:41+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>

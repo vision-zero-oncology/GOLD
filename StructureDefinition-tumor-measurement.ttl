@@ -2,6 +2,7 @@
 @prefix loinc: <https://loinc.org/rdf/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -11,14 +12,14 @@
   fhir:id [ fhir:v "tumor-measurement"] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Placeholder</div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the the element can appear in the instance\">Card.</a></th><th style=\"width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_resource.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation\">Observation</a><a name=\"Observation\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"padding-left: 3px; padding-right: 3px; border: 1px maroon solid; font-weight: bold; color: #301212; background-color: #fdf4f4;\" href=\"http://hl7.org/fhir/R4/conformance-rules.html#constraints\" title=\"This element has or is affected by constraints (must-have-focus-or-specimen-invariant)\">C</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/observation.html\">Observation</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Measurements and simple assertions</span><br/><span style=\"font-weight:bold\">must-have-focus-or-specimen-invariant: </span>Either `focus` OR `specimen` MUST be populated</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck11.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.code\">code</a><a name=\"Observation.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">1</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Type of observation (code / type)</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck101.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#CodeableConcept.coding\">coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..*</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Code defined by a terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">(complex)</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://loinc.org</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1010.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">21889-1</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1000.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Size Tumor</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.subject\">subject</a><a name=\"Observation.subject\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..<span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">The patient whose tumor was measured.</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.focus\" title=\"Reference to a BodyStructure resource conforming to Tumor.\">focus</a><a name=\"Observation.focus\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span>..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a href=\"StructureDefinition-tumor.html\">Profile Tumor</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identifies a tumor that has NOT been removed from the body</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.effective[x]\">effective[x]</a><a name=\"Observation.effective_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#dateTime\">dateTime</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Period\">Period</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Timing\">Timing</a><span style=\"opacity: 0.5\">, </span><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#instant\">instant</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Clinically relevant time/time-period for observation</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.method\" title=\"Method for measuring the tumor\">method</a><a name=\"Observation.method\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Method for measuring the tumor<br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-tumor-measurement-methods.html\">ValueSet Tumor Measurement Methods</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#extensible\" title=\"To be conformant, the concept in this element SHALL be from the specified value set if any of the codes within the value set can apply to the concept being communicated.  If the value set does not cover the concept (based on human review), alternate codings (or, data type allowing, text) may be included instead.\">extensible</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.specimen\" title=\"Reference to a Specimen resource.\">specimen</a><a name=\"Observation.specimen\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/references.html\">Reference</a>(<a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/specimen.html\">Specimen</a>)</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identifies a tumor that has been removed from the body</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component\">Slices for component</a><a name=\"Observation.component\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"padding-left: 3px; padding-right: 3px; color: white; background-color: red; font-style: italic\" title=\"This element must be supported\">S</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Component results</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:code</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:longestDimension\" title=\"Slice longestDimension: The longest tumor dimension in mm.\">component:longestDimension</a><a name=\"Observation.component\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Longest tumor dimension (mm)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0351.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:longestDimension.code\">code</a><a name=\"Observation.component.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03503.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:longestDimension.code.coding\">Slices for coding</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Code defined by a terminology system</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:code</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:longestDimension.code.coding:loinc\" title=\"Slice loinc\">coding:loinc</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://loinc.org</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">33728-7</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Size.maximum dimension in Tumor</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:longestDimension.code.coding:snomed\" title=\"Slice snomed\">coding:snomed</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://snomed.info/sct</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">371479009</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Tumor size, largest dimension</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:longestDimension.value[x]\">value[x]</a><a name=\"Observation.component.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Actual component result</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-tumor-size-units.html\">ValueSet Tumor Size Units</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:shortAxis\" title=\"Slice shortAxis: short axis in mm or cm.\">component:shortAxis</a><a name=\"Observation.component\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">short axis of the tumor lesion (mm or cm)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0351.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:shortAxis.code\">code</a><a name=\"Observation.component.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03503.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:shortAxis.code.coding\">Slices for coding</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Code defined by a terminology system</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:code</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:shortAxis.code.coding:loinc\" title=\"Slice loinc\">coding:loinc</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://loinc.org</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">21889-1</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Size Tumor</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:shortAxis.code.coding:snomed\" title=\"Slice snomed\">coding:snomed</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://snomed.info/sct</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">372299002</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Tumor size, dimension 1</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:shortAxis.value[x]\">value[x]</a><a name=\"Observation.component.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Actual component result</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-tumor-size-units.html\">ValueSet Tumor Size Units</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:area\" title=\"Slice area: tumor area in mm².\">component:area</a><a name=\"Observation.component\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">area of the tumor (mm²)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0351.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:area.code\">code</a><a name=\"Observation.component.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck03503.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:area.code.coding\">Slices for coding</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Code defined by a terminology system</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:code</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:area.code.coding:loinc\" title=\"Slice loinc\">coding:loinc</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://loinc.org</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">33729-5</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Area of the Tumor</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck035025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:area.code.coding:snomed\" title=\"Slice snomed\">coding:snomed</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://snomed.info/sct</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">2372300005</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0350240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Tumor size, dimension 2</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:area.value[x]\">value[x]</a><a name=\"Observation.component.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Actual component result</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-tumor-area-units.html\">ValueSet Tumor Size Units ValueSet</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:volume\" title=\"Slice volume: Tumor volume in ml.\">component:volume</a><a name=\"Observation.component\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#BackboneElement\">BackboneElement</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">tumor volume (ml)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0251.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:volume.code\">code</a><a name=\"Observation.component.code\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck02503.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Slice Definition\" class=\"hierarchy\"/> <a style=\"font-style: italic\" href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:volume.code.coding\">Slices for coding</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"font-style: italic\"/><span style=\"font-style: italic\">1</span><span style=\"font-style: italic\">..</span><span style=\"opacity: 0.5; font-style: italic\">*</span></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5; font-style: italic\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5; font-style: italic\">Code defined by a terminology system</span><br style=\"font-style: italic\"/><span style=\"font-weight:bold; font-style: italic\">Slice: </span><span style=\"font-style: italic\">Unordered, Open by pattern:code</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025035.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:volume.code.coding:loinc\" title=\"Slice loinc\">coding:loinc</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0250350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://loinc.org</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0250350.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">33729-5</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0250340.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Volume of the Tumor</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck025025.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slicer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_slice_item.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Slice Item\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:volume.code.coding:snomed\" title=\"Slice snomed\">coding:snomed</a><a name=\"Observation.component.code.coding\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a style=\"opacity: 0.5\" href=\"http://hl7.org/fhir/R4/datatypes.html#Coding\">Coding</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Code defined by a terminology system</span><br/><span style=\"font-weight:bold\">Required Pattern: </span><span style=\"color: darkgreen\">At least the following</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0250250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.system\">system</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#uri\">uri</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Identity of the terminology system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">http://snomed.info/sct</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0250250.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Symbol in syntax defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">258261001</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0250240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vline_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_fixed.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Fixed Value\" class=\"hierarchy\"/> <a href=\"http://hl7.org/fhir/R4/datatypes-definitions.html#Coding.display\">display</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Representation defined by the system<br/><span style=\"font-weight: bold\">Fixed Value: </span><span style=\"color: darkgreen\">Tumor volume</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck0240.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_blank.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end_slice.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-tumor-measurement-definitions.html#Observation.component:volume.value[x]\">value[x]</a><a name=\"Observation.component.value_x_\"> </a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">1</span></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R4/datatypes.html#Quantity\">Quantity</a></td><td style=\"vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">Actual component result</span><br/><span style=\"font-weight:bold\">Binding: </span><a href=\"ValueSet-tumor-volume-units.html\">ValueSet Tumor Size Units Value Set</a> (<a href=\"http://hl7.org/fhir/R4/terminologies.html#required\" title=\"To be conformant, the concept in this element SHALL be from the specified value set.\">required</a>)</td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
   ] ; # 
   fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor-measurement"^^xsd:anyURI] ; # 
   fhir:version [ fhir:v "0.1.0"] ; # 
   fhir:name [ fhir:v "TumorMeasurement"] ; # 
   fhir:title [ fhir:v "Profile Tumor Measurment"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2023-09-27T08:44:59+00:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2023-11-02T12:02:41+00:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Berlin Institute of Health at Charité (BIH)"] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Berlin Institute of Health at Charité (BIH)" ] ;
@@ -761,7 +762,8 @@
          fhir:coding ( [
            a loinc:21889-1 ;
            fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "21889-1" ]
+           fhir:code [ fhir:v "21889-1" ] ;
+           fhir:display [ fhir:v "Size Tumor" ]
          ] )
        ] ;
        fhir:constraint ( [
@@ -2615,14 +2617,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           a loinc:33728-7 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "33728-7" ]
-         ] )
-       ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -2660,6 +2654,269 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "code" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:longestDimension.code.id" ] ;
+       fhir:path [ fhir:v "Observation.component.code.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "Unique id for inter-element referencing" ] ;
+       fhir:definition [ fhir:v "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "string"^^xsd:anyURI ]
+         ] ) ;
+         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:longestDimension.code.extension" ] ;
+       fhir:path [ fhir:v "Observation.component.code.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:longestDimension.code.coding" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "code" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:longestDimension.code.coding:loinc" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "loinc" ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:pattern [
+         a fhir:Coding, loinc:33728-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "33728-7" ] ;
+         fhir:display [ fhir:v "Size.maximum dimension in Tumor" ]
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:longestDimension.code.coding:snomed" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "snomed" ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:pattern [
+         a fhir:Coding, sct:371479009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "371479009" ] ;
+         fhir:display [ fhir:v "Tumor size, largest dimension" ]
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:longestDimension.code.text" ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
+       ] ) ;
+       fhir:path [ fhir:v "Observation.component.code.text" ] ;
+       fhir:short [ fhir:v "Plain text representation of the concept" ] ;
+       fhir:definition [ fhir:v "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." ] ;
+       fhir:comment [ fhir:v "Very often the text is the same as a displayName of one of the codings." ] ;
+       fhir:requirements [ fhir:v "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.text" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.9. But note many systems use C*E.2 for this" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./originalText[mediaType/code=\"text/plain\"]/data" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.component:longestDimension.value[x]" ] ;
@@ -3023,15 +3280,6 @@
        fhir:type ( [
          fhir:code [ fhir:v "CodeableConcept"^^xsd:anyURI ]
        ] ) ;
-       fhir:pattern [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           a loinc:33729-5 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "33729-5" ] ;
-           fhir:display [ fhir:v "Size additional dimension in Tumor" ]
-         ] )
-       ] ;
        fhir:constraint ( [
          fhir:key [ fhir:v "ele-1" ] ;
          fhir:severity [ fhir:v "error" ] ;
@@ -3069,6 +3317,269 @@
        ] [
          fhir:identity [ fhir:v "rim" ] ;
          fhir:map [ fhir:v "code" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:shortAxis.code.id" ] ;
+       fhir:path [ fhir:v "Observation.component.code.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "Unique id for inter-element referencing" ] ;
+       fhir:definition [ fhir:v "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "string"^^xsd:anyURI ]
+         ] ) ;
+         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:shortAxis.code.extension" ] ;
+       fhir:path [ fhir:v "Observation.component.code.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:shortAxis.code.coding" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "code" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:shortAxis.code.coding:loinc" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "loinc" ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:pattern [
+         a fhir:Coding, loinc:21889-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21889-1" ] ;
+         fhir:display [ fhir:v "Size Tumor" ]
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:shortAxis.code.coding:snomed" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "snomed" ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:pattern [
+         a fhir:Coding, sct:372299002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "372299002" ] ;
+         fhir:display [ fhir:v "Tumor size, dimension 1" ]
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:shortAxis.code.text" ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
+       ] ) ;
+       fhir:path [ fhir:v "Observation.component.code.text" ] ;
+       fhir:short [ fhir:v "Plain text representation of the concept" ] ;
+       fhir:definition [ fhir:v "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." ] ;
+       fhir:comment [ fhir:v "Very often the text is the same as a displayName of one of the codings." ] ;
+       fhir:requirements [ fhir:v "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.text" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.9. But note many systems use C*E.2 for this" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./originalText[mediaType/code=\"text/plain\"]/data" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
        ] )
      ] [
        fhir:id [ fhir:v "Observation.component:shortAxis.value[x]" ] ;
@@ -3471,6 +3982,269 @@
          fhir:map [ fhir:v "code" ]
        ] )
      ] [
+       fhir:id [ fhir:v "Observation.component:area.code.id" ] ;
+       fhir:path [ fhir:v "Observation.component.code.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "Unique id for inter-element referencing" ] ;
+       fhir:definition [ fhir:v "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "string"^^xsd:anyURI ]
+         ] ) ;
+         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:area.code.extension" ] ;
+       fhir:path [ fhir:v "Observation.component.code.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:area.code.coding" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "code" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:area.code.coding:loinc" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "loinc" ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:pattern [
+         a fhir:Coding, loinc:33729-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "33729-5" ] ;
+         fhir:display [ fhir:v "Area of the Tumor" ]
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:area.code.coding:snomed" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "snomed" ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:pattern [
+         a fhir:Coding, sct:2372300005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2372300005" ] ;
+         fhir:display [ fhir:v "Tumor size, dimension 2" ]
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:area.code.text" ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
+       ] ) ;
+       fhir:path [ fhir:v "Observation.component.code.text" ] ;
+       fhir:short [ fhir:v "Plain text representation of the concept" ] ;
+       fhir:definition [ fhir:v "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." ] ;
+       fhir:comment [ fhir:v "Very often the text is the same as a displayName of one of the codings." ] ;
+       fhir:requirements [ fhir:v "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.text" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.9. But note many systems use C*E.2 for this" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./originalText[mediaType/code=\"text/plain\"]/data" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
+       ] )
+     ] [
        fhir:id [ fhir:v "Observation.component:area.value[x]" ] ;
        fhir:path [ fhir:v "Observation.component.value[x]" ] ;
        fhir:short [ fhir:v "Actual component result" ] ;
@@ -3871,6 +4645,269 @@
          fhir:map [ fhir:v "code" ]
        ] )
      ] [
+       fhir:id [ fhir:v "Observation.component:volume.code.id" ] ;
+       fhir:path [ fhir:v "Observation.component.code.id" ] ;
+       fhir:representation ( [ fhir:v "xmlAttr" ] ) ;
+       fhir:short [ fhir:v "Unique id for inter-element referencing" ] ;
+       fhir:definition [ fhir:v "Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.id" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "string"^^xsd:anyURI ]
+         ] ) ;
+         fhir:code [ fhir:v "http://hl7.org/fhirpath/System.String"^^xsd:anyURI ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:volume.code.extension" ] ;
+       fhir:path [ fhir:v "Observation.component.code.extension" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "value" ] ;
+           fhir:path [ fhir:v "url" ]
+         ] ) ;
+         fhir:description [ fhir:v "Extensions are always sliced by (at least) url" ] ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Additional content defined by implementations" ] ;
+       fhir:definition [ fhir:v "May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension." ] ;
+       fhir:comment [ fhir:v "There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone." ] ;
+       fhir:alias ( [ fhir:v "extensions" ] [ fhir:v "user content" ] ) ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Element.extension" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Extension"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] [
+         fhir:key [ fhir:v "ext-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "Must have either extensions or value[x], not both" ] ;
+         fhir:expression [ fhir:v "extension.exists() != value.exists()" ] ;
+         fhir:xpath [ fhir:v "exists(f:extension)!=exists(f:*[starts-with(local-name(.), \"value\")])" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Extension"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Extension>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:volume.code.coding" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "code" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:volume.code.coding:loinc" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "loinc" ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:pattern [
+         a fhir:Coding, loinc:33729-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "33729-5" ] ;
+         fhir:display [ fhir:v "Volume of the Tumor" ]
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:volume.code.coding:snomed" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "snomed" ] ;
+       fhir:short [ fhir:v "Code defined by a terminology system" ] ;
+       fhir:definition [ fhir:v "A reference to a code defined by a terminology system." ] ;
+       fhir:comment [ fhir:v "Codes may be defined very casually in enumerations, or code lists, up to very formal definitions such as SNOMED CT - see the HL7 v3 Core Principles for more information.  Ordering of codings is undefined and SHALL NOT be used to infer meaning. Generally, at most only one of the coding values will be labeled as UserSelected = true." ] ;
+       fhir:requirements [ fhir:v "Allows for alternative encodings within a code system, and translations to other code systems." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.coding" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "Coding"^^xsd:anyURI ]
+       ] ) ;
+       fhir:pattern [
+         a fhir:Coding, sct:258261001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "258261001" ] ;
+         fhir:display [ fhir:v "Tumor volume" ]
+       ] ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.1-8, C*E.10-22" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "union(., ./translation)" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.coding rdfs:subPropertyOf dt:CD.coding" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "Observation.component:volume.code.text" ] ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "true"^^xsd:boolean ]
+       ] ) ;
+       fhir:path [ fhir:v "Observation.component.code.text" ] ;
+       fhir:short [ fhir:v "Plain text representation of the concept" ] ;
+       fhir:definition [ fhir:v "A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user." ] ;
+       fhir:comment [ fhir:v "Very often the text is the same as a displayName of one of the codings." ] ;
+       fhir:requirements [ fhir:v "The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source." ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "CodeableConcept.text" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [ fhir:v "string"^^xsd:anyURI ]
+       ] ) ;
+       fhir:constraint ( [
+         fhir:key [ fhir:v "ele-1" ] ;
+         fhir:severity [ fhir:v "error" ] ;
+         fhir:human [ fhir:v "All FHIR elements must have a @value or children" ] ;
+         fhir:expression [ fhir:v "hasValue() or (children().count() > id.count())" ] ;
+         fhir:xpath [ fhir:v "@value|f:*|h:div" ] ;
+         fhir:source [
+           fhir:v "http://hl7.org/fhir/StructureDefinition/Element"^^xsd:anyURI ;
+           fhir:link <http://hl7.org/fhir/StructureDefinition/Element>
+         ]
+       ] ) ;
+       fhir:isModifier [ fhir:v "false"^^xsd:boolean ] ;
+       fhir:isSummary [ fhir:v "true"^^xsd:boolean ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "v2" ] ;
+         fhir:map [ fhir:v "C*E.9. But note many systems use C*E.2 for this" ]
+       ] [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "./originalText[mediaType/code=\"text/plain\"]/data" ]
+       ] [
+         fhir:identity [ fhir:v "orim" ] ;
+         fhir:map [ fhir:v "fhir:CodeableConcept.text rdfs:subPropertyOf dt:CD.originalText" ]
+       ] )
+     ] [
        fhir:id [ fhir:v "Observation.component:volume.value[x]" ] ;
        fhir:path [ fhir:v "Observation.component.value[x]" ] ;
        fhir:short [ fhir:v "Actual component result" ] ;
@@ -4085,7 +5122,8 @@
          fhir:coding ( [
            a loinc:21889-1 ;
            fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "21889-1" ]
+           fhir:code [ fhir:v "21889-1" ] ;
+           fhir:display [ fhir:v "Size Tumor" ]
          ] )
        ] ;
        fhir:mustSupport [ fhir:v "true"^^xsd:boolean ]
@@ -4163,15 +5201,39 @@
        fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ]
      ] [
-       fhir:id [ fhir:v "Observation.component:longestDimension.code" ] ;
-       fhir:path [ fhir:v "Observation.component.code" ] ;
+       fhir:id [ fhir:v "Observation.component:longestDimension.code.coding" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "code" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:id [ fhir:v "Observation.component:longestDimension.code.coding:loinc" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "loinc" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
        fhir:pattern [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           a loinc:33728-7 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "33728-7" ]
-         ] )
+         a fhir:Coding, loinc:33728-7 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "33728-7" ] ;
+         fhir:display [ fhir:v "Size.maximum dimension in Tumor" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Observation.component:longestDimension.code.coding:snomed" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "snomed" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:pattern [
+         a fhir:Coding, sct:371479009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "371479009" ] ;
+         fhir:display [ fhir:v "Tumor size, largest dimension" ]
        ]
      ] [
        fhir:id [ fhir:v "Observation.component:longestDimension.value[x]" ] ;
@@ -4195,16 +5257,39 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ]
      ] [
-       fhir:id [ fhir:v "Observation.component:shortAxis.code" ] ;
-       fhir:path [ fhir:v "Observation.component.code" ] ;
+       fhir:id [ fhir:v "Observation.component:shortAxis.code.coding" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "code" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:id [ fhir:v "Observation.component:shortAxis.code.coding:loinc" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "loinc" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
        fhir:pattern [
-         a fhir:CodeableConcept ;
-         fhir:coding ( [
-           a loinc:33729-5 ;
-           fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
-           fhir:code [ fhir:v "33729-5" ] ;
-           fhir:display [ fhir:v "Size additional dimension in Tumor" ]
-         ] )
+         a fhir:Coding, loinc:21889-1 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "21889-1" ] ;
+         fhir:display [ fhir:v "Size Tumor" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Observation.component:shortAxis.code.coding:snomed" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "snomed" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:pattern [
+         a fhir:Coding, sct:372299002 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "372299002" ] ;
+         fhir:display [ fhir:v "Tumor size, dimension 1" ]
        ]
      ] [
        fhir:id [ fhir:v "Observation.component:shortAxis.value[x]" ] ;
@@ -4228,6 +5313,41 @@
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ]
      ] [
+       fhir:id [ fhir:v "Observation.component:area.code.coding" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "code" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:id [ fhir:v "Observation.component:area.code.coding:loinc" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "loinc" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:pattern [
+         a fhir:Coding, loinc:33729-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "33729-5" ] ;
+         fhir:display [ fhir:v "Area of the Tumor" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Observation.component:area.code.coding:snomed" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "snomed" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:pattern [
+         a fhir:Coding, sct:2372300005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2372300005" ] ;
+         fhir:display [ fhir:v "Tumor size, dimension 2" ]
+       ]
+     ] [
        fhir:id [ fhir:v "Observation.component:area.value[x]" ] ;
        fhir:path [ fhir:v "Observation.component.value[x]" ] ;
        fhir:type ( [
@@ -4248,6 +5368,41 @@
        fhir:definition [ fhir:v "Tumor volume in ml." ] ;
        fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
        fhir:max [ fhir:v "1" ]
+     ] [
+       fhir:id [ fhir:v "Observation.component:volume.code.coding" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:slicing [
+         fhir:discriminator ( [
+           fhir:type [ fhir:v "pattern" ] ;
+           fhir:path [ fhir:v "code" ]
+         ] ) ;
+         fhir:rules [ fhir:v "open" ]
+       ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ]
+     ] [
+       fhir:id [ fhir:v "Observation.component:volume.code.coding:loinc" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "loinc" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:pattern [
+         a fhir:Coding, loinc:33729-5 ;
+         fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "33729-5" ] ;
+         fhir:display [ fhir:v "Volume of the Tumor" ]
+       ]
+     ] [
+       fhir:id [ fhir:v "Observation.component:volume.code.coding:snomed" ] ;
+       fhir:path [ fhir:v "Observation.component.code.coding" ] ;
+       fhir:sliceName [ fhir:v "snomed" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:pattern [
+         a fhir:Coding, sct:258261001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "258261001" ] ;
+         fhir:display [ fhir:v "Tumor volume" ]
+       ]
      ] [
        fhir:id [ fhir:v "Observation.component:volume.value[x]" ] ;
        fhir:path [ fhir:v "Observation.component.value[x]" ] ;

@@ -3,7 +3,8 @@
 <ImplementationGuide xmlns="http://hl7.org/fhir">
   <id value="gold"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml">Placeholder</div>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><h2>GOLD</h2><p>The official URL for this implementation guide is: </p><pre>https://www.vision-zero-oncology.de/fhir/ImplementationGuide/gold</pre><div><p>Implementation Guide German Oncological Data Standard (GOLD)</p>
+</div></div>
   </text>
   <url value="https://www.vision-zero-oncology.de/fhir/ImplementationGuide/gold"/>
   <version value="0.1.0"/>

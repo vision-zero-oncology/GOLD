@@ -1,0 +1,580 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.de/ValueSet/bfarm/atc",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "ATC",
+      "title" : null,
+      "description" : "Anatomisch-therapeutisch-chemische Klassifkation (ATC) mit Tagesdosen deutsche Fassung",
+      "systems" : ["http://fhir.de/CodeSystem/bfarm/atc"],
+      "uses" : {
+      },
+      "StructureDefinition-medication-administration.html" : "Profile MedicationAdministration",
+      "StructureDefinition-medication-statement.html" : "Profile MedicationStatement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-statement-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication usage category codes",
+      "title" : "Medication usage category codes",
+      "description" : "Medication Status Codes",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medication-statement-category"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.370"],
+      "sources" : ["2.16.840.1.113883.4.642.3.370"],
+      "uses" : {
+      },
+      "StructureDefinition-medication-statement.html" : "Profile MedicationStatement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/research-study-phase",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ResearchStudyPhase",
+      "title" : "ResearchStudyPhase",
+      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/research-study-phase"],
+      "oids" : ["2.16.840.1.113883.4.642.3.821"],
+      "sources" : ["2.16.840.1.113883.4.642.3.821"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Profile Clinical Study"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodylength",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodyLengthUnits",
+      "title" : "Body Length Units",
+      "description" : "UCUM units for recording body length measures such as height and head circumference",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.958"],
+      "sources" : ["2.16.840.1.113883.4.642.3.958"],
+      "uses" : {
+      },
+      "StructureDefinition-body-height.html" : "Profile Body Height"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/ucum-bodyweight",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "BodyWeightUnits",
+      "title" : "Body Weight Units",
+      "description" : "UCUM units for recording Body Weight",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.956"],
+      "sources" : ["2.16.840.1.113883.4.642.3.956"],
+      "uses" : {
+      },
+      "StructureDefinition-body-weight.html" : "Profile Body Weight"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/ips/ValueSet/medicine-route-of-administration",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "RouteOfAdminUvIps",
+      "title" : "Medicine Route of Administration - IPS",
+      "description" : "EDQM Route of Administration codes.  This Value Set includes all the EDQM Standard Terms having:  \n[Concept Status] = ‘Current’\u00a0AND  \n[Concept Class] = 'route of administration' AND  \n[Domain] = 'Human and Veterinary'",
+      "systems" : ["http://standardterms.edqm.eu"],
+      "uses" : {
+      },
+      "StructureDefinition-medication-administration.html" : "Profile MedicationAdministration",
+      "StructureDefinition-medication-statement.html" : "Profile MedicationStatement"
+    },
+    {
+      "url" : "http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips",
+      "version" : "1.0.0",
+      "status" : "active",
+      "name" : "TargetSiteCodeUvIps",
+      "title" : "Target Site - IPS",
+      "description" : "This value set includes codes from SNOMED Clinical Terms®: all descendants of 442083009 | Anatomical or acquired body structure (body structure)|.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-medication-administration.html" : "Profile MedicationAdministration",
+      "StructureDefinition-medication-statement.html" : "Profile MedicationStatement"
+    },
+    {
+      "url" : "https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-body-structures",
+      "version" : null,
+      "status" : "active",
+      "name" : "ValueSetSCTBodyStructures",
+      "title" : "ValueSet - SNOMED CT Body Strutures",
+      "description" : null,
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-disorder.html" : "Profile Tumor Disorder"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DiagnosesicherungICDO3",
+      "title" : "ValieSet Diagnosesicherung ICD-O-3",
+      "description" : "ValueSet für die Diagnosesicherungscodes der ICD-O-3",
+      "systems" : [
+        "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"
+      ]
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/ecog-performance-status-snomed",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_ECOG_Performance_Status_SNOMED",
+      "title" : "ValueSet ECOG Performance Status SNOMED",
+      "description" : "The ValueSet contains the ECOG Performance Status values from SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ecog-performance-status.html" : "Profile ECOG Performance Status"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Histopathological_Grade_SNOMED",
+      "title" : "ValueSet Histologic Grade SNOMED",
+      "description" : "The ValueSet contains codes for the tumor grading system following the recommendations of the WHO Classification of Tumors from SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-histopathological-grading-who.html" : "Profile Histopathological Tumor Grading WHO"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-icd-o-3",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Morphology_ICD_O_3",
+      "title" : "ValueSet Morphology ICD-O-3",
+      "description" : "The ValueSet contains the morphology (histology) codes from ICD-O-3.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
+      "uses" : {
+      },
+      "StructureDefinition-histology-topography.html" : "Profile Histology Topography"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/morphology-snomed",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Morphology_SNOMED",
+      "title" : "ValueSet Morphology SNOMED",
+      "description" : "The ValueSet contains the morphology (histology) codes from SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-histology-topography.html" : "Profile Histology Topography"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/recist-asstimepoint-response",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "RecistAssessmentTimepointResponseVS",
+      "title" : "ValueSet Recist Timepoint Response",
+      "description" : "Defines the valid values for the recist assessment response observation resource",
+      "systems" : ["http://radlex.org/RID"],
+      "uses" : {
+      },
+      "StructureDefinition-recist-assessment-response.html" : "Profile RECIST timepoint assessment response"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Studiendesign_NCIT",
+      "title" : "ValueSet Studiendesign NCIt",
+      "description" : "Studiendesign aus NCI Thesaurus (NCIt)",
+      "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Profile Clinical Study"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Studienkategorien_NCIT",
+      "title" : "ValueSet Studienkategorien NCIt",
+      "description" : "Studienkategorien aus NCI Thesaurus (NCIt)",
+      "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Profile Clinical Study"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/study-focus-ncit",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_StudyFocus_NCIT",
+      "title" : "ValueSet Study Focus NCIt",
+      "description" : "Study Focus aus NCI Thesaurus (NCIt)",
+      "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Profile Clinical Study"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_Classification_Type_LOINC",
+      "title" : "ValueSet TNM Classification Type LOINC",
+      "description" : "This ValueSet contains codes to specifiy the type of TNM classification as clinical (cTNM) or pathological (pTNM).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-l-lymphatic-invasion-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_L_Lymphatic_Invasion_UICC",
+      "title" : "ValueSet TNM L-Descriptor Lymphatic Invasion UICC",
+      "description" : "This ValueSet contains the TNM degree of lymphatic invasion codes used with the L-descriptor from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-category-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_M_Category_UICC",
+      "title" : "ValueSet TNM M Category UICC",
+      "description" : "This ValueSet contains the TNM M category codes from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-m-staging-type-loinc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_M_Staging_Type_LOINC",
+      "title" : "ValueSet TNM M Staging Type LOINC",
+      "description" : "This ValueSet contains codes to specifiy the TNM distant metastases (M) category as clinical (cM) or pathological (pM).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-category-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_N_Category_UICC",
+      "title" : "ValueSet TNM N Category UICC",
+      "description" : "This ValueSet contains the TNM N category codes from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_N_Staging_Type_LOINC",
+      "title" : "ValueSet TNM N Staging Type LOINC",
+      "description" : "This ValueSet contains codes to specifiy the TNM regional lymph nodes (N) category as clinical (cN) or pathological (pN).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-pn-perineural-invasion-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_Pn_Perineural_Invasion_UICC",
+      "title" : "ValueSet TNM Pn-Descriptor Perineural Invasion UICC",
+      "description" : "This ValueSet contains the TNM degree of perineural (lymphatic nerve sheet) invasion codes used with the Pn-descriptor from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-prefix-cpu-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_Prefix_CPU_UICC",
+      "title" : "ValueSet TNM Prefix CPU UICC",
+      "description" : "This ValueSet contains the c, p and u prefixes for TNM stages from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm-prefix-cpu.html" : "Extension UICC TNM Prefix CPU"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-r-classification-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_R_Classification_UICC",
+      "title" : "ValueSet TNM Residual Tumor (R) Classification UICC",
+      "description" : "This ValueSet contains the TNM residual tumor (R) classification codes from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm-r-classification.html" : "Profile UICC TNM Residual Tumor (R) Classification"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-s-serum-tumor-markers-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_S_Serum_Tumor_Markers_UICC",
+      "title" : "ValueSet TNM S Serum Tumour Markers UICC",
+      "description" : "This ValueSet contains the TNM serum levels of tumor markers coded for germ cell tumors used with the S-symbol from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-stage-group-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_Stage_Group_UICC",
+      "title" : "ValueSet TNM Stage Group UICC",
+      "description" : "The ValueSet contains codes for the TNM stage groups ranging from I to IV to group cancer patients with similar prognosis from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-sn-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_Suffix_ITC_SN_UICC",
+      "title" : "ValueSet TNM Suffix ITC SN UICC",
+      "description" : "This ValueSet contains the isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix for the N-category in TNM from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm-suffix-itc-sn.html" : "Extension UICC TNM Suffix ITC SN"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-suffix-itc-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_Suffix_ITC_UICC",
+      "title" : "ValueSet TNM Suffix ITC UICC",
+      "description" : "This ValueSet contains the isolated tumor cells (ITC) suffixes for N- and M-category from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm-suffix-itc.html" : "Extension UICC TNM Suffix ITC"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-category-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_T_Category_UICC",
+      "title" : "ValueSet TNM T Category UICC",
+      "description" : "This ValueSet contains the TNM T category codes from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-multiplicity-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_T_Multiplicity_UICC",
+      "title" : "ValueSet TNM T Multiplicity UICC",
+      "description" : "This ValueSet contains the TNM primary tumor multiplicity codes used with the m-symbol from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_T_Staging_Type_LOINC",
+      "title" : "ValueSet TNM T Staging Type LOINC",
+      "description" : "This ValueSet contains codes to specifiy the TNM primary tumor (T) category as clinical (cT) or pathological (pT).",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-v-venous-invasion-uicc",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_V_Venous_Invasion_UICC",
+      "title" : "ValueSet TNM V-Descriptor Venous Invasion UICC",
+      "description" : "This ValueSet contains the TNM degree of venous invasion codes used with the V-descriptor from TNM 8th edition UICC.",
+      "systems" : ["urn:oid:2.16.840.1.113883.15.16"],
+      "uses" : {
+      },
+      "StructureDefinition-uicc-tnm.html" : "Profile UICC TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-icd-o-3",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Topography_ICD_O_3",
+      "title" : "ValueSet Topography ICD-O-3",
+      "description" : "The ValueSet contains the topography codes from ICD-O-3.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/icd-o-3"],
+      "uses" : {
+      },
+      "StructureDefinition-histology-topography.html" : "Profile Histology Topography"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/topography-snomed",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Topography_SNOMED",
+      "title" : "ValueSet Topography SNOMED",
+      "description" : "The ValueSet contains the topography codes from SNOMED CT.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-histology-topography.html" : "Profile Histology Topography"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-area-units",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Tumor_Area_Units",
+      "title" : "ValueSet Tumor Size Units ValueSet",
+      "description" : "Acceptable units for measuring tumor areas",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-measurement.html" : "Profile Tumor Measurment"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Tumor_Measurement_Methods",
+      "title" : "ValueSet Tumor Measurement Methods",
+      "description" : "Codes for methods of measuring tumor size, including physical examination, pathology, and imaging.",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-measurement.html" : "Profile Tumor Measurment"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-size-units",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Tumor_Size_Units",
+      "title" : "ValueSet Tumor Size Units",
+      "description" : "Acceptable units for measuring tumor size",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-measurement.html" : "Profile Tumor Measurment"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-volume-units",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_Tumor_Volume_Units",
+      "title" : "ValueSet Tumor Size Units Value Set",
+      "description" : "Acceptable units for measuring tumor volumes",
+      "systems" : ["http://unitsofmeasure.org"],
+      "uses" : {
+      },
+      "StructureDefinition-tumor-measurement.html" : "Profile Tumor Measurment"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TypeOfBlinding_NCIT",
+      "title" : "ValueSet Type of Blinding NCIt",
+      "description" : "Type of Blinding aus NCI Thesaurus (NCIt)",
+      "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Profile Clinical Study"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TypeOfRandomization_NCIT",
+      "title" : "ValueSet Type of Randomization NCIt",
+      "description" : "Type of Randomization aus NCI Thesaurus (NCIt)",
+      "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Profile Clinical Study"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TypeOfStudyArm_NCIT",
+      "title" : "ValueSet Type of Study Arm NCIt",
+      "description" : "Type of Study Arm aus NCI Thesaurus (NCIt)",
+      "systems" : ["http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl"],
+      "uses" : {
+      },
+      "StructureDefinition-clinical-study.html" : "Profile Clinical Study"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-recsit-category-observation",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_RECIST_Category_Observation",
+      "title" : "Valueset for Categories of a BodyStructure in the context of one RECIST procedure",
+      "description" : "TODO",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-recist-category-observation.html" : "RECIST Tumor Category Observation"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-category-observation",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_Category_Observation",
+      "title" : "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
+      "description" : "This Valueset contains the coded for the different categories for BodyStructures in the context of TNM (Tumor|Node|Metastase)",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-tnm-category-observation.html" : "TNM Tumor Category Observation"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-radiological-read-procedure",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_TNM_Radiological_Read_Procedures",
+      "title" : "Valueset for TNM Radiological Read Procedures",
+      "description" : "This Valueset contains the snomed codes of the different TNM tumor staging systems",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-radiological-tnm-read-procedure.html" : "Radiological read procedure for clinical TNM"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "VS_RECIST_Radiological_Read_Procedures",
+      "title" : "Valueset for RECIST Radiological Read Procedures",
+      "description" : "TODO",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-radiological-recist-read-procedure.html" : "Radiological read procedure for RECIST"
+    }
+  ]
+}

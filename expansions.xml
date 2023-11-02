@@ -1,26 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="de62dda6-982e-4c29-b792-9375b9476613"/>
+  <id value="2ae92637-9dad-4f60-9a9d-8b930b80df29"/>
   <meta>
-    <lastUpdated value="2023-09-27T08:44:59.975+00:00"/>
+    <lastUpdated value="2023-11-02T12:02:41.253+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-size-units"/>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>codesystem UCUM version 2.0.1</li>
-                <li>system UCUM version 2.0.1</li>
-              </ul>
-            </div>
+            <p>This value set contains 8 concepts</p>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
+              <a href="CodeSystem-cs-diagnosesicherung-icdo3.html">codesystem Diagnosesicherung ICD-O-3 v0.1.0 (CodeSystem)</a>
+            </p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -35,132 +31,78 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---unitsofmeasure.org-mm"> </a>  mm
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-0"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-0">0</a>
                 </td>
-                <td>http://unitsofmeasure.org</td>
-                <td>Millimeter</td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Nur Totenschein</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---unitsofmeasure.org-cm"> </a>  cm
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-1"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-1">1</a>
                 </td>
-                <td>http://unitsofmeasure.org</td>
-                <td>Centimeter</td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Klinisch</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-2"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-2">2</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Klinische Diagnostik</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-4"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-4">4</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Spezifische Tumor-Marker</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-5"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-5">5</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Zytologie</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-6"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-6">6</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Histologische Untersuchung einer Metastase</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-7"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-7">7</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Histologische Untersuchung eines Primärtumors</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-9"> </a>  
+                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-9">9</a>
+                </td>
+                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
+                <td>Unbekannt</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-size-units"/>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3"/>
         <version value="0.1.0"/>
-        <name value="VS_Tumor_Size_Units"/>
-        <title value="ValueSet Tumor Size Units"/>
-        <status value="draft"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DEU"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:f96c5f9a-d445-4f45-b285-e87c7ef80b83"/>
-          <timestamp value="2023-09-27T08:45:57+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
-          </parameter>
-          <contains>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="mm"/>
-            <display value="Millimeter"/>
-          </contains>
-          <contains>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="cm"/>
-            <display value="Centimeter"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>Loinc v2.74</li>
-                <li>Loinc v2.74</li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21906-3"> </a>  
-                  <a href="https://loinc.org/21906-3/">21906-3</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Regional lymph nodes.clinical [Class] Cancer</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21900-6"> </a>  
-                  <a href="https://loinc.org/21900-6/">21900-6</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Regional lymph nodes.pathology [Class] Cancer</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21912-1"> </a>  
-                  <a href="https://loinc.org/21912-1/">21912-1</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Regional lymph nodes.other [Class] Cancer</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc"/>
-        <version value="0.1.0"/>
-        <name value="VS_TNM_N_Staging_Type_LOINC"/>
-        <title value="ValueSet TNM N Staging Type LOINC"/>
+        <name value="DiagnosesicherungICDO3"/>
+        <title value="ValieSet Diagnosesicherung ICD-O-3"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -168,43 +110,56 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b27bf17b-43a5-4821-8534-1f0f69dee427"/>
-          <timestamp value="2023-09-27T08:45:57+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:0351e73c-85ea-49e2-b9ac-2792de85bf55"/>
+          <timestamp value="2023-11-02T12:09:33+00:00"/>
+          <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
           </parameter>
           <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
             <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.74"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.74"/>
+            <valueUri value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3|0.1.0"/>
           </parameter>
           <contains>
-            <system value="http://loinc.org"/>
-            <code value="21906-3"/>
-            <display value="Regional lymph nodes.clinical [Class] Cancer"/>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="0"/>
+            <display value="Nur Totenschein"/>
           </contains>
           <contains>
-            <system value="http://loinc.org"/>
-            <code value="21900-6"/>
-            <display value="Regional lymph nodes.pathology [Class] Cancer"/>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="1"/>
+            <display value="Klinisch"/>
           </contains>
           <contains>
-            <system value="http://loinc.org"/>
-            <code value="21912-1"/>
-            <display value="Regional lymph nodes.other [Class] Cancer"/>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="2"/>
+            <display value="Klinische Diagnostik"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="4"/>
+            <display value="Spezifische Tumor-Marker"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="5"/>
+            <display value="Zytologie"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="6"/>
+            <display value="Histologische Untersuchung einer Metastase"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="7"/>
+            <display value="Histologische Untersuchung eines Primärtumors"/>
+          </contains>
+          <contains>
+            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
+            <code value="9"/>
+            <display value="Unbekannt"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -294,7 +249,7 @@
         <title value="ValueSet ECOG Performance Status SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -305,8 +260,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:0d99aaf4-a18f-4a17-a909-0182b4060c5b"/>
-          <timestamp value="2023-09-27T08:45:57+00:00"/>
+          <identifier value="urn:uuid:b3afb2fc-b48c-4353-8d7c-ac8ebc84a8c1"/>
+          <timestamp value="2023-11-02T12:09:33+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -363,302 +318,13 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"/>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>Loinc v2.74</li>
-                <li>Loinc v2.74</li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21908-9"> </a>  
-                  <a href="https://loinc.org/21908-9/">21908-9</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Stage group.clinical Cancer</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21902-2"> </a>  
-                  <a href="https://loinc.org/21902-2/">21902-2</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Stage group.pathology Cancer</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"/>
-        <version value="0.1.0"/>
-        <name value="VS_TNM_Classification_Type_LOINC"/>
-        <title value="ValueSet TNM Classification Type LOINC"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DEU"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:907b1cd6-a211-435f-8496-32c35ff0e8a3"/>
-          <timestamp value="2023-09-27T08:46:04+00:00"/>
-          <total value="2"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.74"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.74"/>
-          </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="21908-9"/>
-            <display value="Stage group.clinical Cancer"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="21902-2"/>
-            <display value="Stage group.pathology Cancer"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>Loinc v2.74</li>
-                <li>Loinc v2.74</li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21905-5"> </a>  
-                  <a href="https://loinc.org/21905-5/">21905-5</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Primary tumor.clinical [Class] Cancer</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21899-0"> </a>  
-                  <a href="https://loinc.org/21899-0/">21899-0</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Primary tumor.pathology Cancer</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21911-3"> </a>  
-                  <a href="https://loinc.org/21911-3/">21911-3</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Primary tumor.other [Class] Cancer</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc"/>
-        <version value="0.1.0"/>
-        <name value="VS_TNM_T_Staging_Type_LOINC"/>
-        <title value="ValueSet TNM T Staging Type LOINC"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DEU"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:bd78183f-86df-4c72-a854-17b6bc2b8c93"/>
-          <timestamp value="2023-09-27T08:46:04+00:00"/>
-          <total value="3"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://loinc.org|2.74"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://loinc.org|2.74"/>
-          </parameter>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="21905-5"/>
-            <display value="Primary tumor.clinical [Class] Cancer"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="21899-0"/>
-            <display value="Primary tumor.pathology Cancer"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="21911-3"/>
-            <display value="Primary tumor.other [Class] Cancer"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-volume-units"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>codesystem UCUM version 2.0.1</li>
-                <li>system UCUM version 2.0.1</li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---unitsofmeasure.org-ml"> </a>  ml
-                </td>
-                <td>http://unitsofmeasure.org</td>
-                <td>milliliter</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-volume-units"/>
-        <version value="0.1.0"/>
-        <name value="VS_Tumor_Volume_Units"/>
-        <title value="ValueSet Tumor Size Units Value Set"/>
-        <status value="draft"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DEU"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:cfc23844-a530-405d-b592-83239a5b31fd"/>
-          <timestamp value="2023-09-27T08:46:04+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
-          </parameter>
-          <contains>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="ml"/>
-            <display value="milliliter"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 9 concepts</p>
+            <p>This value set contains 5 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -677,88 +343,65 @@
                 <td>
                   <b>Display</b>
                 </td>
+                <td>
+                  <b>Inactive</b>
+                </td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-787377000"> </a>  
-                  <a href="http://snomed.info/id/787377000">787377000</a>
+                  <a name="http---snomed.info-sct-12619005"> </a>  
+                  <a href="http://snomed.info/id/12619005">12619005</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Gross examination and sampling of tissue specimen (procedure)</td>
+                <td>GX grade (finding)</td>
+                <td>inactive</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-104157003"> </a>  
-                  <a href="http://snomed.info/id/104157003">104157003</a>
+                  <a name="http---snomed.info-sct-54102005"> </a>  
+                  <a href="http://snomed.info/id/54102005">54102005</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Light microscopy (procedure)</td>
+                <td>G1 grade (finding)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-5880005"> </a>  
-                  <a href="http://snomed.info/id/5880005">5880005</a>
+                  <a name="http---snomed.info-sct-1663004"> </a>  
+                  <a href="http://snomed.info/id/1663004">1663004</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Physical examination procedure (procedure)</td>
+                <td>G2 grade (finding)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-16310003"> </a>  
-                  <a href="http://snomed.info/id/16310003">16310003</a>
+                  <a name="http---snomed.info-sct-61026006"> </a>  
+                  <a href="http://snomed.info/id/61026006">61026006</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Diagnostic ultrasonography (procedure)</td>
+                <td>G3 grade (finding)</td>
+                <td/>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-113091000"> </a>  
-                  <a href="http://snomed.info/id/113091000">113091000</a>
+                  <a name="http---snomed.info-sct-258245003"> </a>  
+                  <a href="http://snomed.info/id/258245003">258245003</a>
                 </td>
                 <td>http://snomed.info/sct</td>
-                <td>Magnetic resonance imaging (procedure)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-77477000"> </a>  
-                  <a href="http://snomed.info/id/77477000">77477000</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Computerized axial tomography (procedure)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-82918005"> </a>  
-                  <a href="http://snomed.info/id/82918005">82918005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Positron emission tomography (procedure)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-363680008"> </a>  
-                  <a href="http://snomed.info/id/363680008">363680008</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Radiographic imaging procedure (procedure)</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-363679005"> </a>  
-                  <a href="http://snomed.info/id/363679005">363679005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>Imaging (procedure)</td>
+                <td>G4 grade (finding)</td>
+                <td/>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods"/>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed"/>
         <version value="0.1.0"/>
-        <name value="VS_Tumor_Measurement_Methods"/>
-        <title value="ValueSet Tumor Measurement Methods"/>
+        <name value="VS_Histopathological_Grade_SNOMED"/>
+        <title value="ValueSet Histologic Grade SNOMED"/>
         <status value="draft"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
+        <experimental value="false"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -766,9 +409,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e40c707f-6d70-4be1-868d-31fe3974a44e"/>
-          <timestamp value="2023-09-27T08:46:04+00:00"/>
-          <total value="9"/>
+          <identifier value="urn:uuid:96275bdd-2d94-4ada-a21e-97709f896361"/>
+          <timestamp value="2023-11-02T12:09:34+00:00"/>
+          <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -791,48 +434,29 @@
           </parameter>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="787377000"/>
-            <display value="Gross examination and sampling of tissue specimen (procedure)"/>
+            <inactive value="true"/>
+            <code value="12619005"/>
+            <display value="GX grade (finding)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="104157003"/>
-            <display value="Light microscopy (procedure)"/>
+            <code value="54102005"/>
+            <display value="G1 grade (finding)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="5880005"/>
-            <display value="Physical examination procedure (procedure)"/>
+            <code value="1663004"/>
+            <display value="G2 grade (finding)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="16310003"/>
-            <display value="Diagnostic ultrasonography (procedure)"/>
+            <code value="61026006"/>
+            <display value="G3 grade (finding)"/>
           </contains>
           <contains>
             <system value="http://snomed.info/sct"/>
-            <code value="113091000"/>
-            <display value="Magnetic resonance imaging (procedure)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="77477000"/>
-            <display value="Computerized axial tomography (procedure)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="82918005"/>
-            <display value="Positron emission tomography (procedure)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="363680008"/>
-            <display value="Radiographic imaging procedure (procedure)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="363679005"/>
-            <display value="Imaging (procedure)"/>
+            <code value="258245003"/>
+            <display value="G4 grade (finding)"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -8874,7 +8498,7 @@
         <title value="ValueSet Morphology SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -8888,8 +8512,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:e944e616-710b-41b4-a826-f2c4fccff17d"/>
-          <timestamp value="2023-09-27T08:46:05+00:00"/>
+          <identifier value="urn:uuid:480133d5-d724-49de-aac0-dcd9a16ff9b0"/>
+          <timestamp value="2023-11-02T12:09:42+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13916,399 +13540,13 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed"/>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>SNOMED CT International edition 01-Sep 2023</li>
-                <li>SNOMED CT International edition 01-Sep 2023</li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-                <td>
-                  <b>Inactive</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-12619005"> </a>  
-                  <a href="http://snomed.info/id/12619005">12619005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>GX grade (finding)</td>
-                <td>inactive</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-54102005"> </a>  
-                  <a href="http://snomed.info/id/54102005">54102005</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>G1 grade (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-1663004"> </a>  
-                  <a href="http://snomed.info/id/1663004">1663004</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>G2 grade (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-61026006"> </a>  
-                  <a href="http://snomed.info/id/61026006">61026006</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>G3 grade (finding)</td>
-                <td/>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---snomed.info-sct-258245003"> </a>  
-                  <a href="http://snomed.info/id/258245003">258245003</a>
-                </td>
-                <td>http://snomed.info/sct</td>
-                <td>G4 grade (finding)</td>
-                <td/>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/histopathological-grade-snomed"/>
-        <version value="0.1.0"/>
-        <name value="VS_Histopathological_Grade_SNOMED"/>
-        <title value="ValueSet Histologic Grade SNOMED"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DEU"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:99b2f01d-8fff-4101-a462-7a2ba6e3ef3c"/>
-          <timestamp value="2023-09-27T08:46:10+00:00"/>
-          <total value="5"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
-          </parameter>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <inactive value="true"/>
-            <code value="12619005"/>
-            <display value="GX grade (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="54102005"/>
-            <display value="G1 grade (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="1663004"/>
-            <display value="G2 grade (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="61026006"/>
-            <display value="G3 grade (finding)"/>
-          </contains>
-          <contains>
-            <system value="http://snomed.info/sct"/>
-            <code value="258245003"/>
-            <display value="G4 grade (finding)"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 8 concepts</p>
-            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
-              <a href="CodeSystem-cs-diagnosesicherung-icdo3.html">codesystem Diagnosesicherung ICD-O-3 v0.1.0 (CodeSystem)</a>
-            </p>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-0"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-0">0</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Nur Totenschein</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-1"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-1">1</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Klinisch</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-2"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-2">2</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Klinische Diagnostik</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-4"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-4">4</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Spezifische Tumor-Marker</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-5"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-5">5</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Zytologie</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-6"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-6">6</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Histologische Untersuchung einer Metastase</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-7"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-7">7</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Histologische Untersuchung eines Primärtumors</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="https---www.vision-zero-oncology.de-fhir-CodeSystem-cs-diagnosesicherung-icdo3-9"> </a>  
-                  <a href="CodeSystem-cs-diagnosesicherung-icdo3.html#cs-diagnosesicherung-icdo3-9">9</a>
-                </td>
-                <td>https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3</td>
-                <td>Unbekannt</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/diagnosesicherung-icdo3"/>
-        <version value="0.1.0"/>
-        <name value="DiagnosesicherungICDO3"/>
-        <title value="ValieSet Diagnosesicherung ICD-O-3"/>
-        <status value="draft"/>
-        <experimental value="false"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DEU"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:335b3bcb-c840-4580-b4ae-6ed4f3833286"/>
-          <timestamp value="2023-09-27T08:46:13+00:00"/>
-          <total value="8"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3|0.1.0"/>
-          </parameter>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="0"/>
-            <display value="Nur Totenschein"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="1"/>
-            <display value="Klinisch"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="2"/>
-            <display value="Klinische Diagnostik"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="4"/>
-            <display value="Spezifische Tumor-Marker"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="5"/>
-            <display value="Zytologie"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="6"/>
-            <display value="Histologische Untersuchung einer Metastase"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="7"/>
-            <display value="Histologische Untersuchung eines Primärtumors"/>
-          </contains>
-          <contains>
-            <system value="https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3"/>
-            <code value="9"/>
-            <display value="Unbekannt"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-area-units"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
-            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
-              <p>Expansion based on: </p>
-              <ul>
-                <li>codesystem UCUM version 2.0.1</li>
-                <li>system UCUM version 2.0.1</li>
-              </ul>
-            </div>
-            <table class="codes">
-              <tr>
-                <td style="white-space:nowrap">
-                  <b>Code</b>
-                </td>
-                <td>
-                  <b>System</b>
-                </td>
-                <td>
-                  <b>Display</b>
-                </td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---unitsofmeasure.org-mm2"> </a>  mm2
-                </td>
-                <td>http://unitsofmeasure.org</td>
-                <td>square millimeter</td>
-              </tr>
-            </table>
-          </div>
-        </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-area-units"/>
-        <version value="0.1.0"/>
-        <name value="VS_Tumor_Area_Units"/>
-        <title value="ValueSet Tumor Size Units ValueSet"/>
-        <status value="draft"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
-        <jurisdiction>
-          <coding>
-            <system value="urn:iso:std:iso:3166"/>
-            <code value="DEU"/>
-          </coding>
-        </jurisdiction>
-        <expansion>
-          <identifier value="urn:uuid:4be4b8f8-6da9-4dd5-b2b5-cbdae17789d6"/>
-          <timestamp value="2023-09-27T08:46:15+00:00"/>
-          <total value="1"/>
-          <parameter>
-            <name value="excludeNested"/>
-            <valueBoolean value="false"/>
-          </parameter>
-          <parameter>
-            <name value="used-valueset"/>
-            <valueUri value="null"/>
-          </parameter>
-          <parameter>
-            <name value="limitedExpansion"/>
-            <valueBoolean value="true"/>
-          </parameter>
-          <parameter>
-            <name value="used-codesystem"/>
-            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
-          </parameter>
-          <parameter>
-            <name value="version"/>
-            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
-          </parameter>
-          <contains>
-            <system value="http://unitsofmeasure.org"/>
-            <code value="mm2"/>
-            <display value="square millimeter"/>
-          </contains>
-        </expansion>
-      </ValueSet>
-    </resource>
-  </entry>
-  <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-category-observation"/>
-    <resource>
-      <ValueSet>
-        <text>
-          <status value="generated"/>
-          <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
+            <p>This value set contains 2 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -14330,37 +13568,30 @@
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21905-5"> </a>  
-                  <a href="https://loinc.org/21905-5/">21905-5</a>
+                  <a name="http---loinc.org-21908-9"> </a>  
+                  <a href="https://loinc.org/21908-9/">21908-9</a>
                 </td>
                 <td>http://loinc.org</td>
-                <td>Primary tumor.clinical [Class] Cancer</td>
+                <td>Stage group.clinical Cancer</td>
               </tr>
               <tr>
                 <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21906-3"> </a>  
-                  <a href="https://loinc.org/21906-3/">21906-3</a>
+                  <a name="http---loinc.org-21902-2"> </a>  
+                  <a href="https://loinc.org/21902-2/">21902-2</a>
                 </td>
                 <td>http://loinc.org</td>
-                <td>Regional lymph nodes.clinical [Class] Cancer</td>
-              </tr>
-              <tr>
-                <td style="white-space:nowrap">
-                  <a name="http---loinc.org-21907-1"> </a>  
-                  <a href="https://loinc.org/21907-1/">21907-1</a>
-                </td>
-                <td>http://loinc.org</td>
-                <td>Distant metastases.clinical [Class] Cancer</td>
+                <td>Stage group.pathology Cancer</td>
               </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-category-observation"/>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"/>
         <version value="0.1.0"/>
-        <name value="VS_TNM_Category_Observation"/>
-        <title value="Valueset for Categories of a BodyStructure in the context of one TNM procedure"/>
+        <name value="VS_TNM_Classification_Type_LOINC"/>
+        <title value="ValueSet TNM Classification Type LOINC"/>
         <status value="draft"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
+        <experimental value="false"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -14368,9 +13599,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e94979c4-a1d8-46b0-abd2-fd63002b8906"/>
-          <timestamp value="2023-09-27T08:46:17+00:00"/>
-          <total value="3"/>
+          <identifier value="urn:uuid:814fa3bf-ee1b-4b7d-8963-f0ec64954215"/>
+          <timestamp value="2023-11-02T12:10:06+00:00"/>
+          <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -14393,18 +13624,13 @@
           </parameter>
           <contains>
             <system value="http://loinc.org"/>
-            <code value="21905-5"/>
-            <display value="Primary tumor.clinical [Class] Cancer"/>
+            <code value="21908-9"/>
+            <display value="Stage group.clinical Cancer"/>
           </contains>
           <contains>
             <system value="http://loinc.org"/>
-            <code value="21906-3"/>
-            <display value="Regional lymph nodes.clinical [Class] Cancer"/>
-          </contains>
-          <contains>
-            <system value="http://loinc.org"/>
-            <code value="21907-1"/>
-            <display value="Distant metastases.clinical [Class] Cancer"/>
+            <code value="21902-2"/>
+            <display value="Stage group.pathology Cancer"/>
           </contains>
         </expansion>
       </ValueSet>
@@ -14470,7 +13696,7 @@
         <title value="ValueSet TNM M Staging Type LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -14478,8 +13704,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:aeeeb03d-9d7c-456c-997f-8643cb7d5e24"/>
-          <timestamp value="2023-09-27T08:46:17+00:00"/>
+          <identifier value="urn:uuid:7911222e-4975-480c-a495-9f8b618773eb"/>
+          <timestamp value="2023-11-02T12:10:20+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -14521,13 +13747,20 @@
     </resource>
   </entry>
   <entry>
-    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-radiological-read-procedure"/>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 0 concepts</p>
+            <p>This value set contains 3 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>Loinc v2.74</li>
+                <li>Loinc v2.74</li>
+              </ul>
+            </div>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -14540,15 +13773,40 @@
                   <b>Display</b>
                 </td>
               </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21906-3"> </a>  
+                  <a href="https://loinc.org/21906-3/">21906-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Regional lymph nodes.clinical [Class] Cancer</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21900-6"> </a>  
+                  <a href="https://loinc.org/21900-6/">21900-6</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Regional lymph nodes.pathology [Class] Cancer</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21912-1"> </a>  
+                  <a href="https://loinc.org/21912-1/">21912-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Regional lymph nodes.other [Class] Cancer</td>
+              </tr>
             </table>
           </div>
         </text>
-        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-radiological-read-procedure"/>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-n-staging-type-loinc"/>
         <version value="0.1.0"/>
-        <name value="VS_TNM_Radiological_Read_Procedures"/>
-        <title value="Valueset for TNM Radiological Read Procedures"/>
+        <name value="VS_TNM_N_Staging_Type_LOINC"/>
+        <title value="ValueSet TNM N Staging Type LOINC"/>
         <status value="draft"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
+        <experimental value="false"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -14556,12 +13814,9 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
-            <valueBoolean value="true"/>
-          </extension>
-          <identifier value="urn:uuid:e796d491-0e11-489f-ba95-d6632682569a"/>
-          <timestamp value="2023-09-27T08:46:18+00:00"/>
-          <total value="0"/>
+          <identifier value="urn:uuid:72e11f88-d3fc-4f33-9ba7-4a21361306b8"/>
+          <timestamp value="2023-11-02T12:10:30+00:00"/>
+          <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
             <valueBoolean value="false"/>
@@ -14574,6 +13829,139 @@
             <name value="limitedExpansion"/>
             <valueBoolean value="true"/>
           </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21906-3"/>
+            <display value="Regional lymph nodes.clinical [Class] Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21900-6"/>
+            <display value="Regional lymph nodes.pathology [Class] Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21912-1"/>
+            <display value="Regional lymph nodes.other [Class] Cancer"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>Loinc v2.74</li>
+                <li>Loinc v2.74</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21905-5"> </a>  
+                  <a href="https://loinc.org/21905-5/">21905-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Primary tumor.clinical [Class] Cancer</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21899-0"> </a>  
+                  <a href="https://loinc.org/21899-0/">21899-0</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Primary tumor.pathology Cancer</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21911-3"> </a>  
+                  <a href="https://loinc.org/21911-3/">21911-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Primary tumor.other [Class] Cancer</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-t-staging-type-loinc"/>
+        <version value="0.1.0"/>
+        <name value="VS_TNM_T_Staging_Type_LOINC"/>
+        <title value="ValueSet TNM T Staging Type LOINC"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:4fa79a8b-b9c8-441a-ad70-73b95409bfc7"/>
+          <timestamp value="2023-11-02T12:11:28+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21905-5"/>
+            <display value="Primary tumor.clinical [Class] Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21899-0"/>
+            <display value="Primary tumor.pathology Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21911-3"/>
+            <display value="Primary tumor.other [Class] Cancer"/>
+          </contains>
         </expansion>
       </ValueSet>
     </resource>
@@ -22614,7 +22002,7 @@
         <title value="ValueSet Topography SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -22628,8 +22016,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:b903b81e-1772-4400-8b01-243bceff0ed8"/>
-          <timestamp value="2023-09-27T08:46:18+00:00"/>
+          <identifier value="urn:uuid:71fc1569-1b22-4575-948e-75e008550d22"/>
+          <timestamp value="2023-11-02T12:11:39+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27656,6 +27044,451 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-area-units"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem UCUM version 2.0.1</li>
+                <li>system UCUM version 2.0.1</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-mm2"> </a>  mm2
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>square millimeter</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-area-units"/>
+        <version value="0.1.0"/>
+        <name value="VS_Tumor_Area_Units"/>
+        <title value="ValueSet Tumor Size Units ValueSet"/>
+        <status value="draft"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:b9ec8747-50a3-46c1-9c45-06712c36ecab"/>
+          <timestamp value="2023-11-02T12:11:43+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm2"/>
+            <display value="square millimeter"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 9 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+                <li>SNOMED CT International edition 01-Sep 2023</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-787377000"> </a>  
+                  <a href="http://snomed.info/id/787377000">787377000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Gross examination and sampling of tissue specimen (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-104157003"> </a>  
+                  <a href="http://snomed.info/id/104157003">104157003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Light microscopy (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-5880005"> </a>  
+                  <a href="http://snomed.info/id/5880005">5880005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Physical examination procedure (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-16310003"> </a>  
+                  <a href="http://snomed.info/id/16310003">16310003</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Diagnostic ultrasonography (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-113091000"> </a>  
+                  <a href="http://snomed.info/id/113091000">113091000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Magnetic resonance imaging (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-77477000"> </a>  
+                  <a href="http://snomed.info/id/77477000">77477000</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Computerized axial tomography (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-82918005"> </a>  
+                  <a href="http://snomed.info/id/82918005">82918005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Positron emission tomography (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-363680008"> </a>  
+                  <a href="http://snomed.info/id/363680008">363680008</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Radiographic imaging procedure (procedure)</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---snomed.info-sct-363679005"> </a>  
+                  <a href="http://snomed.info/id/363679005">363679005</a>
+                </td>
+                <td>http://snomed.info/sct</td>
+                <td>Imaging (procedure)</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-measurement-methods"/>
+        <version value="0.1.0"/>
+        <name value="VS_Tumor_Measurement_Methods"/>
+        <title value="ValueSet Tumor Measurement Methods"/>
+        <status value="draft"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:87560242-67e2-48f3-bc58-d8de1d337aab"/>
+          <timestamp value="2023-11-02T12:11:44+00:00"/>
+          <total value="9"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20230901"/>
+          </parameter>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="787377000"/>
+            <display value="Gross examination and sampling of tissue specimen (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="104157003"/>
+            <display value="Light microscopy (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="5880005"/>
+            <display value="Physical examination procedure (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="16310003"/>
+            <display value="Diagnostic ultrasonography (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="113091000"/>
+            <display value="Magnetic resonance imaging (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="77477000"/>
+            <display value="Computerized axial tomography (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="82918005"/>
+            <display value="Positron emission tomography (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="363680008"/>
+            <display value="Radiographic imaging procedure (procedure)"/>
+          </contains>
+          <contains>
+            <system value="http://snomed.info/sct"/>
+            <code value="363679005"/>
+            <display value="Imaging (procedure)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-size-units"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 2 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem UCUM version 2.0.1</li>
+                <li>system UCUM version 2.0.1</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-mm"> </a>  mm
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>Millimeter</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-cm"> </a>  cm
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>Centimeter</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-size-units"/>
+        <version value="0.1.0"/>
+        <name value="VS_Tumor_Size_Units"/>
+        <title value="ValueSet Tumor Size Units"/>
+        <status value="draft"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:882b72e8-91ea-4f6b-9774-86c58b564b37"/>
+          <timestamp value="2023-11-02T12:11:45+00:00"/>
+          <total value="2"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="mm"/>
+            <display value="Millimeter"/>
+          </contains>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="cm"/>
+            <display value="Centimeter"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-volume-units"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 1 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>codesystem UCUM version 2.0.1</li>
+                <li>system UCUM version 2.0.1</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---unitsofmeasure.org-ml"> </a>  ml
+                </td>
+                <td>http://unitsofmeasure.org</td>
+                <td>milliliter</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/tumor-volume-units"/>
+        <version value="0.1.0"/>
+        <name value="VS_Tumor_Volume_Units"/>
+        <title value="ValueSet Tumor Size Units Value Set"/>
+        <status value="draft"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:0e64eca3-2115-4fe4-b578-21e14b631dea"/>
+          <timestamp value="2023-11-02T12:11:45+00:00"/>
+          <total value="1"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://unitsofmeasure.org|2.0.1"/>
+          </parameter>
+          <contains>
+            <system value="http://unitsofmeasure.org"/>
+            <code value="ml"/>
+            <display value="milliliter"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure"/>
     <resource>
       <ValueSet>
@@ -27698,7 +27531,7 @@
         <name value="VS_RECIST_Radiological_Read_Procedures"/>
         <title value="Valueset for RECIST Radiological Read Procedures"/>
         <status value="draft"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27706,8 +27539,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6c2976ea-1dd9-4548-9c0b-06dde4971331"/>
-          <timestamp value="2023-09-27T08:46:22+00:00"/>
+          <identifier value="urn:uuid:1e9a7454-ef68-48a2-b06a-6d0c162a1ecd"/>
+          <timestamp value="2023-11-02T12:12:03+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27781,7 +27614,7 @@
         <name value="VS_RECIST_Category_Observation"/>
         <title value="Valueset for Categories of a BodyStructure in the context of one RECIST procedure"/>
         <status value="draft"/>
-        <date value="2023-09-27T08:44:59+00:00"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27789,8 +27622,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:ec957432-4db0-480f-a7c2-7217610e216a"/>
-          <timestamp value="2023-09-27T08:46:23+00:00"/>
+          <identifier value="urn:uuid:c1193f22-269d-4e02-acb8-34c5a5218a29"/>
+          <timestamp value="2023-11-02T12:12:04+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27817,6 +27650,173 @@
             <code value="103337004"/>
             <display value="In partial remission"/>
           </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-category-observation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 3 concepts</p>
+            <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
+              <p>Expansion based on: </p>
+              <ul>
+                <li>Loinc v2.74</li>
+                <li>Loinc v2.74</li>
+              </ul>
+            </div>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21905-5"> </a>  
+                  <a href="https://loinc.org/21905-5/">21905-5</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Primary tumor.clinical [Class] Cancer</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21906-3"> </a>  
+                  <a href="https://loinc.org/21906-3/">21906-3</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Regional lymph nodes.clinical [Class] Cancer</td>
+              </tr>
+              <tr>
+                <td style="white-space:nowrap">
+                  <a name="http---loinc.org-21907-1"> </a>  
+                  <a href="https://loinc.org/21907-1/">21907-1</a>
+                </td>
+                <td>http://loinc.org</td>
+                <td>Distant metastases.clinical [Class] Cancer</td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-category-observation"/>
+        <version value="0.1.0"/>
+        <name value="VS_TNM_Category_Observation"/>
+        <title value="Valueset for Categories of a BodyStructure in the context of one TNM procedure"/>
+        <status value="draft"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:7cda6489-d07f-480b-9402-b314fd3796dd"/>
+          <timestamp value="2023-11-02T12:12:04+00:00"/>
+          <total value="3"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <parameter>
+            <name value="version"/>
+            <valueUri value="http://loinc.org|2.74"/>
+          </parameter>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21905-5"/>
+            <display value="Primary tumor.clinical [Class] Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21906-3"/>
+            <display value="Regional lymph nodes.clinical [Class] Cancer"/>
+          </contains>
+          <contains>
+            <system value="http://loinc.org"/>
+            <code value="21907-1"/>
+            <display value="Distant metastases.clinical [Class] Cancer"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-radiological-read-procedure"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs-tnm-radiological-read-procedure"/>
+        <version value="0.1.0"/>
+        <name value="VS_TNM_Radiological_Read_Procedures"/>
+        <title value="Valueset for TNM Radiological Read Procedures"/>
+        <status value="draft"/>
+        <date value="2023-11-02T12:02:41+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
+            <valueBoolean value="true"/>
+          </extension>
+          <identifier value="urn:uuid:e02aa399-1101-4679-94c2-28d116414aff"/>
+          <timestamp value="2023-11-02T12:12:05+00:00"/>
+          <total value="0"/>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-valueset"/>
+            <valueUri value="null"/>
+          </parameter>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
         </expansion>
       </ValueSet>
     </resource>

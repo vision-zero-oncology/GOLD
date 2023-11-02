@@ -1,0 +1,133 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.de/CodeSystem/bfarm/atc",
+      "version" : "1.4.0",
+      "status" : "active",
+      "name" : "Atc",
+      "title" : null,
+      "description" : "ATC Platzhalter-CodeSystem",
+      "uses" : {
+      },
+      "https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&canonical=http://fhir.de/ValueSet/bfarm/atc" : "ATC"
+    },
+    {
+      "url" : "http://loinc.org",
+      "version" : "3.1.0",
+      "status" : "active",
+      "name" : "LOINC",
+      "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+      "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+      "oids" : ["2.16.840.1.113883.6.1"],
+      "uses" : {
+      },
+      "ValueSet-tnm-t-staging-type-loinc.html" : "ValueSet TNM T Staging Type LOINC",
+      "ValueSet-tnm-classification-type-loinc.html" : "ValueSet TNM Classification Type LOINC",
+      "ValueSet-vs-tnm-category-observation.html" : "Valueset for Categories of a BodyStructure in the context of one TNM procedure",
+      "ValueSet-tnm-n-staging-type-loinc.html" : "ValueSet TNM N Staging Type LOINC",
+      "ValueSet-tnm-m-staging-type-loinc.html" : "ValueSet TNM M Staging Type LOINC"
+    },
+    {
+      "url" : "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+      "version" : "3.0.0",
+      "status" : "active",
+      "name" : "NciThesaurus",
+      "title" : "NCI Thesaurus",
+      "description" : "NCI Thesaurus NCI Thesaurus is a biomedical thesaurus created specifically to meet the needs of the cancer research community, especially those engaged in translational research NCI Thesaurus is produced by the NCI Enterprise Vocabulary Services project. The NCI Thesaurus is provided under an open content license.",
+      "oids" : ["2.16.840.1.113883.3.26.1.1"],
+      "uses" : {
+      },
+      "ValueSet-type-of-randomization-ncit.html" : "ValueSet Type of Randomization NCIt",
+      "ValueSet-study-focus-ncit.html" : "ValueSet Study Focus NCIt",
+      "ValueSet-studiendesign-ncit.html" : "ValueSet Studiendesign NCIt",
+      "ValueSet-type-of-study-arm-ncit.html" : "ValueSet Type of Study Arm NCIt",
+      "ValueSet-type-of-blinding-ncit.html" : "ValueSet Type of Blinding NCIt",
+      "ValueSet-studienkategorien-ncit.html" : "ValueSet Studienkategorien NCIt"
+    },
+    {
+      "url" : "http://snomed.info/sct",
+      "version" : null,
+      "status" : "active",
+      "name" : "SNOMED_CT",
+      "title" : "SNOMED CT (all versions)",
+      "description" : "SNOMED CT is the most comprehensive and precise clinical health terminology product in the world, owned and distributed around the world by The International Health Terminology Standards Development Organisation (IHTSDO).",
+      "oids" : ["2.16.840.1.113883.6.96"],
+      "uses" : {
+      },
+      "ValueSet-morphology-snomed.html" : "ValueSet Morphology SNOMED",
+      "https://simplifier.net/resolve?scope=hl7.fhir.uv.ips@1.0.0&canonical=http://hl7.org/fhir/uv/ips/ValueSet/target-site-uv-ips" : "Target Site - IPS",
+      "ValueSet-vs-recsit-category-observation.html" : "Valueset for Categories of a BodyStructure in the context of one RECIST procedure",
+      "ValueSet-vs-tnm-radiological-read-procedure.html" : "Valueset for TNM Radiological Read Procedures",
+      "ValueSet-tumor-measurement-methods.html" : "ValueSet Tumor Measurement Methods",
+      "ValueSet-topography-snomed.html" : "ValueSet Topography SNOMED",
+      "ValueSet-ecog-performance-status-snomed.html" : "ValueSet ECOG Performance Status SNOMED",
+      "https://simplifier.net/resolve?scope=de.medizininformatikinitiative.kerndatensatz.biobank@1.0.3&canonical=https://www.medizininformatik-initiative.de/fhir/ext/modul-biobank/ValueSet/sct-body-structures" : "ValueSet - SNOMED CT Body Strutures",
+      "ValueSet-histopathological-grade-snomed.html" : "ValueSet Histologic Grade SNOMED",
+      "ValueSet-vs-recist-radiological-read-procedure.html" : "Valueset for RECIST Radiological Read Procedures"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/icd-o-3",
+      "version" : "2.0.1",
+      "status" : "active",
+      "name" : "IcdO3",
+      "title" : "International Classification of Diseases for Oncology, version 3.",
+      "description" : "International Classification of Diseases for Oncology, version 3. For more information see http://www.who.int/classifications/icd/adaptations/oncology/en/.",
+      "oids" : ["2.16.840.1.113883.6.43.1"],
+      "uses" : {
+      },
+      "ValueSet-morphology-icd-o-3.html" : "ValueSet Morphology ICD-O-3",
+      "ValueSet-topography-icd-o-3.html" : "ValueSet Topography ICD-O-3"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/medication-statement-category",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "Medication usage category codes",
+      "title" : "Medication usage category codes",
+      "description" : "Medication Status Codes",
+      "oids" : ["2.16.840.1.113883.4.642.4.1120"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-medication-statement-category.html" : "Medication usage category codes"
+    },
+    {
+      "url" : "http://terminology.hl7.org/CodeSystem/research-study-phase",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "ResearchStudyPhase",
+      "title" : "ResearchStudyPhase",
+      "description" : "Codes for the stage in the progression of a therapy from initial experimental use in humans in clinical trials to post-market evaluation.",
+      "oids" : ["2.16.840.1.113883.4.642.1.1247"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-research-study-phase.html" : "ResearchStudyPhase"
+    },
+    {
+      "url" : "http://unitsofmeasure.org",
+      "version" : "3.0.1",
+      "status" : "active",
+      "name" : "UCUM",
+      "title" : "Unified Code for Units of Measure (UCUM)",
+      "description" : "The Unified Code for Units of Measure (UCUM) is a code system intended to include all units of measures being contemporarily used in international science, engineering, and business. The purpose is to facilitate unambiguous electronic communication of quantities together with their units. The focus is on electronic communication, as opposed to communication between humans. A typical application of The Unified Code for Units of Measure are electronic data interchange (EDI) protocols, but there is nothing that prevents it from being used in other types of machine communication.",
+      "oids" : ["2.16.840.1.113883.6.8"],
+      "uses" : {
+      },
+      "http://hl7.org/fhir/R4/valueset-ucum-bodylength.html" : "Body Length Units",
+      "http://hl7.org/fhir/R4/valueset-ucum-bodyweight.html" : "Body Weight Units",
+      "ValueSet-tumor-size-units.html" : "ValueSet Tumor Size Units",
+      "ValueSet-tumor-area-units.html" : "ValueSet Tumor Size Units ValueSet",
+      "ValueSet-tumor-volume-units.html" : "ValueSet Tumor Size Units Value Set"
+    },
+    {
+      "url" : "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3",
+      "version" : "0.1.0",
+      "status" : "draft",
+      "name" : "DiagnosesicherungICDO3",
+      "title" : "Diagnosesicherung ICD-O-3",
+      "description" : "CodeSystem für die Diagnosesicherungscodes der ICD-O-3",
+      "uses" : {
+      },
+      "ValueSet-diagnosesicherung-icdo3.html" : "ValieSet Diagnosesicherung ICD-O-3"
+    }
+  ]
+}
