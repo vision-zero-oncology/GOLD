@@ -14,8 +14,7 @@ Id: tumor
 Title: "Profile Tumor"
 Description: "Profile of a tumor"
 * insert Metadata
-* morphology 1.. MS
-* location 1.. MS
+* morphology 1..1 MS
 * patient MS
 
 Extension: PartOf
@@ -28,7 +27,7 @@ Description: "Enables to reference a Tumor <BodyStructure> from its respective S
 * ^context[=].expression = "Specimen"
 
 // Examples
-Instance: CerebellarSarcoma
+Instance: SplenicStructure
 InstanceOf: Tumor
 Usage: #example
 Title: "Tumor Example - Cerebellar Sarcoma"
@@ -37,14 +36,14 @@ Description: "Example for the Tumor profile"
 * identifier[bodyStructureIdentifier].type = http://hl7.org/fhir/resource-types#BodyStructure
 * identifier[bodyStructureIdentifier].system = "http://radiology.hospital.example.org"
 * identifier[bodyStructureIdentifier].value = "Tumor 1234"
-* morphology = $SCT#17302008 "Cerebellar sarcoma (morphologic abnormality)"
-* location = $SCT#1010600003 "Structure of left cerebellar hemisphere (body structure)"
+* morphology = $SCT#4147007 "Mass (morphologic abnormality)"
+* extension[included-structure].extension[$structure].valueCodeableConcept.coding = $SCT#78961009 "Splenic structure (body structure)"
 * patient = Reference(ExamplePatient)
 
 Instance: blood-specimen
 InstanceOf: TumorSpecimen
 Usage: #example
-* extension[partOf].valueReference = Reference(CerebellarSarcoma)
+* extension[partOf].valueReference = Reference(SplenicStructure)
 * status = #available
 * type = $SCT#16210851000119107 "Cerebellar neoplasm specimen (specimen)"
 * subject = Reference(ExamplePatient)
