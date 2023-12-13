@@ -989,7 +989,10 @@
          fhir:reference [ fhir:v "BodyStructure/example-body-structure" ]
        ] ;
        fhir:name [ fhir:v "example-body-structure" ] ;
-       fhir:example [ fhir:v "true"^^xsd:boolean ]
+       fhir:example [
+         fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"^^xsd:anyURI ;
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base>
+       ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1004,6 +1007,18 @@
          fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"^^xsd:anyURI ;
          fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin>
        ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/excluded-structure> ;
+         fhir:reference [ fhir:v "StructureDefinition/excluded-structure" ]
+       ] ;
+       fhir:name [ fhir:v "Excluded Structure" ] ;
+       fhir:description [ fhir:v "Description of the excluded Structure of the Body Structure" ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
          fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
@@ -1039,6 +1054,18 @@
        ] ;
        fhir:name [ fhir:v "Extension UICC TNM Suffix ITC SN" ] ;
        fhir:description [ fhir:v "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM." ] ;
+       fhir:example [ fhir:v "false"^^xsd:boolean ]
+     ] [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "StructureDefinition:extension" ]
+       ] ) ;
+       fhir:reference [
+         fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/included-structure> ;
+         fhir:reference [ fhir:v "StructureDefinition/included-structure" ]
+       ] ;
+       fhir:name [ fhir:v "Included Structure" ] ;
+       fhir:description [ fhir:v "Description of the included Structure of the Body Structure" ] ;
        fhir:example [ fhir:v "false"^^xsd:boolean ]
      ] [
        fhir:extension ( [
@@ -1370,8 +1397,8 @@
          fhir:value [ fhir:v "BodyStructure" ]
        ] ) ;
        fhir:reference [
-         fhir:link <https://www.vision-zero-oncology.de/fhir/BodyStructure/CerebellarSarcoma> ;
-         fhir:reference [ fhir:v "BodyStructure/CerebellarSarcoma" ]
+         fhir:link <https://www.vision-zero-oncology.de/fhir/BodyStructure/SplenicStructure> ;
+         fhir:reference [ fhir:v "BodyStructure/SplenicStructure" ]
        ] ;
        fhir:name [ fhir:v "Tumor Example - Cerebellar Sarcoma" ] ;
        fhir:description [ fhir:v "Example for the Tumor profile" ] ;

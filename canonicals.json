@@ -1,5 +1,19 @@
 [
   {
+    "id" : "excluded-structure",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.excludedStructure",
+    "version" : "0.1.0",
+    "name" : "ExcludedStructure"
+  },
+  {
+    "id" : "included-structure",
+    "type" : "StructureDefinition",
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure",
+    "version" : "0.1.0",
+    "name" : "IncludedStructure"
+  },
+  {
     "id" : "cs-diagnosesicherung-icdo3",
     "type" : "CodeSystem",
     "url" : "https://www.vision-zero-oncology.de/fhir/CodeSystem/cs-diagnosesicherung-icdo3",

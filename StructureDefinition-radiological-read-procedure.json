@@ -10,7 +10,7 @@
   "name" : "Radiological_Read_Procedure",
   "title" : "Radiological read procedure",
   "status" : "draft",
-  "date" : "2023-11-02T12:07:02+00:00",
+  "date" : "2023-12-13T13:28:13+00:00",
   "publisher" : "Berlin Institute of Health at Charité (BIH)",
   "contact" : [{
     "name" : "Berlin Institute of Health at Charité (BIH)",
@@ -240,10 +240,6 @@
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName",
           "valueString" : "Language"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/elementdefinition-isCommonBinding",
-          "valueBoolean" : true
         }],
         "strength" : "preferred",
         "description" : "A human language.",

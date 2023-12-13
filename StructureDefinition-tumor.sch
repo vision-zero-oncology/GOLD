@@ -13,7 +13,6 @@
     <sch:title>f:BodyStructure</sch:title>
     <sch:rule context="f:BodyStructure">
       <sch:assert test="count(f:morphology) &gt;= 1">morphology: minimum cardinality of 'morphology' is 1</sch:assert>
-      <sch:assert test="count(f:location) &gt;= 1">location: minimum cardinality of 'location' is 1</sch:assert>
     </sch:rule>
   </sch:pattern>
 </sch:schema>

@@ -1,11 +1,47 @@
 {
   "resourceType" : "BodyStructure",
   "id" : "example-body-structure",
+  "meta" : {
+    "profile" : ["https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"]
+  },
   "text" : {
     "status" : "extensions",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: BodyStructure</b><a name=\"example-body-structure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource BodyStructure &quot;example-body-structure&quot; </p></div><p><b>Diagnosis</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ExampleCondition\">ExampleCondition</a></p><p><b>identifier</b>: BodyStructure: Tumor 1234\u00a0(use:\u00a0USUAL)</p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: BodyStructure</b><a name=\"example-body-structure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource BodyStructure &quot;example-body-structure&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-body-structure-base.html\">Profile Body Structure</a></p></div><blockquote><p><b>Included Structure</b></p><blockquote><p><b>url</b></p><code>$structure</code></blockquote><p><b>value</b>: Forearm <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#14975008)</span></p><blockquote><p><b>url</b></p><code>$laterality</code></blockquote><p><b>value</b>: Unilateral left <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#419161000)</span></p><blockquote><p><b>url</b></p><code>$qualifier</code></blockquote><p><b>value</b>: Volar <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#263929005)</span></p></blockquote><p><b>Diagnosis</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ExampleCondition\">ExampleCondition</a></p><p><b>identifier</b>: BodyStructure:\u00a0Tumor 1234\u00a0(use:\u00a0USUAL)</p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p></div>"
   },
   "extension" : [{
+    "extension" : [{
+      "url" : "$structure",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "14975008",
+          "display" : "Forearm"
+        }]
+      }
+    },
+    {
+      "url" : "$laterality",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "419161000",
+          "display" : "Unilateral left"
+        }]
+      }
+    },
+    {
+      "url" : "$qualifier",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://snomed.info/sct",
+          "code" : "263929005",
+          "display" : "Volar"
+        }]
+      }
+    }],
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"
+  },
+  {
     "url" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis",
     "valueReference" : {
       "reference" : "ExampleCondition"

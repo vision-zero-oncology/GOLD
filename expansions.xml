@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="7bda281a-1e6a-4cdc-b77c-930855c45c03"/>
+  <id value="de6a4e01-2072-40f2-aa8a-82b48c077387"/>
   <meta>
-    <lastUpdated value="2023-11-02T12:07:02.154+00:00"/>
+    <lastUpdated value="2023-12-13T13:28:13.418+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -13,10 +13,10 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 8 concepts</p>
             <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on 
               <a href="CodeSystem-cs-diagnosesicherung-icdo3.html">codesystem Diagnosesicherung ICD-O-3 v0.1.0 (CodeSystem)</a>
             </p>
+            <p>This value set contains 8 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -102,7 +102,7 @@
         <title value="ValieSet Diagnosesicherung ICD-O-3"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -110,8 +110,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:974c480b-43f7-4146-86e1-a887dbfc17ea"/>
-          <timestamp value="2023-11-02T12:14:05+00:00"/>
+          <identifier value="urn:uuid:feddefb7-1037-4f34-840c-435f3676bbd6"/>
+          <timestamp value="2023-12-13T13:29:28+00:00"/>
           <total value="8"/>
           <parameter>
             <name value="excludeNested"/>
@@ -172,7 +172,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 6 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -180,6 +179,7 @@
                 <li>SNOMED CT International edition 01-Sep 2023</li>
               </ul>
             </div>
+            <p>This value set contains 6 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -249,7 +249,7 @@
         <title value="ValueSet ECOG Performance Status SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -260,8 +260,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:aaea7c57-9edb-4101-b652-ba1d12da2e6e"/>
-          <timestamp value="2023-11-02T12:14:05+00:00"/>
+          <identifier value="urn:uuid:16440ef6-2891-4062-b759-7419b516adbf"/>
+          <timestamp value="2023-12-13T13:29:28+00:00"/>
           <total value="6"/>
           <parameter>
             <name value="excludeNested"/>
@@ -324,7 +324,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 5 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -332,6 +331,7 @@
                 <li>SNOMED CT International edition 01-Sep 2023</li>
               </ul>
             </div>
+            <p>This value set contains 5 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -401,7 +401,7 @@
         <title value="ValueSet Histologic Grade SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -409,8 +409,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1e8d0bb8-a3d3-4f2b-8040-a554eb7be715"/>
-          <timestamp value="2023-11-02T12:14:07+00:00"/>
+          <identifier value="urn:uuid:e1ba1bf0-f5cf-4387-ad93-f2a29e75034d"/>
+          <timestamp value="2023-12-13T13:29:28+00:00"/>
           <total value="5"/>
           <parameter>
             <name value="excludeNested"/>
@@ -469,7 +469,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -477,6 +476,7 @@
                 <li>SNOMED CT International edition 01-Sep 2023</li>
               </ul>
             </div>
+            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -8498,7 +8498,7 @@
         <title value="ValueSet Morphology SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -8512,8 +8512,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:88924690-0b5d-43a1-88ee-080bd6b9e14a"/>
-          <timestamp value="2023-11-02T12:14:14+00:00"/>
+          <identifier value="urn:uuid:16e2a431-1ccf-4466-a45e-c95caa958e06"/>
+          <timestamp value="2023-12-13T13:29:28+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13540,13 +13540,180 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/studiendesign-ncit"/>
+        <version value="0.1.0"/>
+        <name value="VS_Studiendesign_NCIT"/>
+        <title value="ValueSet Studiendesign NCIt"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3f09f89c-141d-4a94-9106-94f9d48fe469"/>
+          <timestamp value="2023-12-13T13:29:30.187Z"/>
+          <total value="0"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
+            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/studienkategorien-ncit"/>
+        <version value="0.1.0"/>
+        <name value="VS_Studienkategorien_NCIT"/>
+        <title value="ValueSet Studienkategorien NCIt"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a7f2bce5-dc4d-4fbd-9af5-054b86a325be"/>
+          <timestamp value="2023-12-13T13:29:30.437Z"/>
+          <total value="0"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
+            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/study-focus-ncit"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/study-focus-ncit"/>
+        <version value="0.1.0"/>
+        <name value="VS_StudyFocus_NCIT"/>
+        <title value="ValueSet Study Focus NCIt"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:3a3aa4ac-ce6b-478e-be1d-1cab60b3da71"/>
+          <timestamp value="2023-12-13T13:29:30.750Z"/>
+          <total value="0"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
+            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/tnm-classification-type-loinc"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -13554,6 +13721,7 @@
                 <li>Loinc v2.74</li>
               </ul>
             </div>
+            <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -13591,7 +13759,7 @@
         <title value="ValueSet TNM Classification Type LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13599,8 +13767,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:5bbd3298-5189-4bf5-95b6-e04a301fb1cb"/>
-          <timestamp value="2023-11-02T12:14:51+00:00"/>
+          <identifier value="urn:uuid:56097c20-f5bb-480d-84c7-6466d6e6a086"/>
+          <timestamp value="2023-12-13T13:29:30+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13643,7 +13811,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -13651,6 +13818,7 @@
                 <li>Loinc v2.74</li>
               </ul>
             </div>
+            <p>This value set contains 3 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -13696,7 +13864,7 @@
         <title value="ValueSet TNM M Staging Type LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13704,8 +13872,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:368b2c26-d558-4403-b0b3-b1b568a8c70d"/>
-          <timestamp value="2023-11-02T12:15:01+00:00"/>
+          <identifier value="urn:uuid:a7cbf7a4-456c-4dd5-b274-8fb425c3ee1a"/>
+          <timestamp value="2023-12-13T13:29:31+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13753,7 +13921,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -13761,6 +13928,7 @@
                 <li>Loinc v2.74</li>
               </ul>
             </div>
+            <p>This value set contains 3 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -13806,7 +13974,7 @@
         <title value="ValueSet TNM N Staging Type LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13814,8 +13982,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:746ebc57-50a8-4512-bae4-5f9183f3d8f5"/>
-          <timestamp value="2023-11-02T12:15:10+00:00"/>
+          <identifier value="urn:uuid:4f6c2175-d389-4477-92e2-cdc8de46292c"/>
+          <timestamp value="2023-12-13T13:29:31+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13863,7 +14031,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -13871,6 +14038,7 @@
                 <li>Loinc v2.74</li>
               </ul>
             </div>
+            <p>This value set contains 3 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -13916,7 +14084,7 @@
         <title value="ValueSet TNM T Staging Type LOINC"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -13924,8 +14092,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:b7aae998-4d19-4417-a59b-e218f72226ad"/>
-          <timestamp value="2023-11-02T12:16:33+00:00"/>
+          <identifier value="urn:uuid:bc3b23f7-30fd-4c24-bdea-18dde3636716"/>
+          <timestamp value="2023-12-13T13:29:34+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -13973,7 +14141,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -13981,6 +14148,7 @@
                 <li>SNOMED CT International edition 01-Sep 2023</li>
               </ul>
             </div>
+            <p style="border: maroon 1px solid; background-color: #FFCCCC; font-weight: bold; padding: 8px">This value set has &gt;1000 codes in it. In order to keep the publication size manageable, only a selection (1000 codes) of the whole set of codes is shown</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -22002,7 +22170,7 @@
         <title value="ValueSet Topography SNOMED"/>
         <status value="draft"/>
         <experimental value="false"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -22016,8 +22184,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:743df0d6-be97-4a39-af34-1ff6f7f11809"/>
-          <timestamp value="2023-11-02T12:16:50+00:00"/>
+          <identifier value="urn:uuid:b83be21c-4d70-4495-b70c-0796e0de2f2d"/>
+          <timestamp value="2023-12-13T13:29:35+00:00"/>
           <total value="1000"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27050,7 +27218,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -27058,6 +27225,7 @@
                 <li>system UCUM version 2.0.1</li>
               </ul>
             </div>
+            <p>This value set contains 1 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -27085,7 +27253,7 @@
         <name value="VS_Tumor_Area_Units"/>
         <title value="ValueSet Tumor Size Units ValueSet"/>
         <status value="draft"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27093,8 +27261,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:1b0edd86-3e90-4683-8b9e-58fc524b459d"/>
-          <timestamp value="2023-11-02T12:16:53+00:00"/>
+          <identifier value="urn:uuid:ba0acea8-7566-4bc1-82d7-e4bd700a2685"/>
+          <timestamp value="2023-12-13T13:29:36+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27132,7 +27300,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 9 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -27140,6 +27307,7 @@
                 <li>SNOMED CT International edition 01-Sep 2023</li>
               </ul>
             </div>
+            <p>This value set contains 9 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -27232,7 +27400,7 @@
         <name value="VS_Tumor_Measurement_Methods"/>
         <title value="ValueSet Tumor Measurement Methods"/>
         <status value="draft"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27240,8 +27408,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:6a67e7f4-e787-48da-bcb1-787114ee61a5"/>
-          <timestamp value="2023-11-02T12:16:54+00:00"/>
+          <identifier value="urn:uuid:79f42fa4-63a0-4ed4-bc7e-3d97c1082dbd"/>
+          <timestamp value="2023-12-13T13:29:36+00:00"/>
           <total value="9"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27319,7 +27487,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 2 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -27327,6 +27494,7 @@
                 <li>system UCUM version 2.0.1</li>
               </ul>
             </div>
+            <p>This value set contains 2 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -27361,7 +27529,7 @@
         <name value="VS_Tumor_Size_Units"/>
         <title value="ValueSet Tumor Size Units"/>
         <status value="draft"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27369,8 +27537,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:53d190bb-5e42-4052-a059-5d852d5956be"/>
-          <timestamp value="2023-11-02T12:16:54+00:00"/>
+          <identifier value="urn:uuid:d8e58324-234c-41cf-9bce-512bc457ce61"/>
+          <timestamp value="2023-12-13T13:29:36+00:00"/>
           <total value="2"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27413,7 +27581,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -27421,6 +27588,7 @@
                 <li>system UCUM version 2.0.1</li>
               </ul>
             </div>
+            <p>This value set contains 1 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -27448,7 +27616,7 @@
         <name value="VS_Tumor_Volume_Units"/>
         <title value="ValueSet Tumor Size Units Value Set"/>
         <status value="draft"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27456,8 +27624,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:481594d3-730c-4a7c-a293-766de1d0d16c"/>
-          <timestamp value="2023-11-02T12:16:55+00:00"/>
+          <identifier value="urn:uuid:8be03946-47aa-4cf4-8c8b-fb5a6fb84d7b"/>
+          <timestamp value="2023-12-13T13:29:36+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27489,13 +27657,124 @@
     </resource>
   </entry>
   <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-blinding-ncit"/>
+        <version value="0.1.0"/>
+        <name value="VS_TypeOfBlinding_NCIT"/>
+        <title value="ValueSet Type of Blinding NCIt"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:dbfc8b41-06b3-48d1-8866-a0dba3b2eefd"/>
+          <timestamp value="2023-12-13T13:29:37.047Z"/>
+          <total value="0"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
+            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml">
+            <p>This value set contains 0 concepts</p>
+            <table class="codes">
+              <tr>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>System</b>
+                </td>
+                <td>
+                  <b>Display</b>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-randomization-ncit"/>
+        <version value="0.1.0"/>
+        <name value="VS_TypeOfRandomization_NCIT"/>
+        <title value="ValueSet Type of Randomization NCIt"/>
+        <status value="draft"/>
+        <experimental value="false"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
+        <jurisdiction>
+          <coding>
+            <system value="urn:iso:std:iso:3166"/>
+            <code value="DEU"/>
+          </coding>
+        </jurisdiction>
+        <expansion>
+          <identifier value="urn:uuid:a7c319a1-6be9-4765-9bf0-ac12074793e1"/>
+          <timestamp value="2023-12-13T13:29:37.281Z"/>
+          <total value="0"/>
+          <parameter>
+            <name value="limitedExpansion"/>
+            <valueBoolean value="true"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="fragment"/>
+            <valueUri value="http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl|"/>
+          </parameter>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
     <fullUrl value="https://www.vision-zero-oncology.de/fhir/ValueSet/vs_recist_radiological_read_procedure"/>
     <resource>
       <ValueSet>
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -27503,6 +27782,7 @@
                 <li>SNOMED CT International edition 01-Sep 2023</li>
               </ul>
             </div>
+            <p>This value set contains 1 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -27531,7 +27811,7 @@
         <name value="VS_RECIST_Radiological_Read_Procedures"/>
         <title value="Valueset for RECIST Radiological Read Procedures"/>
         <status value="draft"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27539,8 +27819,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:e76c2990-a4a7-4a15-994e-bd63160c3fd7"/>
-          <timestamp value="2023-11-02T12:17:04+00:00"/>
+          <identifier value="urn:uuid:d54cf495-fc42-4857-8e2f-936bc15a14a5"/>
+          <timestamp value="2023-12-13T13:29:37+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27578,7 +27858,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 1 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -27586,6 +27865,7 @@
                 <li>SNOMED CT International edition 01-Sep 2023</li>
               </ul>
             </div>
+            <p>This value set contains 1 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -27614,7 +27894,7 @@
         <name value="VS_RECIST_Category_Observation"/>
         <title value="Valueset for Categories of a BodyStructure in the context of one RECIST procedure"/>
         <status value="draft"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27622,8 +27902,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:007cb50a-8670-450c-a91e-628a6af9f142"/>
-          <timestamp value="2023-11-02T12:17:05+00:00"/>
+          <identifier value="urn:uuid:d5156111-ebfa-4389-a544-c59adbfe88cc"/>
+          <timestamp value="2023-12-13T13:29:37+00:00"/>
           <total value="1"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27661,7 +27941,6 @@
         <text>
           <status value="generated"/>
           <div xmlns="http://www.w3.org/1999/xhtml">
-            <p>This value set contains 3 concepts</p>
             <div style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">
               <p>Expansion based on: </p>
               <ul>
@@ -27669,6 +27948,7 @@
                 <li>Loinc v2.74</li>
               </ul>
             </div>
+            <p>This value set contains 3 concepts</p>
             <table class="codes">
               <tr>
                 <td style="white-space:nowrap">
@@ -27713,7 +27993,7 @@
         <name value="VS_TNM_Category_Observation"/>
         <title value="Valueset for Categories of a BodyStructure in the context of one TNM procedure"/>
         <status value="draft"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27721,8 +28001,8 @@
           </coding>
         </jurisdiction>
         <expansion>
-          <identifier value="urn:uuid:3b9fa223-d35f-48cb-9350-503bfeed2d6b"/>
-          <timestamp value="2023-11-02T12:17:05+00:00"/>
+          <identifier value="urn:uuid:3348bb2f-a9ca-47a9-9d34-f94aaabdd731"/>
+          <timestamp value="2023-12-13T13:29:37+00:00"/>
           <total value="3"/>
           <parameter>
             <name value="excludeNested"/>
@@ -27791,7 +28071,7 @@
         <name value="VS_TNM_Radiological_Read_Procedures"/>
         <title value="Valueset for TNM Radiological Read Procedures"/>
         <status value="draft"/>
-        <date value="2023-11-02T12:07:02+00:00"/>
+        <date value="2023-12-13T13:28:13+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -27802,8 +28082,8 @@
           <extension url="http://hl7.org/fhir/StructureDefinition/valueset-unclosed">
             <valueBoolean value="true"/>
           </extension>
-          <identifier value="urn:uuid:1e5788b3-2b62-45a9-aef4-5676d2f72397"/>
-          <timestamp value="2023-11-02T12:17:06+00:00"/>
+          <identifier value="urn:uuid:f90c9cbd-303b-426b-b63f-87662c1347d4"/>
+          <timestamp value="2023-12-13T13:29:37+00:00"/>
           <total value="0"/>
           <parameter>
             <name value="excludeNested"/>

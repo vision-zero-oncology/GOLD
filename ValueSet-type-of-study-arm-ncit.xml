@@ -3,7 +3,7 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="type-of-study-arm-ncit"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-nciThesaurus.html"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a> where concept  descends from  C15538</li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-nciThesaurus.html"><code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code></a> where concept  descends from  C15538 (null)</li></ul></div>
   </text>
   <url value="https://www.vision-zero-oncology.de/fhir/ValueSet/type-of-study-arm-ncit"/>
   <version value="0.1.0"/>
@@ -11,7 +11,7 @@
   <title value="ValueSet Type of Study Arm NCIt"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2023-11-02T12:07:02+00:00"/>
+  <date value="2023-12-13T13:28:13+00:00"/>
   <publisher value="Berlin Institute of Health at Charité (BIH)"/>
   <contact>
     <name value="Berlin Institute of Health at Charité (BIH)"/>

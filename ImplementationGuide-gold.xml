@@ -801,7 +801,7 @@
         <reference value="BodyStructure/example-body-structure"/>
       </reference>
       <name value="example-body-structure"/>
-      <exampleBoolean value="true"/>
+      <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -812,6 +812,17 @@
       </reference>
       <name value="ExampleResearchSubjectStudienteilnehmer"/>
       <exampleCanonical value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/excluded-structure"/>
+      </reference>
+      <name value="Excluded Structure"/>
+      <description value="Description of the excluded Structure of the Body Structure"/>
+      <exampleBoolean value="false"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -844,6 +855,17 @@
       </reference>
       <name value="Extension UICC TNM Suffix ITC SN"/>
       <description value="The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:extension"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/included-structure"/>
+      </reference>
+      <name value="Included Structure"/>
+      <description value="Description of the included Structure of the Body Structure"/>
       <exampleBoolean value="false"/>
     </resource>
     <resource>
@@ -1148,7 +1170,7 @@
         <valueString value="BodyStructure"/>
       </extension>
       <reference>
-        <reference value="BodyStructure/CerebellarSarcoma"/>
+        <reference value="BodyStructure/SplenicStructure"/>
       </reference>
       <name value="Tumor Example - Cerebellar Sarcoma"/>
       <description value="Example for the Tumor profile"/>

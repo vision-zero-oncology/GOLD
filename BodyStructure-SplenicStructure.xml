@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<BodyStructure xmlns="http://hl7.org/fhir">
+  <id value="SplenicStructure"/>
+  <meta>
+    <profile value="https://www.vision-zero-oncology.de/fhir/StructureDefinition/tumor"/>
+  </meta>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: BodyStructure</b><a name="SplenicStructure"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource BodyStructure &quot;SplenicStructure&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-tumor.html">Profile Tumor</a></p></div><blockquote><p><b>Included Structure</b></p><blockquote><p><b>url</b></p><code>$structure</code></blockquote><p><b>value</b>: Splenic structure (body structure) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#78961009)</span></p></blockquote><p><b>identifier</b>: BodyStructure: Tumor 1234 (use: USUAL)</p><p><b>morphology</b>: Mass (morphologic abnormality) <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#4147007)</span></p><p><b>patient</b>: <a href="Patient-ExamplePatient.html">Patient/ExamplePatient</a> &quot; BACH&quot;</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure">
+    <extension url="$structure">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="78961009"/>
+          <display value="Splenic structure (body structure)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <identifier>
+    <use value="usual"/>
+    <type>
+      <coding>
+        <system value="http://hl7.org/fhir/resource-types"/>
+        <code value="BodyStructure"/>
+      </coding>
+    </type>
+    <system value="http://radiology.hospital.example.org"/>
+    <value value="Tumor 1234"/>
+  </identifier>
+  <morphology>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="4147007"/>
+      <display value="Mass (morphologic abnormality)"/>
+    </coding>
+  </morphology>
+  <patient>
+    <reference value="Patient/ExamplePatient"/>
+  </patient>
+</BodyStructure>

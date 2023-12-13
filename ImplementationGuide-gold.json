@@ -990,7 +990,7 @@
         "reference" : "BodyStructure/example-body-structure"
       },
       "name" : "example-body-structure",
-      "exampleBoolean" : true
+      "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"
     },
     {
       "extension" : [{
@@ -1002,6 +1002,18 @@
       },
       "name" : "ExampleResearchSubjectStudienteilnehmer",
       "exampleCanonical" : "https://www.vision-zero-oncology.de/fhir/StructureDefinition/probandin"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/excluded-structure"
+      },
+      "name" : "Excluded Structure",
+      "description" : "Description of the excluded Structure of the Body Structure",
+      "exampleBoolean" : false
     },
     {
       "extension" : [{
@@ -1037,6 +1049,18 @@
       },
       "name" : "Extension UICC TNM Suffix ITC SN",
       "description" : "The Extension allows to add isolated tumor cells (ITC) sentinel lymph nodes (sn) suffix to the N-category in TNM.",
+      "exampleBoolean" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:extension"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/included-structure"
+      },
+      "name" : "Included Structure",
+      "description" : "Description of the included Structure of the Body Structure",
       "exampleBoolean" : false
     },
     {
@@ -1369,7 +1393,7 @@
         "valueString" : "BodyStructure"
       }],
       "reference" : {
-        "reference" : "BodyStructure/CerebellarSarcoma"
+        "reference" : "BodyStructure/SplenicStructure"
       },
       "name" : "Tumor Example - Cerebellar Sarcoma",
       "description" : "Example for the Tumor profile",

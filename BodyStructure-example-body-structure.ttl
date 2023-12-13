@@ -1,6 +1,7 @@
 @prefix fhir: <http://hl7.org/fhir/> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 # - resource -------------------------------------------------------------------
@@ -8,11 +9,53 @@
 <https://www.vision-zero-oncology.de/fhir/BodyStructure/example-body-structure> a fhir:BodyStructure ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "example-body-structure"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base"^^xsd:anyURI ;
+       fhir:link <https://www.vision-zero-oncology.de/fhir/StructureDefinition/body-structure-base>
+     ] )
+  ] ; # 
   fhir:text [
      fhir:status [ fhir:v "extensions" ] ;
-     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: BodyStructure</b><a name=\"example-body-structure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource BodyStructure &quot;example-body-structure&quot; </p></div><p><b>Diagnosis</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ExampleCondition\">ExampleCondition</a></p><p><b>identifier</b>: BodyStructure: Tumor 1234 (use: USUAL)</p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p></div>"
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: BodyStructure</b><a name=\"example-body-structure\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource BodyStructure &quot;example-body-structure&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-body-structure-base.html\">Profile Body Structure</a></p></div><blockquote><p><b>Included Structure</b></p><blockquote><p><b>url</b></p><code>$structure</code></blockquote><p><b>value</b>: Forearm <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#14975008)</span></p><blockquote><p><b>url</b></p><code>$laterality</code></blockquote><p><b>value</b>: Unilateral left <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#419161000)</span></p><blockquote><p><b>url</b></p><code>$qualifier</code></blockquote><p><b>value</b>: Volar <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#263929005)</span></p></blockquote><p><b>Diagnosis</b>: <a href=\"https://simplifier.net/resolve?scope=de.basisprofil.r4@1.4.0&amp;canonical=http://fhir.org/packages/de.basisprofil.r4/ExampleCondition\">ExampleCondition</a></p><p><b>identifier</b>: BodyStructure: Tumor 1234 (use: USUAL)</p><p><b>patient</b>: <a href=\"Patient-ExamplePatient.html\">Patient/ExamplePatient</a> &quot; BACH&quot;</p></div>"
   ] ; # 
   fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "$structure"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:14975008 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "14975008" ] ;
+           fhir:display [ fhir:v "Forearm" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "$laterality"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:419161000 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "419161000" ] ;
+           fhir:display [ fhir:v "Unilateral left" ]
+         ] )
+       ]
+     ] [
+       fhir:url [ fhir:v "$qualifier"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:263929005 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "263929005" ] ;
+           fhir:display [ fhir:v "Volar" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://hl7.org/fhir/5.0/StructureDefinition/extension-BodyStructure.includedStructure"^^xsd:anyURI ]
+  ] [
      fhir:url [ fhir:v "https://www.vision-zero-oncology.de/fhir/StructureDefinition/diagnosis"^^xsd:anyURI ] ;
      fhir:value [
        a fhir:Reference ;
